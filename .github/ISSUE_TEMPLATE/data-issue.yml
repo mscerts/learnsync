@@ -1,0 +1,42 @@
+name: Data Quality / Coverage Issue
+description: Report incorrect cache data, a wrongly-quarantined URL, or suggest a new Learn category / docs repo to track
+title: "[Data] Short description"
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for problems with the generated cache data itself: a module or page
+        that's missing or miscategorized, a URL wrongly stuck in the quarantine list, or a
+        new Microsoft Learn category / docs repo that should be added.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Learn Catalog (learn-catalog.json)
+        - Docs Catalog (docs-catalog.json)
+        - Docs Catalog quarantine (docs-catalog-invalid.json)
+        - New category / repo suggestion
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What's wrong, and what should it be instead?
+      placeholder: |
+        Example: the "azure-firewall" module is missing the "Networking" subject even
+        though it's clearly a networking module.
+    validations:
+      required: true
+
+  - type: input
+    id: reference
+    attributes:
+      label: Reference URL
+      description: Link to the module, page, or repo in question.
+    validations:
+      required: false

@@ -1,0 +1,38 @@
+name: Sync Failure
+description: Report a failed or misbehaving scheduled sync run (Learn Catalog or Docs Catalog)
+title: "[Sync Failure] Short description"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report a problem with a scheduled sync run: a workflow failure,
+        a script crash, or output that looks wrong after a run.
+
+  - type: dropdown
+    id: workflow
+    attributes:
+      label: Which sync?
+      options:
+        - Learn Catalog (learn-catalog-sync.mjs)
+        - Docs Catalog (docs-catalog-sync.mjs)
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: run-url
+    attributes:
+      label: Failed run URL
+      description: Link to the GitHub Actions run, if available.
+      placeholder: "https://github.com/mscerts/learnsync/actions/runs/..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Error message, unexpected output, or other details.
+    validations:
+      required: true

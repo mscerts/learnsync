@@ -1,0 +1,9 @@
+# Normalize scripts to LF regardless of platform
+*.mjs text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+
+# Generated cache data: large, machine-written, not meant for line-by-line
+# review — collapse them in diffs/PR views and exclude from language stats.
+data/*.json linguist-generated=true
+data/*.json -diff

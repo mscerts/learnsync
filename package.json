@@ -1,0 +1,20 @@
+{
+  "name": "learnsync",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local, AI-queryable caches of Microsoft Learn training modules and documentation pages, kept in sync on a weekly schedule.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mscerts/learnsync.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "sync:learn": "node scripts/learn-catalog-sync.mjs",
+    "sync:docs": "node scripts/docs-catalog-sync.mjs",
+    "sync": "npm run sync:learn && npm run sync:docs"
+  }
+}
