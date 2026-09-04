@@ -12,14 +12,15 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
       issues: write
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup Node
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22
 
@@ -36,22 +37,23 @@ jobs:
             git push
           fi
 
-      - name: Write failure report
+      # Stable title + comment-on-existing so a persistent failure produces one
+      # issue with a comment per failed run, not a new issue every week.
+      - name: Create or update issue on sync failure
         if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          title="Microsoft Learn Catalog Sync Failed"
           {
-            echo "# Microsoft Learn Catalog Sync Failed"
-            echo
             echo "The scheduled sync of \`data/learn-catalog.json\` failed."
             echo "The Microsoft Learn catalog API may be down, or its response schema may have changed."
             echo
             echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           } > /tmp/learn-catalog-error.md
-
-      - name: Create issue on sync failure
-        if: failure()
-        uses: peter-evans/create-issue-from-file@v6
-        with:
-          title: "Microsoft Learn Catalog Sync Failed — ${{ github.run_id }}"
-          content-filepath: /tmp/learn-catalog-error.md
-          labels: enhancement
+          existing=$(gh issue list --repo "${{ github.repository }}" --state open --search "in:title \"$title\"" --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "${{ github.repository }}" --body-file /tmp/learn-catalog-error.md
+          else
+            gh issue create --repo "${{ github.repository }}" --title "$title" --label bug --body-file /tmp/learn-catalog-error.md
+          fi

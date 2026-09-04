@@ -12,14 +12,15 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 120 # clones + quarantine re-check + capped link check; well under this in a normal week
     permissions:
       contents: write
       issues: write
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup Node
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22
 
@@ -42,30 +43,32 @@ jobs:
 
       - name: Create issue for newly quarantined URLs
         if: ${{ !cancelled() && steps.sync.outputs.new_quarantine_count != '' }}
-        uses: peter-evans/create-issue-from-file@v6
+        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
         with:
           title: "Docs Catalog: ${{ steps.sync.outputs.new_quarantine_count }} newly quarantined URL(s) — investigate & fix"
           content-filepath: /tmp/docs-catalog-quarantine-report.md
           labels: data
 
-      - name: Write failure report
+      # Stable title + comment-on-existing so a persistent failure produces one
+      # issue with a comment per failed run, not a new issue every week.
+      - name: Create or update issue on sync failure
         if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          title="Microsoft Docs Catalog Sync Failed"
           {
-            echo "# Microsoft Docs Catalog Sync Failed"
-            echo
             echo "The scheduled sync of \`data/docs-catalog.json\` failed: a source repo in"
             echo "\`scripts/docs-catalog-sync.mjs\` could not be cloned/parsed (renamed, removed, or its"
-            echo "folder structure changed). Broken URLs alone no longer fail this job -- they're"
-            echo "quarantined into \`data/docs-catalog-invalid.json\` instead (see AGENTS.md)."
+            echo "folder structure changed), or the duplicate-URL audit found a systemic mapping bug."
+            echo "Broken URLs alone don't fail this job -- they're quarantined into"
+            echo "\`data/docs-catalog-invalid.json\` instead (see AGENTS.md)."
             echo
             echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           } > /tmp/docs-catalog-error.md
-
-      - name: Create issue on sync failure
-        if: failure()
-        uses: peter-evans/create-issue-from-file@v6
-        with:
-          title: "Microsoft Docs Catalog Sync Failed — ${{ github.run_id }}"
-          content-filepath: /tmp/docs-catalog-error.md
-          labels: enhancement
+          existing=$(gh issue list --repo "${{ github.repository }}" --state open --search "in:title \"$title\"" --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "${{ github.repository }}" --body-file /tmp/docs-catalog-error.md
+          else
+            gh issue create --repo "${{ github.repository }}" --title "$title" --label bug --body-file /tmp/docs-catalog-error.md
+          fi
