@@ -15,6 +15,7 @@
   "scripts": {
     "sync:learn": "node scripts/learn-catalog-sync.mjs",
     "sync:docs": "node scripts/docs-catalog-sync.mjs",
-    "sync": "npm run sync:learn && npm run sync:docs"
+    "sync": "npm run sync:learn && npm run sync:docs",
+    "test": "node --test"
   }
 }
