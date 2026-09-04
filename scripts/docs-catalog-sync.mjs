@@ -72,7 +72,7 @@ import {
   cleanTitle,
   stripLiquidTags,
   buildUrl,
-  resolveBaseUrlPath,
+  resolveTarget,
   shuffleSample,
   findDuplicateUrls,
   repoUrlPrefixes,
@@ -507,9 +507,10 @@ function processRepo(repo, entries) {
         const fm = parseFrontmatter(content);
         if (!fm || !fm.title || /\bNOINDEX\b/i.test(fm.ROBOTS || "")) continue;
         const rel = relative(sourceRoot, file).replace(/\\/g, "/");
+        const { baseUrlPath: resolvedBaseUrlPath, stripPrefix } = resolveTarget(target, rel);
         entries.push({
           title: cleanTitle(stripLiquidTags(fm.title) || fm.title),
-          url: buildUrl(file, sourceRoot, resolveBaseUrlPath(target, rel), domain),
+          url: buildUrl(file, sourceRoot, resolvedBaseUrlPath, domain, stripPrefix),
           product: repo.productFromPath ? rel.split("/")[0] : fm["ms.service"] || null,
           subproduct: repo.productFromPath ? null : fm["ms.subservice"] || null,
           description: stripLiquidTags(fm[descriptionField]),

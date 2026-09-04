@@ -6,7 +6,7 @@ import {
   cleanTitle,
   stripLiquidTags,
   buildUrl,
-  resolveBaseUrlPath,
+  resolveTarget,
   shuffleSample,
   findDuplicateUrls,
   repoUrlPrefixes,
@@ -65,17 +65,46 @@ test("buildUrl strips .md and trailing index segments", () => {
     buildUrl(join(root, "some-index.md"), root, "azure", "learn.microsoft.com"),
     "https://learn.microsoft.com/azure/some-index"
   );
+  // stripPrefix removes the pathMappings sourcePath segment already folded into baseUrlPath,
+  // so it doesn't appear twice (double threat-intelligence prefix bug)
+  assert.equal(
+    buildUrl(
+      join(root, "threat-intelligence", "analyst-insights.md"),
+      root,
+      "defender/threat-intelligence",
+      "learn.microsoft.com",
+      "threat-intelligence"
+    ),
+    "https://learn.microsoft.com/defender/threat-intelligence/analyst-insights"
+  );
+  // a file exactly matching stripPrefix maps to the baseUrlPath landing page itself
+  assert.equal(
+    buildUrl(join(root, "threat-intelligence.md"), root, "defender/threat-intelligence", "learn.microsoft.com", "threat-intelligence"),
+    "https://learn.microsoft.com/defender/threat-intelligence"
+  );
 });
 
-test("resolveBaseUrlPath prefers a matching pathMapping over the target default", () => {
+test("resolveTarget prefers a matching pathMapping over the target default", () => {
   const target = {
     baseUrlPath: "unified-secops",
     pathMappings: [{ sourcePath: "threat-intelligence", baseUrlPath: "defender/threat-intelligence" }],
   };
-  assert.equal(resolveBaseUrlPath(target, "threat-intelligence/overview.md"), "defender/threat-intelligence");
-  assert.equal(resolveBaseUrlPath(target, "threat-intelligence"), "defender/threat-intelligence");
-  assert.equal(resolveBaseUrlPath(target, "threat-intelligence-other/file.md"), "unified-secops");
-  assert.equal(resolveBaseUrlPath(target, "portal/overview.md"), "unified-secops");
+  assert.deepEqual(resolveTarget(target, "threat-intelligence/overview.md"), {
+    baseUrlPath: "defender/threat-intelligence",
+    stripPrefix: "threat-intelligence",
+  });
+  assert.deepEqual(resolveTarget(target, "threat-intelligence"), {
+    baseUrlPath: "defender/threat-intelligence",
+    stripPrefix: "threat-intelligence",
+  });
+  assert.deepEqual(resolveTarget(target, "threat-intelligence-other/file.md"), {
+    baseUrlPath: "unified-secops",
+    stripPrefix: undefined,
+  });
+  assert.deepEqual(resolveTarget(target, "portal/overview.md"), {
+    baseUrlPath: "unified-secops",
+    stripPrefix: undefined,
+  });
 });
 
 test("shuffleSample returns n items without mutating the input", () => {

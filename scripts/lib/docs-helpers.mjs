@@ -38,19 +38,29 @@ export function stripLiquidTags(text) {
   return cleaned || null;
 }
 
-export function buildUrl(filePath, sourceRoot, baseUrlPath, domain) {
-  const rel = relative(sourceRoot, filePath)
+export function buildUrl(filePath, sourceRoot, baseUrlPath, domain, stripPrefix) {
+  let rel = relative(sourceRoot, filePath)
     .replace(/\\/g, "/")
     .replace(/\.md$/, "")
     .replace(/(^|\/)index$/, ""); // index.md is a directory's own landing page, not a literal "/index" URL segment
+  // stripPrefix is the pathMappings sourcePath segment that resolveTarget() already folded
+  // into baseUrlPath -- without stripping it here it would appear twice in the final URL
+  // (e.g. defender/threat-intelligence/threat-intelligence/analyst-insights).
+  if (stripPrefix) {
+    rel = rel === stripPrefix ? "" : rel.slice(stripPrefix.length + 1);
+  }
+  if (!rel) return `https://${domain}/${baseUrlPath}`;
   return baseUrlPath ? `https://${domain}/${baseUrlPath}/${rel}` : `https://${domain}/${rel}`;
 }
 
-export function resolveBaseUrlPath(target, relativePath) {
+export function resolveTarget(target, relativePath) {
   const mapping = target.pathMappings?.find(
     ({ sourcePath }) => relativePath === sourcePath || relativePath.startsWith(`${sourcePath}/`)
   );
-  return mapping?.baseUrlPath || target.baseUrlPath;
+  return {
+    baseUrlPath: mapping?.baseUrlPath || target.baseUrlPath,
+    stripPrefix: mapping?.sourcePath,
+  };
 }
 
 export function shuffleSample(arr, n) {
