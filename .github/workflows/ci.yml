@@ -5,12 +5,14 @@ on:
     branches: [main]
     paths:
       - "scripts/**"
+      - "test/**"
       - "package.json"
       - ".github/workflows/**"
       - ".github/ISSUE_TEMPLATE/**"
   pull_request:
     paths:
       - "scripts/**"
+      - "test/**"
       - "package.json"
       - ".github/workflows/**"
       - ".github/ISSUE_TEMPLATE/**"
@@ -22,11 +24,12 @@ concurrency:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Setup Node
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22
 
@@ -34,12 +37,26 @@ jobs:
         run: |
           node --check scripts/learn-catalog-sync.mjs
           node --check scripts/docs-catalog-sync.mjs
+          node --check scripts/lib/docs-helpers.mjs
+          node --check scripts/lib/learn-helpers.mjs
+
+      - name: Run unit tests
+        run: npm test
 
       - name: Validate package.json
         run: |
           node -e "JSON.parse(require('fs').readFileSync('package.json', 'utf-8')); console.log('package.json: OK')"
 
-      - name: Validate workflow and issue-template YAML
+      # actionlint understands workflow semantics (bad if: expressions, wrong step
+      # outputs, invalid cron) -- much stronger than a bare YAML parse.
+      - name: Lint workflows with actionlint
+        run: |
+          bash <(curl -sSf https://raw.githubusercontent.com/rhysd/actionlint/v1.7.12/scripts/download-actionlint.bash) 1.7.12
+          ./actionlint -color
+
+      # Issue templates aren't workflows, so actionlint doesn't cover them -- a plain
+      # YAML parse still catches broken template syntax.
+      - name: Validate issue-template YAML
         run: |
           pip install --quiet pyyaml
           python3 - <<'PY'
@@ -49,7 +66,7 @@ jobs:
           import yaml
 
           ok = True
-          files = sorted(glob.glob(".github/workflows/*.yml") + glob.glob(".github/ISSUE_TEMPLATE/*.yml"))
+          files = sorted(glob.glob(".github/ISSUE_TEMPLATE/*.yml") + [".github/dependabot.yml"])
           for f in files:
               try:
                   with open(f, encoding="utf-8") as fh:

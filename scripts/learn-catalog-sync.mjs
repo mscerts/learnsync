@@ -10,9 +10,10 @@
  * Output: data/learn-catalog.json
  */
 
-import { writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { flattenTaxonomy, normalizeUrl } from "./lib/learn-helpers.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
@@ -226,26 +227,6 @@ async function fetchJson(url, attempts = 3) {
   }
 }
 
-// Flattens a two-level catalog taxonomy (products or subjects) into lookup maps.
-function flattenTaxonomy(entries) {
-  const nameById = new Map();
-  const topIdById = new Map();
-  for (const top of entries) {
-    nameById.set(top.id, top.name);
-    topIdById.set(top.id, top.id);
-    for (const child of top.children ?? []) {
-      nameById.set(child.id, child.name);
-      topIdById.set(child.id, top.id);
-    }
-  }
-  return { nameById, topIdById };
-}
-
-function normalizeUrl(url) {
-  if (!url) return url;
-  return url.replace("/en-us/", "/").replace(/([?&])WT\.mc_id=[^&]*/, "$1WT.mc_id=studentamb_165290");
-}
-
 async function main() {
   console.log("Fetching product taxonomy...");
   const { products } = await fetchJson(`${CATALOG_BASE}?type=products`);
@@ -337,6 +318,19 @@ async function main() {
     totalModules: result.length,
     modules: result,
   };
+
+  // Skip the write when nothing but the timestamp would change -- otherwise the
+  // always-fresh lastChecked guarantees a no-op data commit every single week.
+  try {
+    const previous = JSON.parse(readFileSync(OUTPUT_FILE, "utf-8"));
+    const stripTimestamp = ({ lastChecked, ...rest }) => rest;
+    if (JSON.stringify(stripTimestamp(previous)) === JSON.stringify(stripTimestamp(output))) {
+      console.log(`No content changes vs. ${OUTPUT_FILE} -- skipping write (only lastChecked would differ).`);
+      return;
+    }
+  } catch {
+    // no previous file (or unreadable) -- write unconditionally
+  }
 
   writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2) + "\n");
 

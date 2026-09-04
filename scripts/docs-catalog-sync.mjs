@@ -22,19 +22,34 @@
  * literally — spot-check before adding a new repo or docset.
  *
  * Link checking: after building the catalog, every NEW/changed URL (vs. the
- * previous run's file) is checked in full, plus a bounded random sample of
- * unchanged existing URLs (to catch upstream drift, e.g. Microsoft renaming
- * or moving a page) — checking all ~75k entries every run isn't feasible,
- * learn.microsoft.com aggressively 429s above ~3 concurrent requests, so a
- * full pass would take 20+ hours. At the current sample size the whole
- * catalog cycles roughly once a year across weekly runs. Any URL confirmed
- * broken is pulled out of docs-catalog.json and appended to
- * docs-catalog-invalid.json (a quarantine list) instead of failing the run,
- * so dead pages stay out of normal research queries and pile up for a
- * periodic manual/agent triage pass instead of paging on every dead link.
- * A quarantined URL is excluded from the catalog and skipped in future
- * checks until its record is removed from docs-catalog-invalid.json. Only a
- * repo clone/parse failure fails the run (still opens a CI issue).
+ * previous run's file, capped at LINK_CHECK_MAX_NEW per run) is checked,
+ * plus a bounded random sample of unchanged existing URLs (to catch
+ * upstream drift, e.g. Microsoft renaming or moving a page) — checking all
+ * ~75k entries every run isn't feasible, learn.microsoft.com aggressively
+ * 429s above ~3 concurrent requests, so a full pass would take 20+ hours.
+ * At the current sample size the whole catalog cycles roughly once a year
+ * across weekly runs. Only DEFINITIVE failures (HTTP 404/410) are
+ * quarantined: the URL is pulled out of docs-catalog.json and appended to
+ * docs-catalog-invalid.json instead of failing the run, so dead pages stay
+ * out of normal research queries and pile up for a periodic manual/agent
+ * triage pass instead of paging on every dead link. Transient outcomes
+ * (timeouts, network errors, 5xx, persistent 429) are logged and skipped —
+ * the entry stays in the catalog and will get re-sampled on a later run —
+ * so a rate-limit burst can't poison the quarantine file with false
+ * positives. Every already-quarantined URL is re-checked each run (the list
+ * is small, so this is nearly free): a record that now resolves is
+ * auto-released back into the catalog, and `lastChecked` is kept truthful
+ * on the ones that stay. Only a repo clone/parse failure fails the run
+ * (still opens a CI issue).
+ *
+ * Resilience: if a repo's clone/parse fails, the previous catalog's entries
+ * under that repo's URL prefixes are carried forward instead of silently
+ * vanishing for a week (which would also make them all count as "new" and
+ * blow the link-check budget on the next successful run). A whole-catalog
+ * duplicate-URL audit also runs every time (the manual version of this
+ * check is how the Dynamics 365 baseUrlPath bug was originally caught):
+ * duplicates are deduplicated with a loud warning, and the run fails if
+ * they exceed DUPLICATE_URL_FAIL_THRESHOLD (a systemic mapping bug).
  *
  * Newly-quarantined URLs (i.e. broken *this* run, not the pre-existing
  * backlog) also get a Markdown report written to QUARANTINE_REPORT_FILE
@@ -52,6 +67,17 @@ import { readFileSync, writeFileSync, appendFileSync, rmSync, mkdtempSync, readd
 import { join, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
+import {
+  parseFrontmatter,
+  cleanTitle,
+  stripLiquidTags,
+  buildUrl,
+  resolveTarget,
+  shuffleSample,
+  findDuplicateUrls,
+  repoUrlPrefixes,
+  buildQuarantineReport,
+} from "./lib/docs-helpers.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
@@ -72,8 +98,14 @@ const QUARANTINE_REPORT_FILE = process.env.QUARANTINE_REPORT_FILE || join(tmpdir
 // asking an agent to individually investigate a possibly-false-positive batch.
 const QUARANTINE_SURGE_THRESHOLD = 20;
 
+// More duplicate URLs than this means a systemic REPOS mapping bug (two targets claiming
+// the same URL namespace), not a stray upstream collision -- abort instead of publishing
+// a catalog full of wrong-but-well-formed URLs. Small counts are deduped with a warning.
+const DUPLICATE_URL_FAIL_THRESHOLD = 50;
+
 // Link-check tuning: see header note above for why this can't check everything every run.
 const LINK_CHECK_SAMPLE_SIZE = 1500; // random sample of unchanged existing entries per run
+const LINK_CHECK_MAX_NEW = 2000; // cap on new/changed URLs checked per run; the spill-over enters the catalog unchecked and gets sampled on later runs
 const LINK_CHECK_CONCURRENCY = 3; // learn.microsoft.com 429s aggressively above this
 const LINK_CHECK_TIMEOUT_MS = 15000;
 const LINK_CHECK_MAX_RETRIES = 4;
@@ -86,6 +118,58 @@ const REPOS = [
   {
     name: "azure-docs",
     repoUrl: "https://github.com/MicrosoftDocs/azure-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  // Azure split-out repos (all created mid-2024): Microsoft moved these topic areas OUT of
+  // the monolithic azure-docs into their own repos. All use the same docfx mapping as
+  // azure-docs (src: articles, dest: ".", shared /azure/ URL namespace), verified against
+  // live pages (e.g. azure/virtual-machines/overview, azure/key-vault/general/overview,
+  // azure/azure-portal/azure-portal-overview, azure/aks/what-is-aks). azure-docs contains
+  // NO stubs for the migrated folders (articles/virtual-machines, articles/aks,
+  // articles/key-vault, articles/azure-portal, articles/azure-monitor, articles/search all
+  // 404 in azure-docs), so indexing all seven repos produces no duplicate URLs -- and the
+  // built-in duplicate-URL audit would catch it if that ever changes. Probed-and-nonexistent
+  // splits (2026-09-04): azure-networking-docs, azure-storage-docs, azure-databases-docs,
+  // azure-iot-docs -- that content still lives in azure-docs.
+  {
+    // virtual-machines, virtual-machine-scale-sets, container-instances, service-fabric
+    name: "azure-compute-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-compute-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  {
+    // ai-services, foundry, machine-learning, search, open-datasets. The repo's top-level
+    // agent-framework/ dir sits OUTSIDE articles/ (unverified mapping) and is not indexed.
+    // articles/machine-learning/v-fake is a moniker-versioning artifact -- see SKIP_DIRS.
+    name: "azure-ai-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-ai-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  {
+    // azure-monitor, advisor, chaos-studio, service-health
+    name: "azure-monitor-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-monitor-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  {
+    // azure-arc, azure-linux, azure-portal, container-registry, copilot, lighthouse, quotas
+    name: "azure-management-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-management-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  {
+    // aks, aks-hybrid-edge, application-network, kubernetes-fleet
+    name: "azure-aks-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-aks-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  {
+    // key-vault, attestation, cloud-hsm, confidential-ledger, dedicated-hsm, payment-hsm.
+    // NOTE: repo is ARCHIVED (read-only) yet still receives live-branch syncs from its -pr
+    // counterpart (last sync 2026-08-26) and remains clonable. No successor repo found.
+    // If a clone ever fails here, check whether Microsoft finally replaced it.
+    name: "azure-security-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-security-docs.git",
     targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
   },
   {
@@ -254,14 +338,60 @@ const REPOS = [
     // separately if their troubleshooting content is wanted too).
     name: "SupportArticles-docs",
     repoUrl: "https://github.com/MicrosoftDocs/SupportArticles-docs.git",
-    targets: [{ sourceFolder: "support", baseUrlPath: "troubleshoot" }],
+    // Besides "support", the repo has 7 more published docsets for the Office-family
+    // products whose GENERAL admin docs have no public repo (see AGENTS.md) -- their
+    // troubleshooting content is public here. Mapping gotcha: for Exchange / Microsoft365 /
+    // Office / Outlook / SharePoint, each docset has MULTIPLE src dirs that all publish to
+    // dest "." (docfx flattening) -- the second-level folder name is STRIPPED from the URL.
+    // That's expressed below by using the nested second-level dir as the sourceFolder, so
+    // the relative path (and thus URL) starts at the third level. Teams and Viva are plain
+    // one-folder docsets (no flattening). Verified against live pages, e.g.
+    // Exchange/ExchangeServer/mailflow/dns-query-failed.md ->
+    // troubleshoot/exchange/mailflow/dns-query-failed and Teams/teams-sign-in/
+    // resolve-sign-in-errors.md -> troubleshoot/microsoftteams/teams-sign-in/
+    // resolve-sign-in-errors. Note the renamed URL segments: Microsoft365 ->
+    // microsoft-365 (hyphenated) and Teams -> microsoftteams. The repo's SkypeForBusiness
+    // and windows folders contain no markdown and are not in docsets_to_publish -- skipped.
+    // Multiple flattened src dirs share one URL namespace, so a cross-src collision is
+    // possible in principle -- the duplicate-URL audit catches that.
+    targets: [
+      { sourceFolder: "support", baseUrlPath: "troubleshoot" },
+      { sourceFolder: "Exchange/ExchangeServer", baseUrlPath: "troubleshoot/exchange" },
+      { sourceFolder: "Exchange/ExchangeOnline", baseUrlPath: "troubleshoot/exchange" },
+      { sourceFolder: "Exchange/ExchangeHybrid", baseUrlPath: "troubleshoot/exchange" },
+      { sourceFolder: "Microsoft365/admin", baseUrlPath: "troubleshoot/microsoft-365" },
+      { sourceFolder: "Microsoft365/purview", baseUrlPath: "troubleshoot/microsoft-365" },
+      { sourceFolder: "Office/Client", baseUrlPath: "troubleshoot/office" },
+      { sourceFolder: "Office/OfficeExperts", baseUrlPath: "troubleshoot/office" },
+      { sourceFolder: "Outlook/classic-outlook-for-windows", baseUrlPath: "troubleshoot/outlook" },
+      { sourceFolder: "Outlook/legacy-outlook-for-mac", baseUrlPath: "troubleshoot/outlook" },
+      { sourceFolder: "Outlook/new-outlook-for-mac", baseUrlPath: "troubleshoot/outlook" },
+      { sourceFolder: "Outlook/new-outlook-for-windows", baseUrlPath: "troubleshoot/outlook" },
+      { sourceFolder: "SharePoint/SharePointServer", baseUrlPath: "troubleshoot/sharepoint" },
+      { sourceFolder: "SharePoint/SharePointOnline", baseUrlPath: "troubleshoot/sharepoint" },
+      { sourceFolder: "SharePoint/SharePointHybrid", baseUrlPath: "troubleshoot/sharepoint" },
+      { sourceFolder: "SharePoint/SharePointExperts", baseUrlPath: "troubleshoot/sharepoint" },
+      { sourceFolder: "SharePoint/OneDrive", baseUrlPath: "troubleshoot/sharepoint" },
+      { sourceFolder: "Teams", baseUrlPath: "troubleshoot/microsoftteams" },
+      { sourceFolder: "Viva", baseUrlPath: "troubleshoot/viva" },
+    ],
   },
 ];
 
-const SKIP_DIRS = new Set(["includes", "media", "_themes", "breadcrumb", "archive"]);
+// "zone-pivots" and "obj" are docfx build artifacts (seen in the azure split repos);
+// "v-fake" is azure-ai-docs' machine-learning moniker-versioning artifact (publishes only
+// under a ?view= moniker, not a plain path).
+const SKIP_DIRS = new Set(["includes", "media", "_themes", "breadcrumb", "archive", "zone-pivots", "obj", "v-fake"]);
 
 // --- Link checking helpers ---
 
+// Outcome classification:
+//   ok        -- 2xx/3xx, page resolves.
+//   definitive broken (404/410) -- the only outcomes that quarantine a URL.
+//   transient -- timeouts, network errors, 5xx, persistent 429, or any other
+//                status: logged and skipped, NEVER quarantined (the entry stays
+//                in the catalog and gets re-sampled on a later run), so a
+//                rate-limit burst can't poison the quarantine file.
 async function checkUrlStatus(url) {
   for (let attempt = 0; attempt <= LINK_CHECK_MAX_RETRIES; attempt++) {
     const controller = new AbortController();
@@ -283,14 +413,16 @@ async function checkUrlStatus(url) {
         await new Promise((r) => setTimeout(r, 5000 * Math.pow(2, attempt)));
         continue;
       }
-      return { url, status: res.status, ok: res.status >= 200 && res.status < 400 };
+      const ok = res.status >= 200 && res.status < 400;
+      const definitivelyBroken = res.status === 404 || res.status === 410;
+      return { url, status: res.status, ok, transient: !ok && !definitivelyBroken };
     } catch (err) {
       clearTimeout(timer);
       if (attempt < LINK_CHECK_MAX_RETRIES) {
         await new Promise((r) => setTimeout(r, 2000 * (attempt + 1)));
         continue;
       }
-      return { url, status: null, ok: false, error: String(err.message || err) };
+      return { url, status: null, ok: false, transient: true, error: String(err.message || err) };
     }
   }
 }
@@ -315,21 +447,11 @@ async function checkUrls(urls) {
   return results;
 }
 
-function shuffleSample(arr, n) {
-  const copy = [...arr];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy.slice(0, n);
-}
-
-function loadPreviousUrls() {
+function loadPreviousEntries() {
   try {
-    const prev = JSON.parse(readFileSync(OUTPUT_FILE, "utf-8"));
-    return new Set(prev.map((e) => e.url));
+    return JSON.parse(readFileSync(OUTPUT_FILE, "utf-8")); // the OLD file's entries, read before overwriting
   } catch {
-    return new Set(); // no previous file (or unreadable) -- treat everything as new
+    return []; // no previous file (or unreadable) -- treat everything as new
   }
 }
 
@@ -342,99 +464,6 @@ function loadInvalidUrls() {
   }
 }
 
-// Builds the Markdown body for the "please investigate" issue opened when this run
-// quarantines at least one NEW url (see bottom of file). Written to QUARANTINE_REPORT_FILE
-// and, in CI, handed to peter-evans/create-issue-from-file by the calling workflow.
-function buildQuarantineReport(records, { context = "run" } = {}) {
-  const runUrl =
-    process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY && process.env.GITHUB_RUN_ID
-      ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`
-      : null;
-
-  const escapeCell = (s) => String(s ?? "-").replace(/\|/g, "\\|");
-  const table = records
-    .map((e) => `| ${escapeCell(e.status)} | ${escapeCell(e.url)} | ${escapeCell(e.title)} | ${escapeCell(e.product)} |`)
-    .join("\n");
-
-  const isSurge = context === "run" && records.length > QUARANTINE_SURGE_THRESHOLD;
-  const surgeCallout = isSurge
-    ? [
-        `> \u26a0\ufe0f **Surge warning**: ${records.length} URLs were quarantined in a single run, well`,
-        "> above the usual single-digit trickle. This is more likely a transient rate-limit/network",
-        "> hiccup against learn.microsoft.com during the link check than that many pages genuinely",
-        "> breaking simultaneously. **Spot-check 3-5 of them by fetching the URL directly before",
-        "> working through the full list below** -- if they resolve fine now, this was very likely a",
-        "> false positive; consider re-running the sync instead of investigating each one",
-        "> individually.",
-        "",
-      ]
-    : [];
-
-  const introLines =
-    context === "run"
-      ? [
-          `This week's \`docs-catalog-sync.mjs\` run found ${records.length} URL(s) that used to`,
-          "resolve but now fail their link check. They've been moved out of `data/docs-catalog.json`",
-          "into `data/docs-catalog-invalid.json` (the quarantine list) so they don't show up in",
-          "normal content-research queries, but *why* they broke hasn't been diagnosed yet.",
-        ]
-      : [
-          `This is a one-time snapshot of the ${records.length} URL(s) already sitting in`,
-          "`data/docs-catalog-invalid.json` when the issue-per-newly-broken-URL automation below",
-          "was introduced. They predate that automation, so no issue was ever opened for them",
-          "individually -- this issue exists purely so the pre-existing backlog doesn't stay",
-          "untracked forever.",
-        ];
-
-  const heading = context === "run" ? "newly quarantined" : "pre-existing quarantined";
-
-  return [
-    `# Docs Catalog: ${records.length} ${heading} URL(s)`,
-    "",
-    ...surgeCallout,
-    ...introLines,
-    runUrl ? `\nRun: ${runUrl}\n` : "",
-    `## ${context === "run" ? "Newly quarantined" : "Quarantined"} URL(s)`,
-    "",
-    "| Status | URL | Title | Product |",
-    "|---|---|---|---|",
-    table,
-    "",
-    "## Prompt for an AI coding agent",
-    "",
-    "You're working in the `mscerts/learnsync` repo. For each URL listed above:",
-    "",
-    "1. **Diagnose.** Fetch the live page anyway (or search for its likely current",
-    "   title/topic) and read its own frontmatter `original_content_git_url` \u2014 it names the",
-    "   exact real source repo and file path, which is far more reliable than guessing a",
-    "   renamed slug (see AGENTS.md's \"Verification technique for a 404'd cached URL\").",
-    "2. **Classify** each URL as one of:",
-    "   - **Moved within an already-tracked repo** \u2014 the source file still exists, just",
-    "     under a different `sourceFolder`/`baseUrlPath` mapping than `REPOS` in",
-    "     `scripts/docs-catalog-sync.mjs` currently assumes. Fix the mapping.",
-    "   - **Moved to a new, not-yet-tracked repo** \u2014 Microsoft has split content out of a",
-    "     monolithic repo before (e.g. `azure-compute-docs`/`azure-management-docs` splitting",
-    "     out of `azure-docs` \u2014 see AGENTS.md). Add a new `REPOS` entry, following the",
-    "     \"Adding a repo\" guidance in this script's header comment \u2014 always verify",
-    "     `baseUrlPath` against a live page fetch, never trust",
-    "     `.openpublishing.publish.config.json` literally.",
-    "   - **Genuinely retired/removed** \u2014 the page or product no longer exists anywhere. No",
-    "     script change needed; leave its record in `data/docs-catalog-invalid.json` as-is.",
-    "3. **Fix the script** for any URL in the first two categories, then run",
-    "   `node scripts/docs-catalog-sync.mjs` locally to confirm the fixed URL(s) resolve and",
-    "   are no longer quarantined.",
-    "4. **Clean up.** Remove the resolved URL's record(s) from",
-    "   `data/docs-catalog-invalid.json` (the next scheduled sync won't re-add a URL that now",
-    "   passes its link check).",
-    "5. **Open a pull request** with the script fix and quarantine cleanup, referencing this",
-    "   issue.",
-    "",
-    "If you're not confident about the right classification or fix for a given URL, don't",
-    "guess \u2014 leave a comment on this issue asking for clarification instead of committing a",
-    "speculative change.",
-    "",
-  ].join("\n");
-}
 function cloneRepo(repo, targetDir) {
   console.log(`  Cloning ${repo.name} (blobless, sparse, shallow)...`);
   const t0 = Date.now();
@@ -461,63 +490,6 @@ function walkMarkdownFiles(dir, results = []) {
     }
   }
   return results;
-}
-
-function parseFrontmatter(content) {
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) return null;
-  const fm = {};
-  for (const line of match[1].split(/\r?\n/)) {
-    const m = line.match(/^([A-Za-z0-9_.]+):\s*(.*)$/);
-    if (!m) continue;
-    let value = m[2].trim();
-    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
-      value = value.slice(1, -1);
-    }
-    fm[m[1]] = value;
-  }
-  return fm;
-}
-
-function cleanTitle(title) {
-  return title.replace(/\s*[|\-]\s*Microsoft (Docs|Learn|Azure)\s*$/i, "").trim();
-}
-
-// github/docs (Next.js/Liquid pipeline, unlike every other docfx-based repo here) embeds
-// unresolved template tags like "{% data variables.product.github %}" in raw frontmatter text.
-function stripLiquidTags(text) {
-  if (!text) return text;
-  const cleaned = text
-    .replace(/\{%\s*data\s+variables\.product\.(?:github|prodname_dotcom|prodname_ghe_cloud|prodname_ghe_server)\s*%\}/gi, "GitHub")
-    .replace(/\{%[^%]*%\}/g, "")
-    .replace(/\s{2,}/g, " ")
-    .trim();
-  return cleaned || null;
-}
-
-function buildUrl(filePath, sourceRoot, baseUrlPath, domain, stripPrefix) {
-  let rel = relative(sourceRoot, filePath)
-    .replace(/\\/g, "/")
-    .replace(/\.md$/, "")
-    .replace(/(^|\/)index$/, ""); // index.md is a directory's own landing page, not a literal "/index" URL segment
-  // stripPrefix is the pathMappings sourcePath segment that resolveTarget() already folded
-  // into baseUrlPath -- without stripping it here it would appear twice in the final URL
-  // (e.g. defender/threat-intelligence/threat-intelligence/analyst-insights).
-  if (stripPrefix) {
-    rel = rel === stripPrefix ? "" : rel.slice(stripPrefix.length + 1);
-  }
-  if (!rel) return `https://${domain}/${baseUrlPath}`;
-  return baseUrlPath ? `https://${domain}/${baseUrlPath}/${rel}` : `https://${domain}/${rel}`;
-}
-
-function resolveTarget(target, relativePath) {
-  const mapping = target.pathMappings?.find(
-    ({ sourcePath }) => relativePath === sourcePath || relativePath.startsWith(`${sourcePath}/`)
-  );
-  return {
-    baseUrlPath: mapping?.baseUrlPath || target.baseUrlPath,
-    stripPrefix: mapping?.sourcePath,
-  };
 }
 
 function processRepo(repo, entries) {
@@ -568,32 +540,110 @@ for (const repo of REPOS) {
 console.log(`\nTotal entries: ${entries.length}`);
 if (failedRepos.length) console.log(`Repos that failed: ${failedRepos.join(", ")}`);
 
-if (entries.length < MIN_ENTRIES) {
-  console.error(`Aborting write: only ${entries.length} entries, expected at least ${MIN_ENTRIES}.`);
+const previousEntries = loadPreviousEntries(); // the OLD catalog, read before overwriting it
+const previousUrls = new Set(previousEntries.map((e) => e.url));
+const invalidMap = loadInvalidUrls(); // url -> quarantine record, from the OLD quarantine file
+
+// --- Carry-forward: a failed repo's entries shouldn't silently vanish for a week ---
+// Dropping them would also make every one of them count as "new/changed" on the next
+// successful run and blow the link-check budget. Carry the previous catalog's entries
+// under the failed repo's URL prefixes forward instead (skipping any URL another repo
+// already produced this run -- e.g. the Dynamics 365 repos share the dynamics365/ prefix).
+if (failedRepos.length) {
+  const failedPrefixes = REPOS.filter((r) => failedRepos.includes(r.name)).flatMap(repoUrlPrefixes);
+  const currentUrls = new Set(entries.map((e) => e.url));
+  const carried = previousEntries.filter(
+    (e) => !currentUrls.has(e.url) && failedPrefixes.some((p) => e.url.startsWith(p))
+  );
+  if (carried.length) {
+    console.log(`Carrying forward ${carried.length} entries from the previous catalog for failed repo(s): ${failedRepos.join(", ")}`);
+    entries.push(...carried);
+  }
+}
+
+// --- Duplicate-URL audit: two entries claiming one URL means a wrong REPOS mapping ---
+// (The manual version of this check is how the Dynamics 365 baseUrlPath bug was caught.)
+const duplicates = findDuplicateUrls(entries);
+let dedupedEntries = entries;
+if (duplicates.length) {
+  console.error(`\nWARNING: ${duplicates.length} URL(s) are claimed by more than one entry:`);
+  for (const { url, entries: dupes } of duplicates.slice(0, 20)) {
+    console.error(`  ${url}`);
+    for (const d of dupes) console.error(`    - "${d.title}" (product: ${d.product})`);
+  }
+  if (duplicates.length > 20) console.error(`  ...and ${duplicates.length - 20} more.`);
+  if (duplicates.length > DUPLICATE_URL_FAIL_THRESHOLD) {
+    console.error(
+      `Aborting write: ${duplicates.length} duplicate URLs exceeds the threshold of ${DUPLICATE_URL_FAIL_THRESHOLD} -- ` +
+        "this looks like a systemic REPOS mapping bug (two targets claiming the same URL namespace), not upstream noise."
+    );
+    process.exit(1);
+  }
+  // Small counts: keep the first entry per URL and continue, but leave the warning above in the logs.
+  const seen = new Set();
+  dedupedEntries = entries.filter((e) => (seen.has(e.url) ? false : (seen.add(e.url), true)));
+  console.error(`Deduplicated ${entries.length - dedupedEntries.length} entries (kept the first occurrence of each URL).`);
+}
+
+if (dedupedEntries.length < MIN_ENTRIES) {
+  console.error(`Aborting write: only ${dedupedEntries.length} entries, expected at least ${MIN_ENTRIES}.`);
   process.exit(1);
 }
 
-const previousUrls = loadPreviousUrls(); // read the OLD file's URLs before overwriting it
-const invalidMap = loadInvalidUrls(); // url -> quarantine record, from the OLD quarantine file
-
-// Already-quarantined URLs stay excluded from the catalog and skip re-checking every run --
-// releasing one back requires manually removing its record from docs-catalog-invalid.json.
-const cleanEntries = entries.filter((e) => !invalidMap.has(e.url));
-if (entries.length !== cleanEntries.length) {
-  console.log(`Excluded ${entries.length - cleanEntries.length} already-quarantined URL(s) from the catalog.`);
+// --- Quarantine re-check: auto-release restored pages, keep lastChecked truthful ---
+// The quarantine list is small (tens of records), so re-checking all of it every run is
+// nearly free and removes the manual-cleanup step for pages Microsoft restores or that
+// were quarantined before the transient-vs-definitive distinction existed.
+const today = new Date().toISOString().slice(0, 10);
+const releasedUrls = new Set();
+if (invalidMap.size) {
+  console.log(`\nRe-checking ${invalidMap.size} quarantined URL(s)...`);
+  const quarantineResults = await checkUrls([...invalidMap.keys()]);
+  for (const r of quarantineResults) {
+    const record = invalidMap.get(r.url);
+    if (r.ok) {
+      invalidMap.delete(r.url);
+      releasedUrls.add(r.url);
+      console.log(`  RELEASED (now ${r.status}): ${r.url}`);
+    } else if (!r.transient) {
+      record.status = r.status;
+      record.lastChecked = today; // still definitively broken -- keep the record honest
+    }
+    // transient outcome: leave the record untouched, try again next run
+  }
+  if (releasedUrls.size) console.log(`  Released ${releasedUrls.size} restored URL(s) back into the catalog.`);
 }
 
-// --- Link check: full-check every new/changed URL, plus a random sample of existing ones ---
-const newEntries = cleanEntries.filter((e) => !previousUrls.has(e.url));
+// Still-quarantined URLs stay excluded from the catalog; released ones re-enter naturally.
+const cleanEntries = dedupedEntries.filter((e) => !invalidMap.has(e.url));
+if (dedupedEntries.length !== cleanEntries.length) {
+  console.log(`Excluded ${dedupedEntries.length - cleanEntries.length} still-quarantined URL(s) from the catalog.`);
+}
+
+// --- Link check: new/changed URLs (capped), plus a random sample of existing ones ---
+// Released URLs were just verified OK above -- no need to re-check them as "new".
+const newEntries = cleanEntries.filter((e) => !previousUrls.has(e.url) && !releasedUrls.has(e.url));
+const cappedNew = newEntries.length > LINK_CHECK_MAX_NEW ? shuffleSample(newEntries, LINK_CHECK_MAX_NEW) : newEntries;
+if (cappedNew.length < newEntries.length) {
+  console.log(
+    `Capping new-URL link checks at ${LINK_CHECK_MAX_NEW} of ${newEntries.length} -- the rest enter the catalog unchecked and get sampled on later runs.`
+  );
+}
 const existingEntries = cleanEntries.filter((e) => previousUrls.has(e.url));
 const sampled = shuffleSample(existingEntries, LINK_CHECK_SAMPLE_SIZE);
-const toCheck = [...new Map([...newEntries, ...sampled].map((e) => [e.url, e])).values()];
+const toCheck = [...new Map([...cappedNew, ...sampled].map((e) => [e.url, e])).values()];
 
 console.log(
-  `\nLink check: ${toCheck.length} URL(s) (${newEntries.length} new/changed, ${sampled.length} sampled from ${existingEntries.length} existing)...`
+  `\nLink check: ${toCheck.length} URL(s) (${cappedNew.length} new/changed, ${sampled.length} sampled from ${existingEntries.length} existing)...`
 );
 const linkResults = await checkUrls(toCheck.map((e) => e.url));
-const broken = linkResults.filter((r) => !r.ok);
+const broken = linkResults.filter((r) => !r.ok && !r.transient); // only definitive 404/410 quarantines
+const transient = linkResults.filter((r) => !r.ok && r.transient);
+if (transient.length) {
+  console.warn(`\nLink check: ${transient.length} transient failure(s) (timeout/network/5xx/429) -- NOT quarantined, will re-sample later:`);
+  for (const t of transient.slice(0, 10)) console.warn(`  [${t.status ?? t.error ?? "ERR"}] ${t.url}`);
+  if (transient.length > 10) console.warn(`  ...and ${transient.length - 10} more.`);
+}
 
 let finalEntries = cleanEntries;
 const newlyQuarantined = []; // this run's additions only, not the pre-existing backlog -- drives the CI issue below
@@ -602,29 +652,32 @@ if (broken.length) {
   const brokenUrls = new Set(broken.map((b) => b.url));
   finalEntries = cleanEntries.filter((e) => !brokenUrls.has(e.url));
 
-  const today = new Date().toISOString().slice(0, 10);
-  console.error(`\nLink check found ${broken.length} broken URL(s) -- quarantining:`);
+  console.error(`\nLink check found ${broken.length} definitively broken URL(s) -- quarantining:`);
   for (const b of broken) {
     const entry = byUrl.get(b.url);
-    console.error(`  [${b.status ?? "ERR"}] ${b.url} -- "${entry.title}"`);
-    const record = { ...entry, status: b.status ?? b.error ?? "ERR", firstDetected: today, lastChecked: today };
+    console.error(`  [${b.status}] ${b.url} -- "${entry.title}"`);
+    const record = { ...entry, status: b.status, firstDetected: today, lastChecked: today };
     invalidMap.set(b.url, record);
     newlyQuarantined.push(record);
   }
 } else {
-  console.log("Link check: all checked URLs resolved OK.");
+  console.log("Link check: all checked URLs resolved OK (or failed only transiently).");
 }
 
-writeFileSync(OUTPUT_FILE, JSON.stringify(finalEntries));
-const sizeMB = (Buffer.byteLength(JSON.stringify(finalEntries)) / 1024 / 1024).toFixed(1);
-console.log(`\nWrote ${OUTPUT_FILE} (${sizeMB} MB, ${finalEntries.length} entries)`);
+// Sort by URL for a deterministic file: stable diffs between refreshes regardless of
+// REPOS order or directory-walk order, and duplicate inspection becomes trivial.
+finalEntries.sort((a, b) => a.url.localeCompare(b.url));
+
+const serialized = JSON.stringify(finalEntries);
+writeFileSync(OUTPUT_FILE, serialized);
+console.log(`\nWrote ${OUTPUT_FILE} (${(Buffer.byteLength(serialized) / 1024 / 1024).toFixed(1)} MB, ${finalEntries.length} entries)`);
 
 const invalidSorted = [...invalidMap.values()].sort((a, b) => a.url.localeCompare(b.url));
 writeFileSync(INVALID_OUTPUT_FILE, JSON.stringify(invalidSorted, null, 2));
 console.log(`Wrote ${INVALID_OUTPUT_FILE} (${invalidSorted.length} quarantined URL(s) total)`);
 
 if (newlyQuarantined.length) {
-  writeFileSync(QUARANTINE_REPORT_FILE, buildQuarantineReport(newlyQuarantined));
+  writeFileSync(QUARANTINE_REPORT_FILE, buildQuarantineReport(newlyQuarantined, { surgeThreshold: QUARANTINE_SURGE_THRESHOLD }));
   console.log(
     `Wrote ${QUARANTINE_REPORT_FILE} (${newlyQuarantined.length} newly quarantined URL(s), for CI issue creation)`
   );

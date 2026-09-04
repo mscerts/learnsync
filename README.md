@@ -65,9 +65,12 @@ automated link-checking/quarantine model, and more.
 }
 ```
 
-A URL that fails its periodic link check is moved out of `docs-catalog.json`
+A URL whose periodic link check definitively fails (HTTP 404/410 — transient
+timeouts/5xx/429 never quarantine) is moved out of `docs-catalog.json`
 into `docs-catalog-invalid.json` (same shape, plus `status`, `firstDetected`,
-`lastChecked`) instead of failing the sync run. When a run quarantines a URL
+`lastChecked`) instead of failing the sync run. Every quarantined URL is
+re-checked on each run: a page Microsoft restores is automatically released
+back into the catalog. When a run quarantines a URL
 that wasn't already in that backlog, the workflow automatically opens a
 GitHub issue with a table of the newly broken URL(s) and a ready-to-use
 research/fix prompt for an AI coding agent (see AGENTS.md's
@@ -111,9 +114,12 @@ presenting it as that many pages having genuinely broken simultaneously.
 ## Repo maintenance
 
 A separate [`ci.yml`](.github/workflows/ci.yml) workflow validates script
-syntax and workflow/issue-template YAML on every push and pull request that
+syntax, runs the unit tests (`npm test`, plain `node:test`, zero
+dependencies), lints the workflows with `actionlint`, and validates
+issue-template YAML on every push and pull request that
 touches them (not on the weekly data-only commits), so a regression is caught
 immediately instead of surfacing days later on the next scheduled sync.
+All GitHub Actions are pinned to full commit SHAs;
 [`dependabot.yml`](.github/dependabot.yml) keeps the pinned GitHub Action
 versions current automatically.
 
