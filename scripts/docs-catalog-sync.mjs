@@ -120,6 +120,58 @@ const REPOS = [
     repoUrl: "https://github.com/MicrosoftDocs/azure-docs.git",
     targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
   },
+  // Azure split-out repos (all created mid-2024): Microsoft moved these topic areas OUT of
+  // the monolithic azure-docs into their own repos. All use the same docfx mapping as
+  // azure-docs (src: articles, dest: ".", shared /azure/ URL namespace), verified against
+  // live pages (e.g. azure/virtual-machines/overview, azure/key-vault/general/overview,
+  // azure/azure-portal/azure-portal-overview, azure/aks/what-is-aks). azure-docs contains
+  // NO stubs for the migrated folders (articles/virtual-machines, articles/aks,
+  // articles/key-vault, articles/azure-portal, articles/azure-monitor, articles/search all
+  // 404 in azure-docs), so indexing all seven repos produces no duplicate URLs -- and the
+  // built-in duplicate-URL audit would catch it if that ever changes. Probed-and-nonexistent
+  // splits (2026-09-04): azure-networking-docs, azure-storage-docs, azure-databases-docs,
+  // azure-iot-docs -- that content still lives in azure-docs.
+  {
+    // virtual-machines, virtual-machine-scale-sets, container-instances, service-fabric
+    name: "azure-compute-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-compute-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  {
+    // ai-services, foundry, machine-learning, search, open-datasets. The repo's top-level
+    // agent-framework/ dir sits OUTSIDE articles/ (unverified mapping) and is not indexed.
+    // articles/machine-learning/v-fake is a moniker-versioning artifact -- see SKIP_DIRS.
+    name: "azure-ai-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-ai-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  {
+    // azure-monitor, advisor, chaos-studio, service-health
+    name: "azure-monitor-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-monitor-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  {
+    // azure-arc, azure-linux, azure-portal, container-registry, copilot, lighthouse, quotas
+    name: "azure-management-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-management-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  {
+    // aks, aks-hybrid-edge, application-network, kubernetes-fleet
+    name: "azure-aks-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-aks-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
+  {
+    // key-vault, attestation, cloud-hsm, confidential-ledger, dedicated-hsm, payment-hsm.
+    // NOTE: repo is ARCHIVED (read-only) yet still receives live-branch syncs from its -pr
+    // counterpart (last sync 2026-08-26) and remains clonable. No successor repo found.
+    // If a clone ever fails here, check whether Microsoft finally replaced it.
+    name: "azure-security-docs",
+    repoUrl: "https://github.com/MicrosoftDocs/azure-security-docs.git",
+    targets: [{ sourceFolder: "articles", baseUrlPath: "azure" }],
+  },
   {
     name: "entra-docs",
     repoUrl: "https://github.com/MicrosoftDocs/entra-docs.git",
@@ -286,11 +338,50 @@ const REPOS = [
     // separately if their troubleshooting content is wanted too).
     name: "SupportArticles-docs",
     repoUrl: "https://github.com/MicrosoftDocs/SupportArticles-docs.git",
-    targets: [{ sourceFolder: "support", baseUrlPath: "troubleshoot" }],
+    // Besides "support", the repo has 7 more published docsets for the Office-family
+    // products whose GENERAL admin docs have no public repo (see AGENTS.md) -- their
+    // troubleshooting content is public here. Mapping gotcha: for Exchange / Microsoft365 /
+    // Office / Outlook / SharePoint, each docset has MULTIPLE src dirs that all publish to
+    // dest "." (docfx flattening) -- the second-level folder name is STRIPPED from the URL.
+    // That's expressed below by using the nested second-level dir as the sourceFolder, so
+    // the relative path (and thus URL) starts at the third level. Teams and Viva are plain
+    // one-folder docsets (no flattening). Verified against live pages, e.g.
+    // Exchange/ExchangeServer/mailflow/dns-query-failed.md ->
+    // troubleshoot/exchange/mailflow/dns-query-failed and Teams/teams-sign-in/
+    // resolve-sign-in-errors.md -> troubleshoot/microsoftteams/teams-sign-in/
+    // resolve-sign-in-errors. Note the renamed URL segments: Microsoft365 ->
+    // microsoft-365 (hyphenated) and Teams -> microsoftteams. The repo's SkypeForBusiness
+    // and windows folders contain no markdown and are not in docsets_to_publish -- skipped.
+    // Multiple flattened src dirs share one URL namespace, so a cross-src collision is
+    // possible in principle -- the duplicate-URL audit catches that.
+    targets: [
+      { sourceFolder: "support", baseUrlPath: "troubleshoot" },
+      { sourceFolder: "Exchange/ExchangeServer", baseUrlPath: "troubleshoot/exchange" },
+      { sourceFolder: "Exchange/ExchangeOnline", baseUrlPath: "troubleshoot/exchange" },
+      { sourceFolder: "Exchange/ExchangeHybrid", baseUrlPath: "troubleshoot/exchange" },
+      { sourceFolder: "Microsoft365/admin", baseUrlPath: "troubleshoot/microsoft-365" },
+      { sourceFolder: "Microsoft365/purview", baseUrlPath: "troubleshoot/microsoft-365" },
+      { sourceFolder: "Office/Client", baseUrlPath: "troubleshoot/office" },
+      { sourceFolder: "Office/OfficeExperts", baseUrlPath: "troubleshoot/office" },
+      { sourceFolder: "Outlook/classic-outlook-for-windows", baseUrlPath: "troubleshoot/outlook" },
+      { sourceFolder: "Outlook/legacy-outlook-for-mac", baseUrlPath: "troubleshoot/outlook" },
+      { sourceFolder: "Outlook/new-outlook-for-mac", baseUrlPath: "troubleshoot/outlook" },
+      { sourceFolder: "Outlook/new-outlook-for-windows", baseUrlPath: "troubleshoot/outlook" },
+      { sourceFolder: "SharePoint/SharePointServer", baseUrlPath: "troubleshoot/sharepoint" },
+      { sourceFolder: "SharePoint/SharePointOnline", baseUrlPath: "troubleshoot/sharepoint" },
+      { sourceFolder: "SharePoint/SharePointHybrid", baseUrlPath: "troubleshoot/sharepoint" },
+      { sourceFolder: "SharePoint/SharePointExperts", baseUrlPath: "troubleshoot/sharepoint" },
+      { sourceFolder: "SharePoint/OneDrive", baseUrlPath: "troubleshoot/sharepoint" },
+      { sourceFolder: "Teams", baseUrlPath: "troubleshoot/microsoftteams" },
+      { sourceFolder: "Viva", baseUrlPath: "troubleshoot/viva" },
+    ],
   },
 ];
 
-const SKIP_DIRS = new Set(["includes", "media", "_themes", "breadcrumb", "archive"]);
+// "zone-pivots" and "obj" are docfx build artifacts (seen in the azure split repos);
+// "v-fake" is azure-ai-docs' machine-learning moniker-versioning artifact (publishes only
+// under a ?view= moniker, not a plain path).
+const SKIP_DIRS = new Set(["includes", "media", "_themes", "breadcrumb", "archive", "zone-pivots", "obj", "v-fake"]);
 
 // --- Link checking helpers ---
 
