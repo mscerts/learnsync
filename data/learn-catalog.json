@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-08-29T11:34:29.380Z",
+  "lastChecked": "2026-09-04T14:45:41.884Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -53,7 +53,7 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3357,
+  "totalModules": 3311,
   "modules": [
     {
       "uid": "$learn.become-learn-contributor",
@@ -2339,7 +2339,7 @@
     },
     {
       "uid": "learn-bizapps.customer-service-get-started",
-      "title": "Get started with Dynamics 365 Customer Service",
+      "title": "Transform service delivery with AI in Dynamics 365",
       "url": "https://learn.microsoft.com/training/modules/get-started-with-dynamics-365-for-customer-service/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365"
@@ -2352,10 +2352,13 @@
         "Customer relationship management"
       ],
       "units": [
-        "Introduction to Dynamics 365 Customer Service",
-        "Customer Service core components",
-        "Understand the modern customer journey",
-        "Check your knowledge",
+        "Introduction",
+        "Connect customer needs to service work",
+        "Build the Customer Service data foundation",
+        "Connect the modern customer journey",
+        "Transform service work with AI agents",
+        "Extend Customer Service across the organization",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -2961,6 +2964,30 @@
         "Introduction",
         "Trainer checklist",
         "Resources",
+        "Check your knowledge",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.dragon-copilot-nurses-verbalization-module",
+      "title": "Dragon Copilot (nurses) verbalization guide",
+      "url": "https://learn.microsoft.com/training/modules/dragon-copilot-nurses-verbalization-module/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications",
+        "solution-design"
+      ],
+      "units": [
+        "Introduction - Make the evidence audible",
+        "Verbalization by assessment topic",
+        "Clinical monologues",
+        "Lines, drains, and airways",
+        "Practices for accurate documentation",
         "Check your knowledge",
         "Summary"
       ]
@@ -11099,7 +11126,7 @@
         "Copy fixed asset transactions to a G/L budget",
         "Purchase a budgeted asset",
         "Exercise - Budget a fixed asset",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11541,7 +11568,7 @@
         "Work with the number of depreciation days",
         "Print depreciation reports",
         "Exercise - Calculate depreciation",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11742,7 +11769,7 @@
         "Close a fiscal year",
         "Exercise - Create a new fiscal year",
         "Exercise - Post an entry into a closed fiscal year",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -12236,7 +12263,7 @@
         "Configure the fixed asset journal setup",
         "Copy a depreciation book",
         "Exercise - Set up a new depreciation book",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -12384,7 +12411,7 @@
       "units": [
         "Introduction to depreciation methods",
         "Set up fixed asset depreciation methods",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -13323,7 +13350,7 @@
         "Create stockkeeping units",
         "Update a stockkeeping unit",
         "Require the entry of locations and variants",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -13427,7 +13454,7 @@
         "Cancel multiple entries",
         "Cancel a fixed asset sale",
         "Reverse journal postings",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -13568,7 +13595,7 @@
         "Create fixed asset subclasses",
         "Create fixed asset locations",
         "Exercise - Create a new fixed asset subclass",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14438,7 +14465,7 @@
         "Set up users",
         "Set up notifications",
         "Set up approval workflows by using Assisted Setup",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15308,7 +15335,7 @@
         "Set up default dimension priorities",
         "Set up dimension combinations",
         "Exercise - Set up a dimension with dimension values",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15579,7 +15606,7 @@
         "Creating invoices from your meeting appointments",
         "Do a quick document lookup",
         "Exercise - Set up and send email",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15749,7 +15776,7 @@
       "units": [
         "Introduction - Set up order promising",
         "Estimate purchase order receipts",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16227,7 +16254,7 @@
         "Get started with page extensions",
         "Compare page extension properties with page properties",
         "Personalize pages",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19328,7 +19355,7 @@
         "Introduction - Replace wrong items",
         "Return defective items to vendors",
         "Exercise - Return items in Dynamics 365 Business Central",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19786,7 +19813,7 @@
       "units": [
         "Introduction - Register a compensation agreement with a vendor",
         "Apply exact cost reversing",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20811,7 +20838,7 @@
         "Introduction",
         "Set up an item tracking code for the warehouse",
         "Assign an item tracking code to an item",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20836,7 +20863,7 @@
         "Correct prepayments",
         "Exercise - Set up prepayments",
         "Exercise - Process the prepayment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21285,7 +21312,7 @@
         "Introduction - Sales order promising key concepts",
         "Set up order promising",
         "Promising sales order delivery",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21334,7 +21361,7 @@
         "Post additional acquisition costs",
         "Duplicate entries",
         "Exercise - Purchase a fixed asset",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21383,7 +21410,7 @@
         "Set up the default put-away template",
         "Assign a put-away template to an item",
         "Exercise - Set up a put-away template for the north warehouse",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22922,7 +22949,7 @@
         "Introduction to setting up main assets and asset components",
         "Analyze main assets and asset components",
         "Exercise - Set up a main asset and an asset component",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -23101,7 +23128,7 @@
         "Use special prices in purchase orders",
         "Set up line discounts",
         "Set up invoice discounts",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -23592,7 +23619,7 @@
         "Set up a bin",
         "Create bin content",
         "Exercise - Create zones and bins for the NORTH warehouse",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -23815,7 +23842,7 @@
         "Introduction - Set up sales return order management",
         "Set up purchase return order management",
         "Return reasons",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25531,7 +25558,7 @@
         "Get started with entitlements and permissions",
         "Create entitlements and permission sets",
         "Override entitlements with inherent permissions",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -29654,7 +29681,7 @@
         "Introduction",
         "What is generative AI?",
         "Understand responsible AI",
-        "Microsoft Copilot as your workflow companion",
+        "Your Microsoft Copilot workflow companions",
         "Knowledge check",
         "Summary"
       ]
@@ -31048,7 +31075,7 @@
         "Leverage reference architectures for improved efficiency",
         "The cost perspective of multi-agent intelligence, a strategic lens for enterprise AI",
         "Design principles and strategies to maximize cost efficiency in AI workloads",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -37147,6 +37174,25 @@
       ]
     },
     {
+      "uid": "learn.dpu.ai-dev-gallery",
+      "title": "Get started using Foundry on Windows: AI Dev Gallery (Preview)",
+      "url": "https://learn.microsoft.com/training/modules/ai-dev-gallery/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows"
+      ],
+      "products": [
+        "windows-11"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "What is AI Dev Gallery (Preview)?",
+        "Real-world scenarios",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.dpu.ai-workflows",
       "title": "Frontier Firms: Bring AI into everyday work with Windows 11",
       "url": "https://learn.microsoft.com/training/modules/ai-workflows/?WT.mc_id=studentamb_165290",
@@ -41145,7 +41191,7 @@
     },
     {
       "uid": "learn.identify-ai-agent-use-case",
-      "title": "Identify and Prioritize High-Impact AI Agent Use Cases",
+      "title": "Identify and prioritize high-impact AI agent use cases",
       "url": "https://learn.microsoft.com/training/modules/identify-ai-agent-use-case/?WT.mc_id=studentamb_165290",
       "categories": [
         "Azure",
@@ -43325,10 +43371,10 @@
         "generative-ai"
       ],
       "units": [
-        "Monitor and analyze AI Agent usage and performance",
+        "Monitor and analyze AI agent usage and performance",
         "Create budgets, quotas, and alerts",
         "Optimize spending on AI agents in Azure",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -43384,7 +43430,7 @@
         "Select the appropriate AI hosting platform",
         "Build agents, your way",
         "Copilot versus pro-code understanding the tradeoffs",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -44310,17 +44356,21 @@
       "title": "Dyslexia Awareness: Part 2, in partnership with Made By Dyslexia",
       "url": "https://learn.microsoft.com/training/modules/dyslexia-awareness-part-2/?WT.mc_id=studentamb_165290",
       "categories": [
+        "Microsoft 365",
         "OneNote"
       ],
       "products": [
         "Minecraft",
-        "OneNote"
+        "OneNote",
+        "m365-education"
       ],
-      "subjects": [],
+      "subjects": [
+        "Education"
+      ],
       "units": [
         "Introduction",
         "Literacy",
-        "Math ",
+        "Math",
         "Emotional impact",
         "Memory, organization, and concentration",
         "Technology",
@@ -44333,12 +44383,16 @@
       "title": "Dyslexia Teaching: Part 1, In partnership with Made By Dyslexia",
       "url": "https://learn.microsoft.com/training/modules/dyslexia-teaching-part-1/?WT.mc_id=studentamb_165290",
       "categories": [
+        "Microsoft 365",
         "Windows"
       ],
       "products": [
-        "Windows"
+        "Windows",
+        "m365-education"
       ],
-      "subjects": [],
+      "subjects": [
+        "Education"
+      ],
       "units": [
         "Introduction",
         "Introduction to dyslexia teaching",
@@ -44355,12 +44409,16 @@
       "title": "Dyslexia Teaching: Part 2, In partnership with Made By Dyslexia",
       "url": "https://learn.microsoft.com/training/modules/dyslexia-teaching-part-2/?WT.mc_id=studentamb_165290",
       "categories": [
+        "Microsoft 365",
         "Windows"
       ],
       "products": [
-        "Windows"
+        "Windows",
+        "m365-education"
       ],
-      "subjects": [],
+      "subjects": [
+        "Education"
+      ],
       "units": [
         "Introduction",
         "Reading",
@@ -49848,36 +49906,6 @@
       ]
     },
     {
-      "uid": "learn.wwl. administer-applications",
-      "title": "Administer applications",
-      "url": "https://learn.microsoft.com/training/modules/administer-applications/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Manage apps with Intune",
-        "Manage Apps on non-enrolled devices",
-        "Deploy Microsoft 365 Apps with Intune",
-        "Additional Microsoft 365 Apps Deployment Tools",
-        "Configure Microsoft Edge Internet Explorer mode",
-        "App Inventory Review",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.4-describe-dynamics-365-finance-core-capabilities",
       "title": "Describe Dynamics 365 Finance core capabilities",
       "url": "https://learn.microsoft.com/training/modules/describe-dynamics-365-finance-core-capabilities/?WT.mc_id=studentamb_165290",
@@ -50098,85 +50126,6 @@
         "Manage access to Azure Container Registry (ACR)",
         "Configure disk encryption, Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption",
         "Recommend security configurations for Azure API Management",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.agent-speed-skills-finance",
-      "title": "Develop finance skills with AI agents",
-      "url": "https://learn.microsoft.com/training/modules/agent-speed-skills-finance/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft 365"
-      ],
-      "products": [
-        "Microsoft 365",
-        "microsoft-365-copilot",
-        "microsoft-365-copilot-chat"
-      ],
-      "subjects": [
-        "Artificial intelligence",
-        "Communication",
-        "generative-ai"
-      ],
-      "units": [
-        "Introduction",
-        "Create executive-ready financial stories using Researcher agent",
-        "Analyze budget actuals and explain variances using Analyst agent",
-        "Explore and explain financial variance using Analyst agent",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.agent-speed-skills-marketing",
-      "title": "Develop marketing skills with AI agents",
-      "url": "https://learn.microsoft.com/training/modules/agent-speed-skills-marketing/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft 365"
-      ],
-      "products": [
-        "Microsoft 365",
-        "microsoft-365-copilot",
-        "microsoft-365-copilot-chat"
-      ],
-      "subjects": [
-        "Artificial intelligence",
-        "Communication",
-        "generative-ai"
-      ],
-      "units": [
-        "Introduction",
-        "Analyze market trends using Researcher agent",
-        "Transform customer story prompts using the Prompt Coach agent",
-        "Develop a campaign prompt using the Prompt Coach agent",
-        "Discover internal insights using the Researcher agent",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.agent-speed-skills-sales",
-      "title": "Develop sales skills with AI agents",
-      "url": "https://learn.microsoft.com/training/modules/agent-speed-skills-sales/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft 365"
-      ],
-      "products": [
-        "Microsoft 365",
-        "microsoft-365-copilot",
-        "microsoft-365-copilot-chat"
-      ],
-      "subjects": [
-        "Artificial intelligence",
-        "Communication",
-        "generative-ai"
-      ],
-      "units": [
-        "Introduction",
-        "Turn stalled conversations into action using the Researcher agent",
-        "Prepare for deal objections using Researcher agent",
-        "Tailor final-stage deal messaging with Researcher agent",
         "Module assessment",
         "Summary"
       ]
@@ -50706,36 +50655,6 @@
         "Design agent handoff message schemas",
         "Ensure handoff reliability and context preservation",
         "Optimize decomposition granularity",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.assess-deployment-readiness",
-      "title": "Assess deployment readiness",
-      "url": "https://learn.microsoft.com/training/modules/assess-deployment-readiness/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Examine deployment guidelines",
-        "Explore readiness tools",
-        "Assess application compatibility",
-        "Explore tools for application compatibility mitigation",
-        "Prepare network and directory for deployment",
-        "Plan a pilot",
         "Module assessment",
         "Summary"
       ]
@@ -55638,37 +55557,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.craft-compelling-product-pitch-using-ai",
-      "title": "Craft a compelling product pitch using AI",
-      "url": "https://learn.microsoft.com/training/modules/craft-compelling-product-pitch-using-ai/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft 365"
-      ],
-      "products": [
-        "Microsoft 365",
-        "microsoft-365-copilot"
-      ],
-      "subjects": [
-        "Employee engagement",
-        "Marketing and sales"
-      ],
-      "units": [
-        "Introduction",
-        "Understand product-led growth strategies",
-        "Develop a product idea and create an elevator pitch",
-        "Conduct market analysis and create user personas",
-        "Visualize product-led growth in action",
-        "Showcase growth with data-driven metrics",
-        "Build trust with testimonials and social proof",
-        "Create your ask and prepare for tough questions",
-        "Create a product visual to showcase its value",
-        "Create a presentation outline for your product pitch",
-        "Turn your pitch into a visual story",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.create-and-organize-objects-in-unity-catalog",
       "title": "Create and organize objects in Unity Catalog",
       "url": "https://learn.microsoft.com/training/modules/create-and-organize-objects-in-unity-catalog/?WT.mc_id=studentamb_165290",
@@ -57698,36 +57586,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.deploy-new-devices",
-      "title": "Deploy new devices",
-      "url": "https://learn.microsoft.com/training/modules/deploy-new-devices/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Use Autopilot for modern deployment",
-        "Examine requirements for Windows Autopilot",
-        "Prepare device IDs for Autopilot",
-        "Implement device registration and out-of-the-box customization",
-        "Examine Autopilot scenarios",
-        "Troubleshoot Windows Autopilot",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.deploy-paas-solutions-with-azure-sql",
       "title": "Deploy PaaS solutions with Azure SQL",
       "url": "https://learn.microsoft.com/training/modules/deploy-paas-solutions-with-azure-sql/?WT.mc_id=studentamb_165290",
@@ -57807,45 +57665,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.deploy-update-applications",
-      "title": "Deploy and update applications",
-      "url": "https://learn.microsoft.com/training/modules/deploy-update-applications/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Cloud computing",
-        "Data management",
-        "Device management",
-        "Networking"
-      ],
-      "units": [
-        "Introduction",
-        "Deploy applications with Intune",
-        "Add apps to Intune",
-        "Manage Win32 apps with Intune",
-        "Deploy applications with Configuration Manager",
-        "Deploying applications with Group Policy",
-        "Assign and publish software",
-        "Explore Microsoft Store for Business",
-        "Examine Microsoft Store for Business prerequisites",
-        "Implement Microsoft Store for Business",
-        "Obtain apps based on your licensing model",
-        "Use Microsoft Store for Business",
-        "Assign apps to company employees",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.deploy-use-azure-container-registry",
       "title": "Deploy and use Azure Container Registry",
       "url": "https://learn.microsoft.com/training/modules/deploy-use-azure-container-registry/?WT.mc_id=studentamb_165290",
@@ -57865,62 +57684,6 @@
         "Try-This exercise - Push an image to the registry",
         "Try-This exercise - View container images",
         "Try-This exercise - Run an image from the registry",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.deploy-use-endpoint-configuration-manager",
-      "title": "Deploy using Endpoint Configuration Manager",
-      "url": "https://learn.microsoft.com/training/modules/deploy-use-endpoint-configuration-manager/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Explore client deployment using Configuration Manager",
-        "Examine deployment components of Configuration Manager",
-        "Manage client deployment using Configuration Manager",
-        "Plan in-place upgrades using Configuration Manager",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.deploy-use-microsoft-deployment-toolkit",
-      "title": "Deploy using the Microsoft Deployment Toolkit",
-      "url": "https://learn.microsoft.com/training/modules/deploy-use-microsoft-deployment-toolkit/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Deployment Toolkit",
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Evaluate traditional deployment methods",
-        "Set up the Microsoft Deployment Toolkit for client deployment",
-        "Manage and deploy images using the Microsoft Deployment Toolkit",
         "Module assessment",
         "Summary"
       ]
@@ -62443,34 +62206,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.employ-file-recovery-windows-client",
-      "title": "Employ file recovery in Windows client",
-      "url": "https://learn.microsoft.com/training/modules/employ-file-recovery-windows-client/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Cloud security",
-        "Device management",
-        "Storage"
-      ],
-      "units": [
-        "Introduction",
-        "Explain the importance of file recovery",
-        "Explain file history",
-        "Protect files using Azure Backup",
-        "Restore files using Backup and Restore Windows 7",
-        "Restore files using the Previous Versions tab",
-        "Compare file recovery options",
-        "Troubleshoot-file-recovery-options",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.empower-workforce-copilot-challenge",
       "title": "Empower your workforce with Microsoft 365 Copilot: Challenge Use Case",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-copilot-challenge/?WT.mc_id=studentamb_165290",
@@ -62947,36 +62682,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.enable-organizational-access",
-      "title": "Enable organizational access",
-      "url": "https://learn.microsoft.com/training/modules/enable-organizational-access/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "Identity and access",
-        "Process and workflow"
-      ],
-      "units": [
-        "Introduction",
-        "Enable access to organization resources",
-        "Explore VPN types and configuration",
-        "Explore Always On VPN",
-        "Deploy Always On VPN",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.enable-realtime-protection-copilot-studio-agents",
       "title": "Enable real-time protection for Copilot Studio agents",
       "url": "https://learn.microsoft.com/training/modules/enable-protection-copilot-studio-agents/?WT.mc_id=studentamb_165290",
@@ -63211,70 +62916,6 @@
         "Use GitHub Copilot to generate, refine, and troubleshoot SQL queries",
         "Exercise - Enhance PostgreSQL development with GitHub Copilot",
         "Knowledge check",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.enroll-devices-use-microsoft-intune",
-      "title": "Enroll devices using Microsoft Intune",
-      "url": "https://learn.microsoft.com/training/modules/enroll-devices-use-microsoft-intune/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "IT management and monitoring",
-        "Security"
-      ],
-      "units": [
-        "Introduction",
-        "Manage mobile devices with Intune",
-        "Enable mobile device management",
-        "Explain considerations for device enrollment",
-        "Manage corporate enrollment policy",
-        "Enroll Windows devices in Intune",
-        "Enroll Android devices in Intune",
-        "Enroll iOS devices in Intune",
-        "Explore device enrollment manager",
-        "Monitor device enrollment",
-        "Manage devices remotely",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.enroll-devices-using-microsoft-endpoint-configuration-manager",
-      "title": "Enroll devices using Microsoft Endpoint Configuration Manager",
-      "url": "https://learn.microsoft.com/training/modules/enroll-devices-using-microsoft-endpoint-configuration-manager/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Cloud computing",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Deploy the Microsoft Endpoint Configuration Manager client",
-        "Monitor the Microsoft Endpoint Configuration Manager client",
-        "Manage the Microsoft Endpoint Configuration Manager client",
-        "Module assessment",
         "Summary"
       ]
     },
@@ -63817,39 +63458,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.examine-enterprise-desktop",
-      "title": "Examine the enterprise desktop",
-      "url": "https://learn.microsoft.com/training/modules/examine-enterprise-desktop/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Deployment Toolkit",
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "IT management and monitoring"
-      ],
-      "units": [
-        "Introduction",
-        "Examine benefits of modern management",
-        "Examine the enterprise desktop lifecycle model",
-        "Examine planning and purchasing",
-        "Examine desktop deployment",
-        "Plan an application deployment",
-        "Plan for operations and support",
-        "Plan for upgrades and retirement",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.examine-exchange-online-protection",
       "title": "Examine email protection in Microsoft 365",
       "url": "https://learn.microsoft.com/training/modules/examine-exchange-online-protection/?WT.mc_id=studentamb_165290",
@@ -64292,32 +63900,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.explore-advanced-protection-methods",
-      "title": "Explore advanced protection methods",
-      "url": "https://learn.microsoft.com/training/modules/explore-advanced-protection-methods/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Cloud security",
-        "Device management",
-        "Threat protection"
-      ],
-      "units": [
-        "Introduction",
-        "Explore the Security Compliance Toolkit",
-        "Use AppLocker to control applications",
-        "Use AppLocker to control Universal Windows Platform apps",
-        "Secure data in the enterprise",
-        "Understand Microsoft Defender for Endpoint",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.explore-ai-governance-ai-ready-infrastructure",
       "title": "Explore AI governance for AI ready infrastructure",
       "url": "https://learn.microsoft.com/training/modules/explore-ai-governance-ai-ready-infrastructure/?WT.mc_id=studentamb_165290",
@@ -64361,30 +63943,6 @@
         "Exercise - Visualize data with Matplotlib",
         "Examine real world data",
         "Exercise - Examine real world data",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.explore-application-troubleshooting",
-      "title": "Explore application troubleshooting",
-      "url": "https://learn.microsoft.com/training/modules/explore-application-troubleshooting/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [],
-      "units": [
-        "Introduction",
-        "Troubleshoot Windows Installer issues",
-        "Resolve desktop app deployment issues",
-        "Identify issues related to desktop app operations",
-        "Resolve issues related to desktop app operations",
-        "Resolve issues related to Universal Windows Platform apps",
-        "Troubleshoot common Microsoft 365 app issues",
-        "Explore the Application Compatibility Toolkit",
         "Module assessment",
         "Summary"
       ]
@@ -64447,36 +64005,6 @@
         "Describe password protection and management capabilities",
         "Module assessment",
         "Summary and resources"
-      ]
-    },
-    {
-      "uid": "learn.wwl.explore-azure-active-directory",
-      "title": "Explore Microsoft Entra ID",
-      "url": "https://learn.microsoft.com/training/modules/explore-azure-active-directory/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "Identity and access"
-      ],
-      "units": [
-        "Introduction",
-        "Examine Microsoft Entra ID",
-        "Compare Microsoft Entra ID and Active Directory Domain Services",
-        "Examine Microsoft Entra ID as a directory service for cloud apps",
-        "Compare Microsoft Entra ID P1 and P2 plans",
-        "Examine Microsoft Entra Domain Services",
-        "Module assessment",
-        "Summary"
       ]
     },
     {
@@ -64984,29 +64512,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.explore-connection-security-rules",
-      "title": "Explore connection security rules",
-      "url": "https://learn.microsoft.com/training/modules/explore-connection-security-rules/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Security"
-      ],
-      "units": [
-        "Introduction",
-        "Explain IPSec",
-        "Explain connection security rules",
-        "Explore authentication options",
-        "Monitor security policies and active connections",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.explore-copilot-stack",
       "title": "Understand Microsoft 365 Agents SDK",
       "url": "https://learn.microsoft.com/training/modules/explore-copilot-stack/?WT.mc_id=studentamb_165290",
@@ -65120,37 +64625,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.explore-desktop-analytics",
-      "title": "Explore Desktop Analytics",
-      "url": "https://learn.microsoft.com/training/modules/explore-desktop-analytics/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Data analytics",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Desktop Analytics",
-        "Configure Desktop Analytics",
-        "Explore compatibility assessment",
-        "Monitor health status",
-        "Monitor updates",
-        "Prepare deployment plans",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.explore-developer-tools-for-workspace-interaction",
       "title": "Explore developer tools for workspace interaction",
       "url": "https://learn.microsoft.com/training/modules/explore-developer-tools-for-workspace-interaction/?WT.mc_id=studentamb_165290",
@@ -65169,29 +64643,6 @@
         "Explore the Python SDK",
         "Explore the CLI",
         "Exercise - Explore the developer tools",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.explore-device-encryption-features",
-      "title": "Explore device encryption features",
-      "url": "https://learn.microsoft.com/training/modules/explore-device-encryption-features/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Examine BitLocker",
-        "Evaluate BitLocker and TPMs",
-        "Recover a BitLocker-encrypted drive",
-        "Assess Encrypting Files System",
         "Module assessment",
         "Summary"
       ]
@@ -65270,35 +64721,6 @@
         "Describe using Copilot in Dynamics 365 Sales",
         "Module assessment",
         "Summary and resources"
-      ]
-    },
-    {
-      "uid": "learn.wwl.explore-endpoint-analytics",
-      "title": "Explore Endpoint Analytics",
-      "url": "https://learn.microsoft.com/training/modules/explore-endpoint-analytics/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Data analytics",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Enroll devices in Endpoint Analytics",
-        "Monitor startup performance and restarts",
-        "Monitor application reliability",
-        "Use Endpoint Analytics to monitor transition to modern management",
-        "Module assessment",
-        "Summary"
       ]
     },
     {
@@ -66106,30 +65528,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.explore-physical-hardware-troubleshooting",
-      "title": "Explore physical hardware troubleshooting",
-      "url": "https://learn.microsoft.com/training/modules/explore-physical-hardware-troubleshooting/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Identify hardware-related problems",
-        "Troubleshoot USB devices",
-        "Troubleshoot wireless devices",
-        "Gather hardware information",
-        "Use best practices to troubleshoot hardware issues",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.explore-plan-compliance-microsoft-365",
       "title": "Explore compliance in Microsoft 365",
       "url": "https://learn.microsoft.com/training/modules/explore-plan-compliance-microsoft-365/?WT.mc_id=studentamb_165290",
@@ -66187,7 +65585,7 @@
     },
     {
       "uid": "learn.wwl.explore-prebuilt-microsoft-365-copilot-agents",
-      "title": "Explore prebuilt Microsoft 365 Copilot agents",
+      "title": "Explore prebuilt Microsoft Copilot agents",
       "url": "https://learn.microsoft.com/training/modules/explore-prebuilt-microsoft-365-copilot-agents/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -66558,35 +65956,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.explore-support-diagnostic-tools",
-      "title": "Explore support and diagnostic tools",
-      "url": "https://learn.microsoft.com/training/modules/explore-support-diagnostic-tools/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Examine Task Manager",
-        "Examine Resource Monitor",
-        "Examine Event Viewer",
-        "Explain Performance Monitor",
-        "Explain Reliability Monitor",
-        "Compare Process Explorer and Process Monitor",
-        "Examine the Diagnostics and Recovery Toolset",
-        "Use the Steps Recorder",
-        "Explore the Microsoft Management Console",
-        "Explore additional tools",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.explore-teams",
       "title": "Explore Microsoft Teams",
       "url": "https://learn.microsoft.com/training/modules/explore-teams/?WT.mc_id=studentamb_165290",
@@ -66649,30 +66018,6 @@
         "Explore advanced threat hunting in Microsoft Defender XDR",
         "Explore threat analytics in Microsoft 365",
         "Identify threat issues using Microsoft Defender reports",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.explore-troubleshooting-methodologies",
-      "title": "Explore troubleshooting methodologies",
-      "url": "https://learn.microsoft.com/training/modules/explore-troubleshooting-methodologies/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Customer relationship management",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Examine the Enterprise Desktop Support Technician role",
-        "Examine the Desktop Support Environment",
-        "Explore key stages and terminology of a troubleshooting methodology",
-        "Examine the process of problem reporting",
         "Module assessment",
         "Summary"
       ]
@@ -66744,29 +66089,6 @@
         "Identify Windows 365 use cases",
         "Explore the Windows 365 endpoint experience",
         "Knowledge check",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.explore-windows-architecture",
-      "title": "Explore Windows architecture",
-      "url": "https://learn.microsoft.com/training/modules/explore-windows-architecture/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Architecture"
-      ],
-      "units": [
-        "Introduction",
-        "Compare Windows client devices",
-        "Examine the Windows client architecture",
-        "Examine the Windows registry",
-        "Use the Windows registry editor",
-        "Module assessment",
         "Summary"
       ]
     },
@@ -67611,35 +66933,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.generate-inventory-compliance-reports",
-      "title": "Generate inventory and compliance reports",
-      "url": "https://learn.microsoft.com/training/modules/generate-inventory-compliance-reports/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Compliance",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Report enrolled devices inventory in Intune",
-        "Monitor and report device compliance",
-        "Build custom Intune inventory reports",
-        "Access Intune using Microsoft Graph API",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.generate-video-with-foundry",
       "title": "Generate videos with Microsoft Foundry",
       "url": "https://learn.microsoft.com/training/modules/generate-video-with-foundry/?WT.mc_id=studentamb_165290",
@@ -68263,7 +67556,9 @@
       ],
       "products": [
         "Microsoft 365",
-        "Office 365"
+        "Office 365",
+        "microsoft-365-copilot",
+        "microsoft-365-copilot-chat"
       ],
       "subjects": [
         "Artificial intelligence",
@@ -69151,6 +68446,33 @@
         "Add Copilot connectors as knowledge sources",
         "Configure Power Platform connectors as real-time knowledge sources",
         "Connect an agent to Azure AI Search",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.ground-extend-agents-knowledge-tools-skills",
+      "title": "Ground and extend agents with knowledge, tools, and skills",
+      "url": "https://learn.microsoft.com/training/modules/ground-extend-agents-knowledge-tools-skills/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Distinguish building blocks and choose a tool type",
+        "Configure and validate knowledge",
+        "Configure connector tools and inputs",
+        "Connect to an existing MCP server",
+        "Apply supplied skills",
+        "Test tools and refine agent behavior",
+        "Exercise - Create an equipment recommendation agent",
         "Module assessment",
         "Summary"
       ]
@@ -71270,67 +70592,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.implement-device-compliance-policies",
-      "title": "Implement device compliance policies",
-      "url": "https://learn.microsoft.com/training/modules/implement-device-compliance-policies/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Compliance",
-        "Device management",
-        "Identity and access"
-      ],
-      "units": [
-        "Introduction",
-        "Protect access to resources using Intune",
-        "Explore device compliance policy",
-        "Deploy a device compliance policy",
-        "Explore conditional access",
-        "Create conditional access policies",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.implement-device-data-protection",
-      "title": "Implement device data protection",
-      "url": "https://learn.microsoft.com/training/modules/implement-device-data-protection/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "Information protection and governance"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Windows Information Protection",
-        "Plan Windows Information Protection",
-        "Implement and use Windows Information Protection",
-        "Explore Encrypting File System in Windows client",
-        "Explore BitLocker",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.implement-device-encryption",
       "title": "Implement device encryption and security policies using Microsoft Intune",
       "url": "https://learn.microsoft.com/training/modules/implement-device-encryption/?WT.mc_id=studentamb_165290",
@@ -71355,34 +70616,6 @@
         "Monitor BitLocker compliance and encryption status in Microsoft Intune",
         "Audit device encryption with Microsoft Defender",
         "Knowledge check",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.implement-device-profiles",
-      "title": "Implement device profiles",
-      "url": "https://learn.microsoft.com/training/modules/implement-device-profiles/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "Identity and access"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Intune device profiles",
-        "Create device profiles",
-        "Create a custom device profile",
-        "Module assessment",
         "Summary"
       ]
     },
@@ -71491,35 +70724,6 @@
         "Implement DNS with Azure IaaS virtual machines",
         "Implement split-horizon DNS in Azure",
         "Troubleshoot DNS",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.implement-dynamic-deployment-methods",
-      "title": "Implement dynamic deployment methods",
-      "url": "https://learn.microsoft.com/training/modules/implement-dynamic-deployment-methods/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Cloud computing",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Examine Subscription Activation",
-        "Deploy using provisioning packages",
-        "Use Windows Configuration Designer",
-        "Use Microsoft Entra join with automatic MDM enrollment",
         "Module assessment",
         "Summary"
       ]
@@ -72562,36 +71766,6 @@
         "Configure vulnerability scanning with Defender Vulnerability Management",
         "Configure Defender for Endpoint integration, agentless scanning, and File Integrity Monitoring",
         "Knowledge check",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.implement-mobile-application-management",
-      "title": "Implement mobile application management",
-      "url": "https://learn.microsoft.com/training/modules/implement-mobile-application-management/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Cloud computing",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Examine mobile application management",
-        "Examine considerations for mobile application management",
-        "Prepare line-of-business apps for app protection policies",
-        "Implement mobile application management policies in Intune",
-        "Manage mobile application management policies in Intune",
-        "Module assessment",
         "Summary"
       ]
     },
@@ -77200,35 +76374,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.manage-device-authentication",
-      "title": "Manage device authentication",
-      "url": "https://learn.microsoft.com/training/modules/manage-device-authentication/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "Identity and access"
-      ],
-      "units": [
-        "Introduction",
-        "Describe Microsoft Entra join",
-        "Examine Microsoft Entra join prerequisites limitations and benefits",
-        "Join devices to Microsoft Entra ID",
-        "Manage devices joined to Microsoft Entra ID",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.manage-enterprise-application-catalog",
       "title": "Manage Enterprise App Catalog applications",
       "url": "https://learn.microsoft.com/training/modules/manage-enterprise-application-catalog/?WT.mc_id=studentamb_165290",
@@ -77385,36 +76530,6 @@
         "Connect hybrid machines to Azure from the Azure portal",
         "Use Azure Arc to manage Windows Server instances",
         "Restrict access with RBAC",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.manage-identities-azure-active-directory",
-      "title": "Manage identities in Microsoft Entra ID",
-      "url": "https://learn.microsoft.com/training/modules/manage-identities-azure-active-directory/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "Identity and access"
-      ],
-      "units": [
-        "Introduction",
-        "Examine RBAC and user roles in Microsoft Entra ID",
-        "Create and manage users in Microsoft Entra ID",
-        "Create and manage groups in Microsoft Entra ID",
-        "Use Windows PowerShell cmdlets to manage Microsoft Entra objects",
-        "Synchronize objects from AD DS to Microsoft Entra ID",
         "Module assessment",
         "Summary"
       ]
@@ -77658,69 +76773,6 @@
         "Explore Copilot Chat with enterprise data protection",
         "Manage Copilot Chat in Microsoft Edge",
         "Manage Copilot Chat on mobile devices",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.manage-microsoft-defender-endpoint",
-      "title": "Manage Microsoft Defender for Endpoint",
-      "url": "https://learn.microsoft.com/training/modules/manage-microsoft-defender-endpoint/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Business applications",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Microsoft Defender for Endpoint",
-        "Examine key capabilities of Microsoft Defender for Endpoint",
-        "Explore Windows Defender Application Control and Device Guard",
-        "Explore Microsoft Defender Application Guard",
-        "Examine Windows Defender Exploit Guard",
-        "Explore Windows Defender System Guard",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.manage-microsoft-defender-windows-client",
-      "title": "Manage Microsoft Defender in Windows client",
-      "url": "https://learn.microsoft.com/training/modules/manage-microsoft-defender-windows-client/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Cloud security",
-        "Device management",
-        "Networking",
-        "Threat protection"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Windows Security Center",
-        "Explore Windows Defender Credential Guard",
-        "Manage Microsoft Defender Antivirus",
-        "Manage Windows Defender Firewall",
-        "Explore Windows Defender Firewall with Advanced Security",
         "Module assessment",
         "Summary"
       ]
@@ -78680,38 +77732,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.manage-user-profiles",
-      "title": "Manage user profiles",
-      "url": "https://learn.microsoft.com/training/modules/manage-user-profiles/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "Identity and access",
-        "Storage"
-      ],
-      "units": [
-        "Introduction",
-        "Examine user profile",
-        "Explore user profile types",
-        "Examine options for minimizing user profile size",
-        "Deploy and configure folder redirection",
-        "Sync user state with Enterprise State Roaming",
-        "Configure Enterprise State Roaming in Azure",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-powershell",
       "title": "Manage users, groups, and licenses in Microsoft Entra ID by using Windows PowerShell",
       "url": "https://learn.microsoft.com/training/modules/manage-users-groups-licenses-azure-active-directory-use-windows-powershell/?WT.mc_id=studentamb_165290",
@@ -78800,35 +77820,6 @@
         "Backup and restore a vCore-based Azure Cosmos DB for MongoDB cluster",
         "Monitor a vCore-based Azure Cosmos DB for MongoDB cluster",
         "Exercise: Manage a vCore-based Azure Cosmos DB form MongoDB cluster",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.manage-virtual-desktops",
-      "title": "Manage Cloud PCs and Virtual Desktops",
-      "url": "https://learn.microsoft.com/training/modules/manage-virtual-desktops/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "Virtual machine"
-      ],
-      "units": [
-        "Introduction",
-        "Examine Windows Virtual Desktop",
-        "Explore Windows 365",
-        "Configure Windows 365",
-        "Manage Windows 365",
         "Module assessment",
         "Summary"
       ]
@@ -79696,33 +78687,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.monitor-device-profiles",
-      "title": "Monitor device profiles",
-      "url": "https://learn.microsoft.com/training/modules/monitor-device-profiles/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Monitor device profiles in Intune",
-        "Manage device sync in Intune",
-        "Manage devices in Intune using scripts",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.monitor-fabric-data-warehouse",
       "title": "Monitor a Microsoft Fabric data warehouse",
       "url": "https://learn.microsoft.com/training/modules/monitor-fabric-data-warehouse/?WT.mc_id=studentamb_165290",
@@ -80041,31 +79005,6 @@
         "Troubleshoot Teams Rooms devices",
         "Module assessment",
         "Summary and resources"
-      ]
-    },
-    {
-      "uid": "learn.wwl.monitor-troubleshoot-windows-client-performance",
-      "title": "Monitor and troubleshoot Windows client performance",
-      "url": "https://learn.microsoft.com/training/modules/monitor-troubleshoot-windows-client-performance/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Cloud computing",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Examine key performance components in Windows client",
-        "Establish a performance baseline",
-        "Monitor Windows client performance",
-        "Optimize disk and memory performance",
-        "Configure Windows client search indexes",
-        "Module assessment",
-        "Summary"
       ]
     },
     {
@@ -81825,39 +80764,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.plan-transition-modern-management",
-      "title": "Plan a transition to modern management",
-      "url": "https://learn.microsoft.com/training/modules/plan-transition-modern-management/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Change management",
-        "Cloud computing",
-        "Device management",
-        "Migration"
-      ],
-      "units": [
-        "Introduction",
-        "Explore using co-management to transition to modern management",
-        "Examine prerequisites for co-management",
-        "Evaluate modern management considerations",
-        "Evaluate upgrades and migrations in modern transitioning",
-        "Migrate data when modern transitioning",
-        "Migrate workloads when modern transitioning",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.plan-with-devops",
       "title": "Plan with DevOps",
       "url": "https://learn.microsoft.com/training/modules/plan-with-devops/?WT.mc_id=studentamb_165290",
@@ -82399,37 +81305,6 @@
         "Examine compliance, AI data discovery, and eDiscovery",
         "Explore oversharing and data access governance in SharePoint",
         "Explore data protection in Microsoft 365 Copilot",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.protect-identities-azure-ad",
-      "title": "Protect identities in Microsoft Entra ID",
-      "url": "https://learn.microsoft.com/training/modules/protect-identities-azure-active-directory/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Device management",
-        "Identity and access"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Windows Hello for Business",
-        "Deploy Windows Hello",
-        "Manage Windows Hello for Business",
-        "Explore Microsoft Entra ID Protection",
-        "Manage self-service password reset in Microsoft Entra ID",
-        "Implement Microsoft Entra multifactor authentication",
         "Module assessment",
         "Summary"
       ]
@@ -86356,30 +85231,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.troubleshoot-device-driver-failures",
-      "title": "Troubleshoot device driver failures",
-      "url": "https://learn.microsoft.com/training/modules/troubleshoot-device-driver-failures/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Examine tools for managing and troubleshooting device drivers",
-        "Use driver roll back",
-        "Manage signed drivers",
-        "Stage device drivers",
-        "Restrict device installation",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.troubleshoot-federation-issues",
       "title": "Troubleshoot Federation Issues",
       "url": "https://learn.microsoft.com/training/modules/troubleshoot-federation-issues/?WT.mc_id=studentamb_165290",
@@ -86570,53 +85421,6 @@
         "Exercise: Resolve issue connecting virtual machine scale set",
         "Module assessment",
         "Summary and resources"
-      ]
-    },
-    {
-      "uid": "learn.wwl.troubleshoot-operating-system-service-issues",
-      "title": "Troubleshoot operating system service issues",
-      "url": "https://learn.microsoft.com/training/modules/troubleshoot-operating-system-service-issues/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [],
-      "units": [
-        "Introduction",
-        "Examine operating system services",
-        "Identify failed operating system services",
-        "Disable operating system services",
-        "Troubleshoot locked accounts in Windows clients",
-        "Identify sign-in errors",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.troubleshoot-physical-failures-windows-clients",
-      "title": "Troubleshoot physical failures on Windows clients",
-      "url": "https://learn.microsoft.com/training/modules/troubleshoot-physical-failures-windows-clients/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Device management",
-        "Threat protection"
-      ],
-      "units": [
-        "Introduction",
-        "Examine factors when replacing devices",
-        "Explore common vulnerabilities on hardware devices",
-        "Examine guidelines for replacing hardware",
-        "Diagnose memory problems",
-        "Diagnose and troubleshoot disk problems",
-        "Module assessment",
-        "Summary"
       ]
     },
     {
@@ -86826,35 +85630,6 @@
         "Troubleshoot VM connectivity",
         "Troubleshoot VM performance",
         "Troubleshoot VM storage",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.troubleshoot-windows-startup",
-      "title": "Troubleshoot Windows startup",
-      "url": "https://learn.microsoft.com/training/modules/troubleshoot-windows-startup/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Windows"
-      ],
-      "products": [
-        "Windows"
-      ],
-      "subjects": [
-        "Architecture",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Explore the Windows client startup architecture",
-        "Compare device recovery procedures",
-        "Use the Windows Recovery Environment",
-        "Explore advanced startup options",
-        "Use the Reset This PC feature",
-        "Examine the System Restore feature",
-        "Explore additional recovery tools in Windows Recovery Environment",
-        "Explore the Windows client Boot Configuration Data store",
-        "Configure the BCD settings",
         "Module assessment",
         "Summary"
       ]
@@ -87498,65 +86273,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.update-clients-use-windows-update-business",
-      "title": "Update clients using Windows Update for Business",
-      "url": "https://learn.microsoft.com/training/modules/update-clients-use-windows-update-business/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Business applications",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Windows Update for Business",
-        "Configure Windows Update for Business",
-        "Enable Delivery Optimization for Windows updates",
-        "Evaluate scenarios for using Windows Update for Business",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.update-windows-client",
-      "title": "Update Windows client",
-      "url": "https://learn.microsoft.com/training/modules/update-windows-client/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "intune"
-      ],
-      "products": [
-        "Microsoft Endpoint Manager",
-        "Windows",
-        "configuration-manager",
-        "intune"
-      ],
-      "subjects": [
-        "Business applications",
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Compare Windows client servicing options and channels",
-        "Examine methods for applying updates to Windows client",
-        "Examine Windows Update settings in Windows client",
-        "Use Group Policy settings to configure Windows Update",
-        "Explore Windows Insider for Business",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines",
       "title": "Upgrade and migrate Windows Server IaaS virtual machines",
       "url": "https://learn.microsoft.com/training/modules/upgrade-migrate-windows-server-iaas-virtual-machines/?WT.mc_id=studentamb_165290",
@@ -88125,7 +86841,9 @@
       ],
       "products": [
         "Microsoft 365",
-        "Office 365"
+        "Office 365",
+        "microsoft-365-copilot",
+        "microsoft-365-copilot-chat"
       ],
       "subjects": [
         "Architecture",
@@ -88937,29 +87655,6 @@
         "Use self-contained or correlated subqueries",
         "Exercise - Use subqueries",
         "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "llearn-m365.employ-copilot-assistant",
-      "title": "Employ Copilot Chat as your AI assistant",
-      "url": "https://learn.microsoft.com/training/modules/employ-copilot-assistant/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft 365"
-      ],
-      "products": [
-        "microsoft-365-copilot"
-      ],
-      "subjects": [
-        "generative-ai"
-      ],
-      "units": [
-        "Introduction",
-        "What is Copilot Chat?",
-        "Write effective prompts to optimize Copilot responses",
-        "Manage prompts and conversations in Copilot Chat",
-        "What are AI agents?",
-        "Knowledge check",
         "Summary"
       ]
     }
