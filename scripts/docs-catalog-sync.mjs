@@ -35,10 +35,17 @@
  * A quarantined URL is excluded from the catalog and skipped in future
  * checks until its record is removed from docs-catalog-invalid.json. Only a
  * repo clone/parse failure fails the run (still opens a CI issue).
+ *
+ * Newly-quarantined URLs (i.e. broken *this* run, not the pre-existing
+ * backlog) also get a Markdown report written to QUARANTINE_REPORT_FILE
+ * (data/docs-catalog-invalid.json's newest additions, with an AI-agent
+ * research/fix prompt) plus a `new_quarantine_count` line appended to
+ * $GITHUB_OUTPUT when running in CI, so the workflow can open an
+ * investigate-and-fix issue without re-reporting the same backlog weekly.
  */
 
 import { execSync } from "node:child_process";
-import { readFileSync, writeFileSync, rmSync, mkdtempSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, appendFileSync, rmSync, mkdtempSync, readdirSync } from "node:fs";
 import { join, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
@@ -48,6 +55,12 @@ const root = join(__dirname, "..");
 const OUTPUT_FILE = join(root, "data", "docs-catalog.json");
 const INVALID_OUTPUT_FILE = join(root, "data", "docs-catalog-invalid.json"); // quarantined (confirmed-broken) URLs, excluded from OUTPUT_FILE
 const MIN_ENTRIES = 20000; // failsafe: abort write if far below expected scale (systemic breakage, not one repo's hiccup)
+
+// Written only when this run quarantines at least one NEW URL (see bottom of file) -- lets
+// the CI workflow open a "please investigate" issue without re-reporting the existing
+// backlog every week. Override via env var for local testing; defaults to an OS temp path
+// so nothing generated ends up inside the repo working tree.
+const QUARANTINE_REPORT_FILE = process.env.QUARANTINE_REPORT_FILE || join(tmpdir(), "docs-catalog-quarantine-report.md");
 
 // Link-check tuning: see header note above for why this can't check everything every run.
 const LINK_CHECK_SAMPLE_SIZE = 1500; // random sample of unchanged existing entries per run
@@ -319,6 +332,70 @@ function loadInvalidUrls() {
   }
 }
 
+// Builds the Markdown body for the "please investigate" issue opened when this run
+// quarantines at least one NEW url (see bottom of file). Written to QUARANTINE_REPORT_FILE
+// and, in CI, handed to peter-evans/create-issue-from-file by the calling workflow.
+function buildQuarantineReport(records) {
+  const runUrl =
+    process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY && process.env.GITHUB_RUN_ID
+      ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`
+      : null;
+
+  const escapeCell = (s) => String(s ?? "-").replace(/\|/g, "\\|");
+  const table = records
+    .map((e) => `| ${escapeCell(e.status)} | ${escapeCell(e.url)} | ${escapeCell(e.title)} | ${escapeCell(e.product)} |`)
+    .join("\n");
+
+  return [
+    `# Docs Catalog: ${records.length} newly quarantined URL(s)`,
+    "",
+    `This week's \`docs-catalog-sync.mjs\` run found ${records.length} URL(s) that used to`,
+    "resolve but now fail their link check. They've been moved out of `data/docs-catalog.json`",
+    "into `data/docs-catalog-invalid.json` (the quarantine list) so they don't show up in",
+    "normal content-research queries, but *why* they broke hasn't been diagnosed yet.",
+    runUrl ? `\nRun: ${runUrl}\n` : "",
+    "## Newly quarantined URL(s)",
+    "",
+    "| Status | URL | Title | Product |",
+    "|---|---|---|---|",
+    table,
+    "",
+    "## Prompt for an AI coding agent",
+    "",
+    "You're working in the `mscerts/learnsync` repo. For each URL listed above:",
+    "",
+    "1. **Diagnose.** Fetch the live page anyway (or search for its likely current",
+    "   title/topic) and read its own frontmatter `original_content_git_url` \u2014 it names the",
+    "   exact real source repo and file path, which is far more reliable than guessing a",
+    "   renamed slug (see AGENTS.md's \"Verification technique for a 404'd cached URL\").",
+    "2. **Classify** each URL as one of:",
+    "   - **Moved within an already-tracked repo** \u2014 the source file still exists, just",
+    "     under a different `sourceFolder`/`baseUrlPath` mapping than `REPOS` in",
+    "     `scripts/docs-catalog-sync.mjs` currently assumes. Fix the mapping.",
+    "   - **Moved to a new, not-yet-tracked repo** \u2014 Microsoft has split content out of a",
+    "     monolithic repo before (e.g. `azure-compute-docs`/`azure-management-docs` splitting",
+    "     out of `azure-docs` \u2014 see AGENTS.md). Add a new `REPOS` entry, following the",
+    "     \"Adding a repo\" guidance in this script's header comment \u2014 always verify",
+    "     `baseUrlPath` against a live page fetch, never trust",
+    "     `.openpublishing.publish.config.json` literally.",
+    "   - **Genuinely retired/removed** \u2014 the page or product no longer exists anywhere. No",
+    "     script change needed; leave its record in `data/docs-catalog-invalid.json` as-is.",
+    "3. **Fix the script** for any URL in the first two categories, then run",
+    "   `node scripts/docs-catalog-sync.mjs` locally to confirm the fixed URL(s) resolve and",
+    "   are no longer quarantined.",
+    "4. **Clean up.** Remove the resolved URL's record(s) from",
+    "   `data/docs-catalog-invalid.json` (the next scheduled sync won't re-add a URL that now",
+    "   passes its link check).",
+    "5. **Open a pull request** with the script fix and quarantine cleanup, referencing this",
+    "   issue.",
+    "",
+    "If you're not confident about the right classification or fix for a given URL, don't",
+    "guess \u2014 leave a comment on this issue asking for clarification instead of committing a",
+    "speculative change.",
+    "",
+  ].join("\n");
+}
+
 function cloneRepo(repo, targetDir) {
   console.log(`  Cloning ${repo.name} (blobless, sparse, shallow)...`);
   const t0 = Date.now();
@@ -469,6 +546,7 @@ const linkResults = await checkUrls(toCheck.map((e) => e.url));
 const broken = linkResults.filter((r) => !r.ok);
 
 let finalEntries = cleanEntries;
+const newlyQuarantined = []; // this run's additions only, not the pre-existing backlog -- drives the CI issue below
 if (broken.length) {
   const byUrl = new Map(toCheck.map((e) => [e.url, e]));
   const brokenUrls = new Set(broken.map((b) => b.url));
@@ -479,7 +557,9 @@ if (broken.length) {
   for (const b of broken) {
     const entry = byUrl.get(b.url);
     console.error(`  [${b.status ?? "ERR"}] ${b.url} -- "${entry.title}"`);
-    invalidMap.set(b.url, { ...entry, status: b.status ?? b.error ?? "ERR", firstDetected: today, lastChecked: today });
+    const record = { ...entry, status: b.status ?? b.error ?? "ERR", firstDetected: today, lastChecked: today };
+    invalidMap.set(b.url, record);
+    newlyQuarantined.push(record);
   }
 } else {
   console.log("Link check: all checked URLs resolved OK.");
@@ -492,5 +572,17 @@ console.log(`\nWrote ${OUTPUT_FILE} (${sizeMB} MB, ${finalEntries.length} entrie
 const invalidSorted = [...invalidMap.values()].sort((a, b) => a.url.localeCompare(b.url));
 writeFileSync(INVALID_OUTPUT_FILE, JSON.stringify(invalidSorted, null, 2));
 console.log(`Wrote ${INVALID_OUTPUT_FILE} (${invalidSorted.length} quarantined URL(s) total)`);
+
+if (newlyQuarantined.length) {
+  writeFileSync(QUARANTINE_REPORT_FILE, buildQuarantineReport(newlyQuarantined));
+  console.log(
+    `Wrote ${QUARANTINE_REPORT_FILE} (${newlyQuarantined.length} newly quarantined URL(s), for CI issue creation)`
+  );
+  // Consumed by the calling workflow to gate "open an investigate-and-fix issue" on this
+  // run having found something NEW, instead of re-reporting the existing backlog weekly.
+  if (process.env.GITHUB_OUTPUT) {
+    appendFileSync(process.env.GITHUB_OUTPUT, `new_quarantine_count=${newlyQuarantined.length}\n`);
+  }
+}
 
 if (failedRepos.length) process.exit(1); // only a repo clone/parse failure fails the run now; quarantining is a normal, self-managed outcome

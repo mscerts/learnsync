@@ -66,7 +66,11 @@ automated link-checking/quarantine model, and more.
 
 A URL that fails its periodic link check is moved out of `docs-catalog.json`
 into `docs-catalog-invalid.json` (same shape, plus `status`, `firstDetected`,
-`lastChecked`) instead of failing the sync run.
+`lastChecked`) instead of failing the sync run. When a run quarantines a URL
+that wasn't already in that backlog, the workflow automatically opens a
+GitHub issue with a table of the newly broken URL(s) and a ready-to-use
+research/fix prompt for an AI coding agent (see AGENTS.md's
+"Investigate-and-fix issue for newly quarantined URLs").
 
 ## Running locally
 
@@ -95,7 +99,10 @@ Each script also runs weekly via GitHub Actions (see the Schedule row above,
 or trigger either workflow manually from the **Actions** tab). A successful
 run commits the refreshed JSON directly to the default branch (no PR, to keep
 this low-friction for a pure data refresh); a failed run opens an issue
-instead so it doesn't go unnoticed.
+instead so it doesn't go unnoticed. The Docs Catalog Monitor additionally
+opens an issue whenever it quarantines a newly-broken URL (not on every run —
+only when something changes), so the growing quarantine list doesn't just
+silently accumulate unnoticed between periodic triage passes.
 
 ## Contributing
 

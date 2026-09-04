@@ -24,6 +24,9 @@ jobs:
           node-version: 22
 
       - name: Sync Microsoft docs catalog cache
+        id: sync
+        env:
+          QUARANTINE_REPORT_FILE: /tmp/docs-catalog-quarantine-report.md
         run: node scripts/docs-catalog-sync.mjs
 
       - name: Commit updated catalog cache
@@ -36,6 +39,14 @@ jobs:
             git commit -m "Update Microsoft docs catalog cache"
             git push
           fi
+
+      - name: Create issue for newly quarantined URLs
+        if: ${{ !cancelled() && steps.sync.outputs.new_quarantine_count != '' }}
+        uses: peter-evans/create-issue-from-file@v6
+        with:
+          title: "Docs Catalog: ${{ steps.sync.outputs.new_quarantine_count }} newly quarantined URL(s) — investigate & fix"
+          content-filepath: /tmp/docs-catalog-quarantine-report.md
+          labels: data
 
       - name: Write failure report
         if: failure()
