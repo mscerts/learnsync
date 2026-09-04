@@ -220,6 +220,76 @@
     "lastChecked": "2026-09-01"
   },
   {
+    "title": "Microsoft Defender Threat Intelligence (Defender TI) Analyst insights",
+    "url": "https://learn.microsoft.com/defender/threat-intelligence/threat-intelligence/analyst-insights",
+    "product": null,
+    "subproduct": null,
+    "description": "Learn about the Microsoft Defender Threat Intelligence (Defender TI)'s Analyst insights feature.",
+    "status": 404,
+    "firstDetected": "2026-09-04",
+    "lastChecked": "2026-09-04"
+  },
+  {
+    "title": "Microsoft Defender Threat Intelligence (Defender TI) data sets",
+    "url": "https://learn.microsoft.com/defender/threat-intelligence/threat-intelligence/data-sets",
+    "product": null,
+    "subproduct": null,
+    "description": "Learn about data sets in Microsoft Defender Threat Intelligence (Defender TI).",
+    "status": 404,
+    "firstDetected": "2026-09-04",
+    "lastChecked": "2026-09-04"
+  },
+  {
+    "title": "Tutorial: Gathering threat intelligence and infrastructure chaining using Microsoft Defender Threat Intelligence (Defender TI)",
+    "url": "https://learn.microsoft.com/defender/threat-intelligence/threat-intelligence/gathering-threat-intelligence-and-infrastructure-chaining",
+    "product": null,
+    "subproduct": null,
+    "description": "Learn how to gather threat intelligence and infrastructure chain together indicators of compromise in Microsoft Defender Threat Intelligence (Defender TI). This article covers a historical investigation of the MyPillow Magecart breach.",
+    "status": 404,
+    "firstDetected": "2026-09-04",
+    "lastChecked": "2026-09-04"
+  },
+  {
+    "title": "Tutorial: Gathering vulnerability intelligence using Microsoft Defender Threat Intelligence (Defender TI)",
+    "url": "https://learn.microsoft.com/defender/threat-intelligence/threat-intelligence/gathering-vulnerability-intelligence",
+    "product": null,
+    "subproduct": null,
+    "description": "Practice gathering vulnerability intelligence using Microsoft Defender Threat Intelligence (Defender TI).",
+    "status": 404,
+    "firstDetected": "2026-09-04",
+    "lastChecked": "2026-09-04"
+  },
+  {
+    "title": "Microsoft Defender Threat Intelligence (Defender TI) reputation scoring",
+    "url": "https://learn.microsoft.com/defender/threat-intelligence/threat-intelligence/reputation-scoring",
+    "product": null,
+    "subproduct": null,
+    "description": "Learn about the Microsoft Defender Threat Intelligence (Defender TI)'s reputation scoring feature.",
+    "status": 404,
+    "firstDetected": "2026-09-04",
+    "lastChecked": "2026-09-04"
+  },
+  {
+    "title": "Microsoft Security Copilot in Microsoft Defender Threat Intelligence",
+    "url": "https://learn.microsoft.com/defender/threat-intelligence/threat-intelligence/security-copilot-and-defender-threat-intelligence",
+    "product": "defender-xdr",
+    "subproduct": null,
+    "description": "Learn about Microsoft Defender Threat Intelligence capabilities embedded in Security Copilot.",
+    "status": 404,
+    "firstDetected": "2026-09-04",
+    "lastChecked": "2026-09-04"
+  },
+  {
+    "title": "Use Microsoft Security Copilot for threat intelligence",
+    "url": "https://learn.microsoft.com/defender/threat-intelligence/threat-intelligence/using-copilot-threat-intelligence-defender-xdr",
+    "product": "defender-xdr",
+    "subproduct": null,
+    "description": "Learn about Security Copilot embedded experience in Microsoft Defender for Microsoft Defender Threat Intelligence.",
+    "status": 404,
+    "firstDetected": "2026-09-04",
+    "lastChecked": "2026-09-04"
+  },
+  {
     "title": "Default dimensions",
     "url": "https://learn.microsoft.com/dynamics365/finance/general-ledger/configure-default-dimensions",
     "product": null,
