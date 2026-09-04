@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "package.json"
+      - ".github/workflows/**"
+      - ".github/ISSUE_TEMPLATE/**"
+  pull_request:
+    paths:
+      - "scripts/**"
+      - "package.json"
+      - ".github/workflows/**"
+      - ".github/ISSUE_TEMPLATE/**"
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Check script syntax
+        run: |
+          node --check scripts/learn-catalog-sync.mjs
+          node --check scripts/docs-catalog-sync.mjs
+
+      - name: Validate package.json
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('package.json', 'utf-8')); console.log('package.json: OK')"
+
+      - name: Validate workflow and issue-template YAML
+        run: |
+          pip install --quiet pyyaml
+          python3 - <<'PY'
+          import glob
+          import sys
+
+          import yaml
+
+          ok = True
+          files = sorted(glob.glob(".github/workflows/*.yml") + glob.glob(".github/ISSUE_TEMPLATE/*.yml"))
+          for f in files:
+              try:
+                  with open(f, encoding="utf-8") as fh:
+                      yaml.safe_load(fh)
+                  print(f"{f}: OK")
+              except Exception as e:
+                  print(f"{f}: ERROR {e}")
+                  ok = False
+          sys.exit(0 if ok else 1)
+          PY

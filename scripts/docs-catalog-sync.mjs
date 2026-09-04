@@ -42,6 +42,9 @@
  * research/fix prompt) plus a `new_quarantine_count` line appended to
  * $GITHUB_OUTPUT when running in CI, so the workflow can open an
  * investigate-and-fix issue without re-reporting the same backlog weekly.
+ * If a single run quarantines more than QUARANTINE_SURGE_THRESHOLD URLs at
+ * once, the report calls that out as a likely rate-limit/network false
+ * positive rather than presenting it as N genuinely dead pages.
  */
 
 import { execSync } from "node:child_process";
@@ -61,6 +64,13 @@ const MIN_ENTRIES = 20000; // failsafe: abort write if far below expected scale 
 // backlog every week. Override via env var for local testing; defaults to an OS temp path
 // so nothing generated ends up inside the repo working tree.
 const QUARANTINE_REPORT_FILE = process.env.QUARANTINE_REPORT_FILE || join(tmpdir(), "docs-catalog-quarantine-report.md");
+
+// If a single run quarantines more than this many URLs at once, it's far more likely a
+// transient rate-limit/network hiccup against learn.microsoft.com during the link check than
+// that many pages genuinely breaking simultaneously (based on the single-digit-per-week norm
+// observed so far) -- buildQuarantineReport() calls this out explicitly instead of silently
+// asking an agent to individually investigate a possibly-false-positive batch.
+const QUARANTINE_SURGE_THRESHOLD = 20;
 
 // Link-check tuning: see header note above for why this can't check everything every run.
 const LINK_CHECK_SAMPLE_SIZE = 1500; // random sample of unchanged existing entries per run
@@ -335,7 +345,7 @@ function loadInvalidUrls() {
 // Builds the Markdown body for the "please investigate" issue opened when this run
 // quarantines at least one NEW url (see bottom of file). Written to QUARANTINE_REPORT_FILE
 // and, in CI, handed to peter-evans/create-issue-from-file by the calling workflow.
-function buildQuarantineReport(records) {
+function buildQuarantineReport(records, { context = "run" } = {}) {
   const runUrl =
     process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY && process.env.GITHUB_RUN_ID
       ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`
@@ -346,15 +356,45 @@ function buildQuarantineReport(records) {
     .map((e) => `| ${escapeCell(e.status)} | ${escapeCell(e.url)} | ${escapeCell(e.title)} | ${escapeCell(e.product)} |`)
     .join("\n");
 
+  const isSurge = context === "run" && records.length > QUARANTINE_SURGE_THRESHOLD;
+  const surgeCallout = isSurge
+    ? [
+        `> \u26a0\ufe0f **Surge warning**: ${records.length} URLs were quarantined in a single run, well`,
+        "> above the usual single-digit trickle. This is more likely a transient rate-limit/network",
+        "> hiccup against learn.microsoft.com during the link check than that many pages genuinely",
+        "> breaking simultaneously. **Spot-check 3-5 of them by fetching the URL directly before",
+        "> working through the full list below** -- if they resolve fine now, this was very likely a",
+        "> false positive; consider re-running the sync instead of investigating each one",
+        "> individually.",
+        "",
+      ]
+    : [];
+
+  const introLines =
+    context === "run"
+      ? [
+          `This week's \`docs-catalog-sync.mjs\` run found ${records.length} URL(s) that used to`,
+          "resolve but now fail their link check. They've been moved out of `data/docs-catalog.json`",
+          "into `data/docs-catalog-invalid.json` (the quarantine list) so they don't show up in",
+          "normal content-research queries, but *why* they broke hasn't been diagnosed yet.",
+        ]
+      : [
+          `This is a one-time snapshot of the ${records.length} URL(s) already sitting in`,
+          "`data/docs-catalog-invalid.json` when the issue-per-newly-broken-URL automation below",
+          "was introduced. They predate that automation, so no issue was ever opened for them",
+          "individually -- this issue exists purely so the pre-existing backlog doesn't stay",
+          "untracked forever.",
+        ];
+
+  const heading = context === "run" ? "newly quarantined" : "pre-existing quarantined";
+
   return [
-    `# Docs Catalog: ${records.length} newly quarantined URL(s)`,
+    `# Docs Catalog: ${records.length} ${heading} URL(s)`,
     "",
-    `This week's \`docs-catalog-sync.mjs\` run found ${records.length} URL(s) that used to`,
-    "resolve but now fail their link check. They've been moved out of `data/docs-catalog.json`",
-    "into `data/docs-catalog-invalid.json` (the quarantine list) so they don't show up in",
-    "normal content-research queries, but *why* they broke hasn't been diagnosed yet.",
+    ...surgeCallout,
+    ...introLines,
     runUrl ? `\nRun: ${runUrl}\n` : "",
-    "## Newly quarantined URL(s)",
+    `## ${context === "run" ? "Newly quarantined" : "Quarantined"} URL(s)`,
     "",
     "| Status | URL | Title | Product |",
     "|---|---|---|---|",
@@ -395,7 +435,6 @@ function buildQuarantineReport(records) {
     "",
   ].join("\n");
 }
-
 function cloneRepo(repo, targetDir) {
   console.log(`  Cloning ${repo.name} (blobless, sparse, shallow)...`);
   const t0 = Date.now();

@@ -40,9 +40,12 @@ learnsync/
 │   ├── learn-catalog.json       # Cache of MS Learn training modules
 │   ├── docs-catalog.json        # Cache of MS Learn docs pages
 │   └── docs-catalog-invalid.json# Quarantined (confirmed-broken) docs URLs
-└── .github/workflows/
-    ├── learn-catalog-monitor.yml
-    └── docs-catalog-monitor.yml
+└── .github/
+    ├── dependabot.yml           # Weekly version bumps for pinned GitHub Actions
+    └── workflows/
+        ├── ci.yml                       # Syntax/YAML validation on push/PR (not a scheduled sync)
+        ├── learn-catalog-monitor.yml
+        └── docs-catalog-monitor.yml
 ```
 
 This is a deliberately flat layout (no `src/`) — the nested `src/data_files/`
@@ -218,10 +221,20 @@ Every quarantined URL still needs a human/agent to eventually figure out *why* i
 - **Report generation:** when `newlyQuarantined.length > 0`, the script calls `buildQuarantineReport()` and writes the result to `QUARANTINE_REPORT_FILE` (env var, defaults to `<os tmpdir>/docs-catalog-quarantine-report.md` — the workflow pins it to `/tmp/docs-catalog-quarantine-report.md` explicitly so the later step can read a known path). It also appends `new_quarantine_count=<N>` to `$GITHUB_OUTPUT` when running in CI (no-op locally, since that env var is only set by the Actions runner).
 - **Report content:** a Markdown table of the newly broken URL(s) (status, url, title, product) plus a **"Prompt for an AI coding agent"** section that walks through the same diagnostic playbook as the "Verification technique for a 404'd cached URL" note above (fetch the live page/search for it, read `original_content_git_url` in its frontmatter), classifies the fix into one of three buckets (moved within a tracked repo → fix the `baseUrlPath`/target mapping; moved to an untracked repo → add a new `REPOS` entry, same "Adding a repo" verification discipline as always; genuinely retired → no script change, leave it quarantined), and explicitly tells the agent **not to guess** — ask for clarification instead of committing a speculative fix — if the right classification isn't clear.
 - **Workflow wiring:** `.github/workflows/docs-catalog-monitor.yml`'s sync step has `id: sync`; a new `Create issue for newly quarantined URLs` step runs `if: ${{ !cancelled() && steps.sync.outputs.new_quarantine_count != '' }}` and opens the issue via `peter-evans/create-issue-from-file@v6` with `labels: data`, same label as the human-facing "Data Quality / Coverage Issue" template, since both cover the same `docs-catalog-invalid.json` quarantine surface. The condition checks for an *empty* string, not `'0'`, because the script only ever appends to `$GITHUB_OUTPUT` when there's something new to report — when nothing new is quarantined, the output key doesn't exist at all, so `steps.sync.outputs.new_quarantine_count` resolves to `''`, not `'0'`.
-- **Verified manually** (2026-09-04): ran `buildQuarantineReport()` standalone against synthetic records (including a title with quotes and a URL/status with a literal `|`, to confirm table-cell escaping holds) and confirmed the rendered Markdown table and prompt section are well-formed.
+- **Surge guard:** `buildQuarantineReport()` takes an optional `{ context }` option (`"run"` default, or `"backlog"` for the one-time pre-existing-backlog issue — see "One-time backlog issue" below; both share the same table/prompt formatting). When `context === "run"` and the count exceeds `QUARANTINE_SURGE_THRESHOLD` (20, based on the single-digit-per-week norm observed so far), the report prepends a callout explaining that a sudden double-digit-plus batch is far more likely a transient rate-limit/network hiccup against `learn.microsoft.com` during the link check than that many pages genuinely breaking at once, and tells the agent to spot-check a handful before working through the whole list.
+- **Verified manually** (2026-09-04): ran `buildQuarantineReport()` standalone against synthetic records (including a title with quotes and a URL/status with a literal `|`, to confirm table-cell escaping holds, plus a 25-record batch to confirm the surge callout and the `backlog` context both render correctly) and confirmed the rendered Markdown table and prompt section are well-formed.
+
+### One-time backlog issue
+The 39 URLs that were already quarantined when this repo was created (inherited from mscerts/hub, predating the automation above) never got an individual issue — the "new this run only" trigger scope deliberately doesn't retroactively fire for them. A single one-off issue was opened by hand for that snapshot instead, using `buildQuarantineReport(records, { context: "backlog" })` against the full `data/docs-catalog-invalid.json` at the time, so it doesn't just sit untracked forever. This isn't repeated automatically — it was a one-time bootstrap, not a recurring job.
 
 ### Running locally
 ```bash
 node scripts/docs-catalog-sync.mjs
 ```
 
+---
+
+## Continuous Integration & Maintenance
+
+- **`.github/workflows/ci.yml`** — runs on every push/PR that touches `scripts/**`, `package.json`, or `.github/workflows|ISSUE_TEMPLATE/**` (path-filtered so the bot's weekly data-only commits to `data/*.json` don't trigger it). Checks both scripts with `node --check`, validates `package.json` parses, and validates every workflow/issue-template YAML file with PyYAML. This exists so a script/workflow regression (like the commit-then-never-push bug fixed shortly after this repo was created — see git history) gets caught on the PR that introduces it, instead of silently surfacing days later on the next scheduled run.
+- **`.github/dependabot.yml`** — weekly `github-actions` ecosystem updates, so the pinned `actions/checkout`, `actions/setup-node`, and `peter-evans/create-issue-from-file` versions don't silently go stale.

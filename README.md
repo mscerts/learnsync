@@ -7,6 +7,7 @@ without re-scraping Learn on every question.
 
 [![Learn Catalog Monitor](https://github.com/mscerts/learnsync/actions/workflows/learn-catalog-monitor.yml/badge.svg)](https://github.com/mscerts/learnsync/actions/workflows/learn-catalog-monitor.yml)
 [![Docs Catalog Monitor](https://github.com/mscerts/learnsync/actions/workflows/docs-catalog-monitor.yml/badge.svg)](https://github.com/mscerts/learnsync/actions/workflows/docs-catalog-monitor.yml)
+[![CI](https://github.com/mscerts/learnsync/actions/workflows/ci.yml/badge.svg)](https://github.com/mscerts/learnsync/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Origin
@@ -102,7 +103,19 @@ this low-friction for a pure data refresh); a failed run opens an issue
 instead so it doesn't go unnoticed. The Docs Catalog Monitor additionally
 opens an issue whenever it quarantines a newly-broken URL (not on every run —
 only when something changes), so the growing quarantine list doesn't just
-silently accumulate unnoticed between periodic triage passes.
+silently accumulate unnoticed between periodic triage passes. If a single run
+quarantines an unusually large batch at once (more than a handful), the issue
+calls that out as a likely rate-limit/network false positive rather than
+presenting it as that many pages having genuinely broken simultaneously.
+
+## Repo maintenance
+
+A separate [`ci.yml`](.github/workflows/ci.yml) workflow validates script
+syntax and workflow/issue-template YAML on every push and pull request that
+touches them (not on the weekly data-only commits), so a regression is caught
+immediately instead of surfacing days later on the next scheduled sync.
+[`dependabot.yml`](.github/dependabot.yml) keeps the pinned GitHub Action
+versions current automatically.
 
 ## Contributing
 
