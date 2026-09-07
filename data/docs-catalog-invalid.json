@@ -7,7 +7,7 @@
     "description": "Personal Content Mode (PCM) is a functionality that restricts the file content that Copilot can reason over.",
     "status": 404,
     "firstDetected": "2026-09-01",
-    "lastChecked": "2026-09-01"
+    "lastChecked": "2026-09-07"
   },
   {
     "title": "Manage active content in Office documents for IT admins",
@@ -17,6 +17,6 @@
     "description": "Admins can learn how to create policies to block active content in Office documents",
     "status": 404,
     "firstDetected": "2026-09-01",
-    "lastChecked": "2026-09-01"
+    "lastChecked": "2026-09-07"
   }
 ]
