@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-09-04T14:45:41.884Z",
+  "lastChecked": "2026-09-07T13:22:09.549Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -13672,7 +13672,7 @@
         "Identify differences between local and global variables",
         "Pass into a procedure",
         "Identify differences between a parameter by value and by reference",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18162,7 +18162,7 @@
         "Handle errors by using try methods",
         "Collect errors",
         "Progress windows and the message, error, and confirm methods",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18332,7 +18332,7 @@
         "Work with the standard data model",
         "Use typical data triggers",
         "Adopt the standard data flow",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19573,9 +19573,9 @@
       "units": [
         "Introduction",
         "Create and use translation files",
-        "Use Azure Translator Text to automate translation",
+        "Use Azure Translator to automate translation",
         "Exercise - Multilanguage development",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -31942,7 +31942,7 @@
     },
     {
       "uid": "learn.azure.azure-java-app-enable-authentication-authorization",
-      "title": "Sign in users with Microsoft Entra ID in a Java web app",
+      "title": "Understand sign-in with Microsoft Entra ID in Java web apps",
       "url": "https://learn.microsoft.com/training/modules/azure-java-app-enable-authentication-authorization/?WT.mc_id=studentamb_165290",
       "categories": [
         "Azure",
@@ -31958,11 +31958,11 @@
       "units": [
         "Introduction",
         "Authentication and authorization in Microsoft Entra ID",
-        "Exercise - Register an application with Microsoft Entra ID",
-        "Sign in users with Microsoft Authentication Library",
-        "Exercise - Sign in users with MSAL",
-        "Authorize access to APIs with Microsoft Authentication Library",
-        "Exercise - Authorize access to Microsoft Graph API with MSAL",
+        "Understand a web app registration",
+        "Understand sign-in with MSAL4J",
+        "Trace a Java web app sign-in flow",
+        "Understand API authorization and token caching",
+        "Interpret a Microsoft Graph request",
         "Module assessment",
         "Summary"
       ]
