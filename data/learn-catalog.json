@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-09-07T13:22:09.549Z",
+  "lastChecked": "2026-09-14T13:45:48.022Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -53,7 +53,7 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3311,
+  "totalModules": 3308,
   "modules": [
     {
       "uid": "$learn.become-learn-contributor",
@@ -1797,11 +1797,11 @@
         "Knowledge management"
       ],
       "units": [
-        "Knowledge article and case resolution overview",
-        "Enable and configure tables for Knowledge Search",
-        "Configure article search and display options",
-        "Search for knowledge articles",
-        "Article analytics",
+        "Introduction",
+        "Find knowledge during customer interactions",
+        "Evaluate suggested and filtered knowledge",
+        "Use and share knowledge to resolve cases",
+        "Improve knowledge through ratings and feedback",
         "Module assessment",
         "Summary"
       ]
@@ -2202,12 +2202,12 @@
       ],
       "units": [
         "Introduction",
-        "Describe the knowledge management process and configure settings",
+        "Configure knowledge management foundations",
         "Author and publish knowledge articles",
         "Configure the Customer Knowledge Management Agent",
         "Manage knowledge article versions, categories, and translations",
-        "Configure internal knowledge search",
-        "Integrate and search external knowledge sources",
+        "Govern knowledge access and quality",
+        "Plan knowledge sources and delivery channels",
         "Module assessment",
         "Summary"
       ]
@@ -2227,12 +2227,13 @@
         "Business applications"
       ],
       "units": [
+        "Introduction",
         "Overview of entitlements",
         "Create entitlement records",
-        "Work with entitlement channels",
-        "Other considerations",
-        "Exercise - Manage support contracts by using entitlements",
-        "Define entitlement templates",
+        "Configure entitlement channels",
+        "Control entitlement eligibility and lifecycle",
+        "Exercise - Configure and apply an entitlement",
+        "Create entitlement templates",
         "Module assessment",
         "Summary"
       ]
@@ -2749,28 +2750,6 @@
       ]
     },
     {
-      "uid": "learn-bizapps.dragon-copilot-create-customizable-templates",
-      "title": "Dragon Copilot (physicians) create customizable templates",
-      "url": "https://learn.microsoft.com/training/modules/dragon-copilot-create-customizable-templates/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Industry Solutions"
-      ],
-      "products": [
-        "Microsoft Cloud for Healthcare"
-      ],
-      "subjects": [
-        "Business applications"
-      ],
-      "units": [
-        "Introduction",
-        "Customizable templates best practices",
-        "Exercise - Create customizable templates in the Dragon Copilot library",
-        "Exercise - Create an HPI template in the Dragon Copilot library",
-        "Check your knowledge",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn-bizapps.dragon-copilot-create-prompts",
       "title": "Dragon Copilot (physicians) create prompts",
       "url": "https://learn.microsoft.com/training/modules/dragon-copilot-create-prompts/?WT.mc_id=studentamb_165290",
@@ -2788,6 +2767,28 @@
         "Prompts best practices",
         "Exercise - How to create prompts in the Dragon Copilot library",
         "Exercise - How to create question prompts in the Dragon Copilot library",
+        "Check your knowledge",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.dragon-copilot-create-templates",
+      "title": "Dragon Copilot (physicians) create templates",
+      "url": "https://learn.microsoft.com/training/modules/dragon-copilot-create-templates/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "Templates best practices",
+        "Exercise - Create templates in the Dragon Copilot library",
+        "Exercise - Create an HPI template in the Dragon Copilot library",
         "Check your knowledge",
         "Summary"
       ]
@@ -10075,7 +10076,7 @@
         "Introduction",
         "Add reports to Tell Me",
         "Substitute a report",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10400,7 +10401,7 @@
     },
     {
       "uid": "learn-dynamics.agents-app-profile-manager",
-      "title": "Create custom experiences for service representatives with agent experience profiles in Customer Service",
+      "title": "Configure experience profiles in Dynamics 365 Customer Service",
       "url": "https://learn.microsoft.com/training/modules/agents-app-profile-manager/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365"
@@ -10414,11 +10415,11 @@
       ],
       "units": [
         "Introduction",
-        "Create and use agent experience profiles to manage apps",
+        "Create and assign experience profiles",
         "Application tab templates",
         "Session templates",
-        "Manage notification settings and templates",
-        "Use templates in workstreams",
+        "Configure productivity pane access",
+        "Validate the representative experience",
         "Check your knowledge",
         "Summary"
       ]
@@ -10472,7 +10473,7 @@
         "System functions",
         "Variable functions",
         "Exercise - Use built-in functions",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10494,7 +10495,7 @@
         "Work with conditional statements",
         "Use repetitive statements",
         "Exercise - Use conditional and compound statements",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11173,7 +11174,7 @@
         "Create a wizard page",
         "Integrate with Assisted Setup in your extension",
         "Exercise - Build a wizard page with Assisted Setup",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11812,7 +11813,7 @@
         "Introduction",
         "Design the request page",
         "Design the request options page",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -12115,7 +12116,7 @@
     },
     {
       "uid": "learn-dynamics.configure-copilot",
-      "title": "Configure Copilot in Dynamics 365 Customer Service",
+      "title": "Configure AI for case management in Dynamics 365 Customer Service",
       "url": "https://learn.microsoft.com/training/modules/configure-copilot/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365",
@@ -12133,7 +12134,7 @@
         "Introduction",
         "Enable Copilot experiences and access",
         "Configure case and custom record summaries",
-        "Configure Copilot conversation summaries",
+        "Configure Case Management Agent",
         "Configure Copilot in custom apps and forms",
         "Configure the Customer Support agent",
         "Module assessment",
@@ -12773,7 +12774,7 @@
         "Work with business data in Excel",
         "Analyze, group, and pivot data on list pages using data analysis mode",
         "Exercise - Create a Business Central web service to use as a Power BI data source",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15265,7 +15266,7 @@
         "Create Role Center lists",
         "Implement headline parts",
         "Exercise - Create a Role Center page with an Activity page",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15842,7 +15843,7 @@
         "Event-based architecture",
         "Publish and subscribe to events",
         "Exercise - Events and triggers",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -17841,7 +17842,7 @@
     },
     {
       "uid": "learn-dynamics.get-started-unified-routing",
-      "title": "Get started with unified routing for Dynamics 365 Customer Service",
+      "title": "Set up unified routing in Dynamics 365 Customer Service",
       "url": "https://learn.microsoft.com/training/modules/get-started-unified-routing/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365"
@@ -19841,7 +19842,7 @@
         "Control database locking behavior",
         "Exercise - Use data manipulation statements",
         "Exercise - Custom functions",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21720,7 +21721,7 @@
         "Introduction",
         "Anatomy of a report extension",
         "Examples of report extensions",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21877,7 +21878,7 @@
     },
     {
       "uid": "learn-dynamics.route-distribute-work",
-      "title": "Route work efficiently with unified routing in Dynamics 365 Customer Service",
+      "title": "Configure work classification and assignment in Dynamics 365 Customer Service",
       "url": "https://learn.microsoft.com/training/modules/route-distribute-work/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365"
@@ -22140,12 +22141,12 @@
       ],
       "units": [
         "Introduction",
-        "Knowledge article search filters",
-        "Search for article content from external search providers",
-        "Manage integrated search providers",
-        "AI suggestions for article keywords and descriptions",
-        "Knowledge article analytics",
-        "Check your knowledge",
+        "Configure internal search behavior and filters",
+        "Choose an external knowledge search approach",
+        "Configure and monitor search providers",
+        "Configure knowledge availability in service experiences",
+        "Improve knowledge discovery with analytics",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22247,7 +22248,7 @@
         "Work with notifications",
         "Create and send notifications",
         "Exercise - Create a notification",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22291,12 +22292,12 @@
       ],
       "units": [
         "Introduction",
-        "Work with business closures and working hours",
-        "Create and define service-level agreements",
+        "Configure customer service and holiday schedules",
+        "Configure SLA KPIs and service-level agreements",
         "Define SLA items",
-        "Define custom KPIs",
-        "Manage SLAs",
-        "Check your knowledge",
+        "Configure custom SLA KPIs",
+        "Apply and manage SLAs",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24549,7 +24550,7 @@
         "Introduction",
         "Report design process",
         "Use a snippet to create a report object",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25289,13 +25290,13 @@
       ],
       "units": [
         "Introduction",
-        "Define skill-rating models",
-        "Skill types",
-        "Assign skills to representative",
+        "Define proficiency scales",
+        "Create skill types and skills",
+        "Assign skills to representatives",
         "Define a default skill-matching algorithm for a workstream",
         "Attach skills to work items",
-        "Build intelligent skill-finder models",
-        "Check your knowledge",
+        "Build intelligent skill finder models",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26091,7 +26092,7 @@
         "Introduction",
         "Create and access a codeunit",
         "Use keywords for codeunit self-reference",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26394,7 +26395,7 @@
         "Access queries from AL",
         "Advanced query concepts",
         "Optimize performance in Query objects",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26508,7 +26509,7 @@
         "Create and use calculated fields",
         "Create a table in Visual Studio Code with snippets",
         "Exercise - Create a table",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26562,7 +26563,7 @@
         "Create an XMLport by using snippets in Visual Studio Code",
         "Use XMLports in AL code",
         "Exercise - Create an XMLport to export XML data",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -29786,31 +29787,8 @@
         "Introduction",
         "Analyze data workflows in Excel  with Copilot",
         "Generate insights using the Analyst Agent",
-        "Knowledge check",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn-m365.wwl.define-copilot-role-business-workflow",
-      "title": "Define the role you want Microsoft 365 Copilot to play in your business workflow",
-      "url": "https://learn.microsoft.com/training/modules/define-copilot-role-business-workflow/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft 365",
-        "Office 365"
-      ],
-      "products": [
-        "Microsoft 365",
-        "Office 365"
-      ],
-      "subjects": [
-        "Artificial intelligence",
-        "Business applications"
-      ],
-      "units": [
-        "Introduction",
-        "Scenario 1: Prepare weekly status report",
-        "Scenario 2: Build a client proposal deck",
-        "Scenario 3: Create an executive summary",
+        "Exercise - Analyze and visualize data with Microsoft Copilot",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -29834,7 +29812,8 @@
         "Introduction",
         "Draft your content using Microsoft Copilot",
         "Research and gather information using the Researcher Agent",
-        "Knowledge check",
+        "Exercise - Draft and refine business content with Microsoft Copilot",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -29858,7 +29837,8 @@
         "Introduction",
         "Streamline meeting preparation and follow ups with Copilot",
         "Enhance collaboration with Copilot Chat, Pages, and Notebooks",
-        "Knowledge check",
+        "Exercise - Manage meetings and collaboration with Microsoft Copilot",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -36746,6 +36726,33 @@
         "Control outbound traffic",
         "Collect firewall evidence",
         "Troubleshoot active policy",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.devrel.understand-storage-spaces-direct",
+      "title": "Understand Storage Spaces Direct",
+      "url": "https://learn.microsoft.com/training/modules/understand-storage-spaces-direct/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows Server"
+      ],
+      "products": [
+        "Windows Server"
+      ],
+      "subjects": [
+        "Infrastructure",
+        "Storage"
+      ],
+      "units": [
+        "Introduction",
+        "Design Storage Spaces Direct networking",
+        "Storage Spaces Direct resiliency",
+        "Deploy Storage Spaces Direct",
+        "Provision resilient volumes",
+        "Monitor cluster health",
+        "Cluster maintenance",
+        "Troubleshoot Storage Spaces Direct",
         "Module assessment",
         "Summary"
       ]
@@ -45574,29 +45581,6 @@
       ]
     },
     {
-      "uid": "learn.mec.set-up-teams-assignments-lti-app-learning-management-systems",
-      "title": "Set up the Teams Assignments LTI® app in learning management systems",
-      "url": "https://learn.microsoft.com/training/modules/set-up-teams-assignments-lti-app-learning-management-systems/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft Teams"
-      ],
-      "products": [
-        "Microsoft Teams"
-      ],
-      "subjects": [],
-      "units": [
-        "Introduction",
-        "Benefits of Teams Assignments integration for Teams and LMS",
-        "Team creation options",
-        "Register the LTI® app",
-        "Canvas LTI® integration setup",
-        "PowerSchool Schoology LTI® integration setup",
-        "Next steps",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.mec.support-building-mathematics-skills-math-progress",
       "title": "Support building mathematics skills with Math Progress",
       "url": "https://learn.microsoft.com/training/modules/support-building-mathematics-skills-math-progress/?WT.mc_id=studentamb_165290",
@@ -50044,31 +50028,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.administer-fabric",
-      "title": "Administer a Microsoft Fabric environment",
-      "url": "https://learn.microsoft.com/training/modules/administer-fabric/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "fabric"
-      ],
-      "products": [
-        "fabric"
-      ],
-      "subjects": [
-        "Data analytics",
-        "Data engineering",
-        "Data management"
-      ],
-      "units": [
-        "Introduction",
-        "Understand the Fabric admin model",
-        "Configure tenant settings and delegate admin rights",
-        "Manage user access and licensing",
-        "Monitor and govern your Fabric environment",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.administer-manage-windows-server-iaas-vm-remotely",
       "title": "Administer and manage Windows Server IaaS Virtual Machine remotely",
       "url": "https://learn.microsoft.com/training/modules/administer-manage-windows-server-iaas-virtual-machine-remotely/?WT.mc_id=studentamb_165290",
@@ -50756,6 +50715,31 @@
         "Paginate query results",
         "Exercise: Paginate cross-product query results with the Azure Cosmos DB for NoSQL SDK",
         "Knowledge check",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.automate-agent-tasks-workflows-copilot-studio",
+      "title": "Automate agent tasks with workflows in Microsoft Copilot Studio",
+      "url": "https://learn.microsoft.com/training/modules/automate-agent-tasks-workflows-copilot-studio/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Plan workflow automation",
+        "Build and publish a standalone workflow",
+        "Add and configure a workflow tool for an agent",
+        "Test and troubleshoot workflow behavior",
+        "Exercise - Create a task notification agent and workflow",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -66356,7 +66340,7 @@
         "Introduction",
         "Classify and protect data in Microsoft Fabric",
         "Endorse and document data assets",
-        "Govern data for AI consumption",
+        "Monitor and manage governance",
         "Exercise - Govern analytics data in Microsoft Fabric",
         "Knowledge check",
         "Summary"
@@ -71084,30 +71068,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.implement-http-operations-asp-razor",
-      "title": "Implement HTTP operations in ASP.NET Core Blazor Web apps",
-      "url": "https://learn.microsoft.com/training/modules/implement-http-operations-asp-razor/?WT.mc_id=studentamb_165290",
-      "categories": [
-        ".NET",
-        "ASP.NET Core"
-      ],
-      "products": [
-        ".NET",
-        "ASP.NET Core"
-      ],
-      "subjects": [
-        "backend-development"
-      ],
-      "units": [
-        "Introduction",
-        "Explore HTTP clients in .NET Core ",
-        "Perform HTTP operations in Blazor Web apps",
-        "Exercise - Implement HTTP operations in ASP.NET Core Blazor Web apps",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas",
       "title": "Implement hybrid backup and recovery with Windows Server IaaS",
       "url": "https://learn.microsoft.com/training/modules/implement-hybrid-backup-recovery-windows-server-iaas/?WT.mc_id=studentamb_165290",
@@ -73573,32 +73533,6 @@
         "Onboarding Microsoft Sentinel to Microsoft Defender XDR",
         "Explore Microsoft Sentinel features in Microsoft Defender XDR",
         "Exercise - Connect Microsoft Sentinel to Microsoft Defender XDR",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.interact-api",
-      "title": "Interact with an ASP.NET Core minimal API",
-      "url": "https://learn.microsoft.com/training/modules/interact-api/?WT.mc_id=studentamb_165290",
-      "categories": [
-        ".NET",
-        "ASP.NET",
-        "ASP.NET Core"
-      ],
-      "products": [
-        ".NET",
-        "ASP.NET",
-        "ASP.NET Core"
-      ],
-      "subjects": [
-        "backend-development"
-      ],
-      "units": [
-        "Introduction",
-        "Explore ASP.NET Core APIs",
-        "Document an API by using Swashbuckle",
-        "Exercise - Interact with an API",
         "Module assessment",
         "Summary"
       ]
@@ -79676,6 +79610,30 @@
       ]
     },
     {
+      "uid": "learn.wwl.orchestrate-durable-functions",
+      "title": "Orchestrate durable AI workflows with Azure Durable Functions",
+      "url": "https://learn.microsoft.com/training/modules/orchestrate-durable-functions/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Functions"
+      ],
+      "subjects": [
+        "serverless-computing"
+      ],
+      "units": [
+        "Introduction",
+        "Separate orchestration logic from activity work",
+        "Process independent work with fan-out/fan-in",
+        "Coordinate human approval with external events",
+        "Design reliable workflow steps",
+        "Exercise - Build a durable document-processing workflow",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.orchestrate-sk-multi-agent-solution",
       "title": "Orchestrate a multi-agent solution using the Microsoft Agent Framework",
       "url": "https://learn.microsoft.com/training/modules/orchestrate-semantic-kernel-multi-agent-solution/?WT.mc_id=studentamb_165290",
@@ -82761,30 +82719,6 @@
         "Respond to alerts from Azure resources",
         "Module assessment",
         "Summary and resources"
-      ]
-    },
-    {
-      "uid": "learn.wwl.render-api-responses-razor-pages",
-      "title": "Render API responses in ASP.NET Core Blazor Web apps",
-      "url": "https://learn.microsoft.com/training/modules/render-api-responses-razor-pages/?WT.mc_id=studentamb_165290",
-      "categories": [
-        ".NET",
-        "ASP.NET Core"
-      ],
-      "products": [
-        ".NET",
-        "ASP.NET Core"
-      ],
-      "subjects": [
-        "backend-development"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Blazor render modes and component lifecycle",
-        "Discover Razor syntax",
-        "Exercise - Render API responses in ASP.NET Core Blazor Web apps",
-        "Module assessment",
-        "Summary"
       ]
     },
     {
@@ -87426,7 +87360,7 @@
         "Enhance productivity and creativity with enterprise-ready AI Chat",
         "Create and collaborate with Copilot Pages",
         "Simplify workflows and automate tasks with Agents in Copilot Chat (Basic)",
-        "Exercise - Plan a Client Summit with Microsoft Copilot Chat (Basic)",
+        "Exercise - Plan a client summit with Microsoft 365 Copilot Chat",
         "Module assessment",
         "Summary"
       ]
