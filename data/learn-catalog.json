@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-09-14T13:45:48.022Z",
+  "lastChecked": "2026-09-21T13:45:52.669Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -53,7 +53,7 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3308,
+  "totalModules": 3298,
   "modules": [
     {
       "uid": "$learn.become-learn-contributor",
@@ -1416,6 +1416,28 @@
         "Prepare",
         "Exercise - Build a data model and create a canvas app",
         "Exercise - Build Power Automate flows to send automated emails",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.change-management-dragon-copilot-implementation",
+      "title": "Change management in your Dragon Copilot implementation",
+      "url": "https://learn.microsoft.com/training/modules/change-management-dragon-copilot-implementation/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "How to generate excitement in your organization",
+        "How to overcome objections",
+        "How to respond to clinician resistance",
         "Module assessment",
         "Summary"
       ]
@@ -2875,8 +2897,8 @@
       "units": [
         "Introduction",
         "How to explain and train workflows (advanced)",
-        "How to explain and train prompts, the chat box, and Information Assist (advanced)",
-        "How to explain and train customizable templates (advanced)",
+        "How to explain and train prompts, Dragon Copilot Chat, and clinical reference sources (advanced)",
+        "How to explain and train templates (advanced)",
         "Check your knowledge",
         "Summary"
       ]
@@ -2923,7 +2945,7 @@
         "How to explain and train texts",
         "How to explain and train workflows (basics)",
         "How to explain and train prompts (basics)",
-        "How to explain and train customizable templates (basics)",
+        "How to explain and train templates (basics)",
         "Check your knowledge",
         "Summary"
       ]
@@ -3010,6 +3032,30 @@
         "Introduction",
         "Available resources",
         "Check your knowledge",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.dragon-copilot-practice-managers-101",
+      "title": "Dragon Copilot for Practice Managers - 101",
+      "url": "https://learn.microsoft.com/training/modules/dragon-copilot-practice-managers-101/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications",
+        "solution-design"
+      ],
+      "units": [
+        "Introduction",
+        "Dragon Copilot core capabilities",
+        "Key AI concepts",
+        "Where Dragon Copilot fits in the clinicians workflow",
+        "How to talk about Dragon Copilot",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -4860,6 +4906,28 @@
         "Personalization",
         "Build for phones or tablets",
         "Exercise - Create and adjust UI for a new canvas app",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.how-to-support-usage-adoption",
+      "title": "How to support usage and adoption",
+      "url": "https://learn.microsoft.com/training/modules/how-to-support-usage-adoption/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "How to gauge usage",
+        "What is adoption?",
+        "How to drive adoption and continuous success",
         "Module assessment",
         "Summary"
       ]
@@ -9664,6 +9732,49 @@
       ]
     },
     {
+      "uid": "learn-bizapps.what-practice-manager-can-expect",
+      "title": "What practice manager can expect",
+      "url": "https://learn.microsoft.com/training/modules/what-practice-manager-can-expect/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "Plan for success",
+        "Prepare for implementation",
+        "What success looks like",
+        "Plan for the future",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.where-to-find-help",
+      "title": "Where to find help",
+      "url": "https://learn.microsoft.com/training/modules/where-to-find-help/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction to support resources",
+        "Support resource decision guide",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn-bizapps.work-cloud-sustainability",
       "title": "Microsoft Sustainability Manager concepts",
       "url": "https://learn.microsoft.com/training/modules/work-cloud-sustainability/?WT.mc_id=studentamb_165290",
@@ -9948,7 +10059,7 @@
         "Use and read JSON in Business Central",
         "Get JSON data from external REST services",
         "Exercise - Connect to external REST services",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10027,7 +10138,7 @@
         "Use the Word add-in for report layouts",
         "Add an Excel layout to a report",
         "Exercise - Create a basic report",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10183,7 +10294,7 @@
         "Work with the Performance Toolkit extension",
         "Configure a BCPT suite",
         "Use APIs for automation and administration",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10300,7 +10411,7 @@
     },
     {
       "uid": "learn-dynamics.agent-collaboration",
-      "title": "Accelerate case resolution with AI-assisted collaboration in Dynamics 365 Customer Service",
+      "title": "Collaborate with Microsoft Teams in Dynamics 365 Customer Service",
       "url": "https://learn.microsoft.com/training/modules/agent-collaboration/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365"
@@ -10317,7 +10428,7 @@
         "Configure suggested contacts for Microsoft Teams chat",
         "Use embedded Teams chat in Customer Service",
         "Invite customers to join a Teams call",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10737,7 +10848,7 @@
         "Introduction",
         "Understand application monetization responsibilities",
         "Find application monetization documentation and examples",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10856,7 +10967,7 @@
         "Introduction - Create an assemble-to-order sales order",
         "Sell inventory items in assemble-to-order flows",
         "Assembly quotes",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10877,7 +10988,7 @@
       "units": [
         "Introduction - Create an assemble-to-stock assembly order",
         "Replenish assembly items from the planning worksheet",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11060,7 +11171,7 @@
     },
     {
       "uid": "learn-dynamics.boost-sales-performance",
-      "title": "Boost sales performance with Sales in Microsoft 365 Copilot",
+      "title": "Boost sales performance with Sales Agent in Microsoft Copilot",
       "url": "https://learn.microsoft.com/training/modules/boost-sales-performance/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365",
@@ -11076,11 +11187,11 @@
       "units": [
         "Introduction",
         "View and update CRM data in the flow of work",
-        "Use AI to supercharge sales communication",
+        "Use AI for sales communication",
         "Drive AI-powered sales meetings",
         "Use collaboration spaces for sales teams",
-        "Customize Sales in Microsoft 365 Copilot",
-        "Check your knowledge",
+        "Customize Sales Agent",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11197,7 +11308,7 @@
         "Asynchronous considerations for control add-ins",
         "Connect control add-ins with Azure Functions",
         "Exercise - Build a control add-in object",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11408,7 +11519,7 @@
         "Set up the Reporting FastTab",
         "Set up the Application FastTab",
         "Enable data check",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -12315,6 +12426,31 @@
         "Configure electronic reporting",
         "Use barcode data sources to generate bar code images",
         "Exercise - Generate electronic documents for payments",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-dynamics.configure-email-channel-customer-service",
+      "title": "Configure reliable email intake in Dynamics 365 Customer Service",
+      "url": "https://learn.microsoft.com/training/modules/configure-email-channel-customer-service/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Dynamics 365"
+      ],
+      "products": [
+        "Customer Service",
+        "Dynamics 365"
+      ],
+      "subjects": [
+        "Customer relationship management"
+      ],
+      "units": [
+        "Introduction",
+        "Plan the email intake flow",
+        "Prepare a queue mailbox for incoming email",
+        "Design automatic case creation from email",
+        "Route email-originated work",
+        "Validate and troubleshoot email intake",
         "Module assessment",
         "Summary"
       ]
@@ -14590,6 +14726,32 @@
       ]
     },
     {
+      "uid": "learn-dynamics.customer-engagement-channels-overview",
+      "title": "Support customers across engagement channels in Dynamics 365 Customer Service",
+      "url": "https://learn.microsoft.com/training/modules/customer-engagement-channels-overview/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Dynamics 365"
+      ],
+      "products": [
+        "Customer Service",
+        "Dynamics 365"
+      ],
+      "subjects": [
+        "Customer relationship management"
+      ],
+      "units": [
+        "Introduction",
+        "Understand customer engagement models",
+        "Explore customer engagement channels",
+        "Understand how channel interactions reach representatives",
+        "Connect conversations with customers and cases",
+        "Bring channels together in Copilot Service workspace",
+        "Apply AI across customer interactions",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn-dynamics.customer-service-visualizations",
       "title": "Create visualizations for Dynamics 365 Customer Service",
       "url": "https://learn.microsoft.com/training/modules/customer-service-visualizations/?WT.mc_id=studentamb_165290",
@@ -14683,7 +14845,7 @@
         "Extend and customize profiles",
         "Use and create views in application language",
         "Extend application areas",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14893,7 +15055,7 @@
         "Use Database Wait Statistics",
         "Exercise - Create a table extension",
         "Exercise - Create a page extension",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18090,7 +18252,7 @@
     },
     {
       "uid": "learn-dynamics.getting-started-omnichannel",
-      "title": "Get started with Omnichannel for Customer Service",
+      "title": "Handle conversations in Copilot Service workspace",
       "url": "https://learn.microsoft.com/training/modules/getting-started-omnichannel/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365"
@@ -18103,15 +18265,15 @@
         "Customer relationship management"
       ],
       "units": [
-        "Introduction to Omnichannel for Customer Service",
-        "Use the agent interface",
-        "Manage sessions and work with applications",
-        "Work with conversations",
-        "Work with customer information",
-        "Reporting and analysis",
-        "Work with AI features",
-        "Helping a customer service rep's productivity",
-        "Check your knowledge",
+        "Introduction",
+        "Receive conversation work and manage presence",
+        "Manage sessions and application tabs",
+        "Communicate with customers",
+        "Use customer and case context",
+        "Consult, transfer, and collaborate during conversations",
+        "Close, end, and wrap up conversations",
+        "Use Copilot during conversations",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18801,7 +18963,7 @@
         "Importance of interfaces",
         "Extending interfaces in AL",
         "Exercise - Create an interface",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18859,7 +19021,7 @@
         "Segment AL code and reduce naming conflicts with namespaces",
         "Open Visual Studio Code from the web client",
         "Exercise - Create and run an AL extension",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19132,7 +19294,7 @@
         "Request page",
         "Work with report labels",
         "Report layouts",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19979,7 +20141,7 @@
         "Overview of supplemental data",
         "How to handle personal data",
         "Exercise - Block contacts for privacy and try to register an opportunity for a contact blocked for privacy",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21207,7 +21369,7 @@
     },
     {
       "uid": "learn-dynamics.productivity-tools",
-      "title": "Get started with Dynamics 365 Productivity Tools",
+      "title": "Configure scripts, macros, and productivity tools in Dynamics 365 Customer Service",
       "url": "https://learn.microsoft.com/training/modules/productivity-tools/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365"
@@ -21221,11 +21383,11 @@
       ],
       "units": [
         "Introduction",
-        "Work with macros",
-        "Use automation to pass parameters",
-        "Work with agent scripts",
-        "Smart assist",
-        "Check your knowledge",
+        "Configure macros",
+        "Pass context and select macro actions",
+        "Configure scripts",
+        "Configure productivity tools in the productivity pane",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21558,7 +21720,7 @@
         "Set up number series",
         "Set up automatic payment application and payment application rules",
         "Set up bank statement file import",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21902,7 +22064,7 @@
     },
     {
       "uid": "learn-dynamics.sales-copilot-deploy-configure",
-      "title": "Deploy and configure Sales in Microsoft 365 Copilot",
+      "title": "Deploy and configure Sales Agent in Microsoft Copilot",
       "url": "https://learn.microsoft.com/training/modules/sales-copilot-deploy-configure/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365",
@@ -21918,13 +22080,13 @@
       ],
       "units": [
         "Introduction",
-        "Sales in Microsoft 365 Copilot architecture",
-        "Install the Sales in Microsoft 365 Copilot in Outlook",
+        "Sales Agent in Microsoft Copilot architecture",
+        "Deploy Sales Agent in Outlook and Teams",
         "Customize forms and fields",
-        "Turn on Copilot AI features",
-        "Configure for Microsoft 365 Apps",
-        "Extend the Sales in Microsoft 365 Copilot",
-        "Check your knowledge",
+        "Configure AI features and access",
+        "Configure Microsoft 365 agent access and banners",
+        "Extend Sales Agent with custom tools and knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22022,7 +22184,7 @@
         "Set up a sales price list for customer groups",
         "Use special prices in sales orders",
         "Copy sales prices",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22351,7 +22513,7 @@
         "Introduction - Create a new assembly item",
         "Set up an assembly bill of material",
         "Exercise - Create and assemble a new assembly item",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22372,7 +22534,7 @@
       "units": [
         "Introduction - Assembly setup",
         "Set up warehouses for assembly",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22760,7 +22922,7 @@
         "Plan items with the maximum quantity reordering policy",
         "Plan items with the lot-for-lot reordering policy",
         "Plan items with the order reordering policy",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24497,7 +24659,7 @@
         "Start a trial with your own data",
         "Extend your trial and subscribe or unsubscribe your organization",
         "Exercise - Sign in to Business Central",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24857,7 +25019,7 @@
         "Introduction - Enter and post payables checks",
         "Print and post payables checks",
         "Void a check",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25134,7 +25296,7 @@
         "Reconcile payments by using automatic applications",
         "Map text on recurring payments",
         "Post and reconcile the payment reconciliation",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -36507,6 +36669,43 @@
       ]
     },
     {
+      "uid": "learn.devrel.harden-microsoft-365-secure-score",
+      "title": "Harden a Microsoft 365 tenant with Microsoft Secure Score",
+      "url": "https://learn.microsoft.com/training/modules/harden-microsoft-365-secure-score/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Microsoft 365",
+        "Microsoft Teams",
+        "entra"
+      ],
+      "products": [
+        "Microsoft 365",
+        "Microsoft Teams",
+        "entra-id"
+      ],
+      "subjects": [
+        "Identity and access",
+        "Security"
+      ],
+      "units": [
+        "Introduction",
+        "Prepare a safe administrative environment",
+        "Enforce phishing-resistant administrative authentication",
+        "Enforce universal multifactor authentication",
+        "Block legacy authentication",
+        "Sign-in risk protection",
+        "User risk protection",
+        "Prevent ungoverned application consent",
+        "Configure invited-participant lobby access",
+        "Restrict Microsoft Teams presentation privileges",
+        "Restrict Microsoft Teams anonymous participation",
+        "Apply least-privileged administrative roles",
+        "Enable self-service password reset",
+        "Validate security controls",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.devrel.manage-internet-information-services",
       "title": "Manage Internet Information Services",
       "url": "https://learn.microsoft.com/training/modules/manage-internet-information-services/?WT.mc_id=studentamb_165290",
@@ -40489,7 +40688,7 @@
     },
     {
       "uid": "learn.github.github-copilot-code-agent",
-      "title": "Accelerate development with GitHub Copilot Cloud Agent",
+      "title": "Accelerate development with GitHub Copilot cloud agent",
       "url": "https://learn.microsoft.com/training/modules/github-copilot-code-agent/?WT.mc_id=studentamb_165290",
       "categories": [
         "GitHub"
@@ -40505,6 +40704,7 @@
         "Customizing, extending, and validating the Copilot Cloud Agent",
         "Responsible use of GitHub Copilot Cloud Agent  on GitHub.com",
         "Exercise - Expand your team with Copilot Cloud Agent",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -40935,7 +41135,7 @@
         "Configure, connect, and use GitHub MCP Server in VS Code",
         "Using GitHub MCP Server with Copilot Chat",
         "Exercise - Integrate MCP with GitHub Copilot",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -43929,30 +44129,6 @@
         "Support educators' social emotional competence with Reflect for Staff",
         "Organize project tasks with Planner",
         "Turn data into meaningful information with Power BI and Teams",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.mec.computational-thinking-importance-education",
-      "title": "Computational thinking and its importance in education",
-      "url": "https://learn.microsoft.com/training/modules/computational-thinking-importance-education/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Microsoft 365",
-        "OneNote"
-      ],
-      "products": [
-        "OneNote",
-        "m365-education"
-      ],
-      "subjects": [
-        "Education"
-      ],
-      "units": [
-        "Introduction",
-        "Preview",
-        "Process",
-        "Personalize",
         "Module assessment",
         "Summary"
       ]
@@ -49801,6 +49977,30 @@
       ]
     },
     {
+      "uid": "learn.windows-server.certificate-services-roles-topology",
+      "title": "Active Directory Certificate Services roles and topology",
+      "url": "https://learn.microsoft.com/training/modules/certificate-services-roles-topology/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows Server"
+      ],
+      "products": [
+        "Windows Server"
+      ],
+      "subjects": [
+        "Security"
+      ],
+      "units": [
+        "Introduction",
+        "Choose hierarchy depth",
+        "Design service availability",
+        "Design trust boundaries",
+        "Protect certificate authority operations",
+        "Apply the topology decision matrix",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.workload-operations-generative-ai-center-excellence",
       "title": "Guide AI workload operations with an AI Center of Excellence",
       "url": "https://learn.microsoft.com/training/modules/guide-ai-operations-center-excellence/?WT.mc_id=studentamb_165290",
@@ -51946,7 +52146,7 @@
     },
     {
       "uid": "learn.wwl.build-your-first-agent-microsoft-365-copilot-use-copilot-studio",
-      "title": "Build your first declarative agent for Microsoft 365 Copilot by using Copilot Studio",
+      "title": "Build your first declarative agent for Microsoft Copilot by using Copilot Studio",
       "url": "https://learn.microsoft.com/training/modules/build-your-first-agent-microsoft-365-copilot-use-copilot-studio/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -53861,8 +54061,8 @@
         "Exercise - Configure Relecloud shared mailboxes and delegate access",
         "Understand how mail routes through Exchange Online",
         "Create and manage teams, channels, owners, and members",
-        "Configure Copilot in Teams meetings",
-        "Exercise - Build a Copilot-ready team for Relecloud's account managers",
+        "Configure Microsoft Copilot in Teams meetings",
+        "Exercise - Build a Microsoft Copilot-ready team for Relecloud's account managers",
         "Module assessment",
         "Summary"
       ]
@@ -56581,7 +56781,7 @@
       "units": [
         "Introduction",
         "Review, approve, and block tools for agents",
-        "Exercise - Review, approve, and block a tool",
+        "Exercise - Review requests and control tool availability",
         "Govern bring your own MCP servers",
         "Exercise - Review a bring your own model context protocol (MCP) server registration",
         "Perform ongoing Agent Registry curation",
@@ -56984,7 +57184,7 @@
       "units": [
         "Introduction",
         "Choose the right AI tool for the job",
-        "Understand Cowork usage and cost",
+        "Understand consumption-based Copilot usage",
         "Explore how Cowork works",
         "Write effective Cowork requests",
         "See Cowork in action",
@@ -57493,30 +57693,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.deploy-model-batch-endpoint",
-      "title": "Deploy a model to a batch endpoint",
-      "url": "https://learn.microsoft.com/training/modules/deploy-model-batch-endpoint/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Understand and create batch endpoints",
-        "Deploy your MLflow model to a batch endpoint",
-        "Deploy a custom model to a batch endpoint",
-        "Invoke and troubleshoot batch endpoints",
-        "Exercise - Deploy an MLflow model to a batch endpoint",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.deploy-model-github-actions",
       "title": "Deploy and monitor a model in Azure Machine Learning",
       "url": "https://learn.microsoft.com/training/modules/deploy-model-github-actions/?WT.mc_id=studentamb_165290",
@@ -57541,30 +57717,6 @@
         "Deploy, promote, and roll back a model with GitHub Actions",
         "Monitor the deployed model",
         "Exercise",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.deploy-model-managed-online-endpoint",
-      "title": "Deploy a model to a managed online endpoint",
-      "url": "https://learn.microsoft.com/training/modules/deploy-model-managed-online-endpoint/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Explore managed online endpoints",
-        "Deploy your MLflow model to a managed online endpoint",
-        "Deploy a model to a managed online endpoint",
-        "Test managed online endpoints",
-        "Exercise - Deploy an MLflow model to an online endpoint",
         "Module assessment",
         "Summary"
       ]
@@ -59876,33 +60028,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects",
-      "title": "Design a data ingestion strategy for machine learning projects",
-      "url": "https://learn.microsoft.com/training/modules/design-data-ingestion-strategy-for-machine-learning-projects/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks",
-        "Machine Learning",
-        "Synapse Analytics"
-      ],
-      "subjects": [
-        "Artificial intelligence",
-        "Data engineering",
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Identify your data source and format",
-        "Choose how to serve data to machine learning workflows",
-        "Design a data ingestion solution",
-        "Exercise: Design a data ingestion strategy",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.design-data-integration",
       "title": "Design data integration",
       "url": "https://learn.microsoft.com/training/modules/design-data-integration/?WT.mc_id=studentamb_165290",
@@ -60619,28 +60744,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.design-machine-learning-operations-solution",
-      "title": "Design a machine learning operations solution (MLOps)",
-      "url": "https://learn.microsoft.com/training/modules/design-machine-learning-operations-solution/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Explore an MLOps architecture",
-        "Design for monitoring",
-        "Design for retraining",
-        "Knowledge check",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.design-migrations",
       "title": "Design migrations",
       "url": "https://learn.microsoft.com/training/modules/design-migrations/?WT.mc_id=studentamb_165290",
@@ -60666,28 +60769,6 @@
         "Migrate offline data",
         "Module assessment",
         "Summary and resources"
-      ]
-    },
-    {
-      "uid": "learn.wwl.design-model-deployment-solution",
-      "title": "Design a model deployment solution",
-      "url": "https://learn.microsoft.com/training/modules/design-model-deployment-solution/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Artificial intelligence",
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Understand how model will be consumed",
-        "Decide on real-time or batch deployment",
-        "Module assessment",
-        "Summary"
       ]
     },
     {
@@ -62191,7 +62272,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-copilot-challenge",
-      "title": "Empower your workforce with Microsoft 365 Copilot: Challenge Use Case",
+      "title": "Empower your workforce with Microsoft Copilot: Challenge use case",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-copilot-challenge/?WT.mc_id=studentamb_165290",
       "categories": [
         "Office 365"
@@ -62216,7 +62297,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-copilot-executives",
-      "title": "Empower your workforce with Microsoft 365 Copilot: Executives Use Case",
+      "title": "Empower your workforce with Microsoft Copilot: Executives",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-copilot-executives/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -62238,7 +62319,7 @@
         "Exercise 1, Task 2: Use Copilot in a Teams chat session to summarize a project discussion",
         "Exercise 1, Task 3: Use Copilot Chat in Teams to collect cross-project insights",
         "Exercise 1, Task 4: Use Copilot in Teams to prepare an executive summary",
-        "Exercise 2: Drive business outcomes using Microsoft 365 Copilot",
+        "Exercise 2: Drive business outcomes using Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Word to create an executive briefing report",
         "Exercise 2, Task 2: Use Copilot in Excel to perform budget forecast analysis",
         "Exercise 2, Task 3: Use the AI Project Manager agent in Planner to create a new project plan",
@@ -62250,7 +62331,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-copilot-finance",
-      "title": "Empower your workforce with Microsoft 365 Copilot: Finance Use Case",
+      "title": "Empower your workforce with Microsoft Copilot: Finance",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-copilot-finance/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -62267,13 +62348,13 @@
       ],
       "units": [
         "Introduction",
-        "Exercise 1: Optimize financial reporting and acquisition modeling using Microsoft 365 Copilot",
+        "Exercise 1: Optimize financial reporting and acquisition modeling using Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot in Excel to analyze new product line COGS",
         "Exercise 1, Task 2: Use Copilot in Teams to summarize meeting notes",
         "Exercise 1, Task 3: Use Copilot Chat to analyze a potential acquisition",
         "Exercise 1, Task 4: Use Copilot in Excel to model What-If scenarios",
-        "Exercise 2: Streamline contract analysis and negotiation using Microsoft 365 Copilot",
-        "Exercise 2, Task 1: Use Microsoft 365 Copilot Chat to evaluate vendor contracts",
+        "Exercise 2: Streamline contract analysis and negotiation using Microsoft Copilot",
+        "Exercise 2, Task 1: Use Microsoft Copilot Chat to evaluate vendor contracts",
         "Exercise 2, Task 2: Use Copilot in PowerPoint to create an executive presentation",
         "Exercise 2, Task 3: Use Copilot in Loop to turn insights into actionable content",
         "Exercise 2, Task 4: Use Copilot in Outlook to create an email that requests feedback",
@@ -62283,7 +62364,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-copilot-hr",
-      "title": "Empower your workforce with Microsoft 365 Copilot: HR Use Case",
+      "title": "Empower your workforce with Microsoft Copilot: HR",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-copilot-hr/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -62300,7 +62381,7 @@
       ],
       "units": [
         "Introduction",
-        "Exercise 1: Deliver manager insights with Microsoft 365 Copilot",
+        "Exercise 1: Deliver manager insights with Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot in Excel to identify key manager metrics",
         "Exercise 1, Task 2: Use Copilot in Excel to generate a Manager Summary report",
         "Exercise 1, Task 3: Use Copilot in Outlook to communicate findings to HR leadership",
@@ -62316,7 +62397,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-copilot-it",
-      "title": "Empower your workforce with Microsoft 365 Copilot: IT Use Case",
+      "title": "Empower your workforce with Microsoft Copilot: IT",
       "url": "https://learn.microsoft.com/training/modules/enhance-prompting-copilot-it/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -62333,14 +62414,14 @@
       ],
       "units": [
         "Introduction",
-        "Exercise 1: Streamline IT project planning with Microsoft 365 Copilot",
+        "Exercise 1: Streamline IT project planning with Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot Chat to define the project framework",
         "Exercise 1, Task 2: Use Copilot in Whiteboard to identify potential risks",
         "Exercise 1, Task 3: Use Copilot in PowerPoint to create an executive presentation",
-        "Exercise 2: Transform feature launches and adoption using Microsoft 365 Copilot",
-        "Exercise 2, Task 1: Use Microsoft 365 Copilot Chat to identify upcoming Microsoft 365 features",
+        "Exercise 2: Transform feature launches and adoption using Microsoft Copilot",
+        "Exercise 2, Task 1: Use Microsoft Copilot Chat to identify upcoming Microsoft 365 features",
         "Exercise 2, Task 2: Use Copilot in Viva Engage to draft a post about upcoming features",
-        "Exercise 2, Task 3: Use Microsoft 365 Copilot Chat to create best practice tips",
+        "Exercise 2, Task 3: Use Microsoft Copilot Chat to create best practice tips",
         "Exercise 2, Task 4: Use the Surveys agent to create a feedback survey",
         "Exercise 2, Task 5: Use the Analyst agent to analyze survey results",
         "Module assessment",
@@ -62349,7 +62430,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-copilot-marketing",
-      "title": "Empower your workforce with Microsoft 365 Copilot: Marketing Use Case",
+      "title": "Empower your workforce with Microsoft Copilot: Marketing",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-copilot-marketing/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -62366,12 +62447,12 @@
       ],
       "units": [
         "Introduction",
-        "Exercise 1: Transform market research into an actionable campaign using Microsoft 365 Copilot",
+        "Exercise 1: Transform market research into an actionable campaign using Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot Studio to create a Market Research Agent",
         "Exercise 1, Task 2: Use the Market Research Agent to synthesize market intelligence",
         "Exercise 1, Task 3: Use Copilot’s Analyst agent to generate strategic recommendations",
         "Exercise 1, Task 4: Use Copilot in Loop to create a launch campaign plan",
-        "Exercise 2: Develop a new marketing campaign using Microsoft 365 Copilot",
+        "Exercise 2: Develop a new marketing campaign using Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Word to consolidate multiple market reports",
         "Exercise 2, Task 2: Use Copilot in Excel to analyze a marketing spreadsheet",
         "Exercise 2, Task 3: Use Copilot’s Idea Coach agent to generate creative campaign concepts",
@@ -62382,7 +62463,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-copilot-operations",
-      "title": "Empower your workforce with Microsoft 365 Copilot: Operations use case",
+      "title": "Empower your workforce with Microsoft Copilot: Operations",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-copilot-operations/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -62399,12 +62480,12 @@
       ],
       "units": [
         "Introduction",
-        "Exercise 1: Streamline operational initiatives using Microsoft 365 Copilot",
+        "Exercise 1: Streamline operational initiatives using Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot in Whiteboard to brainstorm project plan ideas",
         "Exercise 1, Task 2: Use Copilot in Word to compare operational reports",
         "Exercise 1, Task 3: Use Copilot in PowerPoint to create an executive presentation",
-        "Exercise 1, Task 4: Use Microsoft 365 Copilot Chat to prepare for vendor engagement",
-        "Exercise 2: Manage a facility expansion project with Microsoft 365 Copilot",
+        "Exercise 1, Task 4: Use Microsoft Copilot Chat to prepare for vendor engagement",
+        "Exercise 2: Manage a facility expansion project with Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Loop to track construction milestones",
         "Exercise 2, Task 2: Use Copilot Studio to build a Facility Expansion FAQ agent",
         "Exercise 2, Task 3: Ask the Facility Expansion FAQ agent questions about the expansion project",
@@ -62416,7 +62497,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-copilot-sales",
-      "title": "Empower your workforce with Microsoft 365 Copilot: Sales use case",
+      "title": "Empower your workforce with Microsoft Copilot: Sales",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-copilot-sales/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -62433,12 +62514,12 @@
       ],
       "units": [
         "Introduction",
-        "Exercise 1: Accelerate market growth using Microsoft 365 Copilot",
+        "Exercise 1: Accelerate market growth using Microsoft Copilot",
         "Exercise 1, Task 1: Use the Researcher agent to analyze your competitors and identify industry trends",
-        "Exercise 1, Task 2: Use Microsoft 365 Copilot Chat to conduct market research",
+        "Exercise 1, Task 2: Use Microsoft Copilot Chat to conduct market research",
         "Exercise 1, Task 3: Use Copilot in Word to create a sales proposal",
         "Exercise 1, Task 4: Use Copilot in Outlook to personalize your outreach",
-        "Exercise 2: Automate sales proposal responses using Microsoft 365 Copilot",
+        "Exercise 2: Automate sales proposal responses using Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Word to generate a standard RFP response template",
         "Exercise 2, Task 2: Use Copilot in Excel to analyze historical RFP data",
         "Exercise 2, Task 3: Use Copilot Studio to build an RFP response agent",
@@ -62450,7 +62531,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-microsoft-365-copilot-communications-use-case",
-      "title": "Empower your workforce with Microsoft 365 Copilot: Communications Use Case",
+      "title": "Empower your workforce with Microsoft Copilot: Communications",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-microsoft-365-copilot-communications-use-case/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -62467,12 +62548,12 @@
       ],
       "units": [
         "Introduction",
-        "Exercise 1: Drive engagement with a unified communication strategy using Microsoft 365 Copilot",
+        "Exercise 1: Drive engagement with a unified communication strategy using Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot in Word to develop a strategic communication brief",
         "Exercise 1, Task 2: Use Copilot’s Researcher agent to identify external trends and proof points",
         "Exercise 1, Task 3: Use Copilot in Excel to analyze communication metrics",
         "Exercise 1, Task 4: Use Copilot in PowerPoint to create an executive presentation",
-        "Exercise 2: Develop an employee centered communication experience using Microsoft 365 Copilot",
+        "Exercise 2: Develop an employee centered communication experience using Microsoft Copilot",
         "Exercise 2, Task 1: Use Viva Engage to create a company-wide announcement",
         "Exercise 2, Task 2: Use Copilot Chat to prepare for a town hall meeting",
         "Exercise 2, Task 3: Use the Ideas Coach agent to generate campaign ideas and a channel map",
@@ -62483,7 +62564,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-microsoft-365-copilot-customer-service-use-case",
-      "title": "Empower your workforce with Microsoft 365 Copilot: Customer Service Use Case",
+      "title": "Empower your workforce with Microsoft Copilot: Customer Service",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-microsoft-365-copilot-customer-service-use-case/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -62500,12 +62581,12 @@
       ],
       "units": [
         "Introduction",
-        "Exercise 1: Improve customer service efficiency using Microsoft 365 Copilot",
+        "Exercise 1: Improve customer service efficiency using Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot in Whiteboard to map the ideal customer support journey",
         "Exercise 1, Task 2: Use Copilot in Teams to prepare for a client support meeting",
         "Exercise 1, Task 3: Use Copilot in OneNote to create a call summary template",
         "Exercise 1, Task 4: Use the Copilot Analyst agent to analyze customer support data",
-        "Exercise 2: Enhance the resolution quality of customer service cases using Microsoft 365 Copilot",
+        "Exercise 2: Enhance the resolution quality of customer service cases using Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Loop to build a troubleshooting checklist",
         "Exercise 2, Task 2: Use Copilot in Word and Writing Coach to create a dealer facing response template",
         "Exercise 2, Task 3: Use Copilot’s Ideas Coach agent to create a troubleshooting guide",
@@ -62516,7 +62597,7 @@
     },
     {
       "uid": "learn.wwl.empower-workforce-microsoft-365-copilot-legal-use-case",
-      "title": "Empower your workforce with Microsoft 365 Copilot: Legal Use Case",
+      "title": "Empower your workforce with Microsoft Copilot: Legal",
       "url": "https://learn.microsoft.com/training/modules/empower-workforce-microsoft-365-copilot-legal-use-case/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -62533,13 +62614,13 @@
       ],
       "units": [
         "Introduction",
-        "Exercise 1: Prepare for regulatory response and litigation readiness using Microsoft 365 Copilot",
+        "Exercise 1: Prepare for regulatory response and litigation readiness using Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot Chat to create regulatory legal guidance",
         "Exercise 1, Task 2: Use Copilot in Word to summarize a vendor contract",
         "Exercise 1, Task 3: Use Copilot Researcher to prepare a regulator facing issue brief",
         "Exercise 1, Task 4: Use Copilot Studio to create a Regulatory Inquiry Assistant",
         "Exercise 1, Task 5: Ask the Regulatory Inquiry Assistant questions related to an audit",
-        "Exercise 2: Reform corporate governance and compliance using Microsoft 365 Copilot",
+        "Exercise 2: Reform corporate governance and compliance using Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Loop to collaborate on updating a company policy",
         "Exercise 2, Task 2: Use Copilot in Excel to visualize cross department risk areas",
         "Exercise 2, Task 3: Use Copilot in PowerPoint to create a legal presentation",
@@ -62641,7 +62722,7 @@
     },
     {
       "uid": "learn.wwl.enable-manage-microsoft-365-copilot",
-      "title": "Assess readiness and roll out Microsoft 365 Copilot",
+      "title": "Assess readiness and roll out Microsoft Copilot",
       "url": "https://learn.microsoft.com/training/modules/enable-manage-microsoft-365-copilot/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365"
@@ -62655,9 +62736,9 @@
       ],
       "units": [
         "Introduction",
-        "Assess tenant readiness for a Copilot rollout",
-        "Exercise - Run and interpret the Copilot readiness report",
-        "Identify and resolve data-readiness issues",
+        "Assess tenant readiness for a Microsoft Copilot rollout",
+        "Exercise - Run and interpret the Microsoft Copilot readiness report",
+        "Identify and resolve data readiness issues",
         "Exercise - Remediate an oversharing risk before rollout",
         "Plan a phased rollout across the organization",
         "Exercise - Stage a phased pilot rollout group",
@@ -63198,6 +63279,31 @@
         "Understand query hints",
         "Explore performance scenarios",
         "Exercise: Isolate problem areas in poorly performing queries",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.evaluate-publish-manage-agents-copilot-studio",
+      "title": "Evaluate, publish, and manage agents in Microsoft Copilot Studio",
+      "url": "https://learn.microsoft.com/training/modules/evaluate-publish-manage-agents-copilot-studio/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "Plan and run agent evaluations",
+        "Monitor and improve an agent",
+        "Publish and validate in channels",
+        "Govern agent lifecycle and costs",
+        "Exercise - Evaluate and publish the Contoso support policy agent",
         "Module assessment",
         "Summary"
       ]
@@ -64030,28 +64136,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.explore-azure-blob-storage",
-      "title": "Explore Azure Blob storage",
-      "url": "https://learn.microsoft.com/training/modules/explore-azure-blob-storage/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Blob Storage"
-      ],
-      "subjects": [
-        "Storage"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Azure Blob storage",
-        "Discover Azure Blob storage resource types",
-        "Explore Azure Storage security features",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.explore-azure-center-sap-solutions",
       "title": "Explore Azure Center for SAP solutions",
       "url": "https://learn.microsoft.com/training/modules/explore-azure-center-sap-solutions/?WT.mc_id=studentamb_165290",
@@ -64181,30 +64265,6 @@
         "Explore management groups",
         "Explore Azure Automation",
         "Explore security and compliance services",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.explore-azure-machine-learning-workspace-resources-assets",
-      "title": "Explore Azure Machine Learning workspace resources and assets",
-      "url": "https://learn.microsoft.com/training/modules/explore-azure-machine-learning-workspace-resources-assets/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Create an Azure Machine Learning workspace",
-        "Identify Azure Machine Learning resources",
-        "Identify Azure Machine Learning assets",
-        "Train models in the workspace",
-        "Exercise - Explore the workspace",
         "Module assessment",
         "Summary"
       ]
@@ -64604,29 +64664,6 @@
         "Enable archive mailboxes in Microsoft 365",
         "Restore deleted data in Exchange Online",
         "Restore deleted data in SharePoint Online",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.explore-developer-tools-for-workspace-interaction",
-      "title": "Explore developer tools for workspace interaction",
-      "url": "https://learn.microsoft.com/training/modules/explore-developer-tools-for-workspace-interaction/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Explore the studio",
-        "Explore the Python SDK",
-        "Explore the CLI",
-        "Exercise - Explore the developer tools",
         "Module assessment",
         "Summary"
       ]
@@ -66536,29 +66573,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.find-best-classification-model-automated-machine-learning",
-      "title": "Find the best classification model with Automated Machine Learning",
-      "url": "https://learn.microsoft.com/training/modules/find-best-classification-model-automated-machine-learning/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Preprocess data and configure featurization",
-        "Run an Automated Machine Learning experiment",
-        "Evaluate and compare models",
-        "Exercise - Find the best classification model with Automated Machine Learning",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.find-commands-get-help-windows-powershell",
       "title": "Find commands and Get-Help in Windows PowerShell",
       "url": "https://learn.microsoft.com/training/modules/find-commands-get-help-windows-powershell/?WT.mc_id=studentamb_165290",
@@ -67485,7 +67499,7 @@
     },
     {
       "uid": "learn.wwl.get-started-microsoft-365-copilot-business-chat",
-      "title": "Get started with Microsoft Copilot Chat (Basic)",
+      "title": "Get started with Microsoft Copilot Chat",
       "url": "https://learn.microsoft.com/training/modules/get-started-microsoft-365-copilot-business-chat/?WT.mc_id=studentamb_165290",
       "categories": [
         "ms-copilot"
@@ -68353,7 +68367,7 @@
     },
     {
       "uid": "learn.wwl.govern-sharepoint-onedrive-copilot",
-      "title": "Govern SharePoint and OneDrive for Microsoft 365 Copilot",
+      "title": "Govern SharePoint and OneDrive for Microsoft Copilot",
       "url": "https://learn.microsoft.com/training/modules/govern-sharepoint-onedrive-copilot/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -68372,13 +68386,13 @@
         "Introduction",
         "Create and manage SharePoint sites",
         "Set the boundary: SharePoint and OneDrive sharing settings",
-        "Find overshared sites before Copilot does",
-        "Exercise - Set up and audit a governed SharePoint site",
-        "Hide it from search, not from access: Restricted Content Discovery",
+        "Find overshared sites before Microsoft Copilot does",
+        "Exercise - Set up a safe Finance lab site and audit sharing",
+        "Limit broad discovery, not access: Restricted Content Discovery",
         "Lock it down for real: Restricted Access Control",
-        "A temporary allow-list for rollout: Restricted SharePoint Search",
+        "Troubleshoot legacy Restricted SharePoint Search",
         "Choose the right control for the job",
-        "Exercise - Remediate the Finance site and choose the right control",
+        "Exercise - Apply and verify Restricted Content Discovery",
         "Module assessment",
         "Summary"
       ]
@@ -75000,11 +75014,11 @@
         "Introduction",
         "Assign and manage Microsoft 365 licenses",
         "Verify and troubleshoot license assignments",
-        "Exercise - Assign, verify, and troubleshoot Microsoft 365 Copilot licensing for Relecloud's marketing rollout",
+        "Exercise - Verify group-based license assignments",
         "License AI services for the right populations",
         "Understand how Microsoft 365 billing is structured",
         "Set up pay-as-you-go billing for AI-service usage",
-        "Exercise - Configure pay-as-you-go billing for Relecloud's Copilot Studio pilot team",
+        "Exercise - Configure pay-as-you-go billing for a Microsoft Copilot Chat agent pilot",
         "Module assessment",
         "Summary"
       ]
@@ -75136,10 +75150,10 @@
         "Configure Microsoft 365 Backup for critical workloads",
         "Exercise - Configure Backup for Relecloud's critical workloads",
         "Monitor service health and configure notifications",
-        "Diagnose network connectivity issues affecting Copilot",
-        "Exercise - Diagnose Relecloud's satellite-office Copilot connectivity failure",
+        "Diagnose network connectivity issues affecting Microsoft Copilot",
+        "Exercise - Diagnose Relecloud's satellite-office Microsoft Copilot connectivity failure",
         "Monitor Microsoft 365 usage and adoption",
-        "Exercise - Interpret Relecloud's Copilot adoption data",
+        "Exercise - Interpret Relecloud's Microsoft Copilot adoption data",
         "Recognize the endpoint and client-management ecosystem",
         "Module assessment",
         "Summary"
@@ -75167,29 +75181,6 @@
         "Use support tools and troubleshoot service-related issues",
         "Document tenant changes and establish operational baselines",
         "Knowledge check",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.make-data-available-azure-machine-learning",
-      "title": "Make data available in Azure Machine Learning",
-      "url": "https://learn.microsoft.com/training/modules/make-data-available-azure-machine-learning/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Understand URIs",
-        "Create a datastore",
-        "Create a data asset",
-        "Exercise - Make data available in Azure Machine Learning",
-        "Module assessment",
         "Summary"
       ]
     },
@@ -75764,30 +75755,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.manage-azure-blob-storage-lifecycle",
-      "title": "Manage the Azure Blob storage lifecycle",
-      "url": "https://learn.microsoft.com/training/modules/manage-azure-blob-storage-lifecycle/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Azure",
-        "Blob Storage"
-      ],
-      "subjects": [
-        "Storage"
-      ],
-      "units": [
-        "Introduction",
-        "Explore the Azure Blob storage lifecycle",
-        "Discover Blob storage lifecycle policies",
-        "Implement Blob storage lifecycle policies",
-        "Rehydrate blob data from the archive tier",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.manage-azure-boards-using-github-copilot",
       "title": "Manage Azure Boards by using GitHub Copilot integration",
       "url": "https://learn.microsoft.com/training/modules/manage-azure-boards-using-github-copilot/?WT.mc_id=studentamb_165290",
@@ -76112,29 +76079,6 @@
         "Create and manage messaging policies",
         "Manage channel moderation",
         "Manage access to channels",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.manage-compare-models-azure-machine-learning",
-      "title": "Create and explore the Responsible AI dashboard for a model in Azure Machine Learning",
-      "url": "https://learn.microsoft.com/training/modules/manage-compare-models-azure-machine-learning/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Understand Responsible AI",
-        "Create the Responsible AI dashboard",
-        "Evaluate the Responsible AI dashboard",
-        "Exercise - Explore the Responsible AI dashboard",
         "Module assessment",
         "Summary"
       ]
@@ -78850,12 +78794,12 @@
       ],
       "units": [
         "Introduction",
-        "Pick the right report source for a Copilot adoption question",
+        "Pick the right report source for a Microsoft Copilot adoption question",
         "Exercise - Pick the right report source",
-        "Read the Copilot usage report and the Agent usage report",
-        "Exercise - Read the Copilot usage report and the Agent usage report",
-        "Reconcile Copilot and agent costs across surfaces",
-        "Exercise - Reconcile Copilot and agent costs across surfaces",
+        "Read the Microsoft Copilot usage report and the Agent usage report",
+        "Exercise - Read the Microsoft Copilot usage report and the Agent usage report",
+        "Reconcile Microsoft Copilot and agent costs across surfaces",
+        "Exercise - Reconcile Microsoft Copilot and agent costs across surfaces",
         "Assess AI-service health with the Copilot Control System",
         "Module assessment",
         "Summary"
@@ -81289,7 +81233,7 @@
         "Publish label policies and resolve conflicting settings",
         "Exercise - Configure and publish a sensitivity label policy, then verify priority resolution",
         "Verify classification is working with Purview reporting",
-        "Verify classification supports safe Copilot grounding",
+        "Verify classification supports safe Microsoft Copilot grounding",
         "Module assessment",
         "Summary"
       ]
@@ -82672,29 +82616,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.register-mlflow-model-azure-machine-learning",
-      "title": "Register an MLflow model in Azure Machine Learning",
-      "url": "https://learn.microsoft.com/training/modules/register-mlflow-model-azure-machine-learning/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Log models with MLflow",
-        "Understand the MLflow model format",
-        "Register an MLflow model",
-        "Exercise - Log and register models with MLflow",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.remediate-azure-defender-security-alerts",
       "title": "Remediate security alerts using Microsoft Defender for Cloud",
       "url": "https://learn.microsoft.com/training/modules/remediate-azure-defender-security-alerts/?WT.mc_id=studentamb_165290",
@@ -83110,29 +83031,6 @@
         "Create a pipeline",
         "Run a pipeline job",
         "Exercise - Run a pipeline job",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.run-training-script-command-job-azure-machine-learning",
-      "title": "Run a training script as a command job in Azure Machine Learning",
-      "url": "https://learn.microsoft.com/training/modules/run-training-script-command-job-azure-machine-learning/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Convert a notebook to a script",
-        "Run a script as a command job",
-        "Use parameters in a command job",
-        "Exercise - Run a training script as a command job",
         "Module assessment",
         "Summary"
       ]
@@ -84688,28 +84586,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.track-model-training-jupyter-notebooks-mlflow",
-      "title": "Track model training in Jupyter notebooks with MLflow",
-      "url": "https://learn.microsoft.com/training/modules/track-model-training-jupyter-notebooks-mlflow/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Configure MLflow for model tracking in notebooks",
-        "Train and track models in notebooks",
-        "Exercise - Track model training",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.train-evaluate-classification-models",
       "title": "Train and evaluate classification models",
       "url": "https://learn.microsoft.com/training/modules/train-evaluate-classification-models/?WT.mc_id=studentamb_165290",
@@ -84802,28 +84678,6 @@
         "Exercise - Experiment with more powerful regression models",
         "Improve models with hyperparameters",
         "Exercise - Optimize and save models",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.train-models-training-mlflow-jobs",
-      "title": "Track model training with MLflow in jobs",
-      "url": "https://learn.microsoft.com/training/modules/train-models-training-mlflow-jobs/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Track metrics with MLflow",
-        "View metrics and evaluate models",
-        "Exercise - Use MLflow to track training jobs",
         "Module assessment",
         "Summary"
       ]
@@ -87182,54 +87036,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.work-azure-blob-storage",
-      "title": "Work with Azure Blob storage",
-      "url": "https://learn.microsoft.com/training/modules/work-azure-blob-storage/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Azure",
-        "Blob Storage"
-      ],
-      "subjects": [
-        "Storage"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Azure Blob storage client library",
-        "Create a client object",
-        "Exercise - Create Blob storage resources by using the .NET client library",
-        "Manage container properties and metadata by using .NET",
-        "Set and retrieve properties and metadata for blob resources by using REST",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.work-compute-resources-azure-machine-learning",
-      "title": "Work with compute targets in Azure Machine Learning",
-      "url": "https://learn.microsoft.com/training/modules/work-compute-resources-azure-machine-learning/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Choose the appropriate compute target",
-        "Create and use a compute instance",
-        "Create and use a compute cluster",
-        "Exercise - Work with compute resources",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.work-delta-lake-tables-fabric",
       "title": "Work with Delta Lake tables in Microsoft Fabric",
       "url": "https://learn.microsoft.com/training/modules/work-delta-lake-tables-fabric/?WT.mc_id=studentamb_165290",
@@ -87251,29 +87057,6 @@
         "Work with delta tables in Spark",
         "Use delta tables with streaming data",
         "Exercise - Use delta tables in Apache Spark",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.work-environments-azure-machine-learning",
-      "title": "Work with environments in Azure Machine Learning",
-      "url": "https://learn.microsoft.com/training/modules/work-environments-azure-machine-learning/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Machine Learning"
-      ],
-      "subjects": [
-        "Machine learning"
-      ],
-      "units": [
-        "Introduction",
-        "Understand environments",
-        "Explore and use curated environments",
-        "Create and use custom environments",
-        "Exercise - Work with environments",
         "Module assessment",
         "Summary"
       ]
@@ -87344,7 +87127,7 @@
     },
     {
       "uid": "learn.wwl.work-smarter-with-microsoft-365-copilot-chat",
-      "title": "Work smarter with Microsoft Copilot Chat (Basic)",
+      "title": "Work smarter with Microsoft Copilot Chat",
       "url": "https://learn.microsoft.com/training/modules/work-smarter-with-microsoft-365-copilot-chat/?WT.mc_id=studentamb_165290",
       "categories": [
         "ms-copilot"
@@ -87359,7 +87142,7 @@
         "Introduction",
         "Enhance productivity and creativity with enterprise-ready AI Chat",
         "Create and collaborate with Copilot Pages",
-        "Simplify workflows and automate tasks with Agents in Copilot Chat (Basic)",
+        "Simplify workflows and automate tasks with Agents in Copilot Chat",
         "Exercise - Plan a client summit with Microsoft 365 Copilot Chat",
         "Module assessment",
         "Summary"
