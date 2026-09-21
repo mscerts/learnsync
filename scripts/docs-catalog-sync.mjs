@@ -362,7 +362,6 @@ const REPOS = [
       { sourceFolder: "Microsoft365/admin", baseUrlPath: "troubleshoot/microsoft-365" },
       { sourceFolder: "Microsoft365/purview", baseUrlPath: "troubleshoot/microsoft-365" },
       { sourceFolder: "Office/Client", baseUrlPath: "troubleshoot/office" },
-      { sourceFolder: "Office/OfficeExperts", baseUrlPath: "troubleshoot/office" },
       { sourceFolder: "Outlook/classic-outlook-for-windows", baseUrlPath: "troubleshoot/outlook" },
       { sourceFolder: "Outlook/legacy-outlook-for-mac", baseUrlPath: "troubleshoot/outlook" },
       { sourceFolder: "Outlook/new-outlook-for-mac", baseUrlPath: "troubleshoot/outlook" },
