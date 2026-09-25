@@ -27,12 +27,12 @@ live here on their own with their own schedule, issues, and history.
 | Covers | Training modules (Learn's `/training/modules/...`) | Documentation pages (`/en-us/<product>/...`) |
 | Script | [`scripts/learn-catalog-sync.mjs`](scripts/learn-catalog-sync.mjs) | [`scripts/docs-catalog-sync.mjs`](scripts/docs-catalog-sync.mjs) |
 | Data file | [`data/learn-catalog.json`](data/learn-catalog.json) (~3,357 modules) | [`data/docs-catalog.json`](data/docs-catalog.json) (~75,000 pages) + [`data/docs-catalog-invalid.json`](data/docs-catalog-invalid.json) (quarantined dead links) |
-| Source | [`learn.microsoft.com/api/catalog/`](https://learn.microsoft.com/api/catalog/) | Blobless/sparse/shallow `git clone` of ~30 `MicrosoftDocs/*` GitHub repos |
+| Source    | [`learn.microsoft.com/api/catalog/`](https://learn.microsoft.com/api/catalog/) | Learn's own [sitemaps](https://learn.microsoft.com/_sitemaps/sitemapindex.xml) + changed pages' `<head>` metadata; `git clone` of `github/docs` for docs.github.com |
 | Schedule | Mondays 07:00 UTC | Mondays 08:00 UTC |
 | Workflow | [`learn-catalog-monitor.yml`](.github/workflows/learn-catalog-monitor.yml) | [`docs-catalog-monitor.yml`](.github/workflows/docs-catalog-monitor.yml) |
 
 Both scripts are plain Node.js ESM with **zero npm dependencies** —
-`learn-catalog-sync.mjs` only uses the global `fetch`; `docs-catalog-sync.mjs`
+both use the global `fetch`; `docs-catalog-sync.mjs`
 additionally shells out to `git`. Neither needs `npm install` to run.
 
 See [AGENTS.md](AGENTS.md) for the full operational detail behind each cache:
@@ -93,9 +93,12 @@ npm run sync:docs
 npm run sync        # both, in sequence
 ```
 
-`docs-catalog-sync.mjs` clones each configured repo with
-`--filter=blob:none --sparse --depth 1`, so it's fast (well under a minute for
-all ~30 repos) but still needs outbound network + `git` access.
+`docs-catalog-sync.mjs` no longer depends on the `MicrosoftDocs/*` repos, which Microsoft
+Learn is [retiring by the end of December 2026](https://techcommunity.microsoft.com/blog/skills-hub-blog/changes-to-microsoft-learn%E2%80%99s-public-documentation-repositories/4554909).
+It discovers pages from Learn's sitemaps and only fetches pages whose `lastmod` changed.
+Flags: `DRY_RUN=1` (plan + per-prefix counts, writes nothing), `FULL_DISCOVERY=1`
+(re-scan every sitemap family), `MAX_PAGE_FETCHES=<n>` (per-run cap, default 6000),
+`SKIP_GIT_SOURCES=1` (don't clone github/docs).
 
 ## Keeping the caches fresh
 

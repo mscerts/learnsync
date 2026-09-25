@@ -12,7 +12,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 120 # clones + quarantine re-check + capped link check; well under this in a normal week
+    timeout-minutes: 120 # sitemaps + capped page fetches (MAX_PAGE_FETCHES) + github/docs clone; well under this in a normal week
     permissions:
       contents: write
       issues: write
@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/docs-catalog.json data/docs-catalog-invalid.json
+          git add data/docs-catalog.json data/docs-catalog-invalid.json data/docs-sitemap-families.json
           if ! git diff --cached --quiet; then
             git commit -m "Update Microsoft docs catalog cache"
             git push
@@ -58,9 +58,10 @@ jobs:
         run: |
           title="Microsoft Docs Catalog Sync Failed"
           {
-            echo "The scheduled sync of \`data/docs-catalog.json\` failed: a source repo in"
-            echo "\`scripts/docs-catalog-sync.mjs\` could not be cloned/parsed (renamed, removed, or its"
-            echo "folder structure changed), or the duplicate-URL audit found a systemic mapping bug."
+            echo "The scheduled sync of \`data/docs-catalog.json\` failed: one or more Learn sitemap"
+            echo "files could not be fetched, the sitemaps returned far fewer URLs than last run (sanity"
+            echo "abort), the github/docs clone failed, or the duplicate-URL audit tripped. Previous"
+            echo "entries were carried forward where possible."
             echo "Broken URLs alone don't fail this job -- they're quarantined into"
             echo "\`data/docs-catalog-invalid.json\` instead (see AGENTS.md)."
             echo
