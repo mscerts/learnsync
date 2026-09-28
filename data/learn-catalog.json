@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-09-21T13:45:52.669Z",
+  "lastChecked": "2026-09-28T15:07:15.837Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -53,7 +53,7 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3298,
+  "totalModules": 3308,
   "modules": [
     {
       "uid": "$learn.become-learn-contributor",
@@ -10655,7 +10655,7 @@
         "Use the Outlook interface for Business Central",
         "Use Microsoft Teams to share business data",
         "Exercise - Use Outlook as your Business Central inbox",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11112,7 +11112,7 @@
         "Import a bank statement",
         "Reconcile bank accounts with Copilot",
         "Undo a bank account reconciliation",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11330,7 +11330,7 @@
         "Extended data types and element properties",
         "Base enums and element properties",
         "Exercise - Create a base enumeration, add elements, and update properties",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11469,7 +11469,7 @@
         "Create, manage, and extend queries",
         "Create, manage, and extend table maps",
         "Exercise - Create a table, add fields, and create field groups",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11542,7 +11542,7 @@
         "Extend Teams cards",
         "Create Business Central tabs for Teams",
         "Get relevant session and environment details for Teams integration",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11733,7 +11733,7 @@
         "Consolidate customer and vendor balances",
         "Set up payment registration",
         "Enable customer payments through payment services",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11760,7 +11760,7 @@
         "Manage saved settings for reports",
         "Set up printers",
         "Exercise - Change the layout currently used on a report",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11784,7 +11784,7 @@
         "Set up account categories and subcategories",
         "Maintain the chart of accounts",
         "Review general ledger entries",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -12598,7 +12598,7 @@
         "Fixed asset transaction options",
         "Demonstration - Create a fixed asset",
         "Exercise - Work with fixed assets",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -13392,7 +13392,7 @@
         "Run the Cloud Migration tool",
         "Address common questions and issues with migrations",
         "Describe cloud migration APIs",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -13709,7 +13709,7 @@
         "Add code and methods to meet business requirements",
         "Data manipulation",
         "Exercise - Insert records by using a runnable class",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -13998,7 +13998,7 @@
         "Set up item templates",
         "Create a new service item",
         "Create a new non-inventory item",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14282,7 +14282,7 @@
         "Post an expense report",
         "Reporting options",
         "Exercise – Create an expense report and submit it to a workflow",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14336,7 +14336,7 @@
         "Set up checking documents and journals while you work",
         "Process fixed asset disposals",
         "Exercise - Create and post a journal entry",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14669,9 +14669,12 @@
       "units": [
         "Introduction",
         "Create Power Apps for Dynamics 365 Customer Service",
-        "Deploy a self-service portal for Customer Service",
-        "Customize case management",
-        "Check your knowledge",
+        "Configure the Customer Service data model",
+        "Configure forms, views, and app navigation",
+        "Customize case management in Dynamics 365 Customer Service",
+        "Automate and deploy Customer Service customizations",
+        "Plan Customer Service self-service with Power Pages",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14721,7 +14724,7 @@
         "Use invoice discounts when selling items to customers",
         "Manage the new sales pricing experience",
         "Exercise - set up invoice discounts",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14753,7 +14756,7 @@
     },
     {
       "uid": "learn-dynamics.customer-service-visualizations",
-      "title": "Create visualizations for Dynamics 365 Customer Service",
+      "title": "Analyze Dynamics 365 Customer Service with reports and dashboards",
       "url": "https://learn.microsoft.com/training/modules/customer-service-visualizations/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365"
@@ -14767,11 +14770,12 @@
       ],
       "units": [
         "Introduction",
-        "Create and use charts",
-        "Create dashboards for Customer Service",
-        "Working with Historical analytics",
-        "Use Power BI to view Customer Service data",
-        "Check your knowledge",
+        "Analyze Customer Service data with views and charts",
+        "Create Customer Service dashboards",
+        "Configure Customer Service analytics and access",
+        "Interpret Customer Service historical analytics",
+        "Analyze Customer Service data with Power BI",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14819,7 +14823,7 @@
       "units": [
         "Introduction - Cloud architecture for Business Central",
         "Tailor, extend, and build applications",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15246,7 +15250,7 @@
         "Add columns to a report dataset",
         "Link, order, and indent data items",
         "Use a query to create a report dataset",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15720,7 +15724,7 @@
         "Manage apps",
         "Detect and avoid breaking changes",
         "Frequently asked questions about updating your Business Central App",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15895,7 +15899,7 @@
         "Process payment tolerances when posting payments",
         "Print customer statements",
         "Exercise - Register a customer payment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16184,7 +16188,7 @@
         "Change existing data by using Excel",
         "Configure cloud storage in OneDrive",
         "Exercise - Use mathematical expressions and date formula in a sales quote",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16352,7 +16356,7 @@
         "Exercise - Extend a form and add controls",
         "Extend menus",
         "Implement delegates",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16694,7 +16698,7 @@
         "Sell a fixed asset by using a free text invoice",
         "Dispose of fixed assets as scrap",
         "Exercise - Create a depreciation proposal",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16858,7 +16862,7 @@
         "Set up allocation accounts",
         "Use allocation accounts in documents",
         "Use allocation accounts in journals",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -17079,7 +17083,7 @@
         "Multiple chart of accounts",
         "Set up a chart of accounts",
         "Exercise - Create a new main account",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -17365,7 +17369,7 @@
         "Policies",
         "Expense categories and shared categories",
         "Map expense categories to a main account",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18073,7 +18077,7 @@
         "Configure a Warehouse Management System location",
         "Create warehouse employees",
         "Exercise - Create a location for the north warehouse",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18413,7 +18417,7 @@
         "Create journal tables",
         "Create document tables",
         "Create setup tables",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18471,7 +18475,7 @@
         "Configure item model groups",
         "Configure item groups and inventory posting profiles",
         "Perform inventory recalculation, closing, and adjustment processes",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18762,7 +18766,7 @@
         "Consume data from the Azure Machine Learning service",
         "Enable connectivity with external services",
         "Optimize data entities to achieve better performance",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18870,7 +18874,7 @@
         "Data integration overview",
         "Synchronous integration",
         "Asynchronous integration",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19268,7 +19272,7 @@
         "Get started with Power Automate",
         "Power Platform integration use cases",
         "Embed Microsoft Power Platform in Business Central",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19368,7 +19372,7 @@
         "Include payment services on posted sales invoices",
         "Use deferrals with sales documents",
         "Exercise - Invoice a customer",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19608,7 +19612,7 @@
         "Update fixed asset information",
         "Recalculate replacement costs and insured values for fixed asset groups",
         "Fixed assets roll forward report",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20334,7 +20338,7 @@
         "Netting history and reporting",
         "Reversing netting transactions",
         "Exercise - Practice netting",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20383,7 +20387,7 @@
         "Enable automatic vendor invoice prepayments",
         "Use workflow and product match receipts",
         "View vendor invoice automation results",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20637,7 +20641,7 @@
         "Set up bank export and import formats",
         "Edit recurring journals in Excel",
         "Exercise - Create and post a recurring journal",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20696,7 +20700,7 @@
         "Personalize document pages and add fields",
         "Customize pages for profiles",
         "Exercise - Personalize the customer list and clear personalization",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20855,7 +20859,7 @@
         "Process item charges in a purchase order",
         "Process item charges in a purchase invoice",
         "Analyze the direct unit cost of an item",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20875,12 +20879,12 @@
       ],
       "units": [
         "Introduction - Set up and assign specific posting groups",
-        "Allow multiple posting groups for customers and vendors",
+        "Allow multiple posting groups for customers, vendors, and employees",
         "Set up and assign inventory posting groups",
         "General posting groups",
         "Configure the general posting setup page",
         "Exercise - Set up and assign a customer posting group",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21125,7 +21129,7 @@
         "Manage customer credit and collections",
         "Credit management",
         "Exercise - Work with credit and collections",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21263,7 +21267,7 @@
         "Introduction - Invoice from a purchase order",
         "Invoice multiple receipts",
         "Use deferrals in purchase invoices",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21551,7 +21555,7 @@
         "Periodically recurring invoices",
         "Exercise- Record an invoice",
         "Exercise- Record a vendor invoice not associated with a purchase order",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22491,7 +22495,7 @@
         "Estimate and eliminate a project to a fixed asset",
         "Manual and automatic methods to create fixed assets",
         "Exercise - Acquire a new asset",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22588,7 +22592,7 @@
         "Financial tags",
         "Accounts for automatic transactions",
         "Exercise - Create a main account category in the chart of accounts",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22763,7 +22767,7 @@
         "Send a sales document by email",
         "Check your sent emails",
         "Check your email outbox",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22823,7 +22827,7 @@
         "Define and set up account structure and advanced rules",
         "Ledger account aliases",
         "Exercise - Set up an account structure",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -23236,7 +23240,7 @@
         "Greet new users with the welcome banner",
         "Get users started with the checklist",
         "Implement teaching tips and in-app tours",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -23834,7 +23838,7 @@
         "Copy a lease",
         "Adjust a lease",
         "Exercise - Create an asset lease and payment schedule",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24035,7 +24039,7 @@
         "Use workspace and inquiry pages to track budget vs. actuals",
         "Use inquiries and reports for budget analysis",
         "Exercise - Set up basic budgeting components",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24062,7 +24066,7 @@
         "Budget groups",
         "Activate budget control",
         "Exercise – Set up budget control components",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24131,7 +24135,7 @@
         "Review posted sales documents",
         "Reverse or correct a posted sales invoice",
         "Process prepayment invoices for sales and purchases",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25648,7 +25652,7 @@
         "Impair a right-of-use asset",
         "Asset leasing reporting",
         "Exercise - Create payment invoices",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25680,25 +25684,29 @@
     },
     {
       "uid": "learn-dynamics.work-customer-voice-projects",
-      "title": "Create a survey project with Dynamics 365 Customer Voice",
+      "title": "Capture customer feedback with Dynamics 365 Customer Voice",
       "url": "https://learn.microsoft.com/training/modules/work-customer-voice-projects/?WT.mc_id=studentamb_165290",
       "categories": [
         "Dynamics 365"
       ],
       "products": [
+        "Customer Service",
         "Customer Voice",
         "Dynamics 365"
       ],
       "subjects": [
+        "Communication",
         "Customer relationship management"
       ],
       "units": [
         "Introduction",
-        "Dynamics 365 Customer Voice",
-        "Projects in Dynamics 365 Customer Voice",
-        "Create your first project",
-        "Exercise - Create a basic project",
-        "Check your knowledge",
+        "Plan feedback with Dynamics 365 Customer Voice",
+        "Plan a Customer Voice project",
+        "Create and customize a case feedback survey",
+        "Distribute and automate case feedback surveys",
+        "Analyze case feedback responses",
+        "Exercise - Create a case feedback project",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26079,7 +26087,7 @@
         "Exercise - Set up sales tax reporting codes and withholding tax",
         "Calculate and adjust sales tax",
         "Prepare periodic filing",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26180,7 +26188,7 @@
         "Create new APIs",
         "Read, create, and update by using API",
         "API and OData bound actions",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26529,7 +26537,7 @@
         "Add existing hidden fields to pages",
         "Exercise - Create a Card page",
         "Exercise - Create a List page",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -29829,7 +29837,7 @@
     },
     {
       "uid": "learn-m365.what-generative-ai",
-      "title": "What is generative AI?",
+      "title": "Prepare to use generative AI at work",
       "url": "https://learn.microsoft.com/training/modules/what-generative-ai/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365"
@@ -29845,7 +29853,7 @@
         "What is generative AI?",
         "Understand responsible AI",
         "Your Microsoft Copilot workflow companions",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -43045,11 +43053,11 @@
       "subjects": [],
       "units": [
         "Introduction",
-        "Exercise - Perform addition with implicit data conversion",
-        "Exercise - Perform math operations",
-        "Exercise - Increment and decrement values",
-        "Complete the challenge to convert Fahrenheit to Celsius",
-        "Review the solution to convert Fahrenheit to Celsius",
+        "Work with numeric data types",
+        "Perform math operations",
+        "Convert data types",
+        "Exercise - Build a tip calculator",
+        "Challenge - Convert Fahrenheit to Celsius",
         "Module assessment",
         "Summary"
       ]
@@ -43257,32 +43265,31 @@
     },
     {
       "uid": "learn.languages.csharp-if-elseif-else",
-      "title": "Add decision logic to your code using `if`, `else`, and `else if` statements in C#",
+      "title": "Add decision logic to your code in C#",
       "url": "https://learn.microsoft.com/training/modules/csharp-if-elseif-else/?WT.mc_id=studentamb_165290",
       "categories": [
-        ".NET",
-        "Visual Studio Code"
+        ".NET"
       ],
       "products": [
-        ".NET",
-        "Visual Studio Code"
+        ".NET"
       ],
       "subjects": [
         "app-development"
       ],
       "units": [
         "Introduction",
-        "Exercise - Create decision logic with if statements",
-        "Exercise - Create nested decision logic with if, else if, and else",
-        "Exercise - Complete a challenge activity to apply business rules",
-        "Review the solution to the apply business rules challenge activity",
+        "Evaluate conditions with Boolean expressions",
+        "Control code flow with if, else if, and else",
+        "Combine conditions with logical operators",
+        "Exercise - Build a dice game",
+        "Challenge - Display a subscription renewal message",
         "Module assessment",
         "Summary"
       ]
     },
     {
       "uid": "learn.languages.csharp-literals-variables",
-      "title": "Store and retrieve data using literal and variable values in C#",
+      "title": "Store data with variables in C#",
       "url": "https://learn.microsoft.com/training/modules/csharp-literals-variables/?WT.mc_id=studentamb_165290",
       "categories": [
         ".NET"
@@ -43293,12 +43300,10 @@
       "subjects": [],
       "units": [
         "Introduction",
-        "Exercise - Print literal values",
-        "Declare variables",
-        "Exercise - Setting and getting values from variables",
-        "Declare implicitly typed local variables",
-        "Complete the challenge",
-        "Review the solution",
+        "Work with literal values",
+        "Declare and assign variables",
+        "Use the var keyword",
+        "Exercise - Work with literals and variables",
         "Module assessment",
         "Summary"
       ]
@@ -43409,10 +43414,11 @@
       "subjects": [],
       "units": [
         "Introduction",
-        "Exercise - Write your first code",
-        "Learn how it works",
-        "Complete the challenge",
-        "Review the solution",
+        "Display console output",
+        "Accept user input",
+        "Manipulate strings",
+        "Exercise - Create a personalized greeting",
+        "Challenge - Create a program with user interaction",
         "Module assessment",
         "Summary"
       ]
@@ -44662,7 +44668,6 @@
         "Unlock learners' full potential with Learning Accelerators",
         "Save time with Microsoft Teams for Education",
         "Build AI literacy and digital citizenship with Minecraft Education's AI Foundations",
-        "Maximize class preparation time with Khanmigo for Teachers",
         "Improve coding skills with GitHub Copilot",
         "Get started with AI tools in school",
         "Module assessment",
@@ -50001,6 +50006,64 @@
       ]
     },
     {
+      "uid": "learn.windows-server.certificate-services-root-issuing-authority",
+      "title": "Deploy offline root and issuing Active Directory Certificate Services certification authorities",
+      "url": "https://learn.microsoft.com/training/modules/certificate-services-root-issuing-authority/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows Server"
+      ],
+      "products": [
+        "Windows Server"
+      ],
+      "subjects": [
+        "Infrastructure",
+        "Security"
+      ],
+      "units": [
+        "Introduction",
+        "Install the offline root",
+        "Deploy the issuing certification authority role",
+        "Perform the offline root signing ceremony",
+        "Complete the issuing certification authority configuration",
+        "Publish trust data, validate clients",
+        "Capture the post-install baseline, plan renewal, validate acceptance",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.windows-server.manage-user-computer-certificates",
+      "title": "Manage local user and computer certificates",
+      "url": "https://learn.microsoft.com/training/modules/manage-user-computer-certificates/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows Server"
+      ],
+      "products": [
+        "Windows Server"
+      ],
+      "subjects": [
+        "Infrastructure",
+        "Security"
+      ],
+      "units": [
+        "Introduction",
+        "Certificate stores, management tools",
+        "Certificate inventory",
+        "Certificate file formats",
+        "Certificate export",
+        "Certificate import",
+        "Certificate enrollment",
+        "Certificate request creation, completion",
+        "Certification authority trust",
+        "Self-signed test certificates",
+        "Certificate renewal, backup, recovery",
+        "Certificate retirement, compromise response",
+        "Certificate failure troubleshooting",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.workload-operations-generative-ai-center-excellence",
       "title": "Guide AI workload operations with an AI Center of Excellence",
       "url": "https://learn.microsoft.com/training/modules/guide-ai-operations-center-excellence/?WT.mc_id=studentamb_165290",
@@ -51465,6 +51528,29 @@
       ]
     },
     {
+      "uid": "learn.wwl.balance-cost-usage-value-copilot",
+      "title": "Use Copilot wisely - balancing usage, cost, and value",
+      "url": "https://learn.microsoft.com/training/modules/balance-cost-usage-value-copilot/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Microsoft 365"
+      ],
+      "products": [
+        "microsoft-365-copilot",
+        "microsoft-365-copilot-chat"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "Productivity",
+        "generative-ai"
+      ],
+      "units": [
+        "Introduction",
+        "Balance Copilot usage, cost, and value",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.begin-your-microsoft-learn-educators-journey",
       "title": "Begin your Microsoft Learn for Educators Journey",
       "url": "https://learn.microsoft.com/training/modules/begin-your-microsoft-learn-educators-journey/?WT.mc_id=studentamb_165290",
@@ -52086,6 +52172,34 @@
         "Improve accuracy with advanced RAG architectures",
         "Explore GraphRAG with Azure Database for PostgreSQL",
         "Exercise: Implement GraphRAG with Azure Database for PostgreSQL",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.build-solutions-copilot-code",
+      "title": "Build solutions with Copilot Code",
+      "url": "https://learn.microsoft.com/training/modules/build-solutions-copilot-code/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Microsoft 365",
+        "ms-copilot"
+      ],
+      "products": [
+        "Microsoft 365",
+        "ms-copilot"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "Productivity"
+      ],
+      "units": [
+        "Introduction",
+        "Choose the right Copilot mode",
+        "Define your requirements",
+        "Plan a solution with Copilot Code",
+        "Create and refine your solution",
+        "Validate and prepare to share",
+        "Exercise - Build an AI initiatives repository",
         "Module assessment",
         "Summary"
       ]
@@ -53716,7 +53830,7 @@
     },
     {
       "uid": "learn.wwl.configure-copilot-settings-extensibility",
-      "title": "Configure Microsoft 365 Copilot settings and extensibility",
+      "title": "Configure Microsoft Copilot settings and extensibility",
       "url": "https://learn.microsoft.com/training/modules/configure-copilot-settings-extensibility/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365"
@@ -53730,9 +53844,10 @@
       ],
       "units": [
         "Introduction",
-        "Configure the Copilot tenant-settings catalog",
-        "Exercise - Configure the Copilot settings catalog",
-        "Manage web search for Copilot and Copilot Chat",
+        "Configure the Microsoft Copilot tenant-settings catalog",
+        "Exercise - Configure the Microsoft Copilot settings catalog",
+        "Manage web search for Microsoft Copilot and Microsoft Copilot Chat",
+        "Manage Microsoft Copilot Cowork",
         "Configure Copilot Search",
         "Exercise - Configure web search and Copilot Search",
         "Manage third-party AI providers",
@@ -55713,6 +55828,29 @@
       ]
     },
     {
+      "uid": "learn.wwl.copilot-app-modes",
+      "title": "Navigate your Microsoft Copilot experience",
+      "url": "https://learn.microsoft.com/training/modules/copilot-app-modes/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Microsoft 365",
+        "ms-copilot"
+      ],
+      "products": [
+        "Microsoft 365",
+        "ms-copilot"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "Productivity"
+      ],
+      "units": [
+        "Introduction",
+        "Your Microsoft Copilot workflow companions",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.copilot-studio-structured-automation",
       "title": "Add structured automation to agents in Microsoft Copilot Studio",
       "url": "https://learn.microsoft.com/training/modules/copilot-studio-structured-automation/?WT.mc_id=studentamb_165290",
@@ -57161,6 +57299,28 @@
         "Configure child agent inputs, outputs, and trigger behavior",
         "Test and manage child agents",
         "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.delegate-ongoing-work-autopilot-copilot",
+      "title": "Delegate ongoing work to Autopilot in Microsoft Copilot",
+      "url": "https://learn.microsoft.com/training/modules/delegate-ongoing-work-autopilot-copilot/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Microsoft 365"
+      ],
+      "products": [
+        "Microsoft 365"
+      ],
+      "subjects": [
+        "Artificial intelligence"
+      ],
+      "units": [
+        "Introduction",
+        "Decide what to delegate",
+        "Write the brief and check the work",
+        "Delegate responsibly",
+        "Knowledge check",
         "Summary"
       ]
     },
@@ -62213,6 +62373,32 @@
       ]
     },
     {
+      "uid": "learn.wwl.dynamic-sessions-azure-container-apps",
+      "title": "Run AI-generated code securely in Azure Container Apps dynamic sessions",
+      "url": "https://learn.microsoft.com/training/modules/dynamic-sessions-azure-container-apps/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure Container Apps"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "backend-development",
+        "containers"
+      ],
+      "units": [
+        "Introduction",
+        "Choose a dynamic session pool",
+        "Configure a secure session pool",
+        "Execute code and exchange files",
+        "Manage lifecycle and execution failures",
+        "Exercise - Execute AI-generated code securely in Azure Container Apps dynamic sessions",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.eliminate-public-exposure-paas-private-link",
       "title": "Eliminate public network exposure of Azure PaaS services",
       "url": "https://learn.microsoft.com/training/modules/eliminate-public-exposure-paas-private-link/?WT.mc_id=studentamb_165290",
@@ -63137,7 +63323,7 @@
       "units": [
         "Introduction",
         "Understand the Microsoft Entra Agent ID object model",
-        "Assign a sponsor and a least-privilege owner",
+        "Assign a sponsor and a Microsoft Entra owner",
         "Exercise - Assign a sponsor and owner to an agent identity",
         "Automate sponsor transfer with Lifecycle Workflows",
         "Exercise - Configure a sponsor-transfer Lifecycle Workflow",
@@ -67499,7 +67685,7 @@
     },
     {
       "uid": "learn.wwl.get-started-microsoft-365-copilot-business-chat",
-      "title": "Get started with Microsoft Copilot Chat",
+      "title": "Explore how Microsoft Copilot Chat works",
       "url": "https://learn.microsoft.com/training/modules/get-started-microsoft-365-copilot-business-chat/?WT.mc_id=studentamb_165290",
       "categories": [
         "ms-copilot"
@@ -67514,7 +67700,7 @@
         "Introduction",
         "Understand Microsoft Copilot Chat",
         "Access Microsoft Copilot Chat",
-        "Utilize Microsoft Copilot Chat",
+        "Navigate Microsoft Copilot Chat",
         "Keep your data safe while using Copilot Chat",
         "Module assessment",
         "Summary"
@@ -68389,7 +68575,7 @@
         "Find overshared sites before Microsoft Copilot does",
         "Exercise - Set up a safe Finance lab site and audit sharing",
         "Limit broad discovery, not access: Restricted Content Discovery",
-        "Lock it down for real: Restricted Access Control",
+        "Enforce access with Restricted Access Control",
         "Troubleshoot legacy Restricted SharePoint Search",
         "Choose the right control for the job",
         "Exercise - Apply and verify Restricted Content Discovery",
@@ -68464,7 +68650,7 @@
       ],
       "units": [
         "Introduction",
-        "Distinguish building blocks and choose a tool type",
+        "Distinguish agent capabilities and choose a type",
         "Configure and validate knowledge",
         "Configure connector tools and inputs",
         "Connect to an existing MCP server",
@@ -69765,7 +69951,7 @@
         "Evaluate Conditional Access policies and client app conditions",
         "Investigate and resolve authentication issues",
         "Resolve sign-in risk and device compliance in Conditional Access",
-        "Exercise - Build and verify a risk-based, device-compliant Conditional Access policy",
+        "Exercise - Design and verify Conditional Access pilot policies",
         "Module assessment",
         "Summary"
       ]
@@ -76137,6 +76323,30 @@
       ]
     },
     {
+      "uid": "learn.wwl.manage-copilot-costs",
+      "title": "Manage Copilot costs as an administrator",
+      "url": "https://learn.microsoft.com/training/modules/manage-copilot-costs/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Microsoft 365"
+      ],
+      "products": [
+        "Microsoft 365",
+        "Microsoft 365 Admin Center"
+      ],
+      "subjects": [
+        "IT management and monitoring"
+      ],
+      "units": [
+        "Introduction",
+        "Understand how Microsoft 365 billing is structured",
+        "Set up pay-as-you-go billing for AI-service usage",
+        "Exercise - Configure pay-as-you-go billing for a Microsoft Copilot Chat agent pilot",
+        "Reconcile Microsoft Copilot and agent costs across surfaces",
+        "Optimize AI spend without lowering value",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.manage-copilot-fabric",
       "title": "Manage Copilot in Microsoft Fabric",
       "url": "https://learn.microsoft.com/training/modules/manage-copilot-fabric/?WT.mc_id=studentamb_165290",
@@ -77579,6 +77789,30 @@
       ]
     },
     {
+      "uid": "learn.wwl.manage-usage-cost-agents-copilot-studio",
+      "title": "Manage usage and cost for agents in Microsoft Copilot Studio",
+      "url": "https://learn.microsoft.com/training/modules/manage-usage-cost-agents-copilot-studio/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "Compare billing models across harnesses",
+        "Identify runtime consumption drivers",
+        "Plan for build-time consumption",
+        "Understand admin cost governance",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.manage-user-authentication",
       "title": "Manage user authentication",
       "url": "https://learn.microsoft.com/training/modules/manage-user-authentication/?WT.mc_id=studentamb_165290",
@@ -77830,6 +78064,31 @@
         "Query logs",
         "Exercise: Use Azure Monitor to analyze an Azure Cosmos DB for NoSQL account",
         "Knowledge check",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.microsoft-ai-in-foundry",
+      "title": "Get started with Microsoft AI models in Foundry",
+      "url": "https://learn.microsoft.com/training/modules/microsoft-ai-in-foundry/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "foundry-models"
+      ],
+      "subjects": [
+        "Artificial intelligence"
+      ],
+      "units": [
+        "Introduction",
+        "Microsoft AI models in Foundry",
+        "MAI-Thinking",
+        "MAI-Image",
+        "MAI-Transcribe",
+        "MAI-Voice",
+        "Exercise - Use MAI models in Foundry",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -78800,6 +79059,7 @@
         "Exercise - Read the Microsoft Copilot usage report and the Agent usage report",
         "Reconcile Microsoft Copilot and agent costs across surfaces",
         "Exercise - Reconcile Microsoft Copilot and agent costs across surfaces",
+        "Optimize AI spend across Microsoft 365 AI services",
         "Assess AI-service health with the Copilot Control System",
         "Module assessment",
         "Summary"
@@ -80874,13 +81134,13 @@
       "units": [
         "Introduction",
         "Specify DLP requirements across Microsoft 365 locations",
-        "Exercise - Create a DLP policy for Microsoft 365 Copilot",
+        "Exercise - Create a DLP policy for Microsoft Copilot",
         "Attribute DLP alerts across AI apps and agents",
         "Respond to DLP alerts in Microsoft Defender XDR",
         "Exercise - Review a DLP alert in Microsoft Defender XDR",
         "Specify data lifecycle management requirements",
-        "Monitor AI activity and oversharing risk with DSPM for AI",
-        "Exercise - Review a DSPM for AI data risk assessment",
+        "Monitor AI activity and oversharing risk with Data Security Posture Management",
+        "Exercise - Review a data risk assessment in Data Security Posture Management",
         "Recognize the broader Microsoft Purview governance surface",
         "Module assessment",
         "Summary"
