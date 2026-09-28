@@ -1,0 +1,770 @@
+{
+  "accessibility-tools-docs": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "adaptive-cards": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "advertising": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "agent-framework": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "agents": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "ai": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "ai-builder": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "analysis-services": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "answers": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "appcenter": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "archive": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "aspnet": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "assessments": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "auto-healing-test": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "autopilot": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "azure": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "azure-sphere": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "azure-stack": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "bingmaps": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "bingwebmaster": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "biztalk": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "business-applications": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "clarity": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "cli": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "clipchamp": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "cloud-computing": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "collaborate": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "common-data-model": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "community": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "compliance": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "composer": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "connectivity-analyzer": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "connectors": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "contribute": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "copilot": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "cosmos-db": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "cpp": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "credentials": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "data-engineering": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "data-integration": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "data-migration": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "dax": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "defender": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "defender-business": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "defender-cloud-apps": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "defender-endpoint": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "defender-for-identity": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "defender-for-iot": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "defender-office-365": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "defender-vulnerability-management": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "defender-xdr": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "deployedge": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "devops": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "documentdb": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "dotnet": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "dynamics": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "dynamics-gp": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "dynamics365": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "ecdn": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "education": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "ef": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "enterprise-mobility-security": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "entra": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "exchange": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "fabric": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "fluent-ui": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "fslogix": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "gaming": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "globalization": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "graph": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "halo-master-chief-collection": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "hololens": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "host-integration-server": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "iis": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "iis-administration": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "industry": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "information-protection": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "intune": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "intune-education": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "java": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "javascript": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "kusto": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "labs": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "legal": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "lifecycle": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "linkedin": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "linux": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "marketplace": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "mdep": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "message-passing-interface": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-365": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "microsoft-365-app-certification": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-365-apps": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-adobe-product-integrations": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-agent-365": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-cloud": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-copilot-studio": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-desktop-optimization-pack": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-edge": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-for-startups": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-forms": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-identity-manager": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-iq": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-sales-copilot": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoft-scout": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoftsearch": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "microsoftteams": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "minecraft": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "nimbusml": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "nosql": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "nuget": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "objectivec": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "odata": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "office": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "office-project": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "office365": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "officeonlineserver": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "officeupdates": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "onedrive": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "openapi": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "openspecs": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "outlook": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "partner-center": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "partner-support": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "planner": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "platform-engineering": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "playready": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "postgresql": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "power-apps": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "power-automate": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "power-bi": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "power-pages": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "power-platform": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "power-query": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "powerquery-m": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "powershell": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "previous-versions": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "privacy": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "product-style-guide-msft-internal": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "project": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "project-for-the-web": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "project-sophia": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "projectonline": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "purview": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "python": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "qsharp": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "rest": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "root": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "samples": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "schooldatasync": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "scripting": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "security": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "security-exposure-management": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "security-updates": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "semantic-kernel": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "services-hub": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "sharepoint": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "sharepointmigration": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "shows": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "skype-sdk": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "skypeforbusiness": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "sql": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "ssms": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "startups": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "stream-analytics-query": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "style-guide": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "surface": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "surface-duo": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "surface-hub": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "sysinternals": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "system-center": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "training": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "troubleshoot": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "typography": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "universal-print": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "uwp": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "vcpkg": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "virtualization": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "visualstudio": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "viva": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "volume-licensing-central": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "webappsserver": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "windows": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "windows-365": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "windows-app": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "windows-hardware": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "windows-insider": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "windows-server": {
+    "relevant": true,
+    "checked": "2026-09-28"
+  },
+  "winrtc": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "writing-style-guide-msft-internal": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "xandr": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  },
+  "xbox": {
+    "relevant": false,
+    "checked": "2026-09-28"
+  }
+}
