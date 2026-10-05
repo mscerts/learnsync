@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-09-28T15:07:15.837Z",
+  "lastChecked": "2026-10-05T15:41:05.589Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -53,32 +53,8 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3308,
+  "totalModules": 3351,
   "modules": [
-    {
-      "uid": "$learn.become-learn-contributor",
-      "title": "Become a Microsoft Learn contributor",
-      "url": "https://learn.microsoft.com/training/modules/become-learn-contributor/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "GitHub",
-        "Visual Studio Code"
-      ],
-      "products": [
-        "GitHub",
-        "Visual Studio Code"
-      ],
-      "subjects": [],
-      "units": [
-        "Introduction",
-        "What is a Microsoft Learn contributor?",
-        "Review documentation using GitHub Issues",
-        "Contribute to Microsoft Q&A",
-        "Create a Collection on Microsoft Learn",
-        "Share Microsoft Learn resources with others",
-        "Module assessment",
-        "Summary"
-      ]
-    },
     {
       "uid": "azure.query-data-sentinel",
       "title": "Query, visualize, and monitor data in Microsoft Sentinel",
@@ -5979,6 +5955,158 @@
       ]
     },
     {
+      "uid": "learn-bizapps.mpower-clinical-analytics-analyze-search-results",
+      "title": "Analyze search results in mPower Clinical Analytics",
+      "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-analyze-search-results/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction to mPower Clinical Analytics",
+        "Use standard dashboards in mPower Clinical Analytics",
+        "Create custom graphs in mPower Clinical Analytics",
+        "Export analytics data in mPower Clinical Analytics",
+        "Share analytics permalinks in mPower Clinical Analytics",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.mpower-clinical-analytics-perform-advanced-searches",
+      "title": "Perform advanced searches in mPower Clinical Analytics",
+      "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-perform-advanced-searches/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction to advanced search in mPower Clinical Analytics",
+        "Use Boolean search in mPower Clinical Analytics",
+        "Run sequential search in mPower Clinical Analytics",
+        "Search using measurement in mPower Clinical Analytics",
+        "Search using scores and assessments in mPower Clinical Analytics",
+        "Setup signal notifications in mPower Clinical Analytics",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.mpower-clinical-analytics-provider-get-started",
+      "title": "Get started with mPower Clinical Analytics",
+      "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-provider-get-started/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction to mPower Clinical Analytics",
+        "Sign in to mPower using SSO",
+        "Explore the mPower homepage",
+        "Access the Resource Center",
+        "Manage your profile and saved content",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.mpower-clinical-analytics-refine-save-searches",
+      "title": "Refine and save searches in mPower Clinical Analytics",
+      "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-refine-save-searches/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "Maximize positive and negative findings",
+        "Use analyze",
+        "Save searches",
+        "Reuse saved searches",
+        "Save and reuse datasets",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.mpower-clinical-analytics-run-basic-clinical-search",
+      "title": "Run a basic clinical search in mPower Clinical Analytics",
+      "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-run-basic-clinical-search/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction to basic search",
+        "Interpret search results",
+        "Review patient report details",
+        "Optimize results using actions",
+        "Create a signal",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.mpower-clinical-analytics-use-standard-dashboards",
+      "title": "Use standard dashboards in mPower Clinical Analytics",
+      "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-use-standard-dashboards/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction to Standard Dashboards in mPower Clinical Analytics",
+        "Use My Dashboard in mPower Clinical Analytics",
+        "Review the Practice overview dashboard in mPower Clinical Analytics",
+        "Review the Ordering Provider dashboard in mPower Clinical Analytics",
+        "Review the Modality dashboard in mPower Clinical Analytics",
+        "Review the Reporting Provider dashboard in mPower Clinical Analytics",
+        "Review the Organization dashboard in mPower Clinical Analytics",
+        "Review the Cumulative TAT dashboard in mPower Clinical Analytics",
+        "Review the Measurement Finding dashboard in mPower Clinical Analytics",
+        "Review the Exam Type dashboard in mPower Clinical Analytics",
+        "Review the Residency Overview Dashboard in mPower Clinical Analytics",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn-bizapps.multiple-data-sources",
       "title": "Power Automate's deep integration across multiple data sources",
       "url": "https://learn.microsoft.com/training/modules/multiple-data-sources/?WT.mc_id=studentamb_165290",
@@ -10085,7 +10213,7 @@
         "Three-way matching policies",
         "Vendor invoice workflow",
         "Exercise - Work with accounting distributions, invoice validations, and settlements",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10113,7 +10241,7 @@
         "Settle transactions and undo settlements",
         "Exercise - Process an invoice and settle it against a payment",
         "Reimburse a customer",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10261,7 +10389,7 @@
         "Count inventory with physical inventory orders",
         "Reclassify items with the item reclassification journal",
         "Exercise - Count items",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10734,7 +10862,7 @@
         "Work with data analysis mode",
         "Date hierarchies and pivot mode",
         "Share data analysis",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10826,7 +10954,7 @@
         "Dynamics 365 Business Central environments",
         "Continuous integration and continuous deployment",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -10945,7 +11073,7 @@
         "Plan assembly items on projects",
         "Assemble items on projects",
         "Explode a BOM on project planning lines",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11359,7 +11487,7 @@
         "Diagnose and optimize client performance",
         "Optimize form loading and performance",
         "Exercise - Create a form",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11442,7 +11570,7 @@
         "Create and modify reports by using Power BI",
         "Create and modify reports by using Excel",
         "Exercise - Create and deploy a report",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11493,7 +11621,7 @@
         "Create custom reusable report functions by using RDL",
         "Implement built-in KPIs, charts, and other reporting components",
         "Exercise - Create a workspace and add a tile, list, link, and Power BI element",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11595,7 +11723,7 @@
         "Extend an existing business event",
         "Role-based security for business events",
         "Business events in Microsoft Power Automate",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11633,7 +11761,7 @@
         "Understand a business process",
         "Map a process with branches and conditions",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11833,7 +11961,7 @@
         "Class extensions",
         "Chain of command and method wrapping",
         "Best practices",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11959,7 +12087,7 @@
         "Configure accounts payable charges",
         "Configure and use positive pay",
         "Exercise - Configure accounts payable components",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -11991,7 +12119,7 @@
         "Set up customer posting profiles",
         "Configure accounts receivable charges",
         "Exercise - Configure customer posting profiles and create a new customer",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -12195,7 +12323,7 @@
         "Set up cash flow automation",
         "Summarize vendor and customer payments in bank transactions",
         "Exercise - Work with cash and bank management",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -12327,7 +12455,7 @@
         "Set up and manage collection letters",
         "Exercise - Set up credit and collections in Finance",
         "Exercise - Create a write-off journal for a customer",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -12678,7 +12806,7 @@
         "Exercise - Configure and use accrual schemes",
         "Configure ledger allocation rules",
         "Exercise - Configure and test ledger allocation rules",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -12709,7 +12837,7 @@
         "Reverse journal posting",
         "Set up batch transfer rules",
         "Exercise - Configure ledger and journal setup",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -12886,7 +13014,7 @@
         "Process end of year close",
         "Perform financial consolidations",
         "Exercise - Perform year-end close and a consolidation",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -13417,7 +13545,7 @@
         "Triggers and actions used in Power Automate for finance and operations apps",
         "Connect to your finance and operations apps data with Power Apps",
         "Finance and operations data on Common Data Model and Microsoft Dataverse",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -13685,7 +13813,7 @@
         "Save, publish, and share an app",
         "Embed an app",
         "Exercise - Create the customer financial details app in Power Apps",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -13784,7 +13912,7 @@
         "Use a Business Central custom connector in Power Automate",
         "Share Business Central custom connector across the organization",
         "Exercise - Create a testing process",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -13949,7 +14077,7 @@
         "Maintain periods for your organization",
         "Create date intervals",
         "Exercise - Work with the fiscal calendar, year, and periods",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14179,7 +14307,7 @@
         "Create a new company by copying data from an existing company",
         "Set up company information",
         "Exercise - Create a company with demo data",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14387,7 +14515,7 @@
         "Configure recurring purchase lines",
         "Describe responsibility centers",
         "Exercise - Create and process a purchase order and review the posted documents",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14471,7 +14599,7 @@
         "Process drop shipments",
         "Process special orders",
         "Exercise - Create a sales quote and convert it to an invoice, create a drop shipment and sell catalog items",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14878,7 +15006,7 @@
         "Synchronize data changes with the database",
         "Create new elements",
         "Exercise - Create a project and add an element",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -14934,7 +15062,7 @@
         "Connect to Azure Data Lake Storage",
         "Change data in Azure Data Lake",
         "Power Platform convergence",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15026,7 +15154,7 @@
         "Manage entity change tracking",
         "Create wrapper classes to consume external web services",
         "Create wrapper classes with C#",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15226,7 +15354,7 @@
         "Accessibility for makers",
         "Accessibility for your clients",
         "Exercise - Accessibility Insights for Web",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15277,7 +15405,7 @@
         "Design patterns and practices for code deployments",
         "The process for deploying code changes",
         "Finance and operations apps frameworks",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15317,7 +15445,7 @@
         "Design your solution",
         "User adoption",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15381,7 +15509,7 @@
         "Project phases",
         "Microsoft Dynamics Lifecycle Services",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15475,7 +15603,7 @@
         "Put it together",
         "Microsoft AI Cloud Partner Program",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15586,7 +15714,7 @@
         "Deployment options",
         "Integration",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15623,7 +15751,7 @@
         "System documentation",
         "User documentation",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -15983,7 +16111,7 @@
         "Conflicting requirements",
         "Security requirements",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16087,7 +16215,7 @@
         "The user interface",
         "Reporting capabilities",
         "Extend Copilot capabilities in finance and operations apps",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16116,7 +16244,7 @@
         "Implement the SysOperationSandbox framework",
         "Implement the workflow framework",
         "Exercise - Extend an EDT",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16213,7 +16341,7 @@
         "Implement reporting security requirements",
         "Publish a report",
         "Exercise – Set authorization requirements on database tables",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16243,7 +16371,7 @@
         "Overview of Lifecycle Services",
         "Manage developer environments for finance and operations apps",
         "Extend the functionality of finance and operations apps into the Microsoft ecosystem",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16273,7 +16401,7 @@
         "Run unit tests",
         "Document and fix issues",
         "Perform debugging activities",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16443,7 +16571,7 @@
         "Compare table extension properties with table properties",
         "Add a new FieldGroup to an existing table",
         "Define extension objects in same app as their base object",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16548,7 +16676,7 @@
         "Create and manage custom data sources",
         "Optimize data entities to achieve better performance",
         "Exercise - Create a data entity",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16647,7 +16775,7 @@
         "Models and packages",
         "Design and create models",
         "Exercise - Configure Visual studio",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16890,7 +17018,7 @@
         "Create voucher templates",
         "Set up journal controls",
         "Exercise - Create and use a voucher template",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -16956,7 +17084,7 @@
         "Ask good questions",
         "Make a roadmap for your customer",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -17427,7 +17555,7 @@
         "Cost accounting",
         "Electronic invoicing",
         "Exercise - Explore Dynamics 365 Finance",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -17888,7 +18016,7 @@
         "Activate test payments",
         "Install the Shopify app in Business Central",
         "Prerequisites to proceed with the learning path",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -17966,7 +18094,7 @@
         "Milestone billing",
         "Terminate billing scheduling",
         "Set up revenue and expense deferrals",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18127,7 +18255,7 @@
         "Set up cost accounting",
         "Set up work in progress costing",
         "Exercise - Configure Cost accounting by using the Get started wizard",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18849,7 +18977,7 @@
         "Download electronic document interchange solutions",
         "Verify source and target data for auditing",
         "Debug with JSON Web Tokens",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -18994,7 +19122,7 @@
         "Define different expression types",
         "Exercise - Discover the intrinsic data types",
         "Exercise - Use logical and relational expressions",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19052,13 +19180,13 @@
         "Process and administer the purchase cycle",
         "Process and administer the sales cycle",
         "Send documents to customers",
-        "Explore how to administer jobs",
+        "Explore how to administer projects",
         "Discover service management capabilities",
         "Business Central manufacturing capabilities",
         "Business Central Human Resources capabilities",
         "In Microsoft 365 experience for Business Central",
         "Exercises - Create a customer and a new office furniture item",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19108,7 +19236,7 @@
         "Read and write files by using streaming in Business Central",
         "Handle multiple file uploads and file drop zones",
         "Exercise - Read and write files",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19145,7 +19273,7 @@
         "Ensure your success",
         "Assignment – Explore the professional community",
         "Assignment - Guided tours",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19171,7 +19299,7 @@
         "Extend Dataverse",
         "Base Integration Solution",
         "Exercise",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19688,7 +19816,7 @@
         "Provision and manage environments",
         "Manage asset libraries",
         "Manage the code update process",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19906,7 +20034,7 @@
         "Create new sales prices",
         "Bulk edit the unit price on the item card",
         "Exercise - Create a special price for a customer",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -19959,7 +20087,7 @@
         "Configure Visual Studio to connect to Azure DevOps",
         "Working in Visual Studio",
         "Manage and perform code reviews",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20201,7 +20329,7 @@
         "Set up a company with configuration tools",
         "Set up and sync master data across companies",
         "Exercise - Create a new customer template",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20591,7 +20719,7 @@
         "Create a SQL trace by using the SQL Profiler",
         "Monitor server health metrics in Lifecycle Services",
         "Exercise - Use the Environment monitoring tool in Lifecycle Services",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20956,7 +21084,7 @@
         "Common migration scenarios and tools",
         "Bring your own database (BYOD)",
         "Test a data migration and validate output",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -20981,9 +21109,9 @@
         "Complete the Lifecycle Services methodology",
         "Manage environments in the Implementation portal",
         "Perform user acceptance testing (UAT) for your solution",
-        "FastTrack go-live assessment",
+        "FastTrack go-live readiness review",
         "Request a production environment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21072,7 +21200,7 @@
         "Meetings",
         "Informal meetings",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21456,7 +21584,7 @@
         "Customer roles",
         "Your role on a project",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21771,7 +21899,7 @@
         "Unbilled revenue",
         "Terminate billing scheduling",
         "Revenue splits",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -21913,7 +22041,7 @@
         "Create deferral schedules",
         "Deferral default transactions",
         "Exercise - Recognize revenue for one deferral schedule",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22036,9 +22164,10 @@
         "Enforce permissions policy",
         "Extensible data security framework",
         "Apply security permissions",
+        "Monitor user licensing with user security governance",
         "Exercise - Create a new security role and add duties",
         "Microsoft Entra ID and OAuth 2.0 authentication",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22337,7 +22466,7 @@
         "Use data analysis mode to query and analyze data",
         "Use the Inspect Pages and Data feature",
         "Exercise - Use filter criteria and filter the item list and open in Excel",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -22683,7 +22812,7 @@
         "Set up credit card transaction processing and import credit transactions",
         "Expense receipt processing",
         "VAT recovery",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -23488,7 +23617,7 @@
         "Create sales tax codes",
         "Configure sales tax groups and item sales tax groups",
         "Exercise - Set up sales tax codes and sales tax groups",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24429,7 +24558,7 @@
         "Non-functional testing",
         "Define test cases and scripts",
         "Assignment",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24542,7 +24671,7 @@
         "Configure salespeople and purchasers",
         "Use templates to create master data",
         "Exercise - Create a new item and a new location and link them to a vendor",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24566,7 +24695,7 @@
         "Set up locations",
         "Inventory setup",
         "Configure core item settings",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24874,7 +25003,7 @@
         "Add a barcode-scanning UI button on a field",
         "Invoke barcode scanning programmatically from AL",
         "Integrate dedicated barcode scanners",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24926,7 +25055,7 @@
         "Approve or reject a request for approval",
         "Delegate a request for approval",
         "Manage overdue approval requests",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24949,7 +25078,7 @@
         "Create basic Azure functions",
         "Create an Azure function",
         "Use an Azure function in Business Central",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -24975,7 +25104,7 @@
         "Work with YAML files",
         "Create a release pipeline",
         "Exercise - Use Azure Pipelines for CI/CD with Business Central",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25067,7 +25196,7 @@
         "Basic Docker commands",
         "Use the BcContainerHelper",
         "Exercise - Use Docker to test the latest Business Central version",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25092,7 +25221,7 @@
         "Use the TestField function",
         "Use the Round function",
         "Exercise - Create example documents",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25277,7 +25406,7 @@
         "Explore the user interface and logic in model-driven apps",
         "Create a model-driven app based on Business Central data",
         "Exercise - Create a table in Microsoft Dataverse",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25356,7 +25485,7 @@
         "Run a Power Automate flow on a schedule",
         "Troubleshoot and monitor flows",
         "Exercise - Create a flow for sending emails when a new item is created in Power Automate",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25492,7 +25621,7 @@
         "Use the Role Explorer",
         "More user interface features",
         "Exercise - Assign another role center, use the search for page icon, and find and use keyboard shortcuts",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25519,7 +25648,7 @@
         "Perform user-specific setup",
         "Auditing changes",
         "Exercise - Add a new user",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -25627,7 +25756,7 @@
         "Reverse a vendor payment",
         "Manage prepayments and prepayment invoices",
         "Exercise- Process a vendor payment by using a payment journal",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26347,7 +26476,7 @@
         "Exercise - Export data using the Data management workspace",
         "Database movement operations",
         "Data sharing framework",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26479,7 +26608,7 @@
         "Use the Blocked field and the Blocked Entity Design Pattern",
         "Implement frequently used table properties",
         "Exercise - Add tables and pages for master data",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26586,7 +26715,7 @@
         "Preview and run reports",
         "Set the layout used by a report",
         "Set up printers",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -26708,7 +26837,7 @@
         "Use SOAP web services",
         "Request records with SOAP",
         "Handle UI interaction when working with web services",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -37428,6 +37557,28 @@
       ]
     },
     {
+      "uid": "learn.dpu.ai-workload-visibility",
+      "title": "Gain visibility into AI workloads with Windows Task Manager",
+      "url": "https://learn.microsoft.com/training/modules/ai-workload-visibility/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows"
+      ],
+      "products": [
+        "windows-11"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Unmetered intelligence",
+        "AI processing",
+        "Monitor AI workloads",
+        "Validate AI hardware use",
+        "Efficiency power usage",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.dpu.automate-meeting-scheduling",
       "title": "Automate meeting scheduling with Microsoft Teams",
       "url": "https://learn.microsoft.com/training/modules/automate-meeting-scheduling-with-microsoft-teams/?WT.mc_id=studentamb_165290",
@@ -37897,6 +38048,27 @@
       ]
     },
     {
+      "uid": "learn.dpu.create-copilot-agent",
+      "title": "Build your first agent in Microsoft 365 Copilot Chat",
+      "url": "https://learn.microsoft.com/training/modules/create-copilot-agent/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Microsoft 365"
+      ],
+      "products": [
+        "microsoft-365-copilot"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Plan your first agent",
+        "Exercise - Create your first agent",
+        "Evaluate your agent's responses",
+        "Exercise - Test and refine your agent",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.dpu.deploy-windows",
       "title": "Deploy updates for Windows client and Microsoft 365 apps",
       "url": "https://learn.microsoft.com/training/modules/deploy-windows/?WT.mc_id=studentamb_165290",
@@ -37953,6 +38125,29 @@
       ]
     },
     {
+      "uid": "learn.dpu.enterprise-ai-strategy",
+      "title": "Prepare an enterprise governance strategy for AI agents",
+      "url": "https://learn.microsoft.com/training/modules/enterprise-ai-strategy/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows"
+      ],
+      "products": [
+        "windows-11"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Understand what's changing",
+        "Understand why agent governance matters",
+        "Establish a governance model for AI agents",
+        "Match governance controls to agent risk",
+        "Understand where governance is enforced",
+        "Build an agent-ready strategy",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.dpu.evaluate-azure-local",
       "title": "When to evaluate Azure Local for private cloud scenarios",
       "url": "https://learn.microsoft.com/training/modules/evaluate-azure-local/?WT.mc_id=studentamb_165290",
@@ -37991,6 +38186,28 @@
         "Use Facilitator during a Microsoft Teams meeting",
         "Review meeting notes, decisions, and action items",
         "Knowledge check",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.dpu.frontier-firms-scale-ai-responsibly-build-trust",
+      "title": "Frontier Firms: Scale AI responsibly and build trust",
+      "url": "https://learn.microsoft.com/training/modules/frontier-firms-scale-ai-responsibly-build-trust/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows"
+      ],
+      "products": [
+        "windows-11"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "The agentic moment changes AI governance",
+        "Apply risk-based governance",
+        "Build on provider safeguards",
+        "Exercise: Evaluate an agentic AI deployment",
+        "Build trust through continuous governance",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -38881,6 +39098,27 @@
       ]
     },
     {
+      "uid": "learn.dpu.relight-microsoft-photos",
+      "title": "Enhance a professional portrait using Relight in Microsoft Photos on a Copilot",
+      "url": "https://learn.microsoft.com/training/modules/relight-microsoft-photos/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows"
+      ],
+      "products": [
+        "windows-11"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Understand Relight and its benefits",
+        "Explore Relight controls",
+        "Exercise: Prepare your portrait for the event",
+        "Determine whether Relight is the right solution",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.dpu.resilient-foundations-windows-11",
       "title": "Resilient foundations with Windows 11 Pro",
       "url": "https://learn.microsoft.com/training/modules/resilient-foundations-windows-11/?WT.mc_id=studentamb_165290",
@@ -39100,6 +39338,29 @@
         "Licensing, compliance, and risk concepts",
         "Exercise - Identify authenticity concepts in real-world scenarios",
         "Knowledge check",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.dpu.voice-access-fluid-dictation",
+      "title": "Boost productivity with Voice Access and Fluid Dictation on Copilot+ PCs",
+      "url": "https://learn.microsoft.com/training/modules/voice-access-fluid-dictation/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows"
+      ],
+      "products": [
+        "windows-11"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Understand voice-powered productivity on Copilot+ PCs",
+        "Use Voice Access to navigate Windows and applications",
+        "Exercise - Prepare a status briefing with Voice Access",
+        "Create and edit content with Fluid Dictation",
+        "Exercise - Develop a product recommendation with Fluid Dictation",
+        "Combine Voice Access and Fluid Dictation in everyday workflows",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -42993,6 +43254,26 @@
       ]
     },
     {
+      "uid": "learn.languages.csharp-arrays-lists",
+      "title": "Organize data with arrays and lists in C#",
+      "url": "https://learn.microsoft.com/training/modules/csharp-arrays-lists/?WT.mc_id=studentamb_165290",
+      "categories": [
+        ".NET"
+      ],
+      "products": [
+        ".NET"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Store and manage data with arrays",
+        "Store and manage data with lists",
+        "Exercise - Create a Top 5 leaderboard",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.languages.csharp-arrays-operations",
       "title": "Perform operations on arrays using helper methods in C#",
       "url": "https://learn.microsoft.com/training/modules/csharp-arrays-operations/?WT.mc_id=studentamb_165290",
@@ -43352,6 +43633,27 @@
       ]
     },
     {
+      "uid": "learn.languages.csharp-read-write-files",
+      "title": "Read and write files in C#",
+      "url": "https://learn.microsoft.com/training/modules/csharp-read-write-files/?WT.mc_id=studentamb_165290",
+      "categories": [
+        ".NET"
+      ],
+      "products": [
+        ".NET"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Open and close files safely with using",
+        "Read data from files",
+        "Write data to files",
+        "Exercise - Create a log file viewer",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.languages.csharp-readable-code",
       "title": "Create readable code with conventions, whitespace, and comments in C#",
       "url": "https://learn.microsoft.com/training/modules/csharp-readable-code/?WT.mc_id=studentamb_165290",
@@ -43373,6 +43675,48 @@
         "Exercise - Use whitespace to make your code easier to read",
         "Exercise - Complete a challenge activity to improve code readability",
         "Review the solution to the improve code readability challenge activity",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.languages.csharp-repeat-actions-loops",
+      "title": "Repeat actions with loops in C#",
+      "url": "https://learn.microsoft.com/training/modules/csharp-repeat-actions-loops/?WT.mc_id=studentamb_165290",
+      "categories": [
+        ".NET"
+      ],
+      "products": [
+        ".NET"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Choose between for, while, and do-while loops",
+        "Controlling loop execution with break and continue",
+        "Exercise - Create a guess the number game",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.languages.csharp-reusable-code",
+      "title": "Write reusable code in C#",
+      "url": "https://learn.microsoft.com/training/modules/csharp-reusable-code/?WT.mc_id=studentamb_165290",
+      "categories": [
+        ".NET"
+      ],
+      "products": [
+        ".NET"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Create methods with parameters",
+        "Return values from methods",
+        "Manage variable scope",
+        "Organize code with namespaces",
+        "Exercise - Create a billing calculator",
         "Module assessment",
         "Summary"
       ]
@@ -44664,7 +45008,7 @@
       "units": [
         "Introduction",
         "Bring opportunity to schools with AI tools",
-        "Work efficiently with Microsoft 365 Copilot Chat",
+        "Work efficiently with Copilot Chat",
         "Unlock learners' full potential with Learning Accelerators",
         "Save time with Microsoft Teams for Education",
         "Build AI literacy and digital citizenship with Minecraft Education's AI Foundations",
@@ -44881,7 +45225,7 @@
     },
     {
       "uid": "learn.mec.enhance-teaching-learning-bing-chat",
-      "title": "Enhance teaching and learning with Microsoft 365 Copilot Chat",
+      "title": "Enhance teaching and learning with Copilot Chat",
       "url": "https://learn.microsoft.com/training/modules/enhance-teaching-learning-microsoft-copilot/?WT.mc_id=studentamb_165290",
       "categories": [
         "Microsoft 365",
@@ -50032,6 +50376,33 @@
       ]
     },
     {
+      "uid": "learn.windows-server.design-manage-certificate-templates",
+      "title": "Design and manage Active Directory Certificate Services certificate templates",
+      "url": "https://learn.microsoft.com/training/modules/design-manage-certificate-templates/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Windows Server"
+      ],
+      "products": [
+        "Windows Server"
+      ],
+      "subjects": [
+        "Infrastructure",
+        "Security"
+      ],
+      "units": [
+        "Introduction",
+        "Available certificate templates",
+        "Build a holistic certificate profile",
+        "Certificate template properties",
+        "Authentication profiles",
+        "Enrollment authorization remediation",
+        "Template renewal, replacement, retirement",
+        "Advanced assurance, reference profiles, and key recovery",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.windows-server.manage-user-computer-certificates",
       "title": "Manage local user and computer certificates",
       "url": "https://learn.microsoft.com/training/modules/manage-user-computer-certificates/?WT.mc_id=studentamb_165290",
@@ -50291,6 +50662,29 @@
       ]
     },
     {
+      "uid": "learn.wwl.add-human-loop-workflows-copilot-studio",
+      "title": "Add human-in-the-loop steps to workflows for Copilot Studio agents",
+      "url": "https://learn.microsoft.com/training/modules/add-human-loop-workflows-copilot-studio/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Decide when a workflow step needs a human decision",
+        "Implement a request-for-information pattern",
+        "Branch a workflow on a human decision",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.administer-manage-windows-server-iaas-vm-remotely",
       "title": "Administer and manage Windows Server IaaS Virtual Machine remotely",
       "url": "https://learn.microsoft.com/training/modules/administer-manage-windows-server-iaas-virtual-machine-remotely/?WT.mc_id=studentamb_165290",
@@ -50374,6 +50768,34 @@
         "learn.wwl.ai-agent-fundamentals.exercise",
         "learn.wwl.ai-agent-fundamentals.knowledge-check",
         "learn.wwl.ai-agent-fundamentals.summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.ai-basics-for-job-coaches",
+      "title": "AI basics for job coaches",
+      "url": "https://learn.microsoft.com/training/modules/ai-basics-for-job-coaches/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure"
+      ],
+      "subjects": [
+        "Accessibility",
+        "Artificial intelligence",
+        "Machine learning",
+        "Natural language processing",
+        "generative-ai"
+      ],
+      "units": [
+        "Introduction",
+        "What AI does well and where it falls short",
+        "Prompt structure",
+        "The five-step workflow",
+        "Reviewing AI output",
+        "Practice activity: Build and improve one prompt",
+        "Module assessment",
+        "Summary"
       ]
     },
     {
@@ -51727,6 +52149,29 @@
       ]
     },
     {
+      "uid": "learn.wwl.build-connected-agent-solutions-github-copilot",
+      "title": "Build connected agent solutions in Microsoft Copilot Studio (GitHub Copilot)",
+      "url": "https://learn.microsoft.com/training/modules/build-connected-agent-solutions-github-copilot/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence"
+      ],
+      "units": [
+        "Introduction",
+        "Prepare an agent for other agents to connect",
+        "Add a connected agent with a routing description",
+        "Test and troubleshoot delegation",
+        "Call an agent from a workflow agent node",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.build-cross-platform-multi-agent-solutions-agent2agent-copilot-studio",
       "title": "Build cross-platform multi-agent solutions using the Agent2Agent protocol in Microsoft Copilot Studio",
       "url": "https://learn.microsoft.com/training/modules/build-cross-platform-multi-agent-solutions-agent2agent-copilot-studio/?WT.mc_id=studentamb_165290",
@@ -51745,30 +52190,6 @@
         "Understand the Agent2Agent (A2A) protocol",
         "Connect a Copilot Studio agent to an A2A-enabled agent",
         "Test and validate an A2A agent connection",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.build-data-pipeline-with-delta-live-tables",
-      "title": "Build Lakeflow Declarative Pipelines",
-      "url": "https://learn.microsoft.com/training/modules/build-data-pipeline-with-delta-live-tables/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data engineering",
-        "Data management"
-      ],
-      "units": [
-        "Introduction",
-        "Explore Lakeflow Declarative Pipelines",
-        "Data ingestion and integration",
-        "Real-time processing",
-        "Exercise - Create a Lakeflow Declarative Pipeline",
         "Module assessment",
         "Summary"
       ]
@@ -52313,6 +52734,31 @@
       ]
     },
     {
+      "uid": "learn.wwl.building-ai-supported-coaching-workflow",
+      "title": "Build an AI-supported coaching workflow",
+      "url": "https://learn.microsoft.com/training/modules/building-ai-supported-coaching-workflow/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure"
+      ],
+      "subjects": [
+        "Business applications",
+        "Employee engagement",
+        "generative-ai"
+      ],
+      "units": [
+        "Introduction",
+        "Where AI can fit",
+        "The repeatable workflow",
+        "Build a simple prompt library",
+        "Practice activity: Create one entry",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.business-continuity",
       "title": "Troubleshoot business continuity with Microsoft Azure",
       "url": "https://learn.microsoft.com/training/modules/business-continuity/?WT.mc_id=studentamb_165290",
@@ -52814,6 +53260,42 @@
         "Evaluate warehouse capabilities",
         "Evaluate eventhouse capabilities",
         "Case study - Choose data stores for an integrated analytics solution",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.choose-how-to-use-ai",
+      "title": "Choose how to use AI",
+      "url": "https://learn.microsoft.com/training/modules/choose-how-to-use-ai/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure",
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Azure",
+        "Microsoft Power Platform",
+        "Power Apps",
+        "Speech",
+        "Translator Speech"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "Business applications",
+        "Knowledge management",
+        "Natural language processing",
+        "automation",
+        "generative-ai"
+      ],
+      "units": [
+        "Introduction",
+        "Decide if AI is helpful",
+        "Choose another support when needed",
+        "Use AI with support",
+        "Keep supports that already work",
+        "Stay in control",
+        "Try these prompts in Copilot",
+        "Practice activity: Choose the right support",
         "Module assessment",
         "Summary"
       ]
@@ -53417,6 +53899,32 @@
       ]
     },
     {
+      "uid": "learn.wwl.configure-azure-cosmos-db-resources-throughput-consistency",
+      "title": "Configure resources, throughput, and consistency",
+      "url": "https://learn.microsoft.com/training/modules/configure-azure-cosmos-db-resources-throughput-consistency/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Cosmos DB"
+      ],
+      "subjects": [
+        "Cloud computing",
+        "databases"
+      ],
+      "units": [
+        "Introduction",
+        "Evaluate throughput and request unit requirements",
+        "Choose a throughput model",
+        "Configure database- and container-level throughput",
+        "Evaluate and configure consistency levels",
+        "Configure time to live for data retention",
+        "Exercise - Configure throughput and consistency",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.configure-azure-cosmos-db-sql-api",
       "title": "Configure Azure Cosmos DB for NoSQL",
       "url": "https://learn.microsoft.com/training/modules/configure-azure-cosmos-db-sql-api/?WT.mc_id=studentamb_165290",
@@ -53846,8 +54354,8 @@
         "Introduction",
         "Configure the Microsoft Copilot tenant-settings catalog",
         "Exercise - Configure the Microsoft Copilot settings catalog",
-        "Manage web search for Microsoft Copilot and Microsoft Copilot Chat",
-        "Manage Microsoft Copilot Cowork",
+        "Manage web search for Microsoft Copilot and Copilot Chat",
+        "Manage Copilot Cowork",
         "Configure Copilot Search",
         "Exercise - Configure web search and Copilot Search",
         "Manage third-party AI providers",
@@ -55271,7 +55779,7 @@
         "Create entities",
         "Manage security",
         "Integrate with Microsoft Office",
-        "Knowledge check",
+        "Module assessment",
         "Exercise – Add a field to a data entity",
         "Exercise – Use Excel to view and update data",
         "Summary"
@@ -55301,7 +55809,7 @@
         "Manage forms: Fields",
         "Manage forms: Filters and ranges",
         "Configure reports",
-        "Knowledge check",
+        "Module assessment",
         "Exercise – Create favorites",
         "Exercise – View role-based dashboards",
         "Exercise – Change form fields and queries",
@@ -55334,6 +55842,52 @@
       ]
     },
     {
+      "uid": "learn.wwl.connect-agents-mcp-servers-github-copilot",
+      "title": "Connect agents to MCP servers in Microsoft Copilot Studio (GitHub Copilot)",
+      "url": "https://learn.microsoft.com/training/modules/connect-agents-mcp-servers-github-copilot/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence"
+      ],
+      "units": [
+        "Introduction",
+        "Decide when to use an MCP server",
+        "Add an MCP server and configure authentication",
+        "Choose which MCP tools the agent uses",
+        "Test and troubleshoot MCP tool calls",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.connect-agents-microsoft-iq-github-copilot",
+      "title": "Connect agents to Microsoft IQ in Microsoft Copilot Studio (GitHub Copilot)",
+      "url": "https://learn.microsoft.com/training/modules/connect-agents-microsoft-iq-github-copilot/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence"
+      ],
+      "units": [
+        "Introduction",
+        "Choose a Microsoft IQ capability for an agent",
+        "Connect an agent to a Foundry IQ knowledge base",
+        "Connect an agent to Fabric IQ business data",
+        "Connect an agent to Work IQ for Microsoft 365 context",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.connect-azure-assets-to-azure-defender",
       "title": "Connect Azure assets to Microsoft Defender for Cloud",
       "url": "https://learn.microsoft.com/training/modules/connect-azure-assets-to-azure-defender/?WT.mc_id=studentamb_165290",
@@ -55358,6 +55912,32 @@
         "Manual agent provisioning",
         "Module assessment",
         "Summary and resources"
+      ]
+    },
+    {
+      "uid": "learn.wwl.connect-azure-cosmos-db-nosql-sdk",
+      "title": "Connect to Azure Cosmos DB with the SDK",
+      "url": "https://learn.microsoft.com/training/modules/connect-azure-cosmos-db-nosql-sdk/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Cosmos DB"
+      ],
+      "subjects": [
+        "Cloud computing",
+        "databases"
+      ],
+      "units": [
+        "Introduction",
+        "Understand and import the SDK",
+        "Connect using a client singleton",
+        "Configure connectivity mode and settings",
+        "Enable offline development with the emulator",
+        "Handle connection errors, logging, and parallelism",
+        "Exercise - Connect an app to Azure Cosmos DB",
+        "Module assessment",
+        "Summary"
       ]
     },
     {
@@ -57320,7 +57900,7 @@
         "Decide what to delegate",
         "Write the brief and check the work",
         "Delegate responsibly",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -58039,31 +58619,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.deploy-workloads-with-databricks-workflows",
-      "title": "Deploy workloads with Lakeflow Jobs",
-      "url": "https://learn.microsoft.com/training/modules/deploy-workloads-with-databricks-workflows/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data engineering",
-        "Data management"
-      ],
-      "units": [
-        "Introduction",
-        "What are Lakeflow Jobs?",
-        "Understand key components of Lakeflow Jobs",
-        "Explore the benefits of Lakeflow Jobs",
-        "Deploy workloads using Lakeflow Jobs",
-        "Exercise - Create a Lakeflow Job",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.deploy-your-ai-copilot-azure-kubernetes",
       "title": "Deploy your AI Copilot with Azure Kubernetes",
       "url": "https://learn.microsoft.com/training/modules/deploy-your-ai-copilot-azure-kubernetes/?WT.mc_id=studentamb_165290",
@@ -58550,7 +59105,7 @@
         "Azure"
       ],
       "products": [
-        "Azure US Government"
+        "azure-us-government"
       ],
       "subjects": [
         "Cloud computing",
@@ -58992,7 +59547,7 @@
         "Azure"
       ],
       "products": [
-        "Azure US Government"
+        "azure-us-government"
       ],
       "subjects": [],
       "units": [
@@ -59682,7 +60237,7 @@
         "Azure"
       ],
       "products": [
-        "Azure US Government"
+        "azure-us-government"
       ],
       "subjects": [
         "Cloud computing",
@@ -60220,6 +60775,34 @@
       ]
     },
     {
+      "uid": "learn.wwl.design-data-modeling-partitioning-azure-cosmos-db-nosql",
+      "title": "Design a data modeling and partitioning strategy",
+      "url": "https://learn.microsoft.com/training/modules/design-data-modeling-partitioning-azure-cosmos-db-nosql/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Cosmos DB"
+      ],
+      "subjects": [
+        "Cloud computing",
+        "databases"
+      ],
+      "units": [
+        "Introduction",
+        "Identify aggregate boundaries and access patterns",
+        "Map aggregates to items: embed or reference",
+        "Denormalize and pre-aggregate for performance",
+        "Select a partition key",
+        "Implement hierarchical partition keys",
+        "Implement synthetic keys and multitenant partitioning",
+        "Identify anti-patterns and estimate cost",
+        "Exercise - Design a model and partition strategy",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.design-data-partitioning-strategy",
       "title": "Design a data partitioning strategy",
       "url": "https://learn.microsoft.com/training/modules/design-data-partitioning-strategy/?WT.mc_id=studentamb_165290",
@@ -60508,6 +61091,31 @@
       ]
     },
     {
+      "uid": "learn.wwl.design-governance-security-strategy-copilot-studio",
+      "title": "Design a governance and security strategy for Copilot Studio agents",
+      "url": "https://learn.microsoft.com/training/modules/design-governance-security-strategy-copilot-studio/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "chatbots"
+      ],
+      "units": [
+        "Introduction",
+        "Understand the Copilot Studio governance model",
+        "Apply a zoned governance strategy",
+        "Design an identity and authentication strategy",
+        "Evaluate channel options and pre-deployment readiness",
+        "Monitor and govern agents using Agent 365 and agent inventory",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.design-human-in-loop-approval-workflows",
       "title": "Design human-in-the-loop approval workflows with Power Automate and Microsoft Teams",
       "url": "https://learn.microsoft.com/training/modules/aaai-design-human-in-loop-approval-workflows/?WT.mc_id=studentamb_165290",
@@ -60614,7 +61222,7 @@
         "Design Lakeflow job logic",
         "Design error handling in pipelines and jobs",
         "Create pipeline with notebook",
-        "Create pipeline with Lakeflow Spark Declarative Pipelines",
+        "Create pipeline with Lakeflow pipelines",
         "Exercise - Design and Implement Data Pipelines with Azure Databricks",
         "Module assessment",
         "Summary"
@@ -60879,6 +61487,29 @@
       ]
     },
     {
+      "uid": "learn.wwl.design-integration-strategies-agents-github-copilot",
+      "title": "Design integration strategies for agents in Microsoft Copilot Studio (GitHub Copilot)",
+      "url": "https://learn.microsoft.com/training/modules/design-integration-strategies-agents-github-copilot/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence"
+      ],
+      "units": [
+        "Introduction",
+        "Identify the capability each business need calls for",
+        "Compare agent tools",
+        "Confirm identity and access for each approach",
+        "Write descriptions that help the agent choose",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.design-machine-learning-model-training-solution",
       "title": "Get started with machine learning in Azure",
       "url": "https://learn.microsoft.com/training/modules/design-machine-learning-model-training-solution/?WT.mc_id=studentamb_165290",
@@ -60999,9 +61630,9 @@
       ],
       "units": [
         "Introduction",
-        "Understand multi-agent architectures in Copilot Studio",
-        "Design multi-agent solutions using child agents",
-        "Design multi-agent solutions using connected agents",
+        "Decide when to use multiple agents",
+        "Choose a coordination pattern",
+        "Identify implementation options by harness",
         "Module assessment",
         "Summary"
       ]
@@ -61204,6 +61835,30 @@
         "Validate data residency and movement compliance",
         "Design access controls for grounding data and model tuning",
         "Design audit trails for changes to models and data",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.design-reusable-behavior-skills-copilot-studio",
+      "title": "Design reusable behavior with skills in Microsoft Copilot Studio",
+      "url": "https://learn.microsoft.com/training/modules/design-reusable-behavior-skills-copilot-studio/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Position skills in the GitHub Copilot component model",
+        "Add skills to your agent",
+        "Compose and package a skill for reuse",
+        "Reference authored skills and plan reuse",
         "Module assessment",
         "Summary"
       ]
@@ -62509,8 +63164,8 @@
         "Exercise 2, Task 1: Use Copilot in Word to create an executive briefing report",
         "Exercise 2, Task 2: Use Copilot in Excel to perform budget forecast analysis",
         "Exercise 2, Task 3: Use the AI Project Manager agent in Planner to create a new project plan",
-        "Exercise 2, Task 4: Create a Northwind Business Insights agent",
-        "Exercise 2, Task 5: Use the Northwind Business Insights Agent to answer executive questions",
+        "Exercise 2, Task 4: Create a Northwind business insights agent",
+        "Exercise 2, Task 5: Use the Northwind business insights agent to answer executive questions",
         "Module assessment",
         "Summary"
       ]
@@ -62540,7 +63195,7 @@
         "Exercise 1, Task 3: Use Copilot Chat to analyze a potential acquisition",
         "Exercise 1, Task 4: Use Copilot in Excel to model What-If scenarios",
         "Exercise 2: Streamline contract analysis and negotiation using Microsoft Copilot",
-        "Exercise 2, Task 1: Use Microsoft Copilot Chat to evaluate vendor contracts",
+        "Exercise 2, Task 1: Use Copilot Chat to evaluate vendor contracts",
         "Exercise 2, Task 2: Use Copilot in PowerPoint to create an executive presentation",
         "Exercise 2, Task 3: Use Copilot in Loop to turn insights into actionable content",
         "Exercise 2, Task 4: Use Copilot in Outlook to create an email that requests feedback",
@@ -62569,7 +63224,7 @@
         "Introduction",
         "Exercise 1: Deliver manager insights with Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot in Excel to identify key manager metrics",
-        "Exercise 1, Task 2: Use Copilot in Excel to generate a Manager Summary report",
+        "Exercise 1, Task 2: Use Copilot in Excel to generate a manager summary report",
         "Exercise 1, Task 3: Use Copilot in Outlook to communicate findings to HR leadership",
         "Exercise 1, Task 4: Use Copilot in Loop to facilitate collaborative manager development planning",
         "Exercise 2: Empower employees with an HR self-service agent",
@@ -62601,14 +63256,14 @@
       "units": [
         "Introduction",
         "Exercise 1: Streamline IT project planning with Microsoft Copilot",
-        "Exercise 1, Task 1: Use Copilot Chat to define the project framework",
+        "Exercise 1, Task 1: Use Microsoft Copilot to define the project framework",
         "Exercise 1, Task 2: Use Copilot in Whiteboard to identify potential risks",
         "Exercise 1, Task 3: Use Copilot in PowerPoint to create an executive presentation",
         "Exercise 2: Transform feature launches and adoption using Microsoft Copilot",
-        "Exercise 2, Task 1: Use Microsoft Copilot Chat to identify upcoming Microsoft 365 features",
+        "Exercise 2, Task 1: Use Copilot Chat to identify upcoming Microsoft 365 features",
         "Exercise 2, Task 2: Use Copilot in Viva Engage to draft a post about upcoming features",
-        "Exercise 2, Task 3: Use Microsoft Copilot Chat to create best practice tips",
-        "Exercise 2, Task 4: Use the Surveys agent to create a feedback survey",
+        "Exercise 2, Task 3: Use Copilot Chat to create best practice tips",
+        "Exercise 2, Task 4: Use Copilot in Forms to create a feedback survey",
         "Exercise 2, Task 5: Use the Analyst agent to analyze survey results",
         "Module assessment",
         "Summary"
@@ -62634,15 +63289,15 @@
       "units": [
         "Introduction",
         "Exercise 1: Transform market research into an actionable campaign using Microsoft Copilot",
-        "Exercise 1, Task 1: Use Copilot Studio to create a Market Research Agent",
+        "Exercise 1, Task 1: Use Agent Builder to create a Market Research Agent",
         "Exercise 1, Task 2: Use the Market Research Agent to synthesize market intelligence",
-        "Exercise 1, Task 3: Use Copilot’s Analyst agent to generate strategic recommendations",
+        "Exercise 1, Task 3: Use the Analyst agent to generate strategic recommendations",
         "Exercise 1, Task 4: Use Copilot in Loop to create a launch campaign plan",
         "Exercise 2: Develop a new marketing campaign using Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Word to consolidate multiple market reports",
         "Exercise 2, Task 2: Use Copilot in Excel to analyze a marketing spreadsheet",
-        "Exercise 2, Task 3: Use Copilot’s Idea Coach agent to generate creative campaign concepts",
-        "Exercise 2, Task 4: Use Copilot’s Writing Coach agent to draft promotional campaign announcements",
+        "Exercise 2, Task 3: Use the Idea Coach agent to generate creative campaign concepts",
+        "Exercise 2, Task 4: Use the Writing Coach agent to draft promotional campaign announcements",
         "Module assessment",
         "Summary"
       ]
@@ -62670,13 +63325,13 @@
         "Exercise 1, Task 1: Use Copilot in Whiteboard to brainstorm project plan ideas",
         "Exercise 1, Task 2: Use Copilot in Word to compare operational reports",
         "Exercise 1, Task 3: Use Copilot in PowerPoint to create an executive presentation",
-        "Exercise 1, Task 4: Use Microsoft Copilot Chat to prepare for vendor engagement",
+        "Exercise 1, Task 4: Use Copilot Chat to prepare for vendor engagement",
         "Exercise 2: Manage a facility expansion project with Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Loop to track construction milestones",
-        "Exercise 2, Task 2: Use Copilot Studio to build a Facility Expansion FAQ agent",
+        "Exercise 2, Task 2: Use Agent Builder to build a Facility Expansion FAQ agent",
         "Exercise 2, Task 3: Ask the Facility Expansion FAQ agent questions about the expansion project",
         "Exercise 2, Task 4: Use Copilot in OneNote to update safety protocols",
-        "Exercise 2, Task 5: Use Copilot in Outlook to email the safety procedure changes to Operations staff",
+        "Exercise 2, Task 5: Use Copilot in Outlook to email the safety procedure changes to operations staff",
         "Module assessment",
         "Summary"
       ]
@@ -62702,15 +63357,15 @@
         "Introduction",
         "Exercise 1: Accelerate market growth using Microsoft Copilot",
         "Exercise 1, Task 1: Use the Researcher agent to analyze your competitors and identify industry trends",
-        "Exercise 1, Task 2: Use Microsoft Copilot Chat to conduct market research",
+        "Exercise 1, Task 2: Use Copilot Chat to conduct market research",
         "Exercise 1, Task 3: Use Copilot in Word to create a sales proposal",
         "Exercise 1, Task 4: Use Copilot in Outlook to personalize your outreach",
         "Exercise 2: Automate sales proposal responses using Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Word to generate a standard RFP response template",
         "Exercise 2, Task 2: Use Copilot in Excel to analyze historical RFP data",
-        "Exercise 2, Task 3: Use Copilot Studio to build an RFP response agent",
+        "Exercise 2, Task 3: Use Agent Builder to build an RFP response agent",
         "Exercise 2, Task 4: Use Copilot in Teams to collaborate on refining the RFP response agent",
-        "Exercise 2, Task 5: Use Copilot Studio to update the instructions for the RFP response agent",
+        "Exercise 2, Task 5: Use Agent Builder to update the instructions for the RFP response agent",
         "Module assessment",
         "Summary"
       ]
@@ -62736,14 +63391,14 @@
         "Introduction",
         "Exercise 1: Drive engagement with a unified communication strategy using Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot in Word to develop a strategic communication brief",
-        "Exercise 1, Task 2: Use Copilot’s Researcher agent to identify external trends and proof points",
+        "Exercise 1, Task 2: Use the Researcher agent to identify external trends and proof points",
         "Exercise 1, Task 3: Use Copilot in Excel to analyze communication metrics",
         "Exercise 1, Task 4: Use Copilot in PowerPoint to create an executive presentation",
         "Exercise 2: Develop an employee centered communication experience using Microsoft Copilot",
         "Exercise 2, Task 1: Use Viva Engage to create a company-wide announcement",
         "Exercise 2, Task 2: Use Copilot Chat to prepare for a town hall meeting",
-        "Exercise 2, Task 3: Use the Ideas Coach agent to generate campaign ideas and a channel map",
-        "Exercise 2, Task 4: Use Copilot Studio to create an FAQ Assistant agent",
+        "Exercise 2, Task 3: Use the Idea Coach agent to generate campaign ideas and a channel map",
+        "Exercise 2, Task 4: Use Agent Builder to create an FAQ assistant agent",
         "Module assessment",
         "Summary"
       ]
@@ -62771,11 +63426,11 @@
         "Exercise 1, Task 1: Use Copilot in Whiteboard to map the ideal customer support journey",
         "Exercise 1, Task 2: Use Copilot in Teams to prepare for a client support meeting",
         "Exercise 1, Task 3: Use Copilot in OneNote to create a call summary template",
-        "Exercise 1, Task 4: Use the Copilot Analyst agent to analyze customer support data",
+        "Exercise 1, Task 4: Use the Analyst agent to analyze customer support data",
         "Exercise 2: Enhance the resolution quality of customer service cases using Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Loop to build a troubleshooting checklist",
-        "Exercise 2, Task 2: Use Copilot in Word and Writing Coach to create a dealer facing response template",
-        "Exercise 2, Task 3: Use Copilot’s Ideas Coach agent to create a troubleshooting guide",
+        "Exercise 2, Task 2: Use Copilot in Word and Writing Coach to create a dealer-facing response template",
+        "Exercise 2, Task 3: Use the Idea Coach agent to create a troubleshooting guide",
         "Exercise 2, Task 4: Use Copilot Chat and Copilot in Outlook to create a Support Insights email",
         "Module assessment",
         "Summary"
@@ -62800,15 +63455,15 @@
       ],
       "units": [
         "Introduction",
-        "Exercise 1: Prepare for regulatory response and litigation readiness using Microsoft Copilot",
+        "Exercise 1: Prepare for regulatory response and audit readiness using Microsoft Copilot",
         "Exercise 1, Task 1: Use Copilot Chat to create regulatory legal guidance",
         "Exercise 1, Task 2: Use Copilot in Word to summarize a vendor contract",
-        "Exercise 1, Task 3: Use Copilot Researcher to prepare a regulator facing issue brief",
-        "Exercise 1, Task 4: Use Copilot Studio to create a Regulatory Inquiry Assistant",
+        "Exercise 1, Task 3: Use the Researcher agent to prepare a regulator-facing issue brief",
+        "Exercise 1, Task 4: Use Agent Builder to create a Regulatory Inquiry Assistant",
         "Exercise 1, Task 5: Ask the Regulatory Inquiry Assistant questions related to an audit",
         "Exercise 2: Reform corporate governance and compliance using Microsoft Copilot",
         "Exercise 2, Task 1: Use Copilot in Loop to collaborate on updating a company policy",
-        "Exercise 2, Task 2: Use Copilot in Excel to visualize cross department risk areas",
+        "Exercise 2, Task 2: Use Copilot in Excel to visualize cross-department risk areas",
         "Exercise 2, Task 3: Use Copilot in PowerPoint to create a legal presentation",
         "Exercise 2, Task 4: Use Copilot in OneNote to create a compliance notebook",
         "Module assessment",
@@ -64369,6 +65024,31 @@
         "Explore data flows",
         "Examine Azure Virtual Machine compute considerations",
         "Implement and verify high availability SAP HANA on Azure Virtual Machines",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.explore-azure-cosmos-db-nosql",
+      "title": "Explore Azure Cosmos DB for NoSQL",
+      "url": "https://learn.microsoft.com/training/modules/explore-azure-cosmos-db-nosql/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Cosmos DB"
+      ],
+      "subjects": [
+        "Cloud computing",
+        "databases"
+      ],
+      "units": [
+        "Introduction",
+        "What is Azure Cosmos DB for NoSQL",
+        "How Azure Cosmos DB for NoSQL works",
+        "Evaluate Azure Cosmos DB for your workload",
+        "Explore resources and basic operations",
+        "Exercise: Create an account and resources",
         "Module assessment",
         "Summary"
       ]
@@ -66358,6 +67038,29 @@
       ]
     },
     {
+      "uid": "learn.wwl.extend-agents-tools-github-copilot",
+      "title": "Extend agents with tools in Microsoft Copilot Studio (GitHub Copilot)",
+      "url": "https://learn.microsoft.com/training/modules/extend-agents-tools-github-copilot/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence"
+      ],
+      "units": [
+        "Introduction",
+        "Choose a tool for an enterprise action",
+        "Add a tool for an enterprise action",
+        "Refine tool selection with descriptions",
+        "Test tool use and plan evaluations",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.extend-alm-git-cicd",
       "title": "Extend ALM with Git and CI/CD in Power Platform",
       "url": "https://learn.microsoft.com/training/modules/extend-alm-git-cicd/?WT.mc_id=studentamb_165290",
@@ -67215,6 +67918,30 @@
         "Responsible AI",
         "Exercise - Explore AI workloads",
         "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.get-started-azure-horizondb",
+      "title": "Get started with Azure HorizonDB",
+      "url": "https://learn.microsoft.com/training/modules/get-started-azure-horizondb/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "databases"
+      ],
+      "units": [
+        "Introduction",
+        "Understand Azure HorizonDB",
+        "Explain how Azure HorizonDB works",
+        "Decide when to use Azure HorizonDB",
+        "Exercise: Create and connect to an Azure HorizonDB cluster",
+        "Knowledge check",
         "Summary"
       ]
     },
@@ -68635,6 +69362,29 @@
       ]
     },
     {
+      "uid": "learn.wwl.ground-agents-enterprise-knowledge-github-copilot",
+      "title": "Ground agents in enterprise knowledge in Microsoft Copilot Studio (GitHub Copilot)",
+      "url": "https://learn.microsoft.com/training/modules/ground-agents-enterprise-knowledge-github-copilot/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence"
+      ],
+      "units": [
+        "Introduction",
+        "Compare available knowledge sources",
+        "Add a knowledge source",
+        "Validate grounded answers and refine source selection",
+        "Plan evaluations for grounded answers",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.ground-extend-agents-knowledge-tools-skills",
       "title": "Ground and extend agents with knowledge, tools, and skills",
       "url": "https://learn.microsoft.com/training/modules/ground-extend-agents-knowledge-tools-skills/?WT.mc_id=studentamb_165290",
@@ -68654,8 +69404,8 @@
         "Configure and validate knowledge",
         "Configure connector tools and inputs",
         "Connect to an existing MCP server",
-        "Apply supplied skills",
-        "Test tools and refine agent behavior",
+        "Create, add, and update skills",
+        "Configure and refine agent behavior",
         "Exercise - Create an equipment recommendation agent",
         "Module assessment",
         "Summary"
@@ -69471,6 +70221,39 @@
       ]
     },
     {
+      "uid": "learn.wwl.how-ai-can-help-work-school",
+      "title": "How AI can help with work and school",
+      "url": "https://learn.microsoft.com/training/modules/how-ai-can-help-work-school/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "SharePoint",
+        "office-exchange"
+      ],
+      "products": [
+        "Microsoft Exchange Online",
+        "SharePoint",
+        "document-processing-m365",
+        "office-exchange"
+      ],
+      "subjects": [
+        "Business applications",
+        "Collaboration",
+        "Communication",
+        "Knowledge management",
+        "Productivity"
+      ],
+      "units": [
+        "Introduction",
+        "AI in action",
+        "Make instructions easier to understand",
+        "Plan what to do first with Copilot",
+        "Keep the conversation going",
+        "Work, school, and daily life",
+        "Try these prompts in Copilot",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.hyperparameters-azure-databricks",
       "title": "Tune hyperparameters in Azure Databricks",
       "url": "https://learn.microsoft.com/training/modules/hyperparameters-azure-databricks/?WT.mc_id=studentamb_165290",
@@ -69774,6 +70557,32 @@
       ]
     },
     {
+      "uid": "learn.wwl.implement-alm-agents-power-platform",
+      "title": "Implement application lifecycle management for Copilot Studio agents using Power Platform",
+      "url": "https://learn.microsoft.com/training/modules/implement-alm-agents-power-platform/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Microsoft Power Platform",
+        "ms-copilot"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "chatbots"
+      ],
+      "units": [
+        "Introduction",
+        "Plan environments for an agent's lifecycle",
+        "Package an agent and its dependencies in a solution",
+        "Configure environment variables and connection references",
+        "Deploy agents with pipelines and service principals",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.implement-api-security-api-management",
       "title": "Implement API backend security using Azure API Management",
       "url": "https://learn.microsoft.com/training/modules/implement-application-interface-security-management/?WT.mc_id=studentamb_165290",
@@ -70004,6 +70813,34 @@
         "Options for Azure Backup for SAP workloads on Azure VMs",
         "Run Azure Backup for SAP HANA on Azure VMs",
         "Restore databases for SAP HANA running on Azure VMs",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.implement-azure-cosmos-db-nosql-operations",
+      "title": "Implement Azure Cosmos DB operations with the SDK",
+      "url": "https://learn.microsoft.com/training/modules/implement-azure-cosmos-db-nosql-operations/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Cosmos DB"
+      ],
+      "subjects": [
+        "Cloud computing",
+        "databases"
+      ],
+      "units": [
+        "Introduction",
+        "Perform point read operations",
+        "Create, replace, upsert, and delete items",
+        "Update items with partial document patch",
+        "Configure item time to live",
+        "Implement optimistic concurrency control",
+        "Execute transactional batch operations",
+        "Process bulk operations",
+        "Exercise - Implement data operations",
         "Module assessment",
         "Summary"
       ]
@@ -73298,7 +74135,7 @@
         "Ingest data with CDC feed",
         "Ingest data with Spark Structured Streaming",
         "Ingest data with Auto Loader",
-        "Ingest data with Lakeflow Spark Declarative Pipelines",
+        "Ingest data with Lakeflow pipelines",
         "Exercise - Ingest Data into Unity Catalog",
         "Module assessment",
         "Summary"
@@ -73815,7 +74652,7 @@
         "Introduction",
         "Set up your environment",
         "Explore personalization functionality",
-        "Knowledge check",
+        "Module assessment",
         "Exercise - Favorite some menu items",
         "Summary"
       ]
@@ -74548,7 +75385,7 @@
         "Overview of auto attendants and call queues",
         "Overview of Teams clients",
         "Overview of Microsoft Teams Rooms and phones",
-        "Overview of Microsoft 365 Copilot in Teams calling, meetings, and devices",
+        "Overview of Microsoft Copilot in Teams calling, meetings, and devices",
         "Module assessment",
         "Summary and resources"
       ]
@@ -75204,7 +76041,7 @@
         "License AI services for the right populations",
         "Understand how Microsoft 365 billing is structured",
         "Set up pay-as-you-go billing for AI-service usage",
-        "Exercise - Configure pay-as-you-go billing for a Microsoft Copilot Chat agent pilot",
+        "Exercise - Configure pay-as-you-go billing for a Copilot Chat agent pilot",
         "Module assessment",
         "Summary"
       ]
@@ -78068,6 +78905,28 @@
       ]
     },
     {
+      "uid": "learn.wwl.microsoft-ai-code",
+      "title": "Use a Microsoft AI Code model for AI-assisted coding",
+      "url": "https://learn.microsoft.com/training/modules/microsoft-ai-code/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "foundry-models"
+      ],
+      "subjects": [
+        "Artificial intelligence"
+      ],
+      "units": [
+        "Introduction",
+        "Get to know the Microsoft AI Code model",
+        "Use an MAI Code model to generate code",
+        "Exercise - Use a Microsoft AI Code model to generate an application",
+        "Knowledge check",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.microsoft-ai-in-foundry",
       "title": "Get started with Microsoft AI models in Foundry",
       "url": "https://learn.microsoft.com/training/modules/microsoft-ai-in-foundry/?WT.mc_id=studentamb_165290",
@@ -80122,29 +80981,6 @@
       ]
     },
     {
-      "uid": "learn.wwl.perform-data-analysis-azure-databricks",
-      "title": "Perform data analysis with Azure Databricks",
-      "url": "https://learn.microsoft.com/training/modules/perform-data-analysis-azure-databricks/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data engineering"
-      ],
-      "units": [
-        "Introduction",
-        "Ingest data with Azure Databricks",
-        "Data exploration tools in Azure Databricks",
-        "Data analysis using DataFrame APIs",
-        "Exercise - Explore data with Azure Databricks",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
       "uid": "learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints",
       "title": "Perform device investigations in Microsoft Defender for Endpoint",
       "url": "https://learn.microsoft.com/training/modules/perform-device-investigations-microsoft-defender-for-endpoints/?WT.mc_id=studentamb_165290",
@@ -80806,7 +81642,7 @@
       "units": [
         "Introduction",
         "Determine license requirements for Microsoft Teams Rooms and shared devices",
-        "Overview of Microsoft 365 Copilot and Microsoft Teams Rooms",
+        "Overview of Microsoft Copilot and Microsoft Teams Rooms",
         "Understand differences between Microsoft Teams Rooms on Android and Windows",
         "Understand Microsoft Teams Rooms on Surface Hub 2S",
         "Understand and plan Teams Room accessories, components, and peripherals",
@@ -81180,6 +82016,36 @@
       ]
     },
     {
+      "uid": "learn.wwl.privacy-security-responsible-ai-practices",
+      "title": "Privacy, security, and responsible AI practices",
+      "url": "https://learn.microsoft.com/training/modules/privacy-security-responsible-ai-practices/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "Identity and access",
+        "Information protection and governance",
+        "Machine learning",
+        "Security"
+      ],
+      "units": [
+        "Introduction",
+        "Privacy, security, and organizational policy",
+        "What not to put in a prompt",
+        "Consent, choice, and transparency",
+        "Review for bias and unsupported claims",
+        "When AI should not be used",
+        "Responsible AI checklist",
+        "Practice activity",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.procedures-functions-postgesql",
       "title": "Procedures and functions in PostgreSQL",
       "url": "https://learn.microsoft.com/training/modules/procedures-functions-postgresql/?WT.mc_id=studentamb_165290",
@@ -81198,6 +82064,34 @@
         "Call a stored procedure in Azure Database for PostgreSQL",
         "Create and use a function in Azure Database for PostgreSQL",
         "Exercise - Create a stored procedure in Azure Database for PostgreSQL",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.process-azure-cosmos-db-nosql-change-feed",
+      "title": "Process the Azure Cosmos DB for NoSQL change feed",
+      "url": "https://learn.microsoft.com/training/modules/process-azure-cosmos-db-nosql-change-feed/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Cosmos DB",
+        "Functions"
+      ],
+      "subjects": [
+        "Cloud computing",
+        "databases",
+        "serverless-computing"
+      ],
+      "units": [
+        "Introduction",
+        "Understand the change feed",
+        "Implement a change feed consumer",
+        "Choose a change feed mode",
+        "Handle events with Azure Functions",
+        "Move data with container copy jobs",
+        "Exercise - Process changes and copy data",
         "Module assessment",
         "Summary"
       ]
@@ -82539,6 +83433,32 @@
       ]
     },
     {
+      "uid": "learn.wwl.query-azure-cosmos-db-nosql",
+      "title": "Query data in Azure Cosmos DB for NoSQL",
+      "url": "https://learn.microsoft.com/training/modules/query-azure-cosmos-db-nosql/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Cosmos DB"
+      ],
+      "subjects": [
+        "Cloud computing",
+        "databases"
+      ],
+      "units": [
+        "Introduction",
+        "Understand the SQL query language",
+        "Create and execute queries",
+        "Implement correlated subqueries",
+        "Create cross-product queries",
+        "Page results with continuation tokens",
+        "Exercise - Author and page queries",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.query-azure-cosmos-db-sql-api",
       "title": "Query the Azure Cosmos DB for NoSQL",
       "url": "https://learn.microsoft.com/training/modules/query-azure-cosmos-db-sql-api/?WT.mc_id=studentamb_165290",
@@ -83514,6 +84434,32 @@
         "Configure Conditional Access policies for agents",
         "Control agent access and lifecycle",
         "Knowledge check",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.secure-azure-cosmos-db-nosql",
+      "title": "Secure an Azure Cosmos DB solution",
+      "url": "https://learn.microsoft.com/training/modules/secure-azure-cosmos-db-nosql/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Cosmos DB"
+      ],
+      "subjects": [
+        "Cloud computing",
+        "databases"
+      ],
+      "units": [
+        "Introduction",
+        "Implement Microsoft Entra authentication",
+        "Configure key-based authentication and rotation",
+        "Implement role-based access control",
+        "Configure network security",
+        "Configure dynamic data masking",
+        "Exercise - Secure an account",
+        "Module assessment",
         "Summary"
       ]
     },
@@ -84740,6 +85686,30 @@
         "Make live meetings accessible",
         "Offer flexible engagement options",
         "Reflection exercise",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.supported-employment-values-foundation-ai-use",
+      "title": "Supported employment values as the foundation for AI use",
+      "url": "https://learn.microsoft.com/training/modules/supported-employment-values-foundation-ai-use/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure"
+      ],
+      "subjects": [
+        "Business applications",
+        "Employee engagement",
+        "employee-management"
+      ],
+      "units": [
+        "Introduction",
+        "Supported employment, the job coach role, and values",
+        "Example: AI supporting independence",
+        "Practice activity",
         "Module assessment",
         "Summary"
       ]
@@ -86438,6 +87408,112 @@
       ]
     },
     {
+      "uid": "learn.wwl.use-ai-plan-your-day",
+      "title": "Use AI to plan your day",
+      "url": "https://learn.microsoft.com/training/modules/use-ai-plan-your-day/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Microsoft Power Platform",
+        "Office"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Office",
+        "Office Add-ins",
+        "Power Apps"
+      ],
+      "subjects": [
+        "Business applications",
+        "Communication",
+        "Knowledge management",
+        "Productivity",
+        "resource-management"
+      ],
+      "units": [
+        "Introduction",
+        "Start with what is already known",
+        "Decide what needs to happen first",
+        "Break a large task into smaller steps",
+        "Keep using supports that already work",
+        "Keep the conversation going",
+        "Try these prompts in Copilot",
+        "Practice activity: Use AI to plan an event",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.use-ai-safely",
+      "title": "Use AI safely",
+      "url": "https://learn.microsoft.com/training/modules/use-ai-safely/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure",
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "AI Builder",
+        "Azure",
+        "IoT",
+        "Microsoft Power Platform",
+        "azure-openai"
+      ],
+      "subjects": [
+        "Cloud security",
+        "Identity and access",
+        "Information protection and governance",
+        "Security",
+        "fraud-protection",
+        "generative-ai"
+      ],
+      "units": [
+        "Introduction",
+        "Keep private information private",
+        "Share only what is needed",
+        "AI can make mistakes",
+        "Keep the conversation going",
+        "Try these prompts in Copilot",
+        "What is safe to share?",
+        "Where to get help",
+        "Practice activity: Use AI safely",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.use-ai-to-communicate",
+      "title": "Use AI to communicate",
+      "url": "https://learn.microsoft.com/training/modules/use-ai-to-communicate/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure",
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "AI Builder",
+        "Azure",
+        "Face",
+        "Microsoft Power Platform",
+        "azure-openai"
+      ],
+      "subjects": [
+        "Business applications",
+        "Communication",
+        "Knowledge management",
+        "automation",
+        "generative-ai"
+      ],
+      "units": [
+        "Introduction",
+        "Write effective messages using AI tools",
+        "Shorten a message using AI tools",
+        "Rewrite messages using clearer words",
+        "Write professional help requests using AI",
+        "Keep the conversation going with AI",
+        "Try these prompts in Copilot",
+        "Practice activity: Use AI to write a thank-you message",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.use-apache-spark-azure-databricks",
       "title": "Use Apache Spark in Azure Databricks",
       "url": "https://learn.microsoft.com/training/modules/use-apache-spark-azure-databricks/?WT.mc_id=studentamb_165290",
@@ -86703,32 +87779,6 @@
         "Use pipeline templates",
         "Run and monitor pipelines",
         "Exercise - Ingest data with a pipeline",
-        "Module assessment",
-        "Summary"
-      ]
-    },
-    {
-      "uid": "learn.wwl.use-delta-lake-azure-databricks",
-      "title": "Manage data with Delta Lake",
-      "url": "https://learn.microsoft.com/training/modules/use-delta-lake-azure-databricks/?WT.mc_id=studentamb_165290",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data analytics",
-        "Data engineering"
-      ],
-      "units": [
-        "Introduction",
-        "Get started with Delta Lake",
-        "Create Delta tables",
-        "Implement schema enforcement",
-        "Data versioning and time travel in Delta Lake",
-        "Data integrity with Delta Lake",
-        "Exercise - Use Delta Lake in Azure Databricks",
         "Module assessment",
         "Summary"
       ]
@@ -87088,6 +88138,33 @@
       ]
     },
     {
+      "uid": "learn.wwl.using-ai-to-develop-coaching-materials",
+      "title": "Using AI to develop coaching materials",
+      "url": "https://learn.microsoft.com/training/modules/using-ai-to-develop-coaching-materials/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure"
+      ],
+      "subjects": [
+        "Accessibility",
+        "Business applications",
+        "Employee engagement",
+        "Knowledge management",
+        "Security"
+      ],
+      "units": [
+        "Introduction",
+        "What AI can support",
+        "Try it with Copilot",
+        "Reviewing AI-generated materials: the standard",
+        "Practice activity",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
       "uid": "learn.wwl.utilize-azure-openai-model-create-app",
       "title": "Utilize an Azure OpenAI model to create an Agent",
       "url": "https://learn.microsoft.com/training/modules/utilize-azure-openai-model-create-app/?WT.mc_id=studentamb_165290",
@@ -87183,6 +88260,39 @@
         "Create a query for real-time visualization",
         "Create real-time data visualizations in Power BI",
         "Exercise - Create a real-time data visualization",
+        "Module assessment",
+        "Summary"
+      ]
+    },
+    {
+      "uid": "learn.wwl.what-is-artificial-intelligence",
+      "title": "What is Artificial Intelligence (AI)?",
+      "url": "https://learn.microsoft.com/training/modules/what-is-artificial-intelligence/?WT.mc_id=studentamb_165290",
+      "categories": [
+        "Azure",
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "AI Builder",
+        "Azure",
+        "IoT",
+        "Microsoft Power Platform",
+        "azure-openai"
+      ],
+      "subjects": [
+        "Business applications",
+        "Knowledge management",
+        "Security",
+        "generative-ai",
+        "resource-management"
+      ],
+      "units": [
+        "Introduction",
+        "AI in action",
+        "AI does not always get everything right",
+        "People make decisions",
+        "Try these prompts in Copilot",
+        "Practice activity: Try AI for yourself",
         "Module assessment",
         "Summary"
       ]
