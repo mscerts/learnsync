@@ -57,11 +57,11 @@
   },
   "autopilot": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "azure": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "azure-sphere": {
     "relevant": false,
@@ -169,39 +169,39 @@
   },
   "defender": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "defender-business": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "defender-cloud-apps": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "defender-endpoint": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "defender-for-identity": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "defender-for-iot": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "defender-office-365": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "defender-vulnerability-management": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "defender-xdr": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "deployedge": {
     "relevant": false,
@@ -229,7 +229,7 @@
   },
   "dynamics365": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "ecdn": {
     "relevant": false,
@@ -249,7 +249,7 @@
   },
   "entra": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "exchange": {
     "relevant": false,
@@ -257,7 +257,7 @@
   },
   "fabric": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "fluent-ui": {
     "relevant": false,
@@ -309,7 +309,7 @@
   },
   "intune": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "intune-education": {
     "relevant": false,
@@ -361,7 +361,7 @@
   },
   "microsoft-365": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "microsoft-365-app-certification": {
     "relevant": false,
@@ -529,7 +529,7 @@
   },
   "power-platform": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "power-query": {
     "relevant": false,
@@ -609,7 +609,7 @@
   },
   "security-exposure-management": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "security-updates": {
     "relevant": false,
@@ -645,7 +645,7 @@
   },
   "sql": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "ssms": {
     "relevant": false,
@@ -689,7 +689,7 @@
   },
   "troubleshoot": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "typography": {
     "relevant": false,
@@ -749,7 +749,7 @@
   },
   "windows-server": {
     "relevant": true,
-    "checked": "2026-09-28"
+    "checked": "2026-10-05"
   },
   "winrtc": {
     "relevant": false,

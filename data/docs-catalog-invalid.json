@@ -7,7 +7,7 @@
     "description": "Learn how default dimension values are configured and applied, including fixed dimensions on main accounts, copying values from master records, and the order in which defaults are applied during posting.",
     "status": 404,
     "firstDetected": "2026-09-28",
-    "lastChecked": "2026-09-28"
+    "lastChecked": "2026-10-05"
   },
   {
     "title": "Manage active content in Office documents for IT admins",
@@ -17,7 +17,7 @@
     "description": "Admins can learn how to create policies to block active content in Office documents",
     "status": 404,
     "firstDetected": "2026-09-01",
-    "lastChecked": "2026-09-28"
+    "lastChecked": "2026-10-05"
   },
   {
     "title": "Collect a Performance Trace in New Outlook for Windows",
@@ -27,6 +27,6 @@
     "description": "Provides guidance to collect performance and network traces in new Outlook for Windows.",
     "status": 404,
     "firstDetected": "2026-09-28",
-    "lastChecked": "2026-09-28"
+    "lastChecked": "2026-10-05"
   }
 ]
