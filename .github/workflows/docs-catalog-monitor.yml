@@ -2,20 +2,24 @@ name: Docs Catalog Monitor
 
 on:
   schedule:
-    - cron: "0 8 * * 1" # Monday 08:00 UTC
+    - cron: "43 7 * * 1" # Monday 07:43 UTC (GitHub may start scheduled runs hours late)
   workflow_dispatch:
 
+# One queue for every workflow that writes data/ (learn and docs syncs), so
+# they never push at the same time and never race on data/status.json.
 concurrency:
-  group: docs-catalog-monitor
-  cancel-in-progress: true
+  group: learnsync-data
+  cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 120 # sitemaps + capped page fetches (MAX_PAGE_FETCHES) + github/docs clone; well under this in a normal week
+    timeout-minutes: 120 # the script stops fetching after MAX_RUNTIME_MINUTES and still writes what it gathered
     permissions:
       contents: write
       issues: write
+    env:
+      HUB_DISPATCH_TOKEN: ${{ secrets.HUB_DISPATCH_TOKEN }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
@@ -28,6 +32,7 @@ jobs:
         id: sync
         env:
           QUARANTINE_REPORT_FILE: /tmp/docs-catalog-quarantine-report.md
+          MAX_RUNTIME_MINUTES: "90"
         run: node scripts/docs-catalog-sync.mjs
 
       - name: Commit updated catalog cache
@@ -35,11 +40,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/docs-catalog.json data/docs-catalog-invalid.json data/docs-sitemap-families.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Update Microsoft docs catalog cache"
-            git push
-          fi
+          bash scripts/commit-data.sh "Update Microsoft docs catalog cache" \
+            data/docs-catalog.json data/docs-catalog-invalid.json data/docs-sitemap-families.json \
+            data/docs-urls.txt data/docs-redirects.json data/status.json
 
       - name: Create issue for newly quarantined URLs
         if: ${{ !cancelled() && steps.sync.outputs.new_quarantine_count != '' }}
@@ -48,6 +51,16 @@ jobs:
           title: "Docs Catalog: ${{ steps.sync.outputs.new_quarantine_count }} newly quarantined URL(s) — investigate & fix"
           content-filepath: /tmp/docs-catalog-quarantine-report.md
           labels: data
+
+      # Optional: tell mscerts/hub that fresh data exists so its Learn URL check
+      # runs right away instead of waiting for its own schedule. Needs a
+      # HUB_DISPATCH_TOKEN secret (a token allowed to create repository
+      # dispatch events on mscerts/hub); skipped when the secret is not set.
+      - name: Notify the hub
+        if: ${{ success() && env.HUB_DISPATCH_TOKEN != '' }}
+        env:
+          GH_TOKEN: ${{ env.HUB_DISPATCH_TOKEN }}
+        run: gh api repos/mscerts/hub/dispatches -f event_type=learnsync-synced -f "client_payload[source]=docs-catalog-monitor"
 
       # Stable title + comment-on-existing so a persistent failure produces one
       # issue with a comment per failed run, not a new issue every week.
@@ -58,12 +71,12 @@ jobs:
         run: |
           title="Microsoft Docs Catalog Sync Failed"
           {
-            echo "The scheduled sync of \`data/docs-catalog.json\` failed: one or more Learn sitemap"
-            echo "files could not be fetched, the sitemaps returned far fewer URLs than last run (sanity"
-            echo "abort), the github/docs clone failed, or the duplicate-URL audit tripped. Previous"
-            echo "entries were carried forward where possible."
-            echo "Broken URLs alone don't fail this job -- they're quarantined into"
-            echo "\`data/docs-catalog-invalid.json\` instead (see AGENTS.md)."
+            echo "The scheduled docs sync failed. Likely causes: one or more Learn sitemap files could not be fetched"
+            echo "(removal detection was disabled and previous data carried forward), the sitemaps returned far fewer URLs"
+            echo "than last run (sanity abort, nothing written), a rate-limit storm stopped a fetch phase (everything gathered"
+            echo "so far was still written), the github/docs clone failed, the duplicate-URL audit tripped, or the data push"
+            echo "was rejected. Broken URLs alone do not fail this job: they are quarantined into"
+            echo "\`data/docs-catalog-invalid.json\` (see AGENTS.md). See the run log for the exact reason."
             echo
             echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           } > /tmp/docs-catalog-error.md

@@ -1,0 +1,146 @@
+[
+  {
+    "from": "/azure/databricks/agents/agent-memory/self-managed-memory",
+    "to": "/azure/databricks/agents/agent-memory/managed-memory",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/ai-gateway/coding-agent-integration-model-provider-services",
+    "to": "/azure/databricks/ai-gateway/coding-agent-quickstart",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/ai-gateway/coding-agent-integration-model-services",
+    "to": "/azure/databricks/ai-gateway/coding-agent-quickstart",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/ai-gateway/create-model-services",
+    "to": "/azure/databricks/ai-gateway/model-services",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/ai-gateway/smart-routing",
+    "to": "/azure/databricks/ai-gateway/coding-agent-model-selection",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/integrations/excel-genie",
+    "to": "/azure/databricks/integrations/excel/genie",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/integrations/excel-query",
+    "to": "/azure/databricks/integrations/excel/query-data",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/integrations/excel-setup",
+    "to": "/azure/databricks/integrations/excel/connect",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/integrations/excel-write-back",
+    "to": "/azure/databricks/integrations/excel/write-back",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/command-reference",
+    "to": "/azure/databricks/dev-tools/cli/reference/air-commands",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/installation",
+    "to": "/azure/databricks/dev-tools/cli/install",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-distributed-finetune-qwen2-0.5b",
+    "to": "/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-qwen3.5-0.8b",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-llama3-8b-llmfoundry",
+    "to": "/azure/databricks/machine-learning/ai-runtime/examples/gpu-llms",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/security/keys/cmk-managed-disks-azure",
+    "to": "/azure/databricks/security/keys/cmk-managed-disks-azure/cmk-managed-disks-azure",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/databricks/security/network/front-end/manage-ingress-policies",
+    "to": "/azure/databricks/security/network/front-end/manage-ingress-workspace",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/foundry/agents/how-to/deploy-hosted-voice-agent",
+    "to": "/azure/foundry/how-to/voice-first-with-hosted-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/virtual-machines/hb-hc-known-issues",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hb-hc-known-issues",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/microsoft-365/admin/misc/feedback-code-conduct",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-05",
+    "lastSeen": "2026-10-05"
+  }
+]

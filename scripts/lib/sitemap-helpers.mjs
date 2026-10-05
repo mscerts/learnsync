@@ -99,17 +99,18 @@ export function underPrefix(path, prefix) {
   return path === prefix || path.startsWith(`${prefix}/`);
 }
 
-/** In scope = under at least one include prefix and under no exclude prefix. */
+/** In scope = under at least one include prefix and under no exclude prefix (case-insensitive). */
 export function inScope(url, { include, exclude = [] }) {
-  const path = learnPath(url);
-  return include.some((p) => underPrefix(path, p)) && !exclude.some((p) => underPrefix(path, p));
+  const path = learnPath(url).toLowerCase();
+  const under = (p) => underPrefix(path, p.toLowerCase());
+  return include.some(under) && !exclude.some(under);
 }
 
-/** Which include prefix a URL falls under (longest match), for per-scope stats. */
+/** Which include prefix a URL falls under (longest match, case-insensitive), for per-scope stats. */
 export function scopeOf(url, include) {
-  const path = learnPath(url);
+  const path = learnPath(url).toLowerCase();
   let best = null;
-  for (const p of include) if (underPrefix(path, p) && (!best || p.length > best.length)) best = p;
+  for (const p of include) if (underPrefix(path, p.toLowerCase()) && (!best || p.length > best.length)) best = p;
   return best;
 }
 
@@ -174,10 +175,17 @@ export function isNoIndex(meta) {
  * `cleanTitle` is passed in (it lives in docs-helpers.mjs) so it strips " | Microsoft Learn".
  */
 export function recordFromHead({ title, meta }, url, cleanTitle) {
-  const rawTitle = title || meta["og:title"];
-  if (!rawTitle) return null;
+  // A page whose <title> is just the site suffix (" | Microsoft Learn") cleans to "";
+  // fall back to og:title, and give up (null) rather than catalog an untitled record.
+  let cleaned = "";
+  for (const raw of [title, meta["og:title"]]) {
+    if (!raw) continue;
+    cleaned = cleanTitle(raw);
+    if (cleaned) break;
+  }
+  if (!cleaned) return null;
   return {
-    title: cleanTitle(rawTitle),
+    title: cleaned,
     url,
     product: meta["ms.service"] || null,
     subproduct: meta["ms.subservice"] || null,

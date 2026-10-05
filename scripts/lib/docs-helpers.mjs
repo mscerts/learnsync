@@ -5,6 +5,7 @@
  */
 
 import { relative } from "node:path";
+import { canonicalPath } from "./canonical.mjs";
 
 export function parseFrontmatter(content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
@@ -86,6 +87,37 @@ export function findDuplicateUrls(entries) {
   return [...byUrl.entries()].filter(([, list]) => list.length > 1).map(([url, list]) => ({ url, entries: list }));
 }
 
+/**
+ * Identity of a catalog entry for alias detection: the canonical path for
+ * learn.microsoft.com URLs (case, locale, query and trailing slash folded
+ * away), the lowercased URL for anything else.
+ */
+export function aliasKey(url) {
+  return canonicalPath(url) ?? String(url).toLowerCase();
+}
+
+/**
+ * Case-insensitive companion of findDuplicateUrls(): groups of entries that are
+ * the same page spelled differently (for example /azure/Foo and /azure/foo).
+ * Exact repeats are findDuplicateUrls()' job and are not reported here.
+ * Returns [{ key, urls, entries }] for every key with at least two distinct URLs.
+ */
+export function findAliasDuplicates(entries) {
+  const byKey = new Map();
+  for (const entry of entries) {
+    const key = aliasKey(entry.url);
+    const list = byKey.get(key);
+    if (list) list.push(entry);
+    else byKey.set(key, [entry]);
+  }
+  const groups = [];
+  for (const [key, list] of byKey) {
+    const urls = [...new Set(list.map((e) => e.url))];
+    if (urls.length > 1) groups.push({ key, urls, entries: list });
+  }
+  return groups;
+}
+
 // The URL prefixes a repo's targets publish under — used to carry forward the
 // previous catalog's entries for a repo whose clone/parse failed this run.
 export function repoUrlPrefixes(repo) {
@@ -103,16 +135,23 @@ export function repoUrlPrefixes(repo) {
 // Builds the Markdown body for the "please investigate" issue opened when a run
 // quarantines at least one NEW url. Written to QUARANTINE_REPORT_FILE and, in CI,
 // handed to peter-evans/create-issue-from-file by the calling workflow.
-export function buildQuarantineReport(records, { context = "run", surgeThreshold = 20 } = {}) {
+export const QUARANTINE_REPORT_MAX_ROWS = 100;
+
+export function buildQuarantineReport(records, { context = "run", surgeThreshold = 20, maxRows = QUARANTINE_REPORT_MAX_ROWS } = {}) {
   const runUrl =
     process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY && process.env.GITHUB_RUN_ID
       ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`
       : null;
 
   const escapeCell = (s) => String(s ?? "-").replace(/\|/g, "\\|");
-  const table = records
+  // A GitHub issue body is capped at 65,536 characters and nobody reads a
+  // 5,000-row table: show the first `maxRows` and point at the data file.
+  const shown = records.slice(0, maxRows);
+  const hidden = records.length - shown.length;
+  const table = shown
     .map((e) => `| ${escapeCell(e.status)} | ${escapeCell(e.url)} | ${escapeCell(e.title)} | ${escapeCell(e.product)} |`)
     .join("\n");
+  const moreLine = hidden > 0 ? [`_${hidden} more in \`data/docs-catalog-invalid.json\` (not shown here)._`, ""] : [];
 
   const isSurge = context === "run" && records.length > surgeThreshold;
   const surgeCallout = isSurge
@@ -158,6 +197,7 @@ export function buildQuarantineReport(records, { context = "run", surgeThreshold
     "|---|---|---|---|",
     table,
     "",
+    ...moreLine,
     "## Prompt for an AI coding agent",
     "",
     "You're working in the `mscerts/learnsync` repo. For each URL listed above:",
@@ -167,9 +207,11 @@ export function buildQuarantineReport(records, { context = "run", surgeThreshold
     "   on `original_content_git_url` pointing at a public repo).",
     "2. **Classify** each URL as one of:",
     "   - **Moved** \u2014 the content lives at a new URL. The next sync will pick the new URL",
-    "     up from Learn's sitemaps automatically; nothing to fix in the script.",
-    "   - **Out of scope** \u2014 the page moved to a URL prefix not in `LEARN_SCOPE.include`",
-    "     in `scripts/docs-catalog-sync.mjs`. Add the prefix if the content is wanted.",
+    "     up from Learn's sitemaps automatically; nothing to fix in the script. (Redirects the",
+    "     sync itself observed are listed in `data/docs-redirects.json`.)",
+    "   - **Out of scope** \u2014 the page moved to a URL prefix that is in neither scope in",
+    "     `scripts/lib/scope.mjs` (`LEARN_SCOPE` for metadata, `INDEX_ONLY_SCOPE` for index",
+    "     entries only). Add the prefix if the content is wanted.",
     "   - **Genuinely retired/removed** \u2014 the page or product no longer exists anywhere. No",
     "     script change needed; leave its record in `data/docs-catalog-invalid.json` as-is.",
     "3. **Fix the script** only for the out-of-scope case, then run",

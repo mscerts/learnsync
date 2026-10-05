@@ -1,9 +1,10 @@
 # learnsync
 
-Local, AI-queryable JSON caches of Microsoft Learn content — training modules
-and documentation pages — refreshed on a weekly schedule so an AI coding agent
-(or a human) can research "everything Microsoft Learn has about product X"
-without re-scraping Learn on every question.
+Caches of Microsoft Learn content, refreshed weekly, that answer two questions:
+**"what does Learn have about product X?"** (research) and **"is this
+learn.microsoft.com URL still good?"** (validation). Training modules with their
+real unit URLs, learning paths, courses, certifications, exams, applied skills,
+study guides and documentation pages.
 
 [![Learn Catalog Monitor](https://github.com/mscerts/learnsync/actions/workflows/learn-catalog-monitor.yml/badge.svg)](https://github.com/mscerts/learnsync/actions/workflows/learn-catalog-monitor.yml)
 [![Docs Catalog Monitor](https://github.com/mscerts/learnsync/actions/workflows/docs-catalog-monitor.yml/badge.svg)](https://github.com/mscerts/learnsync/actions/workflows/docs-catalog-monitor.yml)
@@ -12,127 +13,82 @@ without re-scraping Learn on every question.
 
 ## Origin
 
-Both sync scripts and their generated caches were originally built inside
-[mscerts/hub](https://github.com/mscerts/hub), the Microsoft Certification
-Knowledge Hub ([msfthub.com](https://msfthub.com)), to help research official
-Microsoft Learn resources for exam study-guide pages. This repo is a
-standalone extraction of just that subsystem — the scripts have zero
-dependency on the Astro site or anything else in the hub project, so they
-live here on their own with their own schedule, issues, and history.
+The sync scripts were built inside [mscerts/hub](https://github.com/mscerts/hub),
+the Microsoft Certification Knowledge Hub ([msfthub.com](https://msfthub.com)), to
+research official Learn resources for exam study guides. This repo is a standalone
+extraction with its own schedule, issues and history. The hub now also uses it as
+the validity source for its weekly Learn URL check.
 
-## What's in here
+## What's in `data/`
 
-| | Learn Catalog | Docs Catalog |
+| File | Content | Written by |
 |---|---|---|
-| Covers | Training modules (Learn's `/training/modules/...`) | Documentation pages (`/en-us/<product>/...`) |
-| Script | [`scripts/learn-catalog-sync.mjs`](scripts/learn-catalog-sync.mjs) | [`scripts/docs-catalog-sync.mjs`](scripts/docs-catalog-sync.mjs) |
-| Data file | [`data/learn-catalog.json`](data/learn-catalog.json) (~3,357 modules) | [`data/docs-catalog.json`](data/docs-catalog.json) (~75,000 pages) + [`data/docs-catalog-invalid.json`](data/docs-catalog-invalid.json) (quarantined dead links) |
-| Source    | [`learn.microsoft.com/api/catalog/`](https://learn.microsoft.com/api/catalog/) | Learn's own [sitemaps](https://learn.microsoft.com/_sitemaps/sitemapindex.xml) + changed pages' `<head>` metadata; `git clone` of `github/docs` for docs.github.com |
-| Schedule | Mondays 07:00 UTC | Mondays 08:00 UTC |
-| Workflow | [`learn-catalog-monitor.yml`](.github/workflows/learn-catalog-monitor.yml) | [`docs-catalog-monitor.yml`](.github/workflows/docs-catalog-monitor.yml) |
+| `learn-catalog.json` | training modules: metadata, **real unit URLs**, tombstones for removed modules, out-of-scope list | `scripts/learn-catalog-sync.mjs` |
+| `learn-content.json` | learning paths, courses, certifications, exams, applied skills, verified study guides, tombstones | `scripts/learn-content-sync.mjs` |
+| `docs-urls.txt` | complete index of documentation URLs (every sitemap URL in scope, with lastmod) | `scripts/docs-catalog-sync.mjs` |
+| `docs-catalog.json` | documentation page metadata (title, description, product, lastmod, checked) | `scripts/docs-catalog-sync.mjs` |
+| `docs-redirects.json` | where moved documentation pages went | `scripts/docs-catalog-sync.mjs` |
+| `docs-catalog-invalid.json` | quarantined (confirmed 404/410) documentation URLs | `scripts/docs-catalog-sync.mjs` |
+| `status.json` | heartbeat: when each sync last finished and what it saw | both syncs |
 
-Both scripts are plain Node.js ESM with **zero npm dependencies** —
-both use the global `fetch`; `docs-catalog-sync.mjs`
-additionally shells out to `git`. Neither needs `npm install` to run.
+Schemas, canonical path form, rules and failsafes: **[DATA_CONTRACT.md](DATA_CONTRACT.md)**.
+Operational detail for agents and maintainers: **[AGENTS.md](AGENTS.md)**.
 
-See [AGENTS.md](AGENTS.md) for the full operational detail behind each cache:
-category filters, subject-enrichment rules, per-repo URL gotchas, the
-automated link-checking/quarantine model, and more.
+Sources: the Learn [catalog API](https://learn.microsoft.com/api/catalog/), the Learn
+[hierarchy API](https://learn.microsoft.com/api/hierarchy/modules/learn.wwl.foundry-sdk?locale=en-us)
+(real unit URLs), Learn's own [sitemaps](https://learn.microsoft.com/_sitemaps/sitemapindex.xml)
+and `github/docs` for docs.github.com. All scripts are plain Node 22 ESM with no
+npm dependencies.
 
-### Learn Catalog record shape
+## Validating URLs
 
-```json
-{
-  "uid": "learn.wwl.introduction-development-operations-principles-for-machine-learn",
-  "title": "Introduction to DevOps principles for machine learning",
-  "url": "https://learn.microsoft.com/training/modules/.../?WT.mc_id=studentamb_165290",
-  "categories": ["Azure", "GitHub"],
-  "products": ["Azure DevOps", "GitHub", "Machine Learning"],
-  "subjects": ["DevOps"],
-  "units": ["Introduction", "...", "Summary"]
-}
+```bash
+echo '["https://learn.microsoft.com/training/modules/foundry-sdk/06-exercise/"]' \
+  | node scripts/validate-urls.mjs
+node scripts/validate-urls.mjs --input urls.json --output verdicts.json --confirm-live
 ```
 
-### Docs Catalog record shape
-
-```json
-{
-  "title": "Import SOAP API to Azure API Management",
-  "url": "https://learn.microsoft.com/azure/api-management/import-soap-api",
-  "product": "azure-api-management",
-  "subproduct": null,
-  "description": "Learn how to import a SOAP API to Azure API Management as a WSDL specification..."
-}
-```
-
-A URL whose periodic link check definitively fails (HTTP 404/410 — transient
-timeouts/5xx/429 never quarantine) is moved out of `docs-catalog.json`
-into `docs-catalog-invalid.json` (same shape, plus `status`, `firstDetected`,
-`lastChecked`) instead of failing the sync run. Every quarantined URL is
-re-checked on each run: a page Microsoft restores is automatically released
-back into the catalog. When a run quarantines a URL
-that wasn't already in that backlog, the workflow automatically opens a
-GitHub issue with a table of the newly broken URL(s) and a ready-to-use
-research/fix prompt for an AI coding agent (see AGENTS.md's
-"Investigate-and-fix issue for newly quarantined URLs").
+Each URL gets a verdict (`valid`, `broken`, `moved`, `unverifiable`) with the evidence it
+rests on, from the caches only (no network) unless you add the live flags
+(`--confirm-live` re-probes negative verdicts, `--probe-unverifiable` probes page kinds no
+cache covers; those verdicts are labelled `live-probe`). Anything the data cannot know is
+`unverifiable`, never guessed. See the validator section of [AGENTS.md](AGENTS.md).
 
 ## Running locally
 
-Requires Node.js 22+ (and `git` on `PATH` for the docs catalog sync):
+Requires Node.js 22+ (and `git` on `PATH` for the github/docs source):
 
 ```bash
-node scripts/learn-catalog-sync.mjs   # -> data/learn-catalog.json
-node scripts/docs-catalog-sync.mjs    # -> data/docs-catalog.json, data/docs-catalog-invalid.json
+npm run sync:learn     # learn-catalog.json + learn-content.json  (a full unit refresh takes ~13 min)
+npm run sync:docs      # docs index, catalog, redirects, quarantine
+DRY_RUN=1 node scripts/docs-catalog-sync.mjs   # plan only, writes nothing
+npm test               # offline unit tests
 ```
 
-or, equivalently, via the npm scripts in [package.json](package.json):
-
-```bash
-npm run sync:learn
-npm run sync:docs
-npm run sync        # both, in sequence
-```
-
-`docs-catalog-sync.mjs` no longer depends on the `MicrosoftDocs/*` repos, which Microsoft
-Learn is [retiring by the end of December 2026](https://techcommunity.microsoft.com/blog/skills-hub-blog/changes-to-microsoft-learn%E2%80%99s-public-documentation-repositories/4554909).
-It discovers pages from Learn's sitemaps and only fetches pages whose `lastmod` changed.
-Flags: `DRY_RUN=1` (plan + per-prefix counts, writes nothing), `FULL_DISCOVERY=1`
-(re-scan every sitemap family), `MAX_PAGE_FETCHES=<n>` (per-run cap, default 6000),
-`SKIP_GIT_SOURCES=1` (don't clone github/docs).
+Rate limits: Learn answers HTTP 429 above about three concurrent requests, so the syncs
+use at most three workers with backoff. Do not loosen that for a one-off run.
 
 ## Keeping the caches fresh
 
-Each script also runs weekly via GitHub Actions (see the Schedule row above,
-or trigger either workflow manually from the **Actions** tab). A successful
-run commits the refreshed JSON directly to the default branch (no PR, to keep
-this low-friction for a pure data refresh); a failed run opens an issue
-instead so it doesn't go unnoticed. The Docs Catalog Monitor additionally
-opens an issue whenever it quarantines a newly-broken URL (not on every run —
-only when something changes), so the growing quarantine list doesn't just
-silently accumulate unnoticed between periodic triage passes. If a single run
-quarantines an unusually large batch at once (more than a handful), the issue
-calls that out as a likely rate-limit/network false positive rather than
-presenting it as that many pages having genuinely broken simultaneously.
+Both syncs run weekly on GitHub Actions (Mondays; GitHub often starts scheduled runs hours
+late) or on demand from the **Actions** tab. They share one queue so they never push at the
+same time, and commit through a push-with-retry script. A run that passes its failsafes
+commits the refreshed data and `status.json` (the heartbeat consumers read); a run that fails
+a failsafe writes nothing and opens (or comments on) one issue. Newly quarantined
+documentation URLs open a separate `data` issue. If the repository secret `HUB_DISPATCH_TOKEN`
+is set, each successful sync also tells mscerts/hub to run its Learn URL check immediately.
 
 ## Repo maintenance
 
-A separate [`ci.yml`](.github/workflows/ci.yml) workflow validates script
-syntax, runs the unit tests (`npm test`, plain `node:test`, zero
-dependencies), lints the workflows with `actionlint`, and validates
-issue-template YAML on every push and pull request that
-touches them (not on the weekly data-only commits), so a regression is caught
-immediately instead of surfacing days later on the next scheduled sync.
-All GitHub Actions are pinned to full commit SHAs;
-[`dependabot.yml`](.github/dependabot.yml) keeps the pinned GitHub Action
-versions current automatically.
+`ci.yml` runs on pushes and pull requests that touch scripts, tests, workflows or issue
+templates: syntax checks, the unit tests, `actionlint` and the issue-template YAML check. All
+GitHub Actions are pinned to full commit SHAs and kept current by Dependabot.
 
 ## Contributing
 
-Found a miscategorized module, a stale doc page, or a Learn category / docs
-repo that should be tracked but isn't? Please [open an issue](https://github.com/mscerts/learnsync/issues/new/choose) —
-there are templates for both a sync failure and a data-quality report. For
-anything about how the underlying logic works or how to extend it, start with
-[AGENTS.md](AGENTS.md).
+Found a miscategorized module, a stale doc page, or a Learn category / docs prefix that should
+be tracked but isn't? Please [open an issue](https://github.com/mscerts/learnsync/issues/new/choose).
+For anything about how the logic works or how to extend it, start with [AGENTS.md](AGENTS.md).
 
 ## License
 
