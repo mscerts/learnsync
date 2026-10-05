@@ -17,6 +17,9 @@ on:
       - ".github/workflows/**"
       - ".github/ISSUE_TEMPLATE/**"
 
+permissions:
+  contents: read
+
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
@@ -35,10 +38,10 @@ jobs:
 
       - name: Check script syntax
         run: |
-          node --check scripts/learn-catalog-sync.mjs
-          node --check scripts/docs-catalog-sync.mjs
-          node --check scripts/lib/docs-helpers.mjs
-          node --check scripts/lib/learn-helpers.mjs
+          for f in scripts/*.mjs scripts/lib/*.mjs test/*.mjs; do
+            node --check "$f"
+          done
+          bash -n scripts/commit-data.sh
 
       - name: Run unit tests
         run: npm test
@@ -51,14 +54,15 @@ jobs:
       # outputs, invalid cron) -- much stronger than a bare YAML parse.
       - name: Lint workflows with actionlint
         run: |
-          bash <(curl -sSf https://raw.githubusercontent.com/rhysd/actionlint/v1.7.12/scripts/download-actionlint.bash) 1.7.12
+          # download script pinned to the commit of tag v1.7.12 (a tag can move, a commit cannot)
+          bash <(curl -sSf https://raw.githubusercontent.com/rhysd/actionlint/914e7df21a07ef503a81201c76d2b11c789d3fca/scripts/download-actionlint.bash) 1.7.12
           ./actionlint -color
 
       # Issue templates aren't workflows, so actionlint doesn't cover them -- a plain
       # YAML parse still catches broken template syntax.
       - name: Validate issue-template YAML
         run: |
-          pip install --quiet pyyaml
+          pip install --quiet pyyaml==6.0.2
           python3 - <<'PY'
           import glob
           import sys

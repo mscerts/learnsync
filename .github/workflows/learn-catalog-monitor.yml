@@ -2,20 +2,24 @@ name: Learn Catalog Monitor
 
 on:
   schedule:
-    - cron: "0 7 * * 1" # Monday 07:00 UTC
+    - cron: "17 7 * * 1" # Monday 07:17 UTC (GitHub may start scheduled runs hours late)
   workflow_dispatch:
 
+# One queue for every workflow that writes data/ (learn and docs syncs), so
+# they never push at the same time and never race on data/status.json.
 concurrency:
-  group: learn-catalog-monitor
-  cancel-in-progress: true
+  group: learnsync-data
+  cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 60 # catalog + incremental unit URLs (a first or monthly full refresh is ~3,400 polite requests) + study-guide probes
     permissions:
       contents: write
       issues: write
+    env:
+      HUB_DISPATCH_TOKEN: ${{ secrets.HUB_DISPATCH_TOKEN }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
@@ -24,18 +28,25 @@ jobs:
         with:
           node-version: 22
 
-      - name: Sync Microsoft Learn catalog cache
-        run: node scripts/learn-catalog-sync.mjs
+      - name: Sync Microsoft Learn catalog caches
+        run: npm run sync:learn
 
-      - name: Commit updated catalog cache
+      - name: Commit updated catalog caches
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/learn-catalog.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Update Microsoft Learn catalog cache"
-            git push
-          fi
+          bash scripts/commit-data.sh "Update Microsoft Learn catalog cache" \
+            data/learn-catalog.json data/learn-content.json data/status.json
+
+      # Optional: tell mscerts/hub that fresh data exists so its Learn URL check
+      # runs right away instead of waiting for its own schedule. Needs a
+      # HUB_DISPATCH_TOKEN secret (a token allowed to create repository
+      # dispatch events on mscerts/hub); skipped when the secret is not set.
+      - name: Notify the hub
+        if: ${{ success() && env.HUB_DISPATCH_TOKEN != '' }}
+        env:
+          GH_TOKEN: ${{ env.HUB_DISPATCH_TOKEN }}
+        run: gh api repos/mscerts/hub/dispatches -f event_type=learnsync-synced -f "client_payload[source]=learn-catalog-monitor"
 
       # Stable title + comment-on-existing so a persistent failure produces one
       # issue with a comment per failed run, not a new issue every week.
@@ -46,8 +57,10 @@ jobs:
         run: |
           title="Microsoft Learn Catalog Sync Failed"
           {
-            echo "The scheduled sync of \`data/learn-catalog.json\` failed."
-            echo "The Microsoft Learn catalog API may be down, or its response schema may have changed."
+            echo "The scheduled Learn sync failed (\`data/learn-catalog.json\`, \`data/learn-content.json\`)."
+            echo "Likely causes: the Learn catalog or hierarchy API is down or changed shape, a failsafe aborted the run"
+            echo "(a sharp drop in modules, a missing category, too many failed unit-URL requests) so nothing bad was written,"
+            echo "or the data push was rejected. Nothing was committed. See the run log for the exact reason."
             echo
             echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           } > /tmp/learn-catalog-error.md

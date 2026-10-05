@@ -129,3 +129,21 @@ test("isNoIndex detects robots noindex", () => {
 test("decodeHtmlEntities handles numeric and named entities", () => {
   assert.equal(decodeHtmlEntities("A &#39;b&#x27; &quot;c&quot; &amp;amp; &lt;d&gt;"), `A 'b' "c" &amp; <d>`);
 });
+
+test("inScope and scopeOf are case-insensitive (sitemap spellings are not always lowercase)", () => {
+  const scope = { include: ["Azure", "defender"], exclude: ["AZURE/Templates"] };
+  assert.ok(inScope("https://learn.microsoft.com/Azure/Key-Vault/x", scope));
+  assert.ok(inScope("https://learn.microsoft.com/AZURE", scope));
+  assert.ok(!inScope("https://learn.microsoft.com/azure/templates/x", scope));
+  assert.ok(!inScope("https://learn.microsoft.com/Azure/Templates/x", scope));
+  assert.equal(scopeOf("https://learn.microsoft.com/DEFENDER/x", ["defender"]), "defender");
+});
+
+test("recordFromHead falls back to og:title when <title> is only the site suffix, and gives up when nothing is left", () => {
+  const og = recordFromHead({ title: " | Microsoft Learn", meta: { "og:title": "Real title | Microsoft Learn" } }, "u", cleanTitle);
+  assert.equal(og.title, "Real title");
+  assert.equal(recordFromHead({ title: " | Microsoft Learn", meta: {} }, "u", cleanTitle), null);
+  assert.equal(recordFromHead({ title: "| Microsoft Learn", meta: { "og:title": "- Microsoft Docs" } }, "u", cleanTitle), null);
+  // a normal title wins over og:title
+  assert.equal(recordFromHead({ title: "Own", meta: { "og:title": "Other" } }, "u", cleanTitle).title, "Own");
+});

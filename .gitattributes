@@ -7,3 +7,7 @@
 # review — collapse them in diffs/PR views and exclude from language stats.
 data/*.json linguist-generated=true
 data/*.json -diff
+
+# The URL index is generated plain text, same treatment as the JSON caches.
+data/*.txt linguist-generated=true
+data/*.txt -diff
