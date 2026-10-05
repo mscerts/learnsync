@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "learn": {
+    "generatedAt": "2026-10-05T19:04:00.768Z",
+    "runId": "37360650403",
+    "modules": 3367,
+    "removed": 5,
+    "outOfScope": 66,
+    "totalApiModules": 3433,
+    "unitUrlsRefreshedAt": "2026-10-05",
+    "unitHierarchyRequests": 3367,
+    "unitHierarchyFailures": 0,
+    "unitUrlsNull": 0,
+    "unitHierarchyNotFound": 0,
+    "unitUrlsCarriedForward": 0,
+    "unusedCategories": [],
+    "content": {
+      "learningPaths": 820,
+      "courses": 139,
+      "certifications": 152,
+      "exams": 145,
+      "appliedSkills": 37,
+      "studyGuides": 66
+    },
+    "catalogGeneratedAt": "2026-10-05T19:04:00.768Z",
+    "contentGeneratedAt": "2026-10-05T19:15:57.783Z"
+  }
+}
