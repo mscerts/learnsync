@@ -24,5 +24,19 @@
     },
     "catalogGeneratedAt": "2026-10-05T19:04:00.768Z",
     "contentGeneratedAt": "2026-10-05T19:15:57.783Z"
+  },
+  "docs": {
+    "generatedAt": "2026-10-05T19:55:18.359Z",
+    "runId": "37362661084",
+    "indexUrls": 138709,
+    "catalogRecords": 100923,
+    "sitemapMaxLastmod": "2026-10-02",
+    "pendingNew": 16841,
+    "deferredChanged": 0,
+    "deferredMissing": 0,
+    "quarantined": 3,
+    "redirects": 18,
+    "sitemapFailures": 0,
+    "complete": true
   }
 }
