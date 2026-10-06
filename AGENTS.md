@@ -407,8 +407,12 @@ always come from the same commit.
   (07:43 UTC) runs the docs sync with `MAX_RUNTIME_MINUTES=90`. GitHub starts scheduled runs 6-8 hours
   late, which is why nothing relies on clock times: consumers read `status.json`.
 - Both share the concurrency group `learnsync-data` (`cancel-in-progress: false`): they never run at the
-  same time and never race on `data/status.json`. Timeouts: learn 60 min (a first or monthly full unit
-  refresh is ~15-20 min), docs 120 min.
+  same time and never race on `data/status.json` or the change files. Timeouts: learn 60 min (a first or
+  monthly full unit refresh is ~15-20 min), docs 120 min.
+- Both check out `ref: ${{ github.ref }}` (the branch tip). Without it `actions/checkout` uses the commit that
+  TRIGGERED the run, and a sync that waited in the queue behind the other would start from data that predates
+  the other's push and hit a rebase conflict in the shared change files (it happened on the first real run
+  with both syncs dispatched together). `test/workflows.test.mjs` guards it for every workflow that commits data.
 - Commits go through `scripts/commit-data.sh`: commit, push, and on rejection `pull --rebase --autostash`
   and retry (tested against a real git remote). Data commits include `status.json` every week; that tiny
   diff is the heartbeat. Both workflows also stage `data/changes/removed.json` and `moved.json` (each only
