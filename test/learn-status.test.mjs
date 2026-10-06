@@ -88,3 +88,33 @@ test("a corrupt or missing status file is replaced, not fatal", () => {
     removeDir(dir);
   }
 });
+
+test("the change-file counters of each part live under their own key, keep the key order stable and never clobber the other part", () => {
+  const counters = (n) => ({ removed: n, moved: 0, unverified: 0, newRemoved: n, newMoved: 0, resurrected: 0, probed: n });
+  const catalog = { modules: 3355, removed: 76, outOfScope: 66, catalogChanges: counters(2) };
+  const content = { content: { exams: 145 }, contentChanges: counters(1) };
+  for (const order of [["catalog", "content"], ["content", "catalog"]]) {
+    const dir = makeTempDir();
+    try {
+      const file = join(dir, "status.json");
+      const fields = { catalog, content };
+      contributeLearnStatus(file, order[0], fields[order[0]], { now: T1, env: {} });
+      contributeLearnStatus(file, order[1], fields[order[1]], { now: T2, env: {} });
+      const learn = JSON.parse(readFileSync(file, "utf-8")).learn;
+      assert.deepEqual(learn.catalogChanges, counters(2));
+      assert.deepEqual(learn.contentChanges, counters(1));
+      assert.equal(learn.removed, 76, "the top-level `removed` keeps meaning module tombstones");
+      assert.deepEqual(Object.keys(learn), ["generatedAt", "runId", "modules", "removed", "outOfScope", "content", "catalogChanges", "contentChanges", "catalogGeneratedAt", "contentGeneratedAt"]);
+    } finally {
+      removeDir(dir);
+    }
+  }
+});
+
+test("a status file written before the change counters existed stays readable and is extended, not rewritten", () => {
+  const first = mergeLearnSection({ modules: 3355, removed: 76, content: { exams: 145 }, catalogGeneratedAt: T1.toISOString(), contentGeneratedAt: T1.toISOString() }, "catalog", { modules: 3356, catalogChanges: { removed: 0 } }, T2);
+  assert.equal(first.modules, 3356);
+  assert.deepEqual(first.content, { exams: 145 });
+  assert.deepEqual(first.catalogChanges, { removed: 0 });
+  assert.equal("contentChanges" in first, false);
+});

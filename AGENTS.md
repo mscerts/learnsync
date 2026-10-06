@@ -17,6 +17,9 @@ two purposes:
 2. **A validity source**: they answer "is this learn.microsoft.com URL still
    good?" for consumers such as the [mscerts/hub](https://github.com/mscerts/hub)
    Learn URL Check workflow, through the validator in this repo.
+3. **A changelog of broken links**: two small files, `data/changes/removed.json` and
+   `moved.json`, list every link learnsync knows has changed, so an automation reads a
+   few KB instead of the multi-MB caches (see "Change files" below).
 
 It was extracted from mscerts/hub (msfthub.com) and is standalone.
 
@@ -50,6 +53,10 @@ consumer must follow (the validator implements them; see `DATA_CONTRACT.md`):
 - Some page kinds have no cache source at all (practice assessments, Learn
   shows, collections, legacy `/certifications/` paths): the validator says
   `unverifiable`; a consumer may probe them live.
+- **The change files are not a validity oracle.** A link they do not list reads
+  `none`, which means "no change recorded", never "valid" (a typo, a page that was
+  never cached, or a change from before they existed all read `none`). Judge a `none`
+  by the files' freshness (`sources.<family>`), then by the validator and a live probe.
 
 ---
 
@@ -63,10 +70,15 @@ learnsync/
 │   ├── learn-content-sync.mjs       # paths/courses/certs/exams/skills/study guides -> data/learn-content.json
 │   ├── docs-catalog-sync.mjs        # sitemap index + metadata + ledger -> data/docs-*.{txt,json}
 │   ├── validate-urls.mjs            # validator CLI (cache-only; optional live layer)
+│   ├── check-changes.mjs            # change-file CLI: which links changed? (reads only data/changes/)
+│   ├── seed-changes.mjs             # one-off tool: seed the change files with older breakage
 │   ├── commit-data.sh               # commit + push data with rebase/retry (used by the workflows)
 │   └── lib/                         # pure, unit-tested logic (no I/O) + small I/O wrappers
 │       ├── canonical.mjs  scope.mjs  status.mjs          # shared by everything
-│       ├── validate.mjs   live-probe.mjs                  # the validator
+│       ├── validate.mjs   live-probe.mjs                  # the validator (+ change-file enrichment)
+│       ├── changes.mjs                                    # the change files: format, detectors, probe classifier, lifecycle, lookup
+│       ├── learn-changes-run.mjs  docs-changes.mjs        # how the Learn runs / the docs run use changes.mjs
+│       ├── seed-changes.mjs  check-changes.mjs            # the seed tool / the check-changes CLI
 │       ├── learn-*.mjs                                    # learn config/build/hierarchy/failsafe/http/run/status/content
 │       └── docs-*.mjs  sitemap-helpers.mjs                # docs config/reconcile/redirects/failsafes/budget/phases/run/sitemaps
 ├── test/                            # node:test, no network, no real data
@@ -74,6 +86,7 @@ learnsync/
 │   ├── learn-catalog.json  learn-content.json
 │   ├── docs-urls.txt  docs-catalog.json  docs-redirects.json
 │   ├── docs-catalog-invalid.json  docs-sitemap-families.json
+│   ├── changes/removed.json  changes/moved.json           # links learnsync knows are gone / moved (small)
 │   └── status.json
 └── .github/workflows/  learn-catalog-monitor.yml  docs-catalog-monitor.yml  ci.yml
 ```
@@ -85,6 +98,9 @@ npm run sync:learn      # learn-catalog-sync + learn-content-sync
 npm run sync:docs       # docs-catalog-sync (DRY_RUN=1 plans only)
 npm test                # everything, offline
 echo '["https://learn.microsoft.com/azure/key-vault/general/overview"]' | node scripts/validate-urls.mjs
+echo '["https://learn.microsoft.com/training/modules/foundry-sdk/06-exercise"]' | node scripts/check-changes.mjs
+node scripts/check-changes.mjs --since 2026-09-01     # what changed recently (changelog view)
+node scripts/seed-changes.mjs --dry-run --no-probe     # plan the one-off seed of the change files
 ```
 
 ---
@@ -272,6 +288,85 @@ Env knobs: `DRY_RUN=1`, `FULL_DISCOVERY=1`, `MAX_PAGE_FETCHES`, `MAX_MISSING_CHE
 
 ---
 
+## Change files: `data/changes/removed.json` and `moved.json`
+
+Two small files, written by the syncs, listing every link learnsync **knows has changed**:
+`removed.json` (gone, or no longer leading to the same content: outcomes `gone`, `landing`,
+`retired`, `unverified`) and `moved.json` (still works through a redirect to the same kind
+of page). An automation asks them "did anything I link to break or move?" instead of reading
+the multi-MB caches, and `git log -p data/changes/` is a readable changelog. Format, fields,
+outcomes, lifecycle, lookup and the exact write rules are in `DATA_CONTRACT.md`; this section
+is how the code is organised and how to work with the files.
+
+**Who does what.** `scripts/lib/changes.mjs` is the pure core: file format and normalisation
+(`loadChanges`, `writeChanges`), the detectors that turn two consecutive caches into
+candidates (`diffModules`, `diffUnits`, `diffContent`), the live-probe classifier
+(`classifyLearnProbe`), the lifecycle (`applyChanges`, `planVerification`,
+`refreshLearnChanges`), the docs family (`docsChanges`, `replaceFamily`) and the consumers
+(`indexChanges`, `lookupChange`, `changesSince`, `summarizeChanges`). The glue lives next to
+the syncs: `learn-changes-run.mjs` (shared by the catalog and the content run: open before
+any download, refresh after the failsafes, counters for `status.json`) and `docs-changes.mjs`
+(the docs run derives its entries from the final ledger and quarantine; it never probes).
+`live-probe.mjs` `rawProbe` supplies the first-hop HTTP status and the redirect chain the
+classifier needs. `validate.mjs` attaches a `change` record to broken/moved verdicts.
+`seed-changes.mjs` (CLI + lib) backfills older breakage; `check-changes.mjs` (CLI + lib) is
+the reader. Rules for changes to this code: stay pure and offline-testable (the tests inject
+the probe); a classification rests on an authoritative cache diff or a live probe, never a
+guess; sort with `byCodePoint`; keep the write order (change files before the data file in a
+Learn run, `status.json` last); the files are machine-written, do not hand-edit them
+except to remove an entry on purpose (keep the JSON valid, the next run keeps it removed).
+
+**Working with them.**
+
+- *Read what changed:* `node scripts/check-changes.mjs --since <date>` (changelog) or pipe
+  links in (`echo '[...]' | node scripts/check-changes.mjs`, `--all` to see the `none`
+  rows). The report's `freshness` and `warnings` say whether the files are fresh and
+  complete; every warning is also printed to stderr. Exit 0 means "the check ran" whatever
+  it found, 2 a usage error, 1 an unreadable change file.
+- *A link reads `none`:* that is "no change recorded". Check `freshness.sources.<family>`
+  (a null or old stamp means that family's sync has not diffed recently), then run
+  `node scripts/validate-urls.mjs --confirm-live` on it: the validator checks the caches and
+  the live site.
+- *Seed the files once* (the syncs only record changes from the day they run): with the
+  caches up to date, `node scripts/seed-changes.mjs --dry-run --no-probe` shows the plan;
+  add `--history <clone-of-the-repo-that-held-the-catalog>[::<old/path/learn-catalog.json>]`
+  (once per historical name of the file, for example the hub repo's
+  `src/data_files/learn-catalog.json`) and `--urls <links.json>` (every Learn link a site
+  uses) as needed, then run without `--dry-run`/`--no-probe` so a live probe classifies
+  each candidate (300 probes by default, 3 workers, about a second apart). Re-running is
+  safe: classified entries are not probed again and `unverified` ones are worked off first.
+  `sources.learn` stays null until the Learn sync has run once. A candidate that Learn still
+  serves (the tombstoned `become-learn-contributor` module answers 200 on its own path) is
+  recorded nowhere, so each run asks again. Commit `data/changes/` with a normal commit.
+- *An entry stays `unverified`:* a probe answered 429/5xx/timed out, or the budget
+  (`CHANGES_MAX_PROBES`, default 300 per Learn run) was too small. The run log says so
+  ("verification queue is longer than the probe budget", "probes stopped early") and
+  `status.json` `learn.catalogChanges.unverified` / `contentChanges.unverified` counts them.
+  It still counts as removed. The next weekly run retries; a manual way to work it off sooner
+  is `node scripts/seed-changes.mjs --max-probes <n>`.
+- *An entry is wrong or a link comes back:* nothing to do. An entry is deleted when the path
+  is valid again in the caches (or the docs index) or a probe finds it live. A listed module
+  whose hierarchy could not be read (`unitUrls` null, no flag) does not count as valid again:
+  its entry stays until the hierarchy answers or a probe finds it live. Units under a
+  removed module entry are dropped because the module entry covers them, but only once that
+  module entry is classified (`gone`, `landing`, `retired`); under an `unverified` module entry
+  they stay (the module may be a false alarm) and are not probed until the module is settled.
+- *A sync fails with "Cannot use change file":* the file is invalid JSON, has another
+  `schemaVersion`, or `entries` is not an array. The run stops before any download rather than
+  overwrite state it cannot read. Restore the file from git. (Deleting it works too, a missing
+  file reads as an empty one, but the Learn entries recorded so far are lost: only the
+  tombstones and whatever the seed tool finds in history can be backfilled.)
+- *Probe budgets:* `CHANGES_MAX_PROBES` and `CHANGES_REVERIFY_PER_RUN` (environment of a Learn
+  run or the seed tool); a typo fails the run before any request.
+
+**What the files do NOT tell you.** Absence is not validity: links that were never in a
+cache (typos, new pages, shows, collections, practice assessments, legacy `/certifications/`,
+support pages) never appear; a change from before the files existed appears only if the
+seed tool found it; a family whose sync has not run recently says nothing about new changes;
+a unit removed while its module's hierarchy request failed is never recorded; a `moved`
+entry for a unit of a moved module is only inferred (`confidence: low`). The validator and a
+live probe cover what the files cannot.
+
 ## Validator: `scripts/lib/validate.mjs`, CLI `scripts/validate-urls.mjs`
 
 ```bash
@@ -287,6 +382,12 @@ and a dead slug gets a suggestion with the same slug text; a module with `hierar
 broken; `/training/<area>/` modules published outside `/training/modules/` are recognised from
 the cached paths; a docs page absent from the index but inside a scope is `broken` with
 `confidence: low` (sitemaps lag), a page in `docs-redirects.json` is `moved`.
+
+When the change files exist, a `broken` or `moved` result whose path they record also carries a
+`change` object (same fields as a `check-changes` result) and, for a high-confidence record, a
+`redirectsTo` / `suggestion` the verdict lacked. No verdict rule changes, `valid` and
+`unverifiable` results are never touched, and the files stay optional (`freshness.changes` says
+whether they were read). A result `--confirm-live` turns `valid` loses its `change`.
 
 The live layer (`--confirm-live`, `--probe-unverifiable`) re-probes negative verdicts and the
 classes no cache covers; results are labelled `evidence: "live-probe"`. `interpretProbe` knows
@@ -310,7 +411,12 @@ always come from the same commit.
   refresh is ~15-20 min), docs 120 min.
 - Commits go through `scripts/commit-data.sh`: commit, push, and on rejection `pull --rebase --autostash`
   and retry (tested against a real git remote). Data commits include `status.json` every week; that tiny
-  diff is the heartbeat.
+  diff is the heartbeat. Both workflows also stage `data/changes/removed.json` and `moved.json` (each only
+  if the file exists, so a first run that fails before writing cannot break the commit step with an
+  unknown pathspec); the Learn run rewrites them every week and the docs run does too (their
+  `generatedAt` / `sources.<family>` stamps move, the entries only when something changed).
+- Each Learn run (catalog, then content) adds at most `CHANGES_MAX_PROBES` (300) live probes for the
+  change files, 3 workers about a second apart: a few minutes, well inside the 60-minute timeout.
 - Failures open or comment on ONE issue with a stable title (`Microsoft Learn Catalog Sync Failed`,
   `Microsoft Docs Catalog Sync Failed`, label `bug`). Newly quarantined docs URLs open a `data` issue.
 - **Optional hub trigger:** if the repository secret `HUB_DISPATCH_TOKEN` (a token that may create
@@ -318,8 +424,10 @@ always come from the same commit.
   `repository_dispatch` `learnsync-synced` to mscerts/hub so its Learn URL Check runs right away.
   Without the secret the step is skipped and the hub runs on its own schedule.
 - `ci.yml` (push to main and PRs touching scripts/tests/workflows): `node --check` on every script,
-  `bash -n` on `commit-data.sh`, `npm test`, `actionlint` (download script pinned to the commit of
+  `bash -n` on `commit-data.sh`, `npm test`, a smoke run of `scripts/check-changes.mjs` on the committed
+  `data/` (exit 1 = an unreadable change file), `actionlint` (download script pinned to the commit of
   v1.7.12), YAML check of issue templates (PyYAML pinned), `permissions: contents: read`.
+  The syntax-check globs and `npm test` pick up new scripts and `test/*.test.mjs` automatically.
   All actions are pinned to full commit SHAs (Dependabot keeps them current).
 
 ## First run after deploying schema v2
@@ -329,6 +437,11 @@ always come from the same commit.
   folds ~1,300 case-alias records and respells ~660, and starts the metadata backfill
   (~28,700 pages pending, about 5 weekly runs at 6,000 per run).
 - Dispatch both workflows once after merging so consumers have data before Monday.
+- Change files: the first successful runs create `data/changes/removed.json` and `moved.json` (empty
+  files are fine: `sources.learn` / `sources.docs` start null and are stamped by the first Learn / docs
+  run). They record only changes from then on, plus modules the catalog lists but Learn does not serve.
+  To backfill older breakage run `scripts/seed-changes.mjs` once (see "Change files"); until then the
+  hub's changes mode reports a missing-file error (or use its `full_audit` input).
 
 ## Conventions
 - Pure logic in `scripts/lib/*.mjs` with fixture tests; scripts stay thin. No dependencies.

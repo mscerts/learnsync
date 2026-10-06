@@ -11,13 +11,19 @@
  *
  * Environment (all optional):
  *   MAX_CONTENT_DROP_PCT=20   abort if any list shrinks by more than this
- *   DRY_RUN=1                 fetch and compute everything, write nothing
+ *   CHANGES_MAX_PROBES=300    live probes per run for the change files (removed/moved links)
+ *   CHANGES_REVERIFY_PER_RUN=100  of those, how many re-confirm the oldest recorded entries
+ *   DRY_RUN=1                 fetch and compute everything (change file probes included), write nothing
  *
  * Data sources: https://learn.microsoft.com/api/catalog/?type=<type>&locale=en-us
  *               (one request per type), plus live probes of the study guide pages
- *               and of the applied-skill pages (to read their study guide code).
- * Output: data/learn-content.json, plus the "content" part of the "learn" section
- * of data/status.json
+ *               and of the applied-skill pages (to read their study guide code),
+ *               and of the pages that disappeared (change files only).
+ * Output: data/learn-content.json, data/changes/removed.json and moved.json (this sync detects
+ * the changes of paths, courses, certifications, exams, applied skills and study guides, the
+ * catalog sync the module and unit ones; both verify whatever is still unverified), plus the
+ * "content" part of the "learn" section of data/status.json. A failsafe abort or a corrupt
+ * change file writes nothing.
  *
  * All logic lives in scripts/lib/learn-content*.mjs; this file only wires it to
  * the repository's data directory.

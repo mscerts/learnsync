@@ -35,8 +35,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          bash scripts/commit-data.sh "Update Microsoft Learn catalog cache" \
-            data/learn-catalog.json data/learn-content.json data/status.json
+          paths=(data/learn-catalog.json data/learn-content.json data/status.json)
+          # The change files (removed and moved links) ship with the data they were derived from.
+          # Every successful sync writes them; only a path that exists is staged, so a first run
+          # that fails before writing cannot break the commit step with an unknown pathspec.
+          for f in data/changes/removed.json data/changes/moved.json; do
+            if [ -e "$f" ]; then paths+=("$f"); fi
+          done
+          bash scripts/commit-data.sh "Update Microsoft Learn catalog cache" "${paths[@]}"
 
       # Optional: tell mscerts/hub that fresh data exists so its Learn URL check
       # runs right away instead of waiting for its own schedule. Needs a
@@ -57,10 +63,12 @@ jobs:
         run: |
           title="Microsoft Learn Catalog Sync Failed"
           {
-            echo "The scheduled Learn sync failed (\`data/learn-catalog.json\`, \`data/learn-content.json\`)."
+            echo "The scheduled Learn sync failed (\`data/learn-catalog.json\`, \`data/learn-content.json\`, \`data/changes/\`)."
             echo "Likely causes: the Learn catalog or hierarchy API is down or changed shape, a failsafe aborted the run"
             echo "(a sharp drop in modules, a missing category, too many failed unit-URL requests) so nothing bad was written,"
-            echo "or the data push was rejected. Nothing was committed. See the run log for the exact reason."
+            echo "a change file (\`data/changes/removed.json\` or \`moved.json\`) is corrupt or has an unsupported schemaVersion"
+            echo "(the run stops before any download rather than overwrite it), or the data push was rejected."
+            echo "Nothing was committed. See the run log for the exact reason."
             echo
             echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           } > /tmp/learn-catalog-error.md

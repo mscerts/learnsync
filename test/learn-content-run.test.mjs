@@ -1,11 +1,12 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { ChangesFileError } from "../scripts/lib/changes.mjs";
 import { FailsafeAbort } from "../scripts/lib/learn-io.mjs";
 import { classifySkillPage, runContentSync } from "../scripts/lib/learn-content-run.mjs";
 import { contributeLearnStatus } from "../scripts/lib/learn-status.mjs";
-import { collectLogs, makeFakeLearn, makeTempDir, mod, removeDir, unitsOf } from "./learn-fixtures.mjs";
+import { PROBE_BLOCKED, PROBE_NOT_FOUND, collectLogs, makeFakeLearn, makeProbe, makeTempDir, mod, probeServed, removeDir, unitsOf } from "./learn-fixtures.mjs";
 
 const noSleep = async () => {};
 const D1 = new Date("2026-10-05T07:00:00.000Z");
@@ -67,6 +68,7 @@ function setup(mutate) {
       minResolutionModules: 1,
       limits: { PROBE_MIN_SAMPLE: 3 },
       httpOptions: { attempts: 2, baseBackoffMs: 1 },
+      changes: { delayMs: 0 },
       ...collectLogs(),
       ...over,
     });
@@ -378,5 +380,328 @@ test("an invalid MAX_CONTENT_DROP_PCT aborts instead of silently using the defau
     await assert.rejects(t.run({ env: { MAX_CONTENT_DROP_PCT: "lots" } }), /Invalid MAX_CONTENT_DROP_PCT/);
   } finally {
     t.cleanup();
+  }
+});
+
+// ---------------------------------------------------------------------------
+// change files (data/changes/removed.json + moved.json), see DATA_CONTRACT.md
+// ---------------------------------------------------------------------------
+
+const D3 = new Date("2026-10-19T07:00:00.000Z");
+const EXAM_70 = "/credentials/certifications/exams/70-767";
+const changeFiles = (t) => ({ removed: t.read("changes/removed.json"), moved: t.read("changes/moved.json") });
+const entryAt = (file, path) => file.entries.find((e) => e.path === path);
+const withProbe = (probe) => ({ changes: { delayMs: 0, probe } });
+const loose = { MAX_CONTENT_DROP_PCT: 60, PROBE_MIN_SAMPLE: 3 };
+
+test("changes: a first run without change files creates both, empty, and the tombstones of the previous file are not new history", async () => {
+  const t = setup();
+  try {
+    assert.equal(existsSync(join(t.dir, "changes")), false);
+    const probe = makeProbe();
+    await t.run(withProbe(probe));
+    for (const file of Object.values(changeFiles(t))) {
+      assert.deepEqual(file, { schemaVersion: 1, generatedAt: D1.toISOString(), sources: { learn: D1.toISOString(), docs: null }, entries: [] });
+    }
+    assert.deepEqual(t.read("status.json").learn.contentChanges, { removed: 0, moved: 0, unverified: 0, newRemoved: 0, newMoved: 0, resurrected: 0, probed: 0 });
+
+    const content = t.read();
+    content.removed = [{ type: "exam", uid: "exam.70-000", path: "/credentials/certifications/exams/70-000", title: "70-000", lastSeen: "2026-08-01", removedOn: "2026-08-08" }];
+    writeFileSync(join(t.dir, "learn-content.json"), JSON.stringify(content, null, 2) + "\n");
+    rmSync(join(t.dir, "changes"), { recursive: true });
+    await t.run({ now: D2, ...withProbe(probe) });
+    assert.deepEqual(changeFiles(t).removed.entries, []);
+    assert.deepEqual(probe.calls, []);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: removed content is probed per kind: gone (404), moved (same kind) and landing (a hub page)", async () => {
+  const t = setup();
+  try {
+    await t.run();
+    const original = JSON.parse(JSON.stringify(t.fake.state.content));
+    t.fake.state.content.exams = original.exams.filter((e) => e.uid !== "exam.70-767");
+    t.fake.state.content.learningPaths = original.learningPaths.filter((p) => p.uid !== "learn.path-2");
+    t.fake.state.content.courses = original.courses.filter((c) => c.uid !== "course.edu.x");
+    const probe = makeProbe({
+      [EXAM_70]: PROBE_NOT_FOUND,
+      "/training/paths/path-2": probeServed("/training/paths/path-2-v2", { first: 301 }),
+      "/training/courses/x": probeServed("/training/browse", { first: 301 }),
+    });
+    const logs = collectLogs();
+    const r = await t.run({ now: D2, limits: loose, ...withProbe(probe), log: logs.log, warn: logs.warn });
+    const { removed, moved } = changeFiles(t);
+    assert.deepEqual(entryAt(removed, EXAM_70), {
+      path: EXAM_70,
+      kind: "exam",
+      family: "learn",
+      outcome: "gone",
+      to: null,
+      title: "70-767",
+      parent: null,
+      firstSeen: "2026-10-12",
+      lastVerified: "2026-10-12",
+      evidence: "tombstone",
+      status: 404,
+    });
+    assert.deepEqual(removed.entries.map((e) => [e.path, e.kind, e.outcome, e.to, e.status]), [
+      [EXAM_70, "exam", "gone", null, 404],
+      ["/training/courses/x", "course", "landing", "/training/browse", 301],
+    ]);
+    assert.deepEqual(moved.entries.map((e) => [e.path, e.kind, e.outcome, e.to, e.status]), [["/training/paths/path-2", "learning-path", "moved", "/training/paths/path-2-v2", 301]]);
+    assert.equal(r.changesStats.probed, 3);
+    assert.deepEqual(t.read("status.json").learn.contentChanges, { removed: 2, moved: 1, unverified: 0, newRemoved: 2, newMoved: 1, resurrected: 0, probed: 3 });
+    assert.ok(logs.lines.some((l) => /change files \(content\): 2 removed \(0 unverified\), 1 moved/.test(l)), logs.lines.join("\n"));
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: an exam URL that redirects to its certification page is healthy, so a removed exam like that is not recorded", async () => {
+  const t = setup();
+  try {
+    await t.run();
+    t.fake.state.content.exams = t.fake.state.content.exams.filter((e) => e.uid !== "exam.70-767");
+    const probe = makeProbe({ [EXAM_70]: probeServed("/credentials/certifications/admin", { first: 301 }) });
+    await t.run({ now: D2, limits: loose, ...withProbe(probe) });
+    assert.deepEqual(probe.calls, [EXAM_70]);
+    assert.deepEqual(changeFiles(t).removed.entries, []);
+    assert.equal(t.read().removed.length, 1, "the content tombstone itself stays");
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: a study guide that a definitive probe dropped is recorded; a transient failure that kept the previous value is not", async () => {
+  const t = setup();
+  try {
+    await t.run();
+    t.fake.state.pages.delete(EXAM_SG("ab-100"));
+    const probe = makeProbe({ [EXAM_SG("ab-100")]: PROBE_NOT_FOUND });
+    await t.run({ now: D2, ...withProbe(probe) });
+    assert.deepEqual(changeFiles(t).removed.entries, [
+      {
+        path: EXAM_SG("ab-100"),
+        kind: "study-guide",
+        family: "learn",
+        outcome: "gone",
+        to: null,
+        title: null,
+        parent: null,
+        firstSeen: "2026-10-12",
+        lastVerified: "2026-10-12",
+        evidence: "live-probe",
+        status: 404,
+      },
+    ]);
+  } finally {
+    t.cleanup();
+  }
+
+  const t2 = setup();
+  try {
+    await t2.run();
+    t2.fake.state.pages.set(EXAM_SG("ab-100"), { status: 503 });
+    t2.fake.state.content.exams = t2.fake.state.content.exams.map((e) => (e.uid === "exam.70-767" ? { ...e, title: "force a rewrite" } : e));
+    const probe = makeProbe();
+    await t2.run({ now: D2, limits: { PROBE_MIN_SAMPLE: 100 }, ...withProbe(probe) });
+    assert.equal(t2.read().exams.find((e) => e.code === "ab-100").studyGuide, EXAM_SG("ab-100"), "kept");
+    assert.deepEqual(changeFiles(t2).removed.entries, []);
+    assert.deepEqual(probe.calls, []);
+  } finally {
+    t2.cleanup();
+  }
+
+  // a guide that is probed live (200 on its own path) after the sync dropped it is not recorded either
+  const t3 = setup();
+  try {
+    await t3.run();
+    t3.fake.state.pages.delete(EXAM_SG("ab-100"));
+    await t3.run({ now: D2, ...withProbe(makeProbe({ [EXAM_SG("ab-100")]: probeServed(EXAM_SG("ab-100")) })) });
+    assert.deepEqual(changeFiles(t3).removed.entries, []);
+  } finally {
+    t3.cleanup();
+  }
+});
+
+test("changes: a path that changed under the same uid is a move of the OLD path", async () => {
+  const t = setup();
+  try {
+    await t.run();
+    t.fake.state.content.learningPaths = t.fake.state.content.learningPaths.map((p) => (p.uid === "learn.path-2" ? { ...p, url: U("/training/paths/path-2-renamed") } : p));
+    const probe = makeProbe({ "/training/paths/path-2": probeServed("/training/paths/path-2-renamed", { first: 301 }) });
+    await t.run({ now: D2, ...withProbe(probe) });
+    const { removed, moved } = changeFiles(t);
+    assert.deepEqual(removed.entries, []);
+    assert.deepEqual(moved.entries.map((e) => [e.path, e.kind, e.to, e.evidence, e.title]), [["/training/paths/path-2", "learning-path", "/training/paths/path-2-renamed", "rename", "Path 2"]]);
+    assert.deepEqual(t.read("status.json").learn.contentChanges.newMoved, 1);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: transient probes keep the entry unverified, and it is resurrected without a probe when the content comes back", async () => {
+  const t = setup();
+  try {
+    await t.run();
+    const original = JSON.parse(JSON.stringify(t.fake.state.content));
+    t.fake.state.content.exams = original.exams.filter((e) => e.uid !== "exam.70-767");
+    await t.run({ now: D2, limits: loose, ...withProbe(makeProbe({ [EXAM_70]: PROBE_BLOCKED })) });
+    const e = entryAt(changeFiles(t).removed, EXAM_70);
+    assert.deepEqual([e.outcome, e.lastVerified, e.status, e.firstSeen], ["unverified", null, null, "2026-10-12"]);
+    assert.deepEqual(t.read("status.json").learn.contentChanges, { removed: 1, moved: 0, unverified: 1, newRemoved: 1, newMoved: 0, resurrected: 0, probed: 1 });
+
+    t.fake.state.content = original;
+    const probe = makeProbe();
+    const r = await t.run({ now: D3, limits: loose, ...withProbe(probe) });
+    assert.deepEqual(changeFiles(t).removed.entries, []);
+    assert.equal(r.changesStats.resurrected, 1);
+    assert.deepEqual(probe.calls, []);
+    assert.deepEqual(t.read().removed, []);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: the module catalog on disk lets the content run classify a move onto a module outside /training/modules", async () => {
+  const t = setup();
+  try {
+    await t.run();
+    const stamp = "2026-10-01T08:00:00.000Z";
+    const unit = { path: "/training/modules/old-slug/1-intro", kind: "unit", family: "learn", outcome: "unverified", to: null, title: "intro", parent: "/training/modules/old-slug", firstSeen: "2026-10-01", lastVerified: null, evidence: "unit-diff", status: null };
+    writeFileSync(join(t.dir, "learn-catalog.json"), JSON.stringify({ schemaVersion: 2, lastChecked: stamp, modules: [{ uid: "learn.saas", path: "/training/saas/new-slug", title: "New", unitUrls: ["/training/saas/new-slug/1-intro"] }], removed: [], outOfScope: [] }));
+    mkdirSync(join(t.dir, "changes"), { recursive: true });
+    writeFileSync(join(t.dir, "changes", "removed.json"), JSON.stringify({ schemaVersion: 1, generatedAt: stamp, sources: { learn: stamp, docs: null }, entries: [unit] }, null, 2) + "\n");
+    const probe = makeProbe({ [unit.path]: probeServed("/training/saas/new-slug/1-intro", { first: 301 }) });
+    await t.run({ now: D2, ...withProbe(probe) });
+    const { removed, moved } = changeFiles(t);
+    assert.deepEqual(removed.entries, []);
+    assert.deepEqual(moved.entries.map((e) => [e.path, e.outcome, e.to]), [[unit.path, "moved", "/training/saas/new-slug/1-intro"]]);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: a corrupt change file or a typo in CHANGES_* fails the run before any request and before anything is written", async () => {
+  const t = setup();
+  try {
+    mkdirSync(join(t.dir, "changes"));
+    for (const body of ["{broken", JSON.stringify({ schemaVersion: 7, entries: [] }), JSON.stringify({ schemaVersion: 1 })]) {
+      writeFileSync(join(t.dir, "changes", "moved.json"), body);
+      await assert.rejects(t.run(), (err) => err instanceof ChangesFileError && /moved\.json/.test(err.message), body);
+      assert.equal(t.fake.requests.length, 0);
+      assert.equal(existsSync(join(t.dir, "learn-content.json")), false);
+      assert.equal(existsSync(join(t.dir, "status.json")), false);
+      assert.equal(existsSync(join(t.dir, "changes", "removed.json")), false);
+    }
+    rmSync(join(t.dir, "changes"), { recursive: true });
+    await assert.rejects(t.run({ env: { CHANGES_MAX_PROBES: "1.5" } }), /CHANGES_MAX_PROBES/);
+    assert.equal(t.fake.requests.length, 0);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes FAILSAFE: an aborted content run writes no change file and does not probe", async () => {
+  const t = setup();
+  try {
+    await t.run();
+    t.fake.state.content.exams = t.fake.state.content.exams.filter((e) => e.uid !== "exam.70-767");
+    await t.run({ now: D2, limits: loose, ...withProbe(makeProbe({ [EXAM_70]: PROBE_NOT_FOUND })) });
+    const snapshot = () => ({ removed: t.text("changes/removed.json"), moved: t.text("changes/moved.json"), content: t.text(), status: t.text("status.json") });
+    const before = snapshot();
+    assert.equal(JSON.parse(before.removed).entries.length, 1);
+
+    const probe = makeProbe({}, PROBE_NOT_FOUND);
+    t.fake.state.content.courses = [];
+    await assert.rejects(t.run({ now: D3, limits: loose, ...withProbe(probe) }), (err) => err instanceof FailsafeAbort && /courses fell from 2 to 0/.test(err.message));
+    assert.deepEqual(snapshot(), before);
+
+    // a failsafe that trips AFTER the probing of study guides (most probes transient) also leaves the files alone
+    t.fake.state.content.courses = world().content.courses;
+    t.fake.state.pages.set(EXAM_SG("az-305"), { status: 503 });
+    t.fake.state.pages.set(EXAM_SG("ab-100"), { status: 503 });
+    await assert.rejects(t.run({ now: D3, limits: { PROBE_MIN_SAMPLE: 2, MAX_CONTENT_DROP_PCT: 60 }, ...withProbe(probe) }), /exam study guide probes were transient/);
+    assert.deepEqual(snapshot(), before);
+    assert.deepEqual(probe.calls, []);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: DRY_RUN=1 computes and probes but writes no change file, data file or status", async () => {
+  const t = setup();
+  try {
+    const first = await t.run({ env: { DRY_RUN: "1" } });
+    assert.equal(existsSync(join(t.dir, "changes")), false);
+    assert.equal(first.changes.removed.entries.length, 0);
+
+    await t.run();
+    const snapshot = () => ({ removed: t.text("changes/removed.json"), moved: t.text("changes/moved.json"), content: t.text(), status: t.text("status.json") });
+    const before = snapshot();
+    t.fake.state.content.exams = t.fake.state.content.exams.filter((e) => e.uid !== "exam.70-767");
+    const probe = makeProbe({ [EXAM_70]: PROBE_NOT_FOUND });
+    const r = await t.run({ now: D2, env: { DRY_RUN: "1" }, limits: loose, ...withProbe(probe) });
+    assert.deepEqual(probe.calls, [EXAM_70]);
+    assert.deepEqual(r.changes.removed.entries.map((e) => [e.path, e.outcome]), [[EXAM_70, "gone"]]);
+    assert.deepEqual(snapshot(), before);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: without an injected probe the raw probe runs over the run's fetch", async () => {
+  const t = setup();
+  try {
+    await t.run();
+    t.fake.state.content.exams = t.fake.state.content.exams.filter((e) => e.uid !== "exam.70-767");
+    await t.run({ now: D2, limits: loose });
+    assert.deepEqual(changeFiles(t).removed.entries.map((e) => [e.path, e.outcome, e.status]), [[EXAM_70, "gone", 404]]);
+    assert.ok(t.fake.requests.includes(`https://learn.microsoft.com/en-us${EXAM_70}/`));
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: catalog run and content run share the files: each keeps the other's entries and its own status counters", async () => {
+  const dir = makeTempDir();
+  try {
+    const { runCatalogSync } = await import("../scripts/lib/learn-catalog-run.mjs");
+    const { TEST_CONFIG, TEST_LIMITS } = await import("./learn-fixtures.mjs");
+    const w = world();
+    const bigModules = Array.from({ length: 100 }, (_, i) => mod({ uid: `learn.azure.m${String(i).padStart(4, "0")}`, slug: `m${i}`, products: ["azure-vm"] }));
+    const modules = [...w.modules, ...bigModules, mod({ uid: "learn.gh.one", slug: "gh-one", products: ["github-actions"] }), mod({ uid: "learn.m365.one", slug: "m365-one", products: ["m365"] })];
+    const fake = makeFakeLearn({ modules, units: unitsOf(modules), content: w.content, pages: w.pages });
+    const common = { dataDir: dir, env: {}, fetchImpl: fake.fetchImpl, sleepImpl: noSleep, delayMs: 0, httpOptions: { attempts: 2, baseBackoffMs: 1 }, ...collectLogs() };
+    const catalog = (over) => runCatalogSync({ ...common, config: TEST_CONFIG, limits: TEST_LIMITS, now: D1, changes: { delayMs: 0 }, ...over });
+    const content = (over) => runContentSync({ ...common, minCounts: {}, minResolutionModules: 1, now: D1, limits: { PROBE_MIN_SAMPLE: 3, MAX_CONTENT_DROP_PCT: 60 }, changes: { delayMs: 0 }, ...over });
+    await catalog();
+    await content();
+
+    // week 2: a module disappears from the catalog and an exam from the content list
+    fake.state.modules = fake.state.modules.filter((m) => m.uid !== "learn.azure.m0001");
+    fake.state.content.exams = fake.state.content.exams.filter((e) => e.uid !== "exam.70-767");
+    const catalogProbe = makeProbe({ "/training/modules/m1": PROBE_NOT_FOUND });
+    await catalog({ now: D2, changes: { delayMs: 0, probe: catalogProbe } });
+    assert.deepEqual(catalogProbe.calls, ["/training/modules/m1"]);
+
+    const contentProbe = makeProbe({ [EXAM_70]: PROBE_NOT_FOUND });
+    await content({ now: D2, changes: { delayMs: 0, probe: contentProbe } });
+    assert.deepEqual(contentProbe.calls, [EXAM_70], "the module entry was verified today by the catalog run");
+
+    const removed = JSON.parse(readFileSync(join(dir, "changes", "removed.json"), "utf-8"));
+    assert.deepEqual(removed.entries.map((e) => [e.path, e.kind, e.outcome]), [
+      [EXAM_70, "exam", "gone"],
+      ["/training/modules/m1", "module", "gone"],
+    ]);
+    const status = JSON.parse(readFileSync(join(dir, "status.json"), "utf-8")).learn;
+    assert.deepEqual(status.catalogChanges, { removed: 1, moved: 0, unverified: 0, newRemoved: 1, newMoved: 0, resurrected: 0, probed: 1 });
+    assert.deepEqual(status.contentChanges, { removed: 2, moved: 0, unverified: 0, newRemoved: 1, newMoved: 0, resurrected: 0, probed: 1 });
+    assert.equal(status.removed, 1, "the top-level removed is still the module tombstones");
+    assert.equal(status.content.exams, 2);
+  } finally {
+    removeDir(dir);
   }
 });

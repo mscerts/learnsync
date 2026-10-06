@@ -10,9 +10,14 @@
  *   2. build the lists, run the failsafes                    (abort BEFORE probing)
  *   3. probe the study guide of every exam, read every applied-skill page for its
  *      study guide code and probe that guide                 (polite pool)
- *   4. tombstones, assemble, self-validate, write if changed
- *   5. heartbeat: the "content" part of data/status.json is updated even when the
- *      data file was unchanged
+ *   4. tombstones, assemble, self-validate
+ *   5. change files: candidates from previous vs. new content (diffContent), resurrection from the
+ *      new data, live probe of what is still unverified              (nothing written yet)
+ *   6. write the change files, then the data file if changed, then the heartbeat: the "content"
+ *      part of data/status.json is updated even when the data file was unchanged
+ *
+ * The previous change files are read in step 0 (before the downloads) so a corrupt file fails the
+ * run early, and a run that a failsafe aborts (steps 2-4) writes none of the files.
  */
 
 import { join } from "node:path";
@@ -40,7 +45,9 @@ import {
   studyGuideProbeUrl,
   validateContentOutput,
 } from "./learn-content.mjs";
+import { diffContent, writeChanges } from "./changes.mjs";
 import { CATALOG_BASE, CONTENT_MIN_COUNTS, LIMITS, MIN_API_MODULES_FOR_RESOLUTION } from "./learn-config.mjs";
+import { openChanges, refreshChanges } from "./learn-changes-run.mjs";
 import { checkAppliedSkillCodeCoverage, checkContentCounts, checkProbeFailures, checkUnresolvedModules } from "./learn-failsafe.mjs";
 import { DEFAULT_DELAY_MS, fetchJson, request, runPool, sleep } from "./learn-http.mjs";
 import { dateOfTimestamp, numberFromEnv, utcDate } from "./learn-helpers.mjs";
@@ -76,10 +83,13 @@ export async function runContentSync(options = {}) {
     minCounts = CONTENT_MIN_COUNTS,
     minResolutionModules = MIN_API_MODULES_FOR_RESOLUTION,
     httpOptions = {},
+    // change files: { probe, delayMs, workers, limits } (probe = async (path) => raw probe result; default live-probe.mjs rawProbe)
+    changes: changesOptions = {},
   } = options;
   if (!dataDir) throw new Error("runContentSync: dataDir is required");
 
   const outputFile = join(dataDir, "learn-content.json");
+  const catalogFile = join(dataDir, "learn-catalog.json");
   const statusFile = join(dataDir, "status.json");
   const today = utcDate(now);
   const dryRun = env.DRY_RUN === "1";
@@ -92,6 +102,9 @@ export async function runContentSync(options = {}) {
 
   const previous = readJsonIfExists(outputFile, warn);
   const prevList = (name) => (Array.isArray(previous?.[name]) ? previous[name] : []);
+  // 0. the previous change files: a corrupt one (or a typo in CHANGES_*) fails the run here, before anything is downloaded or written
+  const changeState = openChanges({ dataDir, env, warn });
+  const changeLimits = { ...changeState.limits, ...(changesOptions.limits ?? {}) };
 
   // 1. downloads ------------------------------------------------------------------
   const api = {};
@@ -231,21 +244,48 @@ export async function runContentSync(options = {}) {
   const collisions = findContentPathCollisions(removals.removed, lists);
   if (collisions.length) warn(`  ${collisions.length} tombstone paths are served by a different live entry now: ${collisions.slice(0, 5).map((c) => c.path).join(", ")}`);
 
-  // 5. write + heartbeat ----------------------------------------------------------------
+  // 5. change files ------------------------------------------------------------------
+  // Candidates are diffs against the previous file as read above: a new tombstone, a path that changed under
+  // the same uid, and a study guide that a DEFINITIVE probe dropped (a transient failure kept the previous
+  // value, so it yields no candidate). The module catalog comes from disk (this week's catalog run wrote it):
+  // it decides resurrection of module paths and which paths count as modules for the probe classifier.
+  const changeRun = await refreshChanges({
+    previous: changeState.previous,
+    candidates: diffContent(previous, output),
+    catalog: readJsonIfExists(catalogFile, warn),
+    content: output,
+    now,
+    limits: changeLimits,
+    probe: changesOptions.probe,
+    fetchImpl,
+    sleepImpl,
+    delayMs: changesOptions.delayMs,
+    workers: changesOptions.workers,
+    label: "content",
+    log,
+    warn,
+  });
+
+  // 6. write + heartbeat ----------------------------------------------------------------
   const unchanged = sameContentExceptVolatile(previous, output);
   let wrote = false;
   if (dryRun) {
-    log("DRY_RUN=1: not writing the data file or status.json");
-  } else if (unchanged) {
-    log(`No content changes vs. ${outputFile} -- skipping write (only lastChecked / study guide check dates would differ).`);
+    log("DRY_RUN=1: not writing the data file, the change files or status.json");
   } else {
-    writeJsonAtomic(outputFile, output);
-    wrote = true;
-    log(`Wrote ${outputFile}`);
+    // change files first: a crash between the two writes then re-derives the same candidates from the old
+    // content next run (applying them again is a no-op), instead of losing the diff for good
+    writeChanges(dataDir, changeRun.changes);
+    if (unchanged) {
+      log(`No content changes vs. ${outputFile} -- skipping write (only lastChecked / study guide check dates would differ).`);
+    } else {
+      writeJsonAtomic(outputFile, output);
+      wrote = true;
+      log(`Wrote ${outputFile}`);
+    }
   }
 
   const counts = contentCounts(output);
-  if (!dryRun) contributeLearnStatus(statusFile, "content", { content: counts }, { now, env });
+  if (!dryRun) contributeLearnStatus(statusFile, "content", { content: counts, contentChanges: changeRun.counters }, { now, env });
 
   log(`  ${JSON.stringify(counts)}`);
   log(
@@ -256,5 +296,5 @@ export async function runContentSync(options = {}) {
   );
   log(`  removed (tombstones): ${removals.removed.length} (${removals.newlyRemoved} new this run, ${removals.resurrected} came back)`);
 
-  return { wrote, unchanged, dryRun, output, counts, examStats: examApplied.stats, skillStats: skillApplied.stats, removals };
+  return { wrote, unchanged, dryRun, output, counts, examStats: examApplied.stats, skillStats: skillApplied.stats, removals, changes: changeRun.changes, changesStats: changeRun.stats };
 }

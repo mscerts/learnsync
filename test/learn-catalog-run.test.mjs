@@ -1,11 +1,27 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { ChangesFileError, indexChanges, loadChanges, lookupChange } from "../scripts/lib/changes.mjs";
 import { FailsafeAbort } from "../scripts/lib/learn-io.mjs";
 import { runCatalogSync } from "../scripts/lib/learn-catalog-run.mjs";
 import { contributeLearnStatus } from "../scripts/lib/learn-status.mjs";
-import { TEST_CONFIG, TEST_LIMITS, collectLogs, hierarchyOf, makeFakeLearn, makeTempDir, mod, removeDir, standardWorld, unitsOf } from "./learn-fixtures.mjs";
+import {
+  PROBE_BLOCKED,
+  PROBE_NOT_FOUND,
+  TEST_CONFIG,
+  TEST_LIMITS,
+  collectLogs,
+  hierarchyOf,
+  makeFakeLearn,
+  makeProbe,
+  makeTempDir,
+  mod,
+  probeServed,
+  removeDir,
+  standardWorld,
+  unitsOf,
+} from "./learn-fixtures.mjs";
 
 const noSleep = async () => {};
 const D1 = new Date("2026-10-05T07:00:00.000Z");
@@ -26,6 +42,7 @@ function setup(initial = {}) {
       config: TEST_CONFIG,
       limits: TEST_LIMITS,
       httpOptions: { attempts: 2, baseBackoffMs: 1 },
+      changes: { delayMs: 0 },
       ...collectLogs(),
       ...over,
     });
@@ -510,6 +527,542 @@ test("hierarchyNotFound lifecycle across runs: flagged on a definitive 404, kept
     await t.run({ now: D1_LATER });
     assert.equal("hierarchyNotFound" in vm(), false);
     assert.equal(vm().unitUrls.length, 2);
+  } finally {
+    t.cleanup();
+  }
+});
+
+// ---------------------------------------------------------------------------
+// change files (data/changes/removed.json + moved.json), see DATA_CONTRACT.md
+// ---------------------------------------------------------------------------
+
+const D2 = new Date("2026-10-12T07:00:00.000Z");
+const D3 = new Date("2026-10-19T07:00:00.000Z");
+const D4 = new Date("2026-10-26T07:00:00.000Z");
+const mUid = (i) => `learn.azure.m${String(i).padStart(4, "0")}`;
+const mPath = (i) => `/training/modules/m${i}`;
+const changeFiles = (t) => ({ removed: t.read("changes/removed.json"), moved: t.read("changes/moved.json") });
+const entryAt = (file, path) => file.entries.find((e) => e.path === path);
+const without = (modules, ...uids) => modules.filter((m) => !uids.includes(m.uid));
+const withProbe = (probe) => ({ changes: { delayMs: 0, probe } });
+
+test("changes: a first run without change files creates both, empty, and invents no history (tombstones of the previous file are not new)", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    assert.equal(existsSync(join(t.dir, "changes")), false);
+    const probe = makeProbe();
+    await t.run(withProbe(probe));
+    const { removed, moved } = changeFiles(t);
+    for (const file of [removed, moved]) {
+      assert.deepEqual(file, { schemaVersion: 1, generatedAt: D1.toISOString(), sources: { learn: D1.toISOString(), docs: null }, entries: [] });
+    }
+    assert.deepEqual(probe.calls, []);
+    assert.deepEqual(t.read("status.json").learn.catalogChanges, { removed: 0, moved: 0, unverified: 0, newRemoved: 0, newMoved: 0, resurrected: 0, probed: 0 });
+
+    // the catalog already carries a tombstone from before change files existed: it is NOT a new change
+    const catalog = t.read("learn-catalog.json");
+    catalog.removed = [{ uid: "learn.azure.longgone", path: "/training/modules/longgone", title: "Long gone", lastSeen: "2026-08-01", removedOn: "2026-08-08" }];
+    writeFileSync(join(t.dir, "learn-catalog.json"), JSON.stringify(catalog, null, 2) + "\n");
+    rmSync(join(t.dir, "changes"), { recursive: true });
+    await t.run({ now: D2, ...withProbe(probe) });
+    assert.deepEqual(changeFiles(t).removed.entries, []);
+    assert.deepEqual(probe.calls, []);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: a removed module is probed and recorded; gone and landing go to removed.json, moved to moved.json", async () => {
+  const t = setup(bigWorld(150));
+  try {
+    await t.run();
+    // m3 is replaced by a module with a new uid and slug (how Learn usually renames): its old path redirects to the new module
+    const successor = mod({ uid: "learn.azure.m3-successor", slug: "m3-renamed", products: ["azure-vm"] });
+    t.fake.state.modules = [...without(t.fake.state.modules, mUid(1), mUid(2), mUid(3)), successor];
+    t.fake.state.units = [...t.fake.state.units, ...unitsOf([successor])];
+    const answers = {
+      [mPath(1)]: PROBE_NOT_FOUND,
+      [mPath(2)]: probeServed("/training/paths/azure-vm", { first: 301 }),
+      [mPath(3)]: probeServed("/training/modules/m3-renamed", { first: 301 }),
+    };
+    const probe = makeProbe(answers);
+    const logs = collectLogs();
+    const r = await t.run({ now: D2, ...withProbe(probe), log: logs.log, warn: logs.warn });
+    const { removed, moved } = changeFiles(t);
+    assert.deepEqual(entryAt(removed, mPath(1)), {
+      path: mPath(1),
+      kind: "module",
+      family: "learn",
+      outcome: "gone",
+      to: null,
+      title: "Module m1",
+      parent: null,
+      firstSeen: "2026-10-12",
+      lastVerified: "2026-10-12",
+      evidence: "tombstone",
+      status: 404,
+    });
+    assert.deepEqual(removed.entries.map((e) => [e.path, e.outcome, e.to, e.status]), [
+      [mPath(1), "gone", null, 404],
+      [mPath(2), "landing", "/training/paths/azure-vm", 301],
+    ]);
+    assert.deepEqual(moved.entries.map((e) => [e.path, e.outcome, e.to, e.status]), [[mPath(3), "moved", "/training/modules/m3-renamed", 301]]);
+    assert.deepEqual([...probe.calls].sort(), [mPath(1), mPath(2), mPath(3)]);
+    for (const file of [removed, moved]) assert.equal(file.sources.learn, D2.toISOString());
+    assert.deepEqual(r.changesStats, { newRemoved: 2, newMoved: 1, resurrected: 0, unverified: 0, probed: 3, probeBudgetExhausted: false, transient: 0, stoppedEarly: false, covered: 0 });
+    assert.deepEqual(t.read("status.json").learn.catalogChanges, { removed: 2, moved: 1, unverified: 0, newRemoved: 2, newMoved: 1, resurrected: 0, probed: 3 });
+    assert.ok(logs.lines.some((l) => /change files \(catalog\): 2 removed \(0 unverified\), 1 moved; this run 2 new removed, 1 new moved, 0 resurrected, 3 probed/.test(l)), logs.lines.join("\n"));
+
+    // the same day again: nothing is probed twice and the files are byte-identical
+    const before = { removed: t.text("changes/removed.json"), moved: t.text("changes/moved.json") };
+    const again = makeProbe();
+    await t.run({ now: D2, ...withProbe(again) });
+    assert.deepEqual(again.calls, []);
+    assert.equal(t.text("changes/removed.json"), before.removed);
+    assert.equal(t.text("changes/moved.json"), before.moved);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: a unit that disappears from a live module is recorded with its module and title", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    await t.run();
+    t.fake.state.modules = t.fake.state.modules.map((m) => (m.uid === mUid(5) ? { ...m, units: [m.units[0]] } : m));
+    t.fake.state.units = t.fake.state.units.filter((u) => u.uid !== `${mUid(5)}.summary`);
+    const probe = makeProbe({ "/training/modules/m5/2-summary": PROBE_NOT_FOUND });
+    await t.run({ now: D2, ...withProbe(probe) });
+    const { removed, moved } = changeFiles(t);
+    assert.deepEqual(removed.entries, [
+      {
+        path: "/training/modules/m5/2-summary",
+        kind: "unit",
+        family: "learn",
+        outcome: "gone",
+        to: null,
+        title: "summary",
+        parent: "/training/modules/m5",
+        firstSeen: "2026-10-12",
+        lastVerified: "2026-10-12",
+        evidence: "unit-diff",
+        status: 404,
+      },
+    ]);
+    assert.deepEqual(moved.entries, []);
+    assert.deepEqual(probe.calls, ["/training/modules/m5/2-summary"]);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: a unit renamed inside a live module is a move to the new slug, and lookupChange follows it", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    await t.run();
+    t.fake.state.hierarchyFor = (m) =>
+      m.uid === mUid(5) ? { units: m.units.map((uid, i) => ({ uid, url: `/training/modules/m5/${i + 1}-${i === 1 ? "wrap-up" : "introduction"}/` })) } : hierarchyOf(m);
+    t.fake.state.units = t.fake.state.units.map((u) => (u.uid === `${mUid(5)}.summary` ? { ...u, last_modified: "2027-01-01T00:00:00+00:00" } : u));
+    const probe = makeProbe({ "/training/modules/m5/2-summary": probeServed("/training/modules/m5/2-wrap-up", { first: 301 }) });
+    await t.run({ now: D2, ...withProbe(probe) });
+    const { removed, moved } = changeFiles(t);
+    assert.deepEqual(removed.entries, []);
+    assert.deepEqual(moved.entries.map((e) => [e.path, e.kind, e.parent, e.outcome, e.to, e.status, e.evidence]), [
+      ["/training/modules/m5/2-summary", "unit", "/training/modules/m5", "moved", "/training/modules/m5/2-wrap-up", 301, "unit-diff"],
+    ]);
+    const hit = lookupChange("https://learn.microsoft.com/en-us/training/modules/m5/2-summary/?WT.mc_id=x", indexChanges({ removed, moved }));
+    assert.equal(hit.state, "moved");
+    assert.equal(hit.to, "/training/modules/m5/2-wrap-up");
+    assert.equal(hit.confidence, "high");
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: a module renamed under the same uid is a move of its OLD path, and its units are covered by it", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    await t.run();
+    const renamed = mod({ uid: mUid(4), slug: "m4-renamed", title: "Module m4 (renamed)", products: ["azure-vm"] });
+    t.fake.state.modules = t.fake.state.modules.map((m) => (m.uid === mUid(4) ? renamed : m));
+    const probe = makeProbe({ [mPath(4)]: probeServed("/training/modules/m4-renamed", { first: 301 }) });
+    await t.run({ now: D2, ...withProbe(probe) });
+    const { removed, moved } = changeFiles(t);
+    assert.deepEqual(removed.entries, []);
+    assert.deepEqual(moved.entries.map((e) => [e.path, e.kind, e.outcome, e.to, e.evidence, e.title]), [[mPath(4), "module", "moved", "/training/modules/m4-renamed", "rename", "Module m4"]]);
+    assert.deepEqual(probe.calls, [mPath(4)], "the unit urls of the renamed module are not compared (no unit entries)");
+    const hit = lookupChange("/training/modules/m4/1-introduction", indexChanges({ removed, moved }));
+    assert.equal(hit.state, "moved");
+    assert.equal(hit.to, "/training/modules/m4-renamed/1-introduction");
+    assert.equal(hit.confidence, "low", "an inherited move is never certain");
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: a transient probe leaves the entry unverified, a throwing probe never fails the sync, a later healthy run classifies it and keeps firstSeen", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    await t.run();
+    t.fake.state.modules = without(t.fake.state.modules, mUid(1));
+    const blocked = makeProbe({ [mPath(1)]: PROBE_BLOCKED });
+    await t.run({ now: D2, ...withProbe(blocked) });
+    let e = entryAt(changeFiles(t).removed, mPath(1));
+    assert.deepEqual([e.outcome, e.lastVerified, e.status, e.to, e.firstSeen, e.evidence], ["unverified", null, null, null, "2026-10-12", "tombstone"]);
+    assert.deepEqual(t.read("status.json").learn.catalogChanges, { removed: 1, moved: 0, unverified: 1, newRemoved: 1, newMoved: 0, resurrected: 0, probed: 1 });
+
+    const throwing = async () => {
+      throw new Error("boom");
+    };
+    const logs = collectLogs();
+    await t.run({ now: D3, ...withProbe(throwing), log: logs.log, warn: logs.warn });
+    e = entryAt(changeFiles(t).removed, mPath(1));
+    assert.equal(e.outcome, "unverified", "an exception from the probe reads as transient");
+    assert.ok(logs.lines.some((l) => /1 removed \(1 unverified\)/.test(l)));
+
+    const healthy = makeProbe({ [mPath(1)]: PROBE_NOT_FOUND });
+    await t.run({ now: D4, ...withProbe(healthy) });
+    e = entryAt(changeFiles(t).removed, mPath(1));
+    assert.deepEqual([e.outcome, e.lastVerified, e.status, e.firstSeen, e.evidence], ["gone", "2026-10-26", 404, "2026-10-12", "tombstone"]);
+    assert.equal(t.read("status.json").learn.catalogChanges.unverified, 0);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: some blocked probes keep their entries unverified while the others are classified, and the run still finishes", async () => {
+  const t = setup(bigWorld(150));
+  try {
+    await t.run();
+    t.fake.state.modules = without(t.fake.state.modules, mUid(1), mUid(2), mUid(3));
+    const probe = makeProbe({ [mPath(1)]: PROBE_NOT_FOUND });
+    const r = await t.run({ now: D2, changes: { delayMs: 0, workers: 1, probe } });
+    assert.equal(r.changesStats.transient, 2);
+    assert.equal(r.changesStats.stoppedEarly, false, "the circuit breaker needs a long run of transient answers");
+    assert.deepEqual(changeFiles(t).removed.entries.map((e) => [e.path, e.outcome]), [[mPath(1), "gone"], [mPath(2), "unverified"], [mPath(3), "unverified"]]);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: a failed or truncated hierarchy never looks like removed units", async () => {
+  // (a) the hierarchy request fails while the signature changed: unitUrls becomes null and nothing is compared
+  const t = setup(bigWorld(40));
+  try {
+    await t.run();
+    t.fake.state.modules = t.fake.state.modules.map((m) => (m.uid === mUid(5) ? { ...m, units: [m.units[0]] } : m));
+    t.fake.state.units = t.fake.state.units.filter((u) => u.uid !== `${mUid(5)}.summary`);
+    t.fake.state.hierarchyFailures.set(mUid(5), 503);
+    const probe = makeProbe();
+    await t.run({ now: D2, ...withProbe(probe) });
+    assert.equal(t.read("learn-catalog.json").modules.find((m) => m.uid === mUid(5)).unitUrls, null);
+    assert.deepEqual(changeFiles(t).removed.entries, []);
+    // healthy again: the old list is gone (null), so the removal cannot be known; the validator and a live probe cover it
+    t.fake.state.hierarchyFailures.clear();
+    await t.run({ now: D3, ...withProbe(probe) });
+    assert.deepEqual(changeFiles(t).removed.entries, []);
+    assert.deepEqual(probe.calls, []);
+  } finally {
+    t.cleanup();
+  }
+
+  // (b) the failure keeps the previous urls (same signature): old list == carried-forward list
+  const t2 = setup(bigWorld(40));
+  try {
+    await t2.run();
+    t2.fake.state.hierarchyFailures.set(mUid(5), 503);
+    const probe = makeProbe();
+    const r = await t2.run({ now: D2, env: { FULL_UNIT_REFRESH: "1" }, ...withProbe(probe) });
+    assert.equal(r.unitStats.carriedForward, 1);
+    assert.deepEqual(changeFiles(t2).removed.entries, []);
+    assert.deepEqual(probe.calls, []);
+  } finally {
+    t2.cleanup();
+  }
+
+  // (c) a module that suddenly lists fewer than half of its units is a truncated answer; exactly half is trusted
+  for (const [keep, expected] of [[2, 0], [3, 3]]) {
+    const big = mod({ uid: "learn.azure.big", slug: "big", products: ["azure-vm"], unitSpecs: ["u1", "u2", "u3", "u4", "u5", "u6"].map((s) => [s, s]) });
+    const world = bigWorld(40);
+    const t3 = setup({ modules: [...world.modules, big], units: [...world.units, ...unitsOf([big])] });
+    try {
+      await t3.run();
+      t3.fake.state.modules = t3.fake.state.modules.map((m) => (m.uid === big.uid ? { ...m, units: m.units.slice(0, keep) } : m));
+      t3.fake.state.units = t3.fake.state.units.filter((u) => !u.uid.startsWith("learn.azure.big.") || big.units.slice(0, keep).includes(u.uid));
+      const probe = makeProbe({}, PROBE_NOT_FOUND);
+      await t3.run({ now: D2, ...withProbe(probe) });
+      assert.equal(changeFiles(t3).removed.entries.length, expected, `6 -> ${keep} units`);
+      if (expected) assert.deepEqual(changeFiles(t3).removed.entries.map((e) => e.path), ["/training/modules/big/4-u4", "/training/modules/big/5-u5", "/training/modules/big/6-u6"]);
+    } finally {
+      t3.cleanup();
+    }
+  }
+});
+
+test("changes: resurrection removes an entry when the module or unit is back, or when a probe finds the path served live", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    await t.run();
+    const original = { modules: t.fake.state.modules, units: t.fake.state.units };
+    // week 2: m1 vanishes and m5 loses a unit; the probe is blocked, so both stay unverified
+    t.fake.state.modules = without(original.modules, mUid(1)).map((m) => (m.uid === mUid(5) ? { ...m, units: [m.units[0]] } : m));
+    t.fake.state.units = original.units.filter((u) => u.uid !== `${mUid(5)}.summary`);
+    await t.run({ now: D2, ...withProbe(makeProbe()) });
+    assert.deepEqual(changeFiles(t).removed.entries.map((e) => [e.path, e.outcome]), [[mPath(1), "unverified"], ["/training/modules/m5/2-summary", "unverified"]]);
+
+    // week 3: both are back
+    t.fake.state.modules = original.modules;
+    t.fake.state.units = original.units;
+    const probe = makeProbe();
+    const r = await t.run({ now: D3, ...withProbe(probe) });
+    assert.deepEqual(changeFiles(t).removed.entries, []);
+    assert.equal(r.changesStats.resurrected, 2);
+    assert.deepEqual(probe.calls, [], "resurrected entries are not probed");
+    assert.deepEqual(t.read("learn-catalog.json").removed, []);
+  } finally {
+    t.cleanup();
+  }
+
+  // a tombstoned path that Learn still serves (HTTP 200 on its own path) is never recorded
+  const t2 = setup(bigWorld(40));
+  try {
+    await t2.run();
+    t2.fake.state.modules = without(t2.fake.state.modules, mUid(2));
+    const probe = makeProbe({ [mPath(2)]: probeServed(mPath(2)) });
+    await t2.run({ now: D2, ...withProbe(probe) });
+    assert.deepEqual(probe.calls, [mPath(2)]);
+    assert.deepEqual(changeFiles(t2).removed.entries, []);
+    assert.equal(t2.read("learn-catalog.json").removed.length, 1, "the catalog tombstone stays: the cache and the live site disagree");
+  } finally {
+    t2.cleanup();
+  }
+});
+
+test("changes: a module the hierarchy API does not know is recorded every run, re-verified later, and keeps its firstSeen", async () => {
+  const t = setup();
+  try {
+    t.fake.state.hierarchyFailures.set("learn.azure.vm-basics", 404);
+    const landing = probeServed("/training/paths/azure", { first: 301 });
+    await t.run(withProbe(makeProbe({ "/training/modules/vm-basics": landing })));
+    let e = entryAt(changeFiles(t).removed, "/training/modules/vm-basics");
+    assert.deepEqual([e.kind, e.outcome, e.to, e.status, e.evidence, e.firstSeen, e.lastVerified], ["module", "landing", "/training/paths/azure", 301, "hierarchy-not-found", "2026-10-05", "2026-10-05"]);
+
+    const again = makeProbe({ "/training/modules/vm-basics": landing });
+    await t.run({ now: D2, ...withProbe(again) });
+    e = entryAt(changeFiles(t).removed, "/training/modules/vm-basics");
+    assert.equal(changeFiles(t).removed.entries.length, 1);
+    assert.deepEqual([e.firstSeen, e.lastVerified], ["2026-10-05", "2026-10-12"]);
+    assert.deepEqual(again.calls, ["/training/modules/vm-basics"], "rotation: the oldest verified entry is re-confirmed");
+
+    // Learn serves it through the hierarchy API again: the flag clears and the entry goes away without a probe
+    t.fake.state.hierarchyFailures.clear();
+    const healed = makeProbe();
+    const r = await t.run({ now: D3, ...withProbe(healed) });
+    assert.deepEqual(changeFiles(t).removed.entries, []);
+    assert.equal(r.changesStats.resurrected, 1);
+    assert.deepEqual(healed.calls, []);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: a hierarchy answer that is not definitive (bare 404, 403, bad shape) clears the flag but never deletes a probed entry; only a readable hierarchy does", async () => {
+  const t = setup();
+  const VM = "/training/modules/vm-basics";
+  try {
+    // W1: the API does not know the module and the probe sees it land on a learning path
+    t.fake.state.hierarchyFailures.set("learn.azure.vm-basics", 404);
+    const landing = probeServed("/training/paths/azure", { first: 301 });
+    await t.run(withProbe(makeProbe({ [VM]: landing })));
+    const entry = () => entryAt(changeFiles(t).removed, VM);
+    const first = entry();
+    assert.deepEqual([first.outcome, first.firstSeen, first.lastVerified, first.evidence], ["landing", "2026-10-05", "2026-10-05", "hierarchy-not-found"]);
+
+    // W2..W4: one unreadable answer per week, each of a different kind. The flag is gone (the API did not say module_id_not_found
+    // this time) and unitUrls is null, so the cache cannot vouch for the module: the entry stays and is re-verified, firstSeen intact
+    const weeks = [
+      [D2, "bare404"],
+      [D3, 403],
+      [D4, () => 200], // a 200 whose body is no hierarchy at all is a bad shape
+    ];
+    for (const [when, failure] of weeks) {
+      t.fake.state.hierarchyFailures.set("learn.azure.vm-basics", failure);
+      const probe = makeProbe({ [VM]: landing });
+      const r = await t.run({ now: when, ...withProbe(probe) });
+      const vm = t.read("learn-catalog.json").modules.find((m) => m.uid === "learn.azure.vm-basics");
+      assert.equal("hierarchyNotFound" in vm, false, "the flag only rests on the API's own answer");
+      assert.equal(vm.unitUrls, null);
+      const now = entry();
+      assert.ok(now, `${when.toISOString()}: the probe-classified entry was not deleted on a non-answer`);
+      assert.deepEqual([now.outcome, now.firstSeen, now.evidence], ["landing", "2026-10-05", "hierarchy-not-found"]);
+      assert.equal(now.lastVerified, when.toISOString().slice(0, 10), "it was re-verified by the rotation instead");
+      assert.equal(r.changesStats.resurrected, 0);
+      assert.deepEqual(probe.calls, [VM]);
+    }
+
+    // W5: the hierarchy answers (units known): the cache now vouches for the module, the entry goes without a probe
+    t.fake.state.hierarchyFailures.clear();
+    const healed = makeProbe();
+    const r = await t.run({ now: new Date("2026-11-02T07:00:00.000Z"), ...withProbe(healed) });
+    assert.deepEqual(changeFiles(t).removed.entries, []);
+    assert.equal(r.changesStats.resurrected, 1);
+    assert.deepEqual(healed.calls, []);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: without an injected probe the real raw probe runs over the run's fetch (404 = gone, 200 on its own path = live)", async () => {
+  const t = setup(bigWorld(150));
+  try {
+    await t.run();
+    t.fake.state.modules = without(t.fake.state.modules, mUid(1), mUid(2));
+    t.fake.state.pages.set(mPath(2), { status: 200, body: "<html><head><title>Module m2</title></head></html>" });
+    await t.run({ now: D2 });
+    const { removed } = changeFiles(t);
+    assert.deepEqual(removed.entries.map((e) => [e.path, e.outcome, e.status]), [[mPath(1), "gone", 404]]);
+    assert.ok(t.fake.requests.includes("https://learn.microsoft.com/en-us/training/modules/m1/"));
+    assert.ok(t.fake.requests.includes("https://learn.microsoft.com/en-us/training/modules/m2/"));
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: entries of the docs family and of the content kinds pass through the catalog run, the docs ones untouched", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    await t.run();
+    const stamp = "2026-10-01T08:00:00.000Z";
+    const docs = { path: "/azure/old", kind: "docs", family: "docs", outcome: "moved", to: "/azure/new", title: null, parent: null, firstSeen: "2026-09-28", lastVerified: "2026-10-01", evidence: "docs-redirect", status: 301 };
+    const exam = { path: "/credentials/certifications/exams/70-767", kind: "exam", family: "learn", outcome: "gone", to: null, title: "70-767", parent: null, firstSeen: "2026-09-20", lastVerified: "2026-10-05", evidence: "tombstone", status: 404 };
+    writeFileSync(join(t.dir, "changes", "moved.json"), JSON.stringify({ schemaVersion: 1, generatedAt: stamp, sources: { learn: stamp, docs: stamp }, entries: [docs] }, null, 2) + "\n");
+    writeFileSync(join(t.dir, "changes", "removed.json"), JSON.stringify({ schemaVersion: 1, generatedAt: stamp, sources: { learn: stamp, docs: stamp }, entries: [exam] }, null, 2) + "\n");
+    t.fake.state.modules = without(t.fake.state.modules, mUid(1));
+    const probe = makeProbe({ [mPath(1)]: PROBE_NOT_FOUND, [exam.path]: PROBE_NOT_FOUND });
+    await t.run({ now: D2, ...withProbe(probe) });
+    const { removed, moved } = changeFiles(t);
+    assert.deepEqual(moved.entries, [docs], "the docs family is never touched or probed here");
+    assert.deepEqual(moved.sources, { learn: D2.toISOString(), docs: stamp });
+    assert.ok(!probe.calls.includes("/azure/old"));
+    assert.deepEqual(removed.entries.map((e) => [e.path, e.outcome, e.lastVerified]), [
+      ["/credentials/certifications/exams/70-767", "gone", "2026-10-12"],
+      [mPath(1), "gone", "2026-10-12"],
+    ]);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: a corrupt change file or a typo in CHANGES_* fails the run before any request and before anything is written", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    mkdirSync(join(t.dir, "changes"));
+    for (const body of ["{broken", JSON.stringify({ schemaVersion: 2, entries: [] }), JSON.stringify({ schemaVersion: 1, entries: {} }), "[]"]) {
+      writeFileSync(join(t.dir, "changes", "removed.json"), body);
+      await assert.rejects(t.run(), (err) => err instanceof ChangesFileError && /removed\.json/.test(err.message), body);
+      assert.equal(t.fake.requests.length, 0, "failed before the first download");
+      assert.equal(existsSync(join(t.dir, "learn-catalog.json")), false);
+      assert.equal(existsSync(join(t.dir, "status.json")), false);
+      assert.equal(existsSync(join(t.dir, "changes", "moved.json")), false);
+      assert.equal(readFileSync(join(t.dir, "changes", "removed.json"), "utf-8"), body, "the unreadable file is left alone");
+    }
+    rmSync(join(t.dir, "changes"), { recursive: true });
+    await assert.rejects(t.run({ env: { CHANGES_MAX_PROBES: "lots" } }), /CHANGES_MAX_PROBES/);
+    await assert.rejects(t.run({ env: { CHANGES_REVERIFY_PER_RUN: "-1" } }), /CHANGES_REVERIFY_PER_RUN/);
+    assert.equal(t.fake.requests.length, 0);
+    assert.equal(existsSync(join(t.dir, "changes")), false);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: CHANGES_MAX_PROBES from the environment caps the probes of a run, the rest stays unverified", async () => {
+  const t = setup(bigWorld(150));
+  try {
+    await t.run();
+    t.fake.state.modules = without(t.fake.state.modules, mUid(1), mUid(2), mUid(3));
+    const probe = makeProbe({}, PROBE_NOT_FOUND);
+    const logs = collectLogs();
+    const r = await t.run({ now: D2, env: { CHANGES_MAX_PROBES: "1" }, ...withProbe(probe), log: logs.log, warn: logs.warn });
+    assert.equal(probe.calls.length, 1);
+    assert.equal(r.changesStats.probeBudgetExhausted, true);
+    assert.deepEqual(changeFiles(t).removed.entries.map((e) => e.outcome).sort(), ["gone", "unverified", "unverified"]);
+    assert.ok(logs.lines.some((l) => /verification queue is longer than the probe budget \(1\)/.test(l)));
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes FAILSAFE: an aborted run writes no change file and does not probe", async () => {
+  const t = setup(bigWorld(100));
+  try {
+    await t.run();
+    t.fake.state.modules = without(t.fake.state.modules, mUid(7));
+    await t.run({ now: D2, ...withProbe(makeProbe({ [mPath(7)]: PROBE_NOT_FOUND })) });
+    const snapshot = () => ({ removed: t.text("changes/removed.json"), moved: t.text("changes/moved.json"), catalog: t.text("learn-catalog.json"), status: t.text("status.json") });
+    const before = snapshot();
+    assert.equal(JSON.parse(before.removed).entries.length, 1);
+
+    // a truncated catalog response would look like ten removed modules: the failsafe aborts first
+    const probe = makeProbe({}, PROBE_NOT_FOUND);
+    t.fake.state.truncateModulesTo = 90;
+    await assert.rejects(t.run({ now: D3, ...withProbe(probe) }), (err) => err instanceof FailsafeAbort);
+    assert.deepEqual(snapshot(), before);
+    assert.deepEqual(probe.calls, []);
+
+    // too many failed hierarchy requests abort after the downloads: still nothing written
+    t.fake.state.truncateModulesTo = null;
+    for (let i = 10; i < 30; i++) t.fake.state.hierarchyFailures.set(mUid(i), 500);
+    await assert.rejects(t.run({ now: D3, env: { FULL_UNIT_REFRESH: "1" }, ...withProbe(probe) }), /hierarchy requests failed/);
+    assert.deepEqual(snapshot(), before);
+    assert.deepEqual(probe.calls, []);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: DRY_RUN=1 computes and probes but writes no change file, data file or status", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    const first = await t.run({ env: { DRY_RUN: "1" } });
+    assert.equal(existsSync(join(t.dir, "changes")), false);
+    assert.equal(first.changes.removed.entries.length, 0);
+
+    await t.run();
+    const snapshot = () => ({ removed: t.text("changes/removed.json"), moved: t.text("changes/moved.json"), catalog: t.text("learn-catalog.json"), status: t.text("status.json") });
+    const before = snapshot();
+    t.fake.state.modules = without(t.fake.state.modules, mUid(1));
+    const probe = makeProbe({ [mPath(1)]: PROBE_NOT_FOUND });
+    const logs = collectLogs();
+    const r = await t.run({ now: D2, env: { DRY_RUN: "1" }, ...withProbe(probe), log: logs.log, warn: logs.warn });
+    assert.deepEqual(probe.calls, [mPath(1)], "a dry run still verifies, so the operator sees the outcome");
+    assert.deepEqual(r.changes.removed.entries.map((e) => [e.path, e.outcome]), [[mPath(1), "gone"]]);
+    assert.deepEqual(snapshot(), before);
+    assert.ok(logs.lines.some((l) => /DRY_RUN=1: not writing the data file, the change files or status\.json/.test(l)));
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("changes: the files are byte-stable (writeChanges(loadChanges) reproduces them) and the other part's status counters survive", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    await t.run();
+    t.fake.state.modules = without(t.fake.state.modules, mUid(1));
+    await t.run({ now: D2, ...withProbe(makeProbe({ [mPath(1)]: probeServed("/training/paths/azure", { first: 301 }) })) });
+    const { writeChanges } = await import("../scripts/lib/changes.mjs");
+    const before = { removed: t.text("changes/removed.json"), moved: t.text("changes/moved.json") };
+    writeChanges(t.dir, loadChanges(t.dir));
+    assert.equal(t.text("changes/removed.json"), before.removed);
+    assert.equal(t.text("changes/moved.json"), before.moved);
+    assert.ok(before.removed.endsWith("}\n"));
+
+    contributeLearnStatus(join(t.dir, "status.json"), "content", { contentChanges: { removed: 9 } }, { now: D2, env: {} });
+    await t.run({ now: D3, ...withProbe(makeProbe({ [mPath(1)]: probeServed("/training/paths/azure", { first: 301 }) })) });
+    const learn = t.read("status.json").learn;
+    assert.deepEqual(learn.contentChanges, { removed: 9 });
+    assert.equal(learn.catalogChanges.removed, 1);
+    assert.equal(learn.removed, 1, "the top-level `removed` still means module tombstones");
   } finally {
     t.cleanup();
   }

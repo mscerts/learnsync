@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-06T21:26:00.186Z",
+  "sources": {
+    "learn": null,
+    "docs": null
+  },
+  "entries": [
+    {
+      "path": "/credentials/certifications/power-bi-data-analyst-associate",
+      "kind": "certification",
+      "family": "learn",
+      "outcome": "moved",
+      "to": "/credentials/certifications/data-analyst-associate",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-06",
+      "lastVerified": "2026-10-06",
+      "evidence": "live-probe",
+      "status": 301
+    },
+    {
+      "path": "/training/modules/agent-speed-skills-finance",
+      "kind": "module",
+      "family": "learn",
+      "outcome": "moved",
+      "to": "/training/modules/empower-workforce-copilot-finance",
+      "title": "Develop finance skills with AI agents",
+      "parent": null,
+      "firstSeen": "2026-09-04",
+      "lastVerified": "2026-10-06",
+      "evidence": "history",
+      "status": 301
+    },
+    {
+      "path": "/training/modules/agent-speed-skills-marketing",
+      "kind": "module",
+      "family": "learn",
+      "outcome": "moved",
+      "to": "/training/modules/empower-workforce-copilot-marketing",
+      "title": "Develop marketing skills with AI agents",
+      "parent": null,
+      "firstSeen": "2026-09-04",
+      "lastVerified": "2026-10-06",
+      "evidence": "history",
+      "status": 301
+    },
+    {
+      "path": "/training/modules/agent-speed-skills-sales",
+      "kind": "module",
+      "family": "learn",
+      "outcome": "moved",
+      "to": "/training/modules/empower-workforce-copilot-sales",
+      "title": "Develop sales skills with AI agents",
+      "parent": null,
+      "firstSeen": "2026-09-04",
+      "lastVerified": "2026-10-06",
+      "evidence": "history",
+      "status": 301
+    },
+    {
+      "path": "/training/modules/craft-compelling-product-pitch-using-ai",
+      "kind": "module",
+      "family": "learn",
+      "outcome": "moved",
+      "to": "/training/modules/use-ai-everyday-tasks",
+      "title": "Craft a compelling product pitch using AI",
+      "parent": null,
+      "firstSeen": "2026-09-04",
+      "lastVerified": "2026-10-06",
+      "evidence": "history",
+      "status": 301
+    },
+    {
+      "path": "/training/modules/create-manage-automated-processes-with-power-automate/3-exercise-build-flow-to-send-automated-emails",
+      "kind": "unit",
+      "family": "learn",
+      "outcome": "moved",
+      "to": "/training/modules/create-manage-automated-processes-with-power-automate/3-exercise-build-flow-send-automated-emails",
+      "title": null,
+      "parent": "/training/modules/create-manage-automated-processes-with-power-automate",
+      "firstSeen": "2026-10-06",
+      "lastVerified": "2026-10-06",
+      "evidence": "live-probe",
+      "status": 301
+    },
+    {
+      "path": "/training/modules/design-machine-learning-operations-solution",
+      "kind": "module",
+      "family": "learn",
+      "outcome": "moved",
+      "to": "/training/modules/design-machine-learning-model-training-solution",
+      "title": "Design a machine learning operations solution (MLOps)",
+      "parent": null,
+      "firstSeen": "2026-09-21",
+      "lastVerified": "2026-10-06",
+      "evidence": "history",
+      "status": 301
+    },
+    {
+      "path": "/training/modules/dragon-copilot-create-customizable-templates",
+      "kind": "module",
+      "family": "learn",
+      "outcome": "moved",
+      "to": "/training/modules/dragon-copilot-create-templates",
+      "title": "Dragon Copilot (physicians) create customizable templates",
+      "parent": null,
+      "firstSeen": "2026-09-14",
+      "lastVerified": "2026-10-06",
+      "evidence": "history",
+      "status": 301
+    },
+    {
+      "path": "/training/modules/employ-copilot-assistant",
+      "kind": "module",
+      "family": "learn",
+      "outcome": "moved",
+      "to": "/training/modules/get-started-microsoft-365-copilot-business-chat",
+      "title": "Employ Copilot Chat as your AI assistant",
+      "parent": null,
+      "firstSeen": "2026-09-04",
+      "lastVerified": "2026-10-06",
+      "evidence": "history",
+      "status": 301
+    },
+    {
+      "path": "/training/modules/manage-agents-microsoft-365-copilot",
+      "kind": "module",
+      "family": "learn",
+      "outcome": "moved",
+      "to": "/training/modules/introduction-microsoft-ai-agent-solutions",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-06",
+      "lastVerified": "2026-10-06",
+      "evidence": "live-probe",
+      "status": 301
+    }
+  ]
+}

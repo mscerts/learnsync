@@ -29,6 +29,8 @@ the validity source for its weekly Learn URL check.
 | `docs-catalog.json` | documentation page metadata (title, description, product, lastmod, checked) | `scripts/docs-catalog-sync.mjs` |
 | `docs-redirects.json` | where moved documentation pages went | `scripts/docs-catalog-sync.mjs` |
 | `docs-catalog-invalid.json` | quarantined (confirmed 404/410) documentation URLs | `scripts/docs-catalog-sync.mjs` |
+| `changes/removed.json` | links learnsync knows are **gone** or no longer lead to the same content (small: a few KB) | both Learn syncs and the docs sync |
+| `changes/moved.json` | links that still work but **moved** (redirect to the same kind of page) | both Learn syncs and the docs sync |
 | `status.json` | heartbeat: when each sync last finished and what it saw | both syncs |
 
 Schemas, canonical path form, rules and failsafes: **[DATA_CONTRACT.md](DATA_CONTRACT.md)**.
@@ -52,16 +54,47 @@ Each URL gets a verdict (`valid`, `broken`, `moved`, `unverifiable`) with the ev
 rests on, from the caches only (no network) unless you add the live flags
 (`--confirm-live` re-probes negative verdicts, `--probe-unverifiable` probes page kinds no
 cache covers; those verdicts are labelled `live-probe`). Anything the data cannot know is
-`unverifiable`, never guessed. See the validator section of [AGENTS.md](AGENTS.md).
+`unverifiable`, never guessed. When the change files exist, a broken or moved result also
+carries a `change` record (where the link went, since when). See the validator section of
+[AGENTS.md](AGENTS.md).
+
+## Reading the change files
+
+`data/changes/removed.json` and `moved.json` list every link learnsync **knows has changed**,
+so an automation can ask "did anything I link to break or move?" from two small files instead
+of the multi-MB caches (and `git log -p data/changes/` reads as a changelog). Raw files:
+
+- <https://raw.githubusercontent.com/mscerts/learnsync/main/data/changes/removed.json>
+- <https://raw.githubusercontent.com/mscerts/learnsync/main/data/changes/moved.json>
+
+Each has `{ schemaVersion, generatedAt, sources: { learn, docs }, entries: [...] }`, where
+`sources.<family>` says when that family's entries were last refreshed. Or ask the CLI, which
+reads only those two files and `status.json`:
+
+```bash
+echo '["https://learn.microsoft.com/training/modules/foundry-sdk/06-exercise/"]' | node scripts/check-changes.mjs
+node scripts/check-changes.mjs https://learn.microsoft.com/training/modules/foundry-sdk/ --all
+node scripts/check-changes.mjs --since 2026-09-01      # what changed recently
+```
+
+Each link gets `status` `removed`, `moved` or `none`, with `outcome`, `to` (where it went),
+`confidence`, `firstSeen` and `lastVerified`. **`none` means "no change recorded", not
+"valid"**: a link that was never in a learnsync cache, or that broke before changes were
+recorded, also reads `none`. The output's `freshness` and `warnings` say whether the files are
+fresh enough for that to mean anything; use the validator above for an actual verdict. Exit
+code 0 whenever the check ran, 2 for a usage error, 1 when a change file is unreadable.
+Field-by-field details, the lookup rules and how the files are seeded and kept up to date are
+in [DATA_CONTRACT.md](DATA_CONTRACT.md) and [AGENTS.md](AGENTS.md).
 
 ## Running locally
 
 Requires Node.js 22+ (and `git` on `PATH` for the github/docs source):
 
 ```bash
-npm run sync:learn     # learn-catalog.json + learn-content.json  (a full unit refresh takes ~13 min)
-npm run sync:docs      # docs index, catalog, redirects, quarantine
+npm run sync:learn     # learn-catalog.json + learn-content.json + data/changes/ (a full unit refresh takes ~13 min)
+npm run sync:docs      # docs index, catalog, redirects, quarantine, docs entries of data/changes/
 DRY_RUN=1 node scripts/docs-catalog-sync.mjs   # plan only, writes nothing
+npm run seed:changes -- --dry-run --no-probe   # plan the one-off seed of data/changes/ (see AGENTS.md)
 npm test               # offline unit tests
 ```
 
@@ -81,7 +114,8 @@ is set, each successful sync also tells mscerts/hub to run its Learn URL check i
 ## Repo maintenance
 
 `ci.yml` runs on pushes and pull requests that touch scripts, tests, workflows or issue
-templates: syntax checks, the unit tests, `actionlint` and the issue-template YAML check. All
+templates: syntax checks, the unit tests, a smoke run of the change-file CLI, `actionlint` and
+the issue-template YAML check. All
 GitHub Actions are pinned to full commit SHAs and kept current by Dependabot.
 
 ## Contributing

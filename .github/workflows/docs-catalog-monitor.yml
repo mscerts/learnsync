@@ -40,9 +40,17 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          bash scripts/commit-data.sh "Update Microsoft docs catalog cache" \
-            data/docs-catalog.json data/docs-catalog-invalid.json data/docs-sitemap-families.json \
+          paths=(
+            data/docs-catalog.json data/docs-catalog-invalid.json data/docs-sitemap-families.json
             data/docs-urls.txt data/docs-redirects.json data/status.json
+          )
+          # The change files (removed and moved links) ship with the data they were derived from.
+          # This step also runs after a failed sync (!cancelled()), so only a path that exists is
+          # staged: before the very first successful run there is nothing to add.
+          for f in data/changes/removed.json data/changes/moved.json; do
+            if [ -e "$f" ]; then paths+=("$f"); fi
+          done
+          bash scripts/commit-data.sh "Update Microsoft docs catalog cache" "${paths[@]}"
 
       - name: Create issue for newly quarantined URLs
         if: ${{ !cancelled() && steps.sync.outputs.new_quarantine_count != '' }}
@@ -75,7 +83,9 @@ jobs:
             echo "(removal detection was disabled and previous data carried forward), the sitemaps returned far fewer URLs"
             echo "than last run (sanity abort, nothing written), a rate-limit storm stopped a fetch phase (everything gathered"
             echo "so far was still written), the github/docs clone failed, the duplicate-URL audit tripped, or the data push"
-            echo "was rejected. Broken URLs alone do not fail this job: they are quarantined into"
+            echo "was rejected, or a change file (\`data/changes/removed.json\` or \`moved.json\`) is corrupt or has an"
+            echo "unsupported schemaVersion (the run stops before any request rather than overwrite it)."
+            echo "Broken URLs alone do not fail this job: they are quarantined into"
             echo "\`data/docs-catalog-invalid.json\` (see AGENTS.md). See the run log for the exact reason."
             echo
             echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"

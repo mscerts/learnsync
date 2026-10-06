@@ -11,3 +11,9 @@ data/*.json -diff
 # The URL index is generated plain text, same treatment as the JSON caches.
 data/*.txt linguist-generated=true
 data/*.txt -diff
+
+# The change files (removed and moved links) are machine-written too, but they are small and their
+# git history is the changelog of what broke or moved (git log -p data/changes/), so they keep
+# readable text diffs: generated for GitHub's language stats and collapsed views, not `-diff`.
+# (`data/*.json` above does not match a path one directory deeper.)
+data/changes/*.json linguist-generated=true

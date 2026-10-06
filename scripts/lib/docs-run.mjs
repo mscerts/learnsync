@@ -4,22 +4,27 @@
  * fake Learn and a temp directory. scripts/docs-catalog-sync.mjs is the thin
  * wrapper that supplies the real ones.
  *
- *   read data/  ->  sitemaps (both scopes)  ->  index sanity failsafe  ->  plan
+ *   read data/ (and data/changes/)  ->  sitemaps (both scopes)  ->  index sanity failsafe  ->  plan
  *     ->  DRY_RUN stops here
  *     ->  network phases (quarantine, missing, fetch, verify) under a deadline
- *     ->  git sources  ->  reconcile  ->  duplicate/size failsafes  ->  write
- *     ->  quarantine report  ->  status.json
+ *     ->  git sources  ->  reconcile  ->  duplicate/size failsafes
+ *     ->  derive the docs entries of the change files from the FINAL ledger and quarantine
+ *     ->  write  ->  quarantine report  ->  status.json
  *
  * A failsafe abort writes NOTHING (not even status.json: an aborted run did not
- * finish, so the previous heartbeat must keep aging). Every run that gets past
- * the failsafes writes status.json, even when no data file changed.
+ * finish, so the previous heartbeat must keep aging; the change files are not
+ * written either). Every run that gets past the failsafes writes status.json,
+ * even when no data file changed. A change file that exists but cannot be read
+ * aborts the run before the first request, like any other damaged data file.
  */
 
 import { appendFileSync, existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { byCodePoint, canonicalPath } from "./canonical.mjs";
+import { loadChanges } from "./changes.mjs";
 import { QUARANTINE_SURGE_THRESHOLD, readConfig } from "./docs-config.mjs";
+import { buildDocsChanges, writeDocsChanges } from "./docs-changes.mjs";
 import { createDeadline } from "./docs-budget.mjs";
 import { aliasKey, buildQuarantineReport } from "./docs-helpers.mjs";
 import { auditDuplicates, checkCatalogSize, checkIndexSanity, dropDuplicates, indexSanityBaseline } from "./docs-failsafes.mjs";
@@ -159,9 +164,13 @@ export async function runDocsSync({
     return { exitCode: 1, aborted: message };
   };
 
+  // The change files carry the Learn sync's entries, which this run must hand back untouched: read them
+  // now so a damaged file stops the run before any download (and before any write).
   let prev;
+  let previousChanges;
   try {
     prev = loadPrevious(dataDir);
+    previousChanges = loadChanges(dataDir, { warn });
   } catch (err) {
     return abort(err.message);
   }
@@ -271,6 +280,16 @@ export async function runDocsSync({
   const size = checkCatalogSize({ newCount: entries.length, previousCount: catalog.length, ...(catalogMinAbsolute === undefined ? {} : { absolute: catalogMinAbsolute }) });
   if (!size.ok) return abort(`${size.message} Nothing written.`);
 
+  // --- change files: the docs entries come from the FINAL ledger and quarantine ---------
+  // Derived before the first write, so a problem here aborts with everything still as it was.
+  const finishedAt = now();
+  let derived;
+  try {
+    derived = buildDocsChanges({ previous: previousChanges, ledger: out.ledger, invalid: out.invalid, today, generatedAt: finishedAt.toISOString(), warn });
+  } catch (err) {
+    return abort(`could not derive the change files: ${err.message} -- nothing written.`);
+  }
+
   // --- write ------------------------------------------------------------------------
   const written = {};
   written.catalog = writeIfChanged(file("catalog"), JSON.stringify(entries));
@@ -278,13 +297,18 @@ export async function runDocsSync({
   written.redirects = writeIfChanged(file("redirects"), JSON.stringify(out.ledger, null, 2) + "\n");
   written.index = out.indexWritten ? writeIfChanged(file("index"), serializeIndex(out.index)) : false;
   written.families = writeIfChanged(file("families"), JSON.stringify(sm.families, null, 2) + "\n");
-  const status = { ...out.status, catalogRecords: entries.length };
-  updateStatus(file("status"), "docs", status, { now: now(), env });
+  written.changes = writeDocsChanges(dataDir, derived.changes); // sources.docs is this run's timestamp, so it differs on every run
+  const status = { ...out.status, catalogRecords: entries.length, changes: derived.counts };
+  updateStatus(file("status"), "docs", status, { now: finishedAt, env });
 
   log(`\nWrote ${dataDir}`);
   log(
     `  catalog ${entries.length} record(s)${written.catalog ? "" : " (unchanged)"}, index ${out.indexWritten ? `${out.index.size} URL(s)${written.index ? "" : " (unchanged)"}` : `NOT rewritten (kept ${previousIndex.size})`}, ` +
       `${out.invalid.length} quarantined, ${out.ledger.length} redirect(s) in the ledger`
+  );
+  log(
+    `  change files: docs ${derived.counts.removed} removed, ${derived.counts.moved} moved (data/changes/); ` +
+      `${derived.kept.removed + derived.kept.moved} Learn entr${derived.kept.removed + derived.kept.moved === 1 ? "y" : "ies"} left untouched`
   );
   log(
     `  fetched ${r.fetched} (noindex ${r.noindex}, untitled dropped ${r.untitledDropped}, moved ${r.movedOnFetch}, quarantined ${r.quarantinedOnFetch}, transient ${r.fetchTransient}); ` +

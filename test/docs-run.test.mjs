@@ -1,131 +1,12 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
-import { tmpdir } from "node:os";
+import { readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { canonicalPath } from "../scripts/lib/canonical.mjs";
 import { readConfig } from "../scripts/lib/docs-config.mjs";
 import { runDocsSync } from "../scripts/lib/docs-run.mjs";
-import { SITEMAP_INDEX_URL } from "../scripts/lib/docs-sitemap-pass.mjs";
+import { FakeLearn, ORIGIN, baseLearn, byPath, harness, indexLines, readCatalog, run, stable } from "./docs-fixtures.mjs";
 
-const ORIGIN = "https://learn.microsoft.com";
-
-// ---- a fake learn.microsoft.com: sitemaps and pages, no network ---------------------------
-
-class FakeLearn {
-  constructor() {
-    this.families = new Map(); // family -> { entries: [[path, lastmod]], fail: status|null }
-    this.pages = new Map(); // canonical path -> behaviour
-    this.probes = [];
-    this.gets = [];
-    this.t = Date.parse("2026-10-05T10:00:00Z");
-    this.tickMs = 0;
-  }
-  family(name, entries, fail = null) {
-    this.families.set(name, { entries, fail });
-  }
-  failFamily(name, status = 500) {
-    this.families.get(name).fail = status;
-  }
-  page(path, behaviour) {
-    this.pages.set(path, behaviour);
-  }
-  raw(path, readHead) {
-    const b = this.pages.get(path) ?? "live";
-    const url = `${ORIGIN}/en-us${path}`;
-    const html = (title) => `<html><head><title>${title} | Microsoft Learn</title><meta name="description" content="About ${title}"><meta name="ms.service" content="svc"></head><body/></html>`;
-    if (b === "live") return { status: 200, firstStatus: 200, finalUrl: url, hops: [], offsite: false, text: readHead ? html(`Page ${path}`) : "" };
-    if (b.title) return { status: 200, firstStatus: 200, finalUrl: url, hops: [], offsite: false, text: readHead ? html(b.title) : "" };
-    if (b === "gone") return { status: 404, firstStatus: 404, finalUrl: url, hops: [], offsite: false, text: "" };
-    if (b === "transient") return { status: 429, firstStatus: 429, finalUrl: url, hops: [], offsite: false, text: "" };
-    if (b.to) return { status: 200, firstStatus: 301, finalUrl: `${ORIGIN}/en-us${b.to}`, hops: [{ status: 301 }], offsite: false, text: readHead ? html("Elsewhere") : "" };
-    throw new Error(`bad behaviour ${JSON.stringify(b)}`);
-  }
-  xml(name) {
-    const { entries } = this.families.get(name);
-    return `<?xml version="1.0"?><urlset>${entries.map(([p, lm]) => `<url><loc>${ORIGIN}/en-us${p}</loc>${lm ? `<lastmod>${lm}</lastmod>` : ""}</url>`).join("")}</urlset>`;
-  }
-  client() {
-    const learn = this;
-    return {
-      stats: { requests: 0 },
-      async get(url) {
-        learn.gets.push(url);
-        if (url === SITEMAP_INDEX_URL) {
-          const files = [...learn.families.keys()].map((f) => `<sitemap><loc>${ORIGIN}/_sitemaps/${f}_en-us_1.xml</loc></sitemap>`);
-          return { status: 200, text: `<sitemapindex>${files.join("")}</sitemapindex>` };
-        }
-        const m = url.match(/_sitemaps\/(.+)_en-us_1\.xml$/);
-        if (m && learn.families.has(m[1])) {
-          const f = learn.families.get(m[1]);
-          if (f.fail) return { status: f.fail, text: "" };
-          return { status: 200, text: learn.xml(m[1]) };
-        }
-        return { status: 200, text: "" };
-      },
-      async probe(url, { readHead = false } = {}) {
-        learn.t += learn.tickMs;
-        const path = canonicalPath(url);
-        learn.probes.push({ path, readHead });
-        return learn.raw(path, readHead);
-      },
-    };
-  }
-}
-
-// ---- harness --------------------------------------------------------------------------------
-
-function harness(t) {
-  const dir = mkdtempSync(join(tmpdir(), "docs-run-"));
-  const data = join(dir, "data");
-  mkdirSync(data);
-  t.after(() => rmSync(dir, { recursive: true, force: true }));
-  const file = (name) => join(data, name);
-  const read = (name) => readFileSync(file(name), "utf-8");
-  const json = (name) => JSON.parse(read(name));
-  const snapshot = () => Object.fromEntries(readdirSync(data).sort().map((n) => [n, readFileSync(join(data, n), "utf-8")]));
-  return { dir, data, file, read, json, snapshot };
-}
-
-/** One run. `when` is the fake "now"; extra env/config overrides go in `opts`. */
-async function run(h, learn, { when = "2026-10-05T10:00:00Z", env = {}, config = {}, ...rest } = {}) {
-  learn.probes = [];
-  learn.gets = [];
-  learn.t = Date.parse(when);
-  const reportFile = join(h.dir, "report.md");
-  const githubOutput = join(h.dir, "github-output.txt");
-  const messages = [];
-  const result = await runDocsSync({
-    dataDir: h.data,
-    client: learn.client(),
-    env: {},
-    config: { ...readConfig(env), delayMs: 0, reportFile, githubOutput, ...config },
-    log: (m) => messages.push(String(m)),
-    warn: (m) => messages.push(`WARN ${m}`),
-    now: () => new Date(learn.t),
-    sleep: async () => {},
-    sitemapDelayMs: 0,
-    catalogMinAbsolute: 1,
-    ...rest,
-  });
-  return { ...result, messages, reportFile, githubOutput, probes: learn.probes, gets: learn.gets };
-}
-
-const pad = (n) => String(n).padStart(2, "0");
-const stable = (prefix, n, lastmod = "2026-09-01") => Array.from({ length: n }, (_, i) => [`/${prefix}/s${pad(i)}`, lastmod]);
-
-/** A fake Learn with two families of stable pages and one index-only family. */
-function baseLearn() {
-  const learn = new FakeLearn();
-  learn.family("azure", [...stable("azure", 24), ["/azure/a", "2026-09-20"], ["/azure/b", "2026-09-21"], ["/azure/c", "2026-09-22"]]);
-  learn.family("entra", stable("entra", 4));
-  learn.family("cli", [["/cli/azure/vm", "2026-09-01"]]);
-  return learn;
-}
-
-const readCatalog = (h) => h.json("docs-catalog.json");
-const byPath = (catalog) => new Map(catalog.map((r) => [canonicalPath(r.url), r]));
-const indexLines = (h) => h.read("docs-urls.txt").trimEnd().split("\n");
+// The fake Learn, the temp data directory and run() live in docs-fixtures.mjs (shared with docs-changes.test.mjs).
 
 // ---- scenarios -------------------------------------------------------------------------------
 
@@ -171,8 +52,20 @@ test("first run builds every file from nothing, with the contract's formats", as
       redirects: 0,
       sitemapFailures: 0,
       complete: true,
+      changes: { removed: 0, moved: 0 },
     }
   );
+
+  // change files: created (data/changes/), empty, stamped with this run
+  for (const name of ["removed", "moved"]) {
+    assert.deepEqual(h.json(`changes/${name}.json`), {
+      schemaVersion: 1,
+      generatedAt: status.docs.generatedAt,
+      sources: { learn: null, docs: status.docs.generatedAt },
+      entries: [],
+    });
+  }
+  assert.equal(r.written.changes, true);
 });
 
 test("a second run over unchanged sitemaps is stable: no fetch, no data rewrite, only the heartbeat moves", async (t) => {
@@ -187,11 +80,20 @@ test("a second run over unchanged sitemaps is stable: no fetch, no data rewrite,
   assert.equal(r.written.catalog, false);
   assert.equal(r.written.index, false);
   const after = h.snapshot();
+  assert.deepEqual(Object.keys(after), Object.keys(before));
   for (const name of Object.keys(before)) {
-    if (name !== "status.json") assert.equal(after[name], before[name], `${name} must not change`);
+    if (name !== "status.json" && !name.startsWith("changes/")) assert.equal(after[name], before[name], `${name} must not change`);
   }
   assert.notEqual(after["status.json"], before["status.json"], "status.json is written even when nothing else changed");
   assert.equal(JSON.parse(after["status.json"]).docs.generatedAt, "2026-10-05T11:00:00.000Z");
+
+  // the change files carry the run's timestamp (sources.docs = "refreshed by the run at ..."), nothing else moves
+  for (const name of ["changes/removed.json", "changes/moved.json"]) {
+    const [was, now] = [JSON.parse(before[name]), JSON.parse(after[name])];
+    assert.equal(now.generatedAt, "2026-10-05T11:00:00.000Z");
+    assert.equal(now.sources.docs, "2026-10-05T11:00:00.000Z");
+    assert.deepEqual({ ...now, generatedAt: null, sources: null }, { ...was, generatedAt: null, sources: null }, `${name}: entries unchanged`);
+  }
 });
 
 test("lifecycle: change, removal, restore, move and reappearance across runs", async (t) => {

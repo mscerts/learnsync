@@ -195,6 +195,39 @@ export function makeFakeLearn(initial = {}) {
   };
 }
 
+// ---------------------------------------------------------------------------
+// change-file probes: raw answers in the shape of live-probe.mjs rawProbe()
+// ---------------------------------------------------------------------------
+
+/** A served page: the probe ended on `finalPath` (HTTP 200); `first` is the status of the first hop (301 for a redirect). */
+export const probeServed = (finalPath, { first = 200, title = "A page" } = {}) => ({
+  status: 200,
+  firstStatus: first,
+  finalUrl: `https://learn.microsoft.com/en-us${finalPath}/`,
+  title,
+  hops: [],
+  offsite: false,
+  error: null,
+});
+export const PROBE_NOT_FOUND = { status: 404, firstStatus: 404, finalUrl: "https://learn.microsoft.com/en-us/x/", title: "404", hops: [], offsite: false, error: null };
+/** Rate limited / unreachable: no usable response (transient, never classifies anything). */
+export const PROBE_BLOCKED = { status: null, firstStatus: null, finalUrl: null, title: "", hops: [], offsite: false, error: "no response after retries" };
+
+/**
+ * A stub for the injectable change-file probe: `answers` maps a canonical path to a raw answer (or a function
+ * of the path), anything else is "blocked". `probe.calls` lists every path asked, in order.
+ */
+export function makeProbe(answers = {}, fallback = PROBE_BLOCKED) {
+  const calls = [];
+  const probe = async (path) => {
+    calls.push(path);
+    const answer = answers[path];
+    return typeof answer === "function" ? answer(path) : answer ?? fallback;
+  };
+  probe.calls = calls;
+  return probe;
+}
+
 /** A standard small world: 4 in-scope modules (one with a "$" uid and one outside /training/modules), 1 out of scope. */
 export function standardWorld() {
   const modules = [

@@ -46,6 +46,15 @@ jobs:
       - name: Run unit tests
         run: npm test
 
+      # The syntax check above and `npm test` already cover scripts/check-changes.mjs, its library and
+      # test/check-changes.test.mjs (they match the globs). This also runs the CLI as a real process on
+      # the committed data/: exit 1 means a change file under data/changes/ is unreadable (missing files
+      # are fine, they only produce warnings).
+      - name: Smoke-test the change-file CLI
+        run: |
+          node scripts/check-changes.mjs --help > /dev/null
+          node scripts/check-changes.mjs --since 2000-01-01 > /dev/null
+
       - name: Validate package.json
         run: |
           node -e "JSON.parse(require('fs').readFileSync('package.json', 'utf-8')); console.log('package.json: OK')"

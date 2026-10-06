@@ -15,12 +15,18 @@
  * broken/moved verdict against learn.microsoft.com and --probe-unverifiable
  * probes the classes no cache can answer; both label their verdicts
  * evidence "live-probe". See DATA_CONTRACT.md.
+ *
+ * When data/changes/removed.json and moved.json exist, a broken or moved result also
+ * carries a `change` object (what those files recorded for the link). A live check
+ * that finds the page healthy overrides that record, so `change` is dropped from
+ * results the live layer turned `valid`. To ask the change files alone (no caches),
+ * use scripts/check-changes.mjs.
  */
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { loadData, validateUrls, summarize } from "./lib/validate.mjs";
+import { dropOverriddenChange, loadData, validateUrls, summarize } from "./lib/validate.mjs";
 import { liveLayer } from "./lib/live-probe.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -69,7 +75,7 @@ async function main() {
       concurrency: opts.concurrency,
       delayMs: opts.delay,
     });
-    results = live.results;
+    results = dropOverriddenChange(live.results);
     probed = live.probed;
   }
   const out = {

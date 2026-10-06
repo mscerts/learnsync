@@ -6,11 +6,21 @@
  * and anything the caches cannot know is `unverifiable`, never a guess. The
  * optional live layer (scripts/lib/live-probe.mjs, CLI flags --confirm-live and
  * --probe-unverifiable) is a separate, clearly labelled step on top.
+ *
+ * Enrichment: when data/changes/removed.json and moved.json exist (see
+ * DATA_CONTRACT.md, "change files"), a broken or moved verdict also carries what
+ * they recorded for the link as an extra `change` object (and fills an empty
+ * `redirectsTo` / `suggestion` from it). Verdict rules and every other field are
+ * unchanged, and the change files stay optional: missing, unreadable or empty
+ * files simply mean no enrichment.
  */
 
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { canonicalPath, slugText, firstSegment, underPrefix, LEARN_HOST } from "./canonical.mjs";
+// changes.mjs imports classifyPath from this file. The cycle is safe: neither module touches the other's
+// exports while it is being evaluated, only inside functions (test/validate.test.mjs imports each one first).
+import { CHANGES_DIR, CHANGES_FILES, indexChanges, loadChanges, lookupChange } from "./changes.mjs";
 import { LEARN_SCOPE, INDEX_ONLY_SCOPE } from "./scope.mjs";
 
 // Learn paths that are not documentation pages (no docs index covers them).
@@ -48,8 +58,89 @@ function readJson(file) {
   }
 }
 
-/** Load the cached data once; missing files are recorded, not fatal. */
-export function loadData(dataDir) {
+/**
+ * The change files (data/changes/removed.json and moved.json) for enrichment and for
+ * scripts/check-changes.mjs. Never throws: the files are optional here.
+ *   { available, missingFiles, error, changes, index }
+ *   available     at least one change file exists and could be read (`changes` and `index` are set)
+ *   missingFiles  names under data/changes/ that do not exist
+ *   error         why existing files could not be used (invalid JSON, unsupported schemaVersion), else null
+ * Nothing recorded is NOT "valid": see DATA_CONTRACT.md ("What these files do NOT tell you").
+ */
+export function loadChangeLedger(dataDir, { warn = () => {} } = {}) {
+  const missingFiles = Object.values(CHANGES_FILES).filter((name) => !existsSync(join(dataDir, CHANGES_DIR, name)));
+  const unavailable = (error) => ({ available: false, missingFiles, error, changes: null, index: null });
+  if (missingFiles.length === Object.keys(CHANGES_FILES).length) return unavailable(null);
+  try {
+    const changes = loadChanges(dataDir, { warn });
+    return { available: true, missingFiles, error: null, changes, index: indexChanges(changes) };
+  } catch (err) {
+    return unavailable(String(err?.message ?? err));
+  }
+}
+
+/**
+ * What a consumer needs to judge the change files' freshness (also `freshness.changes` of validateUrls):
+ *   { available, missingFiles, error, generatedAt, sources: { learn, docs } }
+ * `generatedAt` is the newest write of either file; `sources.<family>` says when that family's entries
+ * were last refreshed by its sync: the older of the two files' stamps, null when neither has one (the
+ * Learn stamp stays null until the Learn sync ran, a seed run does not advance it). Null for no ledger.
+ */
+export function ledgerStamps(ledger) {
+  if (!ledger) return null;
+  const files = Object.keys(CHANGES_FILES);
+  const times = (read) => files.map((file) => read(ledger.changes?.[file])).filter((stamp) => Number.isFinite(Date.parse(stamp ?? "")));
+  const family = (name) => {
+    const found = times((file) => file?.sources?.[name]);
+    return found.length ? found.reduce((oldest, stamp) => (Date.parse(stamp) < Date.parse(oldest) ? stamp : oldest)) : null;
+  };
+  const written = times((file) => file?.generatedAt);
+  return {
+    available: ledger.available,
+    missingFiles: ledger.missingFiles,
+    error: ledger.error,
+    generatedAt: written.length ? written.reduce((newest, stamp) => (Date.parse(stamp) > Date.parse(newest) ? stamp : newest)) : null,
+    sources: { learn: family("learn"), docs: family("docs") },
+  };
+}
+
+/**
+ * A lookupChange() hit as the plain fields every consumer reads (the `change` object of an enriched
+ * validator result and the rows of scripts/check-changes.mjs):
+ *   status      "removed" | "moved"
+ *   outcome     gone | landing | retired | unverified | moved  (of the entry that decided, `decidedBy`)
+ *   to          where the link goes now (moved) or where Learn sends visitors instead (removed, exact entries); null = unknown / off-site
+ *   via         "exact" (the link has its own entry) | "ancestor" (the entry of its module covers it)
+ *   confidence  "high" | "low" (inherited moves, unverified entries, cycles and long chains are low)
+ *   firstSeen, lastVerified, evidence, httpStatus   of the deciding entry
+ *   kind, title            of the entry the link matched first (`matched`)
+ *   chain       [link, destination, ...] as followed through the ledger; cycle / truncated say how that ended
+ */
+export function describeChange(hit) {
+  const { entry, final } = hit;
+  return {
+    status: hit.state,
+    outcome: hit.outcome,
+    to: hit.to ?? null,
+    via: hit.match,
+    confidence: hit.confidence,
+    firstSeen: final.firstSeen,
+    lastVerified: final.lastVerified ?? null,
+    kind: entry.kind,
+    title: entry.title ?? null,
+    evidence: final.evidence,
+    httpStatus: final.status ?? null,
+    matched: entry.path,
+    decidedBy: final.path,
+    chain: [...hit.chain],
+    cycle: hit.cycle === true,
+    truncated: hit.truncated === true,
+    reason: hit.reason,
+  };
+}
+
+/** Load the cached data once; missing files are recorded, not fatal. The change files are optional (`data.changes`, see loadChangeLedger). */
+export function loadData(dataDir, { warn = () => {} } = {}) {
   const missing = [];
   const file = (name) => join(dataDir, FILES[name]);
   const need = (name) => {
@@ -60,7 +151,7 @@ export function loadData(dataDir) {
     return file(name);
   };
 
-  const data = { dataDir, missing, status: null, learn: null, content: null, docs: null };
+  const data = { dataDir, missing, status: null, learn: null, content: null, docs: null, changes: loadChangeLedger(dataDir, { warn }) };
 
   const statusFile = need("status");
   data.status = statusFile ? readJson(statusFile) : null;
@@ -294,9 +385,40 @@ const OTHER_REASONS = [
   [/^\/certifications\//, "legacy /certifications paths have no cache source"],
 ];
 
+/**
+ * Add what the change files recorded to a broken or moved verdict: the `change` object (describeChange)
+ * and, only for a high-confidence record, a `redirectsTo` / `suggestion` the verdict lacks (a moved
+ * link's destination becomes the suggestion; for a removed link `to` is where Learn sends visitors,
+ * which is NOT a replacement, so it only fills `redirectsTo`). Verdict, reason, evidence and
+ * confidence are never touched, and valid / unverifiable verdicts are left alone.
+ */
+function enrichWithChange(res, ledger) {
+  if (!ledger?.index || !res.path || (res.verdict !== "broken" && res.verdict !== "moved")) return res;
+  const hit = lookupChange(res.path, ledger.index);
+  if (!hit) return res;
+  const enriched = { ...res, change: describeChange(hit) };
+  if (hit.confidence === "high" && hit.to) {
+    if (enriched.redirectsTo === null) enriched.redirectsTo = hit.to;
+    if (enriched.suggestion === null && hit.state === "moved") enriched.suggestion = absolute(hit.to);
+  }
+  return enriched;
+}
+
+/**
+ * After the live layer: a result it turned `valid` was found healthy, which overrides the change files'
+ * record, so the (stale) `change` is dropped. Every other result is returned as it is.
+ */
+export function dropOverriddenChange(results) {
+  return results.map((res) => {
+    if (res.verdict !== "valid" || !res.change) return res;
+    const { change, ...rest } = res;
+    return rest;
+  });
+}
+
 /** Validate URLs from the loaded data. Pure: no network. */
 export function validateUrls(urls, data) {
-  const results = urls.map((input) => {
+  const verdicts = urls.map((input) => {
     const url = typeof input === "string" ? input : input.url;
     const path = canonicalPath(url);
     const base = { url, path, kind: null };
@@ -330,6 +452,8 @@ export function validateUrls(urls, data) {
       }
     }
   });
+  // cache-only verdicts above; the change files only ever add to them
+  const results = verdicts.map((res) => enrichWithChange(res, data.changes));
   return { results, freshness: freshness(data), summary: summarize(results) };
 }
 
@@ -351,6 +475,7 @@ export function freshness(data, now = Date.now()) {
     learnCatalogCheckedAt: data.learn?.lastChecked ?? null,
     unitUrlsCached: data.learn?.hasUnitUrls ?? false,
     schemaVersion: data.learn?.schemaVersion ?? null,
+    changes: ledgerStamps(data.changes),
   };
 }
 
