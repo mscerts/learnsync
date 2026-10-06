@@ -1,11 +1,102 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-06T22:06:47.662Z",
+  "generatedAt": "2026-10-06T22:39:34.256Z",
   "sources": {
     "learn": "2026-10-06T22:06:47.662Z",
-    "docs": null
+    "docs": "2026-10-06T22:39:34.256Z"
   },
   "entries": [
+    {
+      "path": "/azure/ai-services/anomaly-detector",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/azure/ai-services/anomaly-detector",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-06",
+      "lastVerified": "2026-10-06",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/ai-services/anomaly-detector/faq",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/azure/ai-services/anomaly-detector/faq",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-06",
+      "lastVerified": "2026-10-06",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/app-testing/playwright-workspaces/how-to-playwright-workspaces-remote-mcp",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/azure/app-testing",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-06",
+      "lastVerified": "2026-10-06",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/azure/app-testing",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-06",
+      "lastVerified": "2026-10-06",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/app-testing/playwright-workspaces/troubleshoot-remote-mcp-server",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/azure/app-testing",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-06",
+      "lastVerified": "2026-10-06",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/dynamics365/finance/general-ledger/configure-default-dimensions",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "gone",
+      "to": null,
+      "title": "Default dimensions",
+      "parent": null,
+      "firstSeen": "2026-09-28",
+      "lastVerified": "2026-10-06",
+      "evidence": "quarantine",
+      "status": 404
+    },
+    {
+      "path": "/microsoft-365/security/active-content-in-trusted-docs",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "gone",
+      "to": null,
+      "title": "Manage active content in Office documents for IT admins",
+      "parent": null,
+      "firstSeen": "2026-09-01",
+      "lastVerified": "2026-10-06",
+      "evidence": "quarantine",
+      "status": 404
+    },
     {
       "path": "/training/modules/administer-applications",
       "kind": "module",
@@ -1422,6 +1513,19 @@
       "lastVerified": "2026-10-06",
       "evidence": "live-probe",
       "status": 301
+    },
+    {
+      "path": "/troubleshoot/outlook/performance/collect-performance-trace",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "gone",
+      "to": null,
+      "title": "Collect a Performance Trace in New Outlook for Windows",
+      "parent": null,
+      "firstSeen": "2026-09-28",
+      "lastVerified": "2026-10-06",
+      "evidence": "quarantine",
+      "status": 404
     }
   ]
 }

@@ -44,17 +44,21 @@
     "contentGeneratedAt": "2026-10-06T22:06:47.662Z"
   },
   "docs": {
-    "generatedAt": "2026-10-05T19:55:18.359Z",
-    "runId": "37362661084",
-    "indexUrls": 138709,
-    "catalogRecords": 100923,
+    "generatedAt": "2026-10-06T22:39:34.256Z",
+    "runId": "37538386768",
+    "indexUrls": 138743,
+    "catalogRecords": 106660,
     "sitemapMaxLastmod": "2026-10-02",
-    "pendingNew": 16841,
+    "pendingNew": 11133,
     "deferredChanged": 0,
     "deferredMissing": 0,
     "quarantined": 3,
-    "redirects": 18,
+    "redirects": 85,
     "sitemapFailures": 0,
-    "complete": true
+    "complete": true,
+    "changes": {
+      "removed": 8,
+      "moved": 80
+    }
   }
 }
