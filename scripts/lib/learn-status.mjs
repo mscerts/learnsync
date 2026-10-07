@@ -3,8 +3,14 @@
  * scripts/lib/status.mjs otherwise replaces wholesale. This helper lets each
  * script contribute only its own keys without clobbering the other's:
  *
- *   catalog script -> modules, removed, outOfScope, unitUrlsRefreshedAt, ...
- *   content script -> content { learningPaths, courses, ... }
+ *   catalog script -> modules, removed, outOfScope, unitUrlsRefreshedAt, ..., catalogChanges
+ *   content script -> content { learningPaths, courses, ... }, contentChanges
+ *
+ * `catalogChanges` / `contentChanges` are the change-file counters of each run
+ * ({ removed, moved, unverified, newRemoved, newMoved, resurrected, probed }, see
+ * learn-changes-run.mjs). They are separate objects, one per part, because `removed`
+ * already means "module tombstones" at the top level of the section and because each
+ * part replaces only its own key, so the two runs never overwrite each other's numbers.
  *
  * Each contribution also stamps `<part>GeneratedAt`. The section's `generatedAt`
  * (what consumers use to refuse stale data) is the OLDER of the two stamps, so a
@@ -33,6 +39,8 @@ const KEY_ORDER = [
   "unitUrlsCarriedForward",
   "unusedCategories",
   "content",
+  "catalogChanges",
+  "contentChanges",
   "catalogGeneratedAt",
   "contentGeneratedAt",
 ];

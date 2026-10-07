@@ -53,30 +53,97 @@ export function interpretProbe(requestedPath, { status, finalUrl, title }) {
   return { verdict: "ok", detail: "", redirectsTo: null };
 }
 
-/** One live probe with retries and backoff. Returns the interpretProbe() shape. */
-export async function probe(path, { retries = 5, timeoutMs = 20_000, userAgent = BROWSER_UA, fetchImpl = fetch } = {}) {
-  const url = `https://${LEARN_HOST}/en-us${path}/`;
+const REDIRECT_STATUSES = new Set([301, 302, 303, 307, 308]);
+
+/** One request (no redirect following) with retries and backoff; null when no usable response came back. */
+async function fetchHop(url, { retries, timeoutMs, userAgent, fetchImpl, sleepImpl }) {
   for (let attempt = 0; attempt < retries; attempt++) {
+    const last = attempt === retries - 1;
     try {
       const res = await fetchImpl(url, {
-        redirect: "follow",
+        redirect: "manual",
         signal: AbortSignal.timeout(timeoutMs),
         headers: { "User-Agent": userAgent, Accept: "text/html" },
       });
       if (res.status === 429 || res.status >= 500) {
         res.body?.cancel?.().catch(() => {});
         const retryAfter = Number(res.headers.get("retry-after")) || 0;
-        await sleep(Math.max(retryAfter * 1000, 3000 * (attempt + 1)));
+        if (!last) await sleepImpl(Math.max(retryAfter * 1000, 3000 * (attempt + 1)));
         continue;
       }
-      const text = res.status === 200 ? await res.text() : "";
-      const title = text.match(/<title>([^<]*)<\/title>/i)?.[1] ?? "";
-      return interpretProbe(path, { status: res.status, finalUrl: res.url, title });
+      const location = res.headers.get("location");
+      let title = "";
+      if (res.status === 200) {
+        const text = await res.text();
+        title = text.match(/<title>([^<]*)<\/title>/i)?.[1] ?? "";
+      } else {
+        res.body?.cancel?.().catch(() => {});
+      }
+      return { status: res.status, location, title };
     } catch {
-      await sleep(1500 * (attempt + 1));
+      if (!last) await sleepImpl(1500 * (attempt + 1));
     }
   }
-  return { verdict: "unknown", detail: "no response after retries", redirectsTo: null };
+  return null;
+}
+
+/**
+ * Raw live probe: the HTTP facts about one page, with no interpretation. Redirects
+ * are followed by hand so the status of the FIRST hop stays visible (the change
+ * files record it). Same headers, retries, backoff and Retry-After handling as
+ * probe(). NEVER throws: a network error, a timeout, 429/5xx after every retry and
+ * a redirect loop all come back as `status: null` plus an `error` text, which
+ * every caller must read as "unknown", never as "gone".
+ *
+ * Returns { status, firstStatus, finalUrl, title, hops, offsite, error }
+ *   status       status of the final response (null = no usable response); for an
+ *                off-site hop, the status of that redirect
+ *   firstStatus  status of the first response (301/302/... when the URL redirects)
+ *   finalUrl     where the chain ended (off-site: the first foreign URL)
+ *   title        <title> of a final HTTP 200 page, else ""
+ *   hops         [{ status, location }] followed redirects
+ *   offsite      true when the chain left learn.microsoft.com (that URL is not requested)
+ */
+export async function rawProbe(
+  path,
+  { retries = 5, timeoutMs = 20_000, userAgent = BROWSER_UA, fetchImpl = fetch, sleepImpl = sleep, maxHops = 8 } = {}
+) {
+  const failed = (error, firstStatus, finalUrl, hops) => ({ status: null, firstStatus, finalUrl, title: "", hops, offsite: false, error });
+  let current = `https://${LEARN_HOST}/en-us${path === "/" ? "" : path}/`;
+  let firstStatus = null;
+  const hops = [];
+  try {
+    for (let hop = 0; hop <= maxHops; hop++) {
+      const res = await fetchHop(current, { retries, timeoutMs, userAgent, fetchImpl, sleepImpl });
+      if (!res) return failed("no response after retries", firstStatus, hop === 0 ? null : current, hops);
+      if (hop === 0) firstStatus = res.status;
+      if (REDIRECT_STATUSES.has(res.status) && res.location) {
+        let next;
+        try {
+          next = new URL(res.location, current);
+        } catch {
+          return failed(`bad Location header: ${res.location}`, firstStatus, current, hops);
+        }
+        hops.push({ status: res.status, location: next.href });
+        if (next.hostname.toLowerCase() !== LEARN_HOST) {
+          return { status: res.status, firstStatus, finalUrl: next.href, title: "", hops, offsite: true, error: null };
+        }
+        current = next.href;
+        continue;
+      }
+      return { status: res.status, firstStatus, finalUrl: current, title: res.title, hops, offsite: false, error: null };
+    }
+    return failed("too many redirects", firstStatus, current, hops);
+  } catch (err) {
+    return failed(String(err?.message || err), firstStatus, null, hops);
+  }
+}
+
+/** One live probe with retries and backoff. Returns the interpretProbe() shape. */
+export async function probe(path, options = {}) {
+  const raw = await rawProbe(path, options);
+  if (raw.status == null) return { verdict: "unknown", detail: "no response after retries", redirectsTo: null };
+  return interpretProbe(path, raw);
 }
 
 /** Probe many paths politely (low concurrency, delay between requests). */

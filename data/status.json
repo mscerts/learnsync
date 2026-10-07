@@ -1,42 +1,64 @@
 {
   "schemaVersion": 1,
   "learn": {
-    "generatedAt": "2026-10-05T19:04:00.768Z",
-    "runId": "37360650403",
-    "modules": 3367,
+    "generatedAt": "2026-10-06T22:06:45.322Z",
+    "runId": "37538372947",
+    "modules": 3370,
     "removed": 5,
     "outOfScope": 66,
-    "totalApiModules": 3433,
+    "totalApiModules": 3436,
     "unitUrlsRefreshedAt": "2026-10-05",
-    "unitHierarchyRequests": 3367,
+    "unitHierarchyRequests": 0,
     "unitHierarchyFailures": 0,
     "unitUrlsNull": 0,
     "unitHierarchyNotFound": 0,
     "unitUrlsCarriedForward": 0,
     "unusedCategories": [],
     "content": {
-      "learningPaths": 820,
+      "learningPaths": 824,
       "courses": 139,
       "certifications": 152,
       "exams": 145,
       "appliedSkills": 37,
       "studyGuides": 66
     },
-    "catalogGeneratedAt": "2026-10-05T19:04:00.768Z",
-    "contentGeneratedAt": "2026-10-05T19:15:57.783Z"
+    "catalogChanges": {
+      "removed": 109,
+      "moved": 10,
+      "unverified": 0,
+      "newRemoved": 0,
+      "newMoved": 0,
+      "resurrected": 0,
+      "probed": 0
+    },
+    "contentChanges": {
+      "removed": 109,
+      "moved": 10,
+      "unverified": 0,
+      "newRemoved": 0,
+      "newMoved": 0,
+      "resurrected": 0,
+      "probed": 0
+    },
+    "catalogGeneratedAt": "2026-10-06T22:06:45.322Z",
+    "contentGeneratedAt": "2026-10-06T22:06:47.662Z"
   },
   "docs": {
-    "generatedAt": "2026-10-05T19:55:18.359Z",
-    "runId": "37362661084",
-    "indexUrls": 138709,
-    "catalogRecords": 100923,
+    "generatedAt": "2026-10-06T22:39:34.256Z",
+    "runId": "37538386768",
+    "indexUrls": 138743,
+    "catalogRecords": 106660,
     "sitemapMaxLastmod": "2026-10-02",
-    "pendingNew": 16841,
+    "pendingNew": 11133,
     "deferredChanged": 0,
     "deferredMissing": 0,
     "quarantined": 3,
-    "redirects": 18,
+    "redirects": 85,
     "sitemapFailures": 0,
-    "complete": true
+    "complete": true,
+    "changes": {
+      "removed": 8,
+      "moved": 80
+    }
   }
 }

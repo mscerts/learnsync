@@ -16,6 +16,8 @@
     "sync:learn": "node scripts/learn-catalog-sync.mjs && node scripts/learn-content-sync.mjs",
     "sync:docs": "node scripts/docs-catalog-sync.mjs",
     "sync": "npm run sync:learn && npm run sync:docs",
+    "check:changes": "node scripts/check-changes.mjs",
+    "seed:changes": "node scripts/seed-changes.mjs",
     "test": "node --test"
   }
 }

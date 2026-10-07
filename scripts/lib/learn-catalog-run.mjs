@@ -11,8 +11,14 @@
  *   2. classify, build records, run the failsafes     (abort BEFORE the expensive part)
  *   3. plan which modules need their unit URLs again  (incremental, keyed on unitSig)
  *   4. hierarchy requests for those modules           (polite pool, circuit breaker)
- *   5. tombstones, assemble, self-validate, write if changed
- *   6. heartbeat: data/status.json is updated even when the data file was unchanged
+ *   5. tombstones, assemble, self-validate
+ *   6. change files: candidates from previous vs. new catalog (diffModules, diffUnits), resurrection
+ *      from the new data, live probe of what is still unverified    (nothing written yet)
+ *   7. write the change files, then the catalog if changed, then the heartbeat: data/status.json
+ *      is updated even when the data file was unchanged
+ *
+ * The previous change files are read in step 0 (before the downloads) so a corrupt file fails the
+ * run early, and a run that a failsafe aborts (steps 2-5) writes none of the files.
  */
 
 import { join } from "node:path";
@@ -43,7 +49,9 @@ import {
   recoveredEmptyCategories,
   shouldAbortHierarchyEarly,
 } from "./learn-failsafe.mjs";
+import { diffModules, diffUnits, writeChanges } from "./changes.mjs";
 import { classifyHierarchy, hierarchyUrl, planUnitRefresh, resolveUnitUrls } from "./learn-hierarchy.mjs";
+import { openChanges, refreshChanges } from "./learn-changes-run.mjs";
 import { DEFAULT_DELAY_MS, fetchJson, request, runPool } from "./learn-http.mjs";
 import { dateOfTimestamp, isFullRefreshDue, numberFromEnv, utcDate } from "./learn-helpers.mjs";
 import { FailsafeAbort, readJsonIfExists, retryLogger, writeJsonAtomic } from "./learn-io.mjs";
@@ -71,10 +79,13 @@ export async function runCatalogSync(options = {}) {
     },
     limits: limitOverrides = {},
     httpOptions = {},
+    // change files: { probe, delayMs, workers, limits } (probe = async (path) => raw probe result; default live-probe.mjs rawProbe)
+    changes: changesOptions = {},
   } = options;
   if (!dataDir) throw new Error("runCatalogSync: dataDir is required");
 
   const outputFile = join(dataDir, "learn-catalog.json");
+  const contentFile = join(dataDir, "learn-content.json");
   const statusFile = join(dataDir, "status.json");
   const today = utcDate(now);
   const dryRun = env.DRY_RUN === "1";
@@ -90,6 +101,9 @@ export async function runCatalogSync(options = {}) {
   const previous = readJsonIfExists(outputFile, warn);
   const previousModules = Array.isArray(previous?.modules) ? previous.modules : [];
   const previousByUid = new Map(previousModules.map((m) => [m.uid, m]));
+  // 0. the previous change files: a corrupt one (or a typo in CHANGES_*) fails the run here, before anything is downloaded or written
+  const changeState = openChanges({ dataDir, env, warn });
+  const changeLimits = { ...changeState.limits, ...(changesOptions.limits ?? {}) };
 
   // 1. downloads ------------------------------------------------------------------
   log("Fetching product taxonomy...");
@@ -227,17 +241,44 @@ export async function runCatalogSync(options = {}) {
   if (renamed.length) warn(`  ${renamed.length} modules changed their url slug (same uid), their old path is now in neither set: ${renamed.slice(0, 5).map((r) => `${r.from} -> ${r.to}`).join("; ")}${renamed.length > 5 ? "; ..." : ""}`);
   if (collisions.length) warn(`  ${collisions.length} tombstone paths are served by a different live module now: ${collisions.slice(0, 5).map((c) => c.path).join(", ")}`);
 
-  // 6. write + heartbeat -----------------------------------------------------------
+  // 6. change files ------------------------------------------------------------------
+  // Candidates are diffs against the previous file exactly as it was read above (never against this run's
+  // carried-forward values): a module whose hierarchy failed this run keeps its old unitUrls or gets null,
+  // and diffUnits() only compares two trustworthy lists, so a failed request can never look like a removal.
+  // The other half of the cache (learn-content.json) comes from disk: it decides resurrection of content kinds.
+  const changeRun = await refreshChanges({
+    previous: changeState.previous,
+    candidates: [...diffModules(previous, output), ...diffUnits(previous, output)],
+    catalog: output,
+    content: readJsonIfExists(contentFile, warn),
+    now,
+    limits: changeLimits,
+    probe: changesOptions.probe,
+    fetchImpl,
+    sleepImpl,
+    delayMs: changesOptions.delayMs,
+    workers: changesOptions.workers,
+    label: "catalog",
+    log,
+    warn,
+  });
+
+  // 7. write + heartbeat -----------------------------------------------------------
   const unchanged = sameExceptTimestamp(previous, output);
   let wrote = false;
   if (dryRun) {
-    log("DRY_RUN=1: not writing the data file or status.json");
-  } else if (unchanged) {
-    log(`No content changes vs. ${outputFile} -- skipping write (only lastChecked would differ).`);
+    log("DRY_RUN=1: not writing the data file, the change files or status.json");
   } else {
-    writeJsonAtomic(outputFile, output);
-    wrote = true;
-    log(`Wrote ${modules.length} modules to ${outputFile}`);
+    // change files first: a crash between the two writes then re-derives the same candidates from the old
+    // catalog next run (applying them again is a no-op), instead of losing the diff for good
+    writeChanges(dataDir, changeRun.changes);
+    if (unchanged) {
+      log(`No content changes vs. ${outputFile} -- skipping write (only lastChecked would differ).`);
+    } else {
+      writeJsonAtomic(outputFile, output);
+      wrote = true;
+      log(`Wrote ${modules.length} modules to ${outputFile}`);
+    }
   }
 
   const nullUnitUrls = modules.filter((m) => m.unitUrls === null).length;
@@ -253,6 +294,7 @@ export async function runCatalogSync(options = {}) {
     unitHierarchyNotFound: modules.filter((m) => m.hierarchyNotFound).length,
     unitUrlsCarriedForward: unitStats.carriedForward,
     unusedCategories: built.stats.unusedCategoryIds,
+    catalogChanges: changeRun.counters,
   };
   if (!dryRun) contributeLearnStatus(statusFile, "catalog", status, { now, env });
 
@@ -272,5 +314,5 @@ export async function runCatalogSync(options = {}) {
   }
   if (built.stats.unresolvedProducts) warn(`  ${built.stats.unresolvedProducts} product ids could not be resolved to a category`);
 
-  return { wrote, unchanged, dryRun, output, status, built, plan, unitStats, removals, fullRefresh };
+  return { wrote, unchanged, dryRun, output, status, built, plan, unitStats, removals, fullRefresh, changes: changeRun.changes, changesStats: changeRun.stats };
 }

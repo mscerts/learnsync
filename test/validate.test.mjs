@@ -1,11 +1,12 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { mkdtempSync, writeFileSync } from "node:fs";
+import { mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { loadData, validateUrls, classifyPath, scopeFor, suggestUnit, freshness } from "../scripts/lib/validate.mjs";
+import { loadData, validateUrls, classifyPath, scopeFor, suggestUnit, freshness, dropOverriddenChange, loadChangeLedger, ledgerStamps } from "../scripts/lib/validate.mjs";
+import { emptyChanges, writeChanges } from "../scripts/lib/changes.mjs";
 import { interpretProbe, applyProbe, liveLayer, probeMany } from "../scripts/lib/live-probe.mjs";
 import { parseArgs } from "../scripts/validate-urls.mjs";
 
@@ -312,4 +313,268 @@ test("CLI: argument parsing and a cache-only run", () => {
   assert.deepEqual(out.summary.byVerdict, { broken: 1, valid: 1 });
   assert.equal(out.probed, 0);
   assert.equal(out.results[0].suggestion, "https://learn.microsoft.com/training/modules/foundry-sdk/06-exercise");
+  assert.equal("change" in out.results[0], false); // no change files in this fixture: no enrichment
+});
+
+// ---------------------------------------------------------------------------
+// enrichment from the change files (data/changes/removed.json and moved.json)
+// ---------------------------------------------------------------------------
+
+const STAMP = "2026-10-05T07:30:00.000Z";
+const L = (path, over = {}) => ({
+  path,
+  kind: "module",
+  family: "learn",
+  outcome: "gone",
+  to: null,
+  title: null,
+  parent: null,
+  firstSeen: "2026-09-21",
+  lastVerified: "2026-10-05",
+  evidence: "tombstone",
+  status: 404,
+  ...over,
+});
+
+/** Writes data/changes/ into `dir` (returned). */
+function withChanges(dir, { removed = [], moved = [] } = {}) {
+  const changes = emptyChanges();
+  for (const [file, entries] of [["removed", removed], ["moved", moved]]) {
+    changes[file].generatedAt = STAMP;
+    changes[file].sources = { learn: STAMP, docs: "2026-10-05T08:30:00.000Z" };
+    changes[file].entries = entries;
+  }
+  writeChanges(dir, changes);
+  return dir;
+}
+
+const LEDGER = {
+  removed: [
+    L("/training/modules/gone", { outcome: "landing", to: "/training/paths/where-it-went", title: "Gone", status: 301 }),
+    L("/training/modules/never-existed/1-x", { kind: "unit", parent: "/training/modules/never-existed", outcome: "unverified", lastVerified: null, to: "/training/paths/not-trusted", evidence: "unit-diff", status: null }),
+    // stale records for links the cache says are fine or cannot judge: never attached
+    L("/training/saas/some-module"),
+    L("/training/modules/nounits/1-x", { kind: "unit", parent: "/training/modules/nounits", evidence: "unit-diff" }),
+  ],
+  moved: [
+    L("/training/modules/foundry-sdk/9-old-name", { kind: "unit", parent: "/training/modules/foundry-sdk", outcome: "moved", to: "/training/modules/foundry-sdk/06-exercise", evidence: "unit-diff", status: 301 }),
+    L("/training/modules/foundry-sdk/6-exercise", { kind: "unit", parent: "/training/modules/foundry-sdk", outcome: "moved", to: "/training/modules/foundry-sdk/01-introduction", evidence: "unit-diff", status: 301 }),
+    L("/azure/virtual-machines/sizes", { kind: "docs", family: "docs", outcome: "moved", to: "/azure/virtual-machines/sizes/overview", evidence: "docs-redirect", status: 301 }),
+    L("/azure/old-offsite", { kind: "docs", family: "docs", outcome: "moved", to: null, evidence: "docs-redirect", status: 301 }),
+  ],
+};
+const BASE = (p) => `https://learn.microsoft.com${p}`;
+
+test("enrichment: a broken or moved verdict carries what the change files recorded", () => {
+  const data = loadData(withChanges(fixture(), LEDGER));
+  assert.equal(data.changes.available, true);
+  const v = (p) => check(data, BASE(p));
+
+  // a removed module: the landing page fills redirectsTo (where Learn sends visitors), never the suggestion
+  const gone = v("/training/modules/gone");
+  assert.equal(gone.verdict, "broken");
+  assert.equal(gone.redirectsTo, "/training/paths/where-it-went");
+  assert.equal(gone.suggestion, null);
+  assert.equal(gone.change.status, "removed");
+  assert.equal(gone.change.outcome, "landing");
+  assert.equal(gone.change.to, "/training/paths/where-it-went");
+  assert.equal(gone.change.via, "exact");
+  assert.equal(gone.change.firstSeen, "2026-09-21");
+  assert.equal(gone.change.lastVerified, "2026-10-05");
+  assert.equal(gone.change.confidence, "high");
+  assert.equal(gone.change.title, "Gone");
+  assert.equal(gone.change.evidence, "tombstone");
+  assert.equal(gone.change.httpStatus, 301);
+  assert.deepEqual(gone.change.chain, ["/training/modules/gone"]);
+
+  // a unit of that module is covered by the module's entry (no destination is inherited for a removal)
+  const unit = v("/training/modules/gone/3-exercise");
+  assert.equal(unit.verdict, "broken");
+  assert.equal(unit.change.via, "ancestor");
+  assert.equal(unit.change.matched, "/training/modules/gone");
+  assert.equal(unit.redirectsTo, null);
+
+  // a moved unit whose verdict has no suggestion gets the ledger's destination
+  const renamed = v("/training/modules/foundry-sdk/9-old-name");
+  assert.equal(renamed.verdict, "broken");
+  assert.equal(renamed.change.status, "moved");
+  assert.equal(renamed.redirectsTo, "/training/modules/foundry-sdk/06-exercise");
+  assert.equal(renamed.suggestion, "https://learn.microsoft.com/training/modules/foundry-sdk/06-exercise");
+
+  // ... but a suggestion the validator already made is never replaced
+  const dead = v("/training/modules/foundry-sdk/6-exercise");
+  assert.equal(dead.suggestion, "https://learn.microsoft.com/training/modules/foundry-sdk/06-exercise");
+  assert.equal(dead.change.to, "/training/modules/foundry-sdk/01-introduction");
+
+  // an unverified record is low confidence: attached, but it fills nothing
+  const unsure = v("/training/modules/never-existed/1-x");
+  assert.equal(unsure.verdict, "broken");
+  assert.equal(unsure.change.confidence, "low");
+  assert.equal(unsure.change.outcome, "unverified");
+  assert.equal(unsure.redirectsTo, null);
+  assert.equal(unsure.suggestion, null);
+
+  // moved verdicts that already name their destination keep it
+  const docs = v("/azure/virtual-machines/sizes");
+  assert.equal(docs.verdict, "moved");
+  assert.equal(docs.redirectsTo, "/azure/virtual-machines/sizes/overview");
+  assert.equal(docs.suggestion, "https://learn.microsoft.com/azure/virtual-machines/sizes/overview");
+  assert.equal(docs.change.status, "moved");
+  const offsite = v("/azure/old-offsite");
+  assert.equal(offsite.verdict, "moved");
+  assert.equal(offsite.redirectsTo, null);
+  assert.equal(offsite.suggestion, null);
+  assert.equal(offsite.change.to, null);
+
+  // valid and unverifiable verdicts are left alone even when a (stale) record exists
+  assert.equal(v("/training/saas/some-module").verdict, "valid");
+  assert.equal("change" in v("/training/saas/some-module"), false);
+  assert.equal(v("/training/modules/nounits/1-x").verdict, "unverifiable");
+  assert.equal("change" in v("/training/modules/nounits/1-x"), false);
+
+  // a broken link nobody recorded has no change
+  assert.equal("change" in v("/training/modules/another-missing"), false);
+});
+
+test("enrichment never changes a verdict rule or an existing field", () => {
+  const dir = fixture();
+  const urls = [
+    "/training/modules/foundry-sdk",
+    "/training/saas/some-module",
+    "/training/modules/foundry-sdk/06-exercise",
+    "/training/modules/foundry-sdk/6-exercise",
+    "/training/modules/foundry-sdk/9-old-name",
+    "/training/modules/gone",
+    "/training/modules/gone/3-exercise",
+    "/training/modules/nounits/1-x",
+    "/training/modules/never-existed/1-x",
+    "/training/modules/notserved",
+    "/training/paths/nope",
+    "/training/courses/az-204t00",
+    "/credentials/certifications/exams/zz-999",
+    "/azure/virtual-machines/sizes",
+    "/azure/old-offsite",
+    "/azure/dead-page",
+    "/azure/never-published",
+    "/shows/x",
+  ].map(BASE);
+  const before = validateUrls(urls, loadData(dir));
+  withChanges(dir, LEDGER);
+  const after = validateUrls(urls, loadData(dir));
+  assert.equal(after.results.length, before.results.length);
+  after.results.forEach((res, i) => {
+    const base = before.results[i];
+    const { change, redirectsTo, suggestion, ...rest } = res;
+    const { redirectsTo: baseRedirect, suggestion: baseSuggestion, ...baseRest } = base;
+    assert.deepEqual(rest, baseRest, `${res.url}: verdict, reason, evidence, confidence, kind and path are unchanged`);
+    if (baseRedirect !== null) assert.equal(redirectsTo, baseRedirect, res.url);
+    if (baseSuggestion !== null) assert.equal(suggestion, baseSuggestion, res.url);
+    if (change === undefined) {
+      assert.equal(redirectsTo, baseRedirect, res.url);
+      assert.equal(suggestion, baseSuggestion, res.url);
+    }
+  });
+  assert.deepEqual(after.summary, before.summary);
+  assert.ok(after.results.some((r) => r.change), "the fixture ledger does enrich some results");
+});
+
+test("the change files are optional: missing, empty and unreadable files mean no enrichment, never an error", () => {
+  const missing = loadData(fixture());
+  assert.equal(missing.changes.available, false);
+  assert.deepEqual(missing.changes.missingFiles, ["removed.json", "moved.json"]);
+  assert.equal(missing.changes.error, null);
+  assert.equal("change" in check(missing, BASE("/training/modules/gone")), false);
+  assert.equal(missing.missing.some((name) => name.includes("changes")), false, "data.missing keeps meaning the cache files");
+  assert.deepEqual(freshness(missing, NOW).missingFiles, []);
+  assert.deepEqual(freshness(missing, NOW).changes, { available: false, missingFiles: ["removed.json", "moved.json"], error: null, generatedAt: null, sources: { learn: null, docs: null } });
+
+  const empty = loadData(withChanges(fixture()));
+  assert.equal(empty.changes.available, true);
+  assert.equal("change" in check(empty, BASE("/training/modules/gone")), false);
+
+  for (const [body, pattern] of [
+    ["{ truncated", /not valid JSON/],
+    [JSON.stringify({ schemaVersion: 2, entries: [] }), /unsupported schemaVersion/],
+  ]) {
+    const dir = withChanges(fixture(), LEDGER);
+    writeFileSync(join(dir, "changes", "removed.json"), body);
+    const data = loadData(dir);
+    assert.equal(data.changes.available, false);
+    assert.match(data.changes.error, pattern);
+    assert.equal(check(data, BASE("/training/modules/gone")).verdict, "broken");
+    assert.equal("change" in check(data, BASE("/training/modules/gone")), false);
+    assert.match(freshness(data, NOW).changes.error, pattern);
+  }
+
+  // only one file present: that file still enriches
+  const half = withChanges(fixture(), LEDGER);
+  const warnings = [];
+  writeFileSync(join(half, "changes", "removed.json"), JSON.stringify({ schemaVersion: 1, entries: [{ path: "/training/modules/bad", kind: "nonsense" }] }));
+  const data = loadData(half, { warn: (line) => warnings.push(line) });
+  assert.equal(data.changes.available, true);
+  assert.equal(warnings.length, 1, "a malformed row is dropped with one warning");
+  assert.equal(check(data, BASE("/training/modules/foundry-sdk/9-old-name")).change.status, "moved");
+  assert.deepEqual(loadChangeLedger(half).missingFiles, []);
+});
+
+test("freshness.changes reports the files' write time and per-family refresh stamps (the older stamp wins)", () => {
+  const dir = withChanges(fixture(), LEDGER);
+  const f = freshness(loadData(dir), NOW).changes;
+  assert.equal(f.available, true);
+  assert.deepEqual(f.missingFiles, []);
+  assert.equal(f.error, null);
+  assert.equal(f.generatedAt, STAMP);
+  assert.deepEqual(f.sources, { learn: STAMP, docs: "2026-10-05T08:30:00.000Z" });
+  const moved = JSON.parse(readFileSync(join(dir, "changes", "moved.json"), "utf-8"));
+  moved.sources.learn = "2026-09-20T00:00:00.000Z";
+  moved.generatedAt = "2026-10-05T09:00:00.000Z";
+  writeFileSync(join(dir, "changes", "moved.json"), JSON.stringify(moved));
+  const g = ledgerStamps(loadChangeLedger(dir));
+  assert.equal(g.sources.learn, "2026-09-20T00:00:00.000Z");
+  assert.equal(g.generatedAt, "2026-10-05T09:00:00.000Z");
+  assert.equal(ledgerStamps(null), null);
+  assert.equal(freshness({ missing: [], status: null, learn: null }, NOW).changes, null);
+});
+
+test("dropOverriddenChange removes the record only from results a live check turned valid", async () => {
+  const data = loadData(withChanges(fixture(), LEDGER));
+  const results = validateUrls([BASE("/training/modules/gone"), BASE("/training/modules/foundry-sdk/9-old-name"), BASE("/training/modules/foundry-sdk")], data).results;
+  assert.ok(results[0].change && results[1].change);
+  const probeImpl = async (path) => (path === "/training/modules/gone" ? { verdict: "ok", detail: "", redirectsTo: null } : { verdict: "broken", detail: "HTTP 404", redirectsTo: null });
+  const live = await liveLayer(results, { confirmLive: true, probeImpl, delayMs: 0 });
+  assert.equal(live.results[0].verdict, "valid");
+  assert.ok(live.results[0].change, "the live layer itself keeps the record");
+  const cleaned = dropOverriddenChange(live.results);
+  assert.equal("change" in cleaned[0], false);
+  assert.equal(cleaned[0].verdict, "valid");
+  assert.equal(cleaned[0].cacheVerdict, "broken");
+  assert.equal(cleaned[1].change.status, "moved");
+  assert.equal(cleaned[1].verdict, "broken");
+  assert.equal(cleaned[2], live.results[2]);
+  assert.equal(live.results[0] === cleaned[0], false);
+  assert.ok(live.results[0].change, "the input is not mutated");
+});
+
+test("validate-urls CLI prints the change record next to the verdict", () => {
+  const dir = withChanges(fixture(), LEDGER);
+  const input = join(dir, "in.json");
+  writeFileSync(input, JSON.stringify([BASE("/training/modules/foundry-sdk/9-old-name"), BASE("/training/modules/foundry-sdk/06-exercise")]));
+  const script = fileURLToPath(new URL("../scripts/validate-urls.mjs", import.meta.url));
+  const run = spawnSync(process.execPath, [script, "--data", dir, "--input", input], { encoding: "utf-8" });
+  assert.equal(run.status, 0, run.stderr);
+  const out = JSON.parse(run.stdout);
+  assert.equal(out.results[0].change.status, "moved");
+  assert.equal(out.results[0].suggestion, "https://learn.microsoft.com/training/modules/foundry-sdk/06-exercise");
+  assert.equal(out.results[1].verdict, "valid");
+  assert.equal("change" in out.results[1], false);
+  assert.equal(out.freshness.changes.available, true);
+});
+
+test("validate.mjs and changes.mjs import each other safely, whichever loads first", () => {
+  for (const first of ["validate.mjs", "changes.mjs"]) {
+    const url = new URL(`../scripts/lib/${first}`, import.meta.url).href;
+    const code = `const m = await import(${JSON.stringify(url)}); const v = await import(${JSON.stringify(new URL("../scripts/lib/validate.mjs", import.meta.url).href)}); const c = await import(${JSON.stringify(new URL("../scripts/lib/changes.mjs", import.meta.url).href)}); if (typeof v.validateUrls !== "function" || typeof c.lookupChange !== "function" || !m) process.exit(3);`;
+    const run = spawnSync(process.execPath, ["--input-type=module", "-e", code], { encoding: "utf-8" });
+    assert.equal(run.status, 0, `${first} first: ${run.stderr}`);
+  }
 });

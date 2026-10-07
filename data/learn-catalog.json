@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "lastChecked": "2026-10-05T19:04:00.768Z",
+  "lastChecked": "2026-10-06T21:27:41.036Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -54,8 +54,8 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3367,
-  "totalApiModules": 3433,
+  "totalModules": 3370,
+  "totalApiModules": 3436,
   "unitUrlsRefreshedAt": "2026-10-05",
   "modules": [
     {
@@ -8851,6 +8851,82 @@
       ],
       "lastModified": "2026-06-12T17:23:00+00:00",
       "unitSig": "5fa42e7ad467f730917be0e6a87f3c7ce0986a55"
+    },
+    {
+      "uid": "learn-bizapps.mpower-clinical-analytics-admin-configure-manage-users",
+      "title": "Configure and manage users in mPower Clinical Analytics",
+      "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-admin-configure-manage-users/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/mpower-clinical-analytics-admin-configure-manage-users",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "Review administrator settings",
+        "Manage user accounts",
+        "Upload users in bulk",
+        "Manage groups",
+        "Configure quality control algorithms",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/mpower-clinical-analytics-admin-configure-manage-users/1-introduction",
+        "/training/modules/mpower-clinical-analytics-admin-configure-manage-users/2-review-admin-settings",
+        "/training/modules/mpower-clinical-analytics-admin-configure-manage-users/3-manage-user-accounts",
+        "/training/modules/mpower-clinical-analytics-admin-configure-manage-users/4-upload-users-bulk",
+        "/training/modules/mpower-clinical-analytics-admin-configure-manage-users/5-manage-groups",
+        "/training/modules/mpower-clinical-analytics-admin-configure-manage-users/6-configure-quality-control-algorithms",
+        "/training/modules/mpower-clinical-analytics-admin-configure-manage-users/7-knowledge-check",
+        "/training/modules/mpower-clinical-analytics-admin-configure-manage-users/8-summary"
+      ],
+      "lastModified": "2026-10-06T17:07:00+00:00",
+      "unitSig": "76f443ba01926fb7c711d6d7e0d595faa25bdae3"
+    },
+    {
+      "uid": "learn-bizapps.mpower-clinical-analytics-admin-get-started",
+      "title": "Get started with mPower Clinical Analytics",
+      "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-admin-get-started/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/mpower-clinical-analytics-admin-get-started",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction to mPower Clinical Analytics",
+        "Sign in to mPower using SSO",
+        "Explore the mPower homepage",
+        "Access the Resource Center",
+        "Review browser compatibility",
+        "Manage your profile and saved content",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/mpower-clinical-analytics-admin-get-started/1-introduction-to-mpower-clinical-analytics",
+        "/training/modules/mpower-clinical-analytics-admin-get-started/2-sign-portal",
+        "/training/modules/mpower-clinical-analytics-admin-get-started/3-explore-home-page",
+        "/training/modules/mpower-clinical-analytics-admin-get-started/4-access-resource-center",
+        "/training/modules/mpower-clinical-analytics-admin-get-started/5-review-browser-compatibility",
+        "/training/modules/mpower-clinical-analytics-admin-get-started/6-manage-your-profile-saved-content",
+        "/training/modules/mpower-clinical-analytics-admin-get-started/7-knowledge-check",
+        "/training/modules/mpower-clinical-analytics-admin-get-started/8-summary"
+      ],
+      "lastModified": "2026-10-06T17:07:00+00:00",
+      "unitSig": "e19f98daa1582554f8416ca6e69a0e2cb5f2823a"
     },
     {
       "uid": "learn-bizapps.mpower-clinical-analytics-analyze-search-results",
@@ -55076,6 +55152,41 @@
       ],
       "lastModified": "2026-08-03T17:21:00+00:00",
       "unitSig": "fd4ff8c2cb72cf77fcf9a1523ae96c9e65d382c5"
+    },
+    {
+      "uid": "learn.devrel.certificate-autoenrollment",
+      "title": "Certificate enrollment and renewal",
+      "url": "https://learn.microsoft.com/training/modules/certificate-autoenrollment/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/certificate-autoenrollment",
+      "categories": [
+        "Windows Server"
+      ],
+      "products": [
+        "Windows Server"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Configure certificate enrollment",
+        "Diagnose certificate requests",
+        "Configure remote certificate enrollment",
+        "Configure network device registration authority",
+        "Manage certificate lifecycle",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/certificate-autoenrollment/1-introduction",
+        "/training/modules/certificate-autoenrollment/2-certificate-enrollment",
+        "/training/modules/certificate-autoenrollment/3-certificate-request-diagnostics",
+        "/training/modules/certificate-autoenrollment/4-remote-certificate-enrollment",
+        "/training/modules/certificate-autoenrollment/5-network-device-registration-authority",
+        "/training/modules/certificate-autoenrollment/6-certificate-lifecycle",
+        "/training/modules/certificate-autoenrollment/7-knowledge-check",
+        "/training/modules/certificate-autoenrollment/8-summary"
+      ],
+      "lastModified": "2026-10-06T07:20:00+00:00",
+      "unitSig": "1292520938bb55c61c80478f58b6c0e0ae773f2a"
     },
     {
       "uid": "learn.devrel.deploy-configure-internet-information-services",

@@ -14,11 +14,17 @@
  *                           refresh every 30 days)
  *   MAX_MODULE_DROP_PCT=5   abort if the in-scope module count drops more than this
  *   MAX_API_DROP_PCT=3      abort if the raw API module count drops more than this
- *   DRY_RUN=1               fetch and compute everything, write nothing
+ *   CHANGES_MAX_PROBES=300  live probes per run for the change files (removed/moved links)
+ *   CHANGES_REVERIFY_PER_RUN=100  of those, how many re-confirm the oldest recorded entries
+ *   DRY_RUN=1               fetch and compute everything (change file probes included), write nothing
  *
  * Data sources: https://learn.microsoft.com/api/catalog/ and
  *               https://learn.microsoft.com/api/hierarchy/modules/<uid>
- * Output: data/learn-catalog.json, plus the "learn" section of data/status.json
+ *               plus live probes of the pages that disappeared (change files only)
+ * Output: data/learn-catalog.json, data/changes/removed.json and moved.json (this sync detects
+ * the module and unit changes, the content sync the rest; both verify whatever is still
+ * unverified), plus the "learn" section of data/status.json. A failsafe abort or a corrupt
+ * change file writes nothing.
  *
  * All logic lives in scripts/lib/learn-*.mjs; this file only wires it to the
  * repository's data directory.

@@ -1,5 +1,413 @@
 [
   {
+    "from": "/azure/ai-services/anomaly-detector",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/faq",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/faq",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/app-testing/playwright-workspaces/how-to-playwright-workspaces-remote-mcp",
+    "to": "/azure/app-testing",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp",
+    "to": "/azure/app-testing",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/app-testing/playwright-workspaces/troubleshoot-remote-mcp-server",
+    "to": "/azure/app-testing",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/architecture/example-scenario/mainframe/avanade-amt-zos-migration",
+    "to": "/azure/architecture/example-scenario/mainframe/general-mainframe-refactor",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/architecture/example-scenario/mainframe/extend-mainframes-rest-apis",
+    "to": "/azure/api-management/api-management-key-concepts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/architecture/example-scenario/mainframe/refactor-adabas-aks",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/architecture/example-scenario/mainframe/rehost-adabas-software-ag",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/architecture/example-scenario/mainframe/unisys-clearpath-forward-mainframe-rehost",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/architecture/mainframe/virtualization-of-unisys-clearpath-forward-os-2200-enterprise-server-on-azure",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/azure-arc/vmware-vsphere/browse-and-enable-vcenter-resources-in-azure",
+    "to": "/azure/azure-arc/vmware-vsphere/enable-vcenter-resources-in-azure",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/azure-monitor/scom-manage-instance/migration-faq-scom-manage-instance",
+    "to": "/azure/azure-monitor/fundamentals/azure-monitor-operations-manager",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform",
+    "to": "/azure/architecture/browse",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/azure-billing-ad-tenant",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/cost-governance-with-kubecost",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/identity-and-access-management",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/landing-zone-accelerator",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/platform-automation-and-devops",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/resource-organization",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/scalability",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/landing-zone-accelerator",
+    "to": "/azure/virtual-machines/workloads/redhat/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/management-monitoring",
+    "to": "/azure/virtual-machines/workloads/redhat/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/network-topology-connectivity",
+    "to": "/azure/virtual-machines/workloads/redhat/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/resource-organization",
+    "to": "/azure/virtual-machines/workloads/redhat/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/identity-access-management",
+    "to": "/azure/architecture/reference-architectures/containers/aro/azure-redhat-openshift-financial-services-workloads",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/landing-zone-accelerator",
+    "to": "/azure/architecture/reference-architectures/containers/aro/azure-redhat-openshift-financial-services-workloads",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/operations",
+    "to": "/azure/architecture/reference-architectures/containers/aro/azure-redhat-openshift-financial-services-workloads",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/platform-automation-devops",
+    "to": "/azure/architecture/reference-architectures/containers/aro/azure-redhat-openshift-financial-services-workloads",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/resource-organization",
+    "to": "/azure/architecture/reference-architectures/containers/aro/azure-redhat-openshift-financial-services-workloads",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/security",
+    "to": "/azure/architecture/reference-architectures/containers/aro/azure-redhat-openshift-financial-services-workloads",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/azure-vmware-solution-network-basics",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/enterprise-scale-landing-zone",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-business-continuity-and-disaster-recovery",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-identity-and-access-management",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/introduction-virtual-wan-azure-vmware-solution",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/manage",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/migrate",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/network-design-guide-internet-outbound-connectivity",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/network-design-guide-intro",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/network-get-started",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/network-hub-spoke",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/plan",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/ready",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/strategy",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/virtual-network-connectivity",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cosmos-db/cassandra",
+    "to": "/azure/cosmos-db/cassandra/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cosmos-db/mongodb",
+    "to": "/azure/cosmos-db/mongodb/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cosmos-db/table",
+    "to": "/azure/cosmos-db/table/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
     "from": "/azure/databricks/agents/agent-memory/self-managed-memory",
     "to": "/azure/databricks/agents/agent-memory/managed-memory",
     "kind": "moved",
@@ -104,6 +512,38 @@
     "lastSeen": "2026-10-05"
   },
   {
+    "from": "/azure/databricks/oltp/projects/observability-capture",
+    "to": "/azure/databricks/oltp/projects/observability-telemetry-reference",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/databricks/oltp/projects/observability-dashboards",
+    "to": "/azure/databricks/oltp/projects/monitor",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/databricks/oltp/projects/observability-genie",
+    "to": "/azure/databricks/oltp/projects/lakebase-genie",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/databricks/oltp/projects/observability-quickstart",
+    "to": "/azure/databricks/oltp/projects/observability-telemetry-reference",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
     "from": "/azure/databricks/security/keys/cmk-managed-disks-azure",
     "to": "/azure/databricks/security/keys/cmk-managed-disks-azure/cmk-managed-disks-azure",
     "kind": "moved",
@@ -120,12 +560,28 @@
     "lastSeen": "2026-10-05"
   },
   {
+    "from": "/azure/databricks/structured-streaming/real-time",
+    "to": "/azure/databricks/structured-streaming/real-time/concepts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
     "from": "/azure/foundry/agents/how-to/deploy-hosted-voice-agent",
     "to": "/azure/foundry/how-to/voice-first-with-hosted-agent",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
     "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/azure/foundry/agents/how-to/voice-agent-twilio-phone",
+    "to": "/azure/foundry/agents/how-to/voice-agent-telephony-channels",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
   },
   {
     "from": "/azure/virtual-machines/hb-hc-known-issues",
@@ -136,11 +592,91 @@
     "lastSeen": "2026-10-05"
   },
   {
+    "from": "/entra/identity/hybrid/cloud-sync/how-to-ad-group-enforcement",
+    "to": "/entra/identity/hybrid/cloud-sync/how-to-active-directory-object-enforcement",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/entra/identity/hybrid/cloud-sync/how-to-attribute-mapping-entra-to-active-directory",
+    "to": "/entra/identity/hybrid/cloud-sync/how-to-configure-entra-to-active-directory",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/entra/identity/hybrid/cloud-sync/tutorial-group-provisioning",
+    "to": "/entra/identity/hybrid/cloud-sync/tutorial-users-groups-provisioning-walkthrough",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/fabric/governance",
+    "to": "/fabric/admin",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/intune/device-management/manage-endpoint-security-devices",
+    "to": "/intune/device-security/endpoint-security-devices",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
     "from": "/microsoft-365/admin/misc/feedback-code-conduct",
     "to": null,
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
     "lastSeen": "2026-10-05"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements",
+    "to": "/microsoft-365/copilot/microsoft-copilot-requirements",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements-data-compliance",
+    "to": "/microsoft-365/copilot/configure-secure-governed-data-foundation-microsoft-365-copilot",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements-rollout",
+    "to": "/microsoft-365/copilot/microsoft-copilot-requirements",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-requirements",
+    "to": "/microsoft-365/copilot/microsoft-copilot-requirements",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/power-platform/admin/apps-default-environment-routing",
+    "to": "/power-platform/admin/default-environment-routing-copilot-managed-runtime",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-06",
+    "lastSeen": "2026-10-06"
   }
 ]

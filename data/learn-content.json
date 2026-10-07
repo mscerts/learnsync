@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastChecked": "2026-10-05T19:15:57.783Z",
+  "lastChecked": "2026-10-06T21:27:43.965Z",
   "learningPaths": [
     {
       "uid": "learn-bizapps.accident-tracking-app",
@@ -747,6 +747,21 @@
         "/training/modules/choose-content-distribution-method",
         "/training/modules/create-dashboards-power-bi",
         "/training/modules/row-level-security-power-bi"
+      ]
+    },
+    {
+      "uid": "learn-bizapps.mpower-clinical-analytics-provider-workflow-foundations",
+      "title": "mPower Clinical Analytics provider workflow foundations",
+      "path": "/training/paths/mpower-clinical-analytics-provider-workflow-foundations",
+      "lastModified": "2026-10-06T17:07:00+00:00",
+      "modules": [
+        "/training/modules/mpower-clinical-analytics-provider-get-started",
+        "/training/modules/mpower-clinical-analytics-run-basic-clinical-search",
+        "/training/modules/mpower-clinical-analytics-refine-save-searches",
+        "/training/modules/mpower-clinical-analytics-perform-advanced-searches",
+        "/training/modules/mpower-clinical-analytics-analyze-search-results",
+        "/training/modules/mpower-clinical-analytics-use-standard-dashboards",
+        "/training/modules/mpower-clinical-analytics-review-quality-follow-up-data"
       ]
     },
     {
@@ -6578,6 +6593,22 @@
       ]
     },
     {
+      "uid": "learn.wwl.design-develop-azure-cosmos-db-database-solutions",
+      "title": "Design and develop Azure Cosmos DB database solutions",
+      "path": "/training/paths/design-develop-azure-cosmos-db-database-solutions",
+      "lastModified": "2026-10-06T07:20:00+00:00",
+      "modules": [
+        "/training/modules/explore-azure-cosmos-db-nosql",
+        "/training/modules/configure-azure-cosmos-db-resources-throughput-consistency",
+        "/training/modules/connect-azure-cosmos-db-nosql-sdk",
+        "/training/modules/implement-azure-cosmos-db-nosql-operations",
+        "/training/modules/query-azure-cosmos-db-nosql",
+        "/training/modules/design-data-modeling-partitioning-azure-cosmos-db-nosql",
+        "/training/modules/process-azure-cosmos-db-nosql-change-feed",
+        "/training/modules/implement-ai-assisted-development-tools-azure-cosmos-db"
+      ]
+    },
+    {
       "uid": "learn.wwl.design-develop-database-solutions",
       "title": "Design and develop database solutions",
       "path": "/training/paths/design-develop-database-solutions",
@@ -7474,6 +7505,19 @@
       ]
     },
     {
+      "uid": "learn.wwl.implement-ai-analytics-capabilities-azure-cosmos-db",
+      "title": "Implement AI and analytics capabilities in Azure Cosmos DB",
+      "path": "/training/paths/implement-ai-analytics-capabilities-azure-cosmos-db",
+      "lastModified": "2026-10-06T07:20:00+00:00",
+      "modules": [
+        "/training/modules/implement-full-text-vector-search-azure-cosmos-db-nosql",
+        "/training/modules/implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql",
+        "/training/modules/build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql",
+        "/training/modules/design-implement-agent-memory-azure-cosmos-db",
+        "/training/modules/implement-operational-analytics-fabric-azure-cosmos-db"
+      ]
+    },
+    {
       "uid": "learn.wwl.implement-ai-capabilities-database-solutions",
       "title": "Implement AI capabilities in database solutions",
       "path": "/training/paths/implement-ai-capabilities-database-solutions",
@@ -7940,10 +7984,13 @@
       "uid": "learn.wwl.integrate-agents-enterprise-systems-github-copilot-copilot-studio",
       "title": "Integrate agents with enterprise systems in Microsoft Copilot Studio (GitHub Copilot)",
       "path": "/training/paths/integrate-agents-enterprise-systems-github-copilot-copilot-studio",
-      "lastModified": "2026-09-30T05:06:00+00:00",
+      "lastModified": "2026-10-05T17:07:00+00:00",
       "modules": [
         "/training/modules/design-integration-strategies-agents-github-copilot",
-        "/training/modules/ground-agents-enterprise-knowledge-github-copilot"
+        "/training/modules/ground-agents-enterprise-knowledge-github-copilot",
+        "/training/modules/extend-agents-tools-github-copilot",
+        "/training/modules/connect-agents-mcp-servers-github-copilot",
+        "/training/modules/connect-agents-microsoft-iq-github-copilot"
       ]
     },
     {
@@ -9848,6 +9895,21 @@
         "/training/modules/security-virtual-networks",
         "/training/modules/security-private-access-azure-resources",
         "/training/modules/security-public-access-azure-resources"
+      ]
+    },
+    {
+      "uid": "learn.wwl.secure-optimize-deploy-azure-cosmos-db-solutions",
+      "title": "Secure, optimize, and deploy Azure Cosmos DB solutions",
+      "path": "/training/paths/secure-optimize-deploy-azure-cosmos-db-solutions",
+      "lastModified": "2026-10-06T07:20:00+00:00",
+      "modules": [
+        "/training/modules/secure-azure-cosmos-db-nosql",
+        "/training/modules/configure-backup-restore-azure-cosmos-db-nosql",
+        "/training/modules/design-multi-region-availability-failover-azure-cosmos-db-nosql",
+        "/training/modules/design-optimize-indexing-strategy-azure-cosmos-db-nosql",
+        "/training/modules/analyze-tune-query-performance-azure-cosmos-db-nosql",
+        "/training/modules/monitor-troubleshoot-azure-cosmos-db-nosql",
+        "/training/modules/manage-azure-cosmos-db-fleets"
       ]
     },
     {
@@ -14055,267 +14117,267 @@
   "studyGuides": [
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0100",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0200",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0302",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0501",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0502",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1002",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1003",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1004",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1008",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2001",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2003",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2006",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2007",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2014",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2015",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3001",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3008",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3019",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3020",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3021",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3022",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3030",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3031",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3032",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3034",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5002",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5003",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5004",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5007",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5009",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5010",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6000",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6006",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6500",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6501",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-7001",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-7002",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ab-100",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ab-400",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ab-650",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-500",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-900",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-901",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-220",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-305",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-400",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-600",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-720",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-800",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-801",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-802",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-210",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-220",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-230",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-240",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-335",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-700",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-102",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-220",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-500",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-720",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-740",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-200",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-400",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-600",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/sc-100",
-      "checked": "2026-10-05"
+      "checked": "2026-10-06"
     }
   ],
   "unverifiedStudyGuides": [],
