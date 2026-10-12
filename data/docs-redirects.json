@@ -5,7 +5,55 @@
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/anomaly-detector-container-configuration",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/anomaly-detector-container-configuration",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/anomaly-detector-container-howto",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/anomaly-detector-container-howto",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/concepts/anomaly-detection-best-practices",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/concepts/anomaly-detection-best-practices",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/concepts/best-practices-multivariate",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/concepts/best-practices-multivariate",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/concepts/multivariate-architecture",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/concepts/multivariate-architecture",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/concepts/troubleshoot",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/concepts/troubleshoot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/ai-services/anomaly-detector/faq",
@@ -13,7 +61,135 @@
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/how-to/batch-inference",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/how-to/batch-inference",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/how-to/create-resource",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/how-to/create-resource",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-container-instances",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-container-instances",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-iot-edge",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/how-to/deploy-anomaly-detection-on-iot-edge",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/how-to/identify-anomalies",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/how-to/identify-anomalies",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/how-to/prepare-data",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/how-to/prepare-data",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/how-to/streaming-inference",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/how-to/streaming-inference",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/how-to/train-model",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/how-to/train-model",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/overview",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/overview",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/quickstarts/client-libraries",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/quickstarts/client-libraries",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/quickstarts/client-libraries-multivariate",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/quickstarts/client-libraries-multivariate",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/regions",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/regions",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/service-limits",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/service-limits",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/tutorials/azure-data-explorer",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/tutorials/azure-data-explorer",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/tutorials/batch-anomaly-detection-powerbi",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/tutorials/batch-anomaly-detection-powerbi",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/ai-services/anomaly-detector/whats-new",
+    "to": "/previous-versions/azure/ai-services/anomaly-detector/whats-new",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/app-testing/playwright-workspaces/how-to-playwright-workspaces-remote-mcp",
@@ -21,7 +197,7 @@
     "kind": "landing",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp",
@@ -29,7 +205,7 @@
     "kind": "landing",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/app-testing/playwright-workspaces/troubleshoot-remote-mcp-server",
@@ -37,7 +213,15 @@
     "kind": "landing",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/architecture/best-practices/data-partitioning",
+    "to": "/azure/well-architected/design-guides/partition-data",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/architecture/example-scenario/mainframe/avanade-amt-zos-migration",
@@ -45,7 +229,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/architecture/example-scenario/mainframe/extend-mainframes-rest-apis",
@@ -53,7 +237,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/architecture/example-scenario/mainframe/refactor-adabas-aks",
@@ -61,7 +245,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/architecture/example-scenario/mainframe/rehost-adabas-software-ag",
@@ -69,7 +253,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/architecture/example-scenario/mainframe/unisys-clearpath-forward-mainframe-rehost",
@@ -77,7 +261,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/architecture/mainframe/virtualization-of-unisys-clearpath-forward-os-2200-enterprise-server-on-azure",
@@ -85,7 +269,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/azure-arc/vmware-vsphere/browse-and-enable-vcenter-resources-in-azure",
@@ -93,7 +277,23 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/azure-maps/how-to-use-services-module",
+    "to": "/azure/azure-maps/how-to-dev-guide-js-sdk",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/azure-monitor/scom-manage-instance/migrate-to-azure-monitor",
+    "to": "/azure/azure-monitor/fundamentals/azure-monitor-operations-manager",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/azure-monitor/scom-manage-instance/migration-faq-scom-manage-instance",
@@ -101,7 +301,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/azure-monitor/scom-manage-instance/migration-overview",
+    "to": "/azure/azure-monitor/fundamentals/azure-monitor-operations-manager",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform",
@@ -109,7 +317,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/azure-billing-ad-tenant",
@@ -117,7 +325,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/cost-governance-with-kubecost",
@@ -125,7 +333,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/identity-and-access-management",
@@ -133,7 +341,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/landing-zone-accelerator",
@@ -141,7 +349,23 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/management",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/network-topology-and-connectivity",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/platform-automation-and-devops",
@@ -149,7 +373,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/resource-organization",
@@ -157,7 +381,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/scalability",
@@ -165,7 +389,47 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/security",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/aks/storage",
+    "to": "/azure/architecture/reference-architectures/containers/aks-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/business-continuity-disaster-recovery",
+    "to": "/azure/virtual-machines/workloads/redhat/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/governance-compliance",
+    "to": "/azure/virtual-machines/workloads/redhat/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/identity-access-management",
+    "to": "/azure/virtual-machines/workloads/redhat/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/landing-zone-accelerator",
@@ -173,7 +437,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/management-monitoring",
@@ -181,7 +445,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/network-topology-connectivity",
@@ -189,7 +453,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/platform-automation-devops",
+    "to": "/azure/virtual-machines/workloads/redhat/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/resource-organization",
@@ -197,7 +469,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-enterprise-linux/security",
+    "to": "/azure/virtual-machines/workloads/redhat/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/identity-access-management",
@@ -205,7 +485,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/landing-zone-accelerator",
@@ -213,7 +493,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/network-topology-connectivity",
+    "to": "/azure/architecture/reference-architectures/containers/aro/azure-redhat-openshift-financial-services-workloads",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/operations",
@@ -221,7 +509,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/platform-automation-devops",
@@ -229,7 +517,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/resource-organization",
@@ -237,7 +525,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform/azure-red-hat-openshift/security",
@@ -245,7 +533,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware",
@@ -253,7 +541,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/azure-vmware-solution-network-basics",
@@ -261,7 +549,31 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/cross-tenant-network-connectivity",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/dual-region-virtual-wan-global-reach",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/dual-region-virtual-wan-without-global-reach",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/enterprise-scale-landing-zone",
@@ -269,7 +581,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-business-continuity-and-disaster-recovery",
@@ -277,7 +589,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-dual-region-network-topology",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-identity-and-access-management",
@@ -285,7 +605,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-management-and-monitoring",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity",
@@ -293,7 +621,39 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-platform-automation-and-devops",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-security-governance-and-compliance",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/example-architectures",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/govern",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/introduction-virtual-wan-azure-vmware-solution",
@@ -301,7 +661,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/manage",
@@ -309,7 +669,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/migrate",
@@ -317,7 +677,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/network-design-guide-internet-inbound-connectivity",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/network-design-guide-internet-outbound-connectivity",
@@ -325,7 +693,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/network-design-guide-intro",
@@ -333,7 +701,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/network-get-started",
@@ -341,7 +709,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/network-hub-spoke",
@@ -349,7 +717,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/on-premises-connectivity",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/plan",
@@ -357,7 +733,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/ready",
@@ -365,7 +741,23 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/single-region-virtual-wan-global-reach",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/single-region-virtual-wan-without-global-reach",
+    "to": "/azure/cloud-adoption-framework/azure-vmware-solution/strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/strategy",
@@ -373,7 +765,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware/virtual-network-connectivity",
@@ -381,7 +773,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/cosmos-db/cassandra",
@@ -416,12 +808,92 @@
     "lastSeen": "2026-10-05"
   },
   {
+    "from": "/azure/databricks/agents/agent-system-design-patterns",
+    "to": "/azure/databricks/agents/concepts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/agents/custom-agents/build-agents",
+    "to": "/azure/databricks/agents",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/agents/custom-agents/query-agent",
+    "to": "/azure/databricks/agents/query-llms",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/agents/gen-ai-capabilities",
+    "to": "/azure/databricks/agents/concepts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/agents/gen-ai-challenges",
+    "to": "/azure/databricks/agents/concepts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/agents/mcp-tools/connect-clients",
+    "to": "/azure/databricks/ai-gateway/coding-agent-supported-agents",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/agents/mcp-tools/connect-external",
+    "to": "/azure/databricks/agents/mcp-tools",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/agents/mcp-tools/managed-mcp",
+    "to": "/azure/databricks/agents/mcp-tools/built-in-mcp-services",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/agents/mcp-tools/mcp-services",
+    "to": "/azure/databricks/agents/mcp-tools",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/agents/mcp-tools/use-mcp-in-agents",
+    "to": "/azure/databricks/agents/custom-agents/use-mcp-tools",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
     "from": "/azure/databricks/ai-gateway/coding-agent-integration-model-provider-services",
     "to": "/azure/databricks/ai-gateway/coding-agent-quickstart",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/ai-gateway/coding-agent-integration-model-services",
@@ -429,7 +901,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/ai-gateway/create-model-services",
@@ -437,7 +909,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/ai-gateway/smart-routing",
@@ -445,7 +917,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/integrations/excel-genie",
@@ -453,7 +925,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/integrations/excel-query",
@@ -461,7 +933,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/integrations/excel-setup",
@@ -469,7 +941,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/integrations/excel-write-back",
@@ -477,7 +949,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/command-reference",
@@ -485,7 +957,47 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples/multinode-llm-sft",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples/ray-batch-inference",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples/ray-hello-world",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples/ray-train-distributed",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples/ray-tune-lora",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/installation",
@@ -493,7 +1005,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/track-runs",
+    "to": "/azure/databricks/machine-learning/ai-runtime/tracking-observability",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-distributed-finetune-qwen2-0.5b",
@@ -501,7 +1021,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-llama3-8b-llmfoundry",
@@ -509,7 +1029,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/oltp/projects/observability-capture",
@@ -517,7 +1037,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/oltp/projects/observability-dashboards",
@@ -525,7 +1045,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/oltp/projects/observability-genie",
@@ -533,7 +1053,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/oltp/projects/observability-quickstart",
@@ -541,7 +1061,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/security/keys/cmk-managed-disks-azure",
@@ -557,7 +1077,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/databricks/structured-streaming/real-time",
@@ -568,12 +1088,36 @@
     "lastSeen": "2026-10-06"
   },
   {
+    "from": "/azure/databricks/volumes/content-search",
+    "to": "/azure/databricks/genie-agents/volumes",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/defender-for-cloud/foundational-cspm-opt-in",
+    "to": "/azure/defender-for-cloud/concept-cloud-security-posture-management",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/enclave/preview-terms",
+    "to": "/azure/enclave/azure-enclave-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
     "from": "/azure/foundry/agents/how-to/deploy-hosted-voice-agent",
     "to": "/azure/foundry/how-to/voice-first-with-hosted-agent",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/foundry/agents/how-to/voice-agent-twilio-phone",
@@ -581,7 +1125,231 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/foundry/fine-tuning/fine-tune-cli",
+    "to": "/azure/foundry/openai/how-to/fine-tuning",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/foundry/openai/concepts/default-safety-policies",
+    "to": "/azure/foundry/guardrails/default-safety-policies",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/foundry/openai/concepts/fine-tuning-considerations",
+    "to": "/azure/foundry/fine-tuning/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/foundry/openai/how-to/fine-tuning-cost-management",
+    "to": "/azure/foundry/fine-tuning/cost-management",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/foundry/openai/how-to/fine-tuning-deploy",
+    "to": "/azure/foundry/fine-tuning/deploy-fine-tuned-models",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/healthcare-apis/fhir/smart-on-fhir-proxy",
+    "to": "/azure/healthcare-apis/fhir/smart-on-fhir",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/iot-hub/how-to-disable-enable-device",
+    "to": "/azure/iot/device-registry/how-to-disable-enable-device",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/iot/iot-device-registry-namespace-guidance",
+    "to": "/azure/iot/device-registry/best-practices-namespaces",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/iot/iot-device-registry-overview",
+    "to": "/azure/iot/device-registry/overview-device-registry",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/iot/iot-device-registry-schema-registry-guidance",
+    "to": "/azure/iot/device-registry/best-practices-schema-registries",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-review-tasks-artifacts",
+    "to": "/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-object-explorer",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/quantum/sparse-simulator",
+    "to": "/azure/quantum/qdk-simulator-vscode",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/azure-hpc-vm-images",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/azure-hpc-vm-images",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/compiling-scaling-applications",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/compiling-scaling-applications",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/configure",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/configure",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/dedicated-host-compute-optimized-skus",
+    "to": "/azure/virtual-machines/dedicated-hosts/compute-optimized-skus",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/dedicated-host-general-purpose-skus",
+    "to": "/azure/virtual-machines/dedicated-hosts/general-purpose-skus",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/dedicated-host-gpu-optimized-skus",
+    "to": "/azure/virtual-machines/dedicated-hosts/gpu-optimized-skus",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/dedicated-host-memory-optimized-skus",
+    "to": "/azure/virtual-machines/dedicated-hosts/memory-optimized-skus",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/dedicated-host-storage-optimized-skus",
+    "to": "/azure/virtual-machines/dedicated-hosts/storage-optimized-skus",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/dedicated-hosts",
+    "to": "/azure/virtual-machines/dedicated-hosts/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/dedicated-hosts-how-to",
+    "to": "/azure/virtual-machines/dedicated-hosts/how-to",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/ebdsv5-ebsv5-series",
+    "to": "/azure/virtual-machines/sizes/memory-optimized/ebdsv5-ebsv5-series",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/ecasccv5-ecadsccv5-series",
+    "to": "/azure/virtual-machines/sizes/memory-optimized/ecasccv5-ecadsccv5-series",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/ecasv5-ecadsv5-series",
+    "to": "/azure/virtual-machines/sizes/memory-optimized/ecasv5-ecadsv5-series",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/ecedsv6-series",
+    "to": "/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/ecesv6-series",
+    "to": "/azure/virtual-machines/sizes/memory-optimized/ecesv6-series",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/field-programmable-gate-arrays-attestation",
+    "to": "/azure/virtual-machines/sizes/fpga-accelerated/field-programmable-gate-arrays-attestation",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/azure/virtual-machines/hb-hc-known-issues",
@@ -589,7 +1357,391 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hbv2-performance",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hbv2-performance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hbv2-series-overview",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hbv2-series-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hbv3-performance",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hbv3-performance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hbv3-series-overview",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hbv3-series-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hbv4-performance",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hbv4-performance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hbv4-series-overview",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hbv4-series-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hbv5-performance",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hbv5-performance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hbv5-series-overview",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hbv5-series-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hc-series-overview",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hc-series-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hc-series-performance",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hc-series-performance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hx-performance",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hx-performance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/hx-series-overview",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/hx-series-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/migration/dedicated-host-migration-guide",
+    "to": "/azure/virtual-machines/dedicated-hosts/modernization-guide",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/migration/sizes/previous-gen-series-capacity-limitations",
+    "to": "/azure/virtual-machines/sizes/lifecycle/retirements-and-capacity-restrictions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/migration/sizes/scsi-to-nvme-migration",
+    "to": "/azure/virtual-machines/migration/scsi-to-nvme-migration",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/migration/sizes/sizes-v6-v7-migration-assess",
+    "to": "/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-assess",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/migration/sizes/sizes-v6-v7-migration-discover",
+    "to": "/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-discover",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/migration/sizes/sizes-v6-v7-migration-faq",
+    "to": "/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/migration/sizes/sizes-v6-v7-migration-migrate",
+    "to": "/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-modernize",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/migration/sizes/sizes-v6-v7-migration-overview",
+    "to": "/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/migration/sizes/sizes-v6-v7-migration-plan",
+    "to": "/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-plan",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/migration/sizes/sizes-v6-v7-migration-validate",
+    "to": "/azure/virtual-machines/sizes/lifecycle/sizes-v6-v7-modernization-validate",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/ncads-h100-v5",
+    "to": "/azure/virtual-machines/sizes/gpu-accelerated/ncadsh100v5-series",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/overview-hb-hc",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/overview-hb-hc",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/prepay-dedicated-hosts-reserved-instances",
+    "to": "/azure/virtual-machines/dedicated-hosts/prepay-reserved-instances",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/set-up-hpc-vms",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/set-up-hpc-vms",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/setup-infiniband",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/setup-infiniband",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/setup-mpi",
+    "to": "/azure/virtual-machines/sizes/high-performance-compute/setup-mpi",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/sizes/lifecycle/previous-gen-sizes-list",
+    "to": "/azure/virtual-machines/sizes/lifecycle/end-of-life-sizes-list",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/sizes/lifecycle/retired-sizes-list",
+    "to": "/azure/virtual-machines/sizes/lifecycle/retirements-and-capacity-restrictions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/sizes/lifecycle/retirement/d-ds-dv2-dsv2-ls-series-migration-guide",
+    "to": "/azure/virtual-machines/sizes/lifecycle/retirement/retired-sizes-modernization-guide",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/sizes/lifecycle/retirement/dedicated-host-retirement",
+    "to": "/azure/virtual-machines/dedicated-hosts/sku-lifecycle",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/sizes/lifecycle/retirement/n-series-migration",
+    "to": "/azure/virtual-machines/sizes/lifecycle/retirement/n-series-modernization-guide",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/sizes/lifecycle/retirement/nv-series-migration-guide",
+    "to": "/azure/virtual-machines/sizes/lifecycle/retirement/nv-series-modernization-guide",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/virtual-machines/sizes/lifecycle/retirement/retirement-overview",
+    "to": "/azure/virtual-machines/sizes/lifecycle/lifecycle-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/cli/azure/install-azure-cli-macos-preview",
+    "to": "/cli/azure/install-azure-cli-macos",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/defender-cloud-apps/app-governance-visibility-insights-compliance-posture",
+    "to": "/defender-cloud-apps/app-governance-visibility-insights-security-posture",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/business-central/dev-itpro/developer/word-layout-add-in",
+    "to": "/dynamics365/business-central/ui-design-word-layouts-business-central-add-in",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/business-central/expense-management/expense-agent-statuses",
+    "to": "/dynamics365/business-central/expense-management/expense-agent-policy-compliance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/customer-insights/journeys/mcp-server-consent",
+    "to": "/dynamics365/customer-insights/journeys/mcp-server-tools-reference",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/customer-service/administer/enable-ask-summarize-cases",
+    "to": "/dynamics365/customer-service/administer/extend-copilot-with-copilot-studio",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/supply-chain/warehousing/tasks/configure-wave-processing",
+    "to": "/dynamics365/supply-chain/warehousing/wave-templates",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/supply-chain/warehousing/tasks/cross-dock-products-receiving-warehouse-stores",
+    "to": "/dynamics365/commerce/tasks/cross-dock-products-receiving-warehouse-stores",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/supply-chain/warehousing/tasks/license-plate-label-printing",
+    "to": "/dynamics365/supply-chain/warehousing/print-license-plate-labels-using-label-layouts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/supply-chain/warehousing/tasks/register-items-basic-warehousing",
+    "to": "/dynamics365/supply-chain/inventory/register-items-item-arrival-journal",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/supply-chain/warehousing/tasks/set-up-mobile-device-menu",
+    "to": "/dynamics365/supply-chain/warehousing/tasks/set-up-mobile-device-menu-item-purchase-order-putaway",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments",
+    "to": "/dynamics365/supply-chain/transportation/use-load-planning-workbench-plan-loads-shipments",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/entra/identity/authentication/kerberos-server-key-rotation",
+    "to": "/entra/identity/authentication/configure-microsoft-entra-kerberos-trust",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/entra/identity/hybrid/cloud-sync/how-to-ad-group-enforcement",
@@ -616,12 +1768,148 @@
     "lastSeen": "2026-10-06"
   },
   {
+    "from": "/fabric/data-factory/dataflow-gen2-my-queries",
+    "to": "/fabric/data-factory/dataflow-gen2-my-queries-shared-queries",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/data-factory/migrate-pipelines-azure-data-factory-item",
+    "to": "/fabric/data-factory/upgrade-pipelines-azure-data-factory-item",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/data-factory/migrate-pipelines-how-to-add-connections-to-resolutions-file",
+    "to": "/fabric/data-factory/upgrade-pipelines-how-to-add-connections-to-resolutions-file",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/data-factory/migrate-pipelines-how-to-find-your-fabric-workspace-id",
+    "to": "/fabric/data-factory/upgrade-pipelines-how-to-find-your-fabric-workspace-id",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/data-factory/migrate-pipelines-powershell-upgrade-module-for-azure-data-factory-to-fabric",
+    "to": "/fabric/data-factory/upgrade-pipelines-powershell-module-for-azure-data-factory-to-fabric",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/data-factory/migrate-pipelines-powershell-upgrade-module-tutorial",
+    "to": "/fabric/data-factory/upgrade-pipelines-powershell-module-tutorial",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/data-factory/migrate-planning-azure-data-factory",
+    "to": "/fabric/data-factory/upgrade-planning-azure-data-factory",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/data-factory/migration-best-practices",
+    "to": "/fabric/data-factory/upgrade-best-practices",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/data-warehouse/migration-synapse-dedicated-sql-pool-warehouse",
+    "to": "/fabric/data-warehouse/migration-synapse-dedicated-sql-pool-planning",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/fundamentals/whats-new-archive",
+    "to": "/fabric/fundamentals/whats-new",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
     "from": "/fabric/governance",
     "to": "/fabric/admin",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/iq/ontology/concepts-generate",
+    "to": "/fabric/iq/ontology/how-to-generate-from-semantic-models",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/iq/ontology/how-to-add-semantic-enrichment",
+    "to": "/fabric/iq/ontology/how-to-add-metadata",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/iq/ontology/how-to-view-entity-type-details",
+    "to": "/fabric/iq/ontology/how-to-view-ontology-details",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/iq/ontology/tutorial-4-create-data-agent",
+    "to": "/fabric/iq/ontology/tutorial-4-use-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/fabric/iq/plan/planning-how-to-create-semantic-model-connection",
+    "to": "/fabric/iq/plan/planning-how-to-get-started",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/intune/device-management/actions/rename",
+    "to": "/intune/device-management/inventory-and-status/rename-device",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/intune/device-management/admin-tasks",
+    "to": "/intune/governance/admin-tasks",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/intune/device-management/manage-endpoint-security-devices",
@@ -629,7 +1917,23 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/intune/device-management/monitor-encryption",
+    "to": "/intune/device-configuration/endpoint-security/monitor-encryption",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/manage-tools-for-agent",
+    "to": "/microsoft-365/admin/manage/agent-tools-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/microsoft-365/admin/misc/feedback-code-conduct",
@@ -640,12 +1944,28 @@
     "lastSeen": "2026-10-05"
   },
   {
+    "from": "/microsoft-365/copilot/extensibility/agents-are-apps",
+    "to": "/microsoft-365/copilot/extensibility/plugins-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-chat-requirements",
+    "to": "/microsoft-365/copilot/microsoft-copilot-requirements",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements",
     "to": "/microsoft-365/copilot/microsoft-copilot-requirements",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements-data-compliance",
@@ -653,7 +1973,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements-rollout",
@@ -661,7 +1981,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-requirements",
@@ -669,7 +1989,335 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/enterprise/advanced-data-residency",
+    "to": "/microsoft-365/enterprise/m365-dr-adr-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/enterprise/m365-dr-commitments",
+    "to": "/microsoft-365/enterprise/m365-dr-adr-commitments",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/enterprise/m365-dr-data-location",
+    "to": "/microsoft-365/enterprise/m365-dr-data-location-card",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/enterprise/m365-dr-overview",
+    "to": "/microsoft-365/enterprise/m365-dr-what-is-data-residency",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/enterprise/m365-dr-product-terms-dr",
+    "to": "/microsoft-365/enterprise/m365-dr-product-terms",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/enterprise/o365-data-locations",
+    "to": "/microsoft-365/enterprise/m365-dr-services-data-location",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/add-work-iq",
+    "to": "/microsoft-copilot-studio/agents-experience/add-work-iq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-disambiguate-intent",
+    "to": "/microsoft-copilot-studio/guidance/topic-authoring-best-practices",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-end-conversations",
+    "to": "/microsoft-copilot-studio/guidance/topic-authoring-best-practices",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-fallbacks",
+    "to": "/microsoft-copilot-studio/guidance/fallback-topic",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-handle-errors",
+    "to": "/microsoft-copilot-studio/guidance/topic-authoring-best-practices",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-identify-intents",
+    "to": "/microsoft-copilot-studio/guidance/defining-chatbot-topics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-overview",
+    "to": "/microsoft-copilot-studio/guidance/plan-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-principles",
+    "to": "/microsoft-copilot-studio/guidance/plan-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-queries",
+    "to": "/microsoft-copilot-studio/guidance/triggering-topics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-research",
+    "to": "/microsoft-copilot-studio/guidance/defining-chatbot-topics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-responsible-experiences",
+    "to": "/microsoft-copilot-studio/guidance/defining-chatbot-topics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/cux-types",
+    "to": "/microsoft-copilot-studio/guidance/plan-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/generative-ai-math-data-queries",
+    "to": "/microsoft-copilot-studio/guidance/generative-orchestration",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/measuring-engagement",
+    "to": "/microsoft-copilot-studio/guidance/analytics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/measuring-outcomes",
+    "to": "/microsoft-copilot-studio/guidance/analytics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/optimize-prompts-bing-custom-search",
+    "to": "/microsoft-copilot-studio/nlu-boost-node",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/optimize-prompts-custom-instructions",
+    "to": "/microsoft-copilot-studio/prompts-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/optimize-prompts-overview",
+    "to": "/microsoft-copilot-studio/prompts-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/optimize-prompts-topic-configuration",
+    "to": "/microsoft-copilot-studio/nlu-generative-answers-prompt-modification",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/topics-code-editor",
+    "to": "/microsoft-copilot-studio/authoring-create-edit-topics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/voice-external-grammars",
+    "to": "/microsoft-copilot-studio/voice-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoftteams/platform/bots/how-to/bot-messages-ai-generated-content",
+    "to": "/microsoftteams/platform/agents-in-teams/integrate-ai/ai-content-labels",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoftteams/platform/bots/how-to/conversations/channel-messages-for-bots-and-agents",
+    "to": "/microsoftteams/platform/agents-in-teams/enable-receive-all-chat-messages",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoftteams/support-pin",
+    "to": "/microsoftteams/teams-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/partner-center/announcements/2025-october",
+    "to": "/partner-center/announcements",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-apps/developer/model-driven-apps/streamline-javascript-development-fiddler-autoresponder",
+    "to": "/power-apps/developer/model-driven-apps/debug-javascript-webresources",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-bi/connect-data/desktop-data-privacy-firewall-partitions",
+    "to": "/power-bi/transform-model/desktop-data-privacy-firewall-partitions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-bi/connect-data/desktop-data-types",
+    "to": "/power-bi/transform-model/desktop-data-types",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-bi/connect-data/desktop-data-view",
+    "to": "/power-bi/transform-model/desktop-data-view",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-bi/connect-data/desktop-default-member-multidimensional-models",
+    "to": "/power-bi/transform-model/desktop-default-member-multidimensional-models",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-bi/connect-data/desktop-python-in-query-editor",
+    "to": "/power-bi/transform-model/desktop-python-in-query-editor",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-bi/connect-data/desktop-r-in-query-editor",
+    "to": "/power-bi/transform-model/desktop-r-in-query-editor",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-bi/connect-data/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed",
+    "to": "/power-bi/transform-model/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-bi/connect-data/desktop-tutorial-importing-and-analyzing-data-from-a-web-page",
+    "to": "/power-bi/transform-model/desktop-tutorial-importing-and-analyzing-data-from-a-web-page",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties",
+    "to": "/power-bi/visuals/power-bi-visualizations-format-visual",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   },
   {
     "from": "/power-platform/admin/apps-default-environment-routing",
@@ -678,5 +2326,1397 @@
     "status": 301,
     "firstSeen": "2026-10-06",
     "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/power-platform/admin/live-chat-support",
+    "to": "/power-platform/admin/get-help-support",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/purview/sit-defn-turkey-national-identification-number",
+    "to": "/purview/sit-defn-turkiye-national-identification-number",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/purview/sit-defn-turkey-physical-addresses",
+    "to": "/purview/sit-defn-turkiye-physical-addresses",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/security/zero-trust/prioritizing-defense/adopt-open-source-updates",
+    "to": "/security/zero-trust/prioritizing-defense/prioritizing-defense-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/security/zero-trust/prioritizing-defense/baseline-security-measures",
+    "to": "/security/zero-trust/prioritizing-defense/prioritizing-defense-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/security/zero-trust/prioritizing-defense/minimize-internet-exposure",
+    "to": "/security/zero-trust/prioritizing-defense/prioritizing-defense-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/security/zero-trust/prioritizing-defense/scan-secure-source-code",
+    "to": "/security/zero-trust/prioritizing-defense/prioritizing-defense-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/security/zero-trust/prioritizing-defense/stay-current-microsoft-software",
+    "to": "/security/zero-trust/prioritizing-defense/prioritizing-defense-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/sharepoint/home-sites-improvements",
+    "to": "/sharepoint/homesites/home-sites-improvements",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/sql/linux/sql-server-linux-develop-connectivity-libraries",
+    "to": "/sql/connect/sql-connection-libraries",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/exchange/compliance/items-are-removed-by-mrm-2-0-unexpectedly",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/microsoftteams/teams-rooms-and-devices/teams-rooms-known-issues-android",
+    "to": "/microsoftteams/devices/known-issues",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/microsoftteams/teams-rooms-and-devices/teams-rooms-known-issues-windows",
+    "to": "/microsoftteams/devices/known-issues",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/download-and-install-latest-updates",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/linux/download-and-install-latest-updates-linux",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2014/build-versions",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/build-versions",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/rtm-cumulativeupdate1",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/rtm-cumulativeupdate2",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/rtm-cumulativeupdate3",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/rtm-cumulativeupdate4",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/rtm-cumulativeupdate5",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/rtm-cumulativeupdate6",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/rtm-cumulativeupdate7",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/rtm-cumulativeupdate8",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/rtm-cumulativeupdate9",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate1",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate10",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate11",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate12",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate13",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate14",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate15",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate2",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate3",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate4",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate5",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate6",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate7",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate8",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack1-cumulativeupdate9",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate1",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate10",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate11",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate12",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate13",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate14",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate15",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate16",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate17",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate2",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate3",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate4",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate5",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate6",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate7",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack2-cumulativeupdate8",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack3",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2016/servicepack3-azureconnect",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/azureconnect",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/build-versions",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate1",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate10",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate11",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate12",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate13",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate14",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate15",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate16",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate17",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate18",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate19",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate2",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate20",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate21",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate22",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate23",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate24",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate25",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate26",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate27",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate28",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate29",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate3",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate30",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate31",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate4",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate5",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate6",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate7",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate8",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2017/cumulativeupdate9",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/build-versions",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate1",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate10",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate11",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate12",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate13",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate14",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate15",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate16",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate17",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate18",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate19",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate2",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate20",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate21",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate22",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate23",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate24",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate25",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate26",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate27",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate28",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate29",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate3",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate30",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate31",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate32",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate4",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate5",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate6",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate7",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate8",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/cumulativeupdate9",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2019/service-update-rtm",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/build-versions",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate1",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate10",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate11",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate12",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate13",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate14",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate15",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate16",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate17",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate18",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate19",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate2",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate20",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate21",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate22",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate23",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate24",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate25",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate3",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate4",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate5",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate6",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate7",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate8",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate9",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/database-accessibility-issues-high-volume-customer-workloads",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/database-suspend-incorrect-run-alter-server-configuration",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/error-set-sql-server-agent-job-history-log",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/errors-apply-cu-contained-availability-group",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/incorrect-results-run-queries",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/make-enhancements-sqliosim-utility",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/memory-exceed-configured-limits-memory-memorylimitmb",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2022/microsoft-entra-managed-identity-support-for-backup-restore-database-ekm-akv",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2025/build-versions",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate1",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate2",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate3",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate4",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate5",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate6",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/windows-client/setup-upgrade-and-drivers/windows-cannot-verify-the-digital-signature-for-this-file",
+    "to": "/troubleshoot/windows-server/setup-upgrade-and-drivers/windows-cannot-verify-the-digital-signature-for-this-file",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/windows-server/setup-upgrade-and-drivers/error-install-windows-internal-database",
+    "to": "/troubleshoot/windows-server/installing-updates-features-roles/error-install-windows-internal-database",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/windows-server/setup-upgrade-and-drivers/fail-to-configure-server-using-server-manager",
+    "to": "/troubleshoot/windows-server/active-directory/fail-to-configure-server-using-server-manager",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/windows-server/setup-upgrade-and-drivers/use-language-id-identify-language-pack",
+    "to": "/troubleshoot/windows-server/installing-updates-features-roles/use-language-id-identify-language-pack",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/viva/engage/ai-technology-with-viva-engage/agents-community-network-deployment-config",
+    "to": "/viva/engage/community-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-12",
+    "lastSeen": "2026-10-12"
   }
 ]
