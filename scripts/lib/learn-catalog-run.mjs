@@ -43,8 +43,8 @@ import {
   PRODUCT_SUBJECT_HINTS,
 } from "./learn-config.mjs";
 import {
+  assessCatalogFailsafes,
   checkHierarchyFailures,
-  evaluateCatalogFailsafes,
   previousBaseline,
   recoveredEmptyCategories,
   shouldAbortHierarchyEarly,
@@ -53,7 +53,7 @@ import { diffModules, diffUnits, writeChanges } from "./changes.mjs";
 import { classifyHierarchy, hierarchyUrl, planUnitRefresh, resolveUnitUrls } from "./learn-hierarchy.mjs";
 import { openChanges, refreshChanges } from "./learn-changes-run.mjs";
 import { DEFAULT_DELAY_MS, fetchJson, request, runPool } from "./learn-http.mjs";
-import { dateOfTimestamp, isFullRefreshDue, numberFromEnv, utcDate } from "./learn-helpers.mjs";
+import { dateOfTimestamp, isFullRefreshDue, listSome, numberFromEnv, utcDate } from "./learn-helpers.mjs";
 import { FailsafeAbort, readJsonIfExists, retryLogger, writeJsonAtomic } from "./learn-io.mjs";
 import { contributeLearnStatus } from "./learn-status.mjs";
 import { readStatus } from "./status.mjs";
@@ -93,6 +93,7 @@ export async function runCatalogSync(options = {}) {
     ...LIMITS,
     MAX_MODULE_DROP_PCT: numberFromEnv(env, "MAX_MODULE_DROP_PCT", LIMITS.MAX_MODULE_DROP_PCT, { min: 0, max: 100 }),
     MAX_API_DROP_PCT: numberFromEnv(env, "MAX_API_DROP_PCT", LIMITS.MAX_API_DROP_PCT, { min: 0, max: 100 }),
+    MAX_EMPTIED_CATEGORIES: numberFromEnv(env, "MAX_EMPTIED_CATEGORIES", LIMITS.MAX_EMPTIED_CATEGORIES, { min: 0, max: 1000 }),
     ...limitOverrides,
   };
   const http = { ...(fetchImpl ? { fetchImpl } : {}), ...(sleepImpl ? { sleepImpl } : {}), ...httpOptions };
@@ -126,7 +127,7 @@ export async function runCatalogSync(options = {}) {
   const baseline = previousBaseline(previous, { categoryNameByTopId });
   if (!baseline) warn("  no previous data file: relative failsafes (drop %) are skipped, only the floors apply");
 
-  const problems = evaluateCatalogFailsafes({
+  const failsafe = assessCatalogFailsafes({
     inScopeCount: built.stats.inScope,
     apiTotal: built.stats.apiTotal,
     previous: baseline,
@@ -137,9 +138,23 @@ export async function runCatalogSync(options = {}) {
     unitRefs: built.stats.unitRefs,
     missingUnitTitles: built.stats.missingUnitTitles,
     limits,
+    apiUids: built.apiUids,
   });
-  if (problems.length) throw new FailsafeAbort(problems);
+  if (failsafe.problems.length) throw new FailsafeAbort(failsafe.problems);
 
+  // A category that lost its last module(s) is accepted only in a healthy run in which every one of those modules
+  // left the API (see classifyCategoryCoverage): the write goes ahead, so the data must not silently change under
+  // a consumer. Say it loudly here and record it in status.json (`emptiedCategories`).
+  for (const { id, modules } of failsafe.emptied) {
+    warn(
+      `  WARNING: allowlisted category "${id}" lost ${modules.length === 1 ? "its only module" : `all ${modules.length} of its modules`} and is empty now (${listSome(modules, 5)}). ` +
+        `Accepted: every other failsafe passed and ${modules.length === 1 ? "that module" : "all of them"} left the API, so ${modules.length === 1 ? "it becomes a tombstone" : "they become tombstones"} as usual. ` +
+        `Recorded in status.json learn.emptiedCategories. Optional tidy-up: add "${id}" to KNOWN_EMPTY_CATEGORIES or drop it from ALLOWED_CATEGORIES; it stays tolerated while it is empty.`
+    );
+  }
+  if (failsafe.stillEmpty.length) {
+    warn(`  WARNING: allowlisted categories still empty since an earlier run (tolerated, they were allowlisted and empty last time): ${failsafe.stillEmpty.join(", ")}`);
+  }
   const recovered = recoveredEmptyCategories({ knownEmpty: config.knownEmptyCategories ?? [], counts: built.stats.categoryModuleCounts });
   if (recovered.length) warn(`  WARNING: known-empty categories have modules again, remove them from KNOWN_EMPTY_CATEGORIES: ${recovered.join(", ")}`);
   if (built.stats.allowedMissingFromTaxonomy.length) {
@@ -294,6 +309,8 @@ export async function runCatalogSync(options = {}) {
     unitHierarchyNotFound: modules.filter((m) => m.hierarchyNotFound).length,
     unitUrlsCarriedForward: unitStats.carriedForward,
     unusedCategories: built.stats.unusedCategoryIds,
+    // allowlisted categories that lost their last module(s) in THIS run and were accepted (see classifyCategoryCoverage)
+    emptiedCategories: failsafe.emptied.map((e) => e.id),
     catalogChanges: changeRun.counters,
   };
   if (!dryRun) contributeLearnStatus(statusFile, "catalog", status, { now, env });

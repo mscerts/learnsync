@@ -121,7 +121,8 @@ prints a warning and appears in `status.json` as `unusedCategories`, so a new
 Microsoft category is never lost silently. `KNOWN_EMPTY_CATEGORIES` are allowlisted
 ids that have no modules upstream today (agent-framework, microsoft-search,
 microsoft-whiteboard, vs-app-center); the "category has zero modules" failsafe
-exempts them only while they were empty in the previous file.
+exempts them only while they were empty in the previous file. A category that
+loses its last module(s) is a separate case, see "Failsafes" below.
 Modules excluded by the filter are listed in `outOfScope` (paths only).
 
 ### Real unit URLs
@@ -158,12 +159,34 @@ first v2 run is unknown, so tombstones start empty.
 ### Failsafes (a bad run must never replace good data; nothing is written, not even `status.json`)
 In-scope module count drops more than `MAX_MODULE_DROP_PCT` (5) versus the previous
 file; raw API count drops more than `MAX_API_DROP_PCT` (3; `totalApiModules` is stored);
-an allowlisted category has zero modules (except `KNOWN_EMPTY_CATEGORIES`); fewer than
+an allowlisted category has zero modules (rules below); fewer than
 `MIN_MODULES` (3,000); unit-title fallbacks above 5%; more than 10% of hierarchy
 requests failed (checked when at least 20 were made; a circuit breaker stops a dead
 API after 50 requests when more than half failed). Each is a pure function in
 `scripts/lib/learn-failsafe.mjs` with fault-injection tests (the 2,900-module truncation
 that used to be committed now aborts).
+
+**A category that loses its last module(s)** (`classifyCategoryCoverage`; full rules in
+`DATA_CONTRACT.md`). This used to be an unconditional abort, which froze the whole Learn
+sync from 2026-10-06 until it was fixed: on 2026-10-12 the only module of
+`m365-ems-advanced-threat-analytics` left the API, the failsafe tripped, and because the
+sync stops at the first failure (`catalog && content`) no Learn data, change file or
+heartbeat moved. Now the emptying is **accepted, loudly**, only when all of these hold:
+every other catalog failsafe passes (a truncated response still aborts); at most
+`MAX_EMPTIED_CATEGORIES` (1; env override, 0 = never) categories emptied in the run; and
+every module the previous file had in that category is absent from the whole raw API
+response (they become tombstones this run; a module that was only re-tagged keeps the
+abort). Accepted means: the run writes as usual, logs a `WARNING` naming the category and
+modules, and records the id in `status.json` `learn.emptiedCategories` (only the run that
+emptied it). A category that stays empty is tolerated automatically because it was already
+in the previous file's `categoryFilter` and empty there (otherwise the next run would abort
+on "zero modules"), with a "still empty" warning each run; a NEW id in `ALLOWED_CATEGORIES`
+with no modules still aborts (typo guard). Tidy-up is optional: add the id to
+`KNOWN_EMPTY_CATEGORIES` or drop it from `ALLOWED_CATEGORIES`. If the run aborts with
+"re-tagged rather than removed", Microsoft changed the taxonomy, not the content: update the
+allowlist deliberately instead of raising the limit. The sync writes no GitHub job summary and
+a green run opens no issue, so whoever reads `status.json` (for example the hub's monitors)
+is what makes `emptiedCategories` visible.
 
 ### Subject enrichment (unchanged)
 Microsoft's own `subjects` tagging is sparse. `PRODUCT_SUBJECT_HINTS` (scripts/lib/learn-config.mjs)

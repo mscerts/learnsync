@@ -6,6 +6,7 @@
  */
 
 import { byCodePoint } from "./canonical.mjs";
+import { listSome } from "./learn-helpers.mjs";
 
 const pct = (n) => `${Math.round(n * 100) / 100}%`;
 
@@ -37,21 +38,89 @@ export function checkApiDrop(previousTotal, newTotal, maxDropPct) {
 }
 
 /**
- * Every allowlisted category must still have modules. Ids in `knownEmpty` have
- * none upstream today and are exempt, EXCEPT when the previous data file had
- * modules in them (`previousCategoryIds`): losing those is never normal.
- * counts: { [topLevelId]: moduleCount } over all API modules.
+ * Every allowlisted category must still have modules.
+ *
+ * Classification of an allowlisted id whose module count is zero (counts: { [topLevelId]: moduleCount }
+ * over ALL API modules):
+ *  - `knownEmpty` ids have none upstream today and are exempt, unless the previous data had modules in
+ *    them (`previousCategoryIds`): that is the "emptied" case below.
+ *  - EMPTIED: the previous data had modules in it and it has none now. Normally a truncation signal and
+ *    a problem. It is ACCEPTED (listed in `emptied`, not in `problems`) only when ALL of these hold:
+ *      1. nothing else in the run looks unhealthy: `otherProblems` (module-count floor, in-scope drop, raw
+ *         API drop, unit-title fallback) is empty;
+ *      2. at most `maxEmptied` categories emptied in this run (0 switches the exception off);
+ *      3. every module the previous data had in that category (`previousModulesByCategory[id]`) is absent
+ *         from the whole API response now (`apiUids`), i.e. it becomes a tombstone this run. A module that
+ *         is still served but no longer carries the category was re-tagged: a taxonomy change, never accepted.
+ *    Without `previousModulesByCategory` and `apiUids` nothing is accepted (strict behaviour).
+ *  - STILL EMPTY: zero modules now and in the previous data, but the id was already in the previous
+ *    file's allowlist (`previousAllowed`, its `categoryFilter`). That is a category an earlier run
+ *    accepted as emptied: tolerated, listed in `stillEmpty` (a `knownEmpty` id is exempt before this rule
+ *    applies, so it is never listed). Without `previousAllowed` (first run, a file that predates
+ *    `categoryFilter`) it falls through to the next rule.
+ *  - Anything else with zero modules is a problem: an id newly added to the allowlist that has no modules
+ *    is almost certainly a typo or a renamed product.
+ *
+ * Returns { problems, emptied: [{ id, modules }], stillEmpty: [id] } (all sorted by code point).
  */
-export function checkCategoryCoverage({ allowed, knownEmpty = [], counts, previousCategoryIds = [] }) {
+export function classifyCategoryCoverage({
+  allowed,
+  knownEmpty = [],
+  counts,
+  previousCategoryIds = [],
+  previousAllowed = null,
+  previousModulesByCategory = null,
+  apiUids = null,
+  maxEmptied = 0,
+  otherProblems = [],
+}) {
   const exempt = new Set(knownEmpty);
   const hadModules = new Set(previousCategoryIds);
+  const wasAllowed = Array.isArray(previousAllowed) ? new Set(previousAllowed) : null;
   const problems = [];
+  const stillEmpty = [];
+  const candidates = [];
   for (const id of [...allowed].sort(byCodePoint)) {
     if ((counts[id] ?? 0) > 0) continue;
-    if (hadModules.has(id)) problems.push(`allowlisted category "${id}" had modules in the previous data and has none now`);
-    else if (!exempt.has(id)) problems.push(`allowlisted category "${id}" has zero modules (not listed in KNOWN_EMPTY_CATEGORIES)`);
+    if (hadModules.has(id)) candidates.push(id);
+    else if (exempt.has(id)) continue;
+    else if (wasAllowed?.has(id)) stillEmpty.push(id);
+    else problems.push(`allowlisted category "${id}" has zero modules (not listed in KNOWN_EMPTY_CATEGORIES)`);
   }
-  return problems;
+
+  const emptied = [];
+  for (const id of candidates) {
+    const modules = previousModulesByCategory?.[id];
+    const reasons = [];
+    if (!(maxEmptied > 0)) {
+      reasons.push("accepting an emptied category is switched off (MAX_EMPTIED_CATEGORIES=0)");
+    } else {
+      if (otherProblems.length) {
+        reasons.push(`the rest of the run does not look healthy (${otherProblems.length} other failsafe problem${otherProblems.length === 1 ? "" : "s"}): a truncated or reshaped response is likely`);
+      }
+      if (candidates.length > maxEmptied) reasons.push(`${candidates.length} allowlisted categories emptied in one run (limit ${maxEmptied}): ${candidates.join(", ")}`);
+      if (!apiUids || !Array.isArray(modules) || !modules.length) {
+        reasons.push("its previous modules cannot be accounted for (no per-module data)");
+      } else {
+        const stillServed = modules.filter((uid) => apiUids.has(uid));
+        if (stillServed.length) {
+          reasons.push(
+            modules.length === 1
+              ? `its only previous module is still in the API, re-tagged rather than removed: ${stillServed[0]}`
+              : `${stillServed.length} of its ${modules.length} previous modules are still in the API, re-tagged rather than removed: ${listSome(stillServed)}`
+          );
+        }
+      }
+    }
+    if (reasons.length) problems.push(`allowlisted category "${id}" had modules in the previous data and has none now (${reasons.join("; ")})`);
+    else emptied.push({ id, modules: [...modules] });
+  }
+  return { problems, emptied, stillEmpty };
+}
+
+/** Problems only: the strict reading (nothing is accepted unless the caller passes the accounting data and a limit). */
+export function checkCategoryCoverage(args) {
+  return classifyCategoryCoverage(args).problems;
 }
 
 /** Known-empty categories that have modules again: not an abort, a hint to prune the list. */
@@ -89,44 +158,79 @@ export function shouldAbortHierarchyEarly({ completed, failures, maxPct, earlySa
   return completed >= earlySample && (failures / completed) * 100 > maxPct;
 }
 
-/** Catalog-stage failsafes in one call (everything that can be decided before any hierarchy request). */
-export function evaluateCatalogFailsafes({
+/**
+ * Catalog-stage failsafes in one call (everything that can be decided before any hierarchy request).
+ * Returns { problems, emptied, stillEmpty }: `problems` aborts the run when not empty; `emptied` lists
+ * the allowlisted categories that lost their last modules and were ACCEPTED (see classifyCategoryCoverage),
+ * `stillEmpty` the ones that were already empty and allowlisted in the previous file. The category
+ * exception is only judged "healthy" against the OTHER failsafes of this same call, so a truncated
+ * response that also empties a small category still aborts.
+ *
+ * `apiUids` (Set of every module uid the raw API returned) and `previous.modulesByCategory` /
+ * `previous.allowedIds` (from previousBaseline) enable the exception; without them it is off.
+ */
+export function assessCatalogFailsafes({
   inScopeCount,
   apiTotal,
   previous,
   categoryModuleCounts,
-  previousCategoryIds,
+  previousCategoryIds = previous?.categoryIds ?? [],
   allowedCategories,
   knownEmptyCategories,
   unitRefs,
   missingUnitTitles,
   limits,
+  apiUids = null,
 }) {
-  return [
-    ...checkMinModules(inScopeCount, limits.MIN_MODULES),
-    ...checkModuleDrop(previous?.inScopeCount ?? 0, inScopeCount, limits.MAX_MODULE_DROP_PCT),
-    ...checkApiDrop(previous?.apiTotal ?? 0, apiTotal, limits.MAX_API_DROP_PCT),
-    ...checkCategoryCoverage({
-      allowed: allowedCategories,
-      knownEmpty: knownEmptyCategories,
-      counts: categoryModuleCounts,
-      previousCategoryIds,
-    }),
-    ...checkUnitFallback({ missing: missingUnitTitles, total: unitRefs, maxPct: limits.MAX_UNIT_FALLBACK_PCT }),
-  ];
+  const floor = checkMinModules(inScopeCount, limits.MIN_MODULES);
+  const moduleDrop = checkModuleDrop(previous?.inScopeCount ?? 0, inScopeCount, limits.MAX_MODULE_DROP_PCT);
+  const apiDrop = checkApiDrop(previous?.apiTotal ?? 0, apiTotal, limits.MAX_API_DROP_PCT);
+  const unitFallback = checkUnitFallback({ missing: missingUnitTitles, total: unitRefs, maxPct: limits.MAX_UNIT_FALLBACK_PCT });
+  const categories = classifyCategoryCoverage({
+    allowed: allowedCategories,
+    knownEmpty: knownEmptyCategories,
+    counts: categoryModuleCounts,
+    previousCategoryIds,
+    previousAllowed: previous?.allowedIds ?? null,
+    previousModulesByCategory: previous?.modulesByCategory ?? null,
+    apiUids,
+    maxEmptied: limits.MAX_EMPTIED_CATEGORIES ?? 0,
+    otherProblems: [...floor, ...moduleDrop, ...apiDrop, ...unitFallback],
+  });
+  return {
+    problems: [...floor, ...moduleDrop, ...apiDrop, ...categories.problems, ...unitFallback],
+    emptied: categories.emptied,
+    stillEmpty: categories.stillEmpty,
+  };
+}
+
+/** The problems of assessCatalogFailsafes alone (the strict reading unless `apiUids` and a baseline with module data are passed). */
+export function evaluateCatalogFailsafes(input) {
+  return assessCatalogFailsafes(input).problems;
 }
 
 /**
  * What the previous data file tells the failsafes: in-scope count, the raw API
  * total (stored since schema v2; for an older file the best lower bound is
- * in-scope + outOfScope) and which allowlisted category ids had modules.
+ * in-scope + outOfScope), which allowlisted category ids had modules, which
+ * module uids each of those categories held (`modulesByCategory`, for the
+ * "every module of an emptied category was removed" accounting) and the allowlist
+ * the file was written with (`allowedIds`, null for a file without `categoryFilter`).
  */
 export function previousBaseline(previous, { categoryNameByTopId }) {
   if (!previous || !Array.isArray(previous.modules)) return null;
   const idByName = new Map([...categoryNameByTopId].map(([id, name]) => [name, id]));
   const ids = new Set();
+  const uidsById = new Map();
   for (const mod of previous.modules) {
-    for (const name of mod.categories ?? []) if (idByName.has(name)) ids.add(idByName.get(name));
+    for (const name of mod.categories ?? []) {
+      if (!idByName.has(name)) continue;
+      const id = idByName.get(name);
+      ids.add(id);
+      if (typeof mod.uid !== "string") continue;
+      if (!uidsById.has(id)) uidsById.set(id, []);
+      uidsById.get(id).push(mod.uid);
+    }
   }
   return {
     inScopeCount: previous.modules.length,
@@ -134,6 +238,8 @@ export function previousBaseline(previous, { categoryNameByTopId }) {
       ? previous.totalApiModules
       : previous.modules.length + (Array.isArray(previous.outOfScope) ? previous.outOfScope.length : 0),
     categoryIds: [...ids].sort(byCodePoint),
+    allowedIds: Array.isArray(previous.categoryFilter) ? previous.categoryFilter.filter((id) => typeof id === "string").sort(byCodePoint) : null,
+    modulesByCategory: Object.fromEntries([...uidsById].sort((a, b) => byCodePoint(a[0], b[0])).map(([id, uids]) => [id, uids.sort(byCodePoint)])),
   };
 }
 

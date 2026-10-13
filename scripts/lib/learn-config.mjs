@@ -231,9 +231,12 @@ export const EXCLUDED_CATEGORIES = [
 // Allowlisted ids that carry ZERO modules upstream today (checked 2026-10-05):
 // the allowlist keeps them so modules are picked up the moment they reappear,
 // but the "allowlisted category has no modules" failsafe cannot treat them as a
-// truncation signal. The failsafe still aborts if any of these had modules in
-// the previous data file and has none now, and it warns when one of them gets
-// modules again (remove it from this list then).
+// truncation signal. A category that had modules in the previous data file and
+// has none now is judged by the emptied-category rules in learn-failsafe.mjs
+// (accepted only for a healthy run in which every one of its modules left the
+// API), and one that is still empty on the next run is tolerated automatically
+// (it was already allowlisted and empty last time). The failsafe warns when one
+// of these gets modules again (remove it from this list then).
 export const KNOWN_EMPTY_CATEGORIES = [
   "agent-framework",
   "microsoft-search",
@@ -255,6 +258,13 @@ export const LIMITS = {
   // Abort if the RAW API module count (all categories) drops by more than this
   // many percent vs the previous run (env MAX_API_DROP_PCT).
   MAX_API_DROP_PCT: 3,
+  // An allowlisted category that had modules in the previous file and has none now
+  // is normally a truncation signal (abort). It is ACCEPTED, with a loud warning and
+  // a `learn.emptiedCategories` entry in status.json, only when every other failsafe
+  // passes, every one of its previous modules is gone from the whole API response
+  // (they become tombstones), and at most this many categories emptied in the run.
+  // 0 switches the exception off (env MAX_EMPTIED_CATEGORIES).
+  MAX_EMPTIED_CATEGORIES: 1,
   // Abort if more than this percentage of unit-title references cannot be
   // resolved from the catalog `units` array (a truncated `units` response makes
   // every title fall back to a uid). Live baseline: 119 of ~27,500 (0.4%).

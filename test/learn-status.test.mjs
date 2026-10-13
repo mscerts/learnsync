@@ -111,6 +111,21 @@ test("the change-file counters of each part live under their own key, keep the k
   }
 });
 
+test("emptiedCategories is an optional catalog-part key: it sits right after unusedCategories, is replaced (not accumulated) by each catalog run, and an older status file without it stays valid", () => {
+  const older = mergeLearnSection(undefined, "catalog", { modules: 3370, unusedCategories: [], catalogChanges: { removed: 0 } }, T1);
+  assert.equal("emptiedCategories" in older, false, "a file written before the field existed simply lacks it");
+
+  const emptied = mergeLearnSection(older, "catalog", { modules: 3369, unusedCategories: [], emptiedCategories: ["m365-ems-advanced-threat-analytics"], catalogChanges: { removed: 1 } }, T2);
+  assert.deepEqual(emptied.emptiedCategories, ["m365-ems-advanced-threat-analytics"]);
+  assert.deepEqual(Object.keys(emptied), ["modules", "unusedCategories", "emptiedCategories", "catalogChanges", "catalogGeneratedAt"]);
+
+  const content = mergeLearnSection(emptied, "content", { content: { exams: 145 } }, T2);
+  assert.deepEqual(content.emptiedCategories, ["m365-ems-advanced-threat-analytics"], "the content run leaves the catalog part's key alone");
+
+  const next = mergeLearnSection(content, "catalog", { modules: 3369, unusedCategories: [], emptiedCategories: [], catalogChanges: { removed: 1 } }, T2);
+  assert.deepEqual(next.emptiedCategories, [], "the next catalog run reports only what emptied in that run");
+});
+
 test("a status file written before the change counters existed stays readable and is extended, not rewritten", () => {
   const first = mergeLearnSection({ modules: 3355, removed: 76, content: { exams: 145 }, catalogGeneratedAt: T1.toISOString(), contentGeneratedAt: T1.toISOString() }, "catalog", { modules: 3356, catalogChanges: { removed: 0 } }, T2);
   assert.equal(first.modules, 3356);

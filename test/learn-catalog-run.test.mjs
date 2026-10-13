@@ -85,6 +85,7 @@ test("first run writes schema v2: sorted modules, real unit urls, outOfScope, st
     assert.equal(status.learn.unitHierarchyRequests, 4);
     assert.equal(status.learn.unitHierarchyFailures, 0);
     assert.equal(status.learn.unitUrlsNull, 0);
+    assert.deepEqual(status.learn.emptiedCategories, [], "always present, empty when no category lost its last module");
     assert.equal(status.learn.generatedAt, D1.toISOString());
   } finally {
     t.cleanup();
@@ -285,7 +286,8 @@ test("FAILSAFE: a drop within the limits is accepted and produces tombstones", a
   try {
     await t.run();
     t.fake.state.truncateModulesTo = 100; // the two non-azure modules disappear: -1.96%, but github and m365 lose their only modules
-    await assert.rejects(t.run({ now: D1_LATER }), /allowlisted category "(github|m365)"/);
+    // two categories emptying at once is still a truncation signal, even though the overall drop is small
+    await assert.rejects(t.run({ now: D1_LATER }), /allowlisted category "(github|m365)".*2 allowlisted categories emptied in one run \(limit 1\): github, m365/);
     t.fake.state.truncateModulesTo = null;
     t.fake.state.modules = t.fake.state.modules.filter((m) => m.uid !== "learn.azure.m0007");
     const r = await t.run({ now: D1_LATER });
@@ -1063,6 +1065,147 @@ test("changes: the files are byte-stable (writeChanges(loadChanges) reproduces t
     assert.deepEqual(learn.contentChanges, { removed: 9 });
     assert.equal(learn.catalogChanges.removed, 1);
     assert.equal(learn.removed, 1, "the top-level `removed` still means module tombstones");
+  } finally {
+    t.cleanup();
+  }
+});
+
+// ---------------------------------------------------------------------------
+// an allowlisted category that loses its last module(s): the incident of 2026-10-12, where the only module of
+// "m365-ems-advanced-threat-analytics" left the API and the hard failsafe froze every Learn sync
+// ---------------------------------------------------------------------------
+
+const GH_ONE = "learn.gh.one"; // the only GitHub module of bigWorld()
+const GH_ONE_PATH = "/training/modules/gh-one";
+
+test("EMPTIED CATEGORY: the only module of a category leaves the API in an otherwise healthy run -> accepted, tombstoned, recorded and warned about; later runs stay green", async () => {
+  const t = setup(bigWorld(100));
+  try {
+    await t.run();
+    const original = t.fake.state.modules;
+    t.fake.state.modules = without(original, GH_ONE);
+    const logs = collectLogs();
+    const r = await t.run({ now: D2, ...withProbe(makeProbe({ [GH_ONE_PATH]: PROBE_NOT_FOUND })), log: logs.log, warn: logs.warn });
+    assert.equal(r.wrote, true, "the new data is written, the sync is not frozen");
+    const catalog = t.read("learn-catalog.json");
+    assert.deepEqual(catalog.removed.map((x) => [x.uid, x.removedOn]), [[GH_ONE, "2026-10-12"]], "the module becomes a tombstone as usual");
+    assert.equal(catalog.modules.some((m) => m.categories.includes("GitHub")), false, "the category really is empty in the data");
+    assert.ok(catalog.categoryFilter.includes("github"), "the allowlist itself is untouched");
+    assert.deepEqual(changeFiles(t).removed.entries.map((e) => [e.path, e.evidence, e.outcome]), [[GH_ONE_PATH, "tombstone", "gone"]], "and a removed link for the change files");
+    assert.deepEqual(r.status.emptiedCategories, ["github"]);
+    const learn = t.read("status.json").learn;
+    assert.deepEqual(learn.emptiedCategories, ["github"], "loud: the heartbeat names the category");
+    assert.equal(learn.removed, 1);
+    assert.ok(
+      logs.lines.some((l) => /^WARN .*allowlisted category "github" lost its only module and is empty now \(learn\.gh\.one\)\. Accepted: .*learn\.emptiedCategories/.test(l)),
+      logs.lines.join("\n")
+    );
+
+    // the next run (nothing changed) must NOT trip over the now-empty category: it was allowlisted and empty last time
+    const logs2 = collectLogs();
+    const r2 = await t.run({ now: D3, ...withProbe(makeProbe({ [GH_ONE_PATH]: PROBE_NOT_FOUND })), log: logs2.log, warn: logs2.warn });
+    assert.equal(r2.unchanged, true);
+    assert.deepEqual(t.read("status.json").learn.emptiedCategories, [], "it emptied in the first run only");
+    assert.ok(logs2.lines.some((l) => /^WARN .*still empty since an earlier run.*github/.test(l)), logs2.lines.join("\n"));
+    assert.equal(logs2.lines.some((l) => /lost its only module/.test(l)), false);
+
+    // and when Learn brings the module back, the tombstone goes and the category is a normal one again
+    t.fake.state.modules = original;
+    const logs3 = collectLogs();
+    await t.run({ now: D4, ...withProbe(makeProbe()), log: logs3.log, warn: logs3.warn });
+    const back = t.read("learn-catalog.json");
+    assert.deepEqual(back.removed, []);
+    assert.ok(back.modules.some((m) => m.uid === GH_ONE));
+    assert.deepEqual(t.read("status.json").learn.emptiedCategories, []);
+    assert.equal(logs3.lines.some((l) => /still empty/.test(l)), false);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("EMPTIED CATEGORY: the same emptying inside a truncated response still aborts, names every symptom and writes nothing", async () => {
+  const t = setup(bigWorld(100));
+  try {
+    await t.run();
+    const snapshot = () => ({ catalog: t.text("learn-catalog.json"), status: t.text("status.json"), removed: t.text("changes/removed.json"), moved: t.text("changes/moved.json") });
+    const before = snapshot();
+    // 9 of 102 modules vanish (-8.8%), and one of them is the only module of "github"
+    t.fake.state.modules = without(t.fake.state.modules, GH_ONE, ...[0, 1, 2, 3, 4, 5, 6, 7].map(mUid));
+    await assert.rejects(
+      t.run({ now: D2 }),
+      (err) =>
+        err instanceof FailsafeAbort &&
+        /in-scope modules fell/.test(err.message) &&
+        /API returned 93 modules vs 102/.test(err.message) &&
+        /allowlisted category "github" had modules in the previous data and has none now \(the rest of the run does not look healthy/.test(err.message)
+    );
+    assert.deepEqual(snapshot(), before, "a failed run must not look like a success");
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("EMPTIED CATEGORY: two categories emptying at once abort; MAX_EMPTIED_CATEGORIES raises or removes the exception", async () => {
+  const t = setup(bigWorld(100));
+  try {
+    await t.run();
+    t.fake.state.modules = without(t.fake.state.modules, GH_ONE, "learn.m365.one"); // github AND m365 lose their only module (-1.96%)
+    await assert.rejects(t.run({ now: D2 }), (err) => err instanceof FailsafeAbort && /2 allowlisted categories emptied in one run \(limit 1\): github, m365/.test(err.message));
+    assert.deepEqual(t.read("learn-catalog.json").removed, [], "nothing was written");
+    await assert.rejects(t.run({ now: D2, env: { MAX_EMPTIED_CATEGORIES: "abc" } }), /Invalid MAX_EMPTIED_CATEGORIES/);
+    const r = await t.run({ now: D2, env: { MAX_EMPTIED_CATEGORIES: "2" } });
+    assert.deepEqual(r.status.emptiedCategories, ["github", "m365"]);
+    assert.equal(t.read("learn-catalog.json").removed.length, 2);
+  } finally {
+    t.cleanup();
+  }
+
+  const strict = setup(bigWorld(100));
+  try {
+    await strict.run();
+    strict.fake.state.modules = without(strict.fake.state.modules, GH_ONE);
+    await assert.rejects(strict.run({ now: D2, env: { MAX_EMPTIED_CATEGORIES: "0" } }), /allowlisted category "github".*switched off \(MAX_EMPTIED_CATEGORIES=0\)/);
+    assert.deepEqual(strict.read("learn-catalog.json").removed, []);
+  } finally {
+    strict.cleanup();
+  }
+});
+
+test("EMPTIED CATEGORY: every previous module of the category must have left the API; a module that was only re-tagged keeps the abort", async () => {
+  const world = bigWorld(100);
+  const second = mod({ uid: "learn.gh.two", slug: "gh-two", products: ["github-actions"] });
+  const t = setup({ modules: [...world.modules, second], units: [...world.units, ...unitsOf([second])] });
+  try {
+    await t.run(); // "github" holds two modules
+    const snapshot = () => ({ catalog: t.text("learn-catalog.json"), status: t.text("status.json") });
+    const before = snapshot();
+    // learn.gh.one is removed, learn.gh.two is still served but now belongs to an excluded product (out of scope)
+    t.fake.state.modules = without(t.fake.state.modules, GH_ONE).map((m) => (m.uid === "learn.gh.two" ? { ...m, products: ["consumer"] } : m));
+    await assert.rejects(
+      t.run({ now: D2 }),
+      (err) =>
+        err instanceof FailsafeAbort &&
+        /allowlisted category "github" had modules in the previous data and has none now \(1 of its 2 previous modules are still in the API, re-tagged rather than removed: learn\.gh\.two\)/.test(err.message) &&
+        !/learn\.gh\.one/.test(err.message)
+    );
+    assert.deepEqual(snapshot(), before);
+
+    // once the second module is gone from the API too, every module of the category is accounted for as removed
+    t.fake.state.modules = without(t.fake.state.modules, "learn.gh.two");
+    const r = await t.run({ now: D2 });
+    assert.deepEqual(r.status.emptiedCategories, ["github"]);
+    assert.deepEqual(t.read("learn-catalog.json").removed.map((x) => x.uid), [GH_ONE, "learn.gh.two"]);
+  } finally {
+    t.cleanup();
+  }
+});
+
+test("EMPTIED CATEGORY: an id newly added to the allowlist that has no modules still aborts on a non-first run (typo guard)", async () => {
+  const t = setup(bigWorld(40));
+  try {
+    await t.run();
+    const config = { ...TEST_CONFIG, allowedCategories: [...TEST_CONFIG.allowedCategories, "ghost"] };
+    await assert.rejects(t.run({ now: D2, config }), /allowlisted category "ghost" has zero modules \(not listed in KNOWN_EMPTY_CATEGORIES\)/);
   } finally {
     t.cleanup();
   }
