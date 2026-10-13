@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "lastChecked": "2026-10-06T21:27:41.036Z",
+  "lastChecked": "2026-10-13T20:39:36.257Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -54,8 +54,8 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3370,
-  "totalApiModules": 3436,
+  "totalModules": 3395,
+  "totalApiModules": 3462,
   "unitUrlsRefreshedAt": "2026-10-05",
   "modules": [
     {
@@ -8892,7 +8892,7 @@
     },
     {
       "uid": "learn-bizapps.mpower-clinical-analytics-admin-get-started",
-      "title": "Get started with mPower Clinical Analytics",
+      "title": "Get started with mPower Clinical Analytics for Administrators",
       "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-admin-get-started/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/mpower-clinical-analytics-admin-get-started",
       "categories": [
@@ -8925,8 +8925,48 @@
         "/training/modules/mpower-clinical-analytics-admin-get-started/7-knowledge-check",
         "/training/modules/mpower-clinical-analytics-admin-get-started/8-summary"
       ],
-      "lastModified": "2026-10-06T17:07:00+00:00",
-      "unitSig": "e19f98daa1582554f8416ca6e69a0e2cb5f2823a"
+      "lastModified": "2026-10-07T17:10:00+00:00",
+      "unitSig": "b082b806436a7744cb7d038da520a20f0878b3c1"
+    },
+    {
+      "uid": "learn-bizapps.mpower-clinical-analytics-administrator-manage-system",
+      "title": "Manage mPower systems",
+      "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-administrator-manage-system/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/mpower-clinical-analytics-administrator-manage-system",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "Review Exam Types in mPower",
+        "Review data cleanup",
+        "Access valid CPT codes in mPower",
+        "View crawl and index logs",
+        "Discuss build and functional use of tags",
+        "Procedure Master Translator maintenance",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/mpower-clinical-analytics-administrator-manage-system/1-introduction",
+        "/training/modules/mpower-clinical-analytics-administrator-manage-system/2-review-exam-types",
+        "/training/modules/mpower-clinical-analytics-administrator-manage-system/3-data-cleanup-options",
+        "/training/modules/mpower-clinical-analytics-administrator-manage-system/4-access-valid-codes",
+        "/training/modules/mpower-clinical-analytics-administrator-manage-system/5-view-crawl-index-logs",
+        "/training/modules/mpower-clinical-analytics-administrator-manage-system/6-discuss-tags",
+        "/training/modules/mpower-clinical-analytics-administrator-manage-system/7-procedure-master-translator-maintenance",
+        "/training/modules/mpower-clinical-analytics-administrator-manage-system/8-knowledge-check",
+        "/training/modules/mpower-clinical-analytics-administrator-manage-system/9-summary"
+      ],
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "27683623116e509d4103f2efff64aa23c97e9891"
     },
     {
       "uid": "learn-bizapps.mpower-clinical-analytics-analyze-search-results",
@@ -9004,7 +9044,7 @@
     },
     {
       "uid": "learn-bizapps.mpower-clinical-analytics-provider-get-started",
-      "title": "Get started with mPower Clinical Analytics",
+      "title": "Get started with mPower Clinical Analytics for Providers",
       "url": "https://learn.microsoft.com/training/modules/mpower-clinical-analytics-provider-get-started/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/mpower-clinical-analytics-provider-get-started",
       "categories": [
@@ -9035,8 +9075,8 @@
         "/training/modules/mpower-clinical-analytics-provider-get-started/6-knowledge-check",
         "/training/modules/mpower-clinical-analytics-provider-get-started/7-summary"
       ],
-      "lastModified": "2026-09-30T17:16:00+00:00",
-      "unitSig": "814a385783d5a5a949e4498b5eae405f4957d91e"
+      "lastModified": "2026-10-07T17:10:00+00:00",
+      "unitSig": "38bd6bccea25c8d65033b3245c65d2b98fcd6da3"
     },
     {
       "uid": "learn-bizapps.mpower-clinical-analytics-refine-save-searches",
@@ -18056,8 +18096,8 @@
         "/training/modules/close-fiscal-year-dynamics-365-business-central/6-check",
         "/training/modules/close-fiscal-year-dynamics-365-business-central/7-summary"
       ],
-      "lastModified": "2026-08-31T17:16:00+00:00",
-      "unitSig": "d738d496bdb6e1cf6302aeb161046d8ef67c0609"
+      "lastModified": "2026-10-09T23:09:00+00:00",
+      "unitSig": "9f826422e84ddc11e4c8c6be6905a2732955c7a3"
     },
     {
       "uid": "learn-dynamics.close-job",
@@ -18482,7 +18522,7 @@
         "Introduction",
         "Set up default bins for a location",
         "Configure bin policies for a location",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -18492,8 +18532,8 @@
         "/training/modules/configure-bins-location/4-check",
         "/training/modules/configure-bins-location/5-summary"
       ],
-      "lastModified": "2026-09-01T17:24:00+00:00",
-      "unitSig": "644e06b38081352af45df3213b25d13b9af93cf3"
+      "lastModified": "2026-10-09T17:10:00+00:00",
+      "unitSig": "85143c02fa3848a8066739321353ade1ed11fff2"
     },
     {
       "uid": "learn-dynamics.configure-cash-and-bank-management-in-dynamics-365-finance-ops",
@@ -21511,7 +21551,7 @@
         "Introduction",
         "Set up bin templates",
         "Create new bins with the bin creation worksheet",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -21521,8 +21561,8 @@
         "/training/modules/create-new-bins/4-check",
         "/training/modules/create-new-bins/5-summary"
       ],
-      "lastModified": "2026-08-31T23:08:00+00:00",
-      "unitSig": "5d80a9902afada1acf3bc0512e967a1e1e6b34ee"
+      "lastModified": "2026-10-09T23:09:00+00:00",
+      "unitSig": "1a0edeeeb881d00391c9672059a7f8805e183618"
     },
     {
       "uid": "learn-dynamics.create-new-companies-dynamics-365-business-central",
@@ -22211,8 +22251,8 @@
         "/training/modules/create-workflows/7-check",
         "/training/modules/create-workflows/8-summary"
       ],
-      "lastModified": "2026-09-03T23:14:00+00:00",
-      "unitSig": "84b096378b2d11ae9ff0c4088b04dc0e87dd4634"
+      "lastModified": "2026-10-12T17:13:00+00:00",
+      "unitSig": "6f7ec1ed586f1041033c8c86eb8f29fb07f638e2"
     },
     {
       "uid": "learn-dynamics.cross-dock-items",
@@ -22279,8 +22319,8 @@
         "/training/modules/currencies-exchange-rates-dynamics-365-business-central/5-check",
         "/training/modules/currencies-exchange-rates-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-08-28T23:11:00+00:00",
-      "unitSig": "1de601d1771edf637a12bd38905c786654b2b2e6"
+      "lastModified": "2026-10-09T23:09:00+00:00",
+      "unitSig": "096b21a561dd62eefce456e351714bb0eb296a15"
     },
     {
       "uid": "learn-dynamics.custom-apps-customer-service",
@@ -23544,8 +23584,8 @@
         "/training/modules/dimensions-dynamics-365-business-central/9-check",
         "/training/modules/dimensions-dynamics-365-business-central/10-summary"
       ],
-      "lastModified": "2026-09-01T23:07:00+00:00",
-      "unitSig": "bf27da055567a13cbf50ce0f6fd3cb0d05a62f28"
+      "lastModified": "2026-10-09T23:09:00+00:00",
+      "unitSig": "ced1da6257045c3039f9ecf7c949cdd6fcbd52b5"
     },
     {
       "uid": "learn-dynamics.dimensions-financial-reports-dynamics-365-business-central",
@@ -23934,8 +23974,8 @@
         "/training/modules/email-integration-dynamics-365-business-central/8-check",
         "/training/modules/email-integration-dynamics-365-business-central/9-summary"
       ],
-      "lastModified": "2026-09-02T23:10:00+00:00",
-      "unitSig": "7c9066bf1cfea82521577838d1ef572353dac7e0"
+      "lastModified": "2026-10-12T17:13:00+00:00",
+      "unitSig": "8abe7f5e0ca6c7b99bc5f28c44ea3e7869b9b992"
     },
     {
       "uid": "learn-dynamics.embed-surveys",
@@ -24189,8 +24229,8 @@
         "/training/modules/estimate-receipt-dates-dynamics-365-business-central/3-check",
         "/training/modules/estimate-receipt-dates-dynamics-365-business-central/4-summary"
       ],
-      "lastModified": "2026-09-02T17:07:00+00:00",
-      "unitSig": "ac7f339b8f850a0f34ba3c31cfc6e9632dd2bfa9"
+      "lastModified": "2026-10-09T23:09:00+00:00",
+      "unitSig": "dbfb19ce879d0059abb29aff311a7fa2b1f02885"
     },
     {
       "uid": "learn-dynamics.evaluate-requirements-dynamics-365-projects",
@@ -24897,8 +24937,8 @@
         "/training/modules/extend-modify-existing-pages/5-check",
         "/training/modules/extend-modify-existing-pages/6-summary"
       ],
-      "lastModified": "2026-09-01T17:24:00+00:00",
-      "unitSig": "fec6e7439d009a1c1bd47dfd91a52f1884fc2288"
+      "lastModified": "2026-10-09T17:10:00+00:00",
+      "unitSig": "0a0a8904e147dbe3705268aec30aa2f715926883"
     },
     {
       "uid": "learn-dynamics.extend-modify-existing-table",
@@ -25513,7 +25553,7 @@
         "Introduction - Set up general journal templates",
         "Set up general journal batches",
         "Use business documents with general journal templates",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -25523,8 +25563,8 @@
         "/training/modules/general-journal-templates-dynamics-365-business-central/3-check",
         "/training/modules/general-journal-templates-dynamics-365-business-central/4-summary"
       ],
-      "lastModified": "2026-08-31T17:16:00+00:00",
-      "unitSig": "16e77d1ac5815915ac46a547b16738e837d0f300"
+      "lastModified": "2026-10-09T17:10:00+00:00",
+      "unitSig": "8e09c7c2a2be3b41f56c3f3c892fb1a0d9776ec8"
     },
     {
       "uid": "learn-dynamics.general-ledger-allocations",
@@ -29305,8 +29345,8 @@
         "/training/modules/introduction-test-automation/6-check",
         "/training/modules/introduction-test-automation/7-summary"
       ],
-      "lastModified": "2026-08-28T17:09:00+00:00",
-      "unitSig": "ae07bc817c9582fbc0f70db8d10829dbab6065c4"
+      "lastModified": "2026-10-09T23:09:00+00:00",
+      "unitSig": "c8cac1b5156302ceffb2ecf8724843d1842c324f"
     },
     {
       "uid": "learn-dynamics.introduction-to-integration-with-dynamics-365-customer-engagement",
@@ -29607,8 +29647,8 @@
         "/training/modules/manage-customer-returns-dynamics-365-business-central/4-check",
         "/training/modules/manage-customer-returns-dynamics-365-business-central/5-summary"
       ],
-      "lastModified": "2026-09-01T17:24:00+00:00",
-      "unitSig": "c957c98b55f916c97c131098309a879dfd1746d0"
+      "lastModified": "2026-10-12T17:13:00+00:00",
+      "unitSig": "90db955a9a262b96750a3c54a065e347543d4316"
     },
     {
       "uid": "learn-dynamics.manage-estimations-project-operations",
@@ -30313,8 +30353,8 @@
         "/training/modules/manage-vendor-returns-dynamics-365-business-central/3-check",
         "/training/modules/manage-vendor-returns-dynamics-365-business-central/4-summary"
       ],
-      "lastModified": "2026-09-01T17:24:00+00:00",
-      "unitSig": "0513721f43f49acca05164b259fbca65988c18f6"
+      "lastModified": "2026-10-09T17:10:00+00:00",
+      "unitSig": "3b7898c479129d9b4d7c858a4d569ed30043d67c"
     },
     {
       "uid": "learn-dynamics.manipulate-data-via-code",
@@ -31866,8 +31906,8 @@
         "/training/modules/prepare-item-tracking/4-check",
         "/training/modules/prepare-item-tracking/5-summary"
       ],
-      "lastModified": "2026-08-31T23:08:00+00:00",
-      "unitSig": "a0d9b2828adb343548499090c1c86aa8ec2dc154"
+      "lastModified": "2026-10-09T17:10:00+00:00",
+      "unitSig": "1f751a5f59097ee2411e88f92cbb74b5bfd8dc89"
     },
     {
       "uid": "learn-dynamics.prepayment-invoices-dynamics-365-business-central",
@@ -31904,8 +31944,8 @@
         "/training/modules/prepayment-invoices-dynamics-365-business-central/7-check",
         "/training/modules/prepayment-invoices-dynamics-365-business-central/8-summary"
       ],
-      "lastModified": "2026-08-31T17:16:00+00:00",
-      "unitSig": "8c248771f6178fd18370f129fe3f12404d767fde"
+      "lastModified": "2026-10-09T23:09:00+00:00",
+      "unitSig": "7d6fe4dc24f194cf27dc8fea122afef9d5c54a50"
     },
     {
       "uid": "learn-dynamics.present-business-applications-designs",
@@ -32715,8 +32755,8 @@
         "/training/modules/put-away-templates/6-check",
         "/training/modules/put-away-templates/7-summary"
       ],
-      "lastModified": "2026-09-02T17:07:00+00:00",
-      "unitSig": "06518dbe610e07f8b84aa5c22c55d948cfb83832"
+      "lastModified": "2026-10-12T17:13:00+00:00",
+      "unitSig": "90afca53fb0ef1fb1f90b900ae1156cb9f6377ae"
     },
     {
       "uid": "learn-dynamics.put-items-away",
@@ -35350,8 +35390,8 @@
         "/training/modules/set-up-prices-discounts-dynamics-365-business-central/5-check",
         "/training/modules/set-up-prices-discounts-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-09-01T17:24:00+00:00",
-      "unitSig": "7eb74d7d930be57565f87b32fc5086ccb5854ea4"
+      "lastModified": "2026-10-12T17:13:00+00:00",
+      "unitSig": "91fa972c9d6936f8a7b528c89641e25d3694e501"
     },
     {
       "uid": "learn-dynamics.set-up-pricing-dimensions",
@@ -36398,8 +36438,8 @@
         "/training/modules/setup-returns-management-dynamics-365-business-central/4-check",
         "/training/modules/setup-returns-management-dynamics-365-business-central/5-summary"
       ],
-      "lastModified": "2026-08-31T23:08:00+00:00",
-      "unitSig": "48147fa56a7ea1ab8c0a25cedbd6ed30aeaec95a"
+      "lastModified": "2026-10-09T23:09:00+00:00",
+      "unitSig": "6a9d3fbcab08f630e8336c6ab88046dbad468e1e"
     },
     {
       "uid": "learn-dynamics.setup-use-basic-budgeting-finance",
@@ -36729,7 +36769,7 @@
         "Suggest payments by using vendor priority and available amounts",
         "Pay invoices on their due date",
         "Exercise - Suggest vendor payments for a single vendor",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -36740,8 +36780,8 @@
         "/training/modules/suggest-vendor-payments-dynamics-365-business-central/5-check",
         "/training/modules/suggest-vendor-payments-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-09-01T17:24:00+00:00",
-      "unitSig": "c310d09790e2f5bba607cb8e404aa3ae5fb07076"
+      "lastModified": "2026-10-12T17:13:00+00:00",
+      "unitSig": "583647c85d0bda3a1a6b0eb2770b87cdf70cbcc8"
     },
     {
       "uid": "learn-dynamics.sync-items-shopify-dynamics-365-business-central",
@@ -46870,13 +46910,13 @@
       ],
       "subjects": [],
       "units": [
-        "AI agent orchestration patterns",
+        "Introduction",
         "Sequential orchestration",
         "Concurrent orchestration",
         "Group chat orchestration",
         "Handoff orchestration",
         "Magentic orchestration",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -46889,8 +46929,8 @@
         "/training/modules/agent-orchestration-patterns/7-knowledge-check",
         "/training/modules/agent-orchestration-patterns/8-summary"
       ],
-      "lastModified": "2026-08-03T07:12:00+00:00",
-      "unitSig": "ac5562700886c8df7388fe19a185379e2610184f"
+      "lastModified": "2026-10-12T07:11:00+00:00",
+      "unitSig": "24ad9048416754508a2991862fb7522e6561d848"
     },
     {
       "uid": "learn.ai-agent-cost-structure",
@@ -51800,7 +51840,7 @@
         "Understand storage account keys",
         "Understand shared access signatures",
         "Control network access to your storage account",
-        "Understand Advanced Threat Protection for Azure Storage",
+        "Understand advanced threat protection for Azure Storage",
         "Explore Azure Data Lake Storage security features",
         "Summary"
       ],
@@ -51814,8 +51854,8 @@
         "/training/modules/secure-azure-storage-account/7-adl-enterprise-security-features",
         "/training/modules/secure-azure-storage-account/8-summary"
       ],
-      "lastModified": "2026-05-18T17:20:00+00:00",
-      "unitSig": "4482bc8b343344f6b7c466b8fbc81fc3d50126bf"
+      "lastModified": "2026-10-13T11:23:00+00:00",
+      "unitSig": "2b5781228aee51c26d1779612d56692cd2441bec"
     },
     {
       "uid": "learn.azure.set-up-mixed-reality-azure-digital-twins-unity",
@@ -54366,7 +54406,7 @@
         "Introduction",
         "Understand Azure Data Lake Storage Gen2",
         "Enable Azure Data Lake Storage Gen2 in Azure Storage",
-        "Compare Azure Data Lake Store to Azure Blob storage",
+        "Compare Azure Data Lake Storage to Azure Blob storage",
         "Understand the stages for processing big data",
         "Use Azure Data Lake Storage Gen2 in data analytics workloads",
         "Module assessment",
@@ -54382,8 +54422,8 @@
         "/training/modules/introduction-to-azure-data-lake-storage/7-knowledge-check",
         "/training/modules/introduction-to-azure-data-lake-storage/8-summary"
       ],
-      "lastModified": "2026-04-03T17:10:00+00:00",
-      "unitSig": "4a5f1e9f0098d588340b1b79bfa1e14f3f4d88e8"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "a9df6b076787c849262f38ae6a68f3dd601d5841"
     },
     {
       "uid": "learn.data-ai.introduction-to-data-streaming",
@@ -54418,8 +54458,8 @@
         "/training/modules/introduction-to-data-streaming/5-knowledge-check",
         "/training/modules/introduction-to-data-streaming/6-summary"
       ],
-      "lastModified": "2026-04-03T17:10:00+00:00",
-      "unitSig": "0a6e424469893959025bff29f6511d158cc35a97"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "23d36730e20ef50b85007245f342055d8f3b9820"
     },
     {
       "uid": "learn.data-ai.upload-data-to-azure-data-lake-storage",
@@ -54447,8 +54487,8 @@
         "/training/modules/upload-data-to-azure-data-lake-storage/3-upload-data-using-explorer",
         "/training/modules/upload-data-to-azure-data-lake-storage/6-summary"
       ],
-      "lastModified": "2026-05-18T17:20:00+00:00",
-      "unitSig": "9c9f642939919c1fee3f25c7d588078a1afd72df"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "d6faea6ca37b4a13b9f5adc6a3663dde927842b6"
     },
     {
       "uid": "learn.data-management-analytics",
@@ -55292,6 +55332,58 @@
       ],
       "lastModified": "2026-07-16T11:10:00+00:00",
       "unitSig": "1bdda692881f36ca097fc92cbc313edb4cf86c3c"
+    },
+    {
+      "uid": "learn.devrel.guarded-fabrics-shielded-virtual-machines",
+      "title": "Design, operate, and recover Hyper-V guarded fabrics and shielded virtual machines",
+      "url": "https://learn.microsoft.com/training/modules/guarded-fabric-shielded-virtual-machines/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/guarded-fabric-shielded-virtual-machines",
+      "categories": [
+        "Windows Server"
+      ],
+      "products": [
+        "Windows Server"
+      ],
+      "subjects": [
+        "Infrastructure",
+        "Security"
+      ],
+      "units": [
+        "Introduction",
+        "Evaluate platform prerequisites",
+        "Deploy Host Guardian Service",
+        "Establish trusted platform module attestation",
+        "Evaluate host-key attestation",
+        "Establish virtual machine ownership",
+        "Prepare shielded virtual machine provisioning artifacts",
+        "Provision shielded virtual machines",
+        "Manage shielded virtual machine operations",
+        "Service guarded fabrics",
+        "Respond to guarded-fabric compromise",
+        "Recover guarded fabrics",
+        "Diagnose guarded-fabric failures",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/guarded-fabric-shielded-virtual-machines/1-introduction",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/2-evaluate-platform-prerequisites",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/3-deploy-host-guardian-service",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/4-establish-trusted-platform-module-attestation",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/5-evaluate-host-key-attestation",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/6-establish-virtual-machine-ownership",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/7-prepare-shielded-virtual-machine-provisioning-artifacts",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/8-provision-shielded-virtual-machines",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/9-manage-shielded-virtual-machine-operations",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/10-service-guarded-fabrics",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/11-respond-to-guarded-fabric-compromise",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/12-recover-guarded-fabrics",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/13-diagnose-guarded-fabric-failures",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/14-knowledge-check",
+        "/training/modules/guarded-fabric-shielded-virtual-machines/15-summary"
+      ],
+      "lastModified": "2026-10-12T07:11:00+00:00",
+      "unitSig": "9280cfa817b30bf8c8215fec0b8c7848bf6daf15"
     },
     {
       "uid": "learn.devrel.harden-microsoft-365-secure-score",
@@ -57282,6 +57374,39 @@
       "unitSig": "83363d292856f0caa9af10c13053dbf426197107"
     },
     {
+      "uid": "learn.dpu.create-copilot-studio-agent",
+      "title": "Work smarter with an agent in Microsoft Copilot Studio",
+      "url": "https://learn.microsoft.com/training/modules/create-copilot-studio-agent/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/create-copilot-studio-agent",
+      "categories": [
+        "Microsoft 365"
+      ],
+      "products": [
+        "microsoft-365-copilot"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Plan an agent",
+        "Exercise: Create a plan for a support agent",
+        "Configure an agent in Microsoft Copilot Studio",
+        "Exercise: Build a support agent",
+        "Knowledge check",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/create-copilot-studio-agent/1-introduction",
+        "/training/modules/create-copilot-studio-agent/2-plan-agent",
+        "/training/modules/create-copilot-studio-agent/3-exercise-plan-agent",
+        "/training/modules/create-copilot-studio-agent/4-create-configure-agent",
+        "/training/modules/create-copilot-studio-agent/5-exercise-build-agent",
+        "/training/modules/create-copilot-studio-agent/6-knowledge-check",
+        "/training/modules/create-copilot-studio-agent/7-summary"
+      ],
+      "lastModified": "2026-10-08T22:13:00+00:00",
+      "unitSig": "6452b0e7c1d4da04dfbe00766c991832c71c12ae"
+    },
+    {
       "uid": "learn.dpu.deploy-windows",
       "title": "Deploy updates for Windows client and Microsoft 365 apps",
       "url": "https://learn.microsoft.com/training/modules/deploy-windows/?WT.mc_id=studentamb_165290",
@@ -58474,6 +58599,37 @@
       "unitSig": "dfd06b8097f99321e7eb400e1c19c57fc95f4692"
     },
     {
+      "uid": "learn.dpu.nvidia-spark-rtx",
+      "title": "Explore NVIDIA RTX Spark for Windows PCs",
+      "url": "https://learn.microsoft.com/training/modules/nvidia-spark-rtx/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/nvidia-spark-rtx",
+      "categories": [
+        "Windows"
+      ],
+      "products": [
+        "windows-11"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Hardware overview",
+        "Personal AI agents",
+        "Nvidia RTX Spark user personas",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/nvidia-spark-rtx/1-introduction",
+        "/training/modules/nvidia-spark-rtx/2-hardware-overview",
+        "/training/modules/nvidia-spark-rtx/3-personal-ai-agents",
+        "/training/modules/nvidia-spark-rtx/4-nvidia-rtx-spark-user-personas",
+        "/training/modules/nvidia-spark-rtx/5-module-assessment",
+        "/training/modules/nvidia-spark-rtx/6-summary"
+      ],
+      "lastModified": "2026-10-07T18:51:00+00:00",
+      "unitSig": "2b65054a33f4d112c6e30f7ab26b053664e85310"
+    },
+    {
       "uid": "learn.dpu.office-home-2024",
       "title": "Introduction to Microsoft Office Home 2024",
       "url": "https://learn.microsoft.com/training/modules/office-home-2024/?WT.mc_id=studentamb_165290",
@@ -58890,7 +59046,7 @@
     },
     {
       "uid": "learn.dpu.relight-microsoft-photos",
-      "title": "Enhance a professional portrait using Relight in Microsoft Photos on a Copilot",
+      "title": "Enhance a portrait using Relight in Microsoft Photos on a Copilot+ PC",
       "url": "https://learn.microsoft.com/training/modules/relight-microsoft-photos/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/relight-microsoft-photos",
       "categories": [
@@ -58918,8 +59074,8 @@
         "/training/modules/relight-microsoft-photos/6-knowledge-check",
         "/training/modules/relight-microsoft-photos/7-summary"
       ],
-      "lastModified": "2026-10-02T17:47:00+00:00",
-      "unitSig": "2e5997f9a8d77c34be5be4456abe3fbf178cd71f"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "626a7db0a480c70604a215055686ec22d2b88519"
     },
     {
       "uid": "learn.dpu.resilient-foundations-windows-11",
@@ -60718,8 +60874,8 @@
         "/training/modules/github-administration-for-enterprise-support-adoption/6-knowledge-check",
         "/training/modules/github-administration-for-enterprise-support-adoption/5-summary"
       ],
-      "lastModified": "2025-04-23T17:00:00+00:00",
-      "unitSig": "6aeb3d4e5f56afdb8c3ccd8a8ecac71969651056"
+      "lastModified": "2026-10-06T22:10:00+00:00",
+      "unitSig": "e28f8469ac2f34c142dd7e1429dbc1dc817d1865"
     },
     {
       "uid": "learn.github-administration-github-advanced-security",
@@ -61891,8 +62047,8 @@
         "/training/modules/github-introduction-administration/knowledge-check",
         "/training/modules/github-introduction-administration/6-summary"
       ],
-      "lastModified": "2025-04-16T17:01:00+00:00",
-      "unitSig": "61e4f3b9fa50e9937bcfb7761123fb196e232765"
+      "lastModified": "2026-10-06T22:10:00+00:00",
+      "unitSig": "e46de083b9c1cb318bf5b48424bc1487ddc38cb1"
     },
     {
       "uid": "learn.github.github-introduction-products",
@@ -62646,6 +62802,80 @@
       ],
       "lastModified": "2025-08-12T17:17:00+00:00",
       "unitSig": "3e97c32a6024b557ca8da6d651814e2e2803e466"
+    },
+    {
+      "uid": "learn.github.security-campaign",
+      "title": "Security campaigns and prevention-first strategy",
+      "url": "https://learn.microsoft.com/training/modules/security-campaign/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/security-campaign",
+      "categories": [
+        "Azure",
+        "GitHub"
+      ],
+      "products": [
+        "Azure",
+        "GitHub"
+      ],
+      "subjects": [
+        "Collaboration"
+      ],
+      "units": [
+        "Introduction",
+        "Understand Security Campaigns",
+        "Identify and Scope a Campaign",
+        "Coordinate and Execute Remediation at Scale",
+        "Measure Campaign Effectiveness",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/security-campaign/1-introduction",
+        "/training/modules/security-campaign/2-understand-security-campaigns",
+        "/training/modules/security-campaign/3-identify-scope-campaign",
+        "/training/modules/security-campaign/4-coordinate-execute-remediation-scale",
+        "/training/modules/security-campaign/5-measure-campaign-effectiveness",
+        "/training/modules/security-campaign/6-knowledge-check",
+        "/training/modules/security-campaign/7-summary"
+      ],
+      "lastModified": "2026-10-13T17:16:00+00:00",
+      "unitSig": "62798cf1b5f6b061e53bf40dc7a7658fe3cd933d"
+    },
+    {
+      "uid": "learn.github.security-remediation",
+      "title": "Security operations and remediation workflows with GitHub Advanced Security",
+      "url": "https://learn.microsoft.com/training/modules/security-remediation/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/security-remediation",
+      "categories": [
+        "Azure",
+        "GitHub"
+      ],
+      "products": [
+        "Azure",
+        "GitHub"
+      ],
+      "subjects": [
+        "Collaboration"
+      ],
+      "units": [
+        "Introduction",
+        "Managing security alerts through a standardized lifecycle",
+        "Evaluating vulnerability risk using CVE and CWE",
+        "Prioritizing and remediating security vulnerabilities",
+        "Governance and AI-assisted security remediation",
+        "Security automation, metrics, and DevSecOps collaboration",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/security-remediation/1-introduction",
+        "/training/modules/security-remediation/2-manage-security-alerts",
+        "/training/modules/security-remediation/3-evaluate-vulnerability-risk",
+        "/training/modules/security-remediation/4-prioritize-remediate-security-vulnerabilities",
+        "/training/modules/security-remediation/5-governance-ai-assisted-security-remediation",
+        "/training/modules/security-remediation/6-security-automation-metrics-collaboration",
+        "/training/modules/security-remediation/7-summary"
+      ],
+      "lastModified": "2026-10-13T17:16:00+00:00",
+      "unitSig": "bad7ced1e04b7083be2ba84ca018e327f2f4b497"
     },
     {
       "uid": "learn.github.upload-project-github",
@@ -67324,7 +67554,7 @@
         "/training/modules/deploy-microsoft-education-solution-guide/6-summary"
       ],
       "lastModified": "2026-05-29T23:07:00+00:00",
-      "unitSig": "c21d863e48e800ec3a42093774031c37182db494"
+      "unitSig": "f6f3dc06e5e10b7dc7c3d1fc56839b6248c809e3"
     },
     {
       "uid": "learn.mec.design-ai-for-good",
@@ -68425,52 +68655,6 @@
       "unitSig": "1019c278ab296570dfc65e6146638bc1a861282d"
     },
     {
-      "uid": "learn.mec.foundations-modern-public-sector-security-operations-center",
-      "title": "Foundations of a modern public sector security operations center",
-      "url": "https://learn.microsoft.com/training/modules/foundations-modern-public-sector-security-operations-center/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/foundations-modern-public-sector-security-operations-center",
-      "categories": [
-        "Microsoft 365",
-        "m365-ems-advanced-threat-analytics",
-        "microsoft-defender",
-        "ms-copilot"
-      ],
-      "products": [
-        "Microsoft 365 Security Center",
-        "Microsoft Defender for Cloud",
-        "defender-for-threat-intelligence",
-        "m365-ems-advanced-threat-analytics",
-        "ms-copilot"
-      ],
-      "subjects": [
-        "Threat protection"
-      ],
-      "units": [
-        "Introduction",
-        "What is a SOC?",
-        "Importance of modernizing public sector SOCs",
-        "How to plan for modernizing SOCs",
-        "Capabilities of a modernized SOC for the public sector",
-        "How modernizing SOCs helps with cybersecurity challenges",
-        "Conclusion and call to action",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/foundations-modern-public-sector-security-operations-center/introduction",
-        "/training/modules/foundations-modern-public-sector-security-operations-center/what-is-security-operations-center",
-        "/training/modules/foundations-modern-public-sector-security-operations-center/importance-modernizing-public-sector-security-operations-centers",
-        "/training/modules/foundations-modern-public-sector-security-operations-center/how-plan-modernizing-security-operations-centers",
-        "/training/modules/foundations-modern-public-sector-security-operations-center/capabilities-modernized-security-operations-center-public-sector",
-        "/training/modules/foundations-modern-public-sector-security-operations-center/how-modernizing-security-operations-centers-helps-cybersecurity-challenges",
-        "/training/modules/foundations-modern-public-sector-security-operations-center/conclusion-call-to-action",
-        "/training/modules/foundations-modern-public-sector-security-operations-center/knowledge-check",
-        "/training/modules/foundations-modern-public-sector-security-operations-center/summary"
-      ],
-      "lastModified": "2026-05-29T23:07:00+00:00",
-      "unitSig": "f8f7703e1a0302d0602cb09d48fe4efa557801bc"
-    },
-    {
       "uid": "learn.mec.get-ready-ai-education-microsoft",
       "title": "Get ready for AI in education with Microsoft",
       "url": "https://learn.microsoft.com/training/modules/get-ready-ai-education-microsoft/?WT.mc_id=studentamb_165290",
@@ -68631,6 +68815,54 @@
       "unitSig": "093a311cbf15e398aaaf1aa2f882f7965525c58c"
     },
     {
+      "uid": "learn.mec.implement-agentic-public-sector-security-operations-center",
+      "title": "Implement an agentic public sector security operations center",
+      "url": "https://learn.microsoft.com/training/modules/implement-agentic-public-sector-security-operations-center/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/implement-agentic-public-sector-security-operations-center",
+      "categories": [
+        "Microsoft 365",
+        "m365-ems-advanced-threat-analytics",
+        "microsoft-defender",
+        "ms-copilot"
+      ],
+      "products": [
+        "Microsoft 365 Security Center",
+        "Microsoft Defender for Cloud",
+        "defender-for-threat-intelligence",
+        "m365-ems-advanced-threat-analytics",
+        "ms-copilot"
+      ],
+      "subjects": [
+        "Threat protection"
+      ],
+      "units": [
+        "Introduction",
+        "What is a SOC?",
+        "Importance of modernizing public sector SOCs",
+        "How to plan for modernizing SOCs",
+        "Capabilities of a modernized SOC for the public sector",
+        "How AI agents support a modern public sector SOC",
+        "How modernizing SOCs helps with cybersecurity challenges",
+        "Conclusion and call to action",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/implement-agentic-public-sector-security-operations-center/introduction",
+        "/training/modules/implement-agentic-public-sector-security-operations-center/what-is-security-operations-center",
+        "/training/modules/implement-agentic-public-sector-security-operations-center/importance-modernizing-public-sector-security-operations-centers",
+        "/training/modules/implement-agentic-public-sector-security-operations-center/how-plan-modernizing-security-operations-centers",
+        "/training/modules/implement-agentic-public-sector-security-operations-center/capabilities-modernized-security-operations-center-public-sector",
+        "/training/modules/implement-agentic-public-sector-security-operations-center/how-ai-agents-support-modern-public-sector",
+        "/training/modules/implement-agentic-public-sector-security-operations-center/how-modernizing-security-operations-centers-helps-cybersecurity-challenges",
+        "/training/modules/implement-agentic-public-sector-security-operations-center/conclusion-call-to-action",
+        "/training/modules/implement-agentic-public-sector-security-operations-center/knowledge-check",
+        "/training/modules/implement-agentic-public-sector-security-operations-center/summary"
+      ],
+      "lastModified": "2026-10-12T17:07:00+00:00",
+      "unitSig": "72eba918e67fff431821d0436d90b85aa7be0008"
+    },
+    {
       "uid": "learn.mec.implement-microsoft-copilot-school-partner-success-series",
       "title": "Implement Microsoft Copilot in your school (Partner Success Series)",
       "url": "https://learn.microsoft.com/training/modules/implement-microsoft-copilot-school-partner-success-series/?WT.mc_id=studentamb_165290",
@@ -68719,7 +68951,7 @@
         "/training/modules/implement-microsoft-teams-education-school/summary"
       ],
       "lastModified": "2026-05-29T23:07:00+00:00",
-      "unitSig": "0e0d8fdb0ec450fd9c71e6bf6e23378cf601306f"
+      "unitSig": "0ad55dbea2a22f943b29a177ff9a323901c2fa02"
     },
     {
       "uid": "learn.mec.improve-communication-skills-21cld",
@@ -76262,7 +76494,7 @@
     },
     {
       "uid": "learn.wwl.add-human-loop-workflows-copilot-studio",
-      "title": "Add human-in-the-loop steps to workflows for Copilot Studio agents",
+      "title": "Add human-in-the-loop steps to workflows in Microsoft Copilot Studio",
       "url": "https://learn.microsoft.com/training/modules/add-human-loop-workflows-copilot-studio/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/add-human-loop-workflows-copilot-studio",
       "categories": [
@@ -76291,8 +76523,8 @@
         "/training/modules/add-human-loop-workflows-copilot-studio/5-knowledge-check",
         "/training/modules/add-human-loop-workflows-copilot-studio/6-summary"
       ],
-      "lastModified": "2026-09-29T23:06:00+00:00",
-      "unitSig": "766e5f912cefa4dbbee7b7cfd2ad2f075ba2da0f"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "f341d4fedd5b3ee26611255fdc6b84f69d3b1f04"
     },
     {
       "uid": "learn.wwl.administer-manage-windows-server-iaas-vm-remotely",
@@ -76958,6 +77190,38 @@
       ],
       "lastModified": "2026-10-05T17:13:00+00:00",
       "unitSig": "be2ce65e9dede60ac56988d712192a6b149a5342"
+    },
+    {
+      "uid": "learn.wwl.apply-client-logic-model-driven-apps",
+      "title": "Apply client-side logic in model-driven Power Apps",
+      "url": "https://learn.microsoft.com/training/modules/apply-client-logic-model-driven-apps/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/apply-client-logic-model-driven-apps",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Apps"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Build code that targets the Client API object model",
+        "Create client scripting that targets the Dataverse Web API",
+        "Implement navigation, dialogs, and notifications",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/apply-client-logic-model-driven-apps/1-introduction",
+        "/training/modules/apply-client-logic-model-driven-apps/2-target-client-api-object-model",
+        "/training/modules/apply-client-logic-model-driven-apps/3-script-web-api-commands",
+        "/training/modules/apply-client-logic-model-driven-apps/4-navigation-dialogs-notifications",
+        "/training/modules/apply-client-logic-model-driven-apps/5-knowledge-check",
+        "/training/modules/apply-client-logic-model-driven-apps/6-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "93b18cf016e8f6b495d9f5550602091aa0cde676"
     },
     {
       "uid": "learn.wwl.apply-governance-controls-ai-ready-workloads",
@@ -78539,8 +78803,8 @@
         "/training/modules/build-connected-agent-solutions-github-copilot/6-knowledge-check",
         "/training/modules/build-connected-agent-solutions-github-copilot/7-summary"
       ],
-      "lastModified": "2026-10-02T17:22:00+00:00",
-      "unitSig": "dc46b460dfa9c807c2b57ac10a2619d153bb992d"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "ae3833447bc9e1db62121d47c6b07b65f1b34242"
     },
     {
       "uid": "learn.wwl.build-cross-platform-multi-agent-solutions-agent2agent-copilot-studio",
@@ -78575,6 +78839,39 @@
       ],
       "lastModified": "2026-06-25T23:13:00+00:00",
       "unitSig": "ac50cededd401ed539d9d666f3c6b542ac75670d"
+    },
+    {
+      "uid": "learn.wwl.build-dataverse-code-apps",
+      "title": "Build Dataverse experiences with Power Apps code apps",
+      "url": "https://learn.microsoft.com/training/modules/build-dataverse-code-apps/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/build-dataverse-code-apps",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Apps",
+        "dataverse"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Configure a code app to use Dataverse tables",
+        "Perform Dataverse actions and functions from a code app",
+        "Use environment variables in a code app",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/build-dataverse-code-apps/1-introduction",
+        "/training/modules/build-dataverse-code-apps/2-configure-dataverse-tables",
+        "/training/modules/build-dataverse-code-apps/3-perform-dataverse-actions-functions",
+        "/training/modules/build-dataverse-code-apps/4-use-environment-variables",
+        "/training/modules/build-dataverse-code-apps/5-knowledge-check",
+        "/training/modules/build-dataverse-code-apps/6-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "fbd62ecc62e6aec377f595e7dbe93b794beaf9cf"
     },
     {
       "uid": "learn.wwl.build-effective-generative-ai-solutions-organization",
@@ -79061,6 +79358,43 @@
       ],
       "lastModified": "2026-05-07T23:25:00+00:00",
       "unitSig": "2f78c2c68885c99021577c9b769299548b876f81"
+    },
+    {
+      "uid": "learn.wwl.build-power-platform-custom-connectors",
+      "title": "Connect external APIs with Power Platform custom connectors",
+      "url": "https://learn.microsoft.com/training/modules/build-power-platform-custom-connectors/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/build-power-platform-custom-connectors",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Apps",
+        "Power Automate"
+      ],
+      "subjects": [
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Create a custom connector from an existing API definition",
+        "Implement authentication for custom connectors",
+        "Modify connector behavior at runtime",
+        "Transform data with an Azure Function or custom code",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/build-power-platform-custom-connectors/1-introduction",
+        "/training/modules/build-power-platform-custom-connectors/2-create-custom-connector-existing-api-definition",
+        "/training/modules/build-power-platform-custom-connectors/3-implement-authentication-custom-connectors",
+        "/training/modules/build-power-platform-custom-connectors/4-modify-connector-behavior-runtime",
+        "/training/modules/build-power-platform-custom-connectors/5-transform-data-azure-function-custom-code",
+        "/training/modules/build-power-platform-custom-connectors/6-knowledge-check",
+        "/training/modules/build-power-platform-custom-connectors/7-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "1cb9da6f8fb5d1f53ac47dd8ab9cbd480e8d3fe9"
     },
     {
       "uid": "learn.wwl.build-query-azure-cosmos-db",
@@ -80458,8 +80792,8 @@
         "/training/modules/cleanse-transform-load-data-into-unity-catalog/10-knowledge-check",
         "/training/modules/cleanse-transform-load-data-into-unity-catalog/11-summary"
       ],
-      "lastModified": "2026-05-11T17:02:00+00:00",
-      "unitSig": "b80afde4607a29cf016f4efed08652c0d8d948c1"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "22f3e848fab48250f718a7555f87345f93c2615d"
     },
     {
       "uid": "learn.wwl.close-out-course",
@@ -84126,8 +84460,8 @@
         "/training/modules/connect-agents-mcp-servers-github-copilot/6-knowledge-check",
         "/training/modules/connect-agents-mcp-servers-github-copilot/7-summary"
       ],
-      "lastModified": "2026-10-02T23:16:00+00:00",
-      "unitSig": "f58c99ef43ec71d1e7c8949c5f7ec9315d8d9eae"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "2cb5428e3ff21f02f1141b051d02e6e228a8aee5"
     },
     {
       "uid": "learn.wwl.connect-agents-microsoft-iq-github-copilot",
@@ -84161,8 +84495,8 @@
         "/training/modules/connect-agents-microsoft-iq-github-copilot/6-knowledge-check",
         "/training/modules/connect-agents-microsoft-iq-github-copilot/7-summary"
       ],
-      "lastModified": "2026-10-02T23:16:00+00:00",
-      "unitSig": "e97223fbbb1ecb4fcb3422dc32f5f78a864ad263"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "6378613a180430ffccdd578d88c3860dceb3dca4"
     },
     {
       "uid": "learn.wwl.connect-azure-assets-to-azure-defender",
@@ -84289,6 +84623,38 @@
       ],
       "lastModified": "2025-08-01T17:08:00+00:00",
       "unitSig": "fd1ade1985aabd697dc27970a3837de34fb26e63"
+    },
+    {
+      "uid": "learn.wwl.connect-code-apps-platform-services",
+      "title": "Connect Power Apps code apps to platform services",
+      "url": "https://learn.microsoft.com/training/modules/connect-code-apps-platform-services/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/connect-code-apps-platform-services",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Apps"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Configure a code app to use Power Platform connections",
+        "Perform table and metadata operations on Dataverse data",
+        "Configure a code app to use cloud flows and Copilot Studio agents",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/connect-code-apps-platform-services/1-introduction",
+        "/training/modules/connect-code-apps-platform-services/2-configure-power-platform-connections",
+        "/training/modules/connect-code-apps-platform-services/3-perform-table-metadata-operations-dataverse",
+        "/training/modules/connect-code-apps-platform-services/4-configure-cloud-flows-copilot-studio-agents",
+        "/training/modules/connect-code-apps-platform-services/5-knowledge-check",
+        "/training/modules/connect-code-apps-platform-services/6-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "7cf2dbf810000d44fd8caa1cbe9e0714a039f1b2"
     },
     {
       "uid": "learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel",
@@ -84830,6 +85196,38 @@
       ],
       "lastModified": "2025-04-03T17:01:00+00:00",
       "unitSig": "eb9de149c129a7678cd20b0fc6629ac42a811121"
+    },
+    {
+      "uid": "learn.wwl.consume-dataverse-mcp-servers",
+      "title": "Consume Dataverse MCP servers from MCP clients",
+      "url": "https://learn.microsoft.com/training/modules/consume-dataverse-mcp-servers/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/consume-dataverse-mcp-servers",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "dataverse"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Connect a supported MCP client to a Dataverse MCP server",
+        "Inspect tools and invoke a Dataverse operation",
+        "Apply the MCP server governance boundary",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/consume-dataverse-mcp-servers/1-introduction",
+        "/training/modules/consume-dataverse-mcp-servers/2-connect-client-power-platform-mcp-server",
+        "/training/modules/consume-dataverse-mcp-servers/3-inspect-tools-invoke-dataverse-operation",
+        "/training/modules/consume-dataverse-mcp-servers/4-apply-mcp-server-governance-boundary",
+        "/training/modules/consume-dataverse-mcp-servers/5-knowledge-check",
+        "/training/modules/consume-dataverse-mcp-servers/6-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "2eb2185bb1680a98e34bee67641da7f8e81f09c5"
     },
     {
       "uid": "learn.wwl.continuous-deployment-for-machine-learning",
@@ -87207,6 +87605,41 @@
       "unitSig": "dbe96dd5480ebc84034c1689fd125fee1c02d482"
     },
     {
+      "uid": "learn.wwl.deliver-solutions-governed-alm",
+      "title": "Deliver Power Platform solutions through governed ALM",
+      "url": "https://learn.microsoft.com/training/modules/deliver-solutions-governed-alm/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/deliver-solutions-governed-alm",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Manage solution dependencies and solution layers",
+        "Create and use environment variables",
+        "Implement and extend Microsoft Power Platform Pipelines",
+        "Create CI/CD automations by using Power Platform Build Tools",
+        "Make ALM release decisions",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/deliver-solutions-governed-alm/1-introduction",
+        "/training/modules/deliver-solutions-governed-alm/2-manage-solution-dependencies-layers",
+        "/training/modules/deliver-solutions-governed-alm/3-create-use-environment-variables",
+        "/training/modules/deliver-solutions-governed-alm/4-implement-extend-power-platform-pipelines",
+        "/training/modules/deliver-solutions-governed-alm/5-create-cicd-automations-build-tools",
+        "/training/modules/deliver-solutions-governed-alm/6-make-alm-release-decisions",
+        "/training/modules/deliver-solutions-governed-alm/7-knowledge-check",
+        "/training/modules/deliver-solutions-governed-alm/8-summary"
+      ],
+      "lastModified": "2026-10-13T05:08:00+00:00",
+      "unitSig": "24408087122f4f43969b5204382a1c104fc1d547"
+    },
+    {
       "uid": "learn.wwl.deliver-solutions-pipelines",
       "title": "Deliver solutions with pipelines in Power Platform",
       "url": "https://learn.microsoft.com/training/modules/deliver-solutions-pipelines/?WT.mc_id=studentamb_165290",
@@ -87961,6 +88394,42 @@
       ],
       "lastModified": "2026-08-27T17:45:00+00:00",
       "unitSig": "0c4b10b58a1ad71d20f9089d5e8d0183e7b647c3"
+    },
+    {
+      "uid": "learn.wwl.deploy-operate-code-apps",
+      "title": "Deploy and operate secure Power Apps code apps",
+      "url": "https://learn.microsoft.com/training/modules/deploy-operate-code-apps/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/deploy-operate-code-apps",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Apps"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Configure Content Security Policy settings for a code app",
+        "Package, deploy, and share a code app",
+        "Monitor and troubleshoot a code app",
+        "Optimize code app performance and resource usage",
+        "Interpret CSP and Monitor results",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/deploy-operate-code-apps/1-introduction",
+        "/training/modules/deploy-operate-code-apps/2-configure-content-security-policy",
+        "/training/modules/deploy-operate-code-apps/3-package-deploy-share",
+        "/training/modules/deploy-operate-code-apps/4-monitor-troubleshoot",
+        "/training/modules/deploy-operate-code-apps/5-optimize-performance",
+        "/training/modules/deploy-operate-code-apps/6-review-content-security-policy-results",
+        "/training/modules/deploy-operate-code-apps/7-knowledge-check",
+        "/training/modules/deploy-operate-code-apps/8-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "e02286382aadcfeebed5b350f73658f408c7c465"
     },
     {
       "uid": "learn.wwl.deploy-paas-solutions-with-azure-sql",
@@ -89127,8 +89596,8 @@
         "/training/modules/describe-concepts-of-relational-data/5-knowledge-check",
         "/training/modules/describe-concepts-of-relational-data/6-summary"
       ],
-      "lastModified": "2026-04-30T23:23:00+00:00",
-      "unitSig": "d6bd76159cd8cbc9da9021a3ea539da7a55d13bb"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "a7ee26e55f5e9d4162c1b0c5bd00db483ea4fb14"
     },
     {
       "uid": "learn.wwl.describe-core-architectural-components-of-azure",
@@ -91929,7 +92398,7 @@
     },
     {
       "uid": "learn.wwl.design-governance-security-strategy-copilot-studio",
-      "title": "Design a governance and security strategy for Copilot Studio agents",
+      "title": "Design a governance and security strategy for agents in Microsoft Copilot Studio",
       "url": "https://learn.microsoft.com/training/modules/design-governance-security-strategy-copilot-studio/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/design-governance-security-strategy-copilot-studio",
       "categories": [
@@ -91962,8 +92431,8 @@
         "/training/modules/design-governance-security-strategy-copilot-studio/7-knowledge-check",
         "/training/modules/design-governance-security-strategy-copilot-studio/8-summary"
       ],
-      "lastModified": "2026-10-02T17:22:00+00:00",
-      "unitSig": "2a9ab1bd6c5ba648f94002422256acdc6a4e523f"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "0a3f6be48d8e54e09e29ccf9c94c3813b3999c4d"
     },
     {
       "uid": "learn.wwl.design-human-in-loop-approval-workflows",
@@ -92592,8 +93061,8 @@
         "/training/modules/design-integration-strategies-agents-github-copilot/6-knowledge-check",
         "/training/modules/design-integration-strategies-agents-github-copilot/7-summary"
       ],
-      "lastModified": "2026-09-29T05:06:00+00:00",
-      "unitSig": "8226bba8e7341a8e264b51cf15719615440d00aa"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "ea06b432d5dc916f02aee27c773b550cb5e68a03"
     },
     {
       "uid": "learn.wwl.design-machine-learning-model-training-solution",
@@ -92785,8 +93254,8 @@
         "/training/modules/design-multi-agent-solutions-copilot-studio/5-knowledge-check",
         "/training/modules/design-multi-agent-solutions-copilot-studio/6-summary"
       ],
-      "lastModified": "2026-09-30T17:16:00+00:00",
-      "unitSig": "e7e590558faf67d7068f011a2adade0c36a91119"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "e367ae08b4a846274dd8878e7ec330aaa88aff28"
     },
     {
       "uid": "learn.wwl.design-multi-region-availability-failover-azure-cosmos-db-nosql",
@@ -92983,6 +93452,76 @@
       "unitSig": "d3ad26f55974fd55bc60ffbbff8d0be06103b617"
     },
     {
+      "uid": "learn.wwl.design-power-platform-architectures",
+      "title": "Evaluate Microsoft Power Platform solution implementation options",
+      "url": "https://learn.microsoft.com/training/modules/design-power-platform-architectures/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/design-power-platform-architectures",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Analyze solution components and out-of-the-box fit",
+        "Decide where business logic and data live",
+        "Evaluate identity and security constraints",
+        "Choose user experience and agent approaches",
+        "Select component implementation approaches",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/design-power-platform-architectures/1-introduction",
+        "/training/modules/design-power-platform-architectures/2-analyze-architecture-out-of-box-fit",
+        "/training/modules/design-power-platform-architectures/3-decide-business-logic-data-placement",
+        "/training/modules/design-power-platform-architectures/4-design-security-solution-components",
+        "/training/modules/design-power-platform-architectures/5-choose-ux-agent-approaches",
+        "/training/modules/design-power-platform-architectures/6-make-architecture-decisions",
+        "/training/modules/design-power-platform-architectures/7-knowledge-check",
+        "/training/modules/design-power-platform-architectures/8-summary"
+      ],
+      "lastModified": "2026-10-13T05:08:00+00:00",
+      "unitSig": "f2daf902b20ada4b67e2509d328ffacca0c6cd5c"
+    },
+    {
+      "uid": "learn.wwl.design-power-platform-components",
+      "title": "Design extensible Microsoft Power Platform solution components",
+      "url": "https://learn.microsoft.com/training/modules/design-power-platform-components/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/design-power-platform-components",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Design Power Apps and Dataverse code components",
+        "Design connectors, MCP servers, and integrations",
+        "Design automations, code app interfaces, and custom agents",
+        "Design monitoring and alerting",
+        "Make component design decisions",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/design-power-platform-components/1-introduction",
+        "/training/modules/design-power-platform-components/2-design-power-apps-dataverse-components",
+        "/training/modules/design-power-platform-components/3-design-connectors-mcp-integrations",
+        "/training/modules/design-power-platform-components/4-design-automations-code-apps-agents",
+        "/training/modules/design-power-platform-components/5-design-monitoring-alerting",
+        "/training/modules/design-power-platform-components/6-make-component-design-decisions",
+        "/training/modules/design-power-platform-components/7-knowledge-check",
+        "/training/modules/design-power-platform-components/8-summary"
+      ],
+      "lastModified": "2026-10-13T05:08:00+00:00",
+      "unitSig": "20d4a42daa267df457a049e4f20403b24eea767c"
+    },
+    {
       "uid": "learn.wwl.design-processes-to-automate-application-analytics",
       "title": "Design processes to automate application analytics",
       "url": "https://learn.microsoft.com/training/modules/design-processes-automate-application-analytics/?WT.mc_id=studentamb_165290",
@@ -93168,7 +93707,7 @@
     },
     {
       "uid": "learn.wwl.design-responsible-ai-strategy-copilot-studio",
-      "title": "Design a responsible AI strategy for agents in Copilot Studio",
+      "title": "Design a responsible AI strategy for agents in Microsoft Copilot Studio",
       "url": "https://learn.microsoft.com/training/modules/design-responsible-ai-strategy-copilot-studio/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/design-responsible-ai-strategy-copilot-studio",
       "categories": [
@@ -93199,8 +93738,8 @@
         "/training/modules/design-responsible-ai-strategy-copilot-studio/6-knowledge-check",
         "/training/modules/design-responsible-ai-strategy-copilot-studio/7-summary"
       ],
-      "lastModified": "2026-10-05T17:07:00+00:00",
-      "unitSig": "6cb3be13f626826da8d56c7735e681b6b1b87d13"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "b84142f10de208d4bf2e2070404b406526d86998"
     },
     {
       "uid": "learn.wwl.design-reusable-behavior-skills-copilot-studio",
@@ -93235,8 +93774,8 @@
         "/training/modules/design-reusable-behavior-skills-copilot-studio/6-knowledge-check",
         "/training/modules/design-reusable-behavior-skills-copilot-studio/7-summary"
       ],
-      "lastModified": "2026-09-28T23:09:00+00:00",
-      "unitSig": "939a2fba50ceb543144fb76a9841fffff67ae453"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "52da832dc13c2af98d7b95f126410d128395f2c0"
     },
     {
       "uid": "learn.wwl.design-secure-scalable-platform-architectures",
@@ -94564,6 +95103,40 @@
       ],
       "lastModified": "2026-07-14T17:12:00+00:00",
       "unitSig": "3d90af05538c9884f8f8fdc12bff332fceb28edb"
+    },
+    {
+      "uid": "learn.wwl.diagnose-dataverse-api-failures",
+      "title": "Diagnose advanced Microsoft Dataverse API failures",
+      "url": "https://learn.microsoft.com/training/modules/diagnose-dataverse-api-failures/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/diagnose-dataverse-api-failures",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "dataverse"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Optimize solution components for performance, concurrency, transactions, and bulk operations",
+        "Implement and troubleshoot authentication by using OAuth",
+        "Perform asynchronous logic by using background operations",
+        "Predict and diagnose API failures",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/diagnose-dataverse-api-failures/1-introduction",
+        "/training/modules/diagnose-dataverse-api-failures/2-optimize-performance-concurrency",
+        "/training/modules/diagnose-dataverse-api-failures/3-implement-troubleshoot-oauth-authentication",
+        "/training/modules/diagnose-dataverse-api-failures/4-perform-asynchronous-logic-background-operations",
+        "/training/modules/diagnose-dataverse-api-failures/5-predict-diagnose-api-failures",
+        "/training/modules/diagnose-dataverse-api-failures/6-knowledge-check",
+        "/training/modules/diagnose-dataverse-api-failures/7-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "3f93d158f85e60bc37c1b07f3f9248faa00235cb"
     },
     {
       "uid": "learn.wwl.discover-agents-with-a2a",
@@ -96406,8 +96979,8 @@
         "/training/modules/evaluate-agents-github-copilot/6-knowledge-check",
         "/training/modules/evaluate-agents-github-copilot/7-summary"
       ],
-      "lastModified": "2026-10-05T17:07:00+00:00",
-      "unitSig": "5fe98a2680b9d0cc68a2d5c09fc00a85f4969610"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "a2aec6d2dc9b98159d5aa0b7aa05166fcebf6a65"
     },
     {
       "uid": "learn.wwl.evaluate-costs-benefits-ai-powered-business-solution",
@@ -96846,8 +97419,8 @@
         "/training/modules/examine-components-of-modern-data-warehouse/6-knowledge-check",
         "/training/modules/examine-components-of-modern-data-warehouse/7-summary"
       ],
-      "lastModified": "2026-06-12T23:51:00+00:00",
-      "unitSig": "2968797a83e78fb3e587ae35184c7ce4bcf08f79"
+      "lastModified": "2026-10-13T11:23:00+00:00",
+      "unitSig": "b8db1c8c2b41b5b3c52526dd360b880a18532c14"
     },
     {
       "uid": "learn.wwl.examine-data-governance-solutions-microsoft-purview",
@@ -97389,9 +97962,9 @@
       ],
       "units": [
         "Introduction",
-        "Describe SQL Server integration services",
-        "Understand the Azure SSIS Integration Runtime",
-        "Set-up Azure SSIS Integration Runtime",
+        "Describe SQL Server Integration Services",
+        "Understand the Azure-SSIS integration runtime",
+        "Set up the Azure-SSIS integration runtime",
         "Run SSIS packages in Azure Data Factory",
         "Migrate SSIS packages to Azure Data Factory",
         "Module assessment",
@@ -97407,8 +97980,8 @@
         "/training/modules/execute-existing-ssis-packages-azure-data-factory/7-knowledge-check",
         "/training/modules/execute-existing-ssis-packages-azure-data-factory/8-summary"
       ],
-      "lastModified": "2026-04-30T23:23:00+00:00",
-      "unitSig": "16afa2105824db603abdf3d8a19d6fd3bc411219"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "b854eca0a2d82a26c55bf614f510bac649f162e4"
     },
     {
       "uid": "learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api",
@@ -98044,8 +98617,8 @@
         "/training/modules/explore-azure-databricks/07-knowledge-check",
         "/training/modules/explore-azure-databricks/08-summary"
       ],
-      "lastModified": "2026-05-11T17:02:00+00:00",
-      "unitSig": "6d86519f21623650703634fcca6b346f4491dac1"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "29784fabbd84290c8b03e62664ca4b85115d612f"
     },
     {
       "uid": "learn.wwl.explore-azure-governance-manageability",
@@ -98527,8 +99100,8 @@
         "/training/modules/explore-concepts-of-data-analytics/5-knowledge-check",
         "/training/modules/explore-concepts-of-data-analytics/6-summary"
       ],
-      "lastModified": "2026-04-30T23:23:00+00:00",
-      "unitSig": "4118cfc7123ed2eec6ff9f7a511201d5b4a2e1a5"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "93ecf56d156188f0b4dd4ca660ff29b625b671a0"
     },
     {
       "uid": "learn.wwl.explore-copilot-stack",
@@ -98644,8 +99217,8 @@
         "/training/modules/explore-core-data-concepts/7-knowledge-check",
         "/training/modules/explore-core-data-concepts/8-summary"
       ],
-      "lastModified": "2026-08-03T07:12:00+00:00",
-      "unitSig": "b63c1d920197eb2ba40ca47098eccd4b6804aea9"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "fe6482cbcd7c2220e40b6d92afdcac3134e57290"
     },
     {
       "uid": "learn.wwl.explore-data-management-practices",
@@ -99009,8 +99582,8 @@
         "/training/modules/explore-fundamentals-data-visualization/6-knowledge-check",
         "/training/modules/explore-fundamentals-data-visualization/7-summary"
       ],
-      "lastModified": "2026-06-12T23:51:00+00:00",
-      "unitSig": "2bc5fda72a3259130f89e7c08ed55e0900b64b91"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "0b929713bab8bb1f6806db34c966be8b9870f74e"
     },
     {
       "uid": "learn.wwl.explore-fundamentals-of-stream-processing",
@@ -99051,8 +99624,8 @@
         "/training/modules/explore-fundamentals-stream-processing/7-knowledge-check",
         "/training/modules/explore-fundamentals-stream-processing/8-summary"
       ],
-      "lastModified": "2026-06-12T23:51:00+00:00",
-      "unitSig": "8fba3d9b84cd35e9437107d8f873530ef8b7e897"
+      "lastModified": "2026-10-13T17:16:00+00:00",
+      "unitSig": "0de06042ddd5e93b12940bae032261acb5773c34"
     },
     {
       "uid": "learn.wwl.explore-general-ledger-dynamics-365",
@@ -99867,8 +100440,8 @@
         "/training/modules/explore-non-relational-data-stores-azure/5-knowledge-check",
         "/training/modules/explore-non-relational-data-stores-azure/6-summary"
       ],
-      "lastModified": "2026-06-12T23:51:00+00:00",
-      "unitSig": "a8a9e27ce493ff53884ddd1c68095a471da64d58"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "932928baa7bbe0ef2876b60abe78ac81ead321be"
     },
     {
       "uid": "learn.wwl.explore-onsite-service-capabilities",
@@ -100173,8 +100746,8 @@
         "/training/modules/explore-provision-deploy-non-relational-data-services-azure/7-knowledge-check",
         "/training/modules/explore-provision-deploy-non-relational-data-services-azure/8-summary"
       ],
-      "lastModified": "2026-06-12T23:51:00+00:00",
-      "unitSig": "e823d2490512a630c81cb49909be0ab9c921708c"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "56eea1169fca2500f919903426b5b08dab039252"
     },
     {
       "uid": "learn.wwl.explore-provision-deploy-relational-database-offerings-azure",
@@ -100207,8 +100780,8 @@
         "/training/modules/explore-provision-deploy-relational-database-offerings-azure/5-knowledge-check",
         "/training/modules/explore-provision-deploy-relational-database-offerings-azure/6-summary"
       ],
-      "lastModified": "2026-06-12T23:51:00+00:00",
-      "unitSig": "ab4817c88a8fbcf1501dc7442647505803533dab"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "b2a4183b18c51b8aa992f4ebbc9c2ad41394a5d0"
     },
     {
       "uid": "learn.wwl.explore-purview-message-encryption",
@@ -100333,8 +100906,8 @@
         "/training/modules/explore-relational-data-offerings/6-knowledge-check",
         "/training/modules/explore-relational-data-offerings/7-summary"
       ],
-      "lastModified": "2026-06-12T23:51:00+00:00",
-      "unitSig": "90a14e79bde8ee62e9f16e8858da78c9ee0ac969"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "a3cdace1af2c7b3a619fe790efb0412923917883"
     },
     {
       "uid": "learn.wwl.explore-release-strategy-recommendations",
@@ -100473,8 +101046,8 @@
         "/training/modules/explore-roles-responsibilities-world-of-data/4-knowledge-check",
         "/training/modules/explore-roles-responsibilities-world-of-data/5-summary"
       ],
-      "lastModified": "2026-08-03T07:12:00+00:00",
-      "unitSig": "ba1137461da5e47e547a04e7a3ff287813de121d"
+      "lastModified": "2026-10-13T11:23:00+00:00",
+      "unitSig": "bad418796461c23c3f4c21969c1cc5a5e098cfee"
     },
     {
       "uid": "learn.wwl.explore-security-solutions-microsoft-365-defender",
@@ -100928,8 +101501,8 @@
         "/training/modules/extend-agents-tools-github-copilot/6-knowledge-check",
         "/training/modules/extend-agents-tools-github-copilot/7-summary"
       ],
-      "lastModified": "2026-09-30T17:16:00+00:00",
-      "unitSig": "a9b717c717d9035669699919925af4e0f134e5df"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "85ef14c8c5f26cbbcdda2fba3d04edf72edf0057"
     },
     {
       "uid": "learn.wwl.extend-alm-git-cicd",
@@ -102387,8 +102960,8 @@
         "/training/modules/get-started-copilot-fabric-data-warehouse/knowledge-check",
         "/training/modules/get-started-copilot-fabric-data-warehouse/summary"
       ],
-      "lastModified": "2026-03-27T17:09:00+00:00",
-      "unitSig": "40f136beb9c4f624b0b106504471e485122005f2"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "d8fe9f67a63e054bb94d32b55a4a2a5179c00f2f"
     },
     {
       "uid": "learn.wwl.get-started-data-analytics",
@@ -102424,8 +102997,8 @@
         "/training/modules/get-started-data-analytics/6-knowledge-check",
         "/training/modules/get-started-data-analytics/7-summary"
       ],
-      "lastModified": "2026-04-30T23:23:00+00:00",
-      "unitSig": "4384151397b8d1cbdbefbd8c20975397ab02a60a"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "0f99a4c61c1193d1180fd5af4e2e319fd91e10e9"
     },
     {
       "uid": "learn.wwl.get-started-data-concepts",
@@ -102463,8 +103036,8 @@
         "/training/modules/get-started-data-concepts/7-knowledge-check",
         "/training/modules/get-started-data-concepts/8-summary"
       ],
-      "lastModified": "2026-04-30T23:23:00+00:00",
-      "unitSig": "72e9168f103390df6cb661b1c7a0bded79f422e0"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "202341f71679e5febea03e4e5eb024a29fd9a1c0"
     },
     {
       "uid": "learn.wwl.get-started-data-science-fabric",
@@ -104390,7 +104963,7 @@
         "Apply data retention policies",
         "Set up and manage data lineage",
         "Configure audit logging",
-        "Design secure Delta Sharing strategy",
+        "Design secure OpenSharing strategy",
         "Exercise - Govern Unity Catalog Objects",
         "Module assessment",
         "Summary"
@@ -104402,13 +104975,13 @@
         "/training/modules/govern-unity-catalog-objects/4-apply-data-retention-policies",
         "/training/modules/govern-unity-catalog-objects/5-manage-data-lineage-tracking",
         "/training/modules/govern-unity-catalog-objects/6-configure-audit-logging",
-        "/training/modules/govern-unity-catalog-objects/7-secure-delta-sharing-strategy",
+        "/training/modules/govern-unity-catalog-objects/7-secure-open-sharing-strategy",
         "/training/modules/govern-unity-catalog-objects/8-exercise-govern-unity-catalog-objects",
         "/training/modules/govern-unity-catalog-objects/9-knowledge-check",
         "/training/modules/govern-unity-catalog-objects/10-summary"
       ],
-      "lastModified": "2026-05-11T17:02:00+00:00",
-      "unitSig": "9c80c91cb8cd3c02b492479d43cae836259413fd"
+      "lastModified": "2026-10-13T11:23:00+00:00",
+      "unitSig": "eecc34d28460da2feda7b78a7c2e63ff1bfa3982"
     },
     {
       "uid": "learn.wwl.ground-agents-enterprise-knowledge-connectors-azure-ai-search-copilot-studio",
@@ -104479,8 +105052,8 @@
         "/training/modules/ground-agents-enterprise-knowledge-github-copilot/6-knowledge-check",
         "/training/modules/ground-agents-enterprise-knowledge-github-copilot/7-summary"
       ],
-      "lastModified": "2026-09-29T23:06:00+00:00",
-      "unitSig": "a7a90fe4bf773adfdfb6ab71bedc942430672c0e"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "b3afa2f208868c488e6555e87d182c7d390f6ac6"
     },
     {
       "uid": "learn.wwl.ground-extend-agents-knowledge-tools-skills",
@@ -105699,6 +106272,42 @@
       "unitSig": "86a5540082d23ba4d21e3e3e50f278c7b405ea16"
     },
     {
+      "uid": "learn.wwl.harden-dataverse-extensions",
+      "title": "Harden Dataverse extensions for production workloads",
+      "url": "https://learn.microsoft.com/training/modules/harden-dataverse-extensions/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/harden-dataverse-extensions",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "dataverse"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Optimize plug-in performance",
+        "Configure a custom API and develop its plug-in",
+        "Configure Dataverse business events",
+        "Configure Microsoft Power Platform managed identity for plug-ins",
+        "Interpret plug-in evidence",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/harden-dataverse-extensions/1-introduction",
+        "/training/modules/harden-dataverse-extensions/2-optimize-plug-in-performance",
+        "/training/modules/harden-dataverse-extensions/3-configure-custom-api-plug-in",
+        "/training/modules/harden-dataverse-extensions/4-configure-business-events",
+        "/training/modules/harden-dataverse-extensions/5-configure-managed-identity",
+        "/training/modules/harden-dataverse-extensions/6-interpret-plug-in-evidence",
+        "/training/modules/harden-dataverse-extensions/7-knowledge-check",
+        "/training/modules/harden-dataverse-extensions/8-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "7671e112b7e5ea3a2c08b5d6fff5410e24ed95d7"
+    },
+    {
       "uid": "learn.wwl.harden-endpoints-monitor-security-intune-defender-endpoint",
       "title": "Harden endpoints and monitor security with Microsoft Intune and Defender for Endpoint",
       "url": "https://learn.microsoft.com/training/modules/harden-endpoints-monitor-security-intune-defender-endpoint/?WT.mc_id=studentamb_165290",
@@ -106280,7 +106889,7 @@
     },
     {
       "uid": "learn.wwl.implement-alm-agents-power-platform",
-      "title": "Implement application lifecycle management for Copilot Studio agents using Power Platform",
+      "title": "Implement application lifecycle management for agents in Microsoft Copilot Studio with Power Platform",
       "url": "https://learn.microsoft.com/training/modules/implement-alm-agents-power-platform/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/implement-alm-agents-power-platform",
       "categories": [
@@ -106313,8 +106922,8 @@
         "/training/modules/implement-alm-agents-power-platform/6-knowledge-check",
         "/training/modules/implement-alm-agents-power-platform/7-summary"
       ],
-      "lastModified": "2026-09-30T17:16:00+00:00",
-      "unitSig": "237f31e09111def22c3cc20c6e4f64dd8fedee73"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "5548d6a1a5c88819e499d90df752cd78d00bdee0"
     },
     {
       "uid": "learn.wwl.implement-api-security-api-management",
@@ -107526,6 +108135,40 @@
       "unitSig": "fe52f67c84524585f2ee45d4e544ec2956faf68d"
     },
     {
+      "uid": "learn.wwl.implement-dataverse-plug-ins",
+      "title": "Implement business logic with Microsoft Dataverse plug-ins",
+      "url": "https://learn.microsoft.com/training/modules/implement-dataverse-plug-ins/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/implement-dataverse-plug-ins",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "dataverse"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Demonstrate the use of the different event execution pipeline stages",
+        "Develop a plug-in that uses the execution context",
+        "Implement business logic with images and the Organization service",
+        "Register plug-in components by using the Plug-in Registration tool",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/implement-dataverse-plug-ins/1-introduction",
+        "/training/modules/implement-dataverse-plug-ins/2-demonstrate-event-execution-pipeline-stages",
+        "/training/modules/implement-dataverse-plug-ins/3-develop-plug-in-execution-context",
+        "/training/modules/implement-dataverse-plug-ins/4-implement-business-logic-images-service",
+        "/training/modules/implement-dataverse-plug-ins/5-register-plug-in-components-registration-tool",
+        "/training/modules/implement-dataverse-plug-ins/6-knowledge-check",
+        "/training/modules/implement-dataverse-plug-ins/7-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "6a35cd4ccd16afa66ac8e342c91ae17371d5bdc4"
+    },
+    {
       "uid": "learn.wwl.implement-defender-cloud-ai-services",
       "title": "Enable Defender for AI Services workload protection in Microsoft Defender for Cloud",
       "url": "https://learn.microsoft.com/training/modules/implement-defender-cloud-ai-services/?WT.mc_id=studentamb_165290",
@@ -107810,7 +108453,7 @@
         "Implement testing strategy",
         "Configure and package Declarative Automation Bundles",
         "Deploy bundle with Databricks CLI",
-        "Exercise - Implement Development Lifecycle Processes in Azure Databricks",
+        "Exercise - Implement development lifecycle processes in Azure Databricks",
         "Module assessment",
         "Summary"
       ],
@@ -107825,8 +108468,8 @@
         "/training/modules/implement-development-lifecycle-processes-in-azure-databricks/8-knowledge-check",
         "/training/modules/implement-development-lifecycle-processes-in-azure-databricks/9-summary"
       ],
-      "lastModified": "2026-05-11T17:02:00+00:00",
-      "unitSig": "7ad96f78610e2a3184789e584a62499c365b3d5a"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "0e108fa16fa49eb87d1beea1842ca6c0461b0a20"
     },
     {
       "uid": "learn.wwl.implement-device-encryption",
@@ -108270,8 +108913,8 @@
         "/training/modules/implement-fabric-data-agents/knowledge-check",
         "/training/modules/implement-fabric-data-agents/summary"
       ],
-      "lastModified": "2026-03-27T17:09:00+00:00",
-      "unitSig": "d48fbb6a9a42f63fdbd191237470ef7121d1aa5c"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "b7538091f40478b46144bd5f407fbe884357c350"
     },
     {
       "uid": "learn.wwl.implement-full-text-vector-search-azure-cosmos-db-nosql",
@@ -110168,6 +110811,42 @@
       "unitSig": "acad20ff5727851da4b4b9adba91e5891cfcf727"
     },
     {
+      "uid": "learn.wwl.implement-resilient-cloud-flows",
+      "title": "Implement resilient Power Automate cloud-flow logic",
+      "url": "https://learn.microsoft.com/training/modules/implement-resilient-cloud-flows/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/implement-resilient-cloud-flows",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Automate"
+      ],
+      "subjects": [
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Implement complex expressions and error-handling flow control",
+        "Configure trigger filter and retry policies",
+        "Develop reusable logic by using child flows",
+        "Implement Microsoft Entra ID service principals",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/implement-resilient-cloud-flows/1-introduction",
+        "/training/modules/implement-resilient-cloud-flows/2-implement-expressions-error-handling",
+        "/training/modules/implement-resilient-cloud-flows/3-configure-trigger-retry-policies",
+        "/training/modules/implement-resilient-cloud-flows/4-develop-reusable-child-flows",
+        "/training/modules/implement-resilient-cloud-flows/5-implement-entra-service-principals",
+        "/training/modules/implement-resilient-cloud-flows/6-knowledge-check",
+        "/training/modules/implement-resilient-cloud-flows/7-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "5916ce2604e8b833a2b572bd40b3827e947ae674"
+    },
+    {
       "uid": "learn.wwl.implement-scale-high-availability-with-windows-server-vm",
       "title": "Implement scale and high availability with Windows Server VM",
       "url": "https://learn.microsoft.com/training/modules/implement-scale-high-availability-windows-server-virtual-machine/?WT.mc_id=studentamb_165290",
@@ -111790,8 +112469,8 @@
         "/training/modules/ingest-streaming-data-use-azure-stream-analytics-synapse/7-knowledge-check",
         "/training/modules/ingest-streaming-data-use-azure-stream-analytics-synapse/8-summary"
       ],
-      "lastModified": "2026-04-15T17:12:00+00:00",
-      "unitSig": "3126e3870d2725d5c15f1f03f00615071881367f"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "537d86e6f360c1be2bebaa4fda36682f43bc77db"
     },
     {
       "uid": "learn.wwl.innovate-rise-sap-microsoft-cloud",
@@ -112188,6 +112867,40 @@
       "unitSig": "364de98b492b7f869e46300ca69d694da8121c06"
     },
     {
+      "uid": "learn.wwl.integrate-custom-agents-power-platform",
+      "title": "Integrate custom agents with Microsoft Power Platform",
+      "url": "https://learn.microsoft.com/training/modules/integrate-custom-agents-power-platform/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/integrate-custom-agents-power-platform",
+      "categories": [
+        "Azure",
+        "Microsoft Power Platform",
+        "ms-copilot"
+      ],
+      "products": [
+        "Azure",
+        "Microsoft Power Platform",
+        "dataverse",
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Integrate code-first agents with Power Platform data",
+        "Connect custom agents, Copilot Studio agents, and applications",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/integrate-custom-agents-power-platform/1-introduction",
+        "/training/modules/integrate-custom-agents-power-platform/2-integrate-code-first-agents-power-platform-data",
+        "/training/modules/integrate-custom-agents-power-platform/3-connect-custom-copilot-studio-agents",
+        "/training/modules/integrate-custom-agents-power-platform/4-knowledge-check",
+        "/training/modules/integrate-custom-agents-power-platform/5-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "a0a951cbad5785d79ef1465ab00639d18b1d187b"
+    },
+    {
       "uid": "learn.wwl.integrate-data-azure-data-factory",
       "title": "Integrate data with Azure Data Factory",
       "url": "https://learn.microsoft.com/training/modules/data-integration-azure-data-factory/?WT.mc_id=studentamb_165290",
@@ -112232,8 +112945,8 @@
         "/training/modules/data-integration-azure-data-factory/12-knowledge-check",
         "/training/modules/data-integration-azure-data-factory/13-summary"
       ],
-      "lastModified": "2026-04-30T23:23:00+00:00",
-      "unitSig": "d5c3a284177c674a446c84d464dadc322f111047"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "4e7b7e2a68a170c536bfad6a6c1d7e1123ba3c55"
     },
     {
       "uid": "learn.wwl.integrate-foundry-agent-with-m365",
@@ -112686,8 +113399,8 @@
         "/training/modules/introduction-ai-special-education/6-knowledge-check",
         "/training/modules/introduction-ai-special-education/7-summary"
       ],
-      "lastModified": "2026-01-14T00:08:00+00:00",
-      "unitSig": "10c0a3426ea1f81eb00dff2a30945079936dca1a"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "c22638dbc6bff3d94aa5ada6b79bbeb4dcfe3655"
     },
     {
       "uid": "learn.wwl.introduction-ai-speech",
@@ -112865,8 +113578,8 @@
         "/training/modules/introduction-to-data-engineering-azure/6-knowledge-check",
         "/training/modules/introduction-to-data-engineering-azure/7-summary"
       ],
-      "lastModified": "2026-04-03T17:10:00+00:00",
-      "unitSig": "e864fac27b85f4cb528cb8663429c3ad46357028"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "5dd292105b616e7fd4259d2af07476f5d64847c6"
     },
     {
       "uid": "learn.wwl.introduction-data-platform-modernization",
@@ -113785,8 +114498,8 @@
         "/training/modules/introduction-to-copilot-fabric/knowledge-check",
         "/training/modules/introduction-to-copilot-fabric/summary"
       ],
-      "lastModified": "2026-03-27T17:09:00+00:00",
-      "unitSig": "fbe2c5d4b33a5724407e9f5d196da64fdbb18741"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "7f5fd15b5f9275ba3196baf12552f3fe4d030464"
     },
     {
       "uid": "learn.wwl.introduction-to-deployment-patterns",
@@ -114469,8 +115182,8 @@
         "/training/modules/leverage-ai-tools/8-knowledge-check",
         "/training/modules/leverage-ai-tools/9-summary"
       ],
-      "lastModified": "2026-07-08T22:11:00+00:00",
-      "unitSig": "fb8873d7b371986805699925ae36009b23266a24"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "0c52a57548bc12e258621ae27198b53a9a4e7323"
     },
     {
       "uid": "learn.wwl.license-microsoft-365-ai-services",
@@ -116275,8 +116988,8 @@
         "/training/modules/manage-copilot-fabric/knowledge-check",
         "/training/modules/manage-copilot-fabric/summary"
       ],
-      "lastModified": "2026-03-27T17:09:00+00:00",
-      "unitSig": "a05199d93880e17b8d1e3baa34351e24ae9010fe"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "4193d6da90095490198a6f49c9eff0e4b63ddefd"
     },
     {
       "uid": "learn.wwl.manage-data-storage-audit-logs-sentinel",
@@ -118369,8 +119082,8 @@
         "/training/modules/manage-usage-cost-agents-copilot-studio/6-knowledge-check",
         "/training/modules/manage-usage-cost-agents-copilot-studio/7-summary"
       ],
-      "lastModified": "2026-09-24T17:36:00+00:00",
-      "unitSig": "df8ff1f1123688fff364d718348fec51498a07d6"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "45d9e6bb0214ca0a589593e4f204bfa3905e2ed3"
     },
     {
       "uid": "learn.wwl.manage-user-authentication",
@@ -119940,8 +120653,8 @@
         "/training/modules/monitor-agents-github-copilot/7-knowledge-check",
         "/training/modules/monitor-agents-github-copilot/8-summary"
       ],
-      "lastModified": "2026-10-05T17:07:00+00:00",
-      "unitSig": "432a4ac53a61c28480045a50c4e7900a46810fd5"
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "32dbf4902bbebac21bb591d4decdb387486c25f8"
     },
     {
       "uid": "learn.wwl.monitor-apps-azure-kubernetes-service",
@@ -120459,8 +121172,8 @@
         "/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/8-knowledge-check",
         "/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/9-summary"
       ],
-      "lastModified": "2026-05-11T17:02:00+00:00",
-      "unitSig": "ab0dc806979af1d4cf0e34b1a6670619c38671d7"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "2d2fa9af1b9faff0b092fcf2dd6fba417e3ea5c3"
     },
     {
       "uid": "learn.wwl.monitor-troubleshoot-teams-phone-system",
@@ -120937,8 +121650,8 @@
         "/training/modules/operationalize-azure-data-factory-pipelines/8-knowledge-check",
         "/training/modules/operationalize-azure-data-factory-pipelines/9-summary"
       ],
-      "lastModified": "2026-05-15T23:11:00+00:00",
-      "unitSig": "8679e64cb265c2bcc57cffff5737eb1bdaba3e4b"
+      "lastModified": "2026-10-13T11:23:00+00:00",
+      "unitSig": "f318c999f4540dc483ea1c6da928f7af9dc423f2"
     },
     {
       "uid": "learn.wwl.optimize-azure-reliability-using-sre-agent",
@@ -121502,8 +122215,8 @@
         "/training/modules/orchestrate-data-movement-transformation-azure-data-factory/7-knowledge-check",
         "/training/modules/orchestrate-data-movement-transformation-azure-data-factory/8-summary"
       ],
-      "lastModified": "2026-04-30T23:23:00+00:00",
-      "unitSig": "76f057762f3724d6cd08da72091d363a813d55ff"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "33141863fb2c8bac33f94f432eb2d0a1df7c3e4c"
     },
     {
       "uid": "learn.wwl.orchestrate-durable-functions",
@@ -121930,8 +122643,8 @@
         "/training/modules/code-free-transformation-scale/9-knowledge-check",
         "/training/modules/code-free-transformation-scale/10-summary"
       ],
-      "lastModified": "2026-05-19T17:13:00+00:00",
-      "unitSig": "0bee5c11e02b42ce65acfa3506fad6a75ee958d3"
+      "lastModified": "2026-10-13T11:23:00+00:00",
+      "unitSig": "72e126c92a0772c7dcf5186c47d90829a6fd4926"
     },
     {
       "uid": "learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api",
@@ -121967,6 +122680,40 @@
       ],
       "lastModified": "2025-04-03T17:01:00+00:00",
       "unitSig": "ba5f22a3b1615ab1c5a7121b0d50d34d0ee6beb2"
+    },
+    {
+      "uid": "learn.wwl.perform-dataverse-api-operations",
+      "title": "Perform reliable operations with Microsoft Dataverse APIs",
+      "url": "https://learn.microsoft.com/training/modules/perform-dataverse-api-operations/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/perform-dataverse-api-operations",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "dataverse"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Perform operations by using the Dataverse Web API",
+        "Perform operations by using the Organization service",
+        "Implement API limit retry policies",
+        "Perform operations by using the Dataverse SDKs for .NET and Python",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/perform-dataverse-api-operations/1-introduction",
+        "/training/modules/perform-dataverse-api-operations/2-perform-operations-web-api",
+        "/training/modules/perform-dataverse-api-operations/3-perform-operations-organization-service",
+        "/training/modules/perform-dataverse-api-operations/4-implement-api-limit-retry-policies",
+        "/training/modules/perform-dataverse-api-operations/5-perform-operations-dataverse-sdks",
+        "/training/modules/perform-dataverse-api-operations/6-knowledge-check",
+        "/training/modules/perform-dataverse-api-operations/7-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "9779a5ef0c4ba0b2787669e70378b4ab94e18262"
     },
     {
       "uid": "learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints",
@@ -122232,8 +122979,8 @@
         "/training/modules/petabyte-scale-ingestion-azure-data-factory/8-knowledge-check",
         "/training/modules/petabyte-scale-ingestion-azure-data-factory/9-summary"
       ],
-      "lastModified": "2026-05-18T17:20:00+00:00",
-      "unitSig": "e858035d163042f469deaf1a4052b09ae51d3c44"
+      "lastModified": "2026-10-13T07:29:00+00:00",
+      "unitSig": "4ef155cded1246978b13f52d51b4af2855361550"
     },
     {
       "uid": "learn.wwl.plan-agile-github-projects-azure-boards",
@@ -123666,6 +124413,42 @@
       "unitSig": "5b343e74a16a0d5b465081ee1cd6fd1d48595f34"
     },
     {
+      "uid": "learn.wwl.process-workloads-azure-functions",
+      "title": "Process Power Platform workloads with Azure Functions",
+      "url": "https://learn.microsoft.com/training/modules/process-workloads-azure-functions/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/process-workloads-azure-functions",
+      "categories": [
+        "Azure",
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Functions",
+        "Microsoft Power Platform",
+        "dataverse"
+      ],
+      "subjects": [
+        "serverless-computing"
+      ],
+      "units": [
+        "Introduction",
+        "Process long-running operations by using Azure Functions",
+        "Implement scheduled and event-driven triggers in Azure Functions",
+        "Authenticate to Microsoft Power Platform by using managed identities",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/process-workloads-azure-functions/1-introduction",
+        "/training/modules/process-workloads-azure-functions/2-process-long-running-operations",
+        "/training/modules/process-workloads-azure-functions/3-implement-scheduled-event-driven-triggers",
+        "/training/modules/process-workloads-azure-functions/4-authenticate-managed-identities",
+        "/training/modules/process-workloads-azure-functions/5-knowledge-check",
+        "/training/modules/process-workloads-azure-functions/6-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "7a18191db7504a3487413d6245eece1f7bb0a09a"
+    },
+    {
       "uid": "learn.wwl.project-deploy-applications-azure-kubernetes-service",
       "title": "Guided project - Deploy applications to Azure Kubernetes Service",
       "url": "https://learn.microsoft.com/training/modules/project-deploy-applications-azure-kubernetes-service/?WT.mc_id=studentamb_165290",
@@ -124205,6 +124988,74 @@
       ],
       "lastModified": "2024-04-12T17:01:00+00:00",
       "unitSig": "2b24a026e94f4aca2a1ae34fd8247a899597f992"
+    },
+    {
+      "uid": "learn.wwl.publish-dataverse-events",
+      "title": "Publish Microsoft Dataverse events to external services",
+      "url": "https://learn.microsoft.com/training/modules/publish-dataverse-events/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/publish-dataverse-events",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "dataverse"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Publish a Dataverse event by using the IServiceEndpointNotificationService",
+        "Publish a Dataverse event by using the Plug-in Registration Tool",
+        "Register service endpoints including webhooks, Azure Service Bus, and Azure Event Hubs",
+        "Recommend options for listening to Dataverse events",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/publish-dataverse-events/1-introduction",
+        "/training/modules/publish-dataverse-events/2-publish-event-notification-service",
+        "/training/modules/publish-dataverse-events/3-publish-event-plugin-registration-tool",
+        "/training/modules/publish-dataverse-events/4-register-service-endpoints",
+        "/training/modules/publish-dataverse-events/5-recommend-listening-options",
+        "/training/modules/publish-dataverse-events/6-knowledge-check",
+        "/training/modules/publish-dataverse-events/7-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "843bf4d2ba7e3d3f67a6b9e424aabc066bb315e1"
+    },
+    {
+      "uid": "learn.wwl.publish-deploy-agents-channels-copilot-studio",
+      "title": "Publish and deploy agents to channels in Microsoft Copilot Studio (GitHub Copilot)",
+      "url": "https://learn.microsoft.com/training/modules/publish-deploy-agents-channels-copilot-studio/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/publish-deploy-agents-channels-copilot-studio",
+      "categories": [
+        "ms-copilot"
+      ],
+      "products": [
+        "microsoft-copilot-studio"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "chatbots"
+      ],
+      "units": [
+        "Introduction",
+        "Configure authentication and publish an agent",
+        "Deploy an agent to the demo website and a web app",
+        "Deploy an agent to Microsoft Teams and Microsoft Copilot",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/publish-deploy-agents-channels-copilot-studio/1-introduction",
+        "/training/modules/publish-deploy-agents-channels-copilot-studio/2-configure-authentication-publish-agent",
+        "/training/modules/publish-deploy-agents-channels-copilot-studio/3-deploy-demo-website-web-app",
+        "/training/modules/publish-deploy-agents-channels-copilot-studio/4-deploy-teams-copilot",
+        "/training/modules/publish-deploy-agents-channels-copilot-studio/5-knowledge-check",
+        "/training/modules/publish-deploy-agents-channels-copilot-studio/6-summary"
+      ],
+      "lastModified": "2026-10-06T23:17:00+00:00",
+      "unitSig": "9c233fa97d07216df66defe9138cd007c2bed2a1"
     },
     {
       "uid": "learn.wwl.purview-ai-agent-data-security",
@@ -125947,8 +126798,8 @@
         "/training/modules/query-relational-data/6-exercise-perform-query",
         "/training/modules/query-relational-data/7-summary"
       ],
-      "lastModified": "2026-04-30T23:23:00+00:00",
-      "unitSig": "7894c2d0000c6f82fba06783a8d2f7123634109f"
+      "lastModified": "2026-10-13T11:23:00+00:00",
+      "unitSig": "dffba88ad709041a4e2004d9e6aa5eb0e72ba064"
     },
     {
       "uid": "learn.wwl.queue-process-operations-service-bus",
@@ -127516,8 +128367,8 @@
         "/training/modules/secure-unity-catalog-objects/10-knowledge-check",
         "/training/modules/secure-unity-catalog-objects/11-summary"
       ],
-      "lastModified": "2026-05-11T17:02:00+00:00",
-      "unitSig": "35d2de29268ed66b60a6c98cfcfa5362dc2fc8b1"
+      "lastModified": "2026-10-13T11:23:00+00:00",
+      "unitSig": "d2ad9213555c6a50c323e637e5ac15ac0e55409e"
     },
     {
       "uid": "learn.wwl.secure-windows-server-dns",
@@ -128967,6 +129818,40 @@
       ],
       "lastModified": "2026-09-30T07:10:00+00:00",
       "unitSig": "86567884937a7ec962822d9467c580df48545735"
+    },
+    {
+      "uid": "learn.wwl.synchronize-external-data-dataverse",
+      "title": "Synchronize external data reliably with Microsoft Dataverse",
+      "url": "https://learn.microsoft.com/training/modules/synchronize-external-data-dataverse/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/synchronize-external-data-dataverse",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "dataverse"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Perform data synchronization by using change tracking",
+        "Develop code that uses alternate keys",
+        "Synchronize data by using the UpsertRequest message",
+        "Predict synchronization outcomes",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/synchronize-external-data-dataverse/1-introduction",
+        "/training/modules/synchronize-external-data-dataverse/2-perform-data-synchronization-change-tracking",
+        "/training/modules/synchronize-external-data-dataverse/3-develop-code-alternate-keys",
+        "/training/modules/synchronize-external-data-dataverse/4-synchronize-data-upsert-request-message",
+        "/training/modules/synchronize-external-data-dataverse/5-predict-synchronization-outcomes",
+        "/training/modules/synchronize-external-data-dataverse/6-knowledge-check",
+        "/training/modules/synchronize-external-data-dataverse/7-summary"
+      ],
+      "lastModified": "2026-10-13T17:06:00+00:00",
+      "unitSig": "2233ce1d64641d6d800f72b978f5d15fe935ccd9"
     },
     {
       "uid": "learn.wwl.take-action-agent-conversations-topics-tools-copilot-studio",
@@ -130620,8 +131505,8 @@
         "/training/modules/understand-azure-databricks-architecture/6-knowledge-check",
         "/training/modules/understand-azure-databricks-architecture/7-summary"
       ],
-      "lastModified": "2026-05-11T17:02:00+00:00",
-      "unitSig": "7bc61e67cf45a099cf662cdce1a6b348fbef225f"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "363bac16eadd0bf524e9c3572427bf3f6125dd04"
     },
     {
       "uid": "learn.wwl.understand-azure-databricks-integrations",
@@ -130896,8 +131781,8 @@
         "/training/modules/understand-data-roles-services-products/5-knowledge-check",
         "/training/modules/understand-data-roles-services-products/6-summary"
       ],
-      "lastModified": "2026-08-03T07:12:00+00:00",
-      "unitSig": "0158c8c11675a47ee346304536074519db343e6e"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "cf5f11938ce61c014dc9cfa31a3a08a8284aceec"
     },
     {
       "uid": "learn.wwl.understand-fabric-iq-fundamentals",
@@ -131649,8 +132534,8 @@
         "/training/modules/use-apache-spark-azure-databricks/08-knowledge-check",
         "/training/modules/use-apache-spark-azure-databricks/09-summary"
       ],
-      "lastModified": "2026-05-29T11:11:00+00:00",
-      "unitSig": "18db106e57685aeee06dc18eaff7f5d3cb09e4d1"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "10f8346cda8a91a687be5cbead589799a078df00"
     },
     {
       "uid": "learn.wwl.use-apache-spark-work-files-lakehouse",
@@ -132714,8 +133599,8 @@
         "/training/modules/visualize-real-time-data-azure-stream-analytics-power-bi/6-knowledge-check",
         "/training/modules/visualize-real-time-data-azure-stream-analytics-power-bi/7-summary"
       ],
-      "lastModified": "2026-04-03T17:10:00+00:00",
-      "unitSig": "9f150b7df93d1a4a4784eb182855562c240d5b32"
+      "lastModified": "2026-10-12T22:11:00+00:00",
+      "unitSig": "90565d3b3e4a6b56730352b318d0c7be69f5c367"
     },
     {
       "uid": "learn.wwl.what-is-artificial-intelligence",
@@ -133436,6 +134321,13 @@
       "removedOn": "2026-10-05"
     },
     {
+      "uid": "learn.mec.foundations-modern-public-sector-security-operations-center",
+      "path": "/training/modules/foundations-modern-public-sector-security-operations-center",
+      "title": "Foundations of a modern public sector security operations center",
+      "lastSeen": "2026-10-06",
+      "removedOn": "2026-10-13"
+    },
+    {
       "uid": "learn.wwl.build-data-pipeline-with-delta-live-tables",
       "path": "/training/modules/build-data-pipeline-with-delta-live-tables",
       "title": "Build Lakeflow Declarative Pipelines",
@@ -133519,6 +134411,7 @@
     "/training/modules/surface-business-snapdragon",
     "/training/modules/surface-higher-education",
     "/training/modules/surface-laptop-13-inch-business",
+    "/training/modules/surface-laptop-ultra-business",
     "/training/modules/surface-management-portal",
     "/training/modules/surface-portal-onboarding-guide",
     "/training/modules/surface-portal-service-support",
