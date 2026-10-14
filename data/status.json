@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "learn": {
-    "generatedAt": "2026-10-13T20:39:36.257Z",
-    "runId": "38464550213",
-    "modules": 3395,
+    "generatedAt": "2026-10-14T22:55:21.137Z",
+    "runId": "38650823230",
+    "modules": 3397,
     "removed": 6,
     "outOfScope": 67,
-    "totalApiModules": 3462,
+    "totalApiModules": 3464,
     "unitUrlsRefreshedAt": "2026-10-05",
-    "unitHierarchyRequests": 110,
+    "unitHierarchyRequests": 7,
     "unitHierarchyFailures": 0,
     "unitUrlsNull": 0,
     "unitHierarchyNotFound": 0,
@@ -16,9 +16,9 @@
     "unusedCategories": [],
     "emptiedCategories": [],
     "content": {
-      "learningPaths": 828,
+      "learningPaths": 833,
       "courses": 139,
-      "certifications": 152,
+      "certifications": 154,
       "exams": 146,
       "appliedSkills": 37,
       "studyGuides": 67
@@ -28,9 +28,9 @@
       "moved": 12,
       "unverified": 0,
       "newRemoved": 0,
-      "newMoved": 2,
+      "newMoved": 0,
       "resurrected": 0,
-      "probed": 102
+      "probed": 100
     },
     "contentChanges": {
       "removed": 109,
@@ -39,10 +39,10 @@
       "newRemoved": 0,
       "newMoved": 0,
       "resurrected": 0,
-      "probed": 19
+      "probed": 21
     },
-    "catalogGeneratedAt": "2026-10-13T20:39:36.257Z",
-    "contentGeneratedAt": "2026-10-13T20:40:39.974Z"
+    "catalogGeneratedAt": "2026-10-14T22:55:21.137Z",
+    "contentGeneratedAt": "2026-10-14T22:56:06.127Z"
   },
   "docs": {
     "generatedAt": "2026-10-12T17:36:55.849Z",

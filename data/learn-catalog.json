@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "lastChecked": "2026-10-13T20:39:36.257Z",
+  "lastChecked": "2026-10-14T22:55:21.137Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -54,8 +54,8 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3395,
-  "totalApiModules": 3462,
+  "totalModules": 3397,
+  "totalApiModules": 3464,
   "unitUrlsRefreshedAt": "2026-10-05",
   "modules": [
     {
@@ -2547,8 +2547,8 @@
         "/training/modules/configure-semantic-model-power-bi/9-check",
         "/training/modules/configure-semantic-model-power-bi/10-summary"
       ],
-      "lastModified": "2026-06-15T23:15:00+00:00",
-      "unitSig": "342874a5420f0e164b3bfff594ec7e0ce752f930"
+      "lastModified": "2026-10-13T23:09:00+00:00",
+      "unitSig": "9dc8d51bb9dacbeb0faca633c9ee3d59210841b7"
     },
     {
       "uid": "learn-bizapps.connect-cloud-desktop-flow",
@@ -10741,8 +10741,8 @@
         "/training/modules/power-bi-effective-user-experience/11-check",
         "/training/modules/power-bi-effective-user-experience/12-summary"
       ],
-      "lastModified": "2026-06-15T23:15:00+00:00",
-      "unitSig": "3a9a529c331f4ecba47a47bcdf209b80ffd1f997"
+      "lastModified": "2026-10-13T23:09:00+00:00",
+      "unitSig": "ff138750e2373171b7829ed071c5c217c4302fc3"
     },
     {
       "uid": "learn-bizapps.power-pages-admin-intro",
@@ -44800,8 +44800,8 @@
         "/training/modules/turn-info-into-decisions-ai-agents/knowledge-check",
         "/training/modules/turn-info-into-decisions-ai-agents/summary"
       ],
-      "lastModified": "2026-08-21T17:09:00+00:00",
-      "unitSig": "8630c1a39f94802660893ec05e1f57b60f47aa30"
+      "lastModified": "2026-10-13T23:11:00+00:00",
+      "unitSig": "477f4071befc1b411b079ce0ebe1fbc4162bae95"
     },
     {
       "uid": "learn-m365.understand-ai-agents-prompting",
@@ -44831,8 +44831,8 @@
         "/training/modules/understand-ai-agents-prompting/knowledge-check",
         "/training/modules/understand-ai-agents-prompting/summary"
       ],
-      "lastModified": "2026-08-21T17:09:00+00:00",
-      "unitSig": "7e7bb101b70e0df416ba0c4b3bb832ff4a2963ae"
+      "lastModified": "2026-10-13T23:11:00+00:00",
+      "unitSig": "f7df2d749079490f75a9014653fded247caddadb"
     },
     {
       "uid": "learn-m365.viva-connections-extend-with-adaptive-card-extensions",
@@ -79360,6 +79360,38 @@
       "unitSig": "2f78c2c68885c99021577c9b769299548b876f81"
     },
     {
+      "uid": "learn.wwl.build-power-apps-component-framework-code-components",
+      "title": "Build reusable controls with Power Apps component framework",
+      "url": "https://learn.microsoft.com/training/modules/build-power-apps-component-framework-code-components/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/build-power-apps-component-framework-code-components",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Apps"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Demonstrate the code component lifecycle and configure its manifest",
+        "Implement component interfaces and platform features",
+        "Package, deploy, and consume a component",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/build-power-apps-component-framework-code-components/1-introduction",
+        "/training/modules/build-power-apps-component-framework-code-components/2-demonstrate-lifecycle-configure-manifest",
+        "/training/modules/build-power-apps-component-framework-code-components/3-implement-interfaces-platform-features",
+        "/training/modules/build-power-apps-component-framework-code-components/4-package-deploy-consume-component",
+        "/training/modules/build-power-apps-component-framework-code-components/5-knowledge-check",
+        "/training/modules/build-power-apps-component-framework-code-components/6-summary"
+      ],
+      "lastModified": "2026-10-13T23:09:00+00:00",
+      "unitSig": "0efe6bb88418cb348c067cfe4a5b94fabe1bd288"
+    },
+    {
       "uid": "learn.wwl.build-power-platform-custom-connectors",
       "title": "Connect external APIs with Power Platform custom connectors",
       "url": "https://learn.microsoft.com/training/modules/build-power-platform-custom-connectors/?WT.mc_id=studentamb_165290",
@@ -103630,6 +103662,40 @@
       "unitSig": "29b00a190d8d765ad60842356f8762b4d547e740"
     },
     {
+      "uid": "learn.wwl.get-started-power-platform-development",
+      "title": "Get started with Microsoft Power Platform development",
+      "url": "https://learn.microsoft.com/training/modules/get-started-power-platform-development/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/get-started-power-platform-development",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "dataverse"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Map where extension code runs and how it starts",
+        "Compare client and application extension options",
+        "Compare server, cloud, connector, and agent extension options",
+        "Package extensions in Power Platform solutions",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/get-started-power-platform-development/1-introduction",
+        "/training/modules/get-started-power-platform-development/2-map-extension-runtimes",
+        "/training/modules/get-started-power-platform-development/3-compare-client-application-extension-options",
+        "/training/modules/get-started-power-platform-development/4-compare-extension-options",
+        "/training/modules/get-started-power-platform-development/5-package-extensions-solutions",
+        "/training/modules/get-started-power-platform-development/6-knowledge-check",
+        "/training/modules/get-started-power-platform-development/7-summary"
+      ],
+      "lastModified": "2026-10-13T23:09:00+00:00",
+      "unitSig": "2cc03b1cfa867f9d7a109dfbccb3eaa830d87834"
+    },
+    {
       "uid": "learn.wwl.get-started-transact-sql-programming",
       "title": "Get started with Transact-SQL programming",
       "url": "https://learn.microsoft.com/training/modules/get-started-transact-sql-programming/?WT.mc_id=studentamb_165290",
@@ -127823,8 +127889,8 @@
         "/training/modules/scale-work-creating-ai-agents/5-knowledge-check",
         "/training/modules/scale-work-creating-ai-agents/6-summary"
       ],
-      "lastModified": "2026-08-21T17:09:00+00:00",
-      "unitSig": "2fb4478bf5a0e9ae07a9c637ad5b46ec791a21ee"
+      "lastModified": "2026-10-13T23:11:00+00:00",
+      "unitSig": "1ffabb86715697509e367a6c4d5291f220e91263"
     },
     {
       "uid": "learn.wwl.schedule-tasks-using-sql-server-agent",
