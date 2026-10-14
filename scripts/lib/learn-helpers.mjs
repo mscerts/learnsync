@@ -19,6 +19,11 @@ export function flattenTaxonomy(entries) {
   return { nameById, topIdById };
 }
 
+/** "a, b, c" for a short list, "a, b, c, ... (+N more)" past `max` entries (for log and failsafe messages). */
+export function listSome(values, max = 3) {
+  return values.length > max ? `${values.slice(0, max).join(", ")}, ... (+${values.length - max} more)` : values.join(", ");
+}
+
 export function normalizeUrl(url) {
   if (!url) return url;
   return url.replace("/en-us/", "/").replace(/([?&])WT\.mc_id=[^&]*/, "$1WT.mc_id=studentamb_165290");

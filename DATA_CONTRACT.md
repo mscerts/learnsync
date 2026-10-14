@@ -66,6 +66,20 @@ stable key (plain code-point order, never `localeCompare`).
 remains, i.e. the index is a full picture. A section is replaced wholesale by the
 sync that owns it (`scripts/lib/status.mjs`). `runId` is `GITHUB_RUN_ID` or null.
 
+Two optional category keys belong to the catalog part of the learn section (readers
+must treat both as optional; a file written before they existed lacks them, and each
+catalog run replaces them, it never accumulates):
+
+* `unusedCategories`: top-level products that carry modules but are in neither
+  `ALLOWED_CATEGORIES` nor `EXCLUDED_CATEGORIES` (taxonomy drift, a warning only).
+* `emptiedCategories`: ids of allowlisted categories that lost their last module(s) in
+  THIS run and were accepted (see "Failsafes": the emptied-category exception). `[]` on
+  every ordinary run. A non-empty list is the one signal that the run succeeded despite a
+  failsafe-relevant event; the modules themselves are the new tombstones of the same run
+  (`learn-catalog.json` `removed`, `removedOn` = the run date). It names only the run that
+  emptied the category: a category that stays empty is tolerated silently in the data and
+  only warned about in the log.
+
 The change-file counters (see "change files" below) sit next to the existing keys,
 never replacing them: `removed` of the learn section stays the module tombstone
 count. `catalogChanges` and `contentChanges` are what each Learn run reports about
@@ -116,6 +130,12 @@ own key. `docs.changes` counts the docs-family entries of each file after the ru
   run). A few modules are published outside `/training/modules/`
   (`/training/saas/...`, `/training/azure-databases/...`, `/training/research/...`);
   `path` and `unitUrls` hold their real paths.
+* `categoryFilter` is the allowlist (`ALLOWED_CATEGORIES`, top-level product ids) the file was
+  written with; each module's `categories` are the display names of its allowlisted top-level
+  products. The next run's failsafe reads both: the names say which categories (and which module
+  uids) the file held, `categoryFilter` says which ids were already allowlisted, which is how a
+  category that has been empty since an earlier run is told apart from an id newly added to the
+  allowlist with no modules (see "Failsafes").
 * `modules` ∪ `outOfScope` is the COMPLETE set of modules the catalog API
   returned. A module in neither set does not exist upstream.
 * `removed` = tombstones: a uid that was in `modules` in the previous run and is
@@ -568,8 +588,29 @@ timeouts and 5xx never change a verdict.
 
 * learn modules: abort without writing if the in-scope count drops more than
   `MAX_MODULE_DROP_PCT` (5) versus the previous file, if the raw API module count
-  drops more than 3%, if an allowlisted category has zero modules, or if more than
+  drops more than 3%, if an allowlisted category has zero modules (rules below), or if more than
   10% of hierarchy requests fail (otherwise failed modules keep their previous `unitUrls`).
+* learn modules, allowlisted category with zero modules. Every id of `ALLOWED_CATEGORIES` is
+  classified, in this order:
+  * it has modules: fine;
+  * the previous file had modules in it (**emptied**): normally a truncation signal and an abort.
+    It is **accepted** instead (the run goes on, the modules become tombstones as usual, and the
+    category is reported, see `emptiedCategories` in `status.json` and a `WARNING` in the log) only
+    when ALL of these hold: (1) every other catalog failsafe of the run passes (module-count floor,
+    in-scope drop, raw API drop, unit-title fallback), so a truncated or reshaped response never
+    qualifies; (2) at most `MAX_EMPTIED_CATEGORIES` (default 1, env override, 0 switches the
+    exception off) categories emptied in this run; (3) every module the previous file held in that
+    category is absent from the WHOLE raw API response now, i.e. it is a new tombstone of this run
+    (a module that is still served but no longer carries the category was re-tagged: a taxonomy
+    change, still an abort). Failing any condition aborts with the reason spelled out in the message;
+  * it is in `KNOWN_EMPTY_CATEGORIES`: exempt;
+  * it was already in the PREVIOUS file's `categoryFilter` and the previous file had no module in it
+    (**still empty**): tolerated, warned about in the log on every run. This is what keeps the run
+    after an accepted emptying green: that category is empty in the file the next run reads, and
+    without this rule the next run would abort on "zero modules" one week later;
+  * anything else (an id newly added to the allowlist, a first run, a previous file without
+    `categoryFilter`) aborts: a new allowlist entry with no modules is almost certainly a typo or a
+    renamed product.
 * learn content: per type, abort the content write if a list shrinks by more than 20%.
 * docs: abort without writing if the sitemap index yields less than 85% of last
   run's index size, if any sitemap file failed (index and catalog carry forward,
@@ -584,7 +625,7 @@ timeouts and 5xx never change a verdict.
   transient answer only leaves an entry `unverified`.
 * The learn section of `status.json` also carries `catalogGeneratedAt`,
   `contentGeneratedAt`, `unitHierarchyNotFound`, `unitUrlsNull`,
-  `unitUrlsCarriedForward`, `unusedCategories` and the change counters
+  `unitUrlsCarriedForward`, `unusedCategories`, `emptiedCategories` and the change counters
   `catalogChanges` / `contentChanges`; its `generatedAt` is the OLDER of the catalog
   and content part stamps. Docs probes are GET requests with `redirect: "manual"` (HEAD and
   GET disagree on the live site).

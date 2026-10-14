@@ -38,6 +38,7 @@ const KEY_ORDER = [
   "unitHierarchyNotFound",
   "unitUrlsCarriedForward",
   "unusedCategories",
+  "emptiedCategories",
   "content",
   "catalogChanges",
   "contentChanges",

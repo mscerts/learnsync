@@ -14,6 +14,8 @@
  *                           refresh every 30 days)
  *   MAX_MODULE_DROP_PCT=5   abort if the in-scope module count drops more than this
  *   MAX_API_DROP_PCT=3      abort if the raw API module count drops more than this
+ *   MAX_EMPTIED_CATEGORIES=1  how many allowlisted categories may lose their last module(s) in one
+ *                           otherwise healthy run (0 = never: such a run aborts)
  *   CHANGES_MAX_PROBES=300  live probes per run for the change files (removed/moved links)
  *   CHANGES_REVERIFY_PER_RUN=100  of those, how many re-confirm the oldest recorded entries
  *   DRY_RUN=1               fetch and compute everything (change file probes included), write nothing

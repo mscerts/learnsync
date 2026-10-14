@@ -1,47 +1,48 @@
 {
   "schemaVersion": 1,
   "learn": {
-    "generatedAt": "2026-10-06T22:06:45.322Z",
-    "runId": "37538372947",
-    "modules": 3370,
-    "removed": 5,
-    "outOfScope": 66,
-    "totalApiModules": 3436,
+    "generatedAt": "2026-10-13T20:39:36.257Z",
+    "runId": "38464550213",
+    "modules": 3395,
+    "removed": 6,
+    "outOfScope": 67,
+    "totalApiModules": 3462,
     "unitUrlsRefreshedAt": "2026-10-05",
-    "unitHierarchyRequests": 0,
+    "unitHierarchyRequests": 110,
     "unitHierarchyFailures": 0,
     "unitUrlsNull": 0,
     "unitHierarchyNotFound": 0,
     "unitUrlsCarriedForward": 0,
     "unusedCategories": [],
+    "emptiedCategories": [],
     "content": {
-      "learningPaths": 824,
+      "learningPaths": 828,
       "courses": 139,
       "certifications": 152,
-      "exams": 145,
+      "exams": 146,
       "appliedSkills": 37,
-      "studyGuides": 66
+      "studyGuides": 67
     },
     "catalogChanges": {
       "removed": 109,
-      "moved": 10,
+      "moved": 12,
       "unverified": 0,
       "newRemoved": 0,
-      "newMoved": 0,
+      "newMoved": 2,
       "resurrected": 0,
-      "probed": 0
+      "probed": 102
     },
     "contentChanges": {
       "removed": 109,
-      "moved": 10,
+      "moved": 12,
       "unverified": 0,
       "newRemoved": 0,
       "newMoved": 0,
       "resurrected": 0,
-      "probed": 0
+      "probed": 19
     },
-    "catalogGeneratedAt": "2026-10-06T22:06:45.322Z",
-    "contentGeneratedAt": "2026-10-06T22:06:47.662Z"
+    "catalogGeneratedAt": "2026-10-13T20:39:36.257Z",
+    "contentGeneratedAt": "2026-10-13T20:40:39.974Z"
   },
   "docs": {
     "generatedAt": "2026-10-12T17:36:55.849Z",
