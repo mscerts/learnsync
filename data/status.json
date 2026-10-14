@@ -45,21 +45,21 @@
     "contentGeneratedAt": "2026-10-14T22:56:06.127Z"
   },
   "docs": {
-    "generatedAt": "2026-10-12T17:36:55.849Z",
-    "runId": "38281270996",
-    "indexUrls": 140500,
-    "catalogRecords": 107552,
+    "generatedAt": "2026-10-14T23:30:09.651Z",
+    "runId": "38651183436",
+    "indexUrls": 140546,
+    "catalogRecords": 109127,
     "sitemapMaxLastmod": "2026-10-14",
-    "pendingNew": 11893,
-    "deferredChanged": 3506,
+    "pendingNew": 10362,
+    "deferredChanged": 0,
     "deferredMissing": 0,
     "quarantined": 9,
-    "redirects": 465,
+    "redirects": 489,
     "sitemapFailures": 0,
-    "complete": false,
+    "complete": true,
     "changes": {
-      "removed": 41,
-      "moved": 433
+      "removed": 60,
+      "moved": 438
     }
   }
 }

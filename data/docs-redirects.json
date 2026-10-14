@@ -312,6 +312,22 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/azure-web-pubsub/chat-reference-service-sdk-java",
+    "to": "/java/api/overview/azure/messaging-webpubsub-chat-readme",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/azure/azure-web-pubsub/chat-reference-service-sdk-javascript",
+    "to": "/javascript/api/overview/azure/web-pubsub-chat-readme",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform",
     "to": "/azure/architecture/browse",
     "kind": "moved",
@@ -920,6 +936,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/databricks/genie-code/agent-mode",
+    "to": "/azure/databricks/genie-code",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
     "from": "/azure/databricks/integrations/excel-genie",
     "to": "/azure/databricks/integrations/excel/genie",
     "kind": "moved",
@@ -960,12 +984,20 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples",
+    "to": "/azure/databricks/machine-learning/ai-runtime/examples",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples/multinode-llm-sft",
     "to": null,
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
-    "lastSeen": "2026-10-12"
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples/ray-batch-inference",
@@ -973,7 +1005,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
-    "lastSeen": "2026-10-12"
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples/ray-hello-world",
@@ -981,7 +1013,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
-    "lastSeen": "2026-10-12"
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples/ray-train-distributed",
@@ -989,7 +1021,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
-    "lastSeen": "2026-10-12"
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples/ray-tune-lora",
@@ -997,7 +1029,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
-    "lastSeen": "2026-10-12"
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/installation",
@@ -1013,7 +1045,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
-    "lastSeen": "2026-10-12"
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-distributed-finetune-qwen2-0.5b",
@@ -2216,12 +2248,36 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/microsoftteams/platform/bots/how-to/conversations/agent-sessions",
+    "to": "/microsoftteams/platform",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
     "from": "/microsoftteams/platform/bots/how-to/conversations/channel-messages-for-bots-and-agents",
     "to": "/microsoftteams/platform/agents-in-teams/enable-receive-all-chat-messages",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoftteams/platform/bots/how-to/teams-conversational-ai/assistants-api-quick-start",
+    "to": "/microsoftteams/platform/agents-in-teams/quickstart-create-agent-teams-sdk",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/microsoftteams/platform/resources/dev-preview/developer-preview-intro",
+    "to": "/microsoftteams/platform/developer-preview-features",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/microsoftteams/support-pin",
@@ -2430,6 +2486,142 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/antivirus-and-intermittent-issues",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/call-to-excel-services-failed",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/cant-open-office-files",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/edit-document-requires-compatible-application-and-web-browser",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/email-notifications-sent-for-scheduled-data-refresh-failures-in-power-pivot",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/excel-workbooks-in-xml-format-not-open",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/large-publisher-files-open-in-read-only-mode",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/microsoft-forms-shows-sorry-something-went-wrong",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/powerpivot-scheduled-data-refresh-fails",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/retrieving-com-class-factory-for-component-failed",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/sorry-something-went-wrong-when-try-to-schedule-a-data-refresh",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/administration/troubleshooting-powerpivot-gallery-snapshot",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/lists-and-libraries/files-downloaded-instead-of-opening-office-application",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/sharepoint-experts-welcome",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/sharing-and-permissions/login-issues-in-a-cloud-scenario",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/web-parts/excel-web-access-web-part-error",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/troubleshoot/sharepoint/web-parts/increase-size-limit-embedded-media",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/troubleshoot/sql/releases/download-and-install-latest-updates",

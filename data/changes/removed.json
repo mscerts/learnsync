@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T22:56:06.127Z",
+  "generatedAt": "2026-10-14T23:30:09.651Z",
   "sources": {
     "learn": "2026-10-14T22:56:06.127Z",
-    "docs": "2026-10-12T17:36:55.849Z"
+    "docs": "2026-10-14T23:30:09.651Z"
   },
   "entries": [
     {
@@ -366,7 +366,7 @@
       "title": "Convert System Center Operations Manager management packs into data collection rules",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "quarantine",
       "status": 404
     },
@@ -410,6 +410,19 @@
       "status": 301
     },
     {
+      "path": "/azure/databricks/genie-code/agent-mode",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/azure/databricks/genie-code",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/databricks/machine-learning/mlops/llmops",
       "kind": "docs",
       "family": "docs",
@@ -418,7 +431,7 @@
       "title": "LLMOps workflows on Azure Databricks - Azure Databricks",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "quarantine",
       "status": 404
     },
@@ -431,7 +444,7 @@
       "title": "Configure a credential in Azure Device Registry",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "quarantine",
       "status": 404
     },
@@ -444,7 +457,7 @@
       "title": "Revoke Certificates and Delete Policies in Azure Device Registry",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "quarantine",
       "status": 404
     },
@@ -457,7 +470,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "quarantine",
       "status": 404
     },
@@ -470,7 +483,7 @@
       "title": "Default dimensions",
       "parent": null,
       "firstSeen": "2026-09-28",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "quarantine",
       "status": 404
     },
@@ -483,7 +496,7 @@
       "title": "Define cycle counting - Supply Chain Management | Dynamics 365",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "quarantine",
       "status": 404
     },
@@ -496,9 +509,22 @@
       "title": "Manage active content in Office documents for IT admins",
       "parent": null,
       "firstSeen": "2026-09-01",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "quarantine",
       "status": 404
+    },
+    {
+      "path": "/microsoftteams/platform/bots/how-to/conversations/agent-sessions",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoftteams/platform",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
     },
     {
       "path": "/partner-center/announcements/2025-october",
@@ -1952,9 +1978,230 @@
       "title": "Collect a Performance Trace in New Outlook for Windows",
       "parent": null,
       "firstSeen": "2026-09-28",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "quarantine",
       "status": 404
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/antivirus-and-intermittent-issues",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/call-to-excel-services-failed",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/cant-open-office-files",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/edit-document-requires-compatible-application-and-web-browser",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/email-notifications-sent-for-scheduled-data-refresh-failures-in-power-pivot",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/excel-workbooks-in-xml-format-not-open",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/large-publisher-files-open-in-read-only-mode",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/microsoft-forms-shows-sorry-something-went-wrong",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/powerpivot-scheduled-data-refresh-fails",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/retrieving-com-class-factory-for-component-failed",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/sorry-something-went-wrong-when-try-to-schedule-a-data-refresh",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/administration/troubleshooting-powerpivot-gallery-snapshot",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/lists-and-libraries/files-downloaded-instead-of-opening-office-application",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/sharepoint-experts-welcome",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/sharing-and-permissions/login-issues-in-a-cloud-scenario",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/web-parts/excel-web-access-web-part-error",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/sharepoint/web-parts/increase-size-limit-embedded-media",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
     }
   ]
 }

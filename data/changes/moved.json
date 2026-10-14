@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T22:56:06.127Z",
+  "generatedAt": "2026-10-14T23:30:09.651Z",
   "sources": {
     "learn": "2026-10-14T22:56:06.127Z",
-    "docs": "2026-10-12T17:36:55.849Z"
+    "docs": "2026-10-14T23:30:09.651Z"
   },
   "entries": [
     {
@@ -159,6 +159,32 @@
       "parent": null,
       "firstSeen": "2026-10-12",
       "lastVerified": "2026-10-12",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/azure-web-pubsub/chat-reference-service-sdk-java",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/java/api/overview/azure/messaging-webpubsub-chat-readme",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/azure-web-pubsub/chat-reference-service-sdk-javascript",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/javascript/api/overview/azure/web-pubsub-chat-readme",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1177,6 +1203,19 @@
       "status": 301
     },
     {
+      "path": "/azure/databricks/machine-learning/ai-runtime/cli/examples",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/machine-learning/ai-runtime/examples",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/databricks/machine-learning/ai-runtime/cli/examples/multinode-llm-sft",
       "kind": "docs",
       "family": "docs",
@@ -1185,7 +1224,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1198,7 +1237,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1211,7 +1250,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1224,7 +1263,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1237,7 +1276,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1263,7 +1302,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-12",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3240,6 +3279,32 @@
       "parent": null,
       "firstSeen": "2026-10-12",
       "lastVerified": "2026-10-12",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoftteams/platform/bots/how-to/teams-conversational-ai/assistants-api-quick-start",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/microsoftteams/platform/agents-in-teams/quickstart-create-agent-teams-sdk",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoftteams/platform/resources/dev-preview/developer-preview-intro",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/microsoftteams/platform/developer-preview-features",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
