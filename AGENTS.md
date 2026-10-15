@@ -445,7 +445,7 @@ always come from the same commit.
 - Each Learn run (catalog, then content) adds at most `CHANGES_MAX_PROBES` (300) live probes for the
   change files, 3 workers about a second apart: a few minutes, well inside the 60-minute timeout.
 - Failures open or comment on ONE issue with a stable title (`Microsoft Learn Catalog Sync Failed`,
-  `Microsoft Docs Catalog Sync Failed`, label `bug`). Newly quarantined docs URLs open a `data` issue.
+  `Microsoft Docs Catalog Sync Failed`, label `bug`). Newly quarantined docs URLs open a `data` issue, but not a URL an earlier quarantine issue (open or closed) already listed (`scripts/reported-quarantine.mjs` reads the issue bodies before the sync; `QUARANTINE_REPORTED_FILE`), so a URL that flips between 404 and live is not reported twice.
 - **Optional hub trigger:** if the repository secret `HUB_DISPATCH_TOKEN` (a token that may create
   repository dispatch events on mscerts/hub) is set, each successful sync sends
   `repository_dispatch` `learnsync-synced` to mscerts/hub so its Learn URL Check runs right away.

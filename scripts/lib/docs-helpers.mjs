@@ -228,3 +228,78 @@ export function buildQuarantineReport(records, { context = "run", surgeThreshold
     "",
   ].join("\n");
 }
+
+// ---------------------------------------------------------------------------
+// URLs that an earlier quarantine issue already reported
+// ---------------------------------------------------------------------------
+// A URL that flips between 404 and live is released from the quarantine when it works and
+// quarantined again when it breaks again, so it would be "newly quarantined" every time and
+// open the same issue again. The workflow therefore writes the URLs the earlier quarantine
+// issues (open or closed) listed to a file (scripts/reported-quarantine.mjs, from the issue
+// bodies, which are the memory: no new data file) and the sync leaves those out of the issue
+// it opens. The URL stays quarantined in data/docs-catalog-invalid.json as usual.
+
+/** The titles of the issues this automation opens, "Docs Catalog: N newly quarantined URL(s) ..." and the one-time backlog. */
+export const QUARANTINE_ISSUE_TITLE = /^Docs Catalog: \d+ (?:newly|pre-existing) quarantined URL\(s\)/;
+
+/** The URL of every table row in the body of a quarantine issue: the second cell of `| status | url | title | product |`. */
+export function quarantineUrlsOfIssueBody(body) {
+  const urls = [];
+  for (const line of String(body ?? "").split(/\r?\n/)) {
+    const m = line.match(/^\|\s*[^|]*?\s*\|\s*(https?:\/\/[^\s|]+)\s*\|/);
+    if (m) urls.push(m[1]);
+  }
+  return urls;
+}
+
+/** A Map of URL -> the numbers of the quarantine issues that listed it, from a list of { number, title, body } issues of any state. */
+export function reportedQuarantineUrls(issues) {
+  const reported = new Map();
+  for (const issue of issues ?? []) {
+    if (!QUARANTINE_ISSUE_TITLE.test(String(issue.title ?? "").trim())) continue;
+    for (const url of quarantineUrlsOfIssueBody(issue.body)) {
+      const numbers = reported.get(url) ?? [];
+      if (!numbers.includes(issue.number)) numbers.push(issue.number);
+      reported.set(url, numbers.sort((a, b) => a - b));
+    }
+  }
+  return reported;
+}
+
+/** The file the workflow hands to the sync: one `url<TAB>number,number` line per reported URL, sorted. */
+export function serializeReportedUrls(reported) {
+  return [...reported.keys()]
+    .sort()
+    .map((url) => `${url}\t${reported.get(url).join(",")}`)
+    .join("\n")
+    .concat(reported.size ? "\n" : "");
+}
+
+/** The inverse of serializeReportedUrls. A line that is not `url<TAB>numbers` is ignored. */
+export function parseReportedUrls(text) {
+  const reported = new Map();
+  for (const line of String(text ?? "").split(/\r?\n/)) {
+    const [url, numbers = ""] = line.split("\t");
+    if (!/^https?:\/\//.test(url ?? "")) continue;
+    reported.set(
+      url,
+      numbers
+        .split(",")
+        .map(Number)
+        .filter((n) => Number.isInteger(n) && n > 0)
+    );
+  }
+  return reported;
+}
+
+/** The newly quarantined records an earlier issue did not list (`fresh`) and those it did (`repeated`, with the issue numbers). */
+export function splitReported(records, reported) {
+  const fresh = [];
+  const repeated = [];
+  for (const record of records) {
+    const issues = reported.get(record.url);
+    if (issues) repeated.push({ record, issues });
+    else fresh.push(record);
+  }
+  return { fresh, repeated };
+}
