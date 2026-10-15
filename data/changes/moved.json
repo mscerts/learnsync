@@ -1,11 +1,37 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T23:30:09.651Z",
+  "generatedAt": "2026-10-15T00:02:23.937Z",
   "sources": {
     "learn": "2026-10-14T22:56:06.127Z",
-    "docs": "2026-10-14T23:30:09.651Z"
+    "docs": "2026-10-15T00:02:23.937Z"
   },
   "entries": [
+    {
+      "path": "/azure/architecture/ai-ml/guide/azure-openai-gateway-guide",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/architecture/ai-ml/guide/generative-ai-gateway",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/architecture/ai-ml/guide/azure-openai-gateway-multi-backend",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/architecture/ai-ml/guide/generative-ai-gateway-multiple-models",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
     {
       "path": "/azure/architecture/best-practices/data-partitioning",
       "kind": "docs",
@@ -85,6 +111,19 @@
       "status": 301
     },
     {
+      "path": "/azure/architecture/guide/multitenant/service/openai",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/architecture/guide/multitenant/service/foundry-models",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/architecture/mainframe/virtualization-of-unisys-clearpath-forward-os-2200-enterprise-server-on-azure",
       "kind": "docs",
       "family": "docs",
@@ -94,6 +133,19 @@
       "parent": null,
       "firstSeen": "2026-10-06",
       "lastVerified": "2026-10-12",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/architecture/operator-guides/aks/choose-kubernetes-edge-compute-option",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/architecture/guide/technology-choices/choose-kubernetes-edge-compute-option",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -943,6 +995,19 @@
       "status": 301
     },
     {
+      "path": "/azure/cloud-hsm/tutorial-operation-event-logging",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/cloud-hsm/tutorial-hsm-operation-audit-logs",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/cosmos-db/cassandra",
       "kind": "docs",
       "family": "docs",
@@ -952,6 +1017,19 @@
       "parent": null,
       "firstSeen": "2026-10-06",
       "lastVerified": "2026-10-06",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/cosmos-db/gen-ai/multi-vector-search",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/cosmos-db/vector-search",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1641,6 +1719,32 @@
       "parent": null,
       "firstSeen": "2026-10-12",
       "lastVerified": "2026-10-12",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/reliability/reliability-image-builder",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/reliability/reliability-vm-image-builder",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/stream-analytics/stream-analytics-real-time-fraud-detection",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3591,6 +3695,58 @@
       "parent": null,
       "firstSeen": "2026-10-12",
       "lastVerified": "2026-10-12",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/sql/sql-server/partner-dev-sql-server",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": null,
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/sql/sql-server/partner-hadr-sql-server",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": null,
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/sql/sql-server/partner-management-sql-server",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": null,
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/sql/sql-server/partner-monitor-sql-server",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": null,
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-14",
+      "lastVerified": "2026-10-14",
       "evidence": "docs-redirect",
       "status": 301
     },

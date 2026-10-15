@@ -216,6 +216,22 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/architecture/ai-ml/guide/azure-openai-gateway-guide",
+    "to": "/azure/architecture/ai-ml/guide/generative-ai-gateway",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/azure/architecture/ai-ml/guide/azure-openai-gateway-multi-backend",
+    "to": "/azure/architecture/ai-ml/guide/generative-ai-gateway-multiple-models",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
     "from": "/azure/architecture/best-practices/data-partitioning",
     "to": "/azure/well-architected/design-guides/partition-data",
     "kind": "moved",
@@ -264,12 +280,28 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/architecture/guide/multitenant/service/openai",
+    "to": "/azure/architecture/guide/multitenant/service/foundry-models",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
     "from": "/azure/architecture/mainframe/virtualization-of-unisys-clearpath-forward-os-2200-enterprise-server-on-azure",
     "to": null,
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/architecture/operator-guides/aks/choose-kubernetes-edge-compute-option",
+    "to": "/azure/architecture/guide/technology-choices/choose-kubernetes-edge-compute-option",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/azure/azure-arc/vmware-vsphere/browse-and-enable-vcenter-resources-in-azure",
@@ -792,12 +824,28 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/cloud-hsm/tutorial-operation-event-logging",
+    "to": "/azure/cloud-hsm/tutorial-hsm-operation-audit-logs",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
     "from": "/azure/cosmos-db/cassandra",
     "to": "/azure/cosmos-db/cassandra/overview",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
     "lastSeen": "2026-10-06"
+  },
+  {
+    "from": "/azure/cosmos-db/gen-ai/multi-vector-search",
+    "to": "/azure/cosmos-db/vector-search",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/azure/cosmos-db/mongodb",
@@ -1254,6 +1302,22 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/reliability/reliability-image-builder",
+    "to": "/azure/reliability/reliability-vm-image-builder",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics",
+    "to": "/azure/stream-analytics/stream-analytics-real-time-fraud-detection",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/azure/virtual-machines/azure-hpc-vm-images",
@@ -2462,6 +2526,38 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/sql/sql-server/partner-dev-sql-server",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/sql/sql-server/partner-hadr-sql-server",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/sql/sql-server/partner-management-sql-server",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/sql/sql-server/partner-monitor-sql-server",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-14",
+    "lastSeen": "2026-10-14"
   },
   {
     "from": "/troubleshoot/exchange/compliance/items-are-removed-by-mrm-2-0-unexpectedly",
