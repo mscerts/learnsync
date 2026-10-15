@@ -11,6 +11,12 @@
  *   MAX_RUNTIME_MINUTES       wall-clock budget of the fetch phases      (90, 0 = unlimited)
  *   CONSECUTIVE_TRANSIENT_LIMIT  transient failures in a row that stop a phase (40, 0 = off)
  *   QUARANTINE_REPORT_FILE    where the quarantine issue body is written
+ *   QUARANTINE_REPORTED_FILE  URLs earlier quarantine issues already reported (written by
+ *                             scripts/reported-quarantine.mjs); they stay quarantined but are
+ *                             left out of the new issue. Unreadable or unset = report everything.
+ *   QUARANTINE_REPORTED_FILE  URLs earlier quarantine issues already reported (written by
+ *                             scripts/reported-quarantine.mjs); they stay quarantined but are
+ *                             left out of the new issue. Unreadable or unset = report everything.
  *
  * A value that is set but not a non-negative integer is an error, not a silent
  * fall back to the default: a typo in a workflow must not quietly change a budget.
@@ -58,6 +64,8 @@ export function readConfig(env = process.env) {
     concurrency: FETCH_CONCURRENCY,
     delayMs: PER_WORKER_DELAY_MS,
     reportFile: env.QUARANTINE_REPORT_FILE || null,
+    reportedUrlsFile: env.QUARANTINE_REPORTED_FILE || null,
+    reportedUrlsFile: env.QUARANTINE_REPORTED_FILE || null,
     githubOutput: env.GITHUB_OUTPUT || null,
   };
 }

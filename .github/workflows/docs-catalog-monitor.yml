@@ -32,10 +32,20 @@ jobs:
         with:
           node-version: 22
 
+      # The URLs that earlier quarantine issues (open or closed) already listed: a URL that flips
+      # between 404 and live is quarantined again each time it breaks and must not open the same
+      # issue again. A failed lookup only means that every newly quarantined URL is reported.
+      - name: Look up the URLs that earlier issues already reported
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/reported-quarantine.mjs --out /tmp/docs-catalog-reported-urls.txt
+
       - name: Sync Microsoft docs catalog cache
         id: sync
         env:
           QUARANTINE_REPORT_FILE: /tmp/docs-catalog-quarantine-report.md
+          QUARANTINE_REPORTED_FILE: /tmp/docs-catalog-reported-urls.txt
           MAX_RUNTIME_MINUTES: "90"
         run: node scripts/docs-catalog-sync.mjs
 

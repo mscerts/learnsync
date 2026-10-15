@@ -26,7 +26,7 @@ import { loadChanges } from "./changes.mjs";
 import { QUARANTINE_SURGE_THRESHOLD, readConfig } from "./docs-config.mjs";
 import { buildDocsChanges, writeDocsChanges } from "./docs-changes.mjs";
 import { createDeadline } from "./docs-budget.mjs";
-import { aliasKey, buildQuarantineReport } from "./docs-helpers.mjs";
+import { aliasKey, buildQuarantineReport, parseReportedUrls, splitReported } from "./docs-helpers.mjs";
 import { auditDuplicates, checkCatalogSize, checkIndexSanity, dropDuplicates, indexSanityBaseline } from "./docs-failsafes.mjs";
 import { parseIndex, serializeIndex } from "./docs-index.mjs";
 import { runPhases } from "./docs-phases.mjs";
@@ -321,11 +321,31 @@ export async function runDocsSync({
   );
   if (r.untitledAfter) log(`  ${r.untitledAfter} Learn record(s) still have no title (pages whose <title> is only the site suffix).`);
 
-  if (out.newlyQuarantined.length) {
+  // A URL an earlier quarantine issue (open or closed) already listed stays quarantined, but is not
+  // reported again: one that flips between 404 and live would open the same issue every time it breaks.
+  // The list is read from QUARANTINE_REPORTED_FILE; when it cannot be read everything is reported.
+  let reported = new Map();
+  if (cfg.reportedUrlsFile) {
+    try {
+      reported = parseReportedUrls(readFileSync(cfg.reportedUrlsFile, "utf-8"));
+      log(`Read ${reported.size} URL(s) that earlier quarantine issues already reported (${cfg.reportedUrlsFile}).`);
+    } catch (err) {
+      warn(`Could not read ${cfg.reportedUrlsFile} (${err.message}): every newly quarantined URL is reported.`);
+    }
+  }
+  const { fresh, repeated } = splitReported(out.newlyQuarantined, reported);
+  if (repeated.length) {
+    const numbers = [...new Set(repeated.flatMap((r) => r.issues))].sort((a, b) => a - b);
+    log(
+      `${repeated.length} newly quarantined URL(s) were already reported${numbers.length ? ` in issue${numbers.length === 1 ? "" : "s"} ${numbers.map((n) => `#${n}`).join(", ")}` : ""} and are not reported again: ` +
+        repeated.map((r) => r.record.url).join(", ")
+    );
+  }
+  if (fresh.length) {
     const reportFile = cfg.reportFile || join(tmpdir(), "docs-catalog-quarantine-report.md");
-    writeFileSync(reportFile, buildQuarantineReport(out.newlyQuarantined, { surgeThreshold: QUARANTINE_SURGE_THRESHOLD }));
-    log(`Wrote ${reportFile} (${out.newlyQuarantined.length} newly quarantined URL(s))`);
-    if (cfg.githubOutput) appendFileSync(cfg.githubOutput, `new_quarantine_count=${out.newlyQuarantined.length}\n`);
+    writeFileSync(reportFile, buildQuarantineReport(fresh, { surgeThreshold: QUARANTINE_SURGE_THRESHOLD }));
+    log(`Wrote ${reportFile} (${fresh.length} newly quarantined URL(s))`);
+    if (cfg.githubOutput) appendFileSync(cfg.githubOutput, `new_quarantine_count=${fresh.length}\n`);
   }
 
   const failures = [];
