@@ -61,5 +61,22 @@
       "removed": 60,
       "moved": 450
     }
+  },
+  "moduleLinks": {
+    "generatedAt": "2026-10-16T22:31:28.554Z",
+    "runId": null,
+    "scope": "courses",
+    "modules": 1412,
+    "withLinks": 917,
+    "links": 4928,
+    "fetched": 0,
+    "failed": 0,
+    "noUnits": 0,
+    "waiting": 0,
+    "fullRefreshAt": "2026-10-16",
+    "probed": 6,
+    "rewritten": 0,
+    "dropped": 14,
+    "unverified": 0
   }
 }
