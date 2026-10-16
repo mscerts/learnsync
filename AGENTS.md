@@ -69,6 +69,7 @@ learnsync/
 │   ├── learn-catalog-sync.mjs       # modules + real unit URLs  -> data/learn-catalog.json
 │   ├── learn-content-sync.mjs       # paths/courses/certs/exams/skills/study guides -> data/learn-content.json
 │   ├── docs-catalog-sync.mjs        # sitemap index + metadata + ledger -> data/docs-*.{txt,json}
+│   ├── module-links-sync.mjs        # links of the last unit of each module -> data/module-links.json
 │   ├── validate-urls.mjs            # validator CLI (cache-only; optional live layer)
 │   ├── check-changes.mjs            # change-file CLI: which links changed? (reads only data/changes/)
 │   ├── seed-changes.mjs             # one-off tool: seed the change files with older breakage
@@ -80,15 +81,16 @@ learnsync/
 │       ├── learn-changes-run.mjs  docs-changes.mjs        # how the Learn runs / the docs run use changes.mjs
 │       ├── seed-changes.mjs  check-changes.mjs            # the seed tool / the check-changes CLI
 │       ├── learn-*.mjs                                    # learn config/build/hierarchy/failsafe/http/run/status/content
+│       ├── module-links.mjs  module-links-run.mjs         # module links: extraction/plan/failsafes (pure) / the run
 │       └── docs-*.mjs  sitemap-helpers.mjs                # docs config/reconcile/redirects/failsafes/budget/phases/run/sitemaps
 ├── test/                            # node:test, no network, no real data
 ├── data/
-│   ├── learn-catalog.json  learn-content.json
+│   ├── learn-catalog.json  learn-content.json  module-links.json
 │   ├── docs-urls.txt  docs-catalog.json  docs-redirects.json
 │   ├── docs-catalog-invalid.json  docs-sitemap-families.json
 │   ├── changes/removed.json  changes/moved.json           # links learnsync knows are gone / moved (small)
 │   └── status.json
-└── .github/workflows/  learn-catalog-monitor.yml  docs-catalog-monitor.yml  ci.yml
+└── .github/workflows/  learn-catalog-monitor.yml  docs-catalog-monitor.yml  module-links-monitor.yml  ci.yml
 ```
 
 Run locally (Node 22+, `git` only for the github/docs source):
@@ -96,6 +98,7 @@ Run locally (Node 22+, `git` only for the github/docs source):
 ```bash
 npm run sync:learn      # learn-catalog-sync + learn-content-sync
 npm run sync:docs       # docs-catalog-sync (DRY_RUN=1 plans only)
+npm run sync:module-links  # module-links-sync (DRY_RUN=1 fetches, writes nothing; MODULE_LINKS_SCOPE=all for every module)
 npm test                # everything, offline
 echo '["https://learn.microsoft.com/azure/key-vault/general/overview"]' | node scripts/validate-urls.mjs
 echo '["https://learn.microsoft.com/training/modules/foundry-sdk/06-exercise"]' | node scripts/check-changes.mjs
@@ -224,6 +227,50 @@ paths with `lastModified`, plus tombstones per type and these probes:
 Both learn scripts merge only their own keys into the single `learn` section of
 `status.json` (`scripts/lib/learn-status.mjs`); `generatedAt` is the older of the two
 part stamps, so a fresh catalog run cannot make stale content look fresh.
+
+## Module links: `scripts/module-links-sync.mjs`
+
+Research data, not a validity source. The last unit of a Learn module ("Summary", "Summary and
+resources") lists Microsoft-curated links, mostly documentation pages that belong to what the module
+teaches; `data/module-links.json` stores them per module so an agent can ask "which docs does Microsoft
+itself point to for this topic" (for example when building a reading list for an exam topic). Format, rules and
+failsafes are in `DATA_CONTRACT.md`; the code is `scripts/lib/module-links.mjs` (pure: extraction, scope,
+plan, failsafes) and `module-links-run.mjs` (the run, every dependency injectable).
+
+- **Source and scope.** Only the LAST entry of a module's `unitUrls` is read, from
+  `learn.microsoft.com/en-us<unit>`. Default scope `courses` = the modules of every learning path (and every
+  module) in an official course's `study_guide` (catalog API `type=courses`; about 1,400 modules, one extra
+  request, 4 entries never resolve: a learning path missing from the cache and three Minecraft Education
+  modules, a category learnsync excludes). `MODULE_LINKS_SCOPE=all` reads every module (about 3,400 pages,
+  roughly 20-40 minutes at 3 workers and 1 s per worker).
+- **Extraction rule (checked on 80 random modules and the AZ-104/AZ-700/SC-300 course modules).** Unit
+  content = `#unit-inner-section` up to the hidden `#next-section` placeholder; both markers must exist or
+  the page counts as "no unit content" (a missing end marker would pull the feedback area and footer links
+  in). Every `<h2>` section counts except the ones named like Copilot prompts, feedback, knowledge checks
+  and learning objectives, because headings vary too much to list ("Learn more", "Additional resources",
+  "Learn more with documentation", "References for this module include", "Further reading"...). The heading
+  is stored per link. Links hang off lists AND inline text of the summary ("lead" section).
+- **The links are cleaned before they are stored** (`module-links-clean.mjs`, rules in `module-links.mjs`
+  "Link cleaning"). Module pages lag docs reorganisations: of 50 live-probed docs links that were not in the docs
+  index, 37 had moved and 2 were gone (797 of 2,802 unique docs links were not indexed in the first harvest). Every
+  run asks the validator (`validate.mjs`, caches only) about every Learn link and live-probes (`live-probe.mjs
+  probe`) what the caches cannot settle: a moved page is rewritten to its destination (`was` keeps the old path,
+  `checked` the day of the live check), a gone page or a redirect to a landing page / archive is dropped, an
+  inconclusive check leaves the link `unverified` for the next run. Probes are budgeted (`MODULE_LINKS_MAX_PROBES`
+  3,000, 3 workers at 1 s), a confirmed link is not probed again for `MODULE_LINKS_RECHECK_DAYS` (30), and the
+  run aborts when more than 20% of the checks are inconclusive or more than 30% find the page gone (an outage looks
+  like a mass removal). External links are not checked. The validator needs `docs-urls.txt` and
+  `docs-redirects.json`: with the docs index missing every docs link is probed.
+- **What it cannot do.** Only 40% of random modules (72% of course modules) have any docs link in the last
+  unit; the lesson units carry inline links too (0-3 per unit, short anchor text), which are NOT harvested
+  yet. Absence of a link says nothing.
+- **Same politeness as the other syncs**: 3 workers, `MODULE_LINKS_DELAY_MS` (1,000) per worker, backoff and
+  `Retry-After` through `learn-http.mjs`, a circuit breaker after 50 requests when more than half failed.
+- **Failsafe abort = nothing written**, `status.json` included. After a markup change on Learn the run aborts
+  ("no unit content", or "the link extraction probably stopped working"): look at a real unit page, adjust
+  `unitContent` / `SKIP_SECTION` in `module-links.mjs` with a test on the real markup, never lower the limit.
+- **Scheduling.** `module-links-monitor.yml` (Mondays 08:41 UTC) shares the `learnsync-data` queue; it reads
+  the committed `learn-catalog.json`, so it never needs the Learn sync to run in the same job.
 
 ---
 
@@ -429,7 +476,10 @@ always come from the same commit.
 - `learn-catalog-monitor.yml` (Mondays 07:17 UTC) runs `npm run sync:learn`; `docs-catalog-monitor.yml`
   (07:43 UTC) runs the docs sync with `MAX_RUNTIME_MINUTES=90`. GitHub starts scheduled runs 6-8 hours
   late, which is why nothing relies on clock times: consumers read `status.json`.
-- Both share the concurrency group `learnsync-data` (`cancel-in-progress: false`): they never run at the
+- `module-links-monitor.yml` (Mondays 08:41 UTC) runs `npm run sync:module-links` and commits
+  `data/module-links.json` and `data/status.json` (60 min timeout; failure issue `Microsoft Learn Module Links
+  Sync Failed`, label `bug`).
+- All three share the concurrency group `learnsync-data` (`cancel-in-progress: false`): they never run at the
   same time and never race on `data/status.json` or the change files. Timeouts: learn 60 min (a first or
   monthly full unit refresh is ~15-20 min), docs 120 min.
 - Both check out `ref: ${{ github.ref }}` (the branch tip). Without it `actions/checkout` uses the commit that

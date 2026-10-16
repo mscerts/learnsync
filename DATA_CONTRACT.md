@@ -66,6 +66,10 @@ stable key (plain code-point order, never `localeCompare`).
 remains, i.e. the index is a full picture. A section is replaced wholesale by the
 sync that owns it (`scripts/lib/status.mjs`). `runId` is `GITHUB_RUN_ID` or null.
 
+A third, independent section `moduleLinks` is written by the module-links sync (see
+`data/module-links.json` below; it also reads `learn-catalog.json`). It is not part of `learn` or
+`docs`, so a consumer that judges the freshness of the validity data ignores it.
+
 Two optional category keys belong to the catalog part of the learn section (readers
 must treat both as optional; a file written before they existed lacks them, and each
 catalog run replaces them, it never accumulates):
@@ -181,6 +185,98 @@ own key. `docs.changes` counts the docs-family entries of each file after the ru
   nothing (the validator reports `unverifiable`), and study guides are probed only
   for the exams the API lists.
 * Same relative-drop failsafe and tombstone rules as modules, per type.
+
+### `data/module-links.json` (the links of the last unit of a module)
+
+The last unit of a Learn module ("Summary", "Summary and resources") lists Microsoft-curated
+links, mostly documentation pages that belong to what the module teaches. This file stores them
+per module, so a consumer can ask "which docs does Microsoft itself point to for this topic".
+It is research data, not a validity source: absence of a module or of a link proves nothing.
+
+```json
+{
+  "schemaVersion": 1, "lastChecked": "ISO", "scope": "courses|all", "fullRefreshAt": "2026-10-16",
+  "modules": [ { "path": "/training/modules/configure-blob-storage", "unitSig": "<sha1 from learn-catalog.json>",
+                 "unit": "/training/modules/configure-blob-storage/11-summary-resources",
+                 "unitTitle": "Summary and resources", "harvestedAt": "2026-10-16",
+                 "links": [ { "kind": "docs", "path": "/azure/storage/blobs/storage-blobs-introduction",
+                              "text": "Azure Blob Storage Concepts", "section": "Learn more" },
+                            { "kind": "docs", "path": "/azure/foundry/concepts/rbac-foundry", "text": "RBAC", "section": "Learn more",
+                              "was": "/azure/ai-foundry/concepts/rbac-azure-ai-foundry", "checked": "2026-10-16" },
+                            { "kind": "external", "url": "https://github.com/Azure/x", "text": "x", "section": "Learn more" } ] } ]
+}
+```
+
+* Source: the live page `https://learn.microsoft.com/en-us<unit>` of the LAST entry of the module's
+  `unitUrls` in `learn-catalog.json` (hierarchy API order). Only that unit is read; links inside the
+  lesson units are not harvested.
+* `scope`: `courses` (default) = the modules of every learning path, and every module, that an official
+  course lists in its `study_guide` (the catalog API `type=courses`; about 1,400 modules); `all` = every
+  module of the catalog (about 3,400). `MODULE_LINKS_SCOPE` selects it. A run drops the records of modules
+  outside the scope it ran with, so switching to a smaller scope removes records.
+* `modules` is sorted by `path` in code-point order. `links` keeps PAGE ORDER (the order Microsoft wrote
+  them in), first occurrence wins, one entry per target.
+* `kind`: `docs` (a Learn page that is not training), `training` (`/training/...`: a module, path or course,
+  for example "Learn more with self-paced training"), `learn-other` (`/credentials`, `/shows`, `/answers`,
+  ...), `external` (any other host).
+  Learn links carry the canonical `path` (no locale, query, fragment, trailing slash; lowercase);
+  external ones carry `url` without its fragment. The module itself and its own units are never listed.
+* `section` is the `<h2>` heading the link sits under (`lead` = before the first heading), so a consumer
+  can filter. Sections about Copilot prompts, feedback, knowledge checks and learning objectives are skipped.
+  Headings are too varied to enumerate ("Learn more", "Additional resources", "Learn more with
+  documentation", "References for this module include"), so everything else counts.
+* A module whose last unit has no links is stored with `links: []`: it was read. A module with no record
+  was not read (out of scope, no unit URLs, waiting for the next run, or its page could not be read).
+* **Links are cleaned before they are stored.** Module pages lag documentation reorganisations: in the
+  first course-scope harvest (2026-10-16) 797 of 2,802 unique docs links were not in `docs-urls.txt`, and of
+  50 of those probed live, 11 were live, 37 had MOVED (for example `/azure/ai-foundry/...` pages renamed to
+  `/azure/foundry/...`) and 2 were gone. So every Learn link (`docs`, `training`, `learn-other`) is checked
+  on every run, caches first (the validator, `validate.mjs`), a live probe (`live-probe.mjs`) for what the
+  caches cannot settle:
+  * valid in the caches: kept as it is;
+  * moved: `path` becomes the destination and the first path is kept as `was`. A move the change ledger
+    knows with high confidence is applied without a probe; a move found by a live probe sets `checked`;
+  * gone (404/410, a removed module, a redirect to a landing page, a product root or an archive such as
+    `/previous-versions`, or a redirect that leaves learn.microsoft.com for a marketing site such as
+    `azure.microsoft.com`: Learn removed the page): the link is dropped;
+  * inconclusive (rate limit, outage, probe budget `MODULE_LINKS_MAX_PROBES`, 3,000): the link stays with
+    `unverified: true` and is checked again next run;
+  * `checked` (YYYY-MM-DD) is on links a live probe confirmed; they are not probed again for
+    `MODULE_LINKS_RECHECK_DAYS` (30) days. Links the caches confirm carry neither field.
+  External links are NOT checked (any host, no way to tell a bot block from a dead page): `kind: "external"`
+  means "as Microsoft wrote it".
+  Links that end up on the same target in one module are merged (first wins).
+  A rewrite follows Learn's OWN redirect: usually the same article under a new path (a rename such as
+  `/azure/ai-foundry/...` to `/azure/foundry/...`), occasionally the nearest remaining page (an old
+  "what's new in DHCP" page now lands on a general Windows Server page). `text` stays Microsoft's original
+  anchor text and `was` the original path, so a consumer that cares about the exact topic compares them
+  with the destination page before relying on a rewritten link.
+  First cleaning pass (course scope, 2026-10-17): 3,014 Learn targets, 2,161 settled by the caches, 853
+  live checks, 652 links rewritten, 138 dropped (gone or off-Learn), 0 unverified at the end; a live check of
+  94 stored targets (25 of them rewritten) found all 94 live on exactly the stored path.
+* A target that appears in many modules (a community blog, `aka.ms/FindATrainer`, an educator's social
+  page) is module boilerplate, not a statement about the topic; weigh a link by how rare it is.
+* Measured on 2026-10-16: 72% of the modules of the AZ-104, AZ-700 and SC-300 courses and 40% of a random
+  sample of all modules have at least one docs link in the last unit, 4-5 docs links on average when there
+  are any. Coverage is therefore partial by nature.
+* Incremental refresh is keyed on `unitSig` (a module is read when it has no record or its signature
+  changed). `fullRefreshAt` is the day a pass over EVERY in-scope module last completed without a failure;
+  `FULL_REFRESH=1`, or a value older than `MODULE_LINKS_FULL_REFRESH_DAYS` (30), forces a full pass. A module
+  whose page cannot be read keeps its previous record only while its `unitSig` is unchanged, never a stale
+  one.
+* Failsafes (abort, nothing written, `status.json` included): fewer than 300 modules in scope `courses`
+  (3,000 for `all`); more than `MODULE_LINKS_MAX_FAIL_PCT` (10) percent of the unit pages unreadable (at
+  least 20 requests); more than 10% of the pages read have no unit content (Learn changed its markup; a page
+  counts as unit content only when it has both `#unit-inner-section` and the hidden `#next-section`
+  placeholder that ends it); fewer than 70% of the modules that had links before still have them (when at
+  least 50 had); a circuit breaker after 50 requests when more than half failed. For the link cleaning (at
+  least 20 live checks): more than 20% inconclusive, or more than 30% found gone or sent to a landing page
+  (an outage or a bad probe looks like a mass removal), and a circuit breaker after 50 live checks when more
+  than half were inconclusive.
+* Requests: at most 3 workers, `MODULE_LINKS_DELAY_MS` (1,000) pause per worker, the shared retry and
+  backoff rules. `status.json` gets a `moduleLinks` section on every run that passes the failsafes:
+  `scope`, `modules`, `withLinks`, `links`, `fetched`, `failed`, `noUnits`, `waiting`, `fullRefreshAt`,
+  `probed` (live link checks), `rewritten`, `dropped` and `unverified` (links).
 
 ### `data/docs-urls.txt` (new: complete URL index, plain text)
 
@@ -612,6 +708,9 @@ timeouts and 5xx never change a verdict.
     `categoryFilter`) aborts: a new allowlist entry with no modules is almost certainly a typo or a
     renamed product.
 * learn content: per type, abort the content write if a list shrinks by more than 20%.
+* module links: abort without writing (status included) on a too-small scope, unreadable pages above 10%,
+  pages without unit content above 10%, or far fewer modules with links than before; the exact rules are
+  in the `data/module-links.json` section.
 * docs: abort without writing if the sitemap index yields less than 85% of last
   run's index size, if any sitemap file failed (index and catalog carry forward,
   removal detection off), or the duplicate threshold trips.
