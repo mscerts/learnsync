@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastChecked": "2026-10-16T22:31:28.554Z",
+  "lastChecked": "2026-10-19T15:51:20.654Z",
   "scope": "courses",
   "fullRefreshAt": "2026-10-16",
   "modules": [
@@ -1091,10 +1091,10 @@
     },
     {
       "path": "/training/modules/ai-knowldge-mining",
-      "unitSig": "92b5604997d8b005d5a2d03ffdc06eb012efa17a",
+      "unitSig": "d93e6bc9cfa5cd1905cecb83af00e6c57a183ffe",
       "unit": "/training/modules/ai-knowldge-mining/9-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
@@ -1211,10 +1211,10 @@
     },
     {
       "path": "/training/modules/analyze-content-ai",
-      "unitSig": "3950a8703ecb162f9c0385905b6b748a01227690",
+      "unitSig": "f1e02a709921c8933b91d76a778e8f6179d883fe",
       "unit": "/training/modules/analyze-content-ai/07-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
@@ -1226,10 +1226,10 @@
     },
     {
       "path": "/training/modules/analyze-content-ai-api",
-      "unitSig": "423c7c12d749962bee547832927f89d595da88e2",
+      "unitSig": "b00d0154289234270028dfbe07a27bcb277fdf03",
       "unit": "/training/modules/analyze-content-ai-api/07-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
@@ -1473,10 +1473,10 @@
     },
     {
       "path": "/training/modules/analyze-text-ai-language",
-      "unitSig": "9b7701331923259238db15bc0f6f855929fdfc4e",
+      "unitSig": "b2b155dec2e1f128d8d2457868f15a24a73a6a49",
       "unit": "/training/modules/analyze-text-ai-language/10-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
@@ -2333,10 +2333,10 @@
     },
     {
       "path": "/training/modules/build-agent-with-custom-tools",
-      "unitSig": "16e24919c1cc95a32993e8b41bab544a56687150",
+      "unitSig": "98dc3ee96bd5e8debd324dff7ad3d7052ebed586",
       "unit": "/training/modules/build-agent-with-custom-tools/7-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "external",
@@ -2349,7 +2349,8 @@
           "path": "/azure/foundry/agents/how-to/tools/function-calling",
           "text": "Microsoft Foundry Agent Service function calling",
           "section": "Further reading",
-          "was": "/azure/ai-services/agents/how-to/tools/function-calling"
+          "was": "/azure/ai-services/agents/how-to/tools/function-calling",
+          "checked": "2026-10-19"
         },
         {
           "kind": "docs",
@@ -8136,10 +8137,10 @@
     },
     {
       "path": "/training/modules/create-instructional-materials-teach-microsoft-365-copilot",
-      "unitSig": "3caa1b0a8bd0deb84f206d74201fcea37efb886f",
+      "unitSig": "72043f664cef03f7e5d90e9a3fe073f701f13044",
       "unit": "/training/modules/create-instructional-materials-teach-microsoft-365-copilot/summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "external",
@@ -8544,10 +8545,10 @@
     },
     {
       "path": "/training/modules/create-speech-enabled-apps",
-      "unitSig": "bcca0fed343e43a1f161f8b35b0d5b739473d593",
+      "unitSig": "a84e763ac9b97baf1c22ddacb77d75d489b25ea8",
       "unit": "/training/modules/create-speech-enabled-apps/9-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
@@ -8898,17 +8899,17 @@
     },
     {
       "path": "/training/modules/dax-power-bi-create-calculations",
-      "unitSig": "21162deb26971fe7218e5ec8f6c3b9ba722317d8",
+      "unitSig": "8dcabd96f92dabf88e366567cd36c433a3dabee5",
       "unit": "/training/modules/dax-power-bi-create-calculations/9-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
           "path": "/dax/dax-overview",
           "text": "Introduction to DAX in Power BI",
           "section": "lead",
-          "checked": "2026-10-16"
+          "checked": "2026-10-19"
         }
       ]
     },
@@ -16618,10 +16619,10 @@
     },
     {
       "path": "/training/modules/develop-ai-agents-azure-vs-code",
-      "unitSig": "0811b54260fc9904ebf52b4043dfe6f590b00e4a",
+      "unitSig": "0424c9ccf6c9dad1630caf406c23b9cef792b7b6",
       "unit": "/training/modules/develop-ai-agents-azure-vs-code/11-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "training",
@@ -16634,7 +16635,8 @@
           "path": "/azure/foundry",
           "text": "Microsoft Foundry documentation",
           "section": "Next steps",
-          "was": "/azure/ai-foundry"
+          "was": "/azure/ai-foundry",
+          "checked": "2026-10-19"
         },
         {
           "kind": "training",
@@ -17008,10 +17010,10 @@
     },
     {
       "path": "/training/modules/develop-speech-agent-speech-mcp",
-      "unitSig": "5a726a35876c0be9c62c06657b852bab8a91d340",
+      "unitSig": "2eb401b0182e10a2f84f51d47659bee4df401e49",
       "unit": "/training/modules/develop-speech-agent-speech-mcp/06-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
@@ -17030,7 +17032,7 @@
           "path": "/python/api/overview/azure/ai-projects-readme",
           "text": "Azure AI Projects SDK for Python",
           "section": "Learn more",
-          "checked": "2026-10-16"
+          "checked": "2026-10-19"
         },
         {
           "kind": "docs",
@@ -17042,10 +17044,10 @@
     },
     {
       "path": "/training/modules/develop-text-analysis-agent-language-mcp",
-      "unitSig": "526201a92a8f5f4e888eb636a8752e7c6464d55b",
+      "unitSig": "d50c067eb434fc2a0088ef56bbc3bb510f6723f5",
       "unit": "/training/modules/develop-text-analysis-agent-language-mcp/06-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
@@ -17064,7 +17066,7 @@
           "path": "/python/api/overview/azure/ai-projects-readme",
           "text": "Azure AI Projects SDK for Python",
           "section": "Learn more",
-          "checked": "2026-10-16"
+          "checked": "2026-10-19"
         }
       ]
     },
@@ -18669,17 +18671,17 @@
     },
     {
       "path": "/training/modules/equip-support-learners-ai-tools-microsoft",
-      "unitSig": "e957233f9bb062c4fc35d7be26333bd255b97e45",
+      "unitSig": "05ab54dbbdfab9288f75f7ef2c8a65394dcd5f2b",
       "unit": "/training/modules/equip-support-learners-ai-tools-microsoft/summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "training",
           "path": "/training/educator-center/programs/global-training-partner/find-global-training-partner",
           "text": "Global Training Partners in your region",
           "section": "lead",
-          "checked": "2026-10-16"
+          "checked": "2026-10-19"
         },
         {
           "kind": "external",
@@ -18691,8 +18693,7 @@
           "kind": "training",
           "path": "/training/educator-center/instructor-materials/classroom-toolkit-unlock-generative-ai-safely-responsibly",
           "text": "Unlock generative AI safely and responsibly—classroom toolkit",
-          "section": "Resources for further learning",
-          "checked": "2026-10-16"
+          "section": "Resources for further learning"
         },
         {
           "kind": "external",
@@ -22089,10 +22090,10 @@
     },
     {
       "path": "/training/modules/extract-data-with-document-intelligence",
-      "unitSig": "1d8fbe1a59edff302fdfeb3e6af40c3d79b93cc3",
+      "unitSig": "2bd971feb99a8db31c3570b6adc7fcab7d9b082b",
       "unit": "/training/modules/extract-data-with-document-intelligence/8-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
@@ -22123,7 +22124,8 @@
           "path": "/azure/ai-services/document-intelligence/language-support/ocr",
           "text": "Language support for Azure Document Intelligence",
           "section": "Learn more",
-          "was": "/azure/ai-services/document-intelligence/language-support"
+          "was": "/azure/ai-services/document-intelligence/language-support",
+          "checked": "2026-10-19"
         }
       ]
     },
@@ -22423,24 +22425,22 @@
     },
     {
       "path": "/training/modules/foundry-sdk",
-      "unitSig": "6ec12ad0711a0c87966e71a9e8043edd2be4b840",
+      "unitSig": "dcd469bd804a848d4a8959d4cd79f7e1416d960b",
       "unit": "/training/modules/foundry-sdk/08-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
           "path": "/azure/foundry/how-to/develop/sdk-overview",
           "text": "Microsoft Foundry SDK overview",
-          "section": "Further reading",
-          "was": "/azure/ai-foundry/how-to/develop/sdk-overview"
+          "section": "Further reading"
         },
         {
           "kind": "docs",
           "path": "/azure/foundry/openai/how-to/responses",
           "text": "Responses API documentation",
-          "section": "Further reading",
-          "was": "/azure/ai-foundry/openai/how-to/responses"
+          "section": "Further reading"
         },
         {
           "kind": "external",
@@ -22564,10 +22564,10 @@
     },
     {
       "path": "/training/modules/generate-images-azure-openai",
-      "unitSig": "aa127acdd9f80af7e00f85f92b8986fc6bc17983",
+      "unitSig": "a5dbf06abfc68e523fea35f75ef63bb3a0f48033",
       "unit": "/training/modules/generate-images-azure-openai/7-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": []
     },
     {
@@ -28824,24 +28824,24 @@
     },
     {
       "path": "/training/modules/integrate-foundry-agent-with-m365",
-      "unitSig": "c97c61f7c39e81a0bb23c366d42acafc29ed6911",
+      "unitSig": "31730c437ae21c9720fff688ad508f052359ab22",
       "unit": "/training/modules/integrate-foundry-agent-with-m365/9-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
           "path": "/azure/foundry/agents/how-to/publish-copilot",
           "text": "Publish agents to Microsoft 365 Copilot and Microsoft Teams",
           "section": "Learn more",
-          "was": "/azure/ai-foundry/agents/how-to/publish-copilot"
+          "was": "/azure/ai-foundry/agents/how-to/publish-copilot",
+          "checked": "2026-10-19"
         },
         {
           "kind": "docs",
-          "path": "/microsoft-365/copilot/extensibility/work-iq/cli",
+          "path": "/microsoft-365/copilot/extensibility/work-iq/mcp/overview",
           "text": "Microsoft Work IQ documentation",
-          "section": "Learn more",
-          "was": "/microsoft-365-copilot/extensibility/workiq-overview"
+          "section": "Learn more"
         },
         {
           "kind": "docs",
@@ -28854,7 +28854,8 @@
           "path": "/azure/foundry/agents/concepts/agent-identity",
           "text": "Agent identity concepts in Microsoft Foundry",
           "section": "Learn more",
-          "was": "/azure/ai-foundry/agents/concepts/agent-identity"
+          "was": "/azure/ai-foundry/agents/concepts/agent-identity",
+          "checked": "2026-10-19"
         }
       ]
     },
@@ -33602,10 +33603,10 @@
     },
     {
       "path": "/training/modules/model-catalog-evaluate",
-      "unitSig": "f160d119009dbaeb463aca14b2d2164bfae6c85a",
+      "unitSig": "3f9608f974a4d4daa74600b7cb82bf54a7e867be",
       "unit": "/training/modules/model-catalog-evaluate/8-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": []
     },
     {
@@ -34700,52 +34701,47 @@
     },
     {
       "path": "/training/modules/optimize-generative-ai-model-performance",
-      "unitSig": "034f6b1683a872ec4c55d33c91379e335ed4a007",
+      "unitSig": "07b55b8b560accf864ac319b839fbe07acf737ef",
       "unit": "/training/modules/optimize-generative-ai-model-performance/8-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
           "path": "/azure/foundry-classic/openai/concepts/customizing-llms",
           "text": "Getting started with customizing a large language model (LLM)",
-          "section": "Further reading",
-          "was": "/azure/ai-foundry/openai/concepts/customizing-llms"
+          "section": "Further reading"
         },
         {
           "kind": "docs",
           "path": "/azure/foundry/openai/concepts/prompt-engineering",
           "text": "Prompt engineering techniques",
-          "section": "Further reading",
-          "was": "/azure/ai-foundry/openai/concepts/prompt-engineering"
+          "section": "Further reading"
         },
         {
           "kind": "docs",
           "path": "/azure/foundry/openai/concepts/advanced-prompt-engineering",
           "text": "System message design",
-          "section": "Further reading",
-          "was": "/azure/ai-foundry/openai/concepts/advanced-prompt-engineering"
+          "section": "Further reading"
         },
         {
           "kind": "docs",
           "path": "/azure/foundry/concepts/retrieval-augmented-generation",
           "text": "Retrieval Augmented Generation in Microsoft Foundry",
-          "section": "Further reading",
-          "was": "/azure/ai-foundry/concepts/retrieval-augmented-generation"
+          "section": "Further reading"
         },
         {
           "kind": "docs",
           "path": "/azure/foundry/openai/how-to/fine-tuning",
           "text": "Customize a model with fine-tuning",
-          "section": "Further reading",
-          "was": "/azure/ai-foundry/openai/how-to/fine-tuning"
+          "section": "Further reading"
         },
         {
           "kind": "docs",
           "path": "/azure/foundry/fine-tuning/overview",
           "text": "Microsoft Foundry fine-tuning considerations",
           "section": "Further reading",
-          "was": "/azure/ai-foundry/openai/concepts/fine-tuning-considerations"
+          "was": "/azure/foundry/openai/concepts/fine-tuning-considerations"
         }
       ]
     },
@@ -35862,12 +35858,6 @@
           "kind": "docs",
           "path": "/microsoftteams/hybrid-meetings-device-select",
           "text": "Select devices that enable your space for hybrid meetings",
-          "section": "lead"
-        },
-        {
-          "kind": "docs",
-          "path": "/microsoftteams/rooms/surface-hub-manage-config",
-          "text": "Manage Microsoft Teams settings on Surface Hub",
           "section": "lead"
         },
         {
@@ -38222,17 +38212,18 @@
     },
     {
       "path": "/training/modules/responsible-ai-studio",
-      "unitSig": "ec182323011aa1d2da393e844e69f67f800b86d9",
+      "unitSig": "730a4225a64f345cc2f30216c3eb756a9cc9aaa2",
       "unit": "/training/modules/responsible-ai-studio/9-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": [
         {
           "kind": "docs",
           "path": "/azure/foundry/responsible-ai/openai/overview",
           "text": "Overview of Responsible AI practices for Azure OpenAI models",
           "section": "Further reading",
-          "was": "/legal/cognitive-services/openai/overview"
+          "was": "/legal/cognitive-services/openai/overview",
+          "checked": "2026-10-19"
         },
         {
           "kind": "external",
@@ -42390,10 +42381,10 @@
     },
     {
       "path": "/training/modules/work-smarter-with-microsoft-365-copilot-chat",
-      "unitSig": "b933a12e84e4e35c2410851f8e5c04ea76794a02",
+      "unitSig": "e0b68abb1d296935092c51b6dc1183620b3063ff",
       "unit": "/training/modules/work-smarter-with-microsoft-365-copilot-chat/7-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": []
     },
     {
@@ -42591,10 +42582,10 @@
     },
     {
       "path": "/training/modules/write-effective-prompts-do-more-prompting",
-      "unitSig": "5566c957ae95b0049218c67600fb2247e97ba3ac",
+      "unitSig": "ed5f34e3be99940c8e228a970b9d7af6da7ea7e3",
       "unit": "/training/modules/write-effective-prompts-do-more-prompting/6-summary",
       "unitTitle": "Summary",
-      "harvestedAt": "2026-10-16",
+      "harvestedAt": "2026-10-19",
       "links": []
     },
     {

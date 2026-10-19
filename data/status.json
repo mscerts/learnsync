@@ -63,20 +63,20 @@
     }
   },
   "moduleLinks": {
-    "generatedAt": "2026-10-16T22:31:28.554Z",
-    "runId": null,
+    "generatedAt": "2026-10-19T15:51:20.654Z",
+    "runId": "39281046928",
     "scope": "courses",
     "modules": 1412,
     "withLinks": 917,
-    "links": 4928,
-    "fetched": 0,
+    "links": 4927,
+    "fetched": 21,
     "failed": 0,
     "noUnits": 0,
     "waiting": 0,
     "fullRefreshAt": "2026-10-16",
-    "probed": 6,
-    "rewritten": 0,
-    "dropped": 14,
+    "probed": 11,
+    "rewritten": 7,
+    "dropped": 3,
     "unverified": 0
   }
 }
