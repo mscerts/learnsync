@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "lastChecked": "2026-10-14T22:55:21.137Z",
+  "lastChecked": "2026-10-19T14:39:36.138Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -54,8 +54,8 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3397,
-  "totalApiModules": 3464,
+  "totalModules": 3396,
+  "totalApiModules": 3463,
   "unitUrlsRefreshedAt": "2026-10-05",
   "modules": [
     {
@@ -3796,8 +3796,8 @@
         "/training/modules/dax-power-bi-create-calculations/8-check",
         "/training/modules/dax-power-bi-create-calculations/9-summary"
       ],
-      "lastModified": "2026-06-15T23:15:00+00:00",
-      "unitSig": "21162deb26971fe7218e5ec8f6c3b9ba722317d8"
+      "lastModified": "2026-10-15T23:14:00+00:00",
+      "unitSig": "8dcabd96f92dabf88e366567cd36c433a3dabee5"
     },
     {
       "uid": "learn-bizapps.dax-power-bi-modify-filter",
@@ -46846,7 +46846,7 @@
         "Generative AI operations",
         "Cloud Adoption Framework",
         "Microsoft Azure Well-Architected Framework",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -46858,8 +46858,8 @@
         "/training/modules/adopt-ai-agent-best-practice/6-knowledge-check",
         "/training/modules/adopt-ai-agent-best-practice/7-summary"
       ],
-      "lastModified": "2026-03-17T07:10:00+00:00",
-      "unitSig": "068b40b1d68c8ddce0148cf8fe697759878fbc82"
+      "lastModified": "2026-10-16T07:31:00+00:00",
+      "unitSig": "d75ea240e0776c46b090287604bd25f62d1a25d5"
     },
     {
       "uid": "learn.advanced-github-copilot",
@@ -49590,7 +49590,7 @@
         "Set up Azure Container Apps",
         "Exercise - Set up Azure Container Apps",
         "Deploy a Quarkus application to Azure Container Apps",
-        "Exercise - Restrict access to the Azure Container Apps environment",
+        "Exercise - Limit public database access to Azure services",
         "Module assessment",
         "Summary"
       ],
@@ -49605,8 +49605,8 @@
         "/training/modules/deploy-java-quarkus-azure-container-app-postgres/8-knowledge-check",
         "/training/modules/deploy-java-quarkus-azure-container-app-postgres/9-summary"
       ],
-      "lastModified": "2026-06-05T07:13:00+00:00",
-      "unitSig": "f19c29cb6a762080c67254d44757f3c989c33b46"
+      "lastModified": "2026-10-19T11:11:00+00:00",
+      "unitSig": "0c40c139ab1693caa18be509aea30e624719105a"
     },
     {
       "uid": "learn.azure.design-considerations-mr-development",
@@ -53743,8 +53743,8 @@
         "/training/modules/containerize-deploy-java-app-aks/7-knowledge-check",
         "/training/modules/containerize-deploy-java-app-aks/8-summary"
       ],
-      "lastModified": "2026-06-05T07:13:00+00:00",
-      "unitSig": "6aa09d34a4af6ab9c967fdf71a60fc8ec2798a22"
+      "lastModified": "2026-10-19T07:22:00+00:00",
+      "unitSig": "25ddfd4caba9c533c9945cc6c05ac2ba6b7ecfea"
     },
     {
       "uid": "learn.continuous-validate-test-mission-critical-workloads",
@@ -55244,7 +55244,7 @@
         "Introduction to Internet Information Services on Windows Server",
         "Installing the Internet Information Services web server role",
         "Initial configuration and validation",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -55254,8 +55254,8 @@
         "/training/modules/deploy-configure-internet-information-services/4-knowledge-check",
         "/training/modules/deploy-configure-internet-information-services/5-summary"
       ],
-      "lastModified": "2026-03-24T17:11:00+00:00",
-      "unitSig": "b9ba631fd4b6f2eb85a67e40adb0666ac0b57a08"
+      "lastModified": "2026-10-16T11:18:00+00:00",
+      "unitSig": "8d85aecbc31965bbbec7c2a23b2b3dd99e9a2485"
     },
     {
       "uid": "learn.devrel.design-multi-domain-active-directory-forest",
@@ -55923,7 +55923,7 @@
         "Application pools and worker process",
         "Bindings and host headers",
         "Advanced site configuration",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -55934,8 +55934,8 @@
         "/training/modules/configure-manage-website-application/5-knowledge-check",
         "/training/modules/configure-manage-website-application/6-summary"
       ],
-      "lastModified": "2026-03-26T17:10:00+00:00",
-      "unitSig": "cfbecd137e9faea610a93ddf9688b0168e2fc54e"
+      "lastModified": "2026-10-16T07:31:00+00:00",
+      "unitSig": "579f576c006179dc0be3dc95150925172e59c020"
     },
     {
       "uid": "learn.discover-how-microsoft-datacenters-work",
@@ -67399,6 +67399,7 @@
         "Access Teach across Microsoft 365",
         "Create lesson plans in Teach",
         "Create a lesson plan for Minecraft Education",
+        "Create unit plans in Teach",
         "Create quizzes in Teach",
         "Create rubrics in Teach",
         "Create flashcards in Teach",
@@ -67412,6 +67413,7 @@
         "/training/modules/create-instructional-materials-teach-microsoft-365-copilot/access-teach-across-microsoft-365",
         "/training/modules/create-instructional-materials-teach-microsoft-365-copilot/create-lesson-plans-teach",
         "/training/modules/create-instructional-materials-teach-microsoft-365-copilot/create-lesson-plan-minecraft-education",
+        "/training/modules/create-instructional-materials-teach-microsoft-365-copilot/create-unit-plan-teach",
         "/training/modules/create-instructional-materials-teach-microsoft-365-copilot/create-quizzes-teach",
         "/training/modules/create-instructional-materials-teach-microsoft-365-copilot/create-rubrics-teach",
         "/training/modules/create-instructional-materials-teach-microsoft-365-copilot/create-flashcards-teach",
@@ -67419,8 +67421,8 @@
         "/training/modules/create-instructional-materials-teach-microsoft-365-copilot/knowledge-check",
         "/training/modules/create-instructional-materials-teach-microsoft-365-copilot/summary"
       ],
-      "lastModified": "2026-08-21T17:08:00+00:00",
-      "unitSig": "3caa1b0a8bd0deb84f206d74201fcea37efb886f"
+      "lastModified": "2026-10-15T23:07:00+00:00",
+      "unitSig": "72043f664cef03f7e5d90e9a3fe073f701f13044"
     },
     {
       "uid": "learn.mec.deepen-educational-experiences",
@@ -68236,48 +68238,6 @@
       "unitSig": "811703f6cfb29aeb46d7c59f18d0a0ce3cdea0e3"
     },
     {
-      "uid": "learn.mec.enhance-creativity-advance-learning-windows-11-microsoft-365-tools",
-      "title": "Enhance creativity to advance learning with Windows 11 and Microsoft 365 tools",
-      "url": "https://learn.microsoft.com/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools",
-      "categories": [
-        "Office 365",
-        "Windows"
-      ],
-      "products": [
-        "Minecraft",
-        "Office 365",
-        "Windows"
-      ],
-      "subjects": [],
-      "units": [
-        "Introduction",
-        "Minecraft Education: Creativity for all",
-        "Create with Windows 11 video editing tools",
-        "Create with Windows 11 video editing tools",
-        "Eliminate creator's block with Sway",
-        "Whiteboard: Digital canvas for creativity and collaboration",
-        "Digital inking spurs creative thinking",
-        "File sharing: Increase collaboration and creativity",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/introduction",
-        "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/minecraft-education-edition-creativity-for-all",
-        "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/create-windows-video-editing-tools",
-        "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/stream-microsoft-365-safe-streaming-service",
-        "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/eliminate-creators-block-sway",
-        "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/whiteboard-digital-canvas-creativity-collaboration",
-        "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/digital-inking-spurs-creative-thinking",
-        "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/file-sharing-increase-collaboration-creativity",
-        "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/knowledge-check",
-        "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools/summary"
-      ],
-      "lastModified": "2025-05-16T23:02:00+00:00",
-      "unitSig": "94fa8fb999ef5759add71b09f684068e255f1b55"
-    },
-    {
       "uid": "learn.mec.enhance-public-sector-services-generative-ai",
       "title": "Enhance public sector services with generative AI",
       "url": "https://learn.microsoft.com/training/modules/enhance-public-sector-services-generative-ai/?WT.mc_id=studentamb_165290",
@@ -68463,8 +68423,8 @@
         "/training/modules/equip-support-learners-ai-tools-microsoft/knowledge-check",
         "/training/modules/equip-support-learners-ai-tools-microsoft/summary"
       ],
-      "lastModified": "2025-07-24T23:06:00+00:00",
-      "unitSig": "e957233f9bb062c4fc35d7be26333bd255b97e45"
+      "lastModified": "2026-10-14T23:07:00+00:00",
+      "unitSig": "05ab54dbbdfab9288f75f7ef2c8a65394dcd5f2b"
     },
     {
       "uid": "learn.mec.explore-benefits-change-agents-program-public-sector-organizations",
@@ -76651,8 +76611,8 @@
         "/training/modules/ai-agent-fundamentals/6-knowledge-check",
         "/training/modules/ai-agent-fundamentals/7-summary"
       ],
-      "lastModified": "2026-07-08T22:11:00+00:00",
-      "unitSig": "c9682d21977db79fa1a75ed3db473ab20ee99f97"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "ce952b6d20fdf7a1cd377e7b03de1625fbb09799"
     },
     {
       "uid": "learn.wwl.ai-basics-for-job-coaches",
@@ -76731,8 +76691,8 @@
         "/training/modules/ai-knowldge-mining/8-knowledge-check",
         "/training/modules/ai-knowldge-mining/9-summary"
       ],
-      "lastModified": "2026-03-18T23:10:00+00:00",
-      "unitSig": "92b5604997d8b005d5a2d03ffdc06eb012efa17a"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "d93e6bc9cfa5cd1905cecb83af00e6c57a183ffe"
     },
     {
       "uid": "learn.wwl.analyze-advanced-device-signals",
@@ -76842,8 +76802,8 @@
         "/training/modules/analyze-content-ai/06-knowledge-check",
         "/training/modules/analyze-content-ai/07-summary"
       ],
-      "lastModified": "2026-05-07T17:55:00+00:00",
-      "unitSig": "3950a8703ecb162f9c0385905b6b748a01227690"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "f1e02a709921c8933b91d76a778e8f6179d883fe"
     },
     {
       "uid": "learn.wwl.analyze-content-ai-api",
@@ -76878,8 +76838,8 @@
         "/training/modules/analyze-content-ai-api/06-knowledge-check",
         "/training/modules/analyze-content-ai-api/07-summary"
       ],
-      "lastModified": "2026-05-07T17:55:00+00:00",
-      "unitSig": "423c7c12d749962bee547832927f89d595da88e2"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "b00d0154289234270028dfbe07a27bcb277fdf03"
     },
     {
       "uid": "learn.wwl.analyze-devops-continuous-planning-intergration",
@@ -77148,8 +77108,8 @@
         "/training/modules/analyze-text-ai-language/9-knowledge-check",
         "/training/modules/analyze-text-ai-language/10-summary"
       ],
-      "lastModified": "2026-07-08T22:11:00+00:00",
-      "unitSig": "9b7701331923259238db15bc0f6f855929fdfc4e"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "b2b155dec2e1f128d8d2457868f15a24a73a6a49"
     },
     {
       "uid": "learn.wwl.analyze-tune-query-performance-azure-cosmos-db-nosql",
@@ -78565,8 +78525,8 @@
         "/training/modules/build-agent-with-custom-tools/6-knowledge-check",
         "/training/modules/build-agent-with-custom-tools/7-summary"
       ],
-      "lastModified": "2026-05-07T17:55:00+00:00",
-      "unitSig": "16e24919c1cc95a32993e8b41bab544a56687150"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "98dc3ee96bd5e8debd324dff7ad3d7052ebed586"
     },
     {
       "uid": "learn.wwl.build-agent-workflows-microsoft-foundry",
@@ -86801,8 +86761,8 @@
         "/training/modules/create-speech-enabled-apps/8-knowledge-check",
         "/training/modules/create-speech-enabled-apps/9-summary"
       ],
-      "lastModified": "2026-06-18T07:24:00+00:00",
-      "unitSig": "bcca0fed343e43a1f161f8b35b0d5b739473d593"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "a84e763ac9b97baf1c22ddacb77d75d489b25ea8"
     },
     {
       "uid": "learn.wwl.create-stored-procedures-table-valued-functions",
@@ -94699,8 +94659,8 @@
         "/training/modules/develop-ai-agents-azure-vs-code/10-knowledge-check",
         "/training/modules/develop-ai-agents-azure-vs-code/11-summary"
       ],
-      "lastModified": "2026-05-07T17:55:00+00:00",
-      "unitSig": "0811b54260fc9904ebf52b4043dfe6f590b00e4a"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "0424c9ccf6c9dad1630caf406c23b9cef792b7b6"
     },
     {
       "uid": "learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk",
@@ -94937,8 +94897,8 @@
         "/training/modules/develop-speech-agent-speech-mcp/05-knowledge-check",
         "/training/modules/develop-speech-agent-speech-mcp/06-summary"
       ],
-      "lastModified": "2026-06-23T07:12:00+00:00",
-      "unitSig": "5a726a35876c0be9c62c06657b852bab8a91d340"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "2eb401b0182e10a2f84f51d47659bee4df401e49"
     },
     {
       "uid": "learn.wwl.develop-text-analysis-agent-language-mcp",
@@ -94972,8 +94932,8 @@
         "/training/modules/develop-text-analysis-agent-language-mcp/05-knowledge-check",
         "/training/modules/develop-text-analysis-agent-language-mcp/06-summary"
       ],
-      "lastModified": "2026-08-18T07:11:00+00:00",
-      "unitSig": "526201a92a8f5f4e888eb636a8752e7c6464d55b"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "d50c067eb434fc2a0088ef56bbc3bb510f6723f5"
     },
     {
       "uid": "learn.wwl.develop-unit-tests-using-github-copilot-tools",
@@ -101770,8 +101730,8 @@
         "/training/modules/extract-data-with-document-intelligence/7-knowledge-check",
         "/training/modules/extract-data-with-document-intelligence/8-summary"
       ],
-      "lastModified": "2026-06-11T07:12:00+00:00",
-      "unitSig": "1d8fbe1a59edff302fdfeb3e6af40c3d79b93cc3"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "2bd971feb99a8db31c3570b6adc7fcab7d9b082b"
     },
     {
       "uid": "learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql",
@@ -102291,8 +102251,8 @@
         "/training/modules/foundry-sdk/07-knowledge-check",
         "/training/modules/foundry-sdk/08-summary"
       ],
-      "lastModified": "2026-05-07T17:55:00+00:00",
-      "unitSig": "6ec12ad0711a0c87966e71a9e8043edd2be4b840"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "dcd469bd804a848d4a8959d4cd79f7e1416d960b"
     },
     {
       "uid": "learn.wwl.from-inbox-impact-improve-your-email-workflows-ai",
@@ -102650,8 +102610,8 @@
         "/training/modules/generate-images-azure-openai/6-knowledge-check",
         "/training/modules/generate-images-azure-openai/7-summary"
       ],
-      "lastModified": "2026-05-07T17:55:00+00:00",
-      "unitSig": "aa127acdd9f80af7e00f85f92b8986fc6bc17983"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "a5dbf06abfc68e523fea35f75ef63bb3a0f48033"
     },
     {
       "uid": "learn.wwl.generate-video-with-foundry",
@@ -113053,8 +113013,8 @@
         "/training/modules/integrate-foundry-agent-with-m365/8-knowledge-check",
         "/training/modules/integrate-foundry-agent-with-m365/9-summary"
       ],
-      "lastModified": "2026-05-29T23:22:00+00:00",
-      "unitSig": "c97c61f7c39e81a0bb23c366d42acafc29ed6911"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "31730c437ae21c9720fff688ad508f052359ab22"
     },
     {
       "uid": "learn.wwl.integrate-identity-management-systems",
@@ -120601,8 +120561,8 @@
         "/training/modules/model-catalog-evaluate/7-knowledge-check",
         "/training/modules/model-catalog-evaluate/8-summary"
       ],
-      "lastModified": "2026-05-07T17:55:00+00:00",
-      "unitSig": "f160d119009dbaeb463aca14b2d2164bfae6c85a"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "3f9608f974a4d4daa74600b7cb82bf54a7e867be"
     },
     {
       "uid": "learn.wwl.model-data-relationships-azure-documentdb",
@@ -121920,8 +121880,8 @@
         "/training/modules/optimize-generative-ai-model-performance/7-knowledge-check",
         "/training/modules/optimize-generative-ai-model-performance/8-summary"
       ],
-      "lastModified": "2026-05-07T17:55:00+00:00",
-      "unitSig": "034f6b1683a872ec4c55d33c91379e335ed4a007"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "07b55b8b560accf864ac319b839fbe07acf737ef"
     },
     {
       "uid": "learn.wwl.optimize-multi-agent-performance-cost-azure",
@@ -127229,8 +127189,8 @@
         "/training/modules/responsible-content-safety/6-knowledge-check",
         "/training/modules/responsible-content-safety/7-summary"
       ],
-      "lastModified": "2026-07-08T22:11:00+00:00",
-      "unitSig": "183bf13767c4b88d380f17cf34f888121fe3afa0"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "d0428de920d31095aee93cc97610e27559fa75f7"
     },
     {
       "uid": "learn.wwl.responsible-ai-studio",
@@ -127268,8 +127228,8 @@
         "/training/modules/responsible-ai-studio/8-knowledge-check",
         "/training/modules/responsible-ai-studio/9-summary"
       ],
-      "lastModified": "2026-05-07T17:55:00+00:00",
-      "unitSig": "ec182323011aa1d2da393e844e69f67f800b86d9"
+      "lastModified": "2026-10-16T22:09:00+00:00",
+      "unitSig": "730a4225a64f345cc2f30216c3eb756a9cc9aaa2"
     },
     {
       "uid": "learn.wwl.responsible-language-models-azure-databricks",
@@ -134017,10 +133977,10 @@
       ],
       "units": [
         "Introduction",
-        "Enhance productivity and creativity with enterprise-ready AI Chat",
+        "Use Microsoft Copilot Chat for common tasks",
         "Create and collaborate with Copilot Pages",
-        "Simplify workflows and automate tasks with Agents in Copilot Chat",
-        "Exercise - Plan a client summit with Microsoft 365 Copilot Chat",
+        "Simplify workflows and automate tasks with agents in Copilot Chat",
+        "Exercise - Plan a client summit with Microsoft Copilot Chat",
         "Module assessment",
         "Summary"
       ],
@@ -134033,8 +133993,8 @@
         "/training/modules/work-smarter-with-microsoft-365-copilot-chat/6-knowledge-check",
         "/training/modules/work-smarter-with-microsoft-365-copilot-chat/7-summary"
       ],
-      "lastModified": "2026-09-18T23:08:00+00:00",
-      "unitSig": "b933a12e84e4e35c2410851f8e5c04ea76794a02"
+      "lastModified": "2026-10-16T23:12:00+00:00",
+      "unitSig": "e0b68abb1d296935092c51b6dc1183620b3063ff"
     },
     {
       "uid": "learn.wwl.work-with-data-kql",
@@ -134142,8 +134102,8 @@
         "/training/modules/write-effective-prompts-do-more-prompting/5-knowledge-check",
         "/training/modules/write-effective-prompts-do-more-prompting/6-summary"
       ],
-      "lastModified": "2026-08-18T23:11:00+00:00",
-      "unitSig": "5566c957ae95b0049218c67600fb2247e97ba3ac"
+      "lastModified": "2026-10-16T23:12:00+00:00",
+      "unitSig": "ed5f34e3be99940c8e228a970b9d7af6da7ea7e3"
     },
     {
       "uid": "learn.wwl.write-first-c-sharp-method",
@@ -134385,6 +134345,13 @@
       "title": "Become a Microsoft Learn contributor",
       "lastSeen": "2026-09-28",
       "removedOn": "2026-10-05"
+    },
+    {
+      "uid": "learn.mec.enhance-creativity-advance-learning-windows-11-microsoft-365-tools",
+      "path": "/training/modules/enhance-creativity-advance-learning-windows-11-microsoft-365-tools",
+      "title": "Enhance creativity to advance learning with Windows 11 and Microsoft 365 tools",
+      "lastSeen": "2026-10-14",
+      "removedOn": "2026-10-19"
     },
     {
       "uid": "learn.mec.foundations-modern-public-sector-security-operations-center",

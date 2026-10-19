@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastChecked": "2026-10-14T22:56:06.127Z",
+  "lastChecked": "2026-10-19T14:40:21.951Z",
   "learningPaths": [
     {
       "uid": "learn-bizapps.accident-tracking-app",
@@ -6943,7 +6943,7 @@
       "uid": "learn.wwl.draft-analyze-present-microsoft-365-copilot",
       "title": "Draft, analyze, and present with Microsoft Copilot",
       "path": "/training/paths/draft-analyze-present-microsoft-365-copilot",
-      "lastModified": "2026-08-20T23:08:00+00:00",
+      "lastModified": "2026-10-14T23:11:00+00:00",
       "modules": [
         "/training/modules/get-ready-work-microsoft-365-copilot",
         "/training/modules/unlock-productivity-unleash-creativity-ai-powered-chat",
@@ -10560,7 +10560,7 @@
       "code": "AB-400T00",
       "title": "Extend Microsoft Power Platform Solutions with code and AI",
       "path": "/training/courses/ab-400t00",
-      "lastModified": "2026-09-21T20:28:00+00:00"
+      "lastModified": "2026-10-15T20:38:00+00:00"
     },
     {
       "uid": "course.ab-410t00",
@@ -11513,14 +11513,14 @@
       "uid": "certification.agentic-ai-business-professional",
       "title": "GitHub Certified: Agentic AI Business Professional (beta)",
       "path": "/credentials/certifications/agentic-ai-business-professional",
-      "lastModified": "2026-10-13T22:34:00+00:00",
+      "lastModified": "2026-10-16T17:47:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.agentic-ai-business-solutions-architect",
       "title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
       "path": "/credentials/certifications/agentic-ai-business-solutions-architect",
-      "lastModified": "2026-09-23T21:21:00+00:00",
+      "lastModified": "2026-10-14T20:34:00+00:00",
       "exams": [
         "ab-100"
       ]
@@ -11536,7 +11536,7 @@
       "uid": "certification.agentic-devops-engineer-expert",
       "title": "Microsoft Certified: Agentic DevOps Engineer Expert (beta)",
       "path": "/credentials/certifications/agentic-devops-engineer-expert",
-      "lastModified": "2026-10-13T19:39:00+00:00",
+      "lastModified": "2026-10-15T23:49:00+00:00",
       "exams": [
         "az-401"
       ]
@@ -11545,7 +11545,7 @@
       "uid": "certification.ai-agent-builder-associate",
       "title": "Microsoft Certified: AI Agent Builder Associate",
       "path": "/credentials/certifications/ai-agent-builder-associate",
-      "lastModified": "2026-08-05T20:20:00+00:00",
+      "lastModified": "2026-10-15T23:49:00+00:00",
       "exams": []
     },
     {
@@ -11600,7 +11600,7 @@
       "uid": "certification.azure-ai-cloud-developer-associate",
       "title": "Microsoft Certified: Azure AI Cloud Developer Associate",
       "path": "/credentials/certifications/azure-ai-cloud-developer-associate",
-      "lastModified": "2026-10-07T21:59:00+00:00",
+      "lastModified": "2026-10-16T20:09:00+00:00",
       "exams": []
     },
     {
@@ -11623,7 +11623,7 @@
       "uid": "certification.azure-cosmos-db-developer-specialty",
       "title": "Microsoft Certified: Azure Cosmos DB AI Developer Associate",
       "path": "/credentials/certifications/azure-cosmos-db-developer-specialty",
-      "lastModified": "2026-10-09T19:54:00+00:00",
+      "lastModified": "2026-10-15T20:38:00+00:00",
       "exams": []
     },
     {
@@ -11758,7 +11758,7 @@
       "uid": "certification.copilot-and-agent-administration-fundamentals",
       "title": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
       "path": "/credentials/certifications/copilot-and-agent-administration-fundamentals",
-      "lastModified": "2026-09-25T22:18:00+00:00",
+      "lastModified": "2026-10-14T20:34:00+00:00",
       "exams": []
     },
     {
@@ -11795,7 +11795,7 @@
       "uid": "certification.d365-contact-center-ai-engineer-associate",
       "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
       "path": "/credentials/certifications/d365-contact-center-ai-engineer-associate",
-      "lastModified": "2026-10-01T20:14:00+00:00",
+      "lastModified": "2026-10-15T23:49:00+00:00",
       "exams": []
     },
     {
@@ -11974,7 +11974,7 @@
       "uid": "certification.d365-sales-ai-consultant-associate",
       "title": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
       "path": "/credentials/certifications/d365-sales-ai-consultant-associate",
-      "lastModified": "2026-08-31T19:51:00+00:00",
+      "lastModified": "2026-10-15T23:49:00+00:00",
       "exams": []
     },
     {
@@ -12076,14 +12076,14 @@
       "uid": "certification.information-security-administrator",
       "title": "Microsoft Certified: Information Security Administrator Associate",
       "path": "/credentials/certifications/information-security-administrator",
-      "lastModified": "2026-09-14T21:02:00+00:00",
+      "lastModified": "2026-10-14T20:34:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.intelligent-applications-builder-associate",
       "title": "Microsoft Certified: Intelligent Applications Builder Associate",
       "path": "/credentials/certifications/intelligent-applications-builder-associate",
-      "lastModified": "2026-10-01T20:14:00+00:00",
+      "lastModified": "2026-10-15T23:49:00+00:00",
       "exams": []
     },
     {
@@ -12722,10 +12722,9 @@
       "uid": "certification.power-platform-developer-associate",
       "title": "Microsoft Certified: Power Platform Developer Associate",
       "path": "/credentials/certifications/power-platform-developer-associate",
-      "lastModified": "2026-09-16T17:28:00+00:00",
+      "lastModified": "2026-10-16T17:47:00+00:00",
       "exams": [
-        "ab-400",
-        "pl-400"
+        "ab-400"
       ]
     },
     {
@@ -12766,6 +12765,13 @@
       "exams": []
     },
     {
+      "uid": "certification.supply-chain-management-ai-consultant-associate",
+      "title": "Microsoft Certified: Supply Chain Management AI Consultant Associate (beta)",
+      "path": "/credentials/certifications/supply-chain-management-ai-consultant-associate",
+      "lastModified": "2026-10-15T20:38:00+00:00",
+      "exams": []
+    },
+    {
       "uid": "certification.windows-server-administrator-associate",
       "title": "Microsoft Certified: Windows Server Administrator Associate",
       "path": "/credentials/certifications/windows-server-administrator-associate",
@@ -12776,7 +12782,7 @@
       "uid": "certification.windows-server-hybrid-administrator",
       "title": "Microsoft Certified: Windows Server Administrator Associate",
       "path": "/credentials/certifications/windows-server-hybrid-administrator",
-      "lastModified": "2026-10-07T21:59:00+00:00",
+      "lastModified": "2026-10-16T17:47:00+00:00",
       "exams": []
     }
   ],
@@ -13312,9 +13318,9 @@
     {
       "uid": "exam.ab-400",
       "code": "ab-400",
-      "title": "Power Platform Developer Associate",
+      "title": "Extending Microsoft Power Platform Solutions with Code and AI",
       "path": "/credentials/certifications/exams/ab-400",
-      "lastModified": "2026-09-14T21:02:00+00:00",
+      "lastModified": "2026-10-16T20:09:00+00:00",
       "studyGuide": "/credentials/certifications/resources/study-guides/ab-400"
     },
     {
@@ -13490,7 +13496,7 @@
       "code": "az-401",
       "title": "Designing and Implementing Microsoft Agentic DevOps Solutions (beta)",
       "path": "/credentials/certifications/exams/az-401",
-      "lastModified": "2026-10-14T20:34:00+00:00",
+      "lastModified": "2026-10-15T23:49:00+00:00",
       "studyGuide": "/credentials/certifications/resources/study-guides/az-401"
     },
     {
@@ -13930,7 +13936,7 @@
       "code": "pl-400",
       "title": "Microsoft Power Platform Developer",
       "path": "/credentials/certifications/exams/pl-400",
-      "lastModified": "2026-09-16T17:28:00+00:00",
+      "lastModified": "2026-10-16T17:47:00+00:00",
       "studyGuide": "/credentials/certifications/resources/study-guides/pl-400"
     },
     {
@@ -14251,271 +14257,271 @@
   "studyGuides": [
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0100",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0200",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0302",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0501",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0502",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1002",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1003",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1004",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1008",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2001",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2003",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2006",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2007",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2014",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2015",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3001",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3008",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3019",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3020",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3021",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3022",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3030",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3031",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3032",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3034",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5002",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5003",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5004",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5007",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5009",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5010",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6000",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6006",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6500",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6501",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-7001",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-7002",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ab-100",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ab-400",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ab-650",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-500",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-900",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-901",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-220",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-305",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-400",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-401",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-600",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-720",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-800",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-801",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-802",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-210",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-220",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-230",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-240",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-335",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-700",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-102",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-220",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-500",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-720",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-740",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-200",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-400",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-600",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/sc-100",
-      "checked": "2026-10-14"
+      "checked": "2026-10-19"
     }
   ],
   "unverifiedStudyGuides": [],

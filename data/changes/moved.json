@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T00:02:23.937Z",
+  "generatedAt": "2026-10-19T14:40:21.951Z",
   "sources": {
-    "learn": "2026-10-14T22:56:06.127Z",
+    "learn": "2026-10-19T14:40:21.951Z",
     "docs": "2026-10-15T00:02:23.937Z"
   },
   "entries": [
@@ -2446,7 +2446,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "live-probe",
       "status": 301
     },
@@ -3759,7 +3759,7 @@
       "title": "Develop finance skills with AI agents",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "history",
       "status": 301
     },
@@ -3772,7 +3772,7 @@
       "title": "Develop marketing skills with AI agents",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "history",
       "status": 301
     },
@@ -3785,7 +3785,7 @@
       "title": "Develop sales skills with AI agents",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "history",
       "status": 301
     },
@@ -3798,7 +3798,7 @@
       "title": "Craft a compelling product pitch using AI",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "history",
       "status": 301
     },
@@ -3811,7 +3811,7 @@
       "title": null,
       "parent": "/training/modules/create-manage-automated-processes-with-power-automate",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "live-probe",
       "status": 301
     },
@@ -3824,7 +3824,7 @@
       "title": "Design a machine learning operations solution (MLOps)",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "history",
       "status": 301
     },
@@ -3837,7 +3837,7 @@
       "title": "Dragon Copilot (physicians) create customizable templates",
       "parent": null,
       "firstSeen": "2026-09-14",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "history",
       "status": 301
     },
@@ -3850,7 +3850,7 @@
       "title": "Employ Copilot Chat as your AI assistant",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "history",
       "status": 301
     },
@@ -3863,7 +3863,7 @@
       "title": "Foundations of a modern public sector security operations center",
       "parent": null,
       "firstSeen": "2026-10-13",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "tombstone",
       "status": 301
     },
@@ -3876,7 +3876,7 @@
       "title": "Design secure Delta Sharing strategy",
       "parent": "/training/modules/govern-unity-catalog-objects",
       "firstSeen": "2026-10-13",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "unit-diff",
       "status": 301
     },
@@ -3889,7 +3889,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "live-probe",
       "status": 301
     },
