@@ -1,11 +1,24 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T14:40:21.951Z",
+  "generatedAt": "2026-10-19T15:27:22.694Z",
   "sources": {
     "learn": "2026-10-19T14:40:21.951Z",
-    "docs": "2026-10-15T00:02:23.937Z"
+    "docs": "2026-10-19T15:27:22.694Z"
   },
   "entries": [
+    {
+      "path": "/azure/architecture/ai-ml/guide/azure-openai-gateway-custom-authentication",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/architecture/ai-ml/guide/generative-ai-gateway-custom-authentication",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
     {
       "path": "/azure/architecture/ai-ml/guide/azure-openai-gateway-guide",
       "kind": "docs",
@@ -15,7 +28,20 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-14",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/architecture/ai-ml/guide/azure-openai-gateway-monitoring",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/architecture/ai-ml/guide/generative-ai-gateway-monitoring",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -28,7 +54,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-14",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -119,7 +145,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-14",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -145,7 +171,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-14",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1003,7 +1029,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-14",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1268,6 +1294,19 @@
       "status": 301
     },
     {
+      "path": "/azure/databricks/ldp/dbsql/flows-replace-where",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/sql/mv-st/flows-replace-where",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/databricks/machine-learning/ai-runtime/cli/command-reference",
       "kind": "docs",
       "family": "docs",
@@ -1528,6 +1567,110 @@
       "status": 301
     },
     {
+      "path": "/azure/developer/terraform/azure-terraform-resource-provider/get-started-export-resources-portal",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/developer/terraform/azure-export-for-terraform/get-started-export-resources-portal",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/developer/terraform/azure-terraform-resource-provider/resource-provider-overview",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/developer/terraform/azure-export-for-terraform/resource-provider-overview",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/devops/extensions",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/devops/extend/overview",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/devops/extensions/dependency-tracker/create-new-dependency",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/devops/extend/overview",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/devops/extensions/dependency-tracker/dependency-views",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/devops/extend/overview",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/devops/extensions/dependency-tracker/overview",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/devops/extend/overview",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/devops/extensions/dependency-tracker/risk-graph",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/devops/extend/overview",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/devops/extensions/dependency-tracker/timeline",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/devops/extend/overview",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/enclave/preview-terms",
       "kind": "docs",
       "family": "docs",
@@ -1731,7 +1874,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-14",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -2464,6 +2607,19 @@
       "status": 301
     },
     {
+      "path": "/defender-xdr/advanced-hunting-aiagentsinfo-table",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/defender-xdr/advanced-hunting-agentsinfo-table",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/dynamics365/business-central/dev-itpro/developer/word-layout-add-in",
       "kind": "docs",
       "family": "docs",
@@ -3088,6 +3244,19 @@
       "status": 301
     },
     {
+      "path": "/microsoft-365/loop/loop-data-integrations-configuration",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/microsoft-365/loop/loop-admin-configuration",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/microsoft-copilot-studio/add-work-iq",
       "kind": "docs",
       "family": "docs",
@@ -3413,6 +3582,19 @@
       "status": 301
     },
     {
+      "path": "/microsoftteams/platform/samples/teams-low-code-solutions",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/power-apps/teams/overview",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/microsoftteams/support-pin",
       "kind": "docs",
       "family": "docs",
@@ -3422,6 +3604,71 @@
       "parent": null,
       "firstSeen": "2026-10-12",
       "lastVerified": "2026-10-12",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/partner-center/account-settings/account-deletion",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/partner-center/account-settings/manage-locations",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/partner-center/enroll/enroll-isv-success",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/partner-center/frontier-accelerate-marketplace/enroll",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/partner-center/marketplace-offers/gtm-your-marketplace-benefits",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/partner-center/frontier-accelerate-marketplace/grow/go-to-market",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/partner-center/marketplace-offers/marketplace-rewards",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/partner-center/frontier-accelerate-marketplace/benefits",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/partner-center/membership/faq-isvsuccess",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/partner-center/frontier-accelerate-marketplace/faq",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3747,6 +3994,32 @@
       "parent": null,
       "firstSeen": "2026-10-14",
       "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/sql/t-sql/functions/regular-expressions-functions-transact-sql",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/sql/relational-databases/regular-expressions/overview",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/sql/t-sql/spatial-geography/spatial-types-geography",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/sql/t-sql/spatial-geography/spatial-types-geography-transact-sql",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
     },

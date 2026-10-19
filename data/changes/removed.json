@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T14:40:21.951Z",
+  "generatedAt": "2026-10-19T15:27:22.694Z",
   "sources": {
     "learn": "2026-10-19T14:40:21.951Z",
-    "docs": "2026-10-15T00:02:23.937Z"
+    "docs": "2026-10-19T15:27:22.694Z"
   },
   "entries": [
     {
@@ -366,9 +366,22 @@
       "title": "Convert System Center Operations Manager management packs into data collection rules",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "quarantine",
       "status": 404
+    },
+    {
+      "path": "/azure/azure-sql/managed-instance/managed-instance-link-preparation-wsfc",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/azure/azure-sql/managed-instance/managed-instance-link-preparation-wsfc",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
     },
     {
       "path": "/azure/databricks/agents/custom-agents/build-agents",
@@ -431,7 +444,7 @@
       "title": "LLMOps workflows on Azure Databricks - Azure Databricks",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "quarantine",
       "status": 404
     },
@@ -444,7 +457,7 @@
       "title": "Configure a credential in Azure Device Registry",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "quarantine",
       "status": 404
     },
@@ -457,7 +470,7 @@
       "title": "Revoke Certificates and Delete Policies in Azure Device Registry",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "quarantine",
       "status": 404
     },
@@ -470,7 +483,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "quarantine",
       "status": 404
     },
@@ -483,7 +496,7 @@
       "title": "Default dimensions",
       "parent": null,
       "firstSeen": "2026-09-28",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "quarantine",
       "status": 404
     },
@@ -496,7 +509,7 @@
       "title": "Define cycle counting - Supply Chain Management | Dynamics 365",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "quarantine",
       "status": 404
     },
@@ -509,7 +522,7 @@
       "title": "Manage active content in Office documents for IT admins",
       "parent": null,
       "firstSeen": "2026-09-01",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "quarantine",
       "status": 404
     },
@@ -527,6 +540,19 @@
       "status": 301
     },
     {
+      "path": "/microsoftteams/rooms/surface-hub-manage-config",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/partner-center/announcements/2025-october",
       "kind": "docs",
       "family": "docs",
@@ -536,6 +562,19 @@
       "parent": null,
       "firstSeen": "2026-10-12",
       "lastVerified": "2026-10-12",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/services-hub/microsoft-engage-center/health/connector-migration",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/services-hub/microsoft-engage-center/health",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1983,6 +2022,19 @@
       "status": 301
     },
     {
+      "path": "/troubleshoot/microsoftteams/teams-rooms-and-devices/get-support-teams-rooms-pro-management",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/content-retirement",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-19",
+      "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/troubleshoot/outlook/performance/collect-performance-trace",
       "kind": "docs",
       "family": "docs",
@@ -1991,7 +2043,7 @@
       "title": "Collect a Performance Trace in New Outlook for Windows",
       "parent": null,
       "firstSeen": "2026-09-28",
-      "lastVerified": "2026-10-14",
+      "lastVerified": "2026-10-19",
       "evidence": "quarantine",
       "status": 404
     },

@@ -216,12 +216,28 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/architecture/ai-ml/guide/azure-openai-gateway-custom-authentication",
+    "to": "/azure/architecture/ai-ml/guide/generative-ai-gateway-custom-authentication",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
     "from": "/azure/architecture/ai-ml/guide/azure-openai-gateway-guide",
     "to": "/azure/architecture/ai-ml/guide/generative-ai-gateway",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-14",
-    "lastSeen": "2026-10-14"
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/architecture/ai-ml/guide/azure-openai-gateway-monitoring",
+    "to": "/azure/architecture/ai-ml/guide/generative-ai-gateway-monitoring",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
   },
   {
     "from": "/azure/architecture/ai-ml/guide/azure-openai-gateway-multi-backend",
@@ -229,7 +245,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-14",
-    "lastSeen": "2026-10-14"
+    "lastSeen": "2026-10-19"
   },
   {
     "from": "/azure/architecture/best-practices/data-partitioning",
@@ -285,7 +301,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-14",
-    "lastSeen": "2026-10-14"
+    "lastSeen": "2026-10-19"
   },
   {
     "from": "/azure/architecture/mainframe/virtualization-of-unisys-clearpath-forward-os-2200-enterprise-server-on-azure",
@@ -301,7 +317,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-14",
-    "lastSeen": "2026-10-14"
+    "lastSeen": "2026-10-19"
   },
   {
     "from": "/azure/azure-arc/vmware-vsphere/browse-and-enable-vcenter-resources-in-azure",
@@ -342,6 +358,14 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/azure-sql/managed-instance/managed-instance-link-preparation-wsfc",
+    "to": "/previous-versions/azure/azure-sql/managed-instance/managed-instance-link-preparation-wsfc",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
   },
   {
     "from": "/azure/azure-web-pubsub/chat-reference-service-sdk-java",
@@ -829,7 +853,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-14",
-    "lastSeen": "2026-10-14"
+    "lastSeen": "2026-10-19"
   },
   {
     "from": "/azure/cosmos-db/cassandra",
@@ -1024,6 +1048,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/databricks/ldp/dbsql/flows-replace-where",
+    "to": "/azure/databricks/sql/mv-st/flows-replace-where",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/command-reference",
     "to": "/azure/databricks/dev-tools/cli/reference/air-commands",
     "kind": "moved",
@@ -1184,6 +1216,70 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/developer/terraform/azure-terraform-resource-provider/get-started-export-resources-portal",
+    "to": "/azure/developer/terraform/azure-export-for-terraform/get-started-export-resources-portal",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/developer/terraform/azure-terraform-resource-provider/resource-provider-overview",
+    "to": "/azure/developer/terraform/azure-export-for-terraform/resource-provider-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/devops/extensions",
+    "to": "/azure/devops/extend/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/devops/extensions/dependency-tracker/create-new-dependency",
+    "to": "/azure/devops/extend/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/devops/extensions/dependency-tracker/dependency-views",
+    "to": "/azure/devops/extend/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/devops/extensions/dependency-tracker/overview",
+    "to": "/azure/devops/extend/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/devops/extensions/dependency-tracker/risk-graph",
+    "to": "/azure/devops/extend/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/devops/extensions/dependency-tracker/timeline",
+    "to": "/azure/devops/extend/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
     "from": "/azure/enclave/preview-terms",
     "to": "/azure/enclave/azure-enclave-faq",
     "kind": "moved",
@@ -1309,7 +1405,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-14",
-    "lastSeen": "2026-10-14"
+    "lastSeen": "2026-10-19"
   },
   {
     "from": "/azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics",
@@ -1752,6 +1848,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/defender-xdr/advanced-hunting-aiagentsinfo-table",
+    "to": "/defender-xdr/advanced-hunting-agentsinfo-table",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
     "from": "/dynamics365/business-central/dev-itpro/developer/word-layout-add-in",
     "to": "/dynamics365/business-central/ui-design-word-layouts-business-central-add-in",
     "kind": "moved",
@@ -2136,6 +2240,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/microsoft-365/loop/loop-data-integrations-configuration",
+    "to": "/microsoft-365/loop/loop-admin-configuration",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
     "from": "/microsoft-copilot-studio/add-work-iq",
     "to": "/microsoft-copilot-studio/agents-experience/add-work-iq",
     "kind": "moved",
@@ -2344,6 +2456,22 @@
     "lastSeen": "2026-10-14"
   },
   {
+    "from": "/microsoftteams/platform/samples/teams-low-code-solutions",
+    "to": "/power-apps/teams/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/microsoftteams/rooms/surface-hub-manage-config",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
     "from": "/microsoftteams/support-pin",
     "to": "/microsoftteams/teams-overview",
     "kind": "moved",
@@ -2352,12 +2480,52 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/partner-center/account-settings/account-deletion",
+    "to": "/partner-center/account-settings/manage-locations",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
     "from": "/partner-center/announcements/2025-october",
     "to": "/partner-center/announcements",
     "kind": "landing",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/partner-center/enroll/enroll-isv-success",
+    "to": "/partner-center/frontier-accelerate-marketplace/enroll",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/partner-center/marketplace-offers/gtm-your-marketplace-benefits",
+    "to": "/partner-center/frontier-accelerate-marketplace/grow/go-to-market",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/partner-center/marketplace-offers/marketplace-rewards",
+    "to": "/partner-center/frontier-accelerate-marketplace/benefits",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/partner-center/membership/faq-isvsuccess",
+    "to": "/partner-center/frontier-accelerate-marketplace/faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
   },
   {
     "from": "/power-apps/developer/model-driven-apps/streamline-javascript-development-fiddler-autoresponder",
@@ -2512,6 +2680,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/services-hub/microsoft-engage-center/health/connector-migration",
+    "to": "/services-hub/microsoft-engage-center/health",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
     "from": "/sharepoint/home-sites-improvements",
     "to": "/sharepoint/homesites/home-sites-improvements",
     "kind": "moved",
@@ -2560,12 +2736,36 @@
     "lastSeen": "2026-10-14"
   },
   {
+    "from": "/sql/t-sql/functions/regular-expressions-functions-transact-sql",
+    "to": "/sql/relational-databases/regular-expressions/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/sql/t-sql/spatial-geography/spatial-types-geography",
+    "to": "/sql/t-sql/spatial-geography/spatial-types-geography-transact-sql",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
+  },
+  {
     "from": "/troubleshoot/exchange/compliance/items-are-removed-by-mrm-2-0-unexpectedly",
     "to": "/previous-versions/troubleshoot/content-retirement",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/microsoftteams/teams-rooms-and-devices/get-support-teams-rooms-pro-management",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-10-19",
+    "lastSeen": "2026-10-19"
   },
   {
     "from": "/troubleshoot/microsoftteams/teams-rooms-and-devices/teams-rooms-known-issues-android",
