@@ -70,6 +70,8 @@ learnsync/
 │   ├── learn-content-sync.mjs       # paths/courses/certs/exams/skills/study guides -> data/learn-content.json
 │   ├── docs-catalog-sync.mjs        # sitemap index + metadata + ledger -> data/docs-*.{txt,json}
 │   ├── module-links-sync.mjs        # links of the last unit of each module -> data/module-links.json
+│   ├── docs-toc-sync.mjs            # sidebar groups of the docs (toc.json per folder) -> data/docs-toc.json
+│   ├── docs-page-links.mjs          # on demand: the links of given docs pages and their topic type (nothing stored)
 │   ├── validate-urls.mjs            # validator CLI (cache-only; optional live layer)
 │   ├── check-changes.mjs            # change-file CLI: which links changed? (reads only data/changes/)
 │   ├── seed-changes.mjs             # one-off tool: seed the change files with older breakage
@@ -82,15 +84,17 @@ learnsync/
 │       ├── seed-changes.mjs  check-changes.mjs            # the seed tool / the check-changes CLI
 │       ├── learn-*.mjs                                    # learn config/build/hierarchy/failsafe/http/run/status/content
 │       ├── module-links.mjs  module-links-run.mjs         # module links: extraction/plan/failsafes (pure) / the run
+│       ├── docs-toc.mjs  docs-toc-run.mjs                 # sidebar groups: parsing/plan/failsafes/lookup (pure) / the run
+│       ├── docs-page-links.mjs  docs-page-links-run.mjs   # the links of a docs page (pure) / the fetching tool
 │       └── docs-*.mjs  sitemap-helpers.mjs                # docs config/reconcile/redirects/failsafes/budget/phases/run/sitemaps
 ├── test/                            # node:test, no network, no real data
 ├── data/
-│   ├── learn-catalog.json  learn-content.json  module-links.json
+│   ├── learn-catalog.json  learn-content.json  module-links.json  docs-toc.json
 │   ├── docs-urls.txt  docs-catalog.json  docs-redirects.json
 │   ├── docs-catalog-invalid.json  docs-sitemap-families.json
 │   ├── changes/removed.json  changes/moved.json           # links learnsync knows are gone / moved (small)
 │   └── status.json
-└── .github/workflows/  learn-catalog-monitor.yml  docs-catalog-monitor.yml  module-links-monitor.yml  ci.yml
+└── .github/workflows/  learn-catalog-monitor.yml  docs-catalog-monitor.yml  module-links-monitor.yml  docs-toc-monitor.yml  ci.yml
 ```
 
 Run locally (Node 22+, `git` only for the github/docs source):
@@ -99,6 +103,7 @@ Run locally (Node 22+, `git` only for the github/docs source):
 npm run sync:learn      # learn-catalog-sync + learn-content-sync
 npm run sync:docs       # docs-catalog-sync (DRY_RUN=1 plans only)
 npm run sync:module-links  # module-links-sync (DRY_RUN=1 fetches, writes nothing; MODULE_LINKS_SCOPE=all for every module)
+npm run sync:docs-toc   # docs-toc-sync (DRY_RUN=1 asks, writes nothing; DOCS_TOC_FAMILIES=entra,azure for some families only)
 npm test                # everything, offline
 echo '["https://learn.microsoft.com/azure/key-vault/general/overview"]' | node scripts/validate-urls.mjs
 echo '["https://learn.microsoft.com/training/modules/foundry-sdk/06-exercise"]' | node scripts/check-changes.mjs
@@ -271,6 +276,39 @@ plan, failsafes) and `module-links-run.mjs` (the run, every dependency injectabl
   `unitContent` / `SKIP_SECTION` in `module-links.mjs` with a test on the real markup, never lower the limit.
 - **Scheduling.** `module-links-monitor.yml` (Mondays 08:41 UTC) shares the `learnsync-data` queue; it reads
   the committed `learn-catalog.json`, so it never needs the Learn sync to run in the same job.
+
+---
+
+## Docs sidebar groups: `scripts/docs-toc-sync.mjs`
+
+Research data, not a validity source. The left sidebar of a documentation page is a table of contents, and pages in
+the same group of it are about the same topic ("Add users and groups > Groups" holds "Manage groups" and "Learn about
+groups"). `data/docs-toc.json` stores the groups so that a consumer that finds one page finds the others (the hub's
+course tooling uses it to look for the concept pages next to a how-to page). Format, rules and failsafes are in
+`DATA_CONTRACT.md`; the code is `scripts/lib/docs-toc.mjs` (pure: parsing, plan, failsafes, the lookup) and
+`docs-toc-run.mjs` (the run, every dependency injectable).
+
+- **Source and scope.** `<folder>/toc.json` of every folder of `docs-urls.txt` with at least 3 pages, in the families
+  `docs-sitemap-families.json` marks relevant (`DOCS_TOC_FAMILIES` limits it to some). A toc file exists per FOLDER, not
+  per product (`/entra/identity/users/toc.json` yes, `/entra/identity/toc.json` 404), so every folder is asked; the
+  ones that answered 404 are remembered for 28 days. A first run asks about 4,000 folders (3 workers, 500 ms each,
+  roughly 15-25 minutes); later runs refresh the known tocs (one small file each) and ask the new folders.
+- **A toc is a tree**: `{ items: [ { toc_title, href?, children? } ] }`. A node with children is a group, a node with
+  only an `href` is a page; `href` is relative to the toc's folder (`./` is the folder's landing page, `../x/` another
+  folder). `parseToc` flattens it to groups in sidebar order with the breadcrumb of titles; checked on
+  `/entra/fundamentals/toc.json` and the `entra` family (34 tocs, 707 groups, 93% of the family's pages in a group).
+- **The failsafes** abort the run and write nothing (not even `status.json`): too many failed requests, answers that are
+  200 but not a toc tree (the format changed), far fewer pages in a group than before. After a format change look at a
+  real `toc.json`, adjust `parseToc` with a test on the real shape, never lower the limit. A `200` with an HTML body (a
+  sign-in or error page) is a failed request.
+- **`scripts/docs-page-links.mjs`** is the on-demand companion: the links of the article of the pages it is given, with
+  their section, and the page's `ms.topic`, product and toc folder. One request per page, nothing stored. Run it for a
+  handful of pages, not for the catalog (about 140,000 pages). Markup: the article is the part of `<main>` after the
+  `<h1>` up to the `ms--inline-notifications` placeholder, links carry `data-linktype`; a page without it is an error, not
+  "no links" (see `test/fixtures/docs-page-how-to-manage-groups.html`, a trimmed real page).
+- **Scheduling.** `docs-toc-monitor.yml` (Mondays 09:41 UTC) shares the `learnsync-data` queue; it reads the committed
+  `docs-urls.txt` and `docs-sitemap-families.json`, so it needs no other sync in the same job. Failure issue `Microsoft Docs
+  Sidebar Sync Failed`, label `bug`.
 
 ---
 
@@ -479,7 +517,9 @@ always come from the same commit.
 - `module-links-monitor.yml` (Mondays 08:41 UTC) runs `npm run sync:module-links` and commits
   `data/module-links.json` and `data/status.json` (60 min timeout; failure issue `Microsoft Learn Module Links
   Sync Failed`, label `bug`).
-- All three share the concurrency group `learnsync-data` (`cancel-in-progress: false`): they never run at the
+- `docs-toc-monitor.yml` (Mondays 09:41 UTC) runs `npm run sync:docs-toc` and commits `data/docs-toc.json` and
+  `data/status.json` (90 min timeout; failure issue `Microsoft Docs Sidebar Sync Failed`, label `bug`).
+- All four share the concurrency group `learnsync-data` (`cancel-in-progress: false`): they never run at the
   same time and never race on `data/status.json` or the change files. Timeouts: learn 60 min (a first or
   monthly full unit refresh is ~15-20 min), docs 120 min.
 - Both check out `ref: ${{ github.ref }}` (the branch tip). Without it `actions/checkout` uses the commit that

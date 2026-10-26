@@ -1,0 +1,68 @@
+name: Docs Sidebar Monitor
+
+on:
+  schedule:
+    - cron: "41 9 * * 1" # Monday 09:41 UTC, after the Learn, docs and module links syncs (GitHub may start scheduled runs hours late)
+  workflow_dispatch:
+
+# One queue for every workflow that writes data/ (learn, docs, module-links and docs-toc syncs), so
+# they never push at the same time and never race on data/status.json.
+concurrency:
+  group: learnsync-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90 # a first run asks about 4,000 docs folders for a toc.json at 3 polite workers (about 15-25 minutes); later runs refresh the known tocs only
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Start from the branch tip, not from the commit that triggered the run: the other syncs
+          # write data/status.json and may have pushed while this run waited in the queue.
+          ref: ${{ github.ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+
+      - name: Keep the sidebar groups of the Learn documentation
+        run: npm run sync:docs-toc
+
+      - name: Commit updated sidebar groups
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          paths=(data/status.json)
+          # Only a path that exists is staged, so a first run that fails before writing cannot
+          # break the commit step with an unknown pathspec.
+          if [ -e data/docs-toc.json ]; then paths+=(data/docs-toc.json); fi
+          bash scripts/commit-data.sh "Update Microsoft docs sidebar groups cache" "${paths[@]}"
+
+      # Stable title + comment-on-existing so a persistent failure produces one
+      # issue with a comment per failed run, not a new issue every week.
+      - name: Create or update issue on sync failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Microsoft Docs Sidebar Sync Failed"
+          {
+            echo "The scheduled docs sidebar sync failed (\`data/docs-toc.json\`)."
+            echo "Likely causes: Learn's toc.json files could not be read (rate limiting or an outage), Learn changed the format of"
+            echo "the table of contents so no groups could be found, far fewer pages than before were found in a sidebar group, or"
+            echo "\`data/docs-urls.txt\` is missing (the docs catalog sync has not run). A failsafe aborted the run, so nothing"
+            echo "bad was written, or the data push was rejected. See the run log for the exact reason."
+            echo
+            echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          } > /tmp/docs-toc-error.md
+          existing=$(gh issue list --repo "${{ github.repository }}" --state open --search "in:title \"$title\"" --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "${{ github.repository }}" --body-file /tmp/docs-toc-error.md
+          else
+            gh issue create --repo "${{ github.repository }}" --title "$title" --label bug --body-file /tmp/docs-toc-error.md
+          fi

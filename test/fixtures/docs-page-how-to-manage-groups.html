@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+<title>How to manage groups - Microsoft Entra | Microsoft Learn</title>
+<meta name="ms.service" content="entra" />
+<meta name="ms.subservice" content="fundamentals" />
+<meta name="ms.date" content="2026-06-17T00:00:00Z" />
+<meta name="ms.topic" content="how-to" />
+<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/entra-docs-pr/blob/live/docs/fundamentals/how-to-manage-groups.md" />
+<meta name="toc_rel" content="toc.json" />
+</head><body>
+<main id="main" role="main" data-bi-name="content" lang="en-us">
+<div class="content">
+<h1 id="manage-microsoft-entra-groups-and-group-membership">Manage Microsoft Entra groups and group membership</h1></div>
+					
+		<div
+			id="article-metadata"
+			data-bi-name="article-metadata"
+			data-test-id="article-metadata"
+			class="page-metadata-container display-flex gap-xxs justify-content-space-between align-items-center flex-wrap-wrap"
+		>
+			 
+				<div
+					id="user-feedback"
+					class="margin-block-xxs display-none display-none-print"
+					hidden
+					data-hide-on-archived
+				>
+					
+		<button
+			id="user-feedback-button"
+			data-test-id="conceptual-feedback-button"
+			class="button button-sm button-clear button-primary display-none"
+			type="button"
+			data-bi-name="user-feedback-button"
+			data-user-feedback-button
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-like"></span>
+			</span>
+			<span>Feedback</span>
+		</button>
+	
+				</div>
+		  
+		</div>
+	 
+		<div data-id="ai-summary" class="display-none-print">
+			<div id="ms--ai-summary-cta" class="margin-top-xs display-flex align-items-center">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-sparkle-fill gradient-text-vivid"></span>
+				</span>
+				<button
+					id="ms--ai-summary"
+					type="button"
+					class="tag tag-sm tag-suggestion margin-left-xxs"
+					data-test-id="ai-summary-cta"
+					data-bi-name="ai-summary-cta"
+					data-an="ai-summary"
+				>
+					<span class="ai-summary-cta-text">
+						Summarize this article for me
+					</span>
+				</button>
+			</div>
+			<!-- Slot where the client will render the summary card after the user clicks the CTA -->
+			<div id="ms--ai-summary-header" class="margin-top-xs"></div>
+		</div>
+	 
+		<nav
+			id="center-doc-outline"
+			class="doc-outline display-none-desktop display-none-print margin-bottom-sm"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">
+				In this article
+			</h2>
+		</nav>
+	 <div class="content"><p>Microsoft Entra groups are used to manage users that all need the same access and permissions to resources, such as potentially restricted apps and services. Instead of adding special permissions to individual users, you create a group that applies the special permissions to every member of that group.</p>
+<p>This article covers basic group scenarios where a single group is added to a single resource and users are added as members to that group. For more complex scenarios like dynamic membership groups and rule creation, see the <a href="../identity/users/" data-linktype="relative-path">Microsoft Entra user management documentation</a>.</p>
+<p>Before adding groups and members, <a href="concept-learn-about-groups" data-linktype="relative-path">learn about groups and membership types</a> to help you decide which options to use when you create a group.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The following prerequisites are required to manage groups in Microsoft Entra:</p>
+<ul>
+<li><strong><a href="../identity/role-based-access-control/permissions-reference#user-administrator" data-linktype="relative-path">User Administrator</a></strong> or <strong><a href="../identity/role-based-access-control/permissions-reference#groups-administrator" data-linktype="relative-path">Groups Administrator</a></strong> role is required to manage group membership settings.</li>
+<li>An Azure subscription. If you don't have one, create a <a href="https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn" data-linktype="external">free account</a>.</li>
+<li>Access to a Microsoft Entra tenant. For more information, see <a href="create-new-tenant" data-linktype="relative-path">Create a new tenant</a>.</li>
+</ul>
+<h2 id="create-a-basic-group-and-add-members">Create a basic group and add members</h2>
+<p>You can create a basic group and add your members at the same time using the Microsoft Entra admin center. You must have at least the <strong>Groups Administrator</strong> or <strong>User Administrator</strong> role assigned to create groups. Review the <a href="../identity/role-based-access-control/delegate-by-task#groups-least-privileged-roles" data-linktype="relative-path">appropriate Microsoft Entra roles for managing groups</a>.</p>
+<div class="NOTE">
+<p>Note</p>
+<p><a href="../id-governance/tenant-governance/cross-tenant-delegated-administration" data-linktype="relative-path">Cross-tenant delegated administration</a> uses granular delegated admin privileges (GDAP). Group creation by GDAP administrators isn't supported if the target tenant uses a group naming policy prefix or suffix that references attributes of the calling user, such as department or company name. Use an administrator account in the target tenant to create the group.</p>
+</div>
+<p>To create a basic group and add members:</p>
+<ol>
+<li><p>Sign in to the <a href="https://entra.microsoft.com" data-linktype="external">Microsoft Entra admin center</a> as at least a <a href="../identity/role-based-access-control/permissions-reference#groups-administrator" data-linktype="relative-path">Groups Administrator</a>.</p>
+</li>
+<li><p>Browse to <strong>Entra ID</strong> &gt; <strong>Groups</strong> &gt; <strong>All groups</strong>.</p>
+</li>
+<li><p>Select <strong>New group</strong>.</p>
+<p><span class="mx-imgBorder">
+<img src="media/how-to-manage-groups/new-group.png" alt="Screenshot of the 'Microsoft Entra groups' page with 'New group' option highlighted." data-linktype="relative-path">
+</span>
+</p>
+</li>
+<li><p>Select a <strong>Group type</strong>. For more information on group types, see the <a href="concept-learn-about-groups" data-linktype="relative-path">learn about groups and membership types</a> article.</p>
+<ul>
+<li>Selecting the <strong>Microsoft 365</strong> Group type enables the <strong>Group email address</strong> option.</li>
+</ul>
+</li>
+<li><p>Enter a <strong>Group name.</strong> Choose a name that you'll remember and that makes sense for the group. A check will be performed to determine if the name is already in use. If the name is already in use, you'll be asked to change the name of your group.</p>
+<ul>
+<li>The name of the group can't start with a space. Starting the name with a space prevents the group from appearing as an option for steps such as adding role assignments to group members.</li>
+</ul>
+</li>
+<li><p><strong>Group email address</strong>: Only available for Microsoft 365 group types. Enter an email address manually or use the email address built from the Group name you provided.</p>
+</li>
+<li><p><strong>Group description.</strong> Add an optional description to your group.</p>
+</li>
+<li><p>Switch the <strong>Microsoft Entra roles can be assigned to the group</strong> setting to yes to use this group to assign Microsoft Entra roles to members.</p>
+<ul>
+<li>This option is only available with P1 or P2 licenses.</li>
+<li>You must have at least the <strong>Privileged Role Administrator</strong> role.</li>
+<li>Enabling this option automatically selects <strong>Assigned</strong> as the Membership type.</li>
+<li>The ability to add roles while creating the group is added to the process.</li>
+<li><a href="../identity/role-based-access-control/groups-create-eligible" data-linktype="relative-path">Learn more about role-assignable groups</a>.</li>
+</ul>
+</li>
+<li><p>Select a <strong>Membership type.</strong> For more information on membership types, see the <a href="concept-learn-about-groups" data-linktype="relative-path">learn about groups and membership types</a> article.</p>
+</li>
+<li><p>Optionally add <strong>Owners</strong> or <strong>Members</strong>. Members and owners can be added after creating your group.</p>
+<ol>
+<li>Select the link under <strong>Owners</strong> or <strong>Members</strong> to populate a list of every user in your directory.</li>
+<li>Choose users from the list and then select the <strong>Select</strong> button at the bottom of the window.</li>
+</ol>
+<p><span class="mx-imgBorder">
+<img src="media/how-to-manage-groups/add-members.png" alt="Screenshot of selecting members for your group during the group creation process." data-linktype="relative-path">
+</span>
+</p>
+</li>
+<li><p>Select <strong>Create</strong>. Your group is created and ready for you to manage other settings.</p>
+<h3 id="turn-off-group-welcome-email">Turn off group welcome email</h3>
+<p>A welcome notification is sent to all users when they're added to a new Microsoft 365 group, regardless of the membership type. When an attribute of a user or device changes, all rules for dynamic membership groups in the organization are processed for potential membership changes. Users who are added then also receive the welcome notification. You can turn off this behavior in <a href="/en-us/powershell/module/exchange/set-unifiedgroup" data-linktype="absolute-path">Exchange PowerShell</a>.</p>
+</li>
+</ol>
+<h2 id="add-members-or-owners-of-a-group">Add members or owners of a group</h2>
+<p>Members and owners can be added from existing groups. The process is the same for members and owners. You'll need the <strong>Groups Administrator</strong> or <strong>User Administrator</strong> role to add members and owners.</p>
+<div class="NOTE">
+<p>Note</p>
+<p>Need to add multiple members at one time? Learn about the <a href="../identity/users/groups-bulk-import-members" data-linktype="relative-path">add members in bulk</a> option.</p>
+</div>
+<ol>
+<li><p>Sign in to the <a href="https://entra.microsoft.com" data-linktype="external">Microsoft Entra admin center</a> as at least a <a href="../identity/role-based-access-control/permissions-reference#groups-administrator" data-linktype="relative-path">Groups Administrator</a>.</p>
+</li>
+<li><p>Browse to <strong>Entra ID</strong> &gt; <strong>Groups</strong> &gt; <strong>All groups</strong>.</p>
+</li>
+<li><p>Select the group you need to manage.</p>
+</li>
+<li><p>Select either <strong>Members</strong> or <strong>Owners</strong>.</p>
+<p><span class="mx-imgBorder">
+<img src="media/how-to-manage-groups/groups-members-owners.png" alt="Screenshot of the Group overview page with Members and Owners menu options highlighted." data-linktype="relative-path">
+</span>
+</p>
+</li>
+<li><p>Select <strong>+ Add</strong> (members or owners).</p>
+</li>
+<li><p>Scroll through the list or enter a name in the search box. You can choose multiple names at one time. When you're ready, select the <strong>Select</strong> button.</p>
+<p>The <strong>Group Overview</strong> page updates to show the number of members who are now added to the group.</p>
+</li>
+</ol>
+<h2 id="remove-members-or-owners-of-a-group">Remove members or owners of a group</h2>
+<p>Members and owners can be removed from existing groups. The process is the same for members and owners. You'll need the <strong>Groups Administrator</strong> or <strong>User Administrator</strong> role to remove members and owners.</p>
+<ol>
+<li><p>Sign in to the <a href="https://entra.microsoft.com" data-linktype="external">Microsoft Entra admin center</a> as at least a <a href="../identity/role-based-access-control/permissions-reference#groups-administrator" data-linktype="relative-path">Groups Administrator</a>.</p>
+</li>
+<li><p>Browse to <strong>Entra ID</strong> &gt; <strong>Groups</strong> &gt; <strong>All groups</strong>.</p>
+</li>
+<li><p>Select the group you need to manage.</p>
+</li>
+<li><p>Select either <strong>Members</strong> or <strong>Owners</strong>.</p>
+</li>
+<li><p>Check the box next to a name from the list and select the <strong>Remove</strong> button.</p>
+<p><span class="mx-imgBorder">
+<img src="media/how-to-manage-groups/groups-remove-member.png" alt="Screenshot of group members with a name selected and the Remove button highlighted." data-linktype="relative-path">
+</span>
+</p>
+</li>
+</ol>
+<h2 id="edit-group-settings">Edit group settings</h2>
+<p>You can edit a group's name, description, or membership type. You'll need the <strong>Groups Administrator</strong> or <strong>User Administrator</strong> role to edit a group's settings.</p>
+<p>To edit your group settings:</p>
+<ol>
+<li><p>Sign in to the <a href="https://entra.microsoft.com" data-linktype="external">Microsoft Entra admin center</a> as at least a <a href="../identity/role-based-access-control/permissions-reference#groups-administrator" data-linktype="relative-path">Groups Administrator</a>.</p>
+</li>
+<li><p>Browse to <strong>Entra ID</strong> &gt; <strong>Groups</strong> &gt; <strong>All groups</strong>.</p>
+</li>
+<li><p>Scroll through the list or enter a group name in the search box. Select the group you need to manage.</p>
+</li>
+<li><p>Select <strong>Properties</strong> from the side menu.</p>
+</li>
+<li><p>Update the <strong>General settings</strong> information as needed, including:</p>
+<ul>
+<li><p><strong>Group name.</strong> Edit the existing group name.</p>
+</li>
+<li><p><strong>Group description.</strong> Edit the existing group description.</p>
+</li>
+<li><p><strong>Group type.</strong> You can't change the type of group after it's been created. To change the <strong>Group type</strong>, you must delete the group and create a new one.</p>
+</li>
+<li><p><strong>Membership type.</strong> Change the membership type. If you enabled the <strong>Microsoft Entra roles can be assigned to the group</strong> option, you can't change the membership type. For more info about the available membership types, see the <a href="concept-learn-about-groups" data-linktype="relative-path">learn about groups and membership types</a> article.</p>
+</li>
+<li><p><strong>Object ID.</strong> You can't change the Object ID, but you can copy it to use in your PowerShell commands for the group. For more info about using PowerShell cmdlets, see <a href="../identity/users/groups-settings-v2-cmdlets" data-linktype="relative-path">Microsoft Entra cmdlets for configuring group settings</a>.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="add-a-group-to-another-group">Add a group to another group</h2>
+<p>For the security group type, you can add an existing group to another group (also known as nested groups). Depending on the group membership types, you can add a group as a member of another group. Nested groups can be used for membership and Conditional Access scopes. Nested groups don't gain access to shared resources and applications that are assigned to the parent group.</p>
+<p>We currently don't support:</p>
+<ul>
+<li>Adding groups to a group synced with on-premises Active Directory.</li>
+<li>Adding security groups to Microsoft 365 groups.</li>
+<li>Adding Microsoft 365 groups to security groups or other Microsoft 365 groups.</li>
+<li>Assigned membership to shared resources and apps for nested security groups.</li>
+<li>Applying licenses to nested security groups.</li>
+<li>Adding distribution groups in nesting scenarios.</li>
+<li>Adding security groups as members of mail-enabled security groups.</li>
+<li>Adding groups as members of a role-assignable group.</li>
+</ul>
+<ol>
+<li><p>Sign in to the <a href="https://entra.microsoft.com" data-linktype="external">Microsoft Entra admin center</a> as at least a <a href="../identity/role-based-access-control/permissions-reference#groups-administrator" data-linktype="relative-path">Groups Administrator</a>.</p>
+</li>
+<li><p>Browse to <strong>Entra ID</strong> &gt; <strong>Groups</strong> &gt; <strong>All groups</strong>.</p>
+</li>
+<li><p>On the <strong>All groups</strong> page, search for and select the group you want to become a member of another group.</p>
+<div class="NOTE">
+<p>Note</p>
+<p>You only can add your group as a member to one other group at a time. Wildcard characters aren't supported in the <strong>Select Group</strong> search box.</p>
+</div>
+</li>
+<li><p>On the group Overview page, select <strong>Group memberships</strong> from the side menu.</p>
+</li>
+<li><p>Select <strong>+ Add memberships</strong>.</p>
+</li>
+<li><p>Locate the group you want your group to be a member of and choose <strong>Select</strong>.</p>
+<p>For this exercise, we're adding "MDM policy - West" to the "MDM policy - All org" group. The "MDM - policy - West" group will have the same access as the "MDM policy - All org" group.</p>
+<p><span class="mx-imgBorder">
+<img src="media/how-to-manage-groups/nested-groups-selected.png" alt="Screenshot of making a group the member of another group with Group membership from the side menu and 'Add membership' option highlighted." data-linktype="relative-path">
+</span>
+</p>
+<p>Now you can review the "MDM policy - West - Group memberships" page to see the group and member relationship.</p>
+<p>For a more detailed view of the group and member relationship, select the parent group name (MDM policy - All org) and take a look at the "MDM policy - West" page details.</p>
+</li>
+</ol>
+<h2 id="remove-a-group-from-another-group">Remove a group from another group</h2>
+<p>You can remove an existing Security group from another Security group; however, removing the group also removes any inherited access for its members.</p>
+<ol>
+<li><p>On the <strong>All groups</strong> page, search for and select the group you need to remove as a member of another group.</p>
+</li>
+<li><p>On the group Overview page, select <strong>Group memberships</strong>.</p>
+</li>
+<li><p>Select the parent group from the <strong>Group memberships</strong> page.</p>
+</li>
+<li><p>Select <strong>Remove</strong>.</p>
+<p>For this exercise, we're now going to remove "MDM policy - West" from the "MDM policy - All org" group.</p>
+<p><span class="mx-imgBorder">
+<img src="media/how-to-manage-groups/remove-nested-group.png" alt="Screenshot of the 'Group membership' page showing both the member and the group details with 'Remove membership' option highlighted." data-linktype="relative-path">
+</span>
+</p>
+</li>
+</ol>
+<h2 id="delete-a-group">Delete a group</h2>
+<p>You can delete a group for any number of reasons, but typically it will be because you:</p>
+<ul>
+<li>Choose the incorrect <strong>Group type</strong> option.</li>
+<li>Created a duplicate group by mistake.</li>
+<li>No longer need the group.</li>
+</ul>
+<ol>
+<li><p>Sign in to the <a href="https://entra.microsoft.com" data-linktype="external">Microsoft Entra admin center</a> as at least a <a href="../identity/role-based-access-control/permissions-reference#groups-administrator" data-linktype="relative-path">Groups Administrator</a>.</p>
+</li>
+<li><p>Browse to <strong>Entra ID</strong> &gt; <strong>Groups</strong> &gt; <strong>All groups</strong>.</p>
+</li>
+<li><p>Search for and select the group you want to delete.</p>
+</li>
+<li><p>Select <strong>Delete</strong>.</p>
+</li>
+</ol>
+<h2 id="related-content">Related content</h2>
+<ul>
+<li><a href="concept-learn-about-groups" data-linktype="relative-path">Learn about groups and assigning access rights to groups</a></li>
+<li><a href="../identity/users/groups-self-service-management" data-linktype="relative-path">Set up groups for self-service</a></li>
+<li><a href="../identity/users/groups-settings-v2-cmdlets" data-linktype="relative-path">Manage groups using PowerShell commands</a></li>
+</ul>
+</div>
+					
+		
+<div id="ms--inline-notifications"></div>
+</main>
+</body></html>
