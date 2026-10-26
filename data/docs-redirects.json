@@ -1,5 +1,13 @@
 [
   {
+    "from": "/agent-framework/hosting/azure-functions",
+    "to": "/agent-framework/hosting/durable-extension",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
     "from": "/azure/ai-services/anomaly-detector",
     "to": "/previous-versions/azure/ai-services/anomaly-detector",
     "kind": "retired",
@@ -328,6 +336,38 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/azure-managed-lustre/auto-export",
+    "to": "/azure/azure-managed-lustre/export-data",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/azure-managed-lustre/auto-import",
+    "to": "/azure/azure-managed-lustre/import-data",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/azure-managed-lustre/create-import-job",
+    "to": "/azure/azure-managed-lustre/import-data",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/azure-managed-lustre/export-with-archive-jobs",
+    "to": "/azure/azure-managed-lustre/export-data",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
     "from": "/azure/azure-maps/how-to-use-services-module",
     "to": "/azure/azure-maps/how-to-dev-guide-js-sdk",
     "kind": "moved",
@@ -358,6 +398,22 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/azure-sql/database/free-offer",
+    "to": "/azure/azure-sql/database/free-tier",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/azure-sql/database/free-offer-faq",
+    "to": "/azure/azure-sql/database/free-tier-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
   },
   {
     "from": "/azure/azure-sql/managed-instance/managed-instance-link-preparation-wsfc",
@@ -1008,6 +1064,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/databricks/compute/serverless/notebooks/git-folder-serverless",
+    "to": "/azure/databricks/compute/serverless/notebooks/shared-serverless",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
     "from": "/azure/databricks/genie-code/agent-mode",
     "to": "/azure/databricks/genie-code",
     "kind": "landing",
@@ -1048,12 +1112,76 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/databricks/ldp/dbsql/compute",
+    "to": "/azure/databricks/sql/mv-st/compute",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/databricks/ldp/dbsql/dbsql-for-ldp",
+    "to": "/azure/databricks/sql/mv-st",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
     "from": "/azure/databricks/ldp/dbsql/flows-replace-where",
     "to": "/azure/databricks/sql/mv-st/flows-replace-where",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/databricks/ldp/dbsql/materialized",
+    "to": "/azure/databricks/sql/mv-st/materialized",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/databricks/ldp/dbsql/materialized-configure",
+    "to": "/azure/databricks/sql/mv-st/materialized-configure",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/databricks/ldp/dbsql/materialized-monitor",
+    "to": "/azure/databricks/sql/mv-st/materialized-monitor",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/databricks/ldp/dbsql/schedule-refreshes",
+    "to": "/azure/databricks/sql/mv-st/schedule-refreshes",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/databricks/ldp/dbsql/streaming",
+    "to": "/azure/databricks/sql/mv-st/streaming",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
+    "from": "/azure/databricks/ldp/dbsql/using-python",
+    "to": "/azure/databricks/sql/mv-st/using-python",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/command-reference",
@@ -1142,6 +1270,14 @@
     "status": 301,
     "firstSeen": "2026-10-05",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/oltp/projects/logical-replication-quickstart",
+    "to": "/azure/databricks/oltp/projects/logical-replication-subscription",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
   },
   {
     "from": "/azure/databricks/oltp/projects/observability-capture",
@@ -1400,6 +1536,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/reliability/reliability-app-gateway-containers",
+    "to": "/azure/reliability/reliability-application-gateway-containers",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
     "from": "/azure/reliability/reliability-image-builder",
     "to": "/azure/reliability/reliability-vm-image-builder",
     "kind": "moved",
@@ -1414,6 +1558,14 @@
     "status": 301,
     "firstSeen": "2026-10-14",
     "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/azure/virtual-desktop/context-based-redirections-avd",
+    "to": "/windows-365/enterprise/context-based-redirections",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
   },
   {
     "from": "/azure/virtual-machines/azure-hpc-vm-images",
@@ -2184,6 +2336,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-page",
+    "to": "/microsoft-365/copilot/configure-copilot-admin-center",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-10-26",
+    "lastSeen": "2026-10-26"
+  },
+  {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-requirements",
     "to": "/microsoft-365/copilot/microsoft-copilot-requirements",
     "kind": "moved",
@@ -2456,14 +2616,6 @@
     "lastSeen": "2026-10-14"
   },
   {
-    "from": "/microsoftteams/platform/samples/teams-low-code-solutions",
-    "to": "/power-apps/teams/overview",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
-  },
-  {
     "from": "/microsoftteams/rooms/surface-hub-manage-config",
     "to": "/previous-versions/troubleshoot/content-retirement",
     "kind": "retired",
@@ -2494,38 +2646,6 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
-  },
-  {
-    "from": "/partner-center/enroll/enroll-isv-success",
-    "to": "/partner-center/frontier-accelerate-marketplace/enroll",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
-  },
-  {
-    "from": "/partner-center/marketplace-offers/gtm-your-marketplace-benefits",
-    "to": "/partner-center/frontier-accelerate-marketplace/grow/go-to-market",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
-  },
-  {
-    "from": "/partner-center/marketplace-offers/marketplace-rewards",
-    "to": "/partner-center/frontier-accelerate-marketplace/benefits",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
-  },
-  {
-    "from": "/partner-center/membership/faq-isvsuccess",
-    "to": "/partner-center/frontier-accelerate-marketplace/faq",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
   },
   {
     "from": "/power-apps/developer/model-driven-apps/streamline-javascript-development-fiddler-autoresponder",
@@ -2678,14 +2798,6 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
-  },
-  {
-    "from": "/services-hub/microsoft-engage-center/health/connector-migration",
-    "to": "/services-hub/microsoft-engage-center/health",
-    "kind": "landing",
-    "status": 301,
-    "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
   },
   {
     "from": "/sharepoint/home-sites-improvements",

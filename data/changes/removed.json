@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T14:27:01.814Z",
+  "generatedAt": "2026-10-26T14:48:27.545Z",
   "sources": {
     "learn": "2026-10-26T14:27:01.814Z",
-    "docs": "2026-10-19T15:27:22.694Z"
+    "docs": "2026-10-26T14:48:27.545Z"
   },
   "entries": [
     {
@@ -366,7 +366,7 @@
       "title": "Convert System Center Operations Manager management packs into data collection rules",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-10-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -444,7 +444,7 @@
       "title": "LLMOps workflows on Azure Databricks - Azure Databricks",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-10-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -457,7 +457,7 @@
       "title": "Configure a credential in Azure Device Registry",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-10-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -470,7 +470,7 @@
       "title": "Revoke Certificates and Delete Policies in Azure Device Registry",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-10-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -483,7 +483,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-10-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -496,7 +496,7 @@
       "title": "Default dimensions",
       "parent": null,
       "firstSeen": "2026-09-28",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-10-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -509,7 +509,7 @@
       "title": "Define cycle counting - Supply Chain Management | Dynamics 365",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-10-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -522,7 +522,7 @@
       "title": "Manage active content in Office documents for IT admins",
       "parent": null,
       "firstSeen": "2026-09-01",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-10-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -562,19 +562,6 @@
       "parent": null,
       "firstSeen": "2026-10-12",
       "lastVerified": "2026-10-12",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/services-hub/microsoft-engage-center/health/connector-migration",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "landing",
-      "to": "/services-hub/microsoft-engage-center/health",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -2043,7 +2030,7 @@
       "title": "Collect a Performance Trace in New Outlook for Windows",
       "parent": null,
       "firstSeen": "2026-09-28",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-10-26",
       "evidence": "quarantine",
       "status": 404
     },

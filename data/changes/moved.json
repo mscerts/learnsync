@@ -1,11 +1,24 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T14:27:01.814Z",
+  "generatedAt": "2026-10-26T14:48:27.545Z",
   "sources": {
     "learn": "2026-10-26T14:27:01.814Z",
-    "docs": "2026-10-19T15:27:22.694Z"
+    "docs": "2026-10-26T14:48:27.545Z"
   },
   "entries": [
+    {
+      "path": "/agent-framework/hosting/azure-functions",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/agent-framework/hosting/durable-extension",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
     {
       "path": "/azure/architecture/ai-ml/guide/azure-openai-gateway-custom-authentication",
       "kind": "docs",
@@ -189,6 +202,58 @@
       "status": 301
     },
     {
+      "path": "/azure/azure-managed-lustre/auto-export",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/azure-managed-lustre/export-data",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/azure-managed-lustre/auto-import",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/azure-managed-lustre/import-data",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/azure-managed-lustre/create-import-job",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/azure-managed-lustre/import-data",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/azure-managed-lustre/export-with-archive-jobs",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/azure-managed-lustre/export-data",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/azure-maps/how-to-use-services-module",
       "kind": "docs",
       "family": "docs",
@@ -237,6 +302,32 @@
       "parent": null,
       "firstSeen": "2026-10-12",
       "lastVerified": "2026-10-12",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/azure-sql/database/free-offer",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/azure-sql/database/free-tier",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/azure-sql/database/free-offer-faq",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/azure-sql/database/free-tier-faq",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1242,6 +1333,19 @@
       "status": 301
     },
     {
+      "path": "/azure/databricks/compute/serverless/notebooks/git-folder-serverless",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/compute/serverless/notebooks/shared-serverless",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/databricks/integrations/excel-genie",
       "kind": "docs",
       "family": "docs",
@@ -1294,6 +1398,32 @@
       "status": 301
     },
     {
+      "path": "/azure/databricks/ldp/dbsql/compute",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/sql/mv-st/compute",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/databricks/ldp/dbsql/dbsql-for-ldp",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/sql/mv-st",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/databricks/ldp/dbsql/flows-replace-where",
       "kind": "docs",
       "family": "docs",
@@ -1302,7 +1432,85 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/databricks/ldp/dbsql/materialized",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/sql/mv-st/materialized",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/databricks/ldp/dbsql/materialized-configure",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/sql/mv-st/materialized-configure",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/databricks/ldp/dbsql/materialized-monitor",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/sql/mv-st/materialized-monitor",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/databricks/ldp/dbsql/schedule-refreshes",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/sql/mv-st/schedule-refreshes",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/databricks/ldp/dbsql/streaming",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/sql/mv-st/streaming",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/databricks/ldp/dbsql/using-python",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/sql/mv-st/using-python",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1446,6 +1654,19 @@
       "parent": null,
       "firstSeen": "2026-10-05",
       "lastVerified": "2026-10-12",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/databricks/oltp/projects/logical-replication-quickstart",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/oltp/projects/logical-replication-subscription",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1866,6 +2087,19 @@
       "status": 301
     },
     {
+      "path": "/azure/reliability/reliability-app-gateway-containers",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/reliability/reliability-application-gateway-containers",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/reliability/reliability-image-builder",
       "kind": "docs",
       "family": "docs",
@@ -1888,6 +2122,19 @@
       "parent": null,
       "firstSeen": "2026-10-14",
       "lastVerified": "2026-10-14",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/virtual-desktop/context-based-redirections-avd",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/windows-365/enterprise/context-based-redirections",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3153,6 +3400,19 @@
       "status": 301
     },
     {
+      "path": "/microsoft-365/copilot/microsoft-365-copilot-page",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/microsoft-365/copilot/configure-copilot-admin-center",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-10-26",
+      "lastVerified": "2026-10-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/microsoft-365/copilot/microsoft-365-copilot-requirements",
       "kind": "docs",
       "family": "docs",
@@ -3582,19 +3842,6 @@
       "status": 301
     },
     {
-      "path": "/microsoftteams/platform/samples/teams-low-code-solutions",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/power-apps/teams/overview",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
       "path": "/microsoftteams/support-pin",
       "kind": "docs",
       "family": "docs",
@@ -3613,58 +3860,6 @@
       "family": "docs",
       "outcome": "moved",
       "to": "/partner-center/account-settings/manage-locations",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/partner-center/enroll/enroll-isv-success",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/partner-center/frontier-accelerate-marketplace/enroll",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/partner-center/marketplace-offers/gtm-your-marketplace-benefits",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/partner-center/frontier-accelerate-marketplace/grow/go-to-market",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/partner-center/marketplace-offers/marketplace-rewards",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/partner-center/frontier-accelerate-marketplace/benefits",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/partner-center/membership/faq-isvsuccess",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/partner-center/frontier-accelerate-marketplace/faq",
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-19",
