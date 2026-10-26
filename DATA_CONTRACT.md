@@ -68,7 +68,8 @@ sync that owns it (`scripts/lib/status.mjs`). `runId` is `GITHUB_RUN_ID` or null
 
 A third, independent section `moduleLinks` is written by the module-links sync (see
 `data/module-links.json` below; it also reads `learn-catalog.json`). It is not part of `learn` or
-`docs`, so a consumer that judges the freshness of the validity data ignores it.
+`docs`, so a consumer that judges the freshness of the validity data ignores it. A fourth section `docsToc`
+is written by the docs sidebar sync (see `data/docs-toc.json` below) and is just as independent.
 
 Two optional category keys belong to the catalog part of the learn section (readers
 must treat both as optional; a file written before they existed lacks them, and each
@@ -277,6 +278,67 @@ It is research data, not a validity source: absence of a module or of a link pro
   backoff rules. `status.json` gets a `moduleLinks` section on every run that passes the failsafes:
   `scope`, `modules`, `withLinks`, `links`, `fetched`, `failed`, `noUnits`, `waiting`, `fullRefreshAt`,
   `probed` (live link checks), `rewritten`, `dropped` and `unverified` (links).
+
+### `data/docs-toc.json` (the sidebar groups of the documentation)
+
+The left sidebar of a Learn documentation page is a table of contents, served as `<folder>/toc.json` for the
+folder that holds the page. Pages in the same group of the sidebar are about the same topic ("Add users and
+groups > Groups" holds both "Manage groups" and "Learn about groups"), so this file stores the groups, and a
+consumer that finds one page can find the others. It is research data, not a validity source: a page that is in
+no group says nothing about whether it exists.
+
+```json
+{
+  "schemaVersion": 1, "lastChecked": "ISO", "scope": "relevant",
+  "tocs": [ { "path": "/entra/fundamentals", "since": "2026-10-24", "sig": "<sha1 of groups>", "pages": 67,
+              "groups": [ { "title": [], "landing": null, "pages": ["/entra/fundamentals"] },
+                          { "title": ["Add users and groups", "Groups"], "landing": null,
+                            "pages": ["/entra/fundamentals/concept-learn-about-groups",
+                                      "/entra/fundamentals/how-to-manage-groups"] } ] } ],
+  "noToc": { "/entra/identity": "2026-10-24" }
+}
+```
+
+* Source: `https://learn.microsoft.com/en-us<folder>/toc.json` of every folder of `docs-urls.txt` (a folder is a
+  page path without its last segment) that holds at least `DOCS_TOC_MIN_DIR_PAGES` (3) pages, in the families in
+  scope. A toc file exists per FOLDER, not per product: `/entra/identity/users/toc.json` answers 200 while
+  `/entra/identity/toc.json` answers 404, so every folder is asked. A page names its toc in `<meta name="toc_rel">`
+  (`toc.json`, relative to the page); `scripts/docs-page-links.mjs` returns it as `toc`.
+* `scope`: `relevant` (the families the sitemap pass marks relevant in `docs-sitemap-families.json`), a list of
+  families from `DOCS_TOC_FAMILIES`, or `all`. A run with another scope than the file's starts from scratch.
+* `tocs` is sorted by `path` (the folder). `groups` keep the ORDER OF THE SIDEBAR. A group's `title` is the breadcrumb
+  of group titles from the top (`[]` for the pages at the top level of the toc); `pages` are the pages that sit directly
+  in it, in sidebar order; `landing` is the page of the group's own link (many groups have none). A page can be in
+  several groups and several tocs (the same article is listed under a how-to group and a concept group). `href`s
+  are resolved against the folder of the toc: relative, `./` (the folder's landing page), `../other/folder/`, an
+  absolute path or a Learn URL; external links are not stored. `.md`, `.yml` and a trailing `/index` are removed.
+* `since` is the day the stored content was first read: an unchanged toc keeps it, so a week without a change is not
+  a diff; `sig` (sha1 of `groups`) and `pages` (distinct pages) say whether and how much it changed.
+* `noToc` holds the folders that answered `404` (no `toc.json`) with the day they were asked; they are asked again after
+  `DOCS_TOC_RECHECK_DAYS` (28) days. A folder that had a toc and answers 404 now loses its record.
+* Failsafes (abort, nothing written, `status.json` included): more than `DOCS_TOC_MAX_FAIL_PCT` (10) percent of the
+  requests failed (at least 20); more than 10% of the answers that were HTTP 200 are JSON without a toc tree (Learn
+  changed the format; an HTML page with status 200 counts as a failed request); fewer than 70% of the pages that were in
+  a group before still are (when at least 200 were); a circuit breaker after 50 requests when more than half failed.
+  A request that fails keeps the folder's previous record and is asked again next run.
+* Requests: at most 3 workers, `DOCS_TOC_DELAY_MS` (500) pause per worker, the shared retry and backoff rules, at most
+  `DOCS_TOC_MAX_PROBES` (6,000) folders asked for the first time per run (the rest waits). Known tocs are refreshed
+  every run (one small file each). `status.json` gets a `docsToc` section on every run that passes the failsafes:
+  `scope`, `tocs`, `groups`, `pages` (distinct pages in a group), `noToc`, `asked`, `failed`, `waiting`.
+* Measured on the `entra` family (2026-10-24): 72 folders hold pages, 34 have a toc, 707 groups, 4,461 of 4,779 pages
+  (93%) are in a group, and the file is about 0.5 MB; for every relevant family expect about 10 MB.
+* `buildLookup(file)` of `scripts/lib/docs-toc.mjs` is the lookup a consumer builds: `groupsOf(path)` and
+  `siblingsOf(path)` (the other pages of the page's groups, in sidebar order).
+
+#### The links of a page (not a data file)
+
+`scripts/docs-page-links.mjs` is an on-demand tool: for the pages it is given it returns the links of the article (the
+links Microsoft's writers chose to put in the text and in "Related content": `{ path, text, section }` in page
+order, Learn only, one per path and section) and what the page says about itself (`ms.topic`, `ms.service`,
+`ms.subservice`, `ms.date`, and the folder of its toc). It costs one request per page, so nothing is stored; run it
+for the pages that matter (the candidate pages of a task), not for the catalog. The article is the part of
+`<main>` after the `<h1>` up to the `ms--inline-notifications` placeholder; a page without that structure is an error,
+not "no links".
 
 ### `data/docs-urls.txt` (new: complete URL index, plain text)
 
