@@ -78,5 +78,17 @@
     "rewritten": 645,
     "dropped": 139,
     "unverified": 0
+  },
+  "docsToc": {
+    "generatedAt": "2026-10-26T22:49:52.245Z",
+    "runId": "40415393399",
+    "scope": "relevant",
+    "tocs": 628,
+    "groups": 21283,
+    "pages": 110376,
+    "noToc": 3577,
+    "asked": 4206,
+    "failed": 1,
+    "waiting": 0
   }
 }
