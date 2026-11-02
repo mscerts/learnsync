@@ -200,6 +200,46 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/api-management/ai-gateway-govern-secure-assets",
+    "to": "/azure/ai-gateway/concepts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/api-management/ai-gateway-manage-models-tools",
+    "to": "/azure/ai-gateway/concepts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/api-management/ai-gateway-overview",
+    "to": "/azure/ai-gateway/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/api-management/ai-gateway-policy-tool-threat",
+    "to": "/azure/ai-gateway/policy-tool-threat",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/api-management/ai-gateway-resource",
+    "to": "/azure/ai-gateway/ai-gateway-resource",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/app-testing/playwright-workspaces/how-to-playwright-workspaces-remote-mcp",
     "to": "/azure/app-testing",
     "kind": "landing",
@@ -264,6 +304,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/architecture/best-practices/data-partitioning-strategies",
+    "to": "/azure/architecture/guide/multitenant/service/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/architecture/example-scenario/mainframe/avanade-amt-zos-migration",
     "to": "/azure/architecture/example-scenario/mainframe/general-mainframe-refactor",
     "kind": "moved",
@@ -310,6 +358,14 @@
     "status": 301,
     "firstSeen": "2026-10-14",
     "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/architecture/guide/multitenant/service/storage",
+    "to": "/azure/architecture/guide/multitenant/service/blob-storage",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/architecture/mainframe/virtualization-of-unisys-clearpath-forward-os-2200-enterprise-server-on-azure",
@@ -400,6 +456,78 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/azure-netapp-files/elastic-account",
+    "to": "/azure/azure-netapp-files",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/azure-netapp-files/elastic-active-directory",
+    "to": "/azure/azure-netapp-files",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/azure-netapp-files/elastic-capacity-pool-task",
+    "to": "/azure/azure-netapp-files",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/azure-netapp-files/elastic-change-zones",
+    "to": "/azure/azure-netapp-files",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/azure-netapp-files/elastic-customer-managed-keys",
+    "to": "/azure/azure-netapp-files",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/azure-netapp-files/elastic-metrics",
+    "to": "/azure/azure-netapp-files",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/azure-netapp-files/elastic-volume",
+    "to": "/azure/azure-netapp-files",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/azure-netapp-files/elastic-volume-server-message-block",
+    "to": "/azure/azure-netapp-files",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/azure-netapp-files/elastic-zone-redundant-concept",
+    "to": "/azure/azure-netapp-files",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/azure-sql/database/free-offer",
     "to": "/azure/azure-sql/database/free-tier",
     "kind": "moved",
@@ -438,6 +566,86 @@
     "status": 301,
     "firstSeen": "2026-10-14",
     "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/azure/chaos-studio/chaos-studio-fault-providers",
+    "to": "/azure/chaos-studio/chaos-studio-workspaces-supported-resources",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/data/architecture-azure-landing-zones-unify-data-platform",
+    "to": "/azure/cloud-adoption-framework/data/architecture-unified-data-platform",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/data/architecture-fabric-data-lake-unify-data-platform",
+    "to": "/azure/cloud-adoption-framework/data/architecture-unified-data-platform",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/data/executive-strategy-unify-data-platform",
+    "to": "/azure/cloud-adoption-framework/data/executive-strategy-unified-data-platform",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/data/governance-security-baselines-fabric-data-lake-unify-data-platform",
+    "to": "/azure/cloud-adoption-framework/data/fabric-governance-unified-data-platform",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/data/governance-security-baselines-purview-data-estate-unify-data-platform",
+    "to": "/azure/cloud-adoption-framework/data/data-governance-unified-data-platform",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/data/operational-standards-data-processing-standards-unify-data-platform",
+    "to": "/azure/cloud-adoption-framework/data/operational-standards-unified-data-platform",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/data/operational-standards-data-product-consumption-unify-data-platform",
+    "to": "/azure/cloud-adoption-framework/data/operational-standards-unified-data-platform",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/data/operational-standards-data-product-security-standards-unify-data-platform",
+    "to": "/azure/cloud-adoption-framework/data/operational-standards-unified-data-platform",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/data/organizational-readiness-unify-data-platform",
+    "to": "/azure/cloud-adoption-framework/data/planning-unified-data-platform",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/app-platform",
@@ -662,6 +870,222 @@
     "status": 301,
     "firstSeen": "2026-10-06",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop",
+    "to": "/azure/virtual-desktop/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/enterprise-scale-landing-zone",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery",
+    "to": "/azure/virtual-desktop/disaster-recovery-concepts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-enterprise-enrollment",
+    "to": "/azure/cloud-adoption-framework/ready/landing-zone/design-area/azure-billing-microsoft-entra-tenant",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-identity-and-access-management",
+    "to": "/azure/virtual-desktop/authentication",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-management-and-monitoring",
+    "to": "/azure/virtual-desktop/insights-costs",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-network-topology-and-connectivity",
+    "to": "/azure/virtual-desktop/network-connectivity",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-platform-automation-and-devops",
+    "to": "/azure/virtual-desktop/host-pool-management-approaches",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-resource-organization",
+    "to": "/azure/virtual-desktop/network-connectivity",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-security-governance-and-compliance",
+    "to": "/azure/virtual-desktop/security-recommendations",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/govern",
+    "to": "/azure/virtual-desktop/tag-virtual-desktop-resources",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/innovate",
+    "to": "/azure/virtual-desktop/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-business-continuity-disaster-recovery",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-enterprise-scale-landing-zone",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-identity-access-management",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-management-monitoring",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-network-topology-connectivity",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-resource-organization",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/landing-zone-citrix/citrix-security-governance-compliance",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/manage",
+    "to": "/azure/virtual-desktop/customize-rdp-properties",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/migrate-assess",
+    "to": "/azure/virtual-desktop/deploy-azure-virtual-desktop",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/migrate-deploy",
+    "to": "/azure/virtual-desktop/deploy-azure-virtual-desktop",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/migrate-release",
+    "to": "/azure/virtual-desktop/deploy-azure-virtual-desktop",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/plan",
+    "to": "/azure/virtual-desktop/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/proof-of-concept",
+    "to": "/azure/virtual-desktop/deploy-azure-virtual-desktop",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/ready",
+    "to": "/azure/cloud-adoption-framework/ready/landing-zone",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/strategy",
+    "to": "/azure/virtual-desktop/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/cloud-adoption-framework/scenarios/azure-vmware",
@@ -904,12 +1328,596 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/enterprise-scale-landing-zone-sandbox",
+    "to": "/azure/azure-arc/kubernetes",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-automation-disciplines",
+    "to": "/azure/azure-arc/kubernetes/quickstart-deploy-gitops-argo-cd",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-cicd-gitops-disciplines",
+    "to": "/azure/azure-arc/kubernetes/conceptual-gitops-flux2-ci-cd",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-cost-governance",
+    "to": "/azure/azure-arc/kubernetes",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-extensions-management",
+    "to": "/azure/azure-arc/kubernetes/extensions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-governance-disciplines",
+    "to": "/azure/azure-arc/kubernetes/policy-reference",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-identity-access-management",
+    "to": "/azure/azure-arc/kubernetes/identity-access-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-management-disciplines",
+    "to": "/azure/azure-arc/kubernetes/extensions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-network-connectivity",
+    "to": "/azure/azure-arc/kubernetes/arc-gateway-simplify-networking",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-resource-organization",
+    "to": "/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-kubernetes/eslz-arc-kubernetes-services-observability",
+    "to": "/azure/azure-monitor/containers/kubernetes-monitoring-enable",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/enterprise-scale-landing-zone-sandbox",
+    "to": "/azure/azure-arc/servers/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-arc-servers-connectivity",
+    "to": "/azure/azure-arc/servers/arc-gateway",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-automation-arc-server",
+    "to": "/azure/azure-arc/servers/plan-at-scale-deployment",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-cost-governance",
+    "to": "/azure/azure-arc/servers/cloud-native/licensing-cost-management",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-identity-and-access-management",
+    "to": "/azure/azure-arc/servers/cloud-native/identity-access",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-management-and-monitoring-arc-server",
+    "to": "/azure/azure-arc/servers/cloud-native/monitor-alerts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-resource-organization",
+    "to": "/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/eslz-security-governance-and-compliance",
+    "to": "/azure/azure-arc/servers/cloud-native/governance-policy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/enterprise-scale-landing-zone",
+    "to": "/azure/cloud-adoption-framework/ready/landing-zone",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/hybrid/strategy",
+    "to": "/azure/architecture/hybrid/hybrid-start-here",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/application-connectivity-design",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/azure-arc-connectivity-design",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/business-continuity-disaster-recovery-connectivity-design",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/core-network-design",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/manage-identity-access-azure-landing-zone",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/migration-connectivity-design",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-azure-key-vault-integration-exadata",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-capacity-planning",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-capacity-planning-oracle-database-azure-autonomous-database",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-capacity-planning-oracle-database-azure-exadata",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-disaster-recovery-iaas",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-disaster-recovery-oracle-database-azure",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-disaster-recovery-oracle-database-azure-autonomous",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-iam-odaa",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-accelerator",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-plan",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-landing-zone-strategy",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-manage-monitor-iaas",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-manage-monitor-oracle-database-azure",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-migration-planning",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-network-topology-iaas",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-network-topology-odaa",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-platform-automation-devops-oracle-database-azure",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-resource-organization-oracle-database-azure",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-security-overview-iaas",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/oracle-on-azure/oracle-security-overview-odaa",
+    "to": "/azure/oracle/oracle-azure-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/enterprise-scale-landing-zone",
+    "to": "/azure/cloud-adoption-framework/ready/landing-zone",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/eslz-business-continuity-and-disaster-recovery",
+    "to": "/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/eslz-identity-and-access-management",
+    "to": "/azure/sap/workloads/sap-security-identity",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/eslz-network-topology-and-connectivity",
+    "to": "/azure/sap/center-sap-solutions/prepare-network",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/eslz-platform-automation-and-devops",
+    "to": "/azure/sap/workloads/deployment-checklist",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/eslz-security-governance-and-compliance",
+    "to": "/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-operational-compliance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/migrate",
+    "to": "/azure/sap/choose-sap-services-by-scenario",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/plan",
+    "to": "/azure/sap/choose-sap-services-by-scenario",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/ready",
+    "to": "/azure/cloud-adoption-framework/ready/landing-zone",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-lza-choose-azure-connectors",
+    "to": "/power-bi/connect-data/desktop-sap-bw-connector",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-lza-data-example-architecture",
+    "to": "/azure/sap/business-process-solutions/run-extraction-data-processing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-lza-data-extraction-performance-troubleshooting",
+    "to": "/azure/sap/workloads/extract-sap-data",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-lza-data-integration-security",
+    "to": "/azure/sap/business-process-solutions/run-extraction-data-processing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-lza-database-security",
+    "to": "/azure/sap/workloads/sap-security-infrastructure",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-lza-identify-sap-data-sources",
+    "to": "/azure/sap/business-process-solutions/data-models-business-process-solutions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-lza-security-operations",
+    "to": "/azure/sap/workloads/sap-security-infrastructure",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-lza-sentinel-for-sap",
+    "to": "/azure/sentinel/sap/solution-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-architecture-workflow",
+    "to": "/power-query/connectors/sap-hana/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-extend-landing-zone",
+    "to": "/power-query/connectors/sap-hana/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-fundamental",
+    "to": "/power-query/connectors/sap-hana/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/cloud-adoption-framework/scenarios/sap/strategy",
+    "to": "/azure/sap/choose-sap-services-by-scenario",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/cloud-hsm/tutorial-operation-event-logging",
     "to": "/azure/cloud-hsm/tutorial-hsm-operation-audit-logs",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-14",
     "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/confidential-computing/partner-pages/enclaive",
+    "to": "/azure/confidential-computing/partner-pages/partner-pages-index",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/confidential-computing/partner-pages/habu",
+    "to": "/azure/confidential-computing/partner-pages/partner-pages-index",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/confidential-computing/partner-pages/mithril",
+    "to": "/azure/confidential-computing/partner-pages/partner-pages-index",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/confidential-computing/partner-pages/scone",
+    "to": "/azure/confidential-computing/partner-pages/partner-pages-index",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/cosmos-db/cassandra",
@@ -1069,7 +2077,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-26",
-    "lastSeen": "2026-10-26"
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/compute/sql-warehouse/real-time-pricing",
+    "to": "/azure/databricks/compute/sql-warehouse/real-time",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/databricks/genie-code/agent-mode",
@@ -1110,6 +2126,14 @@
     "status": 301,
     "firstSeen": "2026-10-05",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/large-language-models/ai-enrich-tutorial",
+    "to": "/azure/databricks/sql/language-manual/functions/ai_enrich",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/databricks/ldp/dbsql/compute",
@@ -1184,12 +2208,28 @@
     "lastSeen": "2026-10-26"
   },
   {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli",
+    "to": "/azure/databricks/machine-learning/ai-runtime/connecting/cli",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/command-reference",
     "to": "/azure/databricks/dev-tools/cli/reference/air-commands",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/docker-images",
+    "to": "/azure/databricks/machine-learning/ai-runtime/connecting/cli/docker-images",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/examples",
@@ -1240,6 +2280,14 @@
     "lastSeen": "2026-10-14"
   },
   {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/image-push",
+    "to": "/azure/databricks/machine-learning/ai-runtime/connecting/cli/image-push",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/installation",
     "to": "/azure/databricks/dev-tools/cli/install",
     "kind": "moved",
@@ -1248,12 +2296,76 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/quickstart",
+    "to": "/azure/databricks/machine-learning/ai-runtime/quickstart",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/databricks/machine-learning/ai-runtime/cli/track-runs",
     "to": "/azure/databricks/machine-learning/ai-runtime/tracking-observability",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/cli/yaml-config",
+    "to": "/azure/databricks/machine-learning/ai-runtime/connecting/cli/yaml-config",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/configure-bundle-tasks",
+    "to": "/azure/databricks/machine-learning/ai-runtime/monitor-deploy/configure-bundle-tasks",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/connecting",
+    "to": "/azure/databricks/machine-learning/ai-runtime/connecting/notebooks",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/convert-workload-to-bundle",
+    "to": "/azure/databricks/machine-learning/ai-runtime/monitor-deploy/convert-workload-to-bundle",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/dataloading",
+    "to": "/azure/databricks/machine-learning/ai-runtime/develop-workloads/dataloading",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/distributed-training",
+    "to": "/azure/databricks/machine-learning/ai-runtime/connecting/distributed-training",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/environment",
+    "to": "/azure/databricks/machine-learning/ai-runtime/develop-workloads/environment",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-distributed-finetune-qwen2-0.5b",
@@ -1270,6 +2382,46 @@
     "status": 301,
     "firstSeen": "2026-10-05",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/genie-code",
+    "to": "/azure/databricks/machine-learning/ai-runtime/develop-workloads/coding-agents/genie-code",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/migrate-classic-workloads",
+    "to": "/azure/databricks/machine-learning/ai-runtime/guides/migrate-classic-workloads",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/productionizing-training-workloads",
+    "to": "/azure/databricks/machine-learning/ai-runtime/monitor-deploy/productionizing-training-workloads",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/ray",
+    "to": "/azure/databricks/machine-learning/ai-runtime/develop-workloads/ray",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/machine-learning/ai-runtime/tracking-observability",
+    "to": "/azure/databricks/machine-learning/ai-runtime/monitor-deploy/tracking-observability",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/databricks/oltp/projects/logical-replication-quickstart",
@@ -1344,6 +2496,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/defender-for-cloud/defender-portal/enable-preview-features",
+    "to": "/azure/defender-for-cloud/defender-portal/defender-for-cloud-defender-portal",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/defender-for-cloud/foundational-cspm-opt-in",
     "to": "/azure/defender-for-cloud/concept-cloud-security-posture-management",
     "kind": "moved",
@@ -1416,6 +2576,14 @@
     "lastSeen": "2026-10-19"
   },
   {
+    "from": "/azure/devops/repos/security/github-advanced-security-code-scanning-autofix",
+    "to": "/azure/devops/repos/security/github-advanced-security-autofix",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/enclave/preview-terms",
     "to": "/azure/enclave/azure-enclave-faq",
     "kind": "moved",
@@ -1446,6 +2614,46 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/foundry/fine-tuning/interactive-post-training/concepts",
+    "to": "/azure/foundry/fine-tuning/programmed-training/concepts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/foundry/fine-tuning/interactive-post-training/overview",
+    "to": "/azure/foundry/fine-tuning/programmed-training/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/foundry/fine-tuning/interactive-post-training/quickstart",
+    "to": "/azure/foundry/fine-tuning/programmed-training/quickstart",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/foundry/fine-tuning/interactive-post-training/sdk-cheatsheet",
+    "to": "/azure/foundry/fine-tuning/programmed-training/sdk-cheatsheet",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/foundry/fine-tuning/interactive-post-training/troubleshoot",
+    "to": "/azure/foundry/fine-tuning/programmed-training/troubleshoot",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/foundry/openai/concepts/default-safety-policies",
@@ -1520,6 +2728,286 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/microsoft-discovery/concept-azure-container-registry",
+    "to": "/azure/microsoft-discovery/how-to-configure-container-registry",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/microsoft-discovery/concept-resource-naming",
+    "to": "/azure/microsoft-discovery/reference-resource-naming",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/microsoft-discovery/concept-resource-provider-registration",
+    "to": "/azure/microsoft-discovery/how-to-register-resource-providers",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/microsoft-discovery/concept-storage-account",
+    "to": "/azure/microsoft-discovery/how-to-configure-project-storage",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/best-practices-assessment",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/concepts-assessment-calculation",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/concepts-azure-sap-systems-assessment",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/concepts-azure-sql-assessment-calculation",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/concepts-azure-vmware-solution-assessment-calculation",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/concepts-azure-webapps-assessment-calculation",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/concepts-migration-planning",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/concepts-migration-webapps",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/create-manage-projects",
+    "to": "/azure/migrate/quickstart-create-project",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/create-project",
+    "to": "/azure/migrate/quickstart-create-project",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-create-a-group",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-create-azure-app-service-assessment",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-create-azure-sql-assessment",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-create-sql-assessment",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-discover-applications",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-migrate",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-modify-assessment",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-review-sql-assessment",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-set-up-appliance-hyper-v",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-set-up-appliance-vmware",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/migrate-replication-appliance",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/migrate-support-matrix-physical-migration",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/review-sap-assessment",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/tutorial-assess-aspnet-aks",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/tutorial-assess-aws",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/tutorial-assess-gcp",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/tutorial-assess-hyper-v",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/tutorial-assess-sap-systems",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/tutorial-assess-webapps",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/tutorial-discover-sap-systems",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/tutorial-migrate-gcp-virtual-machines",
+    "to": "/azure/migrate",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-review-tasks-artifacts",
     "to": "/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-object-explorer",
     "kind": "moved",
@@ -1536,6 +3024,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/reliability/regions-multi-region-nonpaired",
+    "to": "/azure/reliability/regions-multiregion-support",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/azure/reliability/reliability-app-gateway-containers",
     "to": "/azure/reliability/reliability-application-gateway-containers",
     "kind": "moved",
@@ -1550,6 +3046,46 @@
     "status": 301,
     "firstSeen": "2026-10-14",
     "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/storage/files/encryption-in-transit-for-nfs-shares",
+    "to": "/azure/storage/files/files-encryption-in-transit",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/storage/files/files-network-security-perimeter",
+    "to": "/azure/storage/files/storage-files-networking-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/storage/files/storage-files-configure-p2s-vpn-linux",
+    "to": "/azure/storage/files/storage-files-networking-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/storage/files/storage-files-configure-p2s-vpn-windows",
+    "to": "/azure/storage/files/storage-files-networking-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/storage/files/storage-files-configure-s2s-vpn",
+    "to": "/azure/storage/files/storage-files-networking-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics",
@@ -1992,6 +3528,94 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/copilot/agents",
+    "to": "/copilot/manage-agents-copilot-chat",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/glossary",
+    "to": "/copilot/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/manage",
+    "to": "/copilot/manage-copilot-chat",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/microsoft-copilot",
+    "to": "/copilot",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/roadmap/copilot-for-dynamics365",
+    "to": "/dynamics365/get-started/intro-crossapp-index",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/roadmap/overview",
+    "to": "/copilot/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/tutorials/copilot-in-microsoft-fabric/01-overview",
+    "to": "/fabric/fundamentals/copilot-fabric-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/tutorials/copilot-in-microsoft-fabric/02-copilot-for-data-factory",
+    "to": "/fabric/fundamentals/copilot-fabric-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/tutorials/copilot-in-microsoft-fabric/03-copilot-for-notebooks",
+    "to": "/fabric/fundamentals/copilot-fabric-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/tutorials/copilot-in-microsoft-fabric/04-copilot-for-datawarehouse",
+    "to": "/fabric/fundamentals/copilot-fabric-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/tutorials/copilot-in-microsoft-fabric/copilot-fabric-overview",
+    "to": "/fabric/fundamentals/copilot-fabric-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/defender-cloud-apps/app-governance-visibility-insights-compliance-posture",
     "to": "/defender-cloud-apps/app-governance-visibility-insights-security-posture",
     "kind": "moved",
@@ -2086,6 +3710,14 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/entra/identity/authentication/how-to-set-up-sms-voice-api",
+    "to": "/entra/identity/authentication/choose-your-own-telephony-set-up",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/entra/identity/authentication/kerberos-server-key-rotation",
@@ -2184,6 +3816,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/fabric/data-science/consume-data-agent-python",
+    "to": "/fabric/data-science/data-agent-mcp-server",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/fabric/data-warehouse/migration-synapse-dedicated-sql-pool-warehouse",
     "to": "/fabric/data-warehouse/migration-synapse-dedicated-sql-pool-planning",
     "kind": "moved",
@@ -2248,6 +3888,22 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/fabric/iq/plan/planning-reference-formulas/math-functions/random-lookup-functions",
+    "to": "/fabric/iq/plan/planning-reference-formulas/math-functions/random-functions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/fabric/iq/plan/planning-reference-formulas/time-intelligence-functions/time-shifting-lookup",
+    "to": "/fabric/iq/plan/planning-reference-formulas/time-intelligence-functions/time-shifting",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/intune/device-management/actions/rename",
     "to": "/intune/device-management/inventory-and-status/rename-device",
     "kind": "moved",
@@ -2280,12 +3936,164 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/microsoft-365/admin/manage/agent-365-overview",
+    "to": "/microsoft-agent-365/admin/agent-365-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/agent-actions",
+    "to": "/microsoft-agent-365/admin/agent-actions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/agent-details",
+    "to": "/microsoft-agent-365/admin/agent-details",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/agent-local",
+    "to": "/microsoft-agent-365/admin/agent-local",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/agent-multi-tenant",
+    "to": "/microsoft-agent-365/admin/agent-multi-tenant",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/agent-registry",
+    "to": "/microsoft-agent-365/admin/agent-registry-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/agent-requests",
+    "to": "/microsoft-agent-365/admin/agent-requests",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/agent-roles-perms",
+    "to": "/microsoft-agent-365/admin/agent-roles-perms",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/agent-settings",
+    "to": "/microsoft-agent-365/admin/agent-settings",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/agent-shadow-ai",
+    "to": "/microsoft-agent-365/admin/agent-shadow-ai",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/agent-tools-overview",
+    "to": "/microsoft-agent-365/admin/agent-tools-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/create-agentic-user-instances",
+    "to": "/microsoft-agent-365/admin/create-agentic-user-instances",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/manage-agent-instances",
+    "to": "/microsoft-agent-365/admin/manage-agent-instances",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/manage-byo-mcp-server",
+    "to": "/microsoft-agent-365/admin/manage-byo-mcp-server",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/manage-connected-agents",
+    "to": "/microsoft-agent-365/admin/manage-connected-agents",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps",
+    "to": "/microsoft-agent-365/admin/manage-copilot-agents-integrated-apps",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/manage-plugins-skills-mcp-servers",
+    "to": "/microsoft-agent-365/admin/manage-plugins-skills-mcp-servers",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/manage-specific-agents",
+    "to": "/microsoft-agent-365/admin/manage-copilot-agents-integrated-apps",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/microsoft-365/admin/manage/manage-tools-for-agent",
     "to": "/microsoft-365/admin/manage/agent-tools-overview",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/admin/manage/manage-tools-gateway",
+    "to": "/microsoft-agent-365/admin/manage-tools-gateway",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/microsoft-365/admin/misc/feedback-code-conduct",
@@ -2296,6 +4104,254 @@
     "lastSeen": "2026-10-05"
   },
   {
+    "from": "/microsoft-365/agents-sdk/secure-your-agent",
+    "to": "/microsoft-365/agents-sdk/production-ready-agent/production-ready-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/configure-secure-governed-data-foundation-microsoft-365-copilot",
+    "to": "/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-business-faq",
+    "to": "/microsoft-365/copilot/copilot-license-options",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-controls/management-controls",
+    "to": "/microsoft-365/copilot/copilot-controls/copilot-controls-management",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-controls/measurement-reporting",
+    "to": "/microsoft-365/copilot/copilot-controls/copilot-controls-measurement-reporting",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-controls/overview",
+    "to": "/microsoft-365/copilot/copilot-controls/copilot-controls-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-controls/security-governance",
+    "to": "/microsoft-365/copilot/copilot-controls/copilot-controls-security-governance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-restrict-brand-kit-creation",
+    "to": "/microsoft-365/copilot/configure-brand-kit-governance-organizational-assets",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork",
+    "to": "/copilot/cowork",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/best-practices",
+    "to": "/copilot/cowork/best-practices",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-access",
+    "to": "/copilot/cowork/cowork-access",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-admin-governance",
+    "to": "/copilot/cowork/cowork-admin-governance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-available-plugins",
+    "to": "/copilot/cowork/cowork-available-plugins",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-brand-templates",
+    "to": "/copilot/cowork/cowork-brand-templates",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-customize",
+    "to": "/copilot/cowork/cowork-customize",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-elicitation-forms",
+    "to": "/copilot/cowork/cowork-elicitation-forms",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-faq",
+    "to": "/copilot/cowork/cowork-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-local-browser",
+    "to": "/copilot/cowork/cowork-local-browser",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-manage-plugins",
+    "to": "/copilot/cowork/cowork-manage-plugins",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-mobile",
+    "to": "/copilot/cowork/cowork-mobile",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-models",
+    "to": "/copilot/cowork/cowork-models",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-network-endpoints",
+    "to": "/copilot/cowork/cowork-network-endpoints",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-plugin-development",
+    "to": "/copilot/cowork/cowork-plugin-development",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-plugins",
+    "to": "/copilot/cowork/cowork-plugins",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/cowork-work-iq",
+    "to": "/copilot/cowork/cowork-work-iq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/get-started",
+    "to": "/copilot/cowork/get-started",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/mcp-apps-support",
+    "to": "/copilot/cowork/mcp-apps-support",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/use-cowork",
+    "to": "/copilot/cowork/use-cowork",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/cowork/whats-new",
+    "to": "/copilot/cowork/whats-new",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/enterprise-brand-manager",
+    "to": "/microsoft-365/copilot/configure-brand-kit-governance-organizational-assets",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/enterprise-brand-manager-policy",
+    "to": "/microsoft-365/copilot/configure-brand-kit-governance-organizational-assets",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/microsoft-365/copilot/extensibility/agents-are-apps",
     "to": "/microsoft-365/copilot/extensibility/plugins-overview",
     "kind": "moved",
@@ -2304,12 +4360,108 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/microsoft-365/copilot/extensibility/declarative-agent-tool-comparison",
+    "to": "/microsoft-365/copilot/extensibility/choose-plugin-development-tools",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/ecosystem",
+    "to": "/microsoft-365/copilot/extensibility/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/get-ready-copilot-sharepoint-advanced-management",
+    "to": "/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/manage-copilot-onboarding",
+    "to": "/microsoft-365/copilot/roll-out-copilot-onboarding",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-app-admin-settings",
+    "to": "/microsoft-365/copilot/configure-copilot-admin-center",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-app-overview",
+    "to": "/microsoft-365/copilot/copilot-app-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-architecture",
+    "to": "/microsoft-365/copilot/copilot-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-architecture-data-protection-auditing",
+    "to": "/microsoft-365/copilot/architecture-data-protection-auditing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-chat-requirements",
     "to": "/microsoft-365/copilot/microsoft-copilot-requirements",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-enable-users",
+    "to": "/microsoft-365/copilot/enable-users",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-enablement-resources",
+    "to": "/microsoft-365/copilot/enablement-resources",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-license-feature-overview",
+    "to": "/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-licensing",
+    "to": "/microsoft-365/copilot/copilot-license-options",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements",
@@ -2336,12 +4488,28 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-overview",
+    "to": "/microsoft-365/copilot/copilot-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-page",
     "to": "/microsoft-365/copilot/configure-copilot-admin-center",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-26",
-    "lastSeen": "2026-10-26"
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-reports-for-admins",
+    "to": "/microsoft-365/copilot/copilot-admin-reports",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-requirements",
@@ -2350,6 +4518,150 @@
     "status": 301,
     "firstSeen": "2026-10-06",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-search",
+    "to": "/microsoft-365/copilot/copilot-search-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-search-admin-experience",
+    "to": "/microsoft-365/copilot/copilot-search-admin-experience",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-search-faq",
+    "to": "/microsoft-365/copilot/copilot-search-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-search-image-tagging-integration",
+    "to": "/microsoft-365/copilot/copilot-search-image-tagging-integration",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-search-manage",
+    "to": "/microsoft-365/copilot/copilot-search-manage",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-service-plans",
+    "to": "/microsoft-365/copilot/copilot-service-diagnostic-tool",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-setup",
+    "to": "/microsoft-365/copilot/enablement-resources",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/optimize-microsoft-365-configuration-settings",
+    "to": "/microsoft-365/copilot/optimize-copilot-configuration-settings",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/pay-as-you-go/meters",
+    "to": "/microsoft-365/copilot/pay-as-you-go/pay-as-you-go-meters",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/pay-as-you-go/overview",
+    "to": "/microsoft-365/copilot/pay-as-you-go/pay-as-you-go-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/pay-as-you-go/setup",
+    "to": "/microsoft-365/copilot/pay-as-you-go/setup-pay-as-you-go",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/responsible-ai/copilot-cowork-application-card",
+    "to": "/copilot/cowork/responsible-ai/copilot-cowork-application-card",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/responsible-ai/cowork-responsible-ai-faq",
+    "to": "/copilot/cowork/responsible-ai/cowork-responsible-ai-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/responsible-ai/cowork-responsible-ai-overview",
+    "to": "/copilot/cowork/responsible-ai",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/responsible-ai/responsible-ai-overview",
+    "to": "/microsoft-365/copilot/microsoft-365-copilot-application-card",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/security-microsoft-365-copilot",
+    "to": "/microsoft-365/copilot/security-microsoft-copilot",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/education/guide/1-windows/win10win11upgrade",
+    "to": "/microsoft-365/education/guide/1-windows/windows-products-edu",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/education/schooldatasync/data-streamer/create-manifest",
+    "to": "/microsoft-365/education/data-streamer/create-manifest",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/microsoft-365/enterprise/advanced-data-residency",
@@ -2504,12 +4816,68 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/microsoft-copilot-studio/guidance/deflection-alternate-escalation-paths",
+    "to": "/microsoft-copilot-studio/advanced-hand-off",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/deflection-overview",
+    "to": "/microsoft-copilot-studio/guidance/analytics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/deflection-topic-confusion-analysis",
+    "to": "/microsoft-copilot-studio/guidance/trigger-phrases-best-practices",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/deflection-topic-enrichment-analysis",
+    "to": "/microsoft-copilot-studio/guidance/fallback-topic",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/deflection-topic-escalation-analysis",
+    "to": "/microsoft-copilot-studio/analytics-questions-sessions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/deflection-transcripts-analysis",
+    "to": "/microsoft-copilot-studio/analytics-questions-sessions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/microsoft-copilot-studio/guidance/generative-ai-math-data-queries",
     "to": "/microsoft-copilot-studio/guidance/generative-orchestration",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/inactivity-trigger-guidance",
+    "to": "/microsoft-copilot-studio/authoring-triggers",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/microsoft-copilot-studio/guidance/measuring-engagement",
@@ -2526,6 +4894,22 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/oc-pva-analytics",
+    "to": "/microsoft-copilot-studio/guidance/analytics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/optimize-minimize-latency",
+    "to": "/microsoft-copilot-studio/guidance/conversational-agents-performance-improvement",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/microsoft-copilot-studio/guidance/optimize-prompts-bing-custom-search",
@@ -2560,6 +4944,22 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/microsoft-copilot-studio/guidance/pass-context-variables-from-webpage-to-copilot",
+    "to": "/microsoft-copilot-studio/authoring-variables-bot",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/pass-web-analytics-tracking-id-from-webpage",
+    "to": "/microsoft-copilot-studio/authoring-variables-bot",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/microsoft-copilot-studio/guidance/topics-code-editor",
     "to": "/microsoft-copilot-studio/authoring-create-edit-topics",
     "kind": "moved",
@@ -2568,12 +4968,252 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/microsoft-copilot-studio/guidance/voice-agents-control-conversation",
+    "to": "/microsoft-copilot-studio/voice-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/voice-agents-faq",
+    "to": "/microsoft-copilot-studio/voice-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/voice-agents-handle-speech",
+    "to": "/microsoft-copilot-studio/voice-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/voice-agents-optimize-voice",
+    "to": "/microsoft-copilot-studio/voice-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/voice-agents-prompt-best-practices",
+    "to": "/microsoft-copilot-studio/voice-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/guidance/voice-agents-tools-knowledge-mcp",
+    "to": "/microsoft-copilot-studio/voice-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-copilot-studio/microsoft-365-copilot-extend-with-agents",
+    "to": "/microsoft-copilot-studio/harnesses-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/microsoft-copilot-studio/voice-external-grammars",
     "to": "/microsoft-copilot-studio/voice-overview",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoftteams/devices/how-to-get-support",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/create-support-request-teams-device-issues",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-bluetooth",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/bluetooth-disabled-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-camera-status-unhealthy",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/camera-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-cpu-performance-unhealthy",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/cpu-performance-limited-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-disk-space",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/disk-space-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-front-of-room-display",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/display-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-hdmi-ingest",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/hdmi-ingest-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-meeting-app-status",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/meeting-app-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-microphone-speaker-status",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/microphone-speaker-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-mtrw-default-credentials",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/default-credentials-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-os-edition",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/os-edition-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-resource-account-sign-in",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/teams-rooms-resource-account-sign-in-issues",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-sleep-timer",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/sleep-timer-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-unmonitored-offline",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/monitored-offline-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-usb-peripherial-power-drain",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/usb-peripheral-power-drain-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-usb-selective-suspend",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/usb-selective-suspend-status-unhealthy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/pmpsignal-windows-update",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/teams-rooms-device-windows-update-issues",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/troubleshooting-collect-device-logs",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/collect-device-logs",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/troubleshooting-mtrw-app-launch-after-updates",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/teams-rooms-not-auto-start-after-windows-updates",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/troubleshooting-mtrw-blank-screen",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/black-blank-screen",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/troubleshooting-mtrw-onscreen-keyboard-size",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/teams-rooms-device-keyboard-size-reduced",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/troubleshooting-teams-android-device-conditional-access",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/teams-android-devices-conditional-access-issues",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/devices/troubleshooting-teams-android-signed-out",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/signed-out-of-teams-android-devices",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/microsoftteams/platform/bots/how-to/bot-messages-ai-generated-content",
@@ -2608,12 +5248,52 @@
     "lastSeen": "2026-10-14"
   },
   {
+    "from": "/microsoftteams/platform/feedback",
+    "to": "/microsoftteams/platform/developer-support-feedback",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/platform/m365-apps/agent-connectors",
+    "to": "/microsoft-365/copilot/extensibility/plugin-type-mcp-servers",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/microsoftteams/platform/resources/dev-preview/developer-preview-intro",
     "to": "/microsoftteams/platform/developer-preview-features",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-14",
     "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/microsoftteams/platform/samples/teams-low-code-solutions",
+    "to": "/power-apps/teams/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/rooms/manual-update",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/update-device-manually",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoftteams/rooms/recovery-tool",
+    "to": "/troubleshoot/microsoftteams/teams-rooms-and-devices/reset-device-using-recovery-tool",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/microsoftteams/rooms/surface-hub-manage-config",
@@ -2646,6 +5326,86 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/partner-center/enroll/enroll-isv-success",
+    "to": "/partner-center/frontier-accelerate-marketplace/enroll",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/partner-center/marketplace-offers/gtm-your-marketplace-benefits",
+    "to": "/partner-center/frontier-accelerate-marketplace/grow/go-to-market",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/partner-center/marketplace-offers/marketplace-rewards",
+    "to": "/partner-center/frontier-accelerate-marketplace/benefits",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/partner-center/membership/faq-isvsuccess",
+    "to": "/partner-center/frontier-accelerate-marketplace/faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/power-apps/developer/data-platform/webapi/associate-disassociate-entities-using-web-api",
+    "to": "/power-apps/developer/data-platform/webapi/associate-disassociate-table-rows",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/power-apps/developer/data-platform/webapi/create-entity-web-api",
+    "to": "/power-apps/developer/data-platform/webapi/create-table-row",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api",
+    "to": "/power-apps/developer/data-platform/impersonate-another-user",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/power-apps/developer/data-platform/webapi/merge-entity-using-web-api",
+    "to": "/power-apps/developer/data-platform/webapi/merge-table-rows",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/power-apps/developer/data-platform/webapi/retrieve-entity-using-web-api",
+    "to": "/power-apps/developer/data-platform/webapi/retrieve-table-row",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/power-apps/developer/data-platform/webapi/update-delete-entities-using-web-api",
+    "to": "/power-apps/developer/data-platform/webapi/update-delete-table-rows",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/power-apps/developer/model-driven-apps/streamline-javascript-development-fiddler-autoresponder",
@@ -2720,6 +5480,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/power-bi/developer/agentic/power-bi-report-authoring-skill-overview",
+    "to": "/power-bi/developer/agentic/power-bi-report-skill-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties",
     "to": "/power-bi/visuals/power-bi-visualizations-format-visual",
     "kind": "moved",
@@ -2742,6 +5510,14 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-platform/admin/plug-ins",
+    "to": "/power-platform/admin/plugin-steps",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/purview/sit-defn-turkey-national-identification-number",
@@ -2800,12 +5576,84 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/services-hub/microsoft-engage-center/health/connector-migration",
+    "to": "/services-hub/microsoft-engage-center/health/get-started-with-on-demand-assessments",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/sharepoint/home-sites-improvements",
     "to": "/sharepoint/homesites/home-sites-improvements",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/sql/connect/ado-net/connection-events",
+    "to": "/sql/connect/ado-net/connecting-to-data-source",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/sql/connect/ado-net/connection-string-syntax",
+    "to": "/sql/connect/ado-net/connection-strings",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/sql/connect/ado-net/establishing-connection",
+    "to": "/sql/connect/ado-net/connecting-to-data-source",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/sql/connect/ado-net/find-additional-sqlclient-driver-information",
+    "to": "/sql/connect/ado-net/microsoft-ado-net-sql-server",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/sql/connect/ado-net/overview-sqlclient-driver",
+    "to": "/sql/connect/ado-net/microsoft-ado-net-sql-server",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/sql/connect/ado-net/step-1-configure-development-environment-ado-net-development",
+    "to": "/sql/connect/ado-net/get-started-sqlclient-driver",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/sql/connect/ado-net/step-2-create-sql-database-ado-net-development",
+    "to": "/sql/connect/ado-net/get-started-sqlclient-driver",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/sql/connect/ado-net/step-3-connect-sql-ado-net",
+    "to": "/sql/connect/ado-net/get-started-sqlclient-driver",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/sql/linux/sql-server-linux-develop-connectivity-libraries",
@@ -2870,6 +5718,70 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/exchange/development/mapi-apps-cannot-access-archive-mailboxes",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/exchange/development/public-protocols-support-limitations",
+    "to": "/openspecs/exchange_standards/ms-oxstandlp/3c8dd289-b401-430c-a3a0-dec8028b5918",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/exchange/setup/service-pack-upgrade-fails",
+    "to": "/previous-versions/troubleshoot/content-retirement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/microsoft-365-apps/office-online-server/web-sites-lose-ssl-certificate-bindings",
+    "to": "/previous-versions/troubleshoot/microsoft-365/microsoft-365-apps/office-online-server/web-sites-lose-ssl-certificate-bindings",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/microsoft-365-apps/performance/office-applications-not-responding",
+    "to": "/previous-versions/troubleshoot/microsoft-365/microsoft-365-apps/performance/office-applications-not-responding",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/microsoft-365-apps/performance/office-slow-or-stop-responding",
+    "to": "/previous-versions/troubleshoot/microsoft-365/microsoft-365-apps/performance/office-slow-or-stop-responding",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/microsoft-365-apps/project/error-when-click-on-project-links",
+    "to": "/previous-versions/troubleshoot/microsoft-365/microsoft-365-apps/project/error-when-click-on-project-links",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/microsoft-365-apps/project/resource-plan-fte-calculate-unexpected",
+    "to": "/previous-versions/troubleshoot/microsoft-365/microsoft-365-apps/project/resource-plan-fte-calculate-unexpected",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/troubleshoot/microsoftteams/teams-rooms-and-devices/get-support-teams-rooms-pro-management",
@@ -4280,12 +7192,76 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/troubleshoot/windows-client/installing-updates-features-roles/command-switches-supported-by-self-extractor-package",
+    "to": "/previous-versions/troubleshoot/windows-client/command-switches-supported-by-self-extractor-package",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/windows-client/installing-updates-features-roles/downgrade-from-windows-8",
+    "to": null,
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/windows-client/setup-upgrade-and-drivers/dotnet-framework-4dot5dot1-web-installer",
+    "to": "/previous-versions/troubleshoot/windows-client/dotnet-framework-4dot5dot1-web-installer",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/windows-client/setup-upgrade-and-drivers/installation-error-hal-initialization-failed",
+    "to": "/previous-versions/troubleshoot/windows-client/installation-error-hal-initialization-failed",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/windows-client/setup-upgrade-and-drivers/use-ocsetup-to-install-remove-components",
+    "to": "/windows/client-management/client-tools/add-remove-hide-features",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/troubleshoot/windows-client/setup-upgrade-and-drivers/windows-cannot-verify-the-digital-signature-for-this-file",
     "to": "/troubleshoot/windows-server/setup-upgrade-and-drivers/windows-cannot-verify-the-digital-signature-for-this-file",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/troubleshoot/windows-server/installing-updates-features-roles/description-of-windows-server-update-services-3",
+    "to": "/previous-versions/troubleshoot/windows-server/description-of-windows-server-update-services-3",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/windows-server/installing-updates-features-roles/list-updates",
+    "to": "/previous-versions/troubleshoot/windows-server/list-updates",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/windows-server/setup-upgrade-and-drivers/avoid-duplicate-guids-deploy-sms",
+    "to": "/troubleshoot/windows-server/setup-upgrade-and-drivers/windows-installations-disk-duplication",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   },
   {
     "from": "/troubleshoot/windows-server/setup-upgrade-and-drivers/error-install-windows-internal-database",
@@ -4304,6 +7280,30 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/troubleshoot/windows-server/setup-upgrade-and-drivers/stop-0x0000007b-error-group-policy-setting",
+    "to": "/previous-versions/troubleshoot/windows-server/stop-0x0000007b-error-group-policy-setting",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/windows-server/setup-upgrade-and-drivers/sysprep-capture-task-sequence-fails-0x80070070",
+    "to": "/previous-versions/troubleshoot/windows-server/sysprep-capture-task-sequence-fails-0x80070070",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/troubleshoot/windows-server/setup-upgrade-and-drivers/unattended-setup-not-use-computer-name-specified-oobe",
+    "to": "/previous-versions/troubleshoot/windows-server/unattended-setup-not-use-computer-name-specified-oobe",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
     "from": "/troubleshoot/windows-server/setup-upgrade-and-drivers/use-language-id-identify-language-pack",
     "to": "/troubleshoot/windows-server/installing-updates-features-roles/use-language-id-identify-language-pack",
     "kind": "moved",
@@ -4318,5 +7318,21 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/viva/engage/configure-copilot-for-engage",
+    "to": "/viva/engage/configure-microsoft-365-copilot-in-viva-engage",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/viva/engage/manage-security-and-compliance/data-privacy-security-copilot-engage",
+    "to": "/viva/engage/configure-microsoft-365-copilot-in-viva-engage",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-02",
+    "lastSeen": "2026-11-02"
   }
 ]

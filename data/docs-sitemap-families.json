@@ -1,147 +1,147 @@
 {
   "accessibility-tools-docs": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "adaptive-cards": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "advertising": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "agent-framework": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "agents": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "ai": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "ai-builder": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "analysis-services": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "answers": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "appcenter": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "archive": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "aspnet": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "assessments": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "auto-healing-test": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "autopilot": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "azure": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "azure-sphere": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "azure-stack": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "bingmaps": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "bingwebmaster": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "biztalk": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "business-applications": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "clarity": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "cli": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "clipchamp": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "cloud-computing": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "collaborate": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "common-data-model": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "community": {
     "relevant": false,
-    "checked": "2026-10-05",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "compliance": {
@@ -164,6 +164,11 @@
     "checked": "2026-10-05",
     "scope": "67e479cbfb"
   },
+  "contact-center-intelligence": {
+    "relevant": false,
+    "checked": "2026-11-02",
+    "scope": "67e479cbfb"
+  },
   "contribute": {
     "relevant": false,
     "checked": "2026-10-05",
@@ -171,7 +176,7 @@
   },
   "copilot": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "cosmos-db": {
@@ -211,47 +216,47 @@
   },
   "defender": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "defender-business": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "defender-cloud-apps": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "defender-endpoint": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "defender-for-identity": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "defender-for-iot": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "defender-office-365": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "defender-vulnerability-management": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "defender-xdr": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "deployedge": {
@@ -286,7 +291,7 @@
   },
   "dynamics365": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "ecdn": {
@@ -311,17 +316,17 @@
   },
   "entra": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "exchange": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "fabric": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "fluent-ui": {
@@ -386,7 +391,7 @@
   },
   "intune": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "intune-education": {
@@ -451,7 +456,7 @@
   },
   "microsoft-365": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "microsoft-365-app-certification": {
@@ -481,7 +486,7 @@
   },
   "microsoft-copilot-studio": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "microsoft-desktop-optimization-pack": {
@@ -516,7 +521,7 @@
   },
   "microsoft-sales-copilot": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "microsoft-scout": {
@@ -531,7 +536,7 @@
   },
   "microsoftteams": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "minecraft": {
@@ -611,7 +616,7 @@
   },
   "partner-center": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "partner-support": {
@@ -641,17 +646,17 @@
   },
   "power-apps": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "power-automate": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "power-bi": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "power-pages": {
@@ -661,7 +666,7 @@
   },
   "power-platform": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "power-query": {
@@ -716,7 +721,7 @@
   },
   "purview": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "python": {
@@ -756,12 +761,12 @@
   },
   "security": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "security-exposure-management": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "security-updates": {
@@ -776,12 +781,12 @@
   },
   "services-hub": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "sharepoint": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "sharepointmigration": {
@@ -806,7 +811,7 @@
   },
   "sql": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "ssms": {
@@ -861,7 +866,7 @@
   },
   "troubleshoot": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "typography": {
@@ -896,7 +901,7 @@
   },
   "viva": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "volume-licensing-central": {
@@ -941,7 +946,7 @@
   },
   "windows-server": {
     "relevant": true,
-    "checked": "2026-10-26",
+    "checked": "2026-11-02",
     "scope": "67e479cbfb"
   },
   "winrtc": {
