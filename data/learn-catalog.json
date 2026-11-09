@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "lastChecked": "2026-11-02T17:02:22.776Z",
+  "lastChecked": "2026-11-09T17:27:40.093Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -54,9 +54,9 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3396,
-  "totalApiModules": 3464,
-  "unitUrlsRefreshedAt": "2026-10-05",
+  "totalModules": 3383,
+  "totalApiModules": 3451,
+  "unitUrlsRefreshedAt": "2026-11-09",
   "modules": [
     {
       "uid": "azure.query-data-sentinel",
@@ -2820,43 +2820,6 @@
       "unitSig": "843b3d540a5ea837a41a4618ca9c62b05f564c23"
     },
     {
-      "uid": "learn-bizapps.create-bots-power-virtual-agents-copilot",
-      "title": "Guided Project - Create agents with Microsoft Copilot Studio",
-      "url": "https://learn.microsoft.com/training/modules/create-bots-power-virtual-agents-copilot/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/create-bots-power-virtual-agents-copilot",
-      "categories": [
-        "ms-copilot"
-      ],
-      "products": [
-        "ms-copilot"
-      ],
-      "subjects": [
-        "Custom app development"
-      ],
-      "units": [
-        "Introduction",
-        "Prepare",
-        "Exercise - Create custom tables",
-        "Exercise - Build an agent in Microsoft Copilot Studio with the new AI capabilities",
-        "Exercise - Create and manage topics",
-        "Exercise - Set up Generative AI",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/create-bots-power-virtual-agents-copilot/introduction",
-        "/training/modules/create-bots-power-virtual-agents-copilot/prepare",
-        "/training/modules/create-bots-power-virtual-agents-copilot/exercise-create-tables",
-        "/training/modules/create-bots-power-virtual-agents-copilot/exercise",
-        "/training/modules/create-bots-power-virtual-agents-copilot/exercise-topics",
-        "/training/modules/create-bots-power-virtual-agents-copilot/exercise-generative-ai",
-        "/training/modules/create-bots-power-virtual-agents-copilot/check",
-        "/training/modules/create-bots-power-virtual-agents-copilot/summary"
-      ],
-      "lastModified": "2026-10-27T17:09:00+00:00",
-      "unitSig": "f11d8affa0a8e3e81dd373feea92ecc216a060cc"
-    },
-    {
       "uid": "learn-bizapps.create-chatbot-power-virtual-agents-dataverse-teams",
       "title": "Create an agent with Microsoft Copilot Studio and Dataverse for Teams",
       "url": "https://learn.microsoft.com/training/modules/create-chatbot-power-virtual-agents-dataverse-teams/?WT.mc_id=studentamb_165290",
@@ -4229,8 +4192,8 @@
         "/training/modules/dragon-copilot-create-workflows/check",
         "/training/modules/dragon-copilot-create-workflows/summary"
       ],
-      "lastModified": "2026-10-27T17:09:00+00:00",
-      "unitSig": "b1b74908080f477208666fb147bd4d1690564772"
+      "lastModified": "2026-11-06T00:13:00+00:00",
+      "unitSig": "9dd607a265e0e3c9bb21c1955c7c246f5626e6c0"
     },
     {
       "uid": "learn-bizapps.dragon-copilot-how-to-train-advanced-skills",
@@ -13007,78 +12970,6 @@
       "unitSig": "058744c29db188cc2e2b8f1b4e253f0be6985d7e"
     },
     {
-      "uid": "learn-bizapps.sovereignty-confidential-computing",
-      "title": "Azure confidential computing",
-      "url": "https://learn.microsoft.com/training/modules/sovereignty-confidential-computing/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/sovereignty-confidential-computing",
-      "categories": [
-        "Industry Solutions"
-      ],
-      "products": [
-        "Industry Solutions",
-        "mscloud-sovereignty"
-      ],
-      "subjects": [
-        "Business applications"
-      ],
-      "units": [
-        "Overview of Confidential Computing",
-        "Introduction",
-        "Key components of Azure confidential computing",
-        "Confidential secrets management",
-        "Confidential analytics services",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/sovereignty-confidential-computing/overview-confidential-computing",
-        "/training/modules/sovereignty-confidential-computing/introduction-azure-confidential-computing",
-        "/training/modules/sovereignty-confidential-computing/key-components-azure-confidential-computing",
-        "/training/modules/sovereignty-confidential-computing/confidential-secrets-management",
-        "/training/modules/sovereignty-confidential-computing/confidential-analytics-services",
-        "/training/modules/sovereignty-confidential-computing/check",
-        "/training/modules/sovereignty-confidential-computing/summary"
-      ],
-      "lastModified": "2026-10-27T17:09:00+00:00",
-      "unitSig": "663332131fbf81b836a0827016993bd68a5a7494"
-    },
-    {
-      "uid": "learn-bizapps.sovereignty-key-management",
-      "title": "Azure key and certificate management",
-      "url": "https://learn.microsoft.com/training/modules/sovereignty-key-management/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/sovereignty-key-management",
-      "categories": [
-        "Industry Solutions"
-      ],
-      "products": [
-        "Industry Solutions",
-        "mscloud-sovereignty"
-      ],
-      "subjects": [
-        "Business applications"
-      ],
-      "units": [
-        "Introduction",
-        "Azure key management solutions",
-        "Best practices for using Azure key management",
-        "Azure key management strategies",
-        "Azure certificate management",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/sovereignty-key-management/introduction-key-encryption-and-key-sovereignty",
-        "/training/modules/sovereignty-key-management/azure-key-management-solutions",
-        "/training/modules/sovereignty-key-management/best-practices-azure-key-management",
-        "/training/modules/sovereignty-key-management/azure-key-management-strategies",
-        "/training/modules/sovereignty-key-management/azure-certificate-management",
-        "/training/modules/sovereignty-key-management/check",
-        "/training/modules/sovereignty-key-management/summary"
-      ],
-      "lastModified": "2026-10-27T17:09:00+00:00",
-      "unitSig": "b269a370cd45e504d0f50e9c8e9611913e2105e9"
-    },
-    {
       "uid": "learn-bizapps.sovereignty-overview",
       "title": "Microsoft for Sovereignty overview",
       "url": "https://learn.microsoft.com/training/modules/sovereignty-overview/?WT.mc_id=studentamb_165290",
@@ -13123,44 +13014,6 @@
       ],
       "lastModified": "2026-10-27T17:09:00+00:00",
       "unitSig": "8c3684a22146ee156286d762b9ab7d1820ce6b71"
-    },
-    {
-      "uid": "learn-bizapps.sovereignty-policy-initiatives",
-      "title": "Azure Policy initiatives",
-      "url": "https://learn.microsoft.com/training/modules/sovereignty-policy-initiatives/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/sovereignty-policy-initiatives",
-      "categories": [
-        "Industry Solutions"
-      ],
-      "products": [
-        "Industry Solutions",
-        "mscloud-sovereignty"
-      ],
-      "subjects": [
-        "Business applications"
-      ],
-      "units": [
-        "Introduction",
-        "Cloud Adoption Framework for Azure",
-        "Azure Policy design principles",
-        "Azure Policy resources",
-        "Azure Policy definitions",
-        "Evaluation of resources through Azure Policy",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/sovereignty-policy-initiatives/overview",
-        "/training/modules/sovereignty-policy-initiatives/cloud-adoption-framework",
-        "/training/modules/sovereignty-policy-initiatives/azure-policy-design-principles",
-        "/training/modules/sovereignty-policy-initiatives/azure-policy-resources",
-        "/training/modules/sovereignty-policy-initiatives/azure-policy-definitions",
-        "/training/modules/sovereignty-policy-initiatives/azure-policies-evaluation-resources",
-        "/training/modules/sovereignty-policy-initiatives/check",
-        "/training/modules/sovereignty-policy-initiatives/summary"
-      ],
-      "lastModified": "2026-10-27T17:09:00+00:00",
-      "unitSig": "51617db34cc94e79d6f0f382eb7a89a17e1ccf06"
     },
     {
       "uid": "learn-bizapps.specialized-components-model-form",
@@ -14842,7 +14695,7 @@
     },
     {
       "uid": "learn-bizapps.what-practice-manager-can-expect",
-      "title": "What practice manager can expect",
+      "title": "What practice managers can expect",
       "url": "https://learn.microsoft.com/training/modules/what-practice-manager-can-expect/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/what-practice-manager-can-expect",
       "categories": [
@@ -14872,8 +14725,8 @@
         "/training/modules/what-practice-manager-can-expect/check",
         "/training/modules/what-practice-manager-can-expect/summary"
       ],
-      "lastModified": "2026-10-27T17:09:00+00:00",
-      "unitSig": "f6d7b6273d7035b956226ee691c2daead5a89576"
+      "lastModified": "2026-11-07T00:09:00+00:00",
+      "unitSig": "0542ad2301950417c8a276c6ace76bb53a85548e"
     },
     {
       "uid": "learn-bizapps.where-to-find-help",
@@ -15501,8 +15354,8 @@
         "/training/modules/add-new-objects/9-check",
         "/training/modules/add-new-objects/10-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "0ad2e0a3c45fbb276ed620f90ef381048ba3e34a"
+      "lastModified": "2026-11-05T17:18:00+00:00",
+      "unitSig": "95ebbb3f5d8a654de10996134c0fab0dadb923b6"
     },
     {
       "uid": "learn-dynamics.add-reports-tell-me",
@@ -16674,6 +16527,43 @@
       "unitSig": "49ecbcc6d398112663d1b850c8966011dd42b4e7"
     },
     {
+      "uid": "learn-dynamics.assess-business-central-architecture",
+      "title": "Assess the Business Central architecture",
+      "url": "https://learn.microsoft.com/training/modules/assess-business-central-architecture/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/assess-business-central-architecture",
+      "categories": [
+        "Dynamics 365"
+      ],
+      "products": [
+        "Business Central",
+        "Dynamics 365"
+      ],
+      "subjects": [
+        "Cloud computing",
+        "Custom app development"
+      ],
+      "units": [
+        "Introduction",
+        "Compare Business Central online and on-premises deployment choices",
+        "Design an extension approach for the Business Central core solution",
+        "Plan the customization update lifecycle",
+        "Exercise: Assess a Business Central solution architecture",
+        "Knowledge check",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/assess-business-central-architecture/introduction",
+        "/training/modules/assess-business-central-architecture/compare-deployment-choices",
+        "/training/modules/assess-business-central-architecture/design-extension-approach",
+        "/training/modules/assess-business-central-architecture/plan-customization-update-lifecycle",
+        "/training/modules/assess-business-central-architecture/exercise",
+        "/training/modules/assess-business-central-architecture/knowledge-check",
+        "/training/modules/assess-business-central-architecture/summary"
+      ],
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "114cceb303f62ee5ee16a8c70906f7b2195a437d"
+    },
+    {
       "uid": "learn-dynamics.assign-asset-insurance-policy",
       "title": "Assign an asset to an insurance policy in Dynamics 365 Business Central",
       "url": "https://learn.microsoft.com/training/modules/assign-asset-insurance-policy/?WT.mc_id=studentamb_165290",
@@ -16744,8 +16634,8 @@
         "/training/modules/assisted-setup-tooltips/7-check",
         "/training/modules/assisted-setup-tooltips/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "0af3b143435d457f163843d8d501339789e1728e"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "fa082233d7ed6d1fa887fa202ae88fc674ee9c73"
     },
     {
       "uid": "learn-dynamics.auto-create-records-hub",
@@ -16784,46 +16674,6 @@
       ],
       "lastModified": "2026-10-27T17:07:00+00:00",
       "unitSig": "ac568613e4a924156533757b53800ea38f770e1a"
-    },
-    {
-      "uid": "learn-dynamics.automate-customer-voice-surveys",
-      "title": "Automate Dynamics 365 Customer Voice surveys with Power Automate",
-      "url": "https://learn.microsoft.com/training/modules/automate-customer-voice-surveys/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/automate-customer-voice-surveys",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Voice",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Process and workflow"
-      ],
-      "units": [
-        "Introduction",
-        "Send a survey with Power Automate",
-        "Create an invitation",
-        "Expand variables to further customize surveys",
-        "Use the locale variable for multilingual surveys",
-        "Use variables for follow-up actions",
-        "Exercise – Create a survey invitation",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/automate-customer-voice-surveys/1-introduction",
-        "/training/modules/automate-customer-voice-surveys/2-send-survey-power-automate",
-        "/training/modules/automate-customer-voice-surveys/3-create-invitation",
-        "/training/modules/automate-customer-voice-surveys/4-expand-variables-customize-surveys",
-        "/training/modules/automate-customer-voice-surveys/5-locale-variable-multilingual",
-        "/training/modules/automate-customer-voice-surveys/6-variables-follow-actions",
-        "/training/modules/automate-customer-voice-surveys/7-exercise",
-        "/training/modules/automate-customer-voice-surveys/8-check",
-        "/training/modules/automate-customer-voice-surveys/9-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "b9dcdcd3a2656b22951b654eec3f75b614d67611"
     },
     {
       "uid": "learn-dynamics.bank-reconciliation-dynamics-365-business-central",
@@ -17082,8 +16932,8 @@
         "/training/modules/budgets-exchange-rates-dynamics-365-business-central/5-check",
         "/training/modules/budgets-exchange-rates-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "32b9919ed47f64548547aca2c2c64b8e479be746"
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "1886b4c0538f35db2ee1162aac2cf1aa3bf59c9c"
     },
     {
       "uid": "learn-dynamics.build-assisted-setup",
@@ -17684,8 +17534,8 @@
         "/training/modules/calculate-job-wip/6-check",
         "/training/modules/calculate-job-wip/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "fe2f5a7ce02b1948ba9c3f68d8e93cf8c92a0fe1"
+      "lastModified": "2026-11-05T17:18:00+00:00",
+      "unitSig": "266891efe0b0e19a0db8c89bbb956cc5097bd52c"
     },
     {
       "uid": "learn-dynamics.calculate-post-depreciations",
@@ -18053,8 +17903,8 @@
         "/training/modules/close-job/3-check",
         "/training/modules/close-job/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "5796ca00a9296b01e688dd1addc4d92cb6aa3d4d"
+      "lastModified": "2026-11-05T17:18:00+00:00",
+      "unitSig": "9af2e60378f1c712e150d381548d9352c7a01ba4"
     },
     {
       "uid": "learn-dynamics.complete-report-request-page",
@@ -18342,56 +18192,6 @@
       ],
       "lastModified": "2026-10-27T17:07:00+00:00",
       "unitSig": "b5504e7c94177be414612df3f761913fdb0e1914"
-    },
-    {
-      "uid": "learn-dynamics.configure-apple-message-business-google-business-messages",
-      "title": "Set up Apple Message for Business and Google Business Messages as channels in Dynamics 365 Customer Service",
-      "url": "https://learn.microsoft.com/training/modules/configure-apple-message-business-google-business-messages/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/configure-apple-message-business-google-business-messages",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Service",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Business applications"
-      ],
-      "units": [
-        "Introduction",
-        "Set up a Google Business Messages channel",
-        "Set up a Google Business Messages workstream",
-        "Set up an Apple Messages for Business channel",
-        "Set up an Apple Messages for Business workstream",
-        "Rich messages",
-        "Publish and edit rich messages",
-        "Workstream association",
-        "Rich messages in conversation control",
-        "View and send rich messages",
-        "Manage authentication settings",
-        "Create payment profiles",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/configure-apple-message-business-google-business-messages/introduction",
-        "/training/modules/configure-apple-message-business-google-business-messages/configure-google-business-messages-channel",
-        "/training/modules/configure-apple-message-business-google-business-messages/configure-google-business-messages-workstream",
-        "/training/modules/configure-apple-message-business-google-business-messages/configure-apple-messages-business-channel",
-        "/training/modules/configure-apple-message-business-google-business-messages/configure-apple-messages-business-workstream",
-        "/training/modules/configure-apple-message-business-google-business-messages/rich-messages",
-        "/training/modules/configure-apple-message-business-google-business-messages/publish-edit",
-        "/training/modules/configure-apple-message-business-google-business-messages/workstream-association",
-        "/training/modules/configure-apple-message-business-google-business-messages/conversation-control",
-        "/training/modules/configure-apple-message-business-google-business-messages/view-send",
-        "/training/modules/configure-apple-message-business-google-business-messages/configure-authentication-settings",
-        "/training/modules/configure-apple-message-business-google-business-messages/configure-payment-profiles",
-        "/training/modules/configure-apple-message-business-google-business-messages/check",
-        "/training/modules/configure-apple-message-business-google-business-messages/summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "78b2c9e191c3fcc8e13549a6c119ad03c295041f"
     },
     {
       "uid": "learn-dynamics.configure-bill-material-costing-reporting",
@@ -18958,9 +18758,9 @@
         "Edit the mobile application",
         "Offline configuration",
         "Barcode scanning and global search",
-        "Audit locations",
-        "Configure push notifications",
-        "Check your knowledge",
+        "Configure technician location tracking",
+        "Support technician workflows with notifications and Copilot",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -18973,8 +18773,8 @@
         "/training/modules/configure-field-service-mobile/7-check",
         "/training/modules/configure-field-service-mobile/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "305cabc1ba32c32b3a1b0dc7caa2cb8505ed6052"
+      "lastModified": "2026-11-05T23:09:00+00:00",
+      "unitSig": "b96fbd9e0d361eff0580b09778bec757853f8160"
     },
     {
       "uid": "learn-dynamics.configure-financial-reports-dynamics-365-business-central",
@@ -19073,8 +18873,8 @@
         "/training/modules/configure-fixed-asset-setup-pages/3-check",
         "/training/modules/configure-fixed-asset-setup-pages/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "eff03012c6015bc5798111ab8e7d53255f99e3f7"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "bf583d0df3276f8f9ada5cc51e2063c01b3daf66"
     },
     {
       "uid": "learn-dynamics.configure-fixed-assets-mgmt-in-dynamics-365-finance-ops",
@@ -19207,8 +19007,8 @@
         "/training/modules/configure-jobs-setup/3-check",
         "/training/modules/configure-jobs-setup/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "f1f6dc7f88e442095ca292e45b2a9a078ce6c274"
+      "lastModified": "2026-11-05T17:18:00+00:00",
+      "unitSig": "ad0903fb5c20d3e7f35df322b40d290d7ec67bfa"
     },
     {
       "uid": "learn-dynamics.configure-ledger-allocations-accruals-in-dynamics-365-finance-ops",
@@ -20394,75 +20194,6 @@
       "unitSig": "8bd0bc26500f78acb24318345d4f236f5b14f451"
     },
     {
-      "uid": "learn-dynamics.connected-customer-service",
-      "title": "Get started with Connected Customer Service for Dynamics 365 and Azure IoT",
-      "url": "https://learn.microsoft.com/training/modules/set-up-connected-customer-service/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/set-up-connected-customer-service",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Service",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Customer relationship management",
-        "Internet of things"
-      ],
-      "units": [
-        "Introduction",
-        "Deployment",
-        "Installation and setup",
-        "Customer assets and IoT alerts",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/set-up-connected-customer-service/1-introduction",
-        "/training/modules/set-up-connected-customer-service/2-deployment",
-        "/training/modules/set-up-connected-customer-service/3-install",
-        "/training/modules/set-up-connected-customer-service/4-assets",
-        "/training/modules/set-up-connected-customer-service/5-check",
-        "/training/modules/set-up-connected-customer-service/6-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "7240b776f21450ffc90e31bd6941773060ce9f28"
-    },
-    {
-      "uid": "learn-dynamics.connected-customer-service-devices",
-      "title": "Register and manage devices with Connected Customer Service for Dynamics 365 and Azure IoT",
-      "url": "https://learn.microsoft.com/training/modules/connected-customer-service-devices/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/connected-customer-service-devices",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Service",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Device management"
-      ],
-      "units": [
-        "Introduction",
-        "Generate alerts from IoT devices",
-        "Device management and interaction",
-        "Create and send commands to IoT devices",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/connected-customer-service-devices/1-devices",
-        "/training/modules/connected-customer-service-devices/2-alerts",
-        "/training/modules/connected-customer-service-devices/3-interactions",
-        "/training/modules/connected-customer-service-devices/4-commands",
-        "/training/modules/connected-customer-service-devices/5-check",
-        "/training/modules/connected-customer-service-devices/6-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "a07574632fcda7177f29fe1606d5ebd26ff921ac"
-    },
-    {
       "uid": "learn-dynamics.control-inventory-multiple-locations",
       "title": "Control inventory at multiple locations in Dynamics 365 Business Central",
       "url": "https://learn.microsoft.com/training/modules/control-inventory-multiple-locations/?WT.mc_id=studentamb_165290",
@@ -20979,87 +20710,6 @@
       "unitSig": "46a8ad22d12885f42625ed8c4739baf2ea30734e"
     },
     {
-      "uid": "learn-dynamics.create-customer-power-bi-reports",
-      "title": "Create customer Power BI reports in Dynamics 365 Customer Voice",
-      "url": "https://learn.microsoft.com/training/modules/create-customer-power-bi-reports/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/create-customer-power-bi-reports",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Voice",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Data analytics",
-        "Data visualization",
-        "Process and workflow"
-      ],
-      "units": [
-        "Introduction",
-        "Use the Dynamics 365 Customer Voice Power BI template",
-        "Connect to Dynamics 365 Customer Voice data with Power BI",
-        "Create customized Power BI reports",
-        "Calculate the Net Promoter Score for Dynamics 365 Customer Voice data",
-        "Exercise - Connect to Dynamics 365 Customer Voice data with Power BI",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/create-customer-power-bi-reports/1-introduction",
-        "/training/modules/create-customer-power-bi-reports/2-template",
-        "/training/modules/create-customer-power-bi-reports/3-connect-data",
-        "/training/modules/create-customer-power-bi-reports/4-create-reports",
-        "/training/modules/create-customer-power-bi-reports/5-net-promoter-score",
-        "/training/modules/create-customer-power-bi-reports/6-lab",
-        "/training/modules/create-customer-power-bi-reports/7-check",
-        "/training/modules/create-customer-power-bi-reports/8-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "826a3c46e8b501a8fa48f9dd1ab504d21b436299"
-    },
-    {
-      "uid": "learn-dynamics.create-customer-voice-surveys",
-      "title": "Create customer surveys with Dynamics 365 Customer Voice",
-      "url": "https://learn.microsoft.com/training/modules/create-customer-voice-surveys/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/create-customer-voice-surveys",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Voice",
-        "Dynamics 365",
-        "Sales"
-      ],
-      "subjects": [
-        "Customer relationship management"
-      ],
-      "units": [
-        "Introduction",
-        "Survey headers and branding",
-        "Add branching logic to surveys",
-        "Personalize a survey with variables",
-        "Add satisfaction metrics to a survey and project",
-        "Add multiple languages for your surveys",
-        "Exercise - Create a basic survey",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/create-customer-voice-surveys/1-introduction",
-        "/training/modules/create-customer-voice-surveys/1a-survey-headers",
-        "/training/modules/create-customer-voice-surveys/2-branching-rules",
-        "/training/modules/create-customer-voice-surveys/3-variables",
-        "/training/modules/create-customer-voice-surveys/3a-metrics",
-        "/training/modules/create-customer-voice-surveys/3b-multi-language",
-        "/training/modules/create-customer-voice-surveys/3c-exercise",
-        "/training/modules/create-customer-voice-surveys/4-check",
-        "/training/modules/create-customer-voice-surveys/5-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "4e92799451895aab3defca23bc7535e9961842d1"
-    },
-    {
       "uid": "learn-dynamics.create-data-set",
       "title": "Create a dataset for a Power BI report in Dynamics 365 Business Central",
       "url": "https://learn.microsoft.com/training/modules/create-data-set/?WT.mc_id=studentamb_165290",
@@ -21297,8 +20947,8 @@
         "/training/modules/create-journals/5-check",
         "/training/modules/create-journals/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "7b6e953a782fc85a997c4b707bc148c106fa00fb"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "727d902f2921960616698e580c877895c3277d77"
     },
     {
       "uid": "learn-dynamics.create-journals-for-jobs",
@@ -21327,8 +20977,8 @@
         "/training/modules/create-journals-for-jobs/3-check",
         "/training/modules/create-journals-for-jobs/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "09c18ad0c118c9d8690d7f91ebe617a5ee4ff8dd"
+      "lastModified": "2026-11-04T23:14:00+00:00",
+      "unitSig": "a8978b68ec18f3d6997d470a4d6a86560036bbea"
     },
     {
       "uid": "learn-dynamics.create-manage-entities",
@@ -21928,8 +21578,8 @@
         "/training/modules/create-resources/6-check",
         "/training/modules/create-resources/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "a16e827b2087e147e297878d31e83560ece8e85a"
+      "lastModified": "2026-11-05T17:18:00+00:00",
+      "unitSig": "429cda82cd79952ef421fcd40a227e85458a7d6c"
     },
     {
       "uid": "learn-dynamics.create-sales-documents-dynamics-365-business-central",
@@ -22173,8 +21823,8 @@
         "/training/modules/cross-dock-items/4-check",
         "/training/modules/cross-dock-items/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "168800a08380e9f67d83f7b2638484a41e5e93b5"
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "21b26a7e0e0c08a1c087053b573290ed7aca4a89"
     },
     {
       "uid": "learn-dynamics.currencies-exchange-rates-dynamics-365-business-central",
@@ -22274,7 +21924,7 @@
         "Associate customer assets",
         "Set up customer asset hierarchies",
         "Use functional locations",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -22286,8 +21936,8 @@
         "/training/modules/customer-assets/6-check",
         "/training/modules/customer-assets/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "549624a53985d19bc66d4b75c2906dd3251a666b"
+      "lastModified": "2026-11-05T23:09:00+00:00",
+      "unitSig": "4ba7667d0eff5062f0a09a074d46f9aadd550789"
     },
     {
       "uid": "learn-dynamics.customer-discounts-dynamics-365-business-central",
@@ -22854,7 +22504,7 @@
         "Define a recurrence pattern",
         "Define invoices",
         "Activate the agreement",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -22867,8 +22517,8 @@
         "/training/modules/define-agreements/check",
         "/training/modules/define-agreements/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "6c11c5be22cc78cad56caa9aafa7bb83567ed15a"
+      "lastModified": "2026-11-05T23:09:00+00:00",
+      "unitSig": "ce44b03f14c3488c1674b52fa70bd77970c7ec42"
     },
     {
       "uid": "learn-dynamics.define-create-business-rules",
@@ -23371,8 +23021,8 @@
         "/training/modules/develop-role-center/8-check",
         "/training/modules/develop-role-center/9-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "0005a29b3ae6702c614a46a8d58a98c1bc087d46"
+      "lastModified": "2026-11-02T23:10:00+00:00",
+      "unitSig": "98a6ff5548b67e729fbbbfccf39de9a8be07978b"
     },
     {
       "uid": "learn-dynamics.digitally-transform-with-dynamics-365",
@@ -23866,42 +23516,6 @@
       ],
       "lastModified": "2026-10-27T17:07:00+00:00",
       "unitSig": "f6541ae9727440cdd2dc232a3022ce31ad81c2f9"
-    },
-    {
-      "uid": "learn-dynamics.embed-surveys",
-      "title": "Embed surveys in your website with Dynamics 365 Customer Voice",
-      "url": "https://learn.microsoft.com/training/modules/embed-surveys/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/embed-surveys",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Voice",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Customer relationship management"
-      ],
-      "units": [
-        "Introduction",
-        "Prepare the survey to use on a website",
-        "Embed a survey in your website",
-        "Use context data from the survey responses",
-        "Exercise - Embed a survey on a website",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/embed-surveys/1-introduction",
-        "/training/modules/embed-surveys/2-prepare-survey",
-        "/training/modules/embed-surveys/2-4-embed-survey",
-        "/training/modules/embed-surveys/2-6-data-context",
-        "/training/modules/embed-surveys/2-8-exercise",
-        "/training/modules/embed-surveys/3-check",
-        "/training/modules/embed-surveys/4-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "51f4c12b2da6f1e575ed5fa039e366cf71dfa3a9"
     },
     {
       "uid": "learn-dynamics.enable-engineering-change-management",
@@ -24439,8 +24053,8 @@
         "/training/modules/explore-job-wip-methods/4-check",
         "/training/modules/explore-job-wip-methods/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "3f495140e4dfe70cc918db70fd42648994347faf"
+      "lastModified": "2026-11-04T23:14:00+00:00",
+      "unitSig": "00d24ac8a226e70cca5245df342fc6ea77ec4dd7"
     },
     {
       "uid": "learn-dynamics.explore-modify-info-dynamics-365-business-central",
@@ -24901,8 +24515,8 @@
         "/training/modules/extend-tables-page-objects/8-check",
         "/training/modules/extend-tables-page-objects/9-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "4ee5538ebcd43d3994c6e32cf2e71ee2ba702f07"
+      "lastModified": "2026-11-05T23:09:00+00:00",
+      "unitSig": "4758fa7e1168ea63603f43004d0fecf794ebcb46"
     },
     {
       "uid": "learn-dynamics.extend-universal-resource-scheduling",
@@ -25280,8 +24894,8 @@
         "/training/modules/fixed-asset-related-records/6-check",
         "/training/modules/fixed-asset-related-records/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "c4e458d0365ba72e859d0c329d3001d001c5c301"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "e362af52c4d001653b1c46fea46ad158475c4b6c"
     },
     {
       "uid": "learn-dynamics.fixed-assets-master-data",
@@ -25312,8 +24926,8 @@
         "/training/modules/fixed-assets-master-data/4-check",
         "/training/modules/fixed-assets-master-data/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "9e7964da36bc4061e3f3cf68da6beafc20cf15f5"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "7a02a5a1ff144fbd3e8e615ff2849460f1ce8b6a"
     },
     {
       "uid": "learn-dynamics.forecast-cash-flow-dynamics-365-business-central",
@@ -26089,40 +25703,6 @@
       ],
       "lastModified": "2026-10-27T17:07:00+00:00",
       "unitSig": "8112186461e1b15990d19cc25a8172d1586f985a"
-    },
-    {
-      "uid": "learn-dynamics.get-started-customer-service-insights",
-      "title": "Get started with Customer Service Insights",
-      "url": "https://learn.microsoft.com/training/modules/get-started-customer-service-insights/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/get-started-customer-service-insights",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Service",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Customer relationship management"
-      ],
-      "units": [
-        "Introduction to Customer Service Insights",
-        "Configure Customer Service Insights",
-        "Discover Customer Service Insights dashboards",
-        "Discover Knowledge search analytics",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/get-started-customer-service-insights/1-introduction",
-        "/training/modules/get-started-customer-service-insights/2-configure",
-        "/training/modules/get-started-customer-service-insights/4-dashboard-reference",
-        "/training/modules/get-started-customer-service-insights/5-knowledge-analytics",
-        "/training/modules/get-started-customer-service-insights/6-check",
-        "/training/modules/get-started-customer-service-insights/7-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "980d0525162540f3b72ac44dda2a7ea90935751c"
     },
     {
       "uid": "learn-dynamics.get-started-demand-planning",
@@ -28159,7 +27739,7 @@
         "Define incident types",
         "Create incident types",
         "Use incident types",
-        "Check your knowledge",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -28170,8 +27750,8 @@
         "/training/modules/incident-types/5-check",
         "/training/modules/incident-types/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "8794e67a5638b343f15a943d59c306cee339a185"
+      "lastModified": "2026-11-05T23:09:00+00:00",
+      "unitSig": "2d36221f37b8143d68398c06f43dad7f5d822faf"
     },
     {
       "uid": "learn-dynamics.incoming-documents-dynamics-365-business-central",
@@ -29004,8 +28584,8 @@
         "/training/modules/introduction-development-process/7-check",
         "/training/modules/introduction-development-process/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "c1a826c04fe91d011c1b4c274788ce7cf735a586"
+      "lastModified": "2026-11-05T23:09:00+00:00",
+      "unitSig": "cd34f4c4dcb0fc83d142e50f4e14b4dd234ee98e"
     },
     {
       "uid": "learn-dynamics.introduction-dynamics-365-commerce",
@@ -29677,8 +29257,8 @@
         "/training/modules/manage-inbound-serial-lot-numbers/5-check",
         "/training/modules/manage-inbound-serial-lot-numbers/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "b3ad64b29fe69a231bfad40a29565cdfc3babeb2"
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "15d37f678e7a5eb866789b3077d0f19170f1e977"
     },
     {
       "uid": "learn-dynamics.manage-internal-warehouse-processes",
@@ -29921,8 +29501,8 @@
         "/training/modules/manage-outbound-serial-lot-numbers/7-check",
         "/training/modules/manage-outbound-serial-lot-numbers/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "4d82688d90467ea4378f529e10f3f7b3226b2c61"
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "abf16a2e3890bc90864a22e4a6935da8c90455a5"
     },
     {
       "uid": "learn-dynamics.manage-personnel",
@@ -30137,8 +29717,8 @@
         "/training/modules/manage-serial-lot-numbers-inventory/7-check",
         "/training/modules/manage-serial-lot-numbers-inventory/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "31a6216174100113accf562d24ef92cd5accb029"
+      "lastModified": "2026-11-05T17:18:00+00:00",
+      "unitSig": "0eb18e4d2b456dfeae881091a8b6723bd0d52f7b"
     },
     {
       "uid": "learn-dynamics.manage-source-code-using-version-control-dynamics-365-finance-operations",
@@ -30327,8 +29907,8 @@
         "/training/modules/manufacturing-introduction/check",
         "/training/modules/manufacturing-introduction/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "9664aa072fc8dcbc89b8e43433b4ff52fb5e82e5"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "f0198441cbd6457c5999629ece68ac5121d4a00d"
     },
     {
       "uid": "learn-dynamics.marketing-emails-texts-push",
@@ -30625,8 +30205,8 @@
         "/training/modules/move-items/7-check",
         "/training/modules/move-items/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "b1a2c10380cf16f22938d1445b699d417669b0dd"
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "17d77c14451db03695b4cb341d332bae018bb07d"
     },
     {
       "uid": "learn-dynamics.multilingual-voice-agents-ivr-contact-center",
@@ -30826,40 +30406,6 @@
       ],
       "lastModified": "2026-10-27T17:07:00+00:00",
       "unitSig": "b625536ff1cf9500d4a24f3f5a434c501fe44906"
-    },
-    {
-      "uid": "learn-dynamics.omnichannel-power-virtual-agents",
-      "title": "Integrate an agent for Contact Center and Dynamics 365 Customer Service",
-      "url": "https://learn.microsoft.com/training/modules/omnichannel-power-virtual-agents/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/omnichannel-power-virtual-agents",
-      "categories": [
-        "Dynamics 365",
-        "ms-copilot"
-      ],
-      "products": [
-        "Customer Service",
-        "Dynamics 365",
-        "ms-copilot"
-      ],
-      "subjects": [
-        "Customer relationship management"
-      ],
-      "units": [
-        "Introduction",
-        "Configure the Microsoft Copilot Studio agent",
-        "Configure Contact Center",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/omnichannel-power-virtual-agents/1-introduction",
-        "/training/modules/omnichannel-power-virtual-agents/3-bot",
-        "/training/modules/omnichannel-power-virtual-agents/4-configure-omnichannel",
-        "/training/modules/omnichannel-power-virtual-agents/5-check",
-        "/training/modules/omnichannel-power-virtual-agents/6-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "0919f3428ad47af302bea472b6f25904bcb7d83c"
     },
     {
       "uid": "learn-dynamics.opportunity-management",
@@ -31569,8 +31115,8 @@
         "/training/modules/posting-groups-setup/4-check",
         "/training/modules/posting-groups-setup/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "4d626450faddf17aff3dc55995d8d9aa26c13762"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "f5e69de93abe1579c53e5c5aacff72f596931d38"
     },
     {
       "uid": "learn-dynamics.predict-late-payments-sales-documents",
@@ -31605,8 +31151,8 @@
         "/training/modules/predict-late-payments-sales-documents/6-check",
         "/training/modules/predict-late-payments-sales-documents/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "91f50c6c9d58530ceb1ad1bf22ef045109de7ddd"
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "048564efb54b910d81632d75c4cc2b5259f663e2"
     },
     {
       "uid": "learn-dynamics.prepare-data-migration-to-dynamics-365-finance-ops",
@@ -32178,8 +31724,8 @@
         "/training/modules/produce-items-warehouse/6-check",
         "/training/modules/produce-items-warehouse/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "b006d9bfde16b158a8709b4b2cfbe6d3e82ee28d"
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "999fc44d66c7f4cc85cf60ed595308deba15d152"
     },
     {
       "uid": "learn-dynamics.product-catalog",
@@ -32605,8 +32151,8 @@
         "/training/modules/put-items-away/8-check",
         "/training/modules/put-items-away/9-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "7507f10e4ce599c3048284e09f59359ae5a42a5c"
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "78b2e74defa45530bcc09954d98b38c7370555e0"
     },
     {
       "uid": "learn-dynamics.rate-change-dynamics-365-business-central",
@@ -32638,8 +32184,8 @@
         "/training/modules/rate-change-dynamics-365-business-central/4-check",
         "/training/modules/rate-change-dynamics-365-business-central/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "b505db22cc7ec07c837f8fa0e4c01a8cd298bfab"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "20d8ae88298c21bcc122ef95a1b5222d7d09c832"
     },
     {
       "uid": "learn-dynamics.receive-invoice-dynamics-d365-business-central",
@@ -33562,41 +33108,6 @@
       "unitSig": "e7374bed5185bdebc0cc6c1c17732a7b694649a6"
     },
     {
-      "uid": "learn-dynamics.schedule-customer-service-scheduling",
-      "title": "Schedule services with Customer Service scheduling",
-      "url": "https://learn.microsoft.com/training/modules/schedule-customer-service-scheduling/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/schedule-customer-service-scheduling",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Service",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Customer relationship management",
-        "Field service management"
-      ],
-      "units": [
-        "Introduction",
-        "Set up fulfillment preferences",
-        "Create service activities",
-        "Schedule service activities",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/schedule-customer-service-scheduling/1-define",
-        "/training/modules/schedule-customer-service-scheduling/2-fulfillment",
-        "/training/modules/schedule-customer-service-scheduling/3-activities",
-        "/training/modules/schedule-customer-service-scheduling/4-schedule",
-        "/training/modules/schedule-customer-service-scheduling/5-check",
-        "/training/modules/schedule-customer-service-scheduling/6-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "1e2d15e7e6e303a8beb481acb47c25d8a4a182f3"
-    },
-    {
       "uid": "learn-dynamics.schedule-work-orders-asset-management",
       "title": "Schedule work orders in Asset Management for Dynamics 365 Supply Chain Management",
       "url": "https://learn.microsoft.com/training/modules/schedule-work-orders-asset-management/?WT.mc_id=studentamb_165290",
@@ -33710,49 +33221,6 @@
       "unitSig": "0401ead9e58bea8b437ad632fe825998934b2a06"
     },
     {
-      "uid": "learn-dynamics.send-customer-voice-surveys",
-      "title": "Send Dynamics 365 Customer Voice surveys",
-      "url": "https://learn.microsoft.com/training/modules/send-customer-voice-surveys/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/send-customer-voice-surveys",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Voice",
-        "Dynamics 365",
-        "Sales"
-      ],
-      "subjects": [
-        "Customer relationship management"
-      ],
-      "units": [
-        "Introduction",
-        "Create and personalize email templates",
-        "Translate email templates into other languages",
-        "Email a survey",
-        "Upload CSV files",
-        "Use links and QR codes",
-        "Analyze survey reports",
-        "Exercise - Create an email template",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/send-customer-voice-surveys/1-introduction",
-        "/training/modules/send-customer-voice-surveys/1a-templates",
-        "/training/modules/send-customer-voice-surveys/1b-translate-templates",
-        "/training/modules/send-customer-voice-surveys/2-email-survey",
-        "/training/modules/send-customer-voice-surveys/2a-csv-files",
-        "/training/modules/send-customer-voice-surveys/3-links-qr-codes",
-        "/training/modules/send-customer-voice-surveys/3a-survey-reports",
-        "/training/modules/send-customer-voice-surveys/3b-exercise",
-        "/training/modules/send-customer-voice-surveys/4-check",
-        "/training/modules/send-customer-voice-surveys/5-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "59df5ed1ec96f33db470cb1004c3528b694d8f0e"
-    },
-    {
       "uid": "learn-dynamics.send-memos-dynamics-365-business-central",
       "title": "Send finance charge memos to customers in Dynamics 365 Business Central",
       "url": "https://learn.microsoft.com/training/modules/send-memos-dynamics-365-business-central/?WT.mc_id=studentamb_165290",
@@ -33785,8 +33253,8 @@
         "/training/modules/send-memos-dynamics-365-business-central/5-check",
         "/training/modules/send-memos-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "fc4aa0c02ac7623b925738df7deeeb3106da5660"
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "2eee1ad962f2318e316a4065952e5513029d6f5c"
     },
     {
       "uid": "learn-dynamics.send-notifications",
@@ -34450,8 +33918,8 @@
         "/training/modules/set-up-field-service-integration/check",
         "/training/modules/set-up-field-service-integration/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "25435b801bd9bd6234b8fb7bd4e1d077a20a6128"
+      "lastModified": "2026-11-05T23:09:00+00:00",
+      "unitSig": "1497add2c6a29ca94de5c37bea49e546bd7eb273"
     },
     {
       "uid": "learn-dynamics.set-up-financial-dimensions-finance",
@@ -34785,8 +34253,8 @@
         "/training/modules/set-up-job-posting-groups/3-check",
         "/training/modules/set-up-job-posting-groups/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "0700b6a30946ba596f595756a4656c9ec8c50867"
+      "lastModified": "2026-11-04T23:14:00+00:00",
+      "unitSig": "c1c94513914fe762160b9b251a2c8569f71841fb"
     },
     {
       "uid": "learn-dynamics.set-up-job-task-lines",
@@ -34847,8 +34315,8 @@
         "/training/modules/set-up-jobs-foreign-currencies/3-check",
         "/training/modules/set-up-jobs-foreign-currencies/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "99d78e295940a19923f36d0ba3359521fe328994"
+      "lastModified": "2026-11-05T17:18:00+00:00",
+      "unitSig": "e6a5179c22179a18e2ea758380f2467d2320b1bf"
     },
     {
       "uid": "learn-dynamics.set-up-landed-cost-supply-chain-management",
@@ -35538,8 +35006,8 @@
         "/training/modules/set-up-timesheets/6-check",
         "/training/modules/set-up-timesheets/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "9f6a917d0f94c4187876f400164cbfa830611407"
+      "lastModified": "2026-11-04T23:14:00+00:00",
+      "unitSig": "f1c210a9ab85cca44dd9f6ffc8d5530ef64c48d3"
     },
     {
       "uid": "learn-dynamics.set-up-tracking-items",
@@ -35943,8 +35411,8 @@
         "/training/modules/settlements-dynamics-365-business-central/3-check",
         "/training/modules/settlements-dynamics-365-business-central/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "f5f0fcc2658f2cc067453c1e90515c333ede2c35"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "77093da1a00d057cb2478d3efa8b13dc440a7760"
     },
     {
       "uid": "learn-dynamics.setup-asset-leasing-finance",
@@ -36067,40 +35535,6 @@
       ],
       "lastModified": "2026-10-27T17:07:00+00:00",
       "unitSig": "0fb4f2dcc61164c95f3752346286cf3731a692ad"
-    },
-    {
-      "uid": "learn-dynamics.setup-customer-service-scheduling",
-      "title": "Set up Customer Service scheduling",
-      "url": "https://learn.microsoft.com/training/modules/setup-customer-service-scheduling/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/setup-customer-service-scheduling",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Service",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Frontline support"
-      ],
-      "units": [
-        "Introduction",
-        "Set up service scheduling",
-        "Define resources",
-        "Define facilities and sites",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/setup-customer-service-scheduling/1-introduction",
-        "/training/modules/setup-customer-service-scheduling/2-configure",
-        "/training/modules/setup-customer-service-scheduling/3-resources",
-        "/training/modules/setup-customer-service-scheduling/resource-groups-facilities-sites",
-        "/training/modules/setup-customer-service-scheduling/4-check",
-        "/training/modules/setup-customer-service-scheduling/5-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "a5e844e1d2b1f3ffd2a57e0541be8f98729845a1"
     },
     {
       "uid": "learn-dynamics.setup-finance-insights",
@@ -36402,8 +35836,8 @@
         "/training/modules/ship-cross-docked-items/4-check",
         "/training/modules/ship-cross-docked-items/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "9a063ff87b85db2a2f99d5d0d6522c6224e4f8ce"
+      "lastModified": "2026-11-06T17:10:00+00:00",
+      "unitSig": "1ad240737915733e9fce2e4c26464adc9ee7457e"
     },
     {
       "uid": "learn-dynamics.ship-invoice-items-dynamics-365-business-central",
@@ -36480,84 +35914,8 @@
         "/training/modules/shopify-connector-setup/check",
         "/training/modules/shopify-connector-setup/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "c79388ba6859127e3d32f8c723e97acb1b81c072"
-    },
-    {
-      "uid": "learn-dynamics.sms-channels",
-      "title": "Deploy an SMS channel in Omnichannel for Dynamics 365 Customer Service",
-      "url": "https://learn.microsoft.com/training/modules/sms-channels/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/sms-channels",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Service",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Customer relationship management"
-      ],
-      "units": [
-        "Introduction",
-        "Configure phone numbers and messaging accounts",
-        "Configure SMS workstream",
-        "Configure SMS workstream options",
-        "Route SMS conversations",
-        "Configure Additional Settings",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/sms-channels/1-introduction",
-        "/training/modules/sms-channels/phone-numbers",
-        "/training/modules/sms-channels/2-sms-channel",
-        "/training/modules/sms-channels/3-telesign",
-        "/training/modules/sms-channels/4-twilio",
-        "/training/modules/sms-channels/additional-settings",
-        "/training/modules/sms-channels/5-check",
-        "/training/modules/sms-channels/6-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "2966ce152291c72d38b79071cc922c5ad0a3f71b"
-    },
-    {
-      "uid": "learn-dynamics.social-channels",
-      "title": "Deploy social messaging channels in Omnichannel for Dynamics 365 Customer Service",
-      "url": "https://learn.microsoft.com/training/modules/social-channels/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/social-channels",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Customer Service",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Customer relationship management"
-      ],
-      "units": [
-        "Introduction",
-        "Configure a Facebook channel",
-        "Configure a LINE channel",
-        "Configure a WhatsApp channel through Twilio",
-        "Configure a WeChat channel",
-        "Configure additional options",
-        "Check your knowledge",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/social-channels/1-introduction",
-        "/training/modules/social-channels/2-configure-facebook-channel",
-        "/training/modules/social-channels/3-configure-line-channel",
-        "/training/modules/social-channels/5-configure-whatsapp-channel",
-        "/training/modules/social-channels/6-configure-we-chat-channel",
-        "/training/modules/social-channels/9-addtional-options",
-        "/training/modules/social-channels/7-check",
-        "/training/modules/social-channels/8-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "e7506fb91d043f023d17f4e188226b10fa815296"
+      "lastModified": "2026-11-05T23:09:00+00:00",
+      "unitSig": "2813c9393dbb68d042205acd2b50d333bc481b38"
     },
     {
       "uid": "learn-dynamics.suggest-vendor-payments-dynamics-365-business-central",
@@ -36759,8 +36117,8 @@
         "/training/modules/synchronize-customers-shopify/check",
         "/training/modules/synchronize-customers-shopify/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "38545303824bb865fd3eacffd501f8df1df7fbc6"
+      "lastModified": "2026-11-05T23:09:00+00:00",
+      "unitSig": "e6306a34a21ebfc689c4c011a27819f34ca85ff3"
     },
     {
       "uid": "learn-dynamics.synchronize-transactions-payouts",
@@ -36791,8 +36149,8 @@
         "/training/modules/synchronize-transactions-payouts/check",
         "/training/modules/synchronize-transactions-payouts/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "a5b202485b82092df74bda75ef9bc9324fb900c0"
+      "lastModified": "2026-11-05T17:18:00+00:00",
+      "unitSig": "b903ccdc124525e9bd178eaf46e2f5c51d5b701c"
     },
     {
       "uid": "learn-dynamics.test-automation",
@@ -38335,8 +37693,8 @@
         "/training/modules/use-sales-business-central/check",
         "/training/modules/use-sales-business-central/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "f88456fc6f99f0e2784c3c90fb0f10b958719f8d"
+      "lastModified": "2026-11-05T17:18:00+00:00",
+      "unitSig": "236ac8fd60e30c56594342d73b78976456011c2f"
     },
     {
       "uid": "learn-dynamics.use-sales-inventory-forecast-extension",
@@ -38370,8 +37728,8 @@
         "/training/modules/use-sales-inventory-forecast-extension/5-check",
         "/training/modules/use-sales-inventory-forecast-extension/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "06b855463b563a5156d7a02944d00008c1215fa5"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "6c044ca05765edcfb03af6eb87af36abbec8e37a"
     },
     {
       "uid": "learn-dynamics.use-services-model-driven-apps",
@@ -39086,8 +38444,8 @@
         "/training/modules/work-power-bi/6-check",
         "/training/modules/work-power-bi/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "e9ff4415650c2eab46e36c0ea61e3c225e7c57ee"
+      "lastModified": "2026-11-09T17:10:00+00:00",
+      "unitSig": "238b8ca49c97fa89ca9e241cfb2fe46b3a9be2e2"
     },
     {
       "uid": "learn-dynamics.work-sales-assignment-rules",
@@ -39894,8 +39252,8 @@
         "/training/modules/work-with-jobs-and-resources/4-check",
         "/training/modules/work-with-jobs-and-resources/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "9972fb74dcc9f848a51044a5a43e64ad25f0ec7b"
+      "lastModified": "2026-11-05T17:18:00+00:00",
+      "unitSig": "4cc8af19d2be6ba3ae02bdb7a7815243c67a9d43"
     },
     {
       "uid": "learn-dynamics.work-with-landed-cost-supply-chain-management",
@@ -44972,7 +44330,7 @@
         "Introduction",
         "What is generative AI?",
         "Understand responsible AI",
-        "Your Microsoft Copilot workflow companions",
+        "Identify the Microsoft Copilot mode that fits your work",
         "Module assessment",
         "Summary"
       ],
@@ -44984,8 +44342,8 @@
         "/training/modules/what-generative-ai/5-knowledge-check",
         "/training/modules/what-generative-ai/6-summary"
       ],
-      "lastModified": "2026-10-26T17:13:00+00:00",
-      "unitSig": "3978dc5b7bada9e0f142eb4698a93f543b851003"
+      "lastModified": "2026-11-05T00:10:00+00:00",
+      "unitSig": "b55d61db2605e1840c8ad2548adaee2b1a0800f5"
     },
     {
       "uid": "learn-m365.wvd-intro",
@@ -50068,8 +49426,8 @@
         "/training/modules/intro-to-azure-application-gateway/5-knowledge-check",
         "/training/modules/intro-to-azure-application-gateway/6-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "50077de337095b296138dfac1e9b394de6036b25"
+      "lastModified": "2026-11-03T08:10:00+00:00",
+      "unitSig": "ca06bc7209ad14d2e2ac87d5fa4e13cea6b57696"
     },
     {
       "uid": "learn.azure.intro-to-azure-communication-services",
@@ -52537,9 +51895,9 @@
       "units": [
         "Introduction",
         "What is Playwright?",
-        "Exercise: Getting Started with Playwright",
-        "Exercise: Deconstruct a Playwright Test",
-        "Understand Test Specification",
+        "Exercise: Getting started with Playwright",
+        "Exercise: Deconstruct a Playwright test",
+        "Understand test specification",
         "Exercise: Using Playwright in Visual Studio Code",
         "Module assessment",
         "Summary"
@@ -52554,8 +51912,8 @@
         "/training/modules/build-with-playwright/7-knowledge-check",
         "/training/modules/build-with-playwright/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "dfc52f5f2011ac74d9b40854ed38dbe6e1bbf3ff"
+      "lastModified": "2026-11-02T23:19:00+00:00",
+      "unitSig": "aaed81fbaf00c5719d0b0fb9169ac48f21342f68"
     },
     {
       "uid": "learn.build-your-first-aspnet-core-web-app",
@@ -55124,6 +54482,93 @@
       "unitSig": "857241aee21d8fb8f5e6276ac4a4e773396fc703"
     },
     {
+      "uid": "learn.devrel.azure-local-backup-disaster-recovery",
+      "title": "Azure Local backup and disaster recovery",
+      "url": "https://learn.microsoft.com/training/modules/azure-local-backup-disaster-recovery/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-local-backup-disaster-recovery",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "azure-local"
+      ],
+      "subjects": [
+        "Infrastructure",
+        "Storage"
+      ],
+      "units": [
+        "Introduction",
+        "Protection method boundaries",
+        "Determine recovery dependencies",
+        "Inspect protection evidence",
+        "Recover a failed Azure Local node",
+        "Recover a full Azure Local instance",
+        "Restore workloads in isolation",
+        "Transition to production",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-local-backup-disaster-recovery/1-introduction",
+        "/training/modules/azure-local-backup-disaster-recovery/2-protection-method-boundaries",
+        "/training/modules/azure-local-backup-disaster-recovery/3-determine-recovery-dependencies",
+        "/training/modules/azure-local-backup-disaster-recovery/4-inspect-protection-evidence",
+        "/training/modules/azure-local-backup-disaster-recovery/5-recover-failed-node",
+        "/training/modules/azure-local-backup-disaster-recovery/6-recover-full-instance",
+        "/training/modules/azure-local-backup-disaster-recovery/7-restore-workloads-isolation",
+        "/training/modules/azure-local-backup-disaster-recovery/8-transition-to-production",
+        "/training/modules/azure-local-backup-disaster-recovery/9-knowledge-check",
+        "/training/modules/azure-local-backup-disaster-recovery/10-summary"
+      ],
+      "lastModified": "2026-11-09T12:10:00+00:00",
+      "unitSig": "84fad5e821fd6e4d10455d67d6605da7f293e8a1"
+    },
+    {
+      "uid": "learn.devrel.azure-local-disconnected-operations",
+      "title": "Azure Local disconnected operations",
+      "url": "https://learn.microsoft.com/training/modules/azure-local-disconnected-operations/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-local-disconnected-operations",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "azure-local"
+      ],
+      "subjects": [
+        "Infrastructure"
+      ],
+      "units": [
+        "Introduction",
+        "Evaluate disconnected operations eligibility",
+        "Plan dependency architecture",
+        "Plan the local identity lifecycle",
+        "Maintain certificate trust",
+        "Inspect the local management-client context",
+        "Establish a trusted artifact supply",
+        "Manage the operational lifecycle",
+        "Apply disconnected workload restrictions",
+        "Plan recovery lifecycle",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-local-disconnected-operations/1-introduction",
+        "/training/modules/azure-local-disconnected-operations/2-evaluate-disconnected-operations-eligibility",
+        "/training/modules/azure-local-disconnected-operations/3-plan-dependency-architecture",
+        "/training/modules/azure-local-disconnected-operations/4-plan-local-identity-lifecycle",
+        "/training/modules/azure-local-disconnected-operations/5-maintain-certificate-trust",
+        "/training/modules/azure-local-disconnected-operations/6-inspect-management-client-context",
+        "/training/modules/azure-local-disconnected-operations/7-establish-trusted-artifact-supply",
+        "/training/modules/azure-local-disconnected-operations/8-manage-operational-lifecycle",
+        "/training/modules/azure-local-disconnected-operations/9-apply-workload-restrictions",
+        "/training/modules/azure-local-disconnected-operations/10-plan-recovery-lifecycle",
+        "/training/modules/azure-local-disconnected-operations/11-knowledge-check",
+        "/training/modules/azure-local-disconnected-operations/12-summary"
+      ],
+      "lastModified": "2026-11-07T08:12:00+00:00",
+      "unitSig": "040927d59781da2e12bdd7ee93d2a7d06d00ffeb"
+    },
+    {
       "uid": "learn.devrel.azure-local-hardware-identity-readiness",
       "title": "Prepare Azure Local hardware and identity readiness",
       "url": "https://learn.microsoft.com/training/modules/azure-local-hardware-identity-readiness/?WT.mc_id=studentamb_165290",
@@ -55211,6 +54656,176 @@
       ],
       "lastModified": "2026-10-30T07:27:00+00:00",
       "unitSig": "a26da692a619905ed078cedf9d4658a876173094"
+    },
+    {
+      "uid": "learn.devrel.azure-local-platform-deployment",
+      "title": "Deploy the Azure Local platform",
+      "url": "https://learn.microsoft.com/training/modules/azure-local-platform-deployment/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-local-platform-deployment",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "azure-local"
+      ],
+      "subjects": [
+        "Infrastructure"
+      ],
+      "units": [
+        "Introduction",
+        "Azure Local deployment boundary",
+        "Review the deployment contract",
+        "Validate deployment readiness",
+        "Lifecycle orchestration",
+        "Diagnose Azure Local deployment orchestration failure",
+        "Commission the Azure Local deployment",
+        "Evaluate simplified machine provisioning",
+        "Exercise - Review deployment decisions",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-local-platform-deployment/1-introduction",
+        "/training/modules/azure-local-platform-deployment/2-azure-local-deployment-boundary",
+        "/training/modules/azure-local-platform-deployment/3-review-deployment-contract",
+        "/training/modules/azure-local-platform-deployment/4-validate-deployment-readiness",
+        "/training/modules/azure-local-platform-deployment/5-lifecycle-orchestration",
+        "/training/modules/azure-local-platform-deployment/6-diagnose-deployment-orchestration-failure",
+        "/training/modules/azure-local-platform-deployment/7-commission-azure-local-deployment",
+        "/training/modules/azure-local-platform-deployment/8-evaluate-simplified-machine-provisioning",
+        "/training/modules/azure-local-platform-deployment/9-exercise-review-deployment-decisions",
+        "/training/modules/azure-local-platform-deployment/10-knowledge-check",
+        "/training/modules/azure-local-platform-deployment/11-summary"
+      ],
+      "lastModified": "2026-11-03T08:10:00+00:00",
+      "unitSig": "ffa4dd2d2b98609456635fe63ab9f51cadbe6767"
+    },
+    {
+      "uid": "learn.devrel.azure-local-security-governance",
+      "title": "Azure Local security and governance",
+      "url": "https://learn.microsoft.com/training/modules/azure-local-security-governance/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-local-security-governance",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "azure-local"
+      ],
+      "subjects": [
+        "Infrastructure",
+        "Security"
+      ],
+      "units": [
+        "Introduction",
+        "Map trust boundaries",
+        "Inspect Azure Local secured state",
+        "Diagnose policy findings",
+        "Govern application exceptions",
+        "Protect virtual machine workloads",
+        "Prepare secure workload recovery",
+        "Retain security evidence",
+        "Respond to security incidents",
+        "Retire resources securely",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-local-security-governance/1-introduction",
+        "/training/modules/azure-local-security-governance/2-map-trust-boundaries",
+        "/training/modules/azure-local-security-governance/3-inspect-secured-state",
+        "/training/modules/azure-local-security-governance/4-diagnose-policy-findings",
+        "/training/modules/azure-local-security-governance/5-govern-application-exceptions",
+        "/training/modules/azure-local-security-governance/6-protect-virtual-machine-workloads",
+        "/training/modules/azure-local-security-governance/7-prepare-secure-workload-recovery",
+        "/training/modules/azure-local-security-governance/8-retain-security-evidence",
+        "/training/modules/azure-local-security-governance/9-respond-security-incidents",
+        "/training/modules/azure-local-security-governance/10-retire-resources-securely",
+        "/training/modules/azure-local-security-governance/11-knowledge-check",
+        "/training/modules/azure-local-security-governance/12-summary"
+      ],
+      "lastModified": "2026-11-06T08:20:00+00:00",
+      "unitSig": "57acf3ae22c34e92c524434bb91f9a3f58987c53"
+    },
+    {
+      "uid": "learn.devrel.azure-local-storage-resilience",
+      "title": "Azure Local storage architecture and maintenance",
+      "url": "https://learn.microsoft.com/training/modules/azure-local-storage-architecture/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-local-storage-architecture",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "azure-local"
+      ],
+      "subjects": [
+        "Infrastructure",
+        "Storage"
+      ],
+      "units": [
+        "Introduction",
+        "Azure Local storage design",
+        "Storage resiliency options",
+        "Failure-domain design",
+        "Azure Local storage maintenance",
+        "Azure Local volume maintenance",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-local-storage-architecture/1-introduction",
+        "/training/modules/azure-local-storage-architecture/2-storage-design",
+        "/training/modules/azure-local-storage-architecture/3-storage-resiliency-options",
+        "/training/modules/azure-local-storage-architecture/4-failure-domain-design",
+        "/training/modules/azure-local-storage-architecture/5-storage-maintenance",
+        "/training/modules/azure-local-storage-architecture/6-volume-maintenance",
+        "/training/modules/azure-local-storage-architecture/7-knowledge-check",
+        "/training/modules/azure-local-storage-architecture/8-summary"
+      ],
+      "lastModified": "2026-11-03T08:10:00+00:00",
+      "unitSig": "c6a82a180dac7ec14ad817d28c66fd4e8320a770"
+    },
+    {
+      "uid": "learn.devrel.azure-local-virtual-machine-operations",
+      "title": "Operate virtual machine workloads on Azure Local",
+      "url": "https://learn.microsoft.com/training/modules/azure-local-virtual-machine-operations/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-local-virtual-machine-operations",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "azure-local"
+      ],
+      "subjects": [
+        "Infrastructure"
+      ],
+      "units": [
+        "Introduction",
+        "Azure Local virtual machine operations",
+        "Prepare virtual machine dependencies",
+        "Assess virtual machine health",
+        "Apply virtual machine lifecycle changes",
+        "Virtual machine infrastructure restrictions",
+        "Manage guest operating systems",
+        "Plan security-aware recovery",
+        "Configure graphics acceleration",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-local-virtual-machine-operations/1-introduction",
+        "/training/modules/azure-local-virtual-machine-operations/2-virtual-machine-operations",
+        "/training/modules/azure-local-virtual-machine-operations/3-virtual-machine-dependencies",
+        "/training/modules/azure-local-virtual-machine-operations/4-virtual-machine-health",
+        "/training/modules/azure-local-virtual-machine-operations/5-virtual-machine-lifecycle",
+        "/training/modules/azure-local-virtual-machine-operations/6-network-mobility-restrictions",
+        "/training/modules/azure-local-virtual-machine-operations/7-guest-management",
+        "/training/modules/azure-local-virtual-machine-operations/8-security-aware-recovery",
+        "/training/modules/azure-local-virtual-machine-operations/9-graphics-acceleration",
+        "/training/modules/azure-local-virtual-machine-operations/10-knowledge-check",
+        "/training/modules/azure-local-virtual-machine-operations/11-summary"
+      ],
+      "lastModified": "2026-11-04T23:14:00+00:00",
+      "unitSig": "bf3df1f63b2ce395290326c3be2dcc197913d2e4"
     },
     {
       "uid": "learn.devrel.certificate-autoenrollment",
@@ -68714,8 +68329,8 @@
         "/training/modules/get-started-microsoft-teams-education/knowledge-check",
         "/training/modules/get-started-microsoft-teams-education/summary"
       ],
-      "lastModified": "2026-10-22T23:06:00+00:00",
-      "unitSig": "51622a688f0c5e8d961f32c7bc68a2213535946b"
+      "lastModified": "2026-11-03T00:07:00+00:00",
+      "unitSig": "bc3d8e99ddf766d86e0cb737b25889e2e4333f27"
     },
     {
       "uid": "learn.mec.get-started-with-onenote",
@@ -69756,8 +69371,8 @@
         "/training/modules/support-reading-fluency-practice-with-reading-progress/knowledge-check",
         "/training/modules/support-reading-fluency-practice-with-reading-progress/summary"
       ],
-      "lastModified": "2026-10-22T23:06:00+00:00",
-      "unitSig": "0f7213ca9da0160b7f8eddcbfaa0d5d473c6aa45"
+      "lastModified": "2026-11-03T00:07:00+00:00",
+      "unitSig": "536553b474f4f6e14b654f63797f9f39b2dd15de"
     },
     {
       "uid": "learn.mec.teach-information-literacy-search-coach-search-progress",
@@ -76563,8 +76178,8 @@
         "/training/modules/advanced-security-compute/12-knowledge-check",
         "/training/modules/advanced-security-compute/13-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "d53d23e7debeef6eb0405b269d1d4ef3d234b291"
+      "lastModified": "2026-11-06T08:20:00+00:00",
+      "unitSig": "056add94506ac49c5f4e0e69477c1a36b7ab2fec"
     },
     {
       "uid": "learn.wwl.ai-agent-fundamentals",
@@ -77459,6 +77074,41 @@
       "unitSig": "b4f63dad511fab11f459c917a4682c194e35aa3e"
     },
     {
+      "uid": "learn.wwl.architecting-code-specifications-ai",
+      "title": "Architect code specifications for AI",
+      "url": "https://learn.microsoft.com/training/modules/architecting-code-specifications-ai/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/architecting-code-specifications-ai",
+      "categories": [
+        "Visual Studio Code"
+      ],
+      "products": [
+        "Visual Studio Code"
+      ],
+      "subjects": [
+        "app-development"
+      ],
+      "units": [
+        "Introduction",
+        "Deconstruct a feature request",
+        "Write explicit specifications",
+        "Define boundaries and edge cases",
+        "Exercise - Write specifications",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/architecting-code-specifications-ai/1-introduction",
+        "/training/modules/architecting-code-specifications-ai/2-deconstruct-feature-request",
+        "/training/modules/architecting-code-specifications-ai/3-write-explicit-specifications",
+        "/training/modules/architecting-code-specifications-ai/4-define-boundaries-edge-cases",
+        "/training/modules/architecting-code-specifications-ai/5-exercise",
+        "/training/modules/architecting-code-specifications-ai/6-knowledge-check",
+        "/training/modules/architecting-code-specifications-ai/7-summary"
+      ],
+      "lastModified": "2026-11-03T23:10:00+00:00",
+      "unitSig": "8da9e238850f7496ec497f7e6b541b789607cf26"
+    },
+    {
       "uid": "learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql",
       "title": "Assess SQL Server databases for migration to Azure SQL",
       "url": "https://learn.microsoft.com/training/modules/assess-sql-server-databases-for-migration-to-azure-sql/?WT.mc_id=studentamb_165290",
@@ -78056,8 +77706,8 @@
         "/training/modules/automated-evaluation-genaiops/8-knowledge-check",
         "/training/modules/automated-evaluation-genaiops/9-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "8c0c8506d2368c6b5411b7fa7858280da7d0e7dd"
+      "lastModified": "2026-11-04T18:27:00+00:00",
+      "unitSig": "d2623a2edf5825af78673e7f3fc2c1a3b424ba26"
     },
     {
       "uid": "learn.wwl.automatic-function-calling",
@@ -78479,6 +78129,41 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "78f8425be45a6c5334efb23bfb065ffa1f810906"
+    },
+    {
+      "uid": "learn.wwl.benchmark-your-code-performance",
+      "title": "Benchmark your code's performance",
+      "url": "https://learn.microsoft.com/training/modules/benchmark-your-code-performance/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/benchmark-your-code-performance",
+      "categories": [
+        "Visual Studio Code"
+      ],
+      "products": [
+        "Visual Studio Code"
+      ],
+      "subjects": [
+        "app-development"
+      ],
+      "units": [
+        "Introduction",
+        "Understand code efficiency",
+        "Measure and profile code performance",
+        "Use debugging to identify issues",
+        "Exercise - Benchmark and optimize a sales report generator",
+        "Check your knowledge",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/benchmark-your-code-performance/1-introduction",
+        "/training/modules/benchmark-your-code-performance/2-understand-code-efficiency",
+        "/training/modules/benchmark-your-code-performance/3-measure-profile-code-performance",
+        "/training/modules/benchmark-your-code-performance/4-use-debugging-to-identify-issues",
+        "/training/modules/benchmark-your-code-performance/5-exercise",
+        "/training/modules/benchmark-your-code-performance/6-knowledge-check",
+        "/training/modules/benchmark-your-code-performance/7-summary"
+      ],
+      "lastModified": "2026-11-05T18:40:00+00:00",
+      "unitSig": "9120a3c47f0e93985ac5408e0e4213e97a52e00c"
     },
     {
       "uid": "learn.wwl.build-agent-with-custom-tools",
@@ -79879,8 +79564,8 @@
         "/training/modules/centralize-traffic-inspection-azure-firewall/5-knowledge-check",
         "/training/modules/centralize-traffic-inspection-azure-firewall/6-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "d6bb745fd2f6f583e09694f516ec700a05546b58"
+      "lastModified": "2026-11-06T08:20:00+00:00",
+      "unitSig": "b5292db60481d89016b6ae946bb969df54c2cf46"
     },
     {
       "uid": "learn.wwl.challenge-manage-customers-business-central",
@@ -80873,8 +80558,8 @@
         "/training/modules/cloud-hybrid-connectivity/7-knowledge-check",
         "/training/modules/cloud-hybrid-connectivity/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "1ffca3b2e517ce1c1f724362594342b76ead9953"
+      "lastModified": "2026-11-06T08:20:00+00:00",
+      "unitSig": "4cc6160fc38650942a16d6ca4559b6ceafb16d87"
     },
     {
       "uid": "learn.wwl.code-defensively-with-best-practices",
@@ -81800,8 +81485,8 @@
         "/training/modules/configure-azure-key-vault-networking-settings/10-knowledge-check",
         "/training/modules/configure-azure-key-vault-networking-settings/11-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "7e1f3befdad8d3ef66de2f903ff59b463ae6548e"
+      "lastModified": "2026-11-06T08:20:00+00:00",
+      "unitSig": "0db4192be5a0a1821d1ad60fa835741657265686"
     },
     {
       "uid": "learn.wwl.configure-azure-kubernetes-service-cluster",
@@ -81955,8 +81640,8 @@
         "/training/modules/configure-backup-restore-azure-cosmos-db-nosql/7-knowledge-check",
         "/training/modules/configure-backup-restore-azure-cosmos-db-nosql/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "f2480ddcc1aca3e813b853891a5c799c231e1dcb"
+      "lastModified": "2026-11-06T08:20:00+00:00",
+      "unitSig": "4e34d3bb7644201c1909392bb9108b4b45956968"
     },
     {
       "uid": "learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms",
@@ -82486,8 +82171,8 @@
         "/training/modules/configure-defender-cloud-security-controls/4-knowledge-check",
         "/training/modules/configure-defender-cloud-security-controls/5-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "629e332378096e14d8319908416ed8a6b4426065"
+      "lastModified": "2026-11-06T08:20:00+00:00",
+      "unitSig": "4aac9b6e3b36eda2d6e88f0dae69362be67e143b"
     },
     {
       "uid": "learn.wwl.configure-defender-vulnerability-management",
@@ -82783,8 +82468,8 @@
         "/training/modules/configure-integrate-analytics-agent-defender-cloud/5-knowledge-check",
         "/training/modules/configure-integrate-analytics-agent-defender-cloud/6-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "3536bca6d72f9b90db6582ee2daee43f5db68d9f"
+      "lastModified": "2026-11-09T12:10:00+00:00",
+      "unitSig": "b5960983b0584323efce8c1ee13006580e0494c4"
     },
     {
       "uid": "learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint",
@@ -84065,8 +83750,8 @@
         "/training/modules/configure-trusted-launch-azure-virtual-machines/6-knowledge-check",
         "/training/modules/configure-trusted-launch-azure-virtual-machines/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "70862b7c19253d969ed5defcebccaa3ef492e977"
+      "lastModified": "2026-11-09T12:10:00+00:00",
+      "unitSig": "cb4022fdbe10202861981c297361087aa04f8982"
     },
     {
       "uid": "learn.wwl.configure-updates-azure-arc-enabled-servers",
@@ -84638,8 +84323,8 @@
         "/training/modules/connect-azure-server-private-endpoint-using-azure-portal/5-knowledge-check",
         "/training/modules/connect-azure-server-private-endpoint-using-azure-portal/6-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "ff05e357eff324de176e8875bfc2609d56320371"
+      "lastModified": "2026-11-09T12:10:00+00:00",
+      "unitSig": "33fc601d3f068cc009cda5b7a13da0655510f768"
     },
     {
       "uid": "learn.wwl.connect-code-apps-platform-services",
@@ -85317,8 +85002,8 @@
         "/training/modules/convert-oracle-schema-azure-database-postgresql-ai/7-knowledge-check",
         "/training/modules/convert-oracle-schema-azure-database-postgresql-ai/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "1cc546ff9e6405708eec5e812d486a173786ac5a"
+      "lastModified": "2026-11-02T18:22:00+00:00",
+      "unitSig": "81fceb6b2e2f54ff132588b89d55429094f2b197"
     },
     {
       "uid": "learn.wwl.copilot-app-modes",
@@ -85349,8 +85034,8 @@
         "/training/modules/copilot-app-modes/3-knowledge-check",
         "/training/modules/copilot-app-modes/4-summary"
       ],
-      "lastModified": "2026-10-26T17:13:00+00:00",
-      "unitSig": "913bf4b0a6fdc585dbcfbe00c0a0d3746e800883"
+      "lastModified": "2026-11-02T17:12:00+00:00",
+      "unitSig": "b06c2aa38a2f25475632eae3352b7b338f1fe62f"
     },
     {
       "uid": "learn.wwl.copilot-studio-structured-automation",
@@ -86060,8 +85745,8 @@
         "/training/modules/create-log-analytics-workspace-microsoft-defender-cloud/4-knowledge-check",
         "/training/modules/create-log-analytics-workspace-microsoft-defender-cloud/5-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "3fb4eec12f4b6435d4e5034ed3dcb62ff399e0dc"
+      "lastModified": "2026-11-09T12:10:00+00:00",
+      "unitSig": "4d1ffa68cecef6629421ac81398d58ef3ed236c8"
     },
     {
       "uid": "learn.wwl.create-manage-active-directory-objects",
@@ -88409,8 +88094,8 @@
         "/training/modules/deploy-model-github-actions/6-knowledge-check",
         "/training/modules/deploy-model-github-actions/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "76281065d1b4f9896167d24367282e38cf3fb09e"
+      "lastModified": "2026-11-06T18:11:00+00:00",
+      "unitSig": "5f30f8c2d593f72a315c055f2d519a0a460e8b7b"
     },
     {
       "uid": "learn.wwl.deploy-operate-code-apps",
@@ -89582,39 +89267,6 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "11c1b55d51d41637f06311562be6065a031fd9ea"
-    },
-    {
-      "uid": "learn.wwl.describe-concepts-of-relational-data",
-      "title": "Describe concepts of relational data",
-      "url": "https://learn.microsoft.com/training/modules/describe-concepts-of-relational-data/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/describe-concepts-of-relational-data",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Azure"
-      ],
-      "subjects": [
-        "databases"
-      ],
-      "units": [
-        "Introduction",
-        "Explore the characteristics of relational data",
-        "Explore relational data structures",
-        "Choose the right platform for a relational workload",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/describe-concepts-of-relational-data/1-introduction",
-        "/training/modules/describe-concepts-of-relational-data/2-explore-characteristics",
-        "/training/modules/describe-concepts-of-relational-data/3-explore-structures",
-        "/training/modules/describe-concepts-of-relational-data/4-choose-right-platform-relational-workload",
-        "/training/modules/describe-concepts-of-relational-data/5-knowledge-check",
-        "/training/modules/describe-concepts-of-relational-data/6-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "ade06c299ae12e7ad0d4775654e4f3ecb9fbbe4a"
     },
     {
       "uid": "learn.wwl.describe-core-architectural-components-of-azure",
@@ -91978,8 +91630,8 @@
         "/training/modules/design-data-modeling-partitioning-azure-cosmos-db-nosql/10-knowledge-check",
         "/training/modules/design-data-modeling-partitioning-azure-cosmos-db-nosql/11-summary"
       ],
-      "lastModified": "2026-10-31T07:10:00+00:00",
-      "unitSig": "198e8bcee03033ff26cd3af369d8a1a79ec130e7"
+      "lastModified": "2026-11-05T23:10:00+00:00",
+      "unitSig": "576778fb499850645ebdf2a32bf208a0daf85dfc"
     },
     {
       "uid": "learn.wwl.design-data-partitioning-strategy",
@@ -93116,8 +92768,8 @@
         "/training/modules/design-machine-learning-model-training-solution/6-knowledge-check",
         "/training/modules/design-machine-learning-model-training-solution/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "906bb403a17426dabc925cb3504ca0d0a98b9770"
+      "lastModified": "2026-11-06T18:11:00+00:00",
+      "unitSig": "b179579855cda04420cb29eabc320f5a9b5030d8"
     },
     {
       "uid": "learn.wwl.design-migrations",
@@ -93313,8 +92965,8 @@
         "/training/modules/design-multi-region-availability-failover-azure-cosmos-db-nosql/9-knowledge-check",
         "/training/modules/design-multi-region-availability-failover-azure-cosmos-db-nosql/10-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "63cc822b2638fc814faa933efee414ecd7ca10dc"
+      "lastModified": "2026-11-06T23:10:00+00:00",
+      "unitSig": "36c59f692229f9cc3c8d447eb18af10777860033"
     },
     {
       "uid": "learn.wwl.design-network-solutions",
@@ -93395,8 +93047,8 @@
         "/training/modules/design-optimize-indexing-strategy-azure-cosmos-db-nosql/8-knowledge-check",
         "/training/modules/design-optimize-indexing-strategy-azure-cosmos-db-nosql/9-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "94aebbf2c953e32837de53162d232e8eb968e7c8"
+      "lastModified": "2026-11-07T08:12:00+00:00",
+      "unitSig": "dbd53d8f23f7dbaf6f9e28bef2ed26924a651dc7"
     },
     {
       "uid": "learn.wwl.design-overall-ai-strategy-business-solutions",
@@ -95609,8 +95261,8 @@
         "/training/modules/eliminate-public-exposure-paas-private-link/6-knowledge-check",
         "/training/modules/eliminate-public-exposure-paas-private-link/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "bc6ebc8c0e5767106d0ea43d8918cb8a3ce9120f"
+      "lastModified": "2026-11-09T12:10:00+00:00",
+      "unitSig": "2ec9c8a68089717c8e623c2e0ec385740abd8356"
     },
     {
       "uid": "learn.wwl.embrace-responsible-ai-principles-practices",
@@ -97083,43 +96735,6 @@
       "unitSig": "d59fe0d9141847d46365f861aad9627cf90c211b"
     },
     {
-      "uid": "learn.wwl.evaluate-language-models-azure-databricks",
-      "title": "Evaluate language models with Azure Databricks",
-      "url": "https://learn.microsoft.com/training/modules/evaluate-language-models-azure-databricks/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/evaluate-language-models-azure-databricks",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data engineering"
-      ],
-      "units": [
-        "Introduction",
-        "Explore LLM evaluation",
-        "Evaluate LLMs and AI systems",
-        "Evaluate LLMs with standard metrics",
-        "Describe LLM-as-a-judge for evaluation",
-        "Exercise - Evaluate an Azure OpenAI model",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/evaluate-language-models-azure-databricks/1-introduction",
-        "/training/modules/evaluate-language-models-azure-databricks/2-compare-evaluations",
-        "/training/modules/evaluate-language-models-azure-databricks/3-ai-systems",
-        "/training/modules/evaluate-language-models-azure-databricks/4-standard-metrics",
-        "/training/modules/evaluate-language-models-azure-databricks/5-language-model-judge",
-        "/training/modules/evaluate-language-models-azure-databricks/6-exercise",
-        "/training/modules/evaluate-language-models-azure-databricks/7-knowledge-check",
-        "/training/modules/evaluate-language-models-azure-databricks/8-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "da7d5b58214659de2315e534df979c0ea295ba79"
-    },
-    {
       "uid": "learn.wwl.evaluate-optimize-agents",
       "title": "Evaluate and optimize AI agents through structured experiments",
       "url": "https://learn.microsoft.com/training/modules/evaluate-optimize-agents/?WT.mc_id=studentamb_165290",
@@ -97153,8 +96768,8 @@
         "/training/modules/evaluate-optimize-agents/6-knowledge-check",
         "/training/modules/evaluate-optimize-agents/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "c44fd98e6653c2d8581a6b32d09bd0699c51d876"
+      "lastModified": "2026-11-04T18:27:00+00:00",
+      "unitSig": "f37c128433c4554ceddec1ac870e58695c9ae0b4"
     },
     {
       "uid": "learn.wwl.evaluate-performance-improvements",
@@ -98075,8 +97690,8 @@
         "/training/modules/experiment-azure-machine-learning/9-knowledge-check",
         "/training/modules/experiment-azure-machine-learning/10-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "23eb0bfe69f15dc49f57549eccabb5ed3f19e1af"
+      "lastModified": "2026-11-06T18:11:00+00:00",
+      "unitSig": "3402751fe3baf2b6c91a44ee2cfd907e46bc3b28"
     },
     {
       "uid": "learn.wwl.explain-control-system-helps-manage-files",
@@ -99086,39 +98701,6 @@
       ],
       "lastModified": "2026-10-27T17:07:00+00:00",
       "unitSig": "d62276009dbd3e330b36c69000bac4645ccf7eda"
-    },
-    {
-      "uid": "learn.wwl.explore-concepts-of-data-analytics",
-      "title": "Explore concepts of data analytics",
-      "url": "https://learn.microsoft.com/training/modules/explore-concepts-of-data-analytics/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/explore-concepts-of-data-analytics",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Azure"
-      ],
-      "subjects": [
-        "Data analytics"
-      ],
-      "units": [
-        "Introduction",
-        "Describe data ingestion and processing",
-        "Explore data visualization",
-        "Explore data analytics",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/explore-concepts-of-data-analytics/1-introduction",
-        "/training/modules/explore-concepts-of-data-analytics/2-describe-data-ingestion-process",
-        "/training/modules/explore-concepts-of-data-analytics/3-explore-data-visualization",
-        "/training/modules/explore-concepts-of-data-analytics/4-explore",
-        "/training/modules/explore-concepts-of-data-analytics/5-knowledge-check",
-        "/training/modules/explore-concepts-of-data-analytics/6-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "1015302932ce1227521334fda1a9042b7b0a099e"
     },
     {
       "uid": "learn.wwl.explore-copilot-stack",
@@ -102157,41 +101739,6 @@
       "unitSig": "0a0d340c4052dabdd19853364daf8e84358f277a"
     },
     {
-      "uid": "learn.wwl.fine-tune-azure-databricks",
-      "title": "Fine-tune language models with Azure Databricks",
-      "url": "https://learn.microsoft.com/training/modules/fine-tune-azure-databricks/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/fine-tune-azure-databricks",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data engineering"
-      ],
-      "units": [
-        "Introduction",
-        "What is fine-tuning?",
-        "Prepare your data for fine-tuning",
-        "Fine-tune an Azure OpenAI model",
-        "Exercise - Fine-tune an Azure OpenAI model",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/fine-tune-azure-databricks/1-introduction",
-        "/training/modules/fine-tune-azure-databricks/2-fine-tune-concept",
-        "/training/modules/fine-tune-azure-databricks/3-prepare-data",
-        "/training/modules/fine-tune-azure-databricks/4-how-to-fine-tune",
-        "/training/modules/fine-tune-azure-databricks/5-exercise",
-        "/training/modules/fine-tune-azure-databricks/6-knowledge-check",
-        "/training/modules/fine-tune-azure-databricks/7-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "ad7607adf2b0a32e18771c8e644eda5e625ddcdd"
-    },
-    {
       "uid": "learn.wwl.foundations-platform-engineering",
       "title": "Foundations of Platform Engineering",
       "url": "https://learn.microsoft.com/training/modules/foundations-platform-engineering/?WT.mc_id=studentamb_165290",
@@ -103722,6 +103269,41 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "11a6506b190ac39539f4c15c89fdcdfb8aa02058"
+    },
+    {
+      "uid": "learn.wwl.get-started-web-iq",
+      "title": "Integrate web-based knowledge into your agent with Web IQ",
+      "url": "https://learn.microsoft.com/training/modules/get-started-web-iq/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/get-started-web-iq",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "microsoft-foundry"
+      ],
+      "subjects": [
+        "Artificial intelligence"
+      ],
+      "units": [
+        "Introduction",
+        "Explore Web IQ",
+        "Configure Web IQ",
+        "Use Web IQ in Foundry",
+        "Exercise - Integrate web search into an agent using Web IQ",
+        "Knowledge check",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/get-started-web-iq/1-introduction",
+        "/training/modules/get-started-web-iq/2-explore-web-iq",
+        "/training/modules/get-started-web-iq/3-configure-web-iq",
+        "/training/modules/get-started-web-iq/4-use-web-iq-foundry",
+        "/training/modules/get-started-web-iq/5-exercise",
+        "/training/modules/get-started-web-iq/6-knowledge-check",
+        "/training/modules/get-started-web-iq/7-summary"
+      ],
+      "lastModified": "2026-11-02T23:19:00+00:00",
+      "unitSig": "1994876b232f7f2ac3a7859e3598af885ec5e1b6"
     },
     {
       "uid": "learn.wwl.get-started-with-ai-in-azure",
@@ -106935,8 +106517,8 @@
         "/training/modules/implement-ai-assisted-development-tools-azure-cosmos-db/7-knowledge-check",
         "/training/modules/implement-ai-assisted-development-tools-azure-cosmos-db/8-summary"
       ],
-      "lastModified": "2026-10-31T11:10:00+00:00",
-      "unitSig": "649b1342d2272b3a8cc3d3ee533fee2fd9cb5e47"
+      "lastModified": "2026-11-05T23:10:00+00:00",
+      "unitSig": "f0c305f75c1cea6e3b5c69e8a4b4525731e17b5a"
     },
     {
       "uid": "learn.wwl.implement-alm-agents-power-platform",
@@ -109876,43 +109458,6 @@
       ],
       "lastModified": "2026-10-26T17:13:00+00:00",
       "unitSig": "f5a7aed3a0ba466377c5744b4c5cb3f2f8cf5f82"
-    },
-    {
-      "uid": "learn.wwl.implement-llmops-azure-databricks",
-      "title": "Implement LLMOps in Azure Databricks",
-      "url": "https://learn.microsoft.com/training/modules/implement-llmops-azure-databricks/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/implement-llmops-azure-databricks",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data engineering"
-      ],
-      "units": [
-        "Introduction",
-        "Transition from traditional MLOps to LLMOps",
-        "Understand model deployments",
-        "Describe MLflow deployment capabilities",
-        "Use Unity Catalog to manage models",
-        "Exercise - Implement LLMOps",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/implement-llmops-azure-databricks/01-introduction",
-        "/training/modules/implement-llmops-azure-databricks/02-lifecycle-overview",
-        "/training/modules/implement-llmops-azure-databricks/03-deployments-overview",
-        "/training/modules/implement-llmops-azure-databricks/04-mlflow-overview",
-        "/training/modules/implement-llmops-azure-databricks/05-unity-catalog",
-        "/training/modules/implement-llmops-azure-databricks/06-exercise",
-        "/training/modules/implement-llmops-azure-databricks/07-knowledge-check",
-        "/training/modules/implement-llmops-azure-databricks/08-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "773378a831bccd82ad9f392bde24dca9018a3503"
     },
     {
       "uid": "learn.wwl.implement-manage-active-directory-certificate-services",
@@ -113039,7 +112584,7 @@
         "/training/modules/integrate-foundry-agent-with-m365/9-summary"
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "ee7a8541b4f7323da86d3743826cdba0d2ebd1c5"
+      "unitSig": "bd527cabeb9483d7ebcbdb634bd942a42fb6c1d4"
     },
     {
       "uid": "learn.wwl.integrate-identity-management-systems",
@@ -113969,43 +113514,6 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "e65b4f9d7a9c0c4fdd789576d88fcf5daeadd75c"
-    },
-    {
-      "uid": "learn.wwl.introduction-language-models-databricks",
-      "title": "Get started with language models in Azure Databricks",
-      "url": "https://learn.microsoft.com/training/modules/introduction-language-models-databricks/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/introduction-language-models-databricks",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data engineering"
-      ],
-      "units": [
-        "Introduction",
-        "Understand Generative AI",
-        "Understand Large Language Models (LLMs)",
-        "Identify key components of LLM applications",
-        "Use LLMs for Natural Language Processing (NLP) tasks",
-        "Exercise - Explore language models",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/introduction-language-models-databricks/01-introduction",
-        "/training/modules/introduction-language-models-databricks/02-what-is-generative-ai",
-        "/training/modules/introduction-language-models-databricks/03-what-are-large-language-models",
-        "/training/modules/introduction-language-models-databricks/04-key-components-llms",
-        "/training/modules/introduction-language-models-databricks/05-use-llms",
-        "/training/modules/introduction-language-models-databricks/06-exercise",
-        "/training/modules/introduction-language-models-databricks/07-knowledge-check",
-        "/training/modules/introduction-language-models-databricks/08-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "21b2c80644ebcb56a116c7ef7848945992ff8aee"
     },
     {
       "uid": "learn.wwl.introduction-microsoft-365-core-services-admin-controls",
@@ -116504,8 +116012,8 @@
         "/training/modules/manage-azure-kubernetes-service-azure-stack-hci/10-troubleshoot",
         "/training/modules/manage-azure-kubernetes-service-azure-stack-hci/11-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "86dcae7a41d2b2dfea3118d55d763463e55d2bb4"
+      "lastModified": "2026-11-06T23:10:00+00:00",
+      "unitSig": "f73092e070865e6209c27ce12666d4f6e0e74c0e"
     },
     {
       "uid": "learn.wwl.manage-azure-paas-resources-using-automated-methods",
@@ -119545,8 +119053,8 @@
         "/training/modules/microsoft-ai-code/05-knowledge-check",
         "/training/modules/microsoft-ai-code/06-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "9f5273f159d28ae26a3cd3d525a98c81076bd4da"
+      "lastModified": "2026-11-05T08:21:00+00:00",
+      "unitSig": "4162fe79122194ddad077e3bf92c3a6e12614027"
     },
     {
       "uid": "learn.wwl.microsoft-ai-in-foundry",
@@ -119584,8 +119092,8 @@
         "/training/modules/microsoft-ai-in-foundry/08-knowledge-check",
         "/training/modules/microsoft-ai-in-foundry/09-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "978060f1ba6191e99468b54b7c51866e164f263f"
+      "lastModified": "2026-11-05T08:21:00+00:00",
+      "unitSig": "60b69c74dec14576244d66cfad8b3728613d743c"
     },
     {
       "uid": "learn.wwl.microsoft-ai-models",
@@ -119623,8 +119131,8 @@
         "/training/modules/microsoft-ai-models/08-knowledge-check",
         "/training/modules/microsoft-ai-models/09-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "beb9b5fd9549c300c519ac65af43d54303498e8a"
+      "lastModified": "2026-11-04T23:14:00+00:00",
+      "unitSig": "d4f5404381e21e0b80094468e07e2b328d3fa09f"
     },
     {
       "uid": "learn.wwl.microsoft-azure-data-engineering-academic-programs",
@@ -120850,8 +120358,8 @@
         "/training/modules/monitor-generative-ai-app/8-knowledge-check",
         "/training/modules/monitor-generative-ai-app/9-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "ee164aba508bc376300f7d735cb5b5a3f57bb4ff"
+      "lastModified": "2026-11-04T18:27:00+00:00",
+      "unitSig": "5850ab640925301fb357cd44156b1c8ee372ca15"
     },
     {
       "uid": "learn.wwl.monitor-maintain-azure-active-directory",
@@ -121444,45 +120952,6 @@
       "unitSig": "3079e7f57e035c95c8a230cd0bc14801bce497e7"
     },
     {
-      "uid": "learn.wwl.multistage-reasoning-azure-databricks",
-      "title": "Implement multi-stage reasoning in Azure Databricks",
-      "url": "https://learn.microsoft.com/training/modules/multistage-reasoning-azure-databricks/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/multistage-reasoning-azure-databricks",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data engineering"
-      ],
-      "units": [
-        "Introduction",
-        "What are multi-stage reasoning systems?",
-        "Explore LangChain",
-        "Explore LlamaIndex",
-        "Explore Haystack",
-        "Explore the DSPy framework",
-        "Exercise - Implement multi-stage reasoning with LangChain",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/multistage-reasoning-azure-databricks/01-introduction",
-        "/training/modules/multistage-reasoning-azure-databricks/02-multi-stage-reasoning-concepts",
-        "/training/modules/multistage-reasoning-azure-databricks/03-langchain",
-        "/training/modules/multistage-reasoning-azure-databricks/04-llamaindex",
-        "/training/modules/multistage-reasoning-azure-databricks/05-haystack",
-        "/training/modules/multistage-reasoning-azure-databricks/06-dspy-framework",
-        "/training/modules/multistage-reasoning-azure-databricks/07-exercise",
-        "/training/modules/multistage-reasoning-azure-databricks/08-knowledge-check",
-        "/training/modules/multistage-reasoning-azure-databricks/09-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "2ef8d962104d0dcfc91451b9c4c5051b9bfd5bcd"
-    },
-    {
       "uid": "learn.wwl.name-resolution-issues",
       "title": "Troubleshoot name resolution issues in Microsoft Azure",
       "url": "https://learn.microsoft.com/training/modules/name-resolution-issues/?WT.mc_id=studentamb_165290",
@@ -121832,7 +121301,7 @@
     },
     {
       "uid": "learn.wwl.optimize-finetune-agents",
-      "title": "Optimize and fine-tune AI agents for production",
+      "title": "Fine-tune models for AI agents with managed training in Microsoft Foundry",
       "url": "https://learn.microsoft.com/training/modules/optimize-finetune-agents/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/optimize-finetune-agents",
       "categories": [
@@ -121866,8 +121335,8 @@
         "/training/modules/optimize-finetune-agents/7-knowledge-check",
         "/training/modules/optimize-finetune-agents/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "c6a0e52a685174db44566064dc75b02585cacadc"
+      "lastModified": "2026-11-05T18:40:00+00:00",
+      "unitSig": "f3c407f8e6fe7ce4fa81d531a63f24f14135ac35"
     },
     {
       "uid": "learn.wwl.optimize-generative-ai-model-performance",
@@ -122879,8 +122348,8 @@
         "/training/modules/perform-hyperparameter-tuning-azure-machine-learning-pipelines/7-knowledge-check",
         "/training/modules/perform-hyperparameter-tuning-azure-machine-learning-pipelines/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "b734e38411eaa99d9db9aa27b2910377dc5a42e8"
+      "lastModified": "2026-11-06T18:11:00+00:00",
+      "unitSig": "9c17d7b1b834714fe19bd9a05fb9bf61f6f23fd0"
     },
     {
       "uid": "learn.wwl.perform-post-installation-configuration-of-windows-server",
@@ -123851,8 +123320,8 @@
         "/training/modules/plan-prepare-genaiops/7-knowledge-check",
         "/training/modules/plan-prepare-genaiops/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "5255112e567b7163df14c15bee80d5e90cfbafb3"
+      "lastModified": "2026-11-04T12:22:00+00:00",
+      "unitSig": "5f9f3553ce0078efa36e4fc52c0cacec57d9ff23"
     },
     {
       "uid": "learn.wwl.plan-resource-requirements",
@@ -124422,8 +123891,8 @@
         "/training/modules/process-azure-cosmos-db-nosql-change-feed/8-knowledge-check",
         "/training/modules/process-azure-cosmos-db-nosql-change-feed/9-summary"
       ],
-      "lastModified": "2026-10-31T11:10:00+00:00",
-      "unitSig": "098e150548c685dc4b3730023e4b45b527b74743"
+      "lastModified": "2026-11-05T23:10:00+00:00",
+      "unitSig": "65a155e0a65353a1d1beb4e5913654ba9cc74b63"
     },
     {
       "uid": "learn.wwl.process-bulk-data-azure-cosmos-db-sql-api",
@@ -124612,8 +124081,8 @@
         "/training/modules/prompt-versioning-genaiops/6-knowledge-check",
         "/training/modules/prompt-versioning-genaiops/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "bc7af09534b36fd1056d5f920004fe6e8897dd37"
+      "lastModified": "2026-11-04T12:22:00+00:00",
+      "unitSig": "1d8fd90f1ace2be16dbd5faf2a901a0647c14ee4"
     },
     {
       "uid": "learn.wwl.protect-azure-for-sap-workloads",
@@ -126818,41 +126287,6 @@
       "unitSig": "8e5126692c731ee45413b11c9efb270b36d2cf8a"
     },
     {
-      "uid": "learn.wwl.query-relational-data-azure",
-      "title": "Query relational data in Azure",
-      "url": "https://learn.microsoft.com/training/modules/query-relational-data/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/query-relational-data",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Azure"
-      ],
-      "subjects": [
-        "Data analytics"
-      ],
-      "units": [
-        "Introduction",
-        "Introduction to SQL",
-        "Query relational data in Azure SQL Database",
-        "Query relational data in Azure Database for PostgreSQL",
-        "Query relational data in Azure Database for MySQL",
-        "Exercise: Use SQL to query Azure SQL Database",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/query-relational-data/1-introduction",
-        "/training/modules/query-relational-data/2-introduction-to-sql",
-        "/training/modules/query-relational-data/3-sql-database",
-        "/training/modules/query-relational-data/4-azure-database-for-postgresql",
-        "/training/modules/query-relational-data/5-azure-database-for-mysql",
-        "/training/modules/query-relational-data/6-exercise-perform-query",
-        "/training/modules/query-relational-data/7-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "f38480de610d43e0c00f2e02f4f16a75bd15beaf"
-    },
-    {
       "uid": "learn.wwl.queue-process-operations-service-bus",
       "title": "Queue and process AI operations with Azure Service Bus",
       "url": "https://learn.microsoft.com/training/modules/queue-process-operations-service-bus/?WT.mc_id=studentamb_165290",
@@ -126961,6 +126395,48 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "60ac9d7853aaa4057923593a016a92bb8507288d"
+    },
+    {
+      "uid": "learn.wwl.real-time-ai-web-pubsub",
+      "title": "Deliver real-time AI experiences with Azure Web PubSub",
+      "url": "https://learn.microsoft.com/training/modules/real-time-ai-web-pubsub/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/real-time-ai-web-pubsub",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure Web PubSub"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "app-development"
+      ],
+      "units": [
+        "Introduction",
+        "Choose a real-time client delivery approach",
+        "Separate client delivery from backend coordination",
+        "Negotiate authenticated client connections",
+        "Publish AI updates to operation groups",
+        "Design reconnection and operation recovery",
+        "Batch updates and support slow clients",
+        "Exercise - Stream AI investigation updates with Azure Web PubSub",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/real-time-ai-web-pubsub/1-introduction",
+        "/training/modules/real-time-ai-web-pubsub/2-choose-real-time-client-delivery",
+        "/training/modules/real-time-ai-web-pubsub/3-separate-client-delivery-backend-coordination",
+        "/training/modules/real-time-ai-web-pubsub/4-negotiate-authenticated-client-connections",
+        "/training/modules/real-time-ai-web-pubsub/5-publish-ai-updates-operation-groups",
+        "/training/modules/real-time-ai-web-pubsub/6-design-reconnection-operation-recovery",
+        "/training/modules/real-time-ai-web-pubsub/7-batch-updates-support-slow-clients",
+        "/training/modules/real-time-ai-web-pubsub/8-exercise-stream-ai-investigation-updates",
+        "/training/modules/real-time-ai-web-pubsub/9-knowledge-check",
+        "/training/modules/real-time-ai-web-pubsub/10-summary"
+      ],
+      "lastModified": "2026-11-06T08:20:00+00:00",
+      "unitSig": "06be962a62cbe718e794ffbea8c5f0815baf4e51"
     },
     {
       "uid": "learn.wwl.recognize-avoid-schema-design-anti-patterns-azure-documentdb",
@@ -127255,80 +126731,6 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "bc5edd351b03ca7b2b7a6baee8a6340fb3dc07ea"
-    },
-    {
-      "uid": "learn.wwl.responsible-language-models-azure-databricks",
-      "title": "Review responsible AI principles for language models in Azure Databricks",
-      "url": "https://learn.microsoft.com/training/modules/responsible-language-models-azure-databricks/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/responsible-language-models-azure-databricks",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data engineering"
-      ],
-      "units": [
-        "Introduction",
-        "What is responsible AI?",
-        "Identify risks",
-        "Mitigate issues",
-        "Use key security tooling to protect your AI systems",
-        "Exercise - Implement responsible AI",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/responsible-language-models-azure-databricks/01-introduction",
-        "/training/modules/responsible-language-models-azure-databricks/02-responsible-ai-concepts",
-        "/training/modules/responsible-language-models-azure-databricks/03-identify",
-        "/training/modules/responsible-language-models-azure-databricks/04-mitigate",
-        "/training/modules/responsible-language-models-azure-databricks/05-key-security-tooling",
-        "/training/modules/responsible-language-models-azure-databricks/06-exercise",
-        "/training/modules/responsible-language-models-azure-databricks/07-knowledge-check",
-        "/training/modules/responsible-language-models-azure-databricks/08-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "d2041c08d4b9a0cb7285014d323a37a838b86f45"
-    },
-    {
-      "uid": "learn.wwl.retrieval-augmented-generation-azure-databricks",
-      "title": "Implement Retrieval Augmented Generation (RAG) with Azure Databricks",
-      "url": "https://learn.microsoft.com/training/modules/retrieval-augmented-generation-azure-databricks/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/retrieval-augmented-generation-azure-databricks",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "Databricks"
-      ],
-      "subjects": [
-        "Data engineering"
-      ],
-      "units": [
-        "Introduction",
-        "Explore the main concepts of a RAG workflow",
-        "Prepare your data for RAG",
-        "Find relevant data with vector search",
-        "Rerank your retrieved results",
-        "Exercise - Set up RAG",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/retrieval-augmented-generation-azure-databricks/1-introduction",
-        "/training/modules/retrieval-augmented-generation-azure-databricks/2-workflow",
-        "/training/modules/retrieval-augmented-generation-azure-databricks/3-prepare-data",
-        "/training/modules/retrieval-augmented-generation-azure-databricks/4-vector-search",
-        "/training/modules/retrieval-augmented-generation-azure-databricks/5-ranking",
-        "/training/modules/retrieval-augmented-generation-azure-databricks/6-exercise",
-        "/training/modules/retrieval-augmented-generation-azure-databricks/7-knowledge-check",
-        "/training/modules/retrieval-augmented-generation-azure-databricks/8-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "a0ba1ec702872793e4eacdffebe09df7998c1465"
     },
     {
       "uid": "learn.wwl.review-azure-powershell-module",
@@ -127651,8 +127053,8 @@
         "/training/modules/run-pipelines-azure-machine-learning/6-knowledge-check",
         "/training/modules/run-pipelines-azure-machine-learning/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "bad9548c66afaebf3f41d426ee5222f8d00e35d1"
+      "lastModified": "2026-11-06T18:11:00+00:00",
+      "unitSig": "f04ee402687f6f63f3da5710203b962067748ffb"
     },
     {
       "uid": "learn.wwl.run-training-scripts-track-models-mlflow",
@@ -127690,8 +127092,8 @@
         "/training/modules/run-training-scripts-track-models-mlflow/8-knowledge-check",
         "/training/modules/run-training-scripts-track-models-mlflow/9-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "be61d31b7740c69cdc2222f4bc2d47351fffc04b"
+      "lastModified": "2026-11-06T18:11:00+00:00",
+      "unitSig": "dcb66a4e9cc65ada5fd48f0d585bfc7bb9ba5253"
     },
     {
       "uid": "learn.wwl.scale-ai",
@@ -128022,8 +127424,8 @@
         "/training/modules/secure-azure-cosmos-db-nosql/8-knowledge-check",
         "/training/modules/secure-azure-cosmos-db-nosql/9-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "7d6195afe3661632839ef980037f4d59a98c1d89"
+      "lastModified": "2026-11-05T23:10:00+00:00",
+      "unitSig": "d1a7dc1167e43fbfadd943aa9a698515a60c6ef2"
     },
     {
       "uid": "learn.wwl.secure-azure-database-for-postgresql",
@@ -129252,9 +128654,9 @@
         "Design sites, site links, and the replication topology",
         "Identify topology anti-patterns and Windows Server 2025 DC Locator readiness",
         "Explain USNs, replication vectors, and object metadata",
-        "Diagnose replication failures and apply Replication Priority Boost",
+        "Diagnose replication failures and apply replication priority boost",
         "Exercise - Evaluate site topology and replication",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
@@ -129267,8 +128669,8 @@
         "/training/modules/active-directory-site-replication/7-knowledge-check",
         "/training/modules/active-directory-site-replication/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "d3f614522f17313936340293faaae1376b518c2d"
+      "lastModified": "2026-11-02T18:22:00+00:00",
+      "unitSig": "7e1958640bdc9c6432a4d8a7209e0ef9b8ff7f65"
     },
     {
       "uid": "learn.wwl.software-composition-analysis",
@@ -129403,6 +128805,116 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "eef57537b9fedc8445ec52676a47aa0aa34483cf"
+    },
+    {
+      "uid": "learn.wwl.sovereignty-confidential-computing",
+      "title": "Azure confidential computing",
+      "url": "https://learn.microsoft.com/training/modules/sovereignty-confidential-computing/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/sovereignty-confidential-computing",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure"
+      ],
+      "subjects": [
+        "Security"
+      ],
+      "units": [
+        "Overview of confidential computing",
+        "Introduction",
+        "Key components of Azure confidential computing",
+        "Confidential secrets management",
+        "Confidential analytics services",
+        "Check your knowledge",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/sovereignty-confidential-computing/01-overview-confidential-computing",
+        "/training/modules/sovereignty-confidential-computing/02-introduction-azure-confidential-computing",
+        "/training/modules/sovereignty-confidential-computing/03-key-components-azure-confidential-computing",
+        "/training/modules/sovereignty-confidential-computing/04-confidential-secrets-management",
+        "/training/modules/sovereignty-confidential-computing/05-confidential-analytics-services",
+        "/training/modules/sovereignty-confidential-computing/06-knowledge-check",
+        "/training/modules/sovereignty-confidential-computing/07-summary"
+      ],
+      "lastModified": "2026-11-02T23:19:00+00:00",
+      "unitSig": "5e82f1a0395e852fca5ded38dd3af29c28d53acc"
+    },
+    {
+      "uid": "learn.wwl.sovereignty-key-management",
+      "title": "Azure key and certificate management",
+      "url": "https://learn.microsoft.com/training/modules/sovereignty-key-management/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/sovereignty-key-management",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure",
+        "Key Vault"
+      ],
+      "subjects": [
+        "Security",
+        "key-management"
+      ],
+      "units": [
+        "Introduction",
+        "Azure key management solutions",
+        "Best practices for using Azure key management",
+        "Azure key management strategies",
+        "Azure certificate management",
+        "Check your knowledge",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/sovereignty-key-management/01-introduction-key-encryption-key-sovereignty",
+        "/training/modules/sovereignty-key-management/02-azure-key-management-solutions",
+        "/training/modules/sovereignty-key-management/03-best-practices-azure-key-management",
+        "/training/modules/sovereignty-key-management/04-azure-key-management-strategies",
+        "/training/modules/sovereignty-key-management/05-azure-certificate-management",
+        "/training/modules/sovereignty-key-management/06-knowledge-check",
+        "/training/modules/sovereignty-key-management/07-summary"
+      ],
+      "lastModified": "2026-11-03T18:11:00+00:00",
+      "unitSig": "3a71d075730df9342d30e70656550e62657d804e"
+    },
+    {
+      "uid": "learn.wwl.sovereignty-policy-initiatives",
+      "title": "Azure Policy initiatives",
+      "url": "https://learn.microsoft.com/training/modules/sovereignty-policy-initiatives/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/sovereignty-policy-initiatives",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Azure"
+      ],
+      "subjects": [
+        "Compliance",
+        "Information protection and governance"
+      ],
+      "units": [
+        "Introduction",
+        "Cloud adoption guidance for Azure",
+        "Azure Policy design principles",
+        "Azure Policy resources",
+        "Azure Policy definitions",
+        "Evaluation of resources through Azure Policy",
+        "Check your knowledge",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/sovereignty-policy-initiatives/01-introduction",
+        "/training/modules/sovereignty-policy-initiatives/02-cloud-adoption-framework",
+        "/training/modules/sovereignty-policy-initiatives/03-azure-policy-design-principles",
+        "/training/modules/sovereignty-policy-initiatives/04-azure-policy-resources",
+        "/training/modules/sovereignty-policy-initiatives/05-azure-policy-definitions",
+        "/training/modules/sovereignty-policy-initiatives/06-azure-policies-evaluation-resources",
+        "/training/modules/sovereignty-policy-initiatives/07-knowledge-check",
+        "/training/modules/sovereignty-policy-initiatives/08-summary"
+      ],
+      "lastModified": "2026-11-02T23:19:00+00:00",
+      "unitSig": "032ba156855eebd663f0d08507aa99ac2ad309ca"
     },
     {
       "uid": "learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro",
@@ -130505,8 +130017,8 @@
         "/training/modules/trigger-azure-machine-learn-jobs-github-actions/6-knowledge-check",
         "/training/modules/trigger-azure-machine-learn-jobs-github-actions/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "09b38d0af4e319ee8b21ce010685e840adbbf975"
+      "lastModified": "2026-11-06T18:11:00+00:00",
+      "unitSig": "3cff8d38dcf96189acdba3546715fe2ad4d4e56d"
     },
     {
       "uid": "learn.wwl.troubleshoot-active-directory",
@@ -131355,6 +130867,46 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "86f766091d20f559f616ce8cb7282a3149b32e09"
+    },
+    {
+      "uid": "learn.wwl.turn-business-context-ai-powered-action-work-iq",
+      "title": "Turn business context into AI-powered action with Work IQ",
+      "url": "https://learn.microsoft.com/training/modules/turn-business-context-ai-powered-action-work-iq/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/turn-business-context-ai-powered-action-work-iq",
+      "categories": [
+        "Dynamics 365",
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Dynamics 365",
+        "Power Apps",
+        "dataverse"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "Understand the business context behind a customer question",
+        "Ask a business question and check the response",
+        "Explain how business skills guide agents",
+        "Review a proposed action before business data changes",
+        "Follow a customer question from context to action",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/turn-business-context-ai-powered-action-work-iq/introduction",
+        "/training/modules/turn-business-context-ai-powered-action-work-iq/understand-business-context",
+        "/training/modules/turn-business-context-ai-powered-action-work-iq/ask-question-check-response",
+        "/training/modules/turn-business-context-ai-powered-action-work-iq/explain-business-skills",
+        "/training/modules/turn-business-context-ai-powered-action-work-iq/review-proposed-action",
+        "/training/modules/turn-business-context-ai-powered-action-work-iq/follow-customer-question-context-action",
+        "/training/modules/turn-business-context-ai-powered-action-work-iq/knowledge-check",
+        "/training/modules/turn-business-context-ai-powered-action-work-iq/summary"
+      ],
+      "lastModified": "2026-11-03T17:13:00+00:00",
+      "unitSig": "cc05b53a2aa3f09dc2d2168c963efa660c999693"
     },
     {
       "uid": "learn.wwl.turn-business-ideas-power-platform-solutions-plans",
@@ -134372,6 +133924,34 @@
       "removedOn": "2026-10-05"
     },
     {
+      "uid": "learn-bizapps.create-bots-power-virtual-agents-copilot",
+      "path": "/training/modules/create-bots-power-virtual-agents-copilot",
+      "title": "Guided Project - Create agents with Microsoft Copilot Studio",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-bizapps.sovereignty-confidential-computing",
+      "path": "/training/modules/sovereignty-confidential-computing",
+      "title": "Azure confidential computing",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-bizapps.sovereignty-key-management",
+      "path": "/training/modules/sovereignty-key-management",
+      "title": "Azure key and certificate management",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-bizapps.sovereignty-policy-initiatives",
+      "path": "/training/modules/sovereignty-policy-initiatives",
+      "title": "Azure Policy initiatives",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
       "uid": "learn-dynamics.agent-productivity",
       "path": "/training/modules/agent-productivity",
       "title": "Enhance service representative productivity and personalization in Customer Service Hub",
@@ -134386,11 +133966,67 @@
       "removedOn": "2026-11-02"
     },
     {
+      "uid": "learn-dynamics.automate-customer-voice-surveys",
+      "path": "/training/modules/automate-customer-voice-surveys",
+      "title": "Automate Dynamics 365 Customer Voice surveys with Power Automate",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.configure-apple-message-business-google-business-messages",
+      "path": "/training/modules/configure-apple-message-business-google-business-messages",
+      "title": "Set up Apple Message for Business and Google Business Messages as channels in Dynamics 365 Customer Service",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.connected-customer-service",
+      "path": "/training/modules/set-up-connected-customer-service",
+      "title": "Get started with Connected Customer Service for Dynamics 365 and Azure IoT",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.connected-customer-service-devices",
+      "path": "/training/modules/connected-customer-service-devices",
+      "title": "Register and manage devices with Connected Customer Service for Dynamics 365 and Azure IoT",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.create-customer-power-bi-reports",
+      "path": "/training/modules/create-customer-power-bi-reports",
+      "title": "Create customer Power BI reports in Dynamics 365 Customer Voice",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.create-customer-voice-surveys",
+      "path": "/training/modules/create-customer-voice-surveys",
+      "title": "Create customer surveys with Dynamics 365 Customer Voice",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
       "uid": "learn-dynamics.create-smart-assist-omnichannel",
       "path": "/training/modules/create-smart-assist-omnichannel",
       "title": "Create smart assist solutions in Contact Center for Dynamics 365 Customer Service",
       "lastSeen": "2026-10-26",
       "removedOn": "2026-11-02"
+    },
+    {
+      "uid": "learn-dynamics.embed-surveys",
+      "path": "/training/modules/embed-surveys",
+      "title": "Embed surveys in your website with Dynamics 365 Customer Voice",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.get-started-customer-service-insights",
+      "path": "/training/modules/get-started-customer-service-insights",
+      "title": "Get started with Customer Service Insights",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
     },
     {
       "uid": "learn-dynamics.get-started-voice-channel",
@@ -134405,6 +134041,48 @@
       "title": "Deploy chat widgets with Omnichannel for Dynamics 365 Customer Service",
       "lastSeen": "2026-10-26",
       "removedOn": "2026-11-02"
+    },
+    {
+      "uid": "learn-dynamics.omnichannel-power-virtual-agents",
+      "path": "/training/modules/omnichannel-power-virtual-agents",
+      "title": "Integrate an agent for Contact Center and Dynamics 365 Customer Service",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.schedule-customer-service-scheduling",
+      "path": "/training/modules/schedule-customer-service-scheduling",
+      "title": "Schedule services with Customer Service scheduling",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.send-customer-voice-surveys",
+      "path": "/training/modules/send-customer-voice-surveys",
+      "title": "Send Dynamics 365 Customer Voice surveys",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.setup-customer-service-scheduling",
+      "path": "/training/modules/setup-customer-service-scheduling",
+      "title": "Set up Customer Service scheduling",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.sms-channels",
+      "path": "/training/modules/sms-channels",
+      "title": "Deploy an SMS channel in Omnichannel for Dynamics 365 Customer Service",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn-dynamics.social-channels",
+      "path": "/training/modules/social-channels",
+      "title": "Deploy social messaging channels in Omnichannel for Dynamics 365 Customer Service",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
     },
     {
       "uid": "learn.mec.enhance-creativity-advance-learning-windows-11-microsoft-365-tools",
@@ -134442,11 +134120,81 @@
       "removedOn": "2026-10-05"
     },
     {
+      "uid": "learn.wwl.describe-concepts-of-relational-data",
+      "path": "/training/modules/describe-concepts-of-relational-data",
+      "title": "Describe concepts of relational data",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn.wwl.evaluate-language-models-azure-databricks",
+      "path": "/training/modules/evaluate-language-models-azure-databricks",
+      "title": "Evaluate language models with Azure Databricks",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn.wwl.explore-concepts-of-data-analytics",
+      "path": "/training/modules/explore-concepts-of-data-analytics",
+      "title": "Explore concepts of data analytics",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn.wwl.fine-tune-azure-databricks",
+      "path": "/training/modules/fine-tune-azure-databricks",
+      "title": "Fine-tune language models with Azure Databricks",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn.wwl.implement-llmops-azure-databricks",
+      "path": "/training/modules/implement-llmops-azure-databricks",
+      "title": "Implement LLMOps in Azure Databricks",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn.wwl.introduction-language-models-databricks",
+      "path": "/training/modules/introduction-language-models-databricks",
+      "title": "Get started with language models in Azure Databricks",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn.wwl.multistage-reasoning-azure-databricks",
+      "path": "/training/modules/multistage-reasoning-azure-databricks",
+      "title": "Implement multi-stage reasoning in Azure Databricks",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
       "uid": "learn.wwl.perform-data-analysis-azure-databricks",
       "path": "/training/modules/perform-data-analysis-azure-databricks",
       "title": "Perform data analysis with Azure Databricks",
       "lastSeen": "2026-09-28",
       "removedOn": "2026-10-05"
+    },
+    {
+      "uid": "learn.wwl.query-relational-data-azure",
+      "path": "/training/modules/query-relational-data",
+      "title": "Query relational data in Azure",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn.wwl.responsible-language-models-azure-databricks",
+      "path": "/training/modules/responsible-language-models-azure-databricks",
+      "title": "Review responsible AI principles for language models in Azure Databricks",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "uid": "learn.wwl.retrieval-augmented-generation-azure-databricks",
+      "path": "/training/modules/retrieval-augmented-generation-azure-databricks",
+      "title": "Implement Retrieval Augmented Generation (RAG) with Azure Databricks",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
     },
     {
       "uid": "learn.wwl.use-delta-lake-azure-databricks",

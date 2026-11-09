@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastChecked": "2026-11-02T17:15:37.934Z",
+  "lastChecked": "2026-11-09T17:38:55.315Z",
   "learningPaths": [
     {
       "uid": "learn-bizapps.accident-tracking-app",
@@ -508,18 +508,6 @@
       "lastModified": "2026-10-27T17:09:00+00:00",
       "modules": [
         "/training/modules/retail-cloud-overview"
-      ]
-    },
-    {
-      "uid": "learn-bizapps.get-started-sovereignty",
-      "title": "Get started with Microsoft for Sovereignty",
-      "path": "/training/paths/get-started-sovereignty",
-      "lastModified": "2026-10-27T17:09:00+00:00",
-      "modules": [
-        "/training/modules/sovereignty-overview",
-        "/training/modules/sovereignty-policy-initiatives",
-        "/training/modules/sovereignty-key-management",
-        "/training/modules/sovereignty-confidential-computing"
       ]
     },
     {
@@ -1662,14 +1650,9 @@
       "uid": "learn-dynamics.create-surveys",
       "title": "Create surveys with Dynamics 365 Customer Voice",
       "path": "/training/paths/create-surveys",
-      "lastModified": "2026-10-27T17:07:00+00:00",
+      "lastModified": "2026-11-03T17:13:00+00:00",
       "modules": [
-        "/training/modules/work-customer-voice-projects",
-        "/training/modules/create-customer-voice-surveys",
-        "/training/modules/send-customer-voice-surveys",
-        "/training/modules/automate-customer-voice-surveys",
-        "/training/modules/embed-surveys",
-        "/training/modules/create-customer-power-bi-reports"
+        "/training/modules/work-customer-voice-projects"
       ]
     },
     {
@@ -1872,16 +1855,6 @@
       "lastModified": "2026-10-27T17:07:00+00:00",
       "modules": [
         "/training/modules/get-started-cost-accounting-dyn365-finance"
-      ]
-    },
-    {
-      "uid": "learn-dynamics.get-started-customer-scheduling",
-      "title": "Get started with Dynamics 365 Customer Service scheduling",
-      "path": "/training/paths/get-started-customer-scheduling",
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "modules": [
-        "/training/modules/setup-customer-service-scheduling",
-        "/training/modules/schedule-customer-service-scheduling"
       ]
     },
     {
@@ -2642,16 +2615,6 @@
       ]
     },
     {
-      "uid": "learn-dynamics.use-connected-customer-service",
-      "title": "Use Connected Customer Service with Dynamics 365",
-      "path": "/training/paths/use-connected-customer-service",
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "modules": [
-        "/training/modules/set-up-connected-customer-service",
-        "/training/modules/connected-customer-service-devices"
-      ]
-    },
-    {
       "uid": "learn-dynamics.use-copilot-sales",
       "title": "Use Dynamics 365 Copilot for Sales",
       "path": "/training/paths/use-copilot-sales",
@@ -2849,9 +2812,8 @@
       "uid": "learn-dynamics.work-customer-service-insights",
       "title": "Work with Customer Service Insights",
       "path": "/training/paths/work-customer-service-insights",
-      "lastModified": "2026-10-27T17:07:00+00:00",
+      "lastModified": "2026-11-03T17:13:00+00:00",
       "modules": [
-        "/training/modules/get-started-customer-service-insights",
         "/training/modules/customer-service-visualizations"
       ]
     },
@@ -2859,13 +2821,9 @@
       "uid": "learn-dynamics.work-customer-service-omnichannel",
       "title": "Connect and engage with customers with Omnichannel for Dynamics 365 Customer Service",
       "path": "/training/paths/work-customer-service-omnichannel",
-      "lastModified": "2026-10-30T17:13:00+00:00",
+      "lastModified": "2026-11-02T17:09:00+00:00",
       "modules": [
-        "/training/modules/getting-started-omnichannel",
-        "/training/modules/sms-channels",
-        "/training/modules/social-channels",
-        "/training/modules/configure-apple-message-business-google-business-messages",
-        "/training/modules/omnichannel-power-virtual-agents"
+        "/training/modules/getting-started-omnichannel"
       ]
     },
     {
@@ -3401,7 +3359,7 @@
       "uid": "learn.ai-center-excellence",
       "title": "AI Center of Excellence",
       "path": "/training/paths/ai-center-excellence",
-      "lastModified": "2026-10-28T17:12:00+00:00",
+      "lastModified": "2026-11-03T08:10:00+00:00",
       "modules": [
         "/training/modules/intro-ai-center-excellence",
         "/training/modules/guide-ai-operations-center-excellence",
@@ -3531,7 +3489,7 @@
       "uid": "learn.az-104-manage-identities-governance",
       "title": "AZ-104: Manage identities and governance in Azure",
       "path": "/training/paths/az-104-manage-identities-governance",
-      "lastModified": "2026-10-28T17:12:00+00:00",
+      "lastModified": "2026-11-04T12:22:00+00:00",
       "modules": [
         "/training/modules/understand-azure-active-directory",
         "/training/modules/create-configure-manage-identities",
@@ -3699,7 +3657,7 @@
       "uid": "learn.azure-evaluate-generative-ai-apps",
       "title": "Evaluate generative AI applications",
       "path": "/training/paths/evaluate-generative-ai-apps",
-      "lastModified": "2026-10-28T22:11:00+00:00",
+      "lastModified": "2026-11-03T08:10:00+00:00",
       "modules": [
         "/training/modules/evaluate-generative-ai-apps",
         "/training/modules/run-evaluations-generate-synthetic-datasets"
@@ -3808,9 +3766,9 @@
     },
     {
       "uid": "learn.azure.operationalize-ai-responsibly",
-      "title": "Operationalize AI responsibly with Azure AI Foundry",
+      "title": "Operationalize AI responsibly with Microsoft Foundry",
       "path": "/training/paths/operationalize-ai-responsibly",
-      "lastModified": "2026-10-28T22:11:00+00:00",
+      "lastModified": "2026-11-03T08:10:00+00:00",
       "modules": [
         "/training/modules/moderate-content-detect-harm-azure-ai-content-safety-studio",
         "/training/modules/moderate-content-detect-harm-azure-ai-content-safety",
@@ -6817,12 +6775,13 @@
       "uid": "learn.wwl.develop-ai-agents-azure",
       "title": "Develop AI agents on Azure",
       "path": "/training/paths/develop-ai-agents-azure",
-      "lastModified": "2026-10-28T17:12:00+00:00",
+      "lastModified": "2026-11-02T23:19:00+00:00",
       "modules": [
         "/training/modules/develop-ai-agents-azure-vs-code",
         "/training/modules/build-agent-with-custom-tools",
         "/training/modules/connect-agent-to-mcp-tools",
         "/training/modules/introduction-foundry-iq",
+        "/training/modules/get-started-web-iq",
         "/training/modules/integrate-foundry-agent-with-m365",
         "/training/modules/build-agent-workflows-microsoft-foundry",
         "/training/modules/develop-ai-agent-with-semantic-kernel",
@@ -7760,21 +7719,6 @@
         "/training/modules/implement-hybrid-backup-recovery-windows-server-iaas",
         "/training/modules/protect-on-premises-infrastructure-with-azure-site-recovery",
         "/training/modules/protect-virtual-machines-with-azure-backup"
-      ]
-    },
-    {
-      "uid": "learn.wwl.implement-generative-ai-engineering-azure-databricks",
-      "title": "Implement Generative AI engineering with Azure Databricks",
-      "path": "/training/paths/implement-generative-ai-engineering-azure-databricks",
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "modules": [
-        "/training/modules/introduction-language-models-databricks",
-        "/training/modules/retrieval-augmented-generation-azure-databricks",
-        "/training/modules/multistage-reasoning-azure-databricks",
-        "/training/modules/fine-tune-azure-databricks",
-        "/training/modules/evaluate-language-models-azure-databricks",
-        "/training/modules/responsible-language-models-azure-databricks",
-        "/training/modules/implement-llmops-azure-databricks"
       ]
     },
     {
@@ -8880,11 +8824,12 @@
       "uid": "learn.wwl.operationalize-gen-ai-apps",
       "title": "Operationalize generative AI applications (GenAIOps)",
       "path": "/training/paths/operationalize-gen-ai-apps",
-      "lastModified": "2026-10-28T17:12:00+00:00",
+      "lastModified": "2026-11-05T18:40:00+00:00",
       "modules": [
         "/training/modules/plan-prepare-genaiops",
         "/training/modules/prompt-versioning-genaiops",
         "/training/modules/evaluate-optimize-agents",
+        "/training/modules/optimize-finetune-agents",
         "/training/modules/automated-evaluation-genaiops",
         "/training/modules/monitor-generative-ai-app",
         "/training/modules/tracing-generative-ai-app"
@@ -11292,6 +11237,13 @@
       "lastModified": "2024-11-18T22:34:00+00:00"
     },
     {
+      "uid": "course.ms-102t00",
+      "code": "MS-102T00",
+      "title": "Microsoft 365 Administrator",
+      "path": "/training/courses/ms-102t00",
+      "lastModified": "2026-11-02T18:47:00+00:00"
+    },
+    {
       "uid": "course.ms-4004",
       "code": "MS-4004",
       "title": "Empower your workforce with Microsoft 365 Copilot Use Cases",
@@ -11527,7 +11479,7 @@
       "uid": "certification.azure-administrator",
       "title": "Microsoft Certified: Azure Administrator Associate",
       "path": "/credentials/certifications/azure-administrator",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-03T00:40:00+00:00",
       "exams": []
     },
     {
@@ -11545,14 +11497,14 @@
       "uid": "certification.azure-ai-apps-and-agents-developer-associate",
       "title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
       "path": "/credentials/certifications/azure-ai-apps-and-agents-developer-associate",
-      "lastModified": "2026-10-31T01:16:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.azure-ai-cloud-developer-associate",
       "title": "Microsoft Certified: Azure AI Cloud Developer Associate",
       "path": "/credentials/certifications/azure-ai-cloud-developer-associate",
-      "lastModified": "2026-11-01T17:40:00+00:00",
+      "lastModified": "2026-11-03T00:40:00+00:00",
       "exams": []
     },
     {
@@ -11596,7 +11548,7 @@
       "uid": "certification.azure-database-administrator-associate",
       "title": "Microsoft Certified: Azure Database Administrator Associate",
       "path": "/credentials/certifications/azure-database-administrator-associate",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
@@ -11644,7 +11596,7 @@
       "uid": "certification.azure-network-engineer-associate",
       "title": "Microsoft Certified: Azure Network Engineer Associate",
       "path": "/credentials/certifications/azure-network-engineer-associate",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
@@ -11658,7 +11610,7 @@
       "uid": "certification.azure-solutions-architect",
       "title": "Microsoft Certified: Azure Solutions Architect Expert",
       "path": "/credentials/certifications/azure-solutions-architect",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": [
         "az-305"
       ]
@@ -11717,7 +11669,7 @@
       "uid": "certification.cybersecurity-architect-expert",
       "title": "Microsoft Certified: Cybersecurity Architect Expert",
       "path": "/credentials/certifications/cybersecurity-architect-expert",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": [
         "sc-100"
       ]
@@ -11942,21 +11894,21 @@
       "uid": "certification.data-analyst-associate",
       "title": "Microsoft Certified: Power BI Data Analyst Associate",
       "path": "/credentials/certifications/data-analyst-associate",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.developing-ai-enabled-database-solutions",
       "title": "Microsoft Certified: SQL AI Developer Associate",
       "path": "/credentials/certifications/developing-ai-enabled-database-solutions",
-      "lastModified": "2026-10-28T19:18:00+00:00",
+      "lastModified": "2026-11-02T23:26:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.devops-engineer",
       "title": "Microsoft Certified: DevOps Engineer Expert",
       "path": "/credentials/certifications/devops-engineer",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": [
         "az-400"
       ]
@@ -11965,63 +11917,63 @@
       "uid": "certification.fabric-analytics-engineer-associate",
       "title": "Microsoft Certified: Fabric Analytics Engineer Associate",
       "path": "/credentials/certifications/fabric-analytics-engineer-associate",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.fabric-data-engineer-associate",
       "title": "Microsoft Certified: Fabric Data Engineer Associate",
       "path": "/credentials/certifications/fabric-data-engineer-associate",
-      "lastModified": "2026-11-01T17:40:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.github-actions",
       "title": "GitHub Actions",
       "path": "/credentials/certifications/github-actions",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.github-administration",
       "title": "GitHub Administration",
       "path": "/credentials/certifications/github-administration",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.github-advanced-security",
       "title": "GitHub Advanced Security",
       "path": "/credentials/certifications/github-advanced-security",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.github-copilot",
       "title": "GitHub Copilot",
       "path": "/credentials/certifications/github-copilot",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.github-foundations",
       "title": "GitHub Foundations",
       "path": "/credentials/certifications/github-foundations",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.identity-and-access-administrator",
       "title": "Microsoft Certified: Identity and Access Administrator Associate",
       "path": "/credentials/certifications/identity-and-access-administrator",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.implementing-data-engineering-solutions-using-azure-databricks",
       "title": "Microsoft Certified: Azure Databricks Data Engineer Associate",
       "path": "/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks",
-      "lastModified": "2026-10-28T19:18:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
@@ -12674,10 +12626,8 @@
       "uid": "certification.power-platform-developer-associate",
       "title": "Microsoft Certified: Power Platform Developer Associate",
       "path": "/credentials/certifications/power-platform-developer-associate",
-      "lastModified": "2026-10-30T21:22:00+00:00",
-      "exams": [
-        "ab-400"
-      ]
+      "lastModified": "2026-11-04T23:47:00+00:00",
+      "exams": []
     },
     {
       "uid": "certification.power-platform-functional-consultant-associate",
@@ -12713,7 +12663,7 @@
       "uid": "certification.security-operations-analyst",
       "title": "Microsoft Certified: Security Operations Analyst Associate",
       "path": "/credentials/certifications/security-operations-analyst",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "exams": []
     },
     {
@@ -13268,14 +13218,6 @@
       "studyGuide": "/credentials/certifications/resources/study-guides/ab-100"
     },
     {
-      "uid": "exam.ab-400",
-      "code": "ab-400",
-      "title": "Extending Microsoft Power Platform Solutions with Code and AI",
-      "path": "/credentials/certifications/exams/ab-400",
-      "lastModified": "2026-10-30T21:22:00+00:00",
-      "studyGuide": "/credentials/certifications/resources/study-guides/ab-400"
-    },
-    {
       "uid": "exam.ab-650",
       "code": "ab-650",
       "title": "Administering Microsoft 365 and AI Services",
@@ -13432,7 +13374,7 @@
       "code": "az-305",
       "title": "Designing Microsoft Azure Infrastructure Solutions",
       "path": "/credentials/certifications/exams/az-305",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "studyGuide": "/credentials/certifications/resources/study-guides/az-305"
     },
     {
@@ -13440,7 +13382,7 @@
       "code": "az-400",
       "title": "Designing and Implementing Microsoft DevOps Solutions",
       "path": "/credentials/certifications/exams/az-400",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "studyGuide": "/credentials/certifications/resources/study-guides/az-400"
     },
     {
@@ -13888,7 +13830,7 @@
       "code": "pl-400",
       "title": "Microsoft Power Platform Developer",
       "path": "/credentials/certifications/exams/pl-400",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-04T00:12:00+00:00",
       "studyGuide": "/credentials/certifications/resources/study-guides/pl-400"
     },
     {
@@ -13904,7 +13846,7 @@
       "code": "sc-100",
       "title": "Microsoft Cybersecurity Architect",
       "path": "/credentials/certifications/exams/sc-100",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-05T22:08:00+00:00",
       "studyGuide": "/credentials/certifications/resources/study-guides/sc-100"
     }
   ],
@@ -14209,271 +14151,267 @@
   "studyGuides": [
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0100",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0200",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0302",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0501",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0502",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1002",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1003",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1004",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1008",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2001",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2003",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2006",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2007",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2014",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2015",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3001",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3008",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3019",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3020",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3021",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3022",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3030",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3031",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3032",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3034",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5002",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5003",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5004",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5007",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5009",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5010",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6000",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6006",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6500",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6501",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-7001",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-7002",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ab-100",
-      "checked": "2026-11-02"
-    },
-    {
-      "path": "/credentials/certifications/resources/study-guides/ab-400",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ab-650",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-500",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-900",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-901",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-220",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-305",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-400",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-401",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-600",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-720",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-800",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-801",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-802",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-210",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-220",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-230",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-240",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-335",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-700",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-102",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-220",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-500",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-720",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-740",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-200",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-400",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-600",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/sc-100",
-      "checked": "2026-11-02"
+      "checked": "2026-11-09"
     }
   ],
   "unverifiedStudyGuides": [],
@@ -14483,14 +14421,6 @@
       "uid": "course.ab-6007",
       "path": "/training/courses/ab-6007",
       "title": "Secure and Govern your AI agent workforce",
-      "lastSeen": "2026-10-26",
-      "removedOn": "2026-11-02"
-    },
-    {
-      "type": "course",
-      "uid": "course.ms-102t00",
-      "path": "/training/courses/ms-102t00",
-      "title": "Microsoft 365 Administrator",
       "lastSeen": "2026-10-26",
       "removedOn": "2026-11-02"
     },
@@ -14525,6 +14455,46 @@
       "title": "Microsoft Power Platform Developer",
       "lastSeen": "2026-10-26",
       "removedOn": "2026-11-02"
+    },
+    {
+      "type": "exam",
+      "uid": "exam.ab-400",
+      "path": "/credentials/certifications/exams/ab-400",
+      "title": "Extending Microsoft Power Platform Solutions with Code and AI",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "type": "learningPath",
+      "uid": "learn-bizapps.get-started-sovereignty",
+      "path": "/training/paths/get-started-sovereignty",
+      "title": "Get started with Microsoft for Sovereignty",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "type": "learningPath",
+      "uid": "learn-dynamics.get-started-customer-scheduling",
+      "path": "/training/paths/get-started-customer-scheduling",
+      "title": "Get started with Dynamics 365 Customer Service scheduling",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "type": "learningPath",
+      "uid": "learn-dynamics.use-connected-customer-service",
+      "path": "/training/paths/use-connected-customer-service",
+      "title": "Use Connected Customer Service with Dynamics 365",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
+    },
+    {
+      "type": "learningPath",
+      "uid": "learn.wwl.implement-generative-ai-engineering-azure-databricks",
+      "path": "/training/paths/implement-generative-ai-engineering-azure-databricks",
+      "title": "Implement Generative AI engineering with Azure Databricks",
+      "lastSeen": "2026-11-02",
+      "removedOn": "2026-11-09"
     }
   ]
 }
