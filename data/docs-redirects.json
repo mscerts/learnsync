@@ -200,6 +200,38 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/aks/configure-kueue-with-cluster-autoscaler",
+    "to": "/azure/aks/use-managed-kueue-extension-with-the-cluster-autoscaler-on-aks",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/azure/aks/configure-queues-with-automatic-resource-flavors",
+    "to": "/azure/aks/install-the-managed-kueue-extension-on-aks",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/azure/aks/deploy-batch-jobs-with-kueue",
+    "to": "/azure/aks/schedule-and-deploy-batch-jobs-with-managed-kueue-extension-on-aks",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/azure/aks/kueue-overview",
+    "to": "/azure/aks/managed-kueue-extension-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/azure/api-management/ai-gateway-govern-secure-assets",
     "to": "/azure/ai-gateway/concepts",
     "kind": "moved",
@@ -1925,7 +1957,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/cosmos-db/gen-ai/multi-vector-search",
@@ -1941,7 +1973,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/cosmos-db/table",
@@ -1949,15 +1981,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
-  },
-  {
-    "from": "/azure/databricks/agents/agent-memory/self-managed-memory",
-    "to": "/azure/databricks/agents/agent-memory/managed-memory",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/databricks/agents/agent-system-design-patterns",
@@ -2392,6 +2416,14 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/azure/databricks/machine-learning/ai-runtime/guides/migrate-from-slurm",
+    "to": "/azure/databricks/machine-learning/ai-runtime/guides",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/azure/databricks/machine-learning/ai-runtime/migrate-classic-workloads",
     "to": "/azure/databricks/machine-learning/ai-runtime/guides/migrate-classic-workloads",
     "kind": "moved",
@@ -2464,12 +2496,28 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/databricks/release-notes/runtime/10.4lts",
+    "to": "/azure/databricks/release-notes/runtime/eos",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/azure/databricks/release-notes/runtime/10.4lts-ml",
+    "to": "/azure/databricks/release-notes/runtime/eos",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/azure/databricks/security/keys/cmk-managed-disks-azure",
     "to": "/azure/databricks/security/keys/cmk-managed-disks-azure/cmk-managed-disks-azure",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-05",
-    "lastSeen": "2026-10-05"
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/databricks/security/network/front-end/manage-ingress-policies",
@@ -2485,7 +2533,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-06",
-    "lastSeen": "2026-10-06"
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/databricks/volumes/content-search",
@@ -2510,6 +2558,22 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/azure/developer/ai/get-started-securing-your-ai-app",
+    "to": "/azure/developer/ai/get-started-azure-openai-starter-kit",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/azure/developer/ai/keyless-connections",
+    "to": "/azure/developer/ai/get-started-azure-openai-starter-kit",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/developer/terraform/azure-terraform-resource-provider/get-started-export-resources-portal",
@@ -2688,6 +2752,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/foundry/responsible-ai/content-safety/enable-text-watermarking-gpt-models",
+    "to": "/azure/foundry/responsible-ai/content-safety/provenance-disclosure",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/azure/healthcare-apis/fhir/smart-on-fhir-proxy",
     "to": "/azure/healthcare-apis/fhir/smart-on-fhir",
     "kind": "moved",
@@ -2733,7 +2805,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
-    "lastSeen": "2026-11-02"
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/microsoft-discovery/concept-resource-naming",
@@ -2741,7 +2813,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
-    "lastSeen": "2026-11-02"
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/microsoft-discovery/concept-resource-provider-registration",
@@ -2749,7 +2821,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
-    "lastSeen": "2026-11-02"
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/microsoft-discovery/concept-storage-account",
@@ -2757,7 +2829,15 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
-    "lastSeen": "2026-11-02"
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/azure/migrate/automatic-wave-planning-architecture",
+    "to": "/azure/migrate/wave-plan-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/migrate/best-practices-assessment",
@@ -2840,6 +2920,14 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/azure/migrate/how-to-complete-wave-plan",
+    "to": "/azure/migrate/how-to-configure-wave-plan",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/azure/migrate/how-to-create-a-group",
     "to": "/azure/migrate",
     "kind": "landing",
@@ -2880,6 +2968,14 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/azure/migrate/how-to-execute-track-waves",
+    "to": "/azure/migrate/how-to-configure-wave-plan",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/azure/migrate/how-to-migrate",
     "to": "/azure/migrate",
     "kind": "landing",
@@ -2894,6 +2990,14 @@
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/how-to-plan-create-waves",
+    "to": "/azure/migrate/how-to-configure-wave-plan",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/migrate/how-to-review-sql-assessment",
@@ -2934,6 +3038,14 @@
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/migrate/overview",
+    "to": "/azure/migrate/wave-plan-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/azure/migrate/review-sap-assessment",
@@ -3536,6 +3648,30 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/copilot/domain-exclusion",
+    "to": "/copilot/implement/domain-exclusion",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/copilot/edge",
+    "to": "/copilot/manage/manage-copilot-chat",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/copilot/faq",
+    "to": "/copilot/plan/copilot-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/copilot/glossary",
     "to": "/copilot/overview",
     "kind": "moved",
@@ -3552,12 +3688,44 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/copilot/manage-agents-copilot-chat",
+    "to": "/copilot/manage/manage-agents-copilot-chat",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/copilot/manage-copilot-chat",
+    "to": "/copilot/manage/manage-copilot-chat",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/copilot/microsoft-copilot",
     "to": "/copilot",
     "kind": "landing",
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/copilot/overview",
+    "to": "/copilot/plan/copilot-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/copilot/privacy-and-protections",
+    "to": "/copilot/plan/privacy-and-protections",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/copilot/roadmap/copilot-for-dynamics365",
@@ -3632,6 +3800,14 @@
     "lastSeen": "2026-10-19"
   },
   {
+    "from": "/dynamics365/business-central/about-intelligent-cloud",
+    "to": "/dynamics365/business-central/across-powerbi-apps-by-functional-area",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/dynamics365/business-central/dev-itpro/developer/word-layout-add-in",
     "to": "/dynamics365/business-central/ui-design-word-layouts-business-central-add-in",
     "kind": "moved",
@@ -3646,6 +3822,22 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/dynamics365/business-central/manufacturing-powerbi-current-utilization",
+    "to": "/dynamics365/business-central/manufacturing-powerbi-work-center-load",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/dynamics365/business-central/manufacturing-powerbi-historical-utilization",
+    "to": "/dynamics365/business-central/manufacturing-powerbi-work-center-statistics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/dynamics365/customer-insights/journeys/mcp-server-consent",
@@ -3717,7 +3909,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
-    "lastSeen": "2026-11-02"
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/entra/identity/authentication/kerberos-server-key-rotation",
@@ -3832,6 +4024,22 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/fabric/enterprise/metrics-app-feature-autoscale-detail-page",
+    "to": "/fabric/enterprise/metrics-app-on-demand-compute-for-spark-detail-page",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/fabric/enterprise/metrics-app-feature-autoscale-page",
+    "to": "/fabric/enterprise/metrics-app-on-demand-compute-for-spark-page",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/fabric/fundamentals/whats-new-archive",
     "to": "/fabric/fundamentals/whats-new",
     "kind": "moved",
@@ -3888,6 +4096,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/fabric/iq/plan/planning-reference-formulas/lookup-functions",
+    "to": "/fabric/iq/plan/planning-reference-formulas/lookup-functions/xlookup",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/fabric/iq/plan/planning-reference-formulas/math-functions/random-lookup-functions",
     "to": "/fabric/iq/plan/planning-reference-formulas/math-functions/random-functions",
     "kind": "moved",
@@ -3934,6 +4150,22 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/intune/device-updates/apple/deprecated-mdm-policies-ios",
+    "to": "/intune/device-updates/apple",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/intune/device-updates/apple/deprecated-mdm-policies-macos",
+    "to": "/intune/device-updates/apple",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoft-365/admin/manage/agent-365-overview",
@@ -4112,6 +4344,86 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot",
+    "to": "/copilot",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/add-copilot-endpoints-allowlist",
+    "to": "/copilot/plan/add-copilot-endpoints-allowlist",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/ai-models-overview",
+    "to": "/copilot/plan/ai-models-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/anthropic-non-federal-gcc",
+    "to": "/copilot/implement/anthropic-non-federal-gcc",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/app-builder-migration",
+    "to": "/copilot/manage/app-builder-migration",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/architecture-data-protection-auditing",
+    "to": "/copilot/plan/architecture-data-protection-auditing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/compare-copilot-e3-e5-e7",
+    "to": "/copilot/plan/compare-copilot-e3-e5-e7",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/configure-brand-kit-governance-organizational-assets",
+    "to": "/copilot/implement/configure-brand-kit-governance-organizational-assets",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/configure-copilot-admin-center",
+    "to": "/copilot/implement/configure-copilot-admin-center",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/configure-copilot-advanced-package-uploads",
+    "to": "/copilot/manage/configure-copilot-advanced-package-uploads",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/configure-secure-governed-data-foundation-microsoft-365-copilot",
     "to": "/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance",
     "kind": "moved",
@@ -4120,12 +4432,132 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/connect-mistral-ai-models",
+    "to": "/copilot/implement/connect-mistral-ai-models",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/connect-to-ai-models",
+    "to": "/copilot/implement/connect-to-ai-models",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/connect-to-ai-subprocessor",
+    "to": "/copilot/implement/connect-to-ai-subprocessor",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/context",
+    "to": "/copilot/manage/context",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-admin-reports",
+    "to": "/copilot/manage/copilot-admin-reports",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-agent-install",
+    "to": "/copilot/manage/copilot-agent-install",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-agent-store",
+    "to": "/copilot/manage/copilot-agent-store",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-ai-admin-agent",
+    "to": "/copilot/manage/copilot-ai-admin-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-ai-provider-user-sec-group-access",
+    "to": "/copilot/implement/copilot-ai-provider-user-sec-group-access",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-anthropic-apps",
+    "to": "/copilot/implement/copilot-anthropic-apps",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-app-overview",
+    "to": "/copilot/plan/copilot-app-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/copilot-business-faq",
     "to": "/microsoft-365/copilot/copilot-license-options",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-controls/copilot-controls-management",
+    "to": "/copilot/implement/copilot-controls-management",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-controls/copilot-controls-measurement-reporting",
+    "to": "/copilot/implement/copilot-controls-measurement-reporting",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-controls/copilot-controls-overview",
+    "to": "/copilot/implement/copilot-controls-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-controls/copilot-controls-security-governance",
+    "to": "/copilot/implement/copilot-controls-security-governance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoft-365/copilot/copilot-controls/management-controls",
@@ -4160,12 +4592,220 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/copilot-flex-routing",
+    "to": "/copilot/manage/copilot-flex-routing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-library",
+    "to": "/copilot/manage/copilot-library",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-license-options",
+    "to": "/copilot/plan/copilot-license-options",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-overview",
+    "to": "/copilot/plan/copilot-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-personalization-memory",
+    "to": "/copilot/manage/copilot-personalization-memory",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-powerbi-copilot-chat",
+    "to": "/copilot/manage/copilot-powerbi-copilot-chat",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-prompt-defense-in-depth",
+    "to": "/copilot/plan/copilot-prompt-defense-in-depth",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-prompt-gallery",
+    "to": "/copilot/manage/copilot-prompt-gallery",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-prompt-gallery-export-prompts",
+    "to": "/copilot/manage/copilot-prompt-gallery-export-prompts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/copilot-restrict-brand-kit-creation",
     "to": "/microsoft-365/copilot/configure-brand-kit-governance-organizational-assets",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-search-admin-experience",
+    "to": "/copilot/manage/copilot-search-admin-experience",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-search-faq",
+    "to": "/copilot/manage/copilot-search-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-search-image-tagging-integration",
+    "to": "/copilot/manage/copilot-search-image-tagging-integration",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-search-manage",
+    "to": "/copilot/manage/copilot-search-manage",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-search-overview",
+    "to": "/copilot/manage/copilot-search-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-service-diagnostic-tool",
+    "to": "/copilot/implement/copilot-service-diagnostic-tool",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-subprocessor-overview",
+    "to": "/copilot/plan/copilot-subprocessor-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-tuning-admin-guide",
+    "to": "/copilot/manage/copilot-tuning-admin-guide",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-tuning-document-summary-template",
+    "to": "/copilot/manage/copilot-tuning-document-summary-template",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-tuning-document-validation-template",
+    "to": "/copilot/manage/copilot-tuning-document-validation-template",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-tuning-document-writing-template",
+    "to": "/copilot/manage/copilot-tuning-document-writing-template",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-tuning-expert-answers-template",
+    "to": "/copilot/manage/copilot-tuning-expert-answers-template",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-tuning-faq",
+    "to": "/copilot/manage/copilot-tuning-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-tuning-optimization-template",
+    "to": "/copilot/manage/copilot-tuning-optimization-template",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-tuning-overview",
+    "to": "/copilot/manage/copilot-tuning-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-tuning-process",
+    "to": "/copilot/manage/copilot-tuning-process",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/copilot-tuning-style-editing-template",
+    "to": "/copilot/manage/copilot-tuning-style-editing-template",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoft-365/copilot/cowork",
@@ -4336,6 +4976,774 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/deploy-microsoft-365-copilot-app",
+    "to": "/copilot/implement/deploy-microsoft-365-copilot-app",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/discovery-setting-ai-experiences",
+    "to": "/copilot/implement/discovery-setting-ai-experiences",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/agent-handoff",
+    "to": "/copilot/employee-self-service/agent-handoff",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/alm-declarative-agent",
+    "to": "/copilot/employee-self-service/alm-declarative-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/auditing-logging",
+    "to": "/copilot/employee-self-service/auditing-logging",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/commands-reference",
+    "to": "/copilot/employee-self-service/commands-reference",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/connecting-agents-overview",
+    "to": "/copilot/employee-self-service/connecting-agents-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/customize",
+    "to": "/copilot/employee-self-service/customize",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-commands-reference",
+    "to": "/copilot/employee-self-service/declarative-agent-commands-reference",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-customize",
+    "to": "/copilot/employee-self-service/declarative-agent-customize",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-developer-kit-overview",
+    "to": "/copilot/employee-self-service/declarative-agent-developer-kit-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-evaluations",
+    "to": "/copilot/employee-self-service/declarative-agent-evaluations",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-get-started-1-clone-kit",
+    "to": "/copilot/employee-self-service/declarative-agent-get-started-1-clone-kit",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-get-started-2-install-github-copilot",
+    "to": "/copilot/employee-self-service/declarative-agent-get-started-2-install-github-copilot",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-get-started-3-run-setup",
+    "to": "/copilot/employee-self-service/declarative-agent-get-started-3-run-setup",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-get-started-codespaces",
+    "to": "/copilot/employee-self-service/declarative-agent-get-started-codespaces",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-get-started-installer",
+    "to": "/copilot/employee-self-service/declarative-agent-get-started-installer",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-instructions",
+    "to": "/copilot/employee-self-service/declarative-agent-instructions",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-knowledge-sources",
+    "to": "/copilot/employee-self-service/declarative-agent-knowledge-sources",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-known-issues-limitations",
+    "to": "/copilot/employee-self-service/declarative-agent-known-issues-limitations",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-landing-page",
+    "to": "/copilot/employee-self-service/declarative-agent-landing-page",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-monitor-telemetry-feedback",
+    "to": "/copilot/employee-self-service/declarative-agent-monitor-telemetry-feedback",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-optimize-sharepoint",
+    "to": "/copilot/employee-self-service/declarative-agent-optimize-sharepoint",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-overview",
+    "to": "/copilot/employee-self-service/declarative-agent-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-publish",
+    "to": "/copilot/employee-self-service/declarative-agent-publish",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-servicenow-hr-it",
+    "to": "/copilot/employee-self-service/declarative-agent-servicenow-hr-it",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-servicenow-knowledge",
+    "to": "/copilot/employee-self-service/declarative-agent-servicenow-knowledge",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-sharepoint-filtering",
+    "to": "/copilot/employee-self-service/declarative-agent-sharepoint-filtering",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-sharepoint-knowledge",
+    "to": "/copilot/employee-self-service/declarative-agent-sharepoint-knowledge",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-what-you-can-do-now",
+    "to": "/copilot/employee-self-service/declarative-agent-what-you-can-do-now",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-workday",
+    "to": "/copilot/employee-self-service/declarative-agent-workday",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-workday-reference",
+    "to": "/copilot/employee-self-service/declarative-agent-workday-reference",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/declarative-agent-workday-samples",
+    "to": "/copilot/employee-self-service/declarative-agent-workday-samples",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/deploy-overview-alm",
+    "to": "/copilot/employee-self-service/deploy-overview-alm",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/deployment-checklist",
+    "to": "/copilot/employee-self-service/deployment-checklist",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/deployment-playbook-declarative-agent",
+    "to": "/copilot/employee-self-service/deployment-playbook-declarative-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/design-best-practices",
+    "to": "/copilot/employee-self-service/design-best-practices",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/developer-kit-overview",
+    "to": "/copilot/employee-self-service/developer-kit-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/emotional-quotient-ambiguity",
+    "to": "/copilot/employee-self-service/emotional-quotient-ambiguity",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/employee-self-service-multilingual",
+    "to": "/copilot/employee-self-service/employee-self-service-multilingual",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/evaluations",
+    "to": "/copilot/employee-self-service/evaluations",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/evaluations-custom-strategy",
+    "to": "/copilot/employee-self-service/evaluations-custom-strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/evaluations-run-tests",
+    "to": "/copilot/employee-self-service/evaluations-run-tests",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/facilities-dining-search-food-stations",
+    "to": "/copilot/employee-self-service/facilities-dining-search-food-stations",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/facilities-fm-create-ticket",
+    "to": "/copilot/employee-self-service/facilities-fm-create-ticket",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/facilities-lobby-invite-guest",
+    "to": "/copilot/employee-self-service/facilities-lobby-invite-guest",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/facilities-parking-register-vehicle",
+    "to": "/copilot/employee-self-service/facilities-parking-register-vehicle",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/feedback",
+    "to": "/copilot/employee-self-service/feedback",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/flightcheck-remediation",
+    "to": "/copilot/employee-self-service/flightcheck-remediation",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/flightcheck-standalone",
+    "to": "/copilot/employee-self-service/flightcheck-standalone",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/get-started-1-clone-the-kit",
+    "to": "/copilot/employee-self-service/get-started-1-clone-the-kit",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/get-started-2-install-github-copilot",
+    "to": "/copilot/employee-self-service/get-started-2-install-github-copilot",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/get-started-3-run-setup",
+    "to": "/copilot/employee-self-service/get-started-3-run-setup",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/get-started-codespaces",
+    "to": "/copilot/employee-self-service/get-started-codespaces",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/get-started-installer",
+    "to": "/copilot/employee-self-service/get-started-installer",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/install",
+    "to": "/copilot/employee-self-service/install",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/install-declarative-agent",
+    "to": "/copilot/employee-self-service/install-declarative-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/known-issues-limitations",
+    "to": "/copilot/employee-self-service/known-issues-limitations",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/landing-page",
+    "to": "/copilot/employee-self-service/landing-page",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/maker-journey-declarative-agent",
+    "to": "/copilot/employee-self-service/maker-journey-declarative-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/multi-agent-hub",
+    "to": "/copilot/employee-self-service/multi-agent-hub",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/multi-agent-hub-declarative-agents",
+    "to": "/copilot/employee-self-service/multi-agent-hub-declarative-agents",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/optimization-sharepoint",
+    "to": "/copilot/employee-self-service/optimization-sharepoint",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/overview",
+    "to": "/copilot/employee-self-service/overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/prepare",
+    "to": "/copilot/employee-self-service/prepare",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/prerequisites",
+    "to": "/copilot/employee-self-service/prerequisites",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/publish",
+    "to": "/copilot/employee-self-service/publish",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/rai-faq",
+    "to": "/copilot/employee-self-service/rai-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/sap-employee-read-write-scenarios",
+    "to": "/copilot/employee-self-service/sap-employee-read-write-scenarios",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/sap-manager-read-write-scenarios",
+    "to": "/copilot/employee-self-service/sap-manager-read-write-scenarios",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/sapsuccessfactors",
+    "to": "/copilot/employee-self-service/sapsuccessfactors",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/securely-integrating-with-external-systems",
+    "to": "/copilot/employee-self-service/securely-integrating-with-external-systems",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/servicenow",
+    "to": "/copilot/employee-self-service/servicenow",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/servicenow-hrsd-itsm",
+    "to": "/copilot/employee-self-service/servicenow-hrsd-itsm",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/servicenow-live-agent",
+    "to": "/copilot/employee-self-service/servicenow-live-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/sharepoint-filtering",
+    "to": "/copilot/employee-self-service/sharepoint-filtering",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/troubleshoot",
+    "to": "/copilot/employee-self-service/troubleshoot",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/troubleshoot-getting-started",
+    "to": "/copilot/employee-self-service/troubleshoot-getting-started",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/usage-analytics",
+    "to": "/copilot/employee-self-service/usage-analytics",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/what-you-can-do-now",
+    "to": "/copilot/employee-self-service/what-you-can-do-now",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday",
+    "to": "/copilot/employee-self-service/workday",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-advanced-support-config",
+    "to": "/copilot/employee-self-service/workday-advanced-support-config",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-columns-support-config",
+    "to": "/copilot/employee-self-service/workday-columns-support-config",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-extensibility",
+    "to": "/copilot/employee-self-service/workday-extensibility",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-filter-support-config",
+    "to": "/copilot/employee-self-service/workday-filter-support-config",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-output-support-config",
+    "to": "/copilot/employee-self-service/workday-output-support-config",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-prompts-support-config",
+    "to": "/copilot/employee-self-service/workday-prompts-support-config",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-reports",
+    "to": "/copilot/employee-self-service/workday-reports",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-share-support-config",
+    "to": "/copilot/employee-self-service/workday-share-support-config",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-simplified-setup",
+    "to": "/copilot/employee-self-service/workday-simplified-setup",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-sort-support-config",
+    "to": "/copilot/employee-self-service/workday-sort-support-config",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-sub-filter-support-config",
+    "to": "/copilot/employee-self-service/workday-sub-filter-support-config",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-upgrade-solution",
+    "to": "/copilot/employee-self-service/workday-upgrade-solution",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/employee-self-service/workday-upgrade-to-simplified",
+    "to": "/copilot/employee-self-service/workday-upgrade-to-simplified",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/enable-users",
+    "to": "/copilot/adopt/enable-users",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/enablement-resources",
+    "to": "/copilot/adopt/enablement-resources",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/enterprise-brand-manager",
     "to": "/microsoft-365/copilot/configure-brand-kit-governance-organizational-assets",
     "kind": "moved",
@@ -4350,6 +5758,14 @@
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/enterprise-data-protection",
+    "to": "/copilot/plan/enterprise-data-protection",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoft-365/copilot/extensibility/agents-are-apps",
@@ -4376,6 +5792,46 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/faq-deploy-microsoft-365-copilot-app",
+    "to": "/copilot/implement/faq-deploy-microsoft-365-copilot-app",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/faq-opal",
+    "to": "/copilot/manage/faq-opal",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/faq-researcher",
+    "to": "/copilot/manage/faq-researcher",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/faq-wordexcelppt-agents",
+    "to": "/copilot/manage/faq-wordexcelppt-agents",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/flow-builder-privacy-data-subject-request-faq",
+    "to": "/copilot/manage/flow-builder-privacy-data-subject-request-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/get-ready-copilot-sharepoint-advanced-management",
     "to": "/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance",
     "kind": "moved",
@@ -4384,12 +5840,60 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/gov-overview",
+    "to": "/copilot/plan/gov-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/harmful-content-protection-copilot-chat",
+    "to": "/copilot/manage/harmful-content-protection-copilot-chat",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/manage-copilot-onboarding",
     "to": "/microsoft-365/copilot/roll-out-copilot-onboarding",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/manage-generative-ai-apps",
+    "to": "/copilot/manage/manage-generative-ai-apps",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/manage-preview-ai-models",
+    "to": "/copilot/implement/manage-preview-ai-models",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/manage-public-web-access",
+    "to": "/copilot/plan/manage-public-web-access",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-ai-disclaimers",
+    "to": "/copilot/implement/microsoft-365-ai-disclaimers",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-app-admin-settings",
@@ -4406,6 +5910,14 @@
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-application-card",
+    "to": "/copilot/plan/microsoft-365-copilot-application-card",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-architecture",
@@ -4504,6 +6016,14 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/microsoft-365-copilot-privacy",
+    "to": "/copilot/plan/microsoft-365-copilot-privacy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/microsoft-365-copilot-reports-for-admins",
     "to": "/microsoft-365/copilot/copilot-admin-reports",
     "kind": "moved",
@@ -4576,12 +6096,76 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/microsoft-copilot-manage-content-sharing",
+    "to": "/copilot/manage/microsoft-copilot-manage-content-sharing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/microsoft-copilot-requirements",
+    "to": "/copilot/plan/microsoft-copilot-requirements",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/multiple-account-access",
+    "to": "/copilot/plan/multiple-account-access",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/opal-settings-manage",
+    "to": "/copilot/manage/opal-settings-manage",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/openai-subprocessor",
+    "to": "/copilot/implement/openai-subprocessor",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/optimize-copilot-configuration-settings",
+    "to": "/copilot/implement/optimize-copilot-configuration-settings",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/optimize-microsoft-365-configuration-settings",
     "to": "/microsoft-365/copilot/optimize-copilot-configuration-settings",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/organizational-prompts",
+    "to": "/copilot/manage/organizational-prompts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/pay-as-you-go/copilot-capacity-packs",
+    "to": "/copilot/implement/copilot-capacity-packs",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoft-365/copilot/pay-as-you-go/meters",
@@ -4600,6 +6184,22 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/pay-as-you-go/pay-as-you-go-meters",
+    "to": "/copilot/plan/pay-as-you-go-meters",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/pay-as-you-go/pay-as-you-go-overview",
+    "to": "/copilot/plan/pay-as-you-go-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/pay-as-you-go/setup",
     "to": "/microsoft-365/copilot/pay-as-you-go/setup-pay-as-you-go",
     "kind": "moved",
@@ -4608,12 +6208,164 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/pay-as-you-go/setup-pay-as-you-go",
+    "to": "/copilot/implement/setup-pay-as-you-go",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/pay-as-you-go/view-cost",
+    "to": "/copilot/manage/view-cost",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/people-skills-ai-inferencing",
+    "to": "/copilot/manage/people-skills-ai-inferencing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/people-skills-data-and-ai-guidelines",
+    "to": "/copilot/manage/people-skills-data-and-ai-guidelines",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/people-skills-import-export-skills",
+    "to": "/copilot/manage/people-skills-import-export-skills",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/people-skills-manage-ai-restricted-skills",
+    "to": "/copilot/manage/people-skills-manage-ai-restricted-skills",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/people-skills-manage-custom-skill",
+    "to": "/copilot/manage/people-skills-manage-custom-skill",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/people-skills-manage-skills-library",
+    "to": "/copilot/manage/people-skills-manage-skills-library",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/people-skills-overview",
+    "to": "/copilot/manage/people-skills-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/people-skills-setup",
+    "to": "/copilot/manage/people-skills-setup",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/people-skills-sharing-inferencing-controls",
+    "to": "/copilot/manage/people-skills-sharing-inferencing-controls",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/perform-data-subject-requests-for-workflows-agents",
+    "to": "/copilot/manage/perform-data-subject-requests-for-workflows-agents",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/pin-copilot-app-windows-taskbar-group-policy",
+    "to": "/copilot/implement/pin-copilot-app-windows-taskbar-group-policy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/pin-copilot-chat-navbar",
+    "to": "/copilot/implement/pin-copilot-chat-navbar",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/pin-copilot-taskbar",
+    "to": "/copilot/implement/pin-copilot-taskbar",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/researcher-agent",
+    "to": "/copilot/manage/researcher-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/researcher-agent-computer-use",
+    "to": "/copilot/manage/researcher-agent-computer-use",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/researcher-agent-computer-use-faq",
+    "to": "/copilot/manage/researcher-agent-computer-use-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/responsible-ai/copilot-cowork-application-card",
     "to": "/copilot/cowork/responsible-ai/copilot-cowork-application-card",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/responsible-ai/copilot-tuning-responsible-ai-faq",
+    "to": "/copilot/manage/copilot-tuning-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoft-365/copilot/responsible-ai/cowork-responsible-ai-faq",
@@ -4632,6 +6384,22 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/responsible-ai/faq-app-builder",
+    "to": "/copilot/manage/faq-app-builder",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/responsible-ai/flow-builder-responsible-ai-faq",
+    "to": "/copilot/manage/flow-builder-responsible-ai-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/responsible-ai/responsible-ai-overview",
     "to": "/microsoft-365/copilot/microsoft-365-copilot-application-card",
     "kind": "moved",
@@ -4640,12 +6408,188 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-365/copilot/roll-out-copilot-onboarding",
+    "to": "/copilot/adopt/roll-out-copilot-onboarding",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/scheduled-prompts",
+    "to": "/copilot/manage/scheduled-prompts",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/scheduled-prompts-environment",
+    "to": "/copilot/manage/scheduled-prompts-environment",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/scheduled-prompts-inventory",
+    "to": "/copilot/manage/scheduled-prompts-inventory",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance",
+    "to": "/copilot/plan/secure-govern-copilot-foundational-deployment-guidance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-365/copilot/security-microsoft-365-copilot",
     "to": "/microsoft-365/copilot/security-microsoft-copilot",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/security-microsoft-copilot",
+    "to": "/copilot/plan/security-microsoft-copilot",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/spacexai-subprocessor",
+    "to": "/copilot/implement/spacexai-subprocessor",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/track-copilot-adoption",
+    "to": "/copilot/adopt/track-copilot-adoption",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/usage-based-billing-compare-dashboard-views",
+    "to": "/copilot/implement/usage-based-billing-compare-dashboard-views",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/usage-based-billing-copilot-credits-cost",
+    "to": "/copilot/implement/usage-based-billing-copilot-credits-cost",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/usage-based-billing-copilot-credits-csp-partner-macc",
+    "to": "/copilot/implement/usage-based-billing-copilot-credits-csp-partner-macc",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/usage-based-billing-copilot-credits-monitor-spending",
+    "to": "/copilot/implement/usage-based-billing-copilot-credits-monitor-spending",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/usage-based-billing-copilot-credits-setup",
+    "to": "/copilot/implement/usage-based-billing-copilot-credits-setup",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/usage-based-billing-manage-copilot-credits",
+    "to": "/copilot/implement/usage-based-billing-manage-copilot-credits",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/usage-based-billing-manage-copilot-studio-costs",
+    "to": "/copilot/implement/usage-based-billing-manage-copilot-studio-costs",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/usage-based-billing-overview-copilot-credits",
+    "to": "/copilot/plan/usage-based-billing-overview-copilot-credits",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/use-remote-browser-microsoft-copilot",
+    "to": "/copilot/manage/use-remote-browser-microsoft-copilot",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/user-subscription-license-usage-based-billing",
+    "to": "/copilot/plan/user-subscription-license-usage-based-billing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/watermarks",
+    "to": "/copilot/manage/watermarks",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/wordexcelppt-agents",
+    "to": "/copilot/manage/wordexcelppt-agents",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/workflows-environment-workflows-agents",
+    "to": "/copilot/manage/workflows-environment-workflows-agents",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-365/copilot/workforce-insights-agent",
+    "to": "/copilot/manage/workforce-insights-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoft-365/education/guide/1-windows/win10win11upgrade",
@@ -4720,12 +6664,36 @@
     "lastSeen": "2026-10-19"
   },
   {
+    "from": "/microsoft-365/managed-apps/managed-runtime-security-governance",
+    "to": "/microsoft-365/copilot-managed-runtime/managed-runtime-security-governance",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-copilot-studio/add-work-iq",
     "to": "/microsoft-copilot-studio/agents-experience/add-work-iq",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-copilot-studio/admin-logging-copilot-studio",
+    "to": "/microsoft-copilot-studio/admin-data-loss-prevention",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/microsoft-copilot-studio/flow-nl",
+    "to": "/microsoft-copilot-studio/workflows-experience/flow-designer",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoft-copilot-studio/guidance/cux-disambiguate-intent",
@@ -5024,6 +6992,14 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoft-copilot-studio/sensitivity-label-copilot-studio",
+    "to": "/microsoft-copilot-studio/admin-data-loss-prevention",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoft-copilot-studio/voice-external-grammars",
     "to": "/microsoft-copilot-studio/voice-overview",
     "kind": "moved",
@@ -5256,6 +7232,14 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/microsoftteams/platform/graph-api/rsc/grant-resource-specific-consent",
+    "to": "/microsoftteams/platform/graph-api/rsc/declare-resource-specific-consent-requirements",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/microsoftteams/platform/m365-apps/agent-connectors",
     "to": "/microsoft-365/copilot/extensibility/plugin-type-mcp-servers",
     "kind": "moved",
@@ -5270,6 +7254,14 @@
     "status": 301,
     "firstSeen": "2026-10-14",
     "lastSeen": "2026-10-14"
+  },
+  {
+    "from": "/microsoftteams/platform/resources/teams-contributor-reference",
+    "to": "/microsoftteams/platform/developer-support-feedback",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/microsoftteams/platform/samples/teams-low-code-solutions",
@@ -5318,6 +7310,14 @@
     "status": 301,
     "firstSeen": "2026-10-19",
     "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/partner-center/announcements/2025-november",
+    "to": "/partner-center/announcements",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/partner-center/announcements/2025-october",
@@ -5536,6 +7536,126 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/security/adoption",
+    "to": "/security/zero-trust/security-adoption-model",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/adoption/adoption",
+    "to": "/security/zero-trust/security-adoption-model",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/adoption/mcra",
+    "to": "/security/zero-trust/microsoft-reference-architecture",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/adoption/the-ciso-workshop",
+    "to": "/security/zero-trust/workshop-business-security-leaders",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/adoption/the-ciso-workshop-videos",
+    "to": "/security/zero-trust/workshop-business-security-leaders-video",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/operations",
+    "to": "/security/zero-trust/security-adoption-discipline-security-operations",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/operations/incident-response-overview",
+    "to": "/security/zero-trust/security-adoption-discipline-security-operations-incidents",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/operations/incident-response-planning",
+    "to": "/security/zero-trust/security-operations-incident-response-readiness",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/operations/incident-response-playbook-app-consent",
+    "to": "/security/zero-trust/security-operations-playbook-app-consent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/operations/incident-response-playbook-compromised-malicious-app",
+    "to": "/security/zero-trust/security-operations-playbook-compromised-malicious-app",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/operations/incident-response-playbook-password-spray",
+    "to": "/security/zero-trust/security-operations-playbook-password-spray",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/operations/incident-response-playbook-phishing",
+    "to": "/security/zero-trust/security-operations-playbook-phishing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/operations/incident-response-playbooks",
+    "to": "/security/zero-trust/security-operations-incident-response-playbooks",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/operations/overview",
+    "to": "/security/zero-trust/security-adoption-discipline-security-operations",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/security/operations/token-theft-playbook",
+    "to": "/security/zero-trust/security-operations-playbook-token-theft",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
     "from": "/security/zero-trust/prioritizing-defense/adopt-open-source-updates",
     "to": "/security/zero-trust/prioritizing-defense/prioritizing-defense-overview",
     "kind": "moved",
@@ -5710,6 +7830,182 @@
     "status": 301,
     "firstSeen": "2026-10-19",
     "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/cant-move-license-plate",
+    "to": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/cant-move-license-plate",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/cant-reduce-picked-quantities",
+    "to": "/dynamics365/supply-chain/inventory/outbound-process",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/delivery-note-correction",
+    "to": "/dynamics365/supply-chain/warehousing/outbound-load-handling",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/generate-work-immediately-load-release",
+    "to": "/dynamics365/supply-chain/warehousing/wave-templates",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/invalid-license-plate",
+    "to": "/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/inventory-status-change-work-type",
+    "to": "/dynamics365/supply-chain/warehousing/control-warehouse-location-directives",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-location-invalid",
+    "to": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-location-invalid",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-specified-location",
+    "to": "/dynamics365/supply-chain/warehousing/confirm-and-transfer",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/load-weight-positive-numbers",
+    "to": "/troubleshoot/dynamics-365/supply-chain/warehousing/weight-fields-on-load-lines-dont-match-weight-fields-error",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/mixed-license-plate-receiving",
+    "to": "/dynamics365/supply-chain/warehousing/mixed-license-plate-receiving",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/mobile-app-emulator-administrator",
+    "to": "/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/not-enough-work-for-cluster",
+    "to": "/dynamics365/supply-chain/warehousing/system-directed-cluster-pick",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/packing-station-not-show-product-notes",
+    "to": "/dynamics365/supply-chain/warehousing/packing-work",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/partial-picking-warehouse-app",
+    "to": "/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/partial-quantity-inventory-status",
+    "to": "/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/print-documents-by-warehouse",
+    "to": "/dynamics365/supply-chain/warehousing/outbound-load-handling",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/quantity-invalid-split-pick",
+    "to": "/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/rerelease-partially-shipped-load",
+    "to": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/rerelease-partially-shipped-load",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/shipment-confirmed-no-posting",
+    "to": "/dynamics365/supply-chain/warehousing/outbound-load-handling",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/unconfirmed-purchase-orders-confirmed",
+    "to": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/unconfirmed-purchase-orders-confirmed",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/weight-must-be-positive-error",
+    "to": "/troubleshoot/dynamics-365/supply-chain/warehousing/weight-fields-on-load-lines-dont-match-weight-fields-error",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/warehousing/work-is-not-blocked",
+    "to": "/dynamics365/supply-chain/warehousing/work-blocking-reasons",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-09",
+    "lastSeen": "2026-11-09"
   },
   {
     "from": "/troubleshoot/exchange/compliance/items-are-removed-by-mrm-2-0-unexpectedly",

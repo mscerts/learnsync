@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T17:38:55.315Z",
+  "generatedAt": "2026-11-09T18:07:19.174Z",
   "sources": {
     "learn": "2026-11-09T17:38:55.315Z",
-    "docs": "2026-11-02T17:58:27.554Z"
+    "docs": "2026-11-09T18:07:19.174Z"
   },
   "entries": [
     {
@@ -327,7 +327,7 @@
       "title": "Configure private networking for AI Gateway tier (preview)",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -340,7 +340,7 @@
       "title": "Get started with the AI Gateway tier (preview) setup wizard",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -353,7 +353,7 @@
       "title": "Quickstart: Create an AI Gateway tier (preview) instance",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -397,6 +397,19 @@
       "status": 301
     },
     {
+      "path": "/azure/application-gateway/confidential-compute-overview",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "gone",
+      "to": null,
+      "title": "Application Gateway Confidential Compute architecture",
+      "parent": null,
+      "firstSeen": "2026-11-09",
+      "lastVerified": "2026-11-09",
+      "evidence": "quarantine",
+      "status": 404
+    },
+    {
       "path": "/azure/azure-local/manage/configure-proxy-settings-23h2",
       "kind": "docs",
       "family": "docs",
@@ -405,7 +418,7 @@
       "title": "Configure proxy settings for Azure Local, version 23H2 - Azure Local",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -418,7 +431,7 @@
       "title": "Convert System Center Operations Manager management packs into data collection rules",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -605,6 +618,19 @@
       "status": 301
     },
     {
+      "path": "/azure/databricks/machine-learning/ai-runtime/guides/migrate-from-slurm",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/azure/databricks/machine-learning/ai-runtime/guides",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-09",
+      "lastVerified": "2026-11-09",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/databricks/machine-learning/mlops/llmops",
       "kind": "docs",
       "family": "docs",
@@ -613,7 +639,7 @@
       "title": "LLMOps workflows on Azure Databricks - Azure Databricks",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -626,7 +652,7 @@
       "title": "Configure a credential in Azure Device Registry",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -639,7 +665,7 @@
       "title": "Revoke Certificates and Delete Policies in Azure Device Registry",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1029,7 +1055,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1055,7 +1081,7 @@
       "title": "Default dimensions",
       "parent": null,
       "firstSeen": "2026-09-28",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1068,7 +1094,7 @@
       "title": "January 2023 Update for Microsoft Dynamics 365 Knowledge Management - Release Notes",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1081,9 +1107,35 @@
       "title": "Define cycle counting - Supply Chain Management | Dynamics 365",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
+    },
+    {
+      "path": "/intune/device-updates/apple/deprecated-mdm-policies-ios",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/intune/device-updates/apple",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-09",
+      "lastVerified": "2026-11-09",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/intune/device-updates/apple/deprecated-mdm-policies-macos",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/intune/device-updates/apple",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-09",
+      "lastVerified": "2026-11-09",
+      "evidence": "docs-redirect",
+      "status": 301
     },
     {
       "path": "/microsoft-365/community/article-template",
@@ -1094,7 +1146,7 @@
       "title": "Name of article",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1107,22 +1159,22 @@
       "title": "Maturity Model for Microsoft 365",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
     {
-      "path": "/microsoft-365/copilot/responsible-ai/copilot-tuning-responsible-ai-faq",
+      "path": "/microsoft-365/copilot",
       "kind": "docs",
       "family": "docs",
-      "outcome": "gone",
-      "to": null,
-      "title": "FAQ for Copilot Tuning",
+      "outcome": "landing",
+      "to": "/copilot",
+      "title": null,
       "parent": null,
-      "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-02",
-      "evidence": "quarantine",
-      "status": 404
+      "firstSeen": "2026-11-09",
+      "lastVerified": "2026-11-09",
+      "evidence": "docs-redirect",
+      "status": 301
     },
     {
       "path": "/microsoft-365/security/active-content-in-trusted-docs",
@@ -1133,7 +1185,7 @@
       "title": "Manage active content in Office documents for IT admins",
       "parent": null,
       "firstSeen": "2026-09-01",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1160,6 +1212,19 @@
       "parent": null,
       "firstSeen": "2026-10-19",
       "lastVerified": "2026-10-19",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/partner-center/announcements/2025-november",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/partner-center/announcements",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-09",
+      "lastVerified": "2026-11-09",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -2789,6 +2854,58 @@
       "status": 404
     },
     {
+      "path": "/troubleshoot/dynamics-365/supply-chain/warehousing/cant-move-license-plate",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/cant-move-license-plate",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-09",
+      "lastVerified": "2026-11-09",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-location-invalid",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-location-invalid",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-09",
+      "lastVerified": "2026-11-09",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/dynamics-365/supply-chain/warehousing/rerelease-partially-shipped-load",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/rerelease-partially-shipped-load",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-09",
+      "lastVerified": "2026-11-09",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/dynamics-365/supply-chain/warehousing/unconfirmed-purchase-orders-confirmed",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "retired",
+      "to": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/unconfirmed-purchase-orders-confirmed",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-09",
+      "lastVerified": "2026-11-09",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/troubleshoot/exchange/compliance/items-are-removed-by-mrm-2-0-unexpectedly",
       "kind": "docs",
       "family": "docs",
@@ -2914,7 +3031,7 @@
       "title": "Collect a Performance Trace in New Outlook for Windows",
       "parent": null,
       "firstSeen": "2026-09-28",
-      "lastVerified": "2026-11-02",
+      "lastVerified": "2026-11-09",
       "evidence": "quarantine",
       "status": 404
     },
