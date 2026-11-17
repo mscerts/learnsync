@@ -110,14 +110,12 @@ export async function run(h, learn, { when = "2026-10-05T10:00:00Z", env = {}, c
   learn.probes = [];
   learn.gets = [];
   learn.t = Date.parse(when);
-  const reportFile = join(h.dir, "report.md");
-  const githubOutput = join(h.dir, "github-output.txt");
   const messages = [];
   const result = await runDocsSync({
     dataDir: h.data,
     client: learn.client(),
     env: {},
-    config: { ...readConfig(env), delayMs: 0, reportFile, githubOutput, ...config },
+    config: { ...readConfig(env), delayMs: 0, ...config },
     log: (m) => messages.push(String(m)),
     warn: (m) => messages.push(`WARN ${m}`),
     now: () => new Date(learn.t),
@@ -126,7 +124,7 @@ export async function run(h, learn, { when = "2026-10-05T10:00:00Z", env = {}, c
     catalogMinAbsolute: 1,
     ...rest,
   });
-  return { ...result, messages, reportFile, githubOutput, probes: learn.probes, gets: learn.gets };
+  return { ...result, messages, probes: learn.probes, gets: learn.gets };
 }
 
 export const pad = (n) => String(n).padStart(2, "0");

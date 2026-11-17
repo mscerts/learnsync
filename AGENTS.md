@@ -362,8 +362,8 @@ December 2026; the old git/REPOS design is gone). The script is a thin wrapper o
    takes ~43 weekly runs; raise it if fresher `checked` dates matter). Live sets
    `checked = today`.
 6. **Quarantine** (`docs-catalog-invalid.json`): definitive 404/410 only; re-checked every
-   run and released when restored (`MAX_QUARANTINE_RECHECKS`). A new quarantine opens an
-   issue (table capped at 100 rows, surge callout above 20).
+   run and released when restored (`MAX_QUARANTINE_RECHECKS`). A new quarantine opens no
+   issue (alerting is in mscerts/hub); the run log counts the new ones.
 7. **Status** and files are written atomically and only when content changed; `status.json`
    `docs` is written on every run that passes the failsafes.
 
@@ -400,7 +400,7 @@ data file.
 
 Env knobs: `DRY_RUN=1`, `FULL_DISCOVERY=1`, `MAX_PAGE_FETCHES`, `MAX_MISSING_CHECKS`,
 `VERIFY_PER_RUN`, `MAX_RUNTIME_MINUTES`, `CONSECUTIVE_TRANSIENT_LIMIT`,
-`MAX_QUARANTINE_RECHECKS`, `SKIP_GIT_SOURCES=1`, `QUARANTINE_REPORT_FILE`.
+`MAX_QUARANTINE_RECHECKS`, `SKIP_GIT_SOURCES=1`.
 
 ---
 
@@ -543,7 +543,7 @@ always come from the same commit.
 - Each Learn run (catalog, then content) adds at most `CHANGES_MAX_PROBES` (300) live probes for the
   change files, 3 workers about a second apart: a few minutes, well inside the 60-minute timeout.
 - Failures open or comment on ONE issue with a stable title (`Microsoft Learn Catalog Sync Failed`,
-  `Microsoft Docs Catalog Sync Failed`, label `bug`). Newly quarantined docs URLs open a `data` issue, but not a URL an earlier quarantine issue (open or closed) already listed (`scripts/reported-quarantine.mjs` reads the issue bodies before the sync; `QUARANTINE_REPORTED_FILE`), so a URL that flips between 404 and live is not reported twice.
+  `Microsoft Docs Catalog Sync Failed`, label `bug`). Changes to URLs (quarantined, moved or removed links) open no issue: alerting on them lives in mscerts/hub, which reads `data/docs-catalog-invalid.json` and `data/changes/`. The run log still says how many URLs were newly quarantined.
 - **Optional hub trigger:** if the repository secret `HUB_DISPATCH_TOKEN` (a token that may create
   repository dispatch events on mscerts/hub) is set, each successful sync sends
   `repository_dispatch` `learnsync-synced` to mscerts/hub so its Learn URL Check runs right away.

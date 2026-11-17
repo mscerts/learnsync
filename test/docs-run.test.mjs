@@ -119,8 +119,6 @@ test("lifecycle: change, removal, restore, move and reappearance across runs", a
   assert.ok(lines.includes("/azure/c\t2026-09-22"), "live-but-unlisted keeps its previous lastmod in the index");
   assert.ok(!lines.some((l) => l.startsWith("/azure/b\t")));
   assert.ok(lines.some((l) => l.startsWith("/azure/d\t")));
-  assert.match(readFileSync(w1.reportFile, "utf-8"), /azure\/b/);
-  assert.equal(readFileSync(w1.githubOutput, "utf-8"), "new_quarantine_count=1\n");
 
   // week 2: b is restored (still not in the sitemap): the quarantine re-check releases it
   learn.page("/azure/b", "live");
@@ -130,7 +128,6 @@ test("lifecycle: change, removal, restore, move and reappearance across runs", a
   catalog = byPath(readCatalog(h));
   assert.equal(catalog.get("/azure/b").lastmod, "released");
   assert.ok(indexLines(h).some((l) => l.startsWith("/azure/b\t")));
-  assert.equal(readFileSync(w2.githubOutput, "utf-8"), "new_quarantine_count=1\n", "no new quarantine in week 2, so nothing is appended");
 
   // week 3: c now redirects elsewhere: ledger entry, gone from index and catalog
   learn.page("/azure/c", { to: "/azure/c-new" });

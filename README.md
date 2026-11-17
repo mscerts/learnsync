@@ -107,10 +107,8 @@ Both syncs run weekly on GitHub Actions (Mondays; GitHub often starts scheduled 
 late) or on demand from the **Actions** tab. They share one queue so they never push at the
 same time, and commit through a push-with-retry script. A run that passes its failsafes
 commits the refreshed data and `status.json` (the heartbeat consumers read); a run that fails
-a failsafe writes nothing and opens (or comments on) one issue. Newly quarantined
-documentation URLs open a separate `data` issue, except a URL that an earlier quarantine
-issue (open or closed) already listed: one that flips between 404 and live stays quarantined but
-is not reported twice. If the repository secret `HUB_DISPATCH_TOKEN`
+a failsafe writes nothing and opens (or comments on) one issue. Changes to URLs (a quarantined, moved or removed link) open no
+issue; mscerts/hub alerts on them from the data files. If the repository secret `HUB_DISPATCH_TOKEN`
 is set, each successful sync also tells mscerts/hub to run its Learn URL check immediately.
 
 ## Repo maintenance

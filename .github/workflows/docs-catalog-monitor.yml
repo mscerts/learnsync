@@ -32,20 +32,8 @@ jobs:
         with:
           node-version: 22
 
-      # The URLs that earlier quarantine issues (open or closed) already listed: a URL that flips
-      # between 404 and live is quarantined again each time it breaks and must not open the same
-      # issue again. A failed lookup only means that every newly quarantined URL is reported.
-      - name: Look up the URLs that earlier issues already reported
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: node scripts/reported-quarantine.mjs --out /tmp/docs-catalog-reported-urls.txt
-
       - name: Sync Microsoft docs catalog cache
-        id: sync
         env:
-          QUARANTINE_REPORT_FILE: /tmp/docs-catalog-quarantine-report.md
-          QUARANTINE_REPORTED_FILE: /tmp/docs-catalog-reported-urls.txt
           MAX_RUNTIME_MINUTES: "90"
         run: node scripts/docs-catalog-sync.mjs
 
@@ -65,14 +53,6 @@ jobs:
             if [ -e "$f" ]; then paths+=("$f"); fi
           done
           bash scripts/commit-data.sh "Update Microsoft docs catalog cache" "${paths[@]}"
-
-      - name: Create issue for newly quarantined URLs
-        if: ${{ !cancelled() && steps.sync.outputs.new_quarantine_count != '' }}
-        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
-        with:
-          title: "Docs Catalog: ${{ steps.sync.outputs.new_quarantine_count }} newly quarantined URL(s) — investigate & fix"
-          content-filepath: /tmp/docs-catalog-quarantine-report.md
-          labels: data
 
       # Optional: tell mscerts/hub that fresh data exists so its Learn URL check
       # runs right away instead of waiting for its own schedule. Needs a
@@ -100,7 +80,7 @@ jobs:
             echo "was rejected, or a change file (\`data/changes/removed.json\` or \`moved.json\`) is corrupt or has an"
             echo "unsupported schemaVersion (the run stops before any request rather than overwrite it)."
             echo "Broken URLs alone do not fail this job: they are quarantined into"
-            echo "\`data/docs-catalog-invalid.json\` (see AGENTS.md). See the run log for the exact reason."
+            echo "\`data/docs-catalog-invalid.json\` and alerted by mscerts/hub. See the run log for the exact reason."
             echo
             echo "Run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           } > /tmp/docs-catalog-error.md

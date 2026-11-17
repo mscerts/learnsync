@@ -10,8 +10,6 @@ test("readConfig defaults match the documented budgets", () => {
   assert.equal(c.dryRun, false);
   assert.equal(c.fullDiscovery, false);
   assert.equal(c.skipGitSources, false);
-  assert.equal(c.reportFile, null);
-  assert.equal(c.githubOutput, null);
   assert.equal(c.concurrency, 3);
   assert.equal(FETCH_CONCURRENCY, 3, "Learn rate-limits above 3 concurrent requests");
   assert.ok(PER_WORKER_DELAY_MS >= 500);
@@ -29,8 +27,6 @@ test("readConfig reads every documented variable", () => {
     MAX_QUARANTINE_RECHECKS: "5",
     MAX_RUNTIME_MINUTES: "0",
     CONSECUTIVE_TRANSIENT_LIMIT: "7",
-    QUARANTINE_REPORT_FILE: "/tmp/r.md",
-    GITHUB_OUTPUT: "/tmp/out",
   });
   assert.equal(c.dryRun, true);
   assert.equal(c.fullDiscovery, true);
@@ -38,8 +34,6 @@ test("readConfig reads every documented variable", () => {
   assert.deepEqual(c.caps, { maxPageFetches: 150, maxMissingChecks: 60, verifyPerRun: 0, maxQuarantineRechecks: 5 });
   assert.equal(c.maxRuntimeMinutes, 0);
   assert.equal(c.consecutiveTransientLimit, 7);
-  assert.equal(c.reportFile, "/tmp/r.md");
-  assert.equal(c.githubOutput, "/tmp/out");
 });
 
 test("flags are exactly '1'; empty values fall back to the default", () => {

@@ -10,7 +10,6 @@ import {
   shuffleSample,
   findDuplicateUrls,
   repoUrlPrefixes,
-  buildQuarantineReport,
 } from "../scripts/lib/docs-helpers.mjs";
 
 test("parseFrontmatter extracts simple key/value pairs", () => {
@@ -152,26 +151,4 @@ test("repoUrlPrefixes covers targets, pathMappings, custom domains, and empty ba
     "https://learn.microsoft.com/unified-secops/",
     "https://learn.microsoft.com/defender/threat-intelligence/",
   ]);
-});
-
-test("buildQuarantineReport escapes table cells and includes the agent prompt", () => {
-  const report = buildQuarantineReport([
-    { status: 404, url: "https://learn.microsoft.com/azure/x", title: 'Weird | "title"', product: "azure" },
-  ]);
-  assert.match(report, /# Docs Catalog: 1 newly quarantined URL\(s\)/);
-  assert.match(report, /Weird \\\| "title"/);
-  assert.match(report, /Prompt for an AI coding agent/);
-  assert.doesNotMatch(report, /Surge warning/);
-});
-
-test("buildQuarantineReport adds the surge callout above the threshold, run context only", () => {
-  const records = Array.from({ length: 25 }, (_, i) => ({
-    status: 404,
-    url: `https://learn.microsoft.com/azure/page-${i}`,
-    title: `Page ${i}`,
-    product: "azure",
-  }));
-  assert.match(buildQuarantineReport(records, { surgeThreshold: 20 }), /Surge warning/);
-  assert.doesNotMatch(buildQuarantineReport(records, { context: "backlog", surgeThreshold: 20 }), /Surge warning/);
-  assert.match(buildQuarantineReport(records, { context: "backlog" }), /pre-existing quarantined/);
 });
