@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-16T18:00:20.692Z",
+  "generatedAt": "2026-11-17T16:34:45.609Z",
   "sources": {
-    "learn": "2026-11-09T17:38:55.315Z",
+    "learn": "2026-11-17T16:34:45.609Z",
     "docs": "2026-11-16T18:00:20.692Z"
   },
   "entries": [
@@ -25183,7 +25183,7 @@
       "title": "Secure and Govern your AI agent workforce",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -25196,7 +25196,7 @@
       "title": "Prepare security and compliance to support Microsoft 365 Copilot",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -25209,7 +25209,7 @@
       "title": "Manage and extend Microsoft 365 Copilot",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -25222,7 +25222,7 @@
       "title": "Transform Ideas into Action with Copilot Chat (Basic)",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -25235,7 +25235,7 @@
       "title": "Microsoft Power Platform Developer",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -25248,7 +25248,7 @@
       "title": "Administer applications",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25261,7 +25261,7 @@
       "title": "Administer a Microsoft Fabric environment",
       "parent": null,
       "firstSeen": "2026-09-14",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25274,7 +25274,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25287,7 +25287,7 @@
       "title": "Assess deployment readiness",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25300,7 +25300,7 @@
       "title": "Build Lakeflow Declarative Pipelines",
       "parent": null,
       "firstSeen": "2026-10-05",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -25313,7 +25313,7 @@
       "title": "Computational thinking and its importance in education",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25326,7 +25326,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25339,7 +25339,7 @@
       "title": null,
       "parent": "/training/modules/controls-reports-asset-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25352,7 +25352,7 @@
       "title": null,
       "parent": "/training/modules/controls-reports-asset-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25365,7 +25365,7 @@
       "title": null,
       "parent": "/training/modules/create-manage-power-bi-assets",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25378,7 +25378,7 @@
       "title": null,
       "parent": "/training/modules/create-products-product-masters-dyn365-supply-chain-mgmt",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25391,7 +25391,7 @@
       "title": null,
       "parent": "/training/modules/creating-and-designing-knowledge-management-solutions",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25404,7 +25404,7 @@
       "title": "Define the role you want Microsoft 365 Copilot to play in your business workflow",
       "parent": null,
       "firstSeen": "2026-09-14",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25417,7 +25417,7 @@
       "title": "Deploy a model to a batch endpoint",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25430,7 +25430,7 @@
       "title": "Deploy a model to a managed online endpoint",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25443,7 +25443,7 @@
       "title": "Deploy new devices",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25456,7 +25456,7 @@
       "title": "Deploy and update applications",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25469,7 +25469,7 @@
       "title": "Deploy using Endpoint Configuration Manager",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25482,7 +25482,7 @@
       "title": "Deploy using the Microsoft Deployment Toolkit",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25495,7 +25495,7 @@
       "title": "Deploy workloads with Lakeflow Jobs",
       "parent": null,
       "firstSeen": "2026-10-05",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -25508,7 +25508,7 @@
       "title": "Design a data ingestion strategy for machine learning projects",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25521,7 +25521,7 @@
       "title": "Design a model deployment solution",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25534,7 +25534,7 @@
       "title": null,
       "parent": "/training/modules/design-scalable-semantic-models",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25547,7 +25547,7 @@
       "title": null,
       "parent": "/training/modules/develop-azure-functions",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25560,7 +25560,7 @@
       "title": "Employ file recovery in Windows client",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25573,7 +25573,7 @@
       "title": "Enable organizational access",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25586,7 +25586,7 @@
       "title": "Enhance creativity to advance learning with Windows 11 and Microsoft 365 tools",
       "parent": null,
       "firstSeen": "2026-10-19",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -25599,7 +25599,7 @@
       "title": "Enroll devices using Microsoft Intune",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25612,7 +25612,7 @@
       "title": "Enroll devices using Microsoft Endpoint Configuration Manager",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25625,7 +25625,7 @@
       "title": "Evaluate language models with Azure Databricks",
       "parent": null,
       "firstSeen": "2026-11-09",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -25638,7 +25638,7 @@
       "title": null,
       "parent": "/training/modules/evaluate-models-azure-ai-studio",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25651,7 +25651,7 @@
       "title": "Examine the enterprise desktop",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25664,7 +25664,7 @@
       "title": "Explore advanced protection methods",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25677,7 +25677,7 @@
       "title": "Explore application troubleshooting",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25690,7 +25690,7 @@
       "title": "Explore Microsoft Entra ID",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25703,7 +25703,7 @@
       "title": "Explore Azure Blob storage",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25716,7 +25716,7 @@
       "title": "Explore Azure Machine Learning workspace resources and assets",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25729,7 +25729,7 @@
       "title": "Explore connection security rules",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25742,7 +25742,7 @@
       "title": "Explore Desktop Analytics",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25755,7 +25755,7 @@
       "title": "Explore developer tools for workspace interaction",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25768,7 +25768,7 @@
       "title": "Explore device encryption features",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25781,7 +25781,7 @@
       "title": "Explore Endpoint Analytics",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25794,7 +25794,7 @@
       "title": "Explore physical hardware troubleshooting",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25807,7 +25807,7 @@
       "title": "Explore support and diagnostic tools",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25820,7 +25820,7 @@
       "title": "Explore troubleshooting methodologies",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25833,7 +25833,7 @@
       "title": "Explore Windows architecture",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25846,7 +25846,7 @@
       "title": "Find the best classification model with Automated Machine Learning",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25859,7 +25859,7 @@
       "title": "Fine-tune language models with Azure Databricks",
       "parent": null,
       "firstSeen": "2026-11-09",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -25872,7 +25872,7 @@
       "title": "Generate inventory and compliance reports",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25885,7 +25885,7 @@
       "title": null,
       "parent": "/training/modules/get-started-discrete-manufacturing-dyn365-supply-chain-mgmt",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25898,7 +25898,7 @@
       "title": null,
       "parent": "/training/modules/get-started-discrete-manufacturing-dyn365-supply-chain-mgmt",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -25911,8 +25911,21 @@
       "title": null,
       "parent": "/training/modules/get-started-discrete-manufacturing-dyn365-supply-chain-mgmt",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
+      "status": 301
+    },
+    {
+      "path": "/training/modules/implement-configure-microsoft-dynamics-365-for-field-service/1-key-field-service-configuration-considerations",
+      "kind": "unit",
+      "family": "learn",
+      "outcome": "landing",
+      "to": "/training/modules/implement-configure-microsoft-dynamics-365-for-field-service",
+      "title": "Key Field Service configuration considerations",
+      "parent": "/training/modules/implement-configure-microsoft-dynamics-365-for-field-service",
+      "firstSeen": "2026-11-17",
+      "lastVerified": "2026-11-17",
+      "evidence": "unit-diff",
       "status": 301
     },
     {
@@ -25924,7 +25937,7 @@
       "title": "Implement device compliance policies",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25937,7 +25950,7 @@
       "title": "Implement device data protection",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25950,7 +25963,7 @@
       "title": "Implement device profiles",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25963,7 +25976,7 @@
       "title": "Implement dynamic deployment methods",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25976,7 +25989,7 @@
       "title": "Implement HTTP operations in ASP.NET Core Blazor Web apps",
       "parent": null,
       "firstSeen": "2026-09-14",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -25989,7 +26002,7 @@
       "title": "Implement LLMOps in Azure Databricks",
       "parent": null,
       "firstSeen": "2026-11-09",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -26002,7 +26015,7 @@
       "title": "Implement mobile application management",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26015,7 +26028,7 @@
       "title": "Interact with an ASP.NET Core minimal API",
       "parent": null,
       "firstSeen": "2026-09-14",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26028,7 +26041,7 @@
       "title": "Get started with language models in Azure Databricks",
       "parent": null,
       "firstSeen": "2026-11-09",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -26041,7 +26054,7 @@
       "title": null,
       "parent": "/training/modules/maintenance-budget-asset-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26054,7 +26067,7 @@
       "title": "Make data available in Azure Machine Learning",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26067,7 +26080,7 @@
       "title": "Manage the Azure Blob storage lifecycle",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26080,9 +26093,22 @@
       "title": "Create and explore the Responsible AI dashboard for a model in Azure Machine Learning",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
+    },
+    {
+      "path": "/training/modules/manage-copilot-costs/7-summary",
+      "kind": "unit",
+      "family": "learn",
+      "outcome": "gone",
+      "to": null,
+      "title": "Summary",
+      "parent": "/training/modules/manage-copilot-costs",
+      "firstSeen": "2026-11-17",
+      "lastVerified": "2026-11-17",
+      "evidence": "unit-diff",
+      "status": 404
     },
     {
       "path": "/training/modules/manage-device-authentication",
@@ -26093,7 +26119,7 @@
       "title": "Manage device authentication",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26106,7 +26132,7 @@
       "title": null,
       "parent": "/training/modules/manage-discrete-bom-route-versioned-products-supply-chain-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26119,7 +26145,7 @@
       "title": "Manage identities in Microsoft Entra ID",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26132,7 +26158,7 @@
       "title": "Manage Microsoft Defender for Endpoint",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26145,7 +26171,7 @@
       "title": "Manage Microsoft Defender in Windows client",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26158,7 +26184,7 @@
       "title": "Manage user profiles",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26171,7 +26197,7 @@
       "title": "Manage Cloud PCs and Virtual Desktops",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26184,7 +26210,7 @@
       "title": null,
       "parent": "/training/modules/manage-work-orders-asset-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26197,7 +26223,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26210,7 +26236,7 @@
       "title": "Monitor device profiles",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26223,7 +26249,7 @@
       "title": "Monitor and troubleshoot Windows client performance",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26236,7 +26262,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26249,7 +26275,7 @@
       "title": "Implement multi-stage reasoning in Azure Databricks",
       "parent": null,
       "firstSeen": "2026-11-09",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -26262,7 +26288,7 @@
       "title": null,
       "parent": "/training/modules/outbound-operations-supply-chain-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26275,7 +26301,7 @@
       "title": "Perform data analysis with Azure Databricks",
       "parent": null,
       "firstSeen": "2026-10-05",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -26288,7 +26314,7 @@
       "title": "Plan a transition to modern management",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26301,7 +26327,7 @@
       "title": "Protect identities in Microsoft Entra ID",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26314,7 +26340,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26327,7 +26353,7 @@
       "title": "Register an MLflow model in Azure Machine Learning",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26340,7 +26366,7 @@
       "title": "Render API responses in ASP.NET Core Blazor Web apps",
       "parent": null,
       "firstSeen": "2026-09-14",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26353,7 +26379,7 @@
       "title": null,
       "parent": "/training/modules/request-changes-products-engineering-change-management-supply-chain-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26366,7 +26392,7 @@
       "title": "Review responsible AI principles for language models in Azure Databricks",
       "parent": null,
       "firstSeen": "2026-11-09",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -26379,7 +26405,7 @@
       "title": "Implement Retrieval Augmented Generation (RAG) with Azure Databricks",
       "parent": null,
       "firstSeen": "2026-11-09",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -26392,7 +26418,7 @@
       "title": "Run a training script as a command job in Azure Machine Learning",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26405,7 +26431,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26418,7 +26444,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26431,7 +26457,7 @@
       "title": "Set up the Teams Assignments LTI® app in learning management systems",
       "parent": null,
       "firstSeen": "2026-09-14",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26444,7 +26470,7 @@
       "title": null,
       "parent": "/training/modules/set-up-use-discrete-manufacturing-routes",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26457,7 +26483,7 @@
       "title": null,
       "parent": "/training/modules/set-up-versioned-products-engineering-change-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26470,7 +26496,7 @@
       "title": null,
       "parent": "/training/modules/setup-assets-asset-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26483,7 +26509,7 @@
       "title": null,
       "parent": "/training/modules/setup-work-orders-asset-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26496,7 +26522,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26509,7 +26535,7 @@
       "title": "Track model training in Jupyter notebooks with MLflow",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26522,7 +26548,7 @@
       "title": "Track model training with MLflow in jobs",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26535,7 +26561,7 @@
       "title": null,
       "parent": "/training/modules/trigger-github-actions-trunk-based-development",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26548,7 +26574,7 @@
       "title": "Troubleshoot device driver failures",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26561,7 +26587,7 @@
       "title": "Troubleshoot operating system service issues",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26574,7 +26600,7 @@
       "title": "Troubleshoot physical failures on Windows clients",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26587,7 +26613,7 @@
       "title": "Troubleshoot Windows startup",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26600,7 +26626,7 @@
       "title": "Update clients using Windows Update for Business",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26613,7 +26639,7 @@
       "title": "Update Windows client",
       "parent": null,
       "firstSeen": "2026-09-04",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26626,7 +26652,7 @@
       "title": "Manage data with Delta Lake",
       "parent": null,
       "firstSeen": "2026-10-05",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -26639,7 +26665,7 @@
       "title": null,
       "parent": "/training/modules/use-inventory-reports-dyn365-supply-chain-mgmt",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26652,7 +26678,7 @@
       "title": null,
       "parent": "/training/modules/use-inventory-reports-dyn365-supply-chain-mgmt",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26665,7 +26691,7 @@
       "title": null,
       "parent": "/training/modules/use-inventory-reports-dyn365-supply-chain-mgmt",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26678,7 +26704,7 @@
       "title": "Use Microsoft accessibility features in education",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "tombstone",
       "status": 301
     },
@@ -26691,7 +26717,7 @@
       "title": null,
       "parent": "/training/modules/warranties-asset-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26704,7 +26730,7 @@
       "title": null,
       "parent": "/training/modules/work-assets-management",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26717,7 +26743,7 @@
       "title": "Work with Azure Blob storage",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26730,7 +26756,7 @@
       "title": "Work with compute targets in Azure Machine Learning",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26743,7 +26769,7 @@
       "title": null,
       "parent": "/training/modules/work-costing-sheet-dyn365-supply-chain-mgmt",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
     },
@@ -26756,7 +26782,7 @@
       "title": "Work with environments in Azure Machine Learning",
       "parent": null,
       "firstSeen": "2026-09-21",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "history",
       "status": 301
     },
@@ -26769,22 +26795,9 @@
       "title": null,
       "parent": "/training/modules/work-environments-github-actions",
       "firstSeen": "2026-10-06",
-      "lastVerified": "2026-11-09",
+      "lastVerified": "2026-11-17",
       "evidence": "live-probe",
       "status": 301
-    },
-    {
-      "path": "/training/paths/get-started-sovereignty",
-      "kind": "learning-path",
-      "family": "learn",
-      "outcome": "gone",
-      "to": null,
-      "title": "Get started with Microsoft for Sovereignty",
-      "parent": null,
-      "firstSeen": "2026-11-09",
-      "lastVerified": "2026-11-09",
-      "evidence": "tombstone",
-      "status": 404
     },
     {
       "path": "/troubleshoot/dynamics-365/supply-chain/planning/unable-to-update-forecasted-unit-cost",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastChecked": "2026-11-09T17:38:55.315Z",
+  "lastChecked": "2026-11-17T16:34:45.609Z",
   "learningPaths": [
     {
       "uid": "learn-bizapps.accident-tracking-app",
@@ -617,10 +617,12 @@
       "uid": "learn-bizapps.implementing-dyn365-field-service",
       "title": "Implement Microsoft Dynamics 365 Field Service",
       "path": "/training/paths/implementing-dyn365-field-service",
-      "lastModified": "2026-10-27T17:07:00+00:00",
+      "lastModified": "2026-11-10T17:10:00+00:00",
       "modules": [
         "/training/modules/implement-configure-microsoft-dynamics-365-for-field-service",
         "/training/modules/implement-work-order-management-agreements-inventory-and-purchasing",
+        "/training/modules/incident-types",
+        "/training/modules/customer-assets",
         "/training/modules/define-agreements",
         "/training/modules/configure-field-service-mobile"
       ]
@@ -4836,7 +4838,7 @@
       "uid": "learn.migrate-windows-server-workloads-azure",
       "title": "Migrate Windows Server workloads to Azure",
       "path": "/training/paths/migrate-windows-server-workloads-azure",
-      "lastModified": "2026-10-28T17:12:00+00:00",
+      "lastModified": "2026-11-13T23:11:00+00:00",
       "modules": [
         "/training/modules/prepare-onpremises-workloads-migration-azure",
         "/training/modules/migrate-on-premises-workloads-azure",
@@ -5406,9 +5408,9 @@
     },
     {
       "uid": "learn.wwl.automate-workflows-agents-github-copilot-copilot-studio",
-      "title": "Automate business processes with workflows and agents in Microsoft Copilot Studio (GitHub Copilot)",
+      "title": "Automate business processes with workflows and agents in Microsoft Copilot Studio (Microsoft Copilot)",
       "path": "/training/paths/automate-workflows-agents-github-copilot-copilot-studio",
-      "lastModified": "2026-10-27T17:09:00+00:00",
+      "lastModified": "2026-11-13T18:16:00+00:00",
       "modules": [
         "/training/modules/design-integration-strategies-agents-github-copilot",
         "/training/modules/automate-agent-tasks-workflows-copilot-studio",
@@ -6034,9 +6036,9 @@
     },
     {
       "uid": "learn.wwl.create-agents-github-copilot-harness-copilot-studio",
-      "title": "Create agents with the GitHub Copilot harness in Microsoft Copilot Studio",
+      "title": "Create agents with the Microsoft Copilot harness in Microsoft Copilot Studio",
       "path": "/training/paths/create-agents-github-copilot-harness-copilot-studio",
-      "lastModified": "2026-10-27T17:09:00+00:00",
+      "lastModified": "2026-11-11T00:17:00+00:00",
       "modules": [
         "/training/modules/explore-copilot-studio-agent-harnesses",
         "/training/modules/create-instruction-driven-agents-copilot-studio",
@@ -6536,9 +6538,9 @@
     },
     {
       "uid": "learn.wwl.design-build-connected-agent-solutions-github-copilot-copilot-studio",
-      "title": "Design and build connected agent solutions in Microsoft Copilot Studio (GitHub Copilot)",
+      "title": "Design and build connected agent solutions in Microsoft Copilot Studio (Microsoft Copilot)",
       "path": "/training/paths/design-build-connected-agent-solutions-github-copilot-copilot-studio",
-      "lastModified": "2026-10-27T17:09:00+00:00",
+      "lastModified": "2026-11-13T18:16:00+00:00",
       "modules": [
         "/training/modules/design-multi-agent-solutions-copilot-studio",
         "/training/modules/build-connected-agent-solutions-github-copilot"
@@ -6568,9 +6570,9 @@
     },
     {
       "uid": "learn.wwl.design-configure-agents-github-copilot-copilot-studio",
-      "title": "Design and configure agents in Microsoft Copilot Studio (GitHub Copilot)",
+      "title": "Design and configure agents in Microsoft Copilot Studio (Microsoft Copilot)",
       "path": "/training/paths/design-configure-agents-github-copilot-copilot-studio",
-      "lastModified": "2026-10-27T17:09:00+00:00",
+      "lastModified": "2026-11-13T18:16:00+00:00",
       "modules": [
         "/training/modules/explore-copilot-studio-agent-harnesses",
         "/training/modules/manage-usage-cost-agents-copilot-studio",
@@ -6896,10 +6898,10 @@
       "uid": "learn.wwl.draft-analyze-present-microsoft-365-copilot",
       "title": "Draft, analyze, and present with Microsoft Copilot",
       "path": "/training/paths/draft-analyze-present-microsoft-365-copilot",
-      "lastModified": "2026-10-26T17:13:00+00:00",
+      "lastModified": "2026-11-10T18:10:00+00:00",
       "modules": [
         "/training/modules/get-ready-work-microsoft-365-copilot",
-        "/training/modules/unlock-productivity-unleash-creativity-ai-powered-chat",
+        "/training/modules/run-end-to-end-work-copilot",
         "/training/modules/present-copilot-microsoft-powerpoint",
         "/training/modules/draft-impactful-documents-using-ai",
         "/training/modules/make-your-meetings-more-productive-ai",
@@ -6994,9 +6996,9 @@
     },
     {
       "uid": "learn.wwl.evaluate-publish-manage-agents-github-copilot-copilot-studio",
-      "title": "Evaluate, publish, and manage agents in Microsoft Copilot Studio (GitHub Copilot)",
+      "title": "Evaluate, publish, and manage agents in Microsoft Copilot Studio (Microsoft Copilot)",
       "path": "/training/paths/evaluate-publish-manage-agents-github-copilot-copilot-studio",
-      "lastModified": "2026-10-27T17:09:00+00:00",
+      "lastModified": "2026-11-13T18:16:00+00:00",
       "modules": [
         "/training/modules/design-governance-security-strategy-copilot-studio",
         "/training/modules/design-responsible-ai-strategy-copilot-studio",
@@ -7271,7 +7273,7 @@
       "uid": "learn.wwl.get-started-ai-apps-agents",
       "title": "Get started with AI applications and agents on Azure",
       "path": "/training/paths/get-started-ai-apps-agents",
-      "lastModified": "2026-10-28T17:12:00+00:00",
+      "lastModified": "2026-11-11T08:11:00+00:00",
       "modules": [
         "/training/modules/get-started-with-ai-in-azure",
         "/training/modules/get-started-with-generative-ai-and-agents",
@@ -7279,7 +7281,8 @@
         "/training/modules/get-started-speech-azure",
         "/training/modules/get-started-vision-azure",
         "/training/modules/get-started-information-extraction",
-        "/training/modules/get-started-foundry-iq"
+        "/training/modules/get-started-foundry-iq",
+        "/training/modules/get-started-foundry-voice-agents"
       ]
     },
     {
@@ -7452,6 +7455,18 @@
       ]
     },
     {
+      "uid": "learn.wwl.get-started-sovereignty",
+      "title": "Get started with Microsoft Sovereign Cloud",
+      "path": "/training/paths/get-started-sovereignty",
+      "lastModified": "2026-11-10T23:10:00+00:00",
+      "modules": [
+        "/training/modules/sovereignty-overview",
+        "/training/modules/sovereignty-policy-initiatives",
+        "/training/modules/sovereignty-key-management",
+        "/training/modules/sovereignty-confidential-computing"
+      ]
+    },
+    {
       "uid": "learn.wwl.get-started-windows-powershell",
       "title": "Get started with Windows PowerShell",
       "path": "/training/paths/get-started-windows-powershell",
@@ -7460,6 +7475,18 @@
         "/training/modules/review-windows-powershell",
         "/training/modules/understand-command-syntax-windows-powershell",
         "/training/modules/find-commands-get-help-windows-powershell"
+      ]
+    },
+    {
+      "uid": "learn.wwl.get-started-with-python-design-quality-code-ai",
+      "title": "Get started with Python programming: Part 3 - Design quality code with AI",
+      "path": "/training/paths/get-started-with-python-design-quality-code-ai",
+      "lastModified": "2026-11-11T08:11:00+00:00",
+      "modules": [
+        "/training/modules/code-defensively-with-best-practices",
+        "/training/modules/benchmark-your-code-performance",
+        "/training/modules/architecting-code-specifications-ai",
+        "/training/modules/audit-ai-generated-python-code"
       ]
     },
     {
@@ -8019,9 +8046,9 @@
     },
     {
       "uid": "learn.wwl.integrate-agents-enterprise-systems-github-copilot-copilot-studio",
-      "title": "Integrate agents with enterprise systems in Microsoft Copilot Studio (GitHub Copilot)",
+      "title": "Integrate agents with enterprise systems in Microsoft Copilot Studio (Microsoft Copilot)",
       "path": "/training/paths/integrate-agents-enterprise-systems-github-copilot-copilot-studio",
-      "lastModified": "2026-10-27T17:09:00+00:00",
+      "lastModified": "2026-11-13T18:16:00+00:00",
       "modules": [
         "/training/modules/design-integration-strategies-agents-github-copilot",
         "/training/modules/ground-agents-enterprise-knowledge-github-copilot",
@@ -8045,12 +8072,13 @@
       "uid": "learn.wwl.integrate-backend-services-ai-solutions",
       "title": "Integrate backend services for AI solutions",
       "path": "/training/paths/integrate-backend-services-ai-solutions",
-      "lastModified": "2026-10-28T17:12:00+00:00",
+      "lastModified": "2026-11-11T18:10:00+00:00",
       "modules": [
         "/training/modules/queue-process-operations-service-bus",
         "/training/modules/event-driven-workflows-event-grid",
         "/training/modules/build-backends-azure-functions",
-        "/training/modules/orchestrate-durable-functions"
+        "/training/modules/orchestrate-durable-functions",
+        "/training/modules/real-time-ai-web-pubsub"
       ]
     },
     {
@@ -8176,22 +8204,23 @@
       ]
     },
     {
-      "uid": "learn.wwl.learn-fundamentals-of-microsoft-dynamics-365-marketing",
-      "title": "Explore the fundamentals of Microsoft Dynamics 365 Customer Insights",
-      "path": "/training/paths/learn-fundamentals-of-microsoft-dynamics-365-marketing",
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "modules": [
-        "/training/modules/explore-dynamics-365-marketing",
-        "/training/modules/describe-dynamics-365-marketing-capabilities-2"
-      ]
-    },
-    {
       "uid": "learn.wwl.learn-fundamentals-of-microsoft-dynamics-365-sales",
       "title": "Explore the fundamentals of Microsoft Dynamics 365 Sales",
       "path": "/training/paths/learn-fundamentals-of-microsoft-dynamics-365-sales",
       "lastModified": "2026-10-27T17:07:00+00:00",
       "modules": [
         "/training/modules/explore-dynamics-365-sales"
+      ]
+    },
+    {
+      "uid": "learn.wwl.maintain-oversight-prevent-agent-sprawl-power-platform",
+      "title": "Maintain oversight and prevent agent sprawl in Power Platform",
+      "path": "/training/paths/maintain-oversight-prevent-agent-sprawl-power-platform",
+      "lastModified": "2026-11-11T06:10:00+00:00",
+      "modules": [
+        "/training/modules/manage-power-platform-environments",
+        "/training/modules/govern-data-policies",
+        "/training/modules/govern-ai-enabled-resources"
       ]
     },
     {
@@ -8261,6 +8290,17 @@
         "/training/modules/manage-application-lifecycle-intune",
         "/training/modules/monitor-optimize-application-performance-intune",
         "/training/modules/manage-enterprise-application-catalog"
+      ]
+    },
+    {
+      "uid": "learn.wwl.manage-authorization-data-access-runtime-threats-power-platform",
+      "title": "Manage authorization, data access, and runtime threats in Power Platform",
+      "path": "/training/paths/manage-authorization-data-access-runtime-threats-power-platform",
+      "lastModified": "2026-11-11T06:10:00+00:00",
+      "modules": [
+        "/training/modules/secure-tenant-environments",
+        "/training/modules/configure-dataverse-security-model",
+        "/training/modules/audit-retain-dataverse-data"
       ]
     },
     {
@@ -10098,6 +10138,19 @@
       ]
     },
     {
+      "uid": "learn.wwl.standardize-deployment-scale-business-impact-power-platform",
+      "title": "Standardize deployment and scale business impact in Power Platform",
+      "path": "/training/paths/standardize-deployment-scale-business-impact-power-platform",
+      "lastModified": "2026-11-11T06:10:00+00:00",
+      "modules": [
+        "/training/modules/manage-operations-monitoring",
+        "/training/modules/deliver-solutions-pipelines",
+        "/training/modules/extend-alm-git-cicd",
+        "/training/modules/ensure-availability-resilience",
+        "/training/modules/drive-adoption-transform-culture"
+      ]
+    },
+    {
       "uid": "learn.wwl.support-operational-excellence-intune",
       "title": "Support operational excellence and readiness using Microsoft Intune",
       "path": "/training/paths/support-operational-excellence-intune",
@@ -10210,6 +10263,16 @@
         "/training/modules/troubleshoot-issues-signing-into-microsoft-teams",
         "/training/modules/troubleshoot-apps-channels",
         "/training/modules/troubleshoot-file-sharing"
+      ]
+    },
+    {
+      "uid": "learn.wwl.understand-ai-spend-measure-value",
+      "title": "Understand AI spend and measure value in Microsoft 365",
+      "path": "/training/paths/understand-ai-spend-measure-value",
+      "lastModified": "2026-11-14T00:11:00+00:00",
+      "modules": [
+        "/training/modules/understand-economics-usage-based-ai",
+        "/training/modules/control-usage-based-ai-consumption-spending"
       ]
     },
     {
@@ -10544,6 +10607,13 @@
       "lastModified": "2026-10-02T20:29:00+00:00"
     },
     {
+      "uid": "course.ab-6010",
+      "code": "AB-6010",
+      "title": "Manage AI spend and measure value in Microsoft 365",
+      "path": "/training/courses/ab-6010",
+      "lastModified": "2026-11-11T20:21:00+00:00"
+    },
+    {
       "uid": "course.ab-620t00",
       "code": "AB-620T00",
       "title": "Design and build integrated AI agent solutions in Copilot Studio",
@@ -10555,7 +10625,7 @@
       "code": "AB-650T00",
       "title": "Administer Microsoft 365 and AI services",
       "path": "/training/courses/ab-650t00",
-      "lastModified": "2026-10-21T20:00:00+00:00"
+      "lastModified": "2026-11-11T20:21:00+00:00"
     },
     {
       "uid": "course.ab-7011",
@@ -10703,6 +10773,13 @@
       "title": "Design and Implement Microsoft DevOps solutions",
       "path": "/training/courses/az-400t00",
       "lastModified": "2025-11-14T18:23:00+00:00"
+    },
+    {
+      "uid": "course.az-401t00",
+      "code": "AZ-401T00",
+      "title": "Design and Implement Microsoft Agentic DevOps Solutions",
+      "path": "/training/courses/az-401t00",
+      "lastModified": "2026-11-17T14:52:00+00:00"
     },
     {
       "uid": "course.az-700t00",
@@ -11417,14 +11494,14 @@
       "uid": "certification.agentic-ai-business-professional",
       "title": "GitHub Certified: Agentic AI Business Professional (beta)",
       "path": "/credentials/certifications/agentic-ai-business-professional",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-09T22:03:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.agentic-ai-business-solutions-architect",
       "title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
       "path": "/credentials/certifications/agentic-ai-business-solutions-architect",
-      "lastModified": "2026-10-20T22:43:00+00:00",
+      "lastModified": "2026-11-16T20:52:00+00:00",
       "exams": [
         "ab-100"
       ]
@@ -11449,30 +11526,28 @@
       "uid": "certification.ai-agent-builder-associate",
       "title": "Microsoft Certified: AI Agent Builder Associate",
       "path": "/credentials/certifications/ai-agent-builder-associate",
-      "lastModified": "2026-10-22T20:15:00+00:00",
+      "lastModified": "2026-11-09T22:03:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.ai-business-professional",
       "title": "Microsoft Certified: AI Business Professional",
       "path": "/credentials/certifications/ai-business-professional",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-16T23:28:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.ai-services-administrator-associate",
       "title": "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate",
       "path": "/credentials/certifications/ai-services-administrator-associate",
-      "lastModified": "2026-10-30T20:24:00+00:00",
-      "exams": [
-        "ab-650"
-      ]
+      "lastModified": "2026-11-13T22:38:00+00:00",
+      "exams": []
     },
     {
       "uid": "certification.ai-transformation-leader",
       "title": "Microsoft Certified: AI Transformation Leader",
       "path": "/credentials/certifications/ai-transformation-leader",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-16T23:28:00+00:00",
       "exams": []
     },
     {
@@ -11527,14 +11602,14 @@
       "uid": "certification.azure-cosmos-db-developer-specialty",
       "title": "Microsoft Certified: Azure Cosmos DB AI Developer Associate",
       "path": "/credentials/certifications/azure-cosmos-db-developer-specialty",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-13T22:38:00+00:00",
       "exams": []
     },
     {
       "uid": "certification.azure-data-fundamentals",
       "title": "Microsoft Certified: Azure Data Fundamentals",
       "path": "/credentials/certifications/azure-data-fundamentals",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-13T22:38:00+00:00",
       "exams": []
     },
     {
@@ -11580,7 +11655,7 @@
       "uid": "certification.azure-fundamentals",
       "title": "Microsoft Certified: Azure Fundamentals",
       "path": "/credentials/certifications/azure-fundamentals",
-      "lastModified": "2026-07-20T21:35:00+00:00",
+      "lastModified": "2026-11-13T22:38:00+00:00",
       "exams": []
     },
     {
@@ -11648,7 +11723,7 @@
       "uid": "certification.azure-virtual-desktop-specialty",
       "title": "Microsoft Certified: Azure Virtual Desktop Specialty",
       "path": "/credentials/certifications/azure-virtual-desktop-specialty",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-14T02:20:00+00:00",
       "exams": []
     },
     {
@@ -11662,7 +11737,7 @@
       "uid": "certification.copilot-and-agent-administration-fundamentals",
       "title": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
       "path": "/credentials/certifications/copilot-and-agent-administration-fundamentals",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-09T22:03:00+00:00",
       "exams": []
     },
     {
@@ -11848,7 +11923,7 @@
       "uid": "certification.d365-functional-consultant-supply-chain-management",
       "title": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate",
       "path": "/credentials/certifications/d365-functional-consultant-supply-chain-management",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-16T20:52:00+00:00",
       "exams": []
     },
     {
@@ -11908,7 +11983,7 @@
       "uid": "certification.devops-engineer",
       "title": "Microsoft Certified: DevOps Engineer Expert",
       "path": "/credentials/certifications/devops-engineer",
-      "lastModified": "2026-11-05T22:08:00+00:00",
+      "lastModified": "2026-11-16T23:28:00+00:00",
       "exams": [
         "az-400"
       ]
@@ -11917,7 +11992,7 @@
       "uid": "certification.fabric-analytics-engineer-associate",
       "title": "Microsoft Certified: Fabric Analytics Engineer Associate",
       "path": "/credentials/certifications/fabric-analytics-engineer-associate",
-      "lastModified": "2026-11-05T22:08:00+00:00",
+      "lastModified": "2026-11-16T23:28:00+00:00",
       "exams": []
     },
     {
@@ -11980,7 +12055,7 @@
       "uid": "certification.information-security-administrator",
       "title": "Microsoft Certified: Information Security Administrator Associate",
       "path": "/credentials/certifications/information-security-administrator",
-      "lastModified": "2026-10-27T19:19:00+00:00",
+      "lastModified": "2026-11-16T23:28:00+00:00",
       "exams": []
     },
     {
@@ -12248,7 +12323,7 @@
       "uid": "certification.microsoft-certified-educator",
       "title": "Microsoft Certified Educator",
       "path": "/credentials/certifications/microsoft-certified-educator",
-      "lastModified": "2025-02-05T01:17:00+00:00",
+      "lastModified": "2026-11-10T03:29:00+00:00",
       "exams": []
     },
     {
@@ -12593,7 +12668,7 @@
       "uid": "certification.operationalizing-machine-learning-and-generative-ai-solutions",
       "title": "Microsoft Certified: Machine Learning Operations Engineer Associate",
       "path": "/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions",
-      "lastModified": "2026-10-07T21:59:00+00:00",
+      "lastModified": "2026-11-13T07:34:00+00:00",
       "exams": []
     },
     {
@@ -12684,7 +12759,7 @@
       "uid": "certification.windows-server-hybrid-administrator",
       "title": "Microsoft Certified: Windows Server Administrator Associate",
       "path": "/credentials/certifications/windows-server-hybrid-administrator",
-      "lastModified": "2026-10-21T22:54:00+00:00",
+      "lastModified": "2026-11-14T02:20:00+00:00",
       "exams": []
     }
   ],
@@ -13214,16 +13289,8 @@
       "code": "ab-100",
       "title": "Agentic AI Business Solutions Architect",
       "path": "/credentials/certifications/exams/ab-100",
-      "lastModified": "2026-10-21T22:54:00+00:00",
+      "lastModified": "2026-11-16T20:52:00+00:00",
       "studyGuide": "/credentials/certifications/resources/study-guides/ab-100"
-    },
-    {
-      "uid": "exam.ab-650",
-      "code": "ab-650",
-      "title": "Administering Microsoft 365 and AI Services",
-      "path": "/credentials/certifications/exams/ab-650",
-      "lastModified": "2026-10-30T20:24:00+00:00",
-      "studyGuide": "/credentials/certifications/resources/study-guides/ab-650"
     },
     {
       "uid": "exam.ai-100",
@@ -13895,7 +13962,7 @@
       "uid": "applied-skill.build-an-agent-in-microsoft-copilot-studio",
       "title": "Microsoft Applied Skills: Build an agent in Microsoft Copilot Studio",
       "path": "/credentials/applied-skills/build-an-agent-in-microsoft-copilot-studio",
-      "lastModified": "2026-10-30T21:22:00+00:00",
+      "lastModified": "2026-11-13T22:38:00+00:00",
       "code": "apl-6006",
       "studyGuide": "/credentials/applied-skills/resources/study-guides/apl-6006"
     },
@@ -14151,267 +14218,263 @@
   "studyGuides": [
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0100",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0200",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0302",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0501",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-0502",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1002",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1003",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1004",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-1008",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2001",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2003",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2006",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2007",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2014",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-2015",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3001",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3008",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3019",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3020",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3021",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3022",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3030",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3031",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3032",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-3034",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5002",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5003",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5004",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5007",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5009",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-5010",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6000",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6006",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6500",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-6501",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-7001",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/applied-skills/resources/study-guides/apl-7002",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ab-100",
-      "checked": "2026-11-09"
-    },
-    {
-      "path": "/credentials/certifications/resources/study-guides/ab-650",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-500",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-900",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ai-901",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-220",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-305",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-400",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-401",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-600",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-720",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-800",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-801",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/az-802",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-210",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-220",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-230",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-240",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-335",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/mb-700",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-102",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-220",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-500",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-720",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/ms-740",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-200",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-400",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/pl-600",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     },
     {
       "path": "/credentials/certifications/resources/study-guides/sc-100",
-      "checked": "2026-11-09"
+      "checked": "2026-11-17"
     }
   ],
   "unverifiedStudyGuides": [],
@@ -14465,6 +14528,14 @@
       "removedOn": "2026-11-09"
     },
     {
+      "type": "exam",
+      "uid": "exam.ab-650",
+      "path": "/credentials/certifications/exams/ab-650",
+      "title": "Administering Microsoft 365 and AI Services",
+      "lastSeen": "2026-11-09",
+      "removedOn": "2026-11-17"
+    },
+    {
       "type": "learningPath",
       "uid": "learn-bizapps.get-started-sovereignty",
       "path": "/training/paths/get-started-sovereignty",
@@ -14495,6 +14566,14 @@
       "title": "Implement Generative AI engineering with Azure Databricks",
       "lastSeen": "2026-11-02",
       "removedOn": "2026-11-09"
+    },
+    {
+      "type": "learningPath",
+      "uid": "learn.wwl.learn-fundamentals-of-microsoft-dynamics-365-marketing",
+      "path": "/training/paths/learn-fundamentals-of-microsoft-dynamics-365-marketing",
+      "title": "Explore the fundamentals of Microsoft Dynamics 365 Customer Insights",
+      "lastSeen": "2026-11-09",
+      "removedOn": "2026-11-17"
     }
   ]
 }
