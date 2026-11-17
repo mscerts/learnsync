@@ -644,72 +644,72 @@
     "to": "/azure/cloud-adoption-framework/ai-agents/executive-strategy",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/build-secure-process",
     "to": "/azure/cloud-adoption-framework/ai-agents/operational-standards",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/business-strategy-plan",
     "to": "/azure/cloud-adoption-framework/ai-agents/organizational-readiness",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/data-architecture-plan",
     "to": "/azure/cloud-adoption-framework/ai-agents/architecture-governance",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization",
     "to": "/azure/cloud-adoption-framework/ai-agents/architecture-governance",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/integrate-manage-operate",
     "to": "/azure/cloud-adoption-framework/ai-agents/operational-standards",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/organization-people-readiness-plan",
     "to": "/azure/cloud-adoption-framework/ai-agents/organizational-readiness",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/single-agent-multiple-agents",
     "to": "/azure/cloud-adoption-framework/ai-agents/operational-standards",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy",
     "to": "/azure/cloud-adoption-framework/ai-agents/executive-strategy",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/cloud-adoption-framework/data/architecture-azure-landing-zones-unify-data-platform",
@@ -2256,6 +2256,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/databricks/lakewatch/system-health/system-events",
+    "to": "/azure/databricks/lakewatch/system-health/system-errors",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/azure/databricks/large-language-models/ai-enrich-tutorial",
     "to": "/azure/databricks/sql/language-manual/functions/ai_enrich",
     "kind": "moved",
@@ -2558,6 +2566,14 @@
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/databricks/migration/agentic-code-converter",
+    "to": "/azure/databricks/migration/genie-migrate/convert",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/databricks/oltp/projects/logical-replication-quickstart",
@@ -2952,6 +2968,22 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/kubernetes-fleet/concepts-eviction-disruption",
+    "to": "/azure/kubernetes-fleet/concepts-placement-eviction-disruption",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/azure/kubernetes-fleet/concepts-rollout-strategy",
+    "to": "/azure/kubernetes-fleet/concepts-placement-rollout-strategy",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/azure/microsoft-discovery/concept-azure-container-registry",
     "to": "/azure/microsoft-discovery/how-to-configure-container-registry",
     "kind": "moved",
@@ -3270,6 +3302,14 @@
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/azure/partner-solutions/astronomer",
+    "to": "/previous-versions/azure/partner-solutions/astronomer",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/azure/partner-solutions/astronomer/create",
@@ -4060,16 +4100,16 @@
     "to": "/dynamics365/customer-voice/send-survey-flow",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/get-started/availability",
     "to": "/dynamics365/get-started/data-residency",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2024wave2",
@@ -6488,6 +6528,326 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/pull-extension-source-github-when-opening-visual-studio-code-web-client",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/pull-extension-source-github-when-opening-visual-studio-code-web-client",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/purchase-carbon-credits",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/purchase-carbon-credits",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/reconcile-payment-transactions-shopify-invoices",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/reconcile-payment-transactions-shopify-invoices",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/remove-friction-when-working-external-app-dependencies",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/remove-friction-when-working-external-app-dependencies",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/replenish-items-projects",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/replenish-items-projects",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/reporting-data-analysis",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/reporting-data-analysis",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/reporting-sustainability-entries-financial-reports",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/reporting-sustainability-entries-financial-reports",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/resize-columns-even-when-personalization-isnt-enabled",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/resize-columns-even-when-personalization-isnt-enabled",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/restore-extensions-if-publishing-visual-studio-code-fails",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/restore-extensions-if-publishing-visual-studio-code-fails",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/run-code-action-file-project-or-workspace",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/run-code-action-file-project-or-workspace",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/run-page-scripts-pipelines-automated-testing",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/run-page-scripts-pipelines-automated-testing",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/sales-advance-project-czechia",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/sales-advance-project-czechia",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/set-up-easier-in-client-performance-profiling-rules",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/set-up-easier-in-client-performance-profiling-rules",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/specify-use-full-text-search-indexes-table-fields",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/specify-use-full-text-search-indexes-table-fields",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/start-using-copilot-without-having-set-things-up",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/start-using-copilot-without-having-set-things-up",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/start-using-e-documents-framework-localized-germany",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/start-using-e-documents-framework-localized-germany",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/stay-current-shopify-connector",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/stay-current-shopify-connector",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/suggest-number-series-copilot",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/suggest-number-series-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/synchronize-product-translations-shopify",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/synchronize-product-translations-shopify",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/track-sustainability-certificates-items-vendors",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/track-sustainability-certificates-items-vendors",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/type-testing-casting-operators-interfaces",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/type-testing-casting-operators-interfaces",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/usability-improves-service-projects",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/usability-improves-service-projects",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-advanced-settings-power-bi-connector",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-advanced-settings-power-bi-connector",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-built-in-named-formulas-excel-layouts",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-built-in-named-formulas-excel-layouts",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-default-quantity-1-accounts-documents",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-default-quantity-1-accounts-documents",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-directed-put-away-pick-warehouses-projects",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-directed-put-away-pick-warehouses-projects",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-drag-drop-attach-multiple-files",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-drag-drop-attach-multiple-files",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-e-documents-framework-spanish-version",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-e-documents-framework-spanish-version",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-embedded-power-bi-reports-out-box",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-embedded-power-bi-reports-out-box",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-excel-reports-consolidation-fixed-assets",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-excel-reports-consolidation-fixed-assets",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-improved-features-report-documents",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-improved-features-report-documents",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-new-reports-demo-data-financial-reporting",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-new-reports-demo-data-financial-reporting",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-specific-customer-prices-discounts-when-synchronizing-prices-shopify-catalogues",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-specific-customer-prices-discounts-when-synchronizing-prices-shopify-catalogues",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-ternary-operator-when-coding-al-language",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-ternary-operator-when-coding-al-language",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-this-keyword-codeunit-self-reference",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-this-keyword-codeunit-self-reference",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-updated-saf-t-13-norway-in-norway",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/use-updated-saf-t-13-norway-in-norway",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/user-experiences",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/user-experiences",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/users-use-multiple-subcategories-one-sustainability-account",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/users-use-multiple-subcategories-one-sustainability-account",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/vat-return-czechia",
+    "to": "/previous-versions/dynamics365/release-plan/2024wave2/smb/dynamics365-business-central/vat-return-czechia",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1",
     "kind": "retired",
@@ -6640,6 +7000,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/commerce/dynamics365-commerce/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/commerce/dynamics365-commerce/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/commerce/dynamics365-commerce/roll-out-multifaceted-pricing-strategies-unified-pricing-management-module",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/commerce/dynamics365-commerce/roll-out-multifaceted-pricing-strategies-unified-pricing-management-module",
     "kind": "retired",
@@ -6654,6 +7022,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/commerce/dynamics365-commerce/store-commerce",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/commerce/dynamics365-commerce/store-commerce",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/commerce/dynamics365-commerce/use-azure-maps-dynamics-365-commerce",
@@ -6694,6 +7070,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-data/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-data/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys",
@@ -6808,6 +7192,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/prevent-duplicate-emails-contacts-that-share-email-address",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/customer-insights/dynamics365-customer-insights-journeys/prevent-duplicate-emails-contacts-that-share-email-address",
     "kind": "retired",
@@ -6888,6 +7280,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/features-ready-early-access",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/features-ready-early-access",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance",
     "kind": "retired",
@@ -6928,6 +7328,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance/core-financials",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance/core-financials",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance/defaulting-engine-financial-tags-powered-ai-recommended-rules",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance/defaulting-engine-financial-tags-powered-ai-recommended-rules",
     "kind": "retired",
@@ -6942,6 +7350,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance/enhancements-account-reconciliation-agent",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance/enhancements-account-reconciliation-agent",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance/expand-country-coverage-trkiye",
@@ -7014,6 +7430,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-finance/prepayment-sales-invoice",
@@ -7144,6 +7568,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-human-resources/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-human-resources/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-human-resources/streamline-benefits-eligibility-processing",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-human-resources/streamline-benefits-eligibility-processing",
     "kind": "retired",
@@ -7262,6 +7694,22 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-project-operations/optimize-project-operations",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-project-operations/optimize-project-operations",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-project-operations/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-project-operations/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-project-operations/post-expenses-expense-report-posting-date",
@@ -7448,12 +7896,28 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/automate-procure-to-pay-tasks-copilot",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/automate-procure-to-pay-tasks-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/capture-worker-ids-warehouse-packing-events",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/capture-worker-ids-warehouse-packing-events",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/copilot-ai-innovation",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/copilot-ai-innovation",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-acceptance-sampling",
@@ -7528,12 +7992,28 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/planning",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/planning",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/procurement",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/procurement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/dynamics365-supply-chain-management/sales-marketing",
@@ -7576,12 +8056,28 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/finance-operations-crossapp-capabilities/boost-productivity-copilot",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/finance-operations-crossapp-capabilities/boost-productivity-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/finance-operations-crossapp-capabilities/build-agents-dynamics-365-finance-operations-model-context-protocol",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/finance-operations-crossapp-capabilities/build-agents-dynamics-365-finance-operations-model-context-protocol",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/finance-operations-crossapp-capabilities/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/finance-supply-chain/finance-operations-crossapp-capabilities/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/finance-supply-chain/finance-operations-crossapp-capabilities/stay-focused-simplify-tasks-immersive-home-adaptive-experiences",
@@ -7728,6 +8224,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/sales/dynamics365-sales/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/sales/dynamics365-sales/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/sales/dynamics365-sales/sales-management-operations",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/sales/dynamics365-sales/sales-management-operations",
     "kind": "retired",
@@ -7856,6 +8360,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/service/dynamics365-contact-center/extensibility",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/service/dynamics365-contact-center/extensibility",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/service/dynamics365-contact-center/ivr-capabilities",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/service/dynamics365-contact-center/ivr-capabilities",
     "kind": "retired",
@@ -7902,6 +8414,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/service/dynamics365-contact-center/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/service/dynamics365-contact-center/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/service/dynamics365-contact-center/promote-intents-self-service-semi--or-fully-automated-manner",
@@ -8312,6 +8832,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/service/dynamics365-customer-service/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/service/dynamics365-customer-service/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/service/dynamics365-customer-service/search-user-experience-profile-assignments",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/service/dynamics365-customer-service/search-user-experience-profile-assignments",
     "kind": "retired",
@@ -8502,6 +9030,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/service/dynamics365-field-service/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/service/dynamics365-field-service/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/service/dynamics365-field-service/schedule-multi-day-requirements-resource-scheduling-optimization",
@@ -9344,6 +9880,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/sustainability-management",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/sustainability-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/track-rebill-quantity-changes-subscriptions",
     "to": "/previous-versions/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/track-rebill-quantity-changes-subscriptions",
     "kind": "retired",
@@ -9462,6 +10006,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-sustainability",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-analytics-sustainability",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave1/smb/dynamics365-business-central/use-enhanced-customer-document-layout-service-management",
@@ -9728,6 +10280,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-data/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-data/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys",
     "kind": "retired",
@@ -9824,6 +10384,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/streamline-event-planning-set-registration-periods",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/customer-insights/dynamics365-customer-insights-journeys/streamline-event-planning-set-registration-periods",
     "kind": "retired",
@@ -9886,6 +10454,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/associated-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/define-multicurrency-pricing-using-generic-currency",
@@ -9976,12 +10552,28 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/omnichannel-commerce",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/omnichannel-commerce",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/pay-link-support-call-center-orders",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/pay-link-support-call-center-orders",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/refine-unified-pricing-management-data-entity-faster-more-reliable-imports",
@@ -9998,6 +10590,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/store-commerce",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/store-commerce",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-commerce/support-asynchronous-payments-commerce-orders",
@@ -10024,12 +10624,28 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/business-performance",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/business-performance",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/convert-excel-business-documents-pdf",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/convert-excel-business-documents-pdf",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/core-financials",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/core-financials",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/customizing-query-timeouts-electronic-reporting-er",
@@ -10128,6 +10744,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/mcp-erp-analytics",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/mcp-erp-analytics",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/meet-requirements-electronic-invoicing-singapore",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/meet-requirements-electronic-invoicing-singapore",
     "kind": "retired",
@@ -10142,6 +10766,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-finance/print-italian-fiscal-journal-as-pdf",
@@ -10262,6 +10894,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-human-resources/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-human-resources/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-human-resources/streamline-interview-scheduling-capabilities",
@@ -10456,6 +11096,22 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-project-operations/optimize-project-operations",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-project-operations/optimize-project-operations",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-project-operations/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-project-operations/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-project-operations/refund-unused-retainers",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-project-operations/refund-unused-retainers",
     "kind": "retired",
@@ -10528,6 +11184,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/associated-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/automate-production-reporting-electronic-sensors",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/automate-production-reporting-electronic-sensors",
     "kind": "retired",
@@ -10592,6 +11256,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/planning",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/planning",
     "kind": "retired",
@@ -10614,6 +11286,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/warehouse-management",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/dynamics365-supply-chain-management/warehouse-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/finance-operations-crossapp-capabilities",
@@ -10640,6 +11320,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/finance-operations-crossapp-capabilities/boost-productivity-copilot",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/finance-operations-crossapp-capabilities/boost-productivity-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/finance-operations-crossapp-capabilities/build-agents-dynamics-365-finance-operations-model-context-protocol",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/finance-operations-crossapp-capabilities/build-agents-dynamics-365-finance-operations-model-context-protocol",
     "kind": "retired",
@@ -10654,6 +11342,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/finance-operations-crossapp-capabilities/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/finance-operations-crossapp-capabilities/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/finance-operations-crossapp-capabilities/stay-focused-simplify-tasks-immersive-home-adaptive-experiences",
@@ -10696,6 +11392,22 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/enterprise-resource-planning/sustainability-manager/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/enterprise-resource-planning/sustainability-manager/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/features-ready-early-access",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/features-ready-early-access",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/get-started-with-this-release",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/get-started-with-this-release",
     "kind": "retired",
@@ -10726,6 +11438,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/sales/dynamics365-sales/business-research",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/sales/dynamics365-sales/business-research",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/sales/dynamics365-sales/connect-ai-agents-dynamics-365-sales-using-model-context-protocol-server",
@@ -10766,6 +11486,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/sales/dynamics365-sales/explore-complex-sales-insights-sales-research-agent",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/sales/dynamics365-sales/explore-complex-sales-insights-sales-research-agent",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/sales/dynamics365-sales/get-sales-operations-insights-sales-research-agent",
@@ -10816,6 +11544,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/sales/dynamics365-sales/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/sales/dynamics365-sales/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/sales/dynamics365-sales/sales-management-operations",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/sales/dynamics365-sales/sales-management-operations",
     "kind": "retired",
@@ -10862,6 +11598,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/associated-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/automate-voice-calls-customer-intent-agent-voice",
@@ -10960,6 +11704,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/enable-selective-hold-music-exit-prompts",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/enable-selective-hold-music-exit-prompts",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/enable-sip-x-header-support-context-transfer",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/enable-sip-x-header-support-context-transfer",
     "kind": "retired",
@@ -10984,6 +11736,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/extensibility",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/extensibility",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/generate-audit-data-conversation-routing-configurations",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/generate-audit-data-conversation-routing-configurations",
     "kind": "retired",
@@ -10998,6 +11758,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/ivr-capabilities",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/ivr-capabilities",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/leverage-rich-media-messaging-across-channels",
@@ -11102,6 +11870,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/service-representative-experiences",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/service-representative-experiences",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-contact-center/set-least-active-assignment-as-default-messaging-queues",
@@ -11294,6 +12070,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-customer-service/associated-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-customer-service/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-customer-service/automate-case-lifecycle-tasks-case-management-agent",
@@ -11720,6 +12504,22 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/optimize-resource-scheduling",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/optimize-resource-scheduling",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/refresh-appearance-short-bookings-schedule-board",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/service/dynamics365-field-service/refresh-appearance-short-bookings-schedule-board",
     "kind": "retired",
@@ -11920,6 +12720,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/copilot-agents",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/copilot-agents",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/country-regional",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/country-regional",
     "kind": "retired",
@@ -11998,6 +12806,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/electronic-documents",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/electronic-documents",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/enable-additional-countries-regions",
@@ -12376,6 +13192,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/supply-chain-management",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/supply-chain-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/support-digital-product-pass-reporting-requirements",
     "to": "/previous-versions/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/support-digital-product-pass-reporting-requirements",
     "kind": "retired",
@@ -12510,6 +13334,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process",
+    "to": "/previous-versions/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-copilot-agent-capabilities-automate-sales-order-taking-process",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2025wave2/smb/dynamics365-business-central/use-drill-back-dynamic-dimension-names-power-bi-apps",
@@ -12752,6 +13584,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/real-time-web-tracking-personalization-known-unknown-users",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-data/real-time-web-tracking-personalization-known-unknown-users",
     "kind": "retired",
@@ -12864,6 +13704,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/elevate-customer-experiences",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/elevate-customer-experiences",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/enable-advanced-personalization-using-simple-formulas-modify-text-dates-numbers",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/enable-advanced-personalization-using-simple-formulas-modify-text-dates-numbers",
     "kind": "retired",
@@ -12886,6 +13734,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/customer-insights/dynamics365-customer-insights-journeys/set-message-expirations-keep-communication-relevant",
@@ -12944,6 +13800,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/digital-commerce",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/digital-commerce",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/display-distance-kilometers-store-commerce-app",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/display-distance-kilometers-store-commerce-app",
     "kind": "retired",
@@ -13000,6 +13864,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/omnichannel-commerce",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/omnichannel-commerce",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/on-behalf-of-obo-support-entra-external-id",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/on-behalf-of-obo-support-entra-external-id",
     "kind": "retired",
@@ -13016,6 +13888,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/prevent-return-specific-items-point-sale",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/prevent-return-specific-items-point-sale",
     "kind": "retired",
@@ -13030,6 +13910,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/store-commerce",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/store-commerce",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-commerce/streamline-mass-price-updates-using-attribute-based-pricing",
@@ -13096,6 +13984,22 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/business-performance",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/business-performance",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/core-financials",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/core-financials",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/delay-settlement-journal-posting",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/delay-settlement-journal-posting",
     "kind": "retired",
@@ -13150,6 +14054,46 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/enhancements-account-reconciliation-agent",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/enhancements-account-reconciliation-agent",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/enhancements-advanced-bank-reconciliation",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/enhancements-advanced-bank-reconciliation",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/enhancements-financial-tags",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/enhancements-financial-tags",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/enhancements-invoice-capture",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/enhancements-invoice-capture",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/enhancements-subscription-billing",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/enhancements-subscription-billing",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/establishment-registration-id-governance-invoices",
@@ -13222,6 +14166,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-finance/preview-automatic-bank-reconciliation-matching-results",
@@ -13312,6 +14264,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-human-resources/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-human-resources/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-human-resources/post-job-ads-linkedin-reach-top-talent",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-human-resources/post-job-ads-linkedin-reach-top-talent",
     "kind": "retired",
@@ -13384,6 +14344,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/associated-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/bulk-operations-bookings-schedule-board",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/bulk-operations-bookings-schedule-board",
     "kind": "retired",
@@ -13446,6 +14414,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/enable-change-order-management",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/enable-change-order-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/enable-configurable-timescale-settings-assignments-view",
@@ -13606,6 +14582,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/optimize-project-operations",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/optimize-project-operations",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/performance-improvements-time-phasing-quotes-contract-line-estimates",
@@ -13808,6 +14792,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/analyze-demand-enhanced-generative-insights-demand-planning",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/analyze-demand-enhanced-generative-insights-demand-planning",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/automate-dynamic-work-classification-power-fx",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/automate-dynamic-work-classification-power-fx",
     "kind": "retired",
@@ -13822,6 +14814,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/copilot-ai-innovation",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/copilot-ai-innovation",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/enable-precise-serial-batch-capture-cluster-picking",
@@ -13846,6 +14846,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/enhance-warehouse-efficiency-dynamic-item-placement",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/enhance-warehouse-efficiency-dynamic-item-placement",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/improve-database-health-archiving-load-data",
@@ -13886,6 +14894,22 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/planning",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/planning",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/procurement",
@@ -13936,12 +14960,28 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/warehouse-management",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-supply-chain-management/warehouse-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities/boost-productivity-copilot",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities/boost-productivity-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities/enable-agents-work-file-attachments-through-dynamics-365-erp-mcp-server",
@@ -14000,6 +15040,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities/use-copilot-cowork-orchestrate-insights-actions-across-dynamics-365-erp",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/finance-operations-crossapp-capabilities/use-copilot-cowork-orchestrate-insights-actions-across-dynamics-365-erp",
     "kind": "retired",
@@ -14038,6 +15086,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/sustainability-manager/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/enterprise-resource-planning/sustainability-manager/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/enterprise-resource-planning/sustainability-manager/streamline-esg-internal-data-collection",
@@ -14088,6 +15144,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/associated-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/boost-decision-making-using-visualize-copilot",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/boost-decision-making-using-visualize-copilot",
     "kind": "retired",
@@ -14118,6 +15182,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/copilot-ai-innovation",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/copilot-ai-innovation",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/copy-opportunities-repeat-deals",
@@ -14224,6 +15296,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/opportunity-acceleration",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/opportunity-acceleration",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/personalize-outreach-emails-generated-sales-qualification-agent-boost-response-rates",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/personalize-outreach-emails-generated-sales-qualification-agent-boost-response-rates",
     "kind": "retired",
@@ -14238,6 +15318,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/prioritize-hottest-leads-first-next-best-actions-sales-qualification-agent",
@@ -14262,6 +15350,30 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/sales-engagement-execution",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/sales-engagement-execution",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/sales-management-operations",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/sales-management-operations",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/seller-experiences",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/seller-experiences",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/stay-track-at-every-deal-stage-delta-first-guidance-sales-close-agent",
@@ -14352,6 +15464,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/associated-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/automate-shift-rotations-consistent-workforce-coverage",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/automate-shift-rotations-consistent-workforce-coverage",
     "kind": "retired",
@@ -14432,6 +15552,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/handle-duplicate-callback-requests-overflowing-queues",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/handle-duplicate-callback-requests-overflowing-queues",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/handle-waiting-conversations-when-queues-close-or-become-unstaffed",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/handle-waiting-conversations-when-queues-close-or-become-unstaffed",
     "kind": "retired",
@@ -14456,12 +15584,28 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/omnichannel-customer-experiences",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/omnichannel-customer-experiences",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/orchestrate-conversation-distribution-ai-powered-playbooks",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/orchestrate-conversation-distribution-ai-powered-playbooks",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/provide-real-time-coaching-quality-assurance-agent",
@@ -14478,6 +15622,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/service-representative-experiences",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/service-representative-experiences",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/supervisor-experiences",
@@ -14504,6 +15656,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/unified-routing",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/unified-routing",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/update-representative-presence-missed-rejected-notification",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/update-representative-presence-missed-rejected-notification",
     "kind": "retired",
@@ -14518,6 +15678,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/use-average-wait-time-diagnostics-wait-time-predictions",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/use-average-wait-time-diagnostics-wait-time-predictions",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/use-bulls-eye-routing-user-groups-orchestrate-conversations",
@@ -14680,6 +15848,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/associated-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/automatically-generate-evaluation-summary-final-results",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/automatically-generate-evaluation-summary-final-results",
     "kind": "retired",
@@ -14704,6 +15880,22 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/control-evaluation-volume-sampling",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/control-evaluation-volume-sampling",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/copilot-ai-innovation",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/copilot-ai-innovation",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/create-capacity-plans-planning-groups",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/create-capacity-plans-planning-groups",
     "kind": "retired",
@@ -14720,12 +15912,28 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/define-critical-questions-evaluation-criteria",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/define-critical-questions-evaluation-criteria",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/detect-intraday-volume-spikes-workforce-alerts",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/detect-intraday-volume-spikes-workforce-alerts",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/enable-enhanced-screen-recording-controls-admins",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/enable-enhanced-screen-recording-controls-admins",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/enable-governance-policy",
@@ -14758,6 +15966,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/evaluate-emails-quality-evaluation-agent",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/evaluate-emails-quality-evaluation-agent",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/filter-adherence-historical-analytics-planning-group",
@@ -14806,6 +16022,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/resolve-customer-emails-autonomously-ai",
@@ -14864,6 +16088,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/workforce-engagement-management",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-customer-service/workforce-engagement-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-field-service",
     "kind": "retired",
@@ -14888,12 +16120,36 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/associated-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/automate-optimizations-scheduling-operations-agent",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/automate-optimizations-scheduling-operations-agent",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/book-edit-requirement-groups-faster",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/book-edit-requirement-groups-faster",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/boost-technician-productivity",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/boost-technician-productivity",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/cancel-segment-booking-aggregate-views",
@@ -14918,6 +16174,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/configure-when-work-orders-require-service-accounts",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/configure-when-work-orders-require-service-accounts",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/copilot-ai-innovation",
@@ -14984,6 +16248,22 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/optimize-resource-scheduling",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/optimize-resource-scheduling",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/planned-features",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/show-project-task-context-field-scheduling",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/show-project-task-context-field-scheduling",
     "kind": "retired",
@@ -14998,6 +16278,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/streamline-work-order-management",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/streamline-work-order-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/service/dynamics365-field-service/use-enhanced-field-service-booking-status-control",
@@ -15022,6 +16310,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/adapt-faster-power-platform",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/adapt-faster-power-platform",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/add-default-namespace-sort-using-statements-namespace-new-code-actions",
@@ -15224,6 +16520,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/copilot-agents",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/copilot-agents",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/country-regional",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/country-regional",
     "kind": "retired",
@@ -15302,6 +16606,22 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/ecommerce",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/ecommerce",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/electronic-documents",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/electronic-documents",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/enable-accelerated-depreciation-methods-fixed-assets",
@@ -15416,6 +16736,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/financial-management",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/financial-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/financial-reporting-enhancements",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/financial-reporting-enhancements",
     "kind": "retired",
@@ -15430,6 +16758,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/get-item-insights-advanced-kpis-summary",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/get-item-insights-advanced-kpis-summary",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/get-more-secure-outgoing-http-calls-default",
@@ -15608,6 +16944,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/reporting-data-analysis",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/reporting-data-analysis",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/reverse-drop-shipments-when-sales-purchase-documents-arent-invoiced",
     "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/reverse-drop-shipments-when-sales-purchase-documents-arent-invoiced",
     "kind": "retired",
@@ -15742,6 +17086,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/supply-chain-management",
+    "to": "/previous-versions/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/supply-chain-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/dynamics365/release-plan/2026wave1/smb/dynamics365-business-central/sustainability-management",
@@ -16012,8 +17364,8 @@
     "to": "/dynamics365/supply-chain/warehousing/warehouse-app-user-settings",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/entra/identity/authentication/how-to-set-up-sms-voice-api",
@@ -17880,12 +19232,28 @@
     "lastSeen": "2026-11-09"
   },
   {
+    "from": "/microsoft-365/copilot/extensibility/agent-builder-add-skills",
+    "to": "/plugins/agent-builder-add-skills",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/microsoft-365/copilot/extensibility/agents-are-apps",
     "to": "/microsoft-365/copilot/extensibility/plugins-overview",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/choose-plugin-development-tools",
+    "to": "/plugins/choose-plugin-development-tools",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/microsoft-365/copilot/extensibility/declarative-agent-tool-comparison",
@@ -17902,6 +19270,94 @@
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/evaluation-overview",
+    "to": "/plugins/evaluation-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/evaluations-cli-create-tests",
+    "to": "/plugins/evaluations-cli-create-tests",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/evaluations-cli-custom-evaluators",
+    "to": "/plugins/evaluations-cli-custom-evaluators",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/evaluations-cli-evaluators",
+    "to": "/plugins/evaluations-cli-evaluators",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/evaluations-cli-get-env-values",
+    "to": "/plugins/evaluations-cli-get-env-values",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/evaluations-cli-overview",
+    "to": "/plugins/evaluations-cli-overview",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/evaluations-cli-quickstart",
+    "to": "/plugins/evaluations-cli-quickstart",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/evaluations-cli-reference",
+    "to": "/plugins/evaluations-cli-reference",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/evaluations-cli-tool-call-evaluators",
+    "to": "/plugins/evaluations-cli-tool-call-evaluators",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/evaluations-cli-troubleshooting",
+    "to": "/plugins/evaluations-cli-troubleshooting",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-365/copilot/extensibility/improve-plugin",
+    "to": "/plugins/improve-plugin",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/microsoft-365/copilot/faq-deploy-microsoft-365-copilot-app",
@@ -18776,6 +20232,14 @@
     "lastSeen": "2026-10-19"
   },
   {
+    "from": "/microsoft-365/managed-apps",
+    "to": "/microsoft-365/copilot-managed-runtime",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/microsoft-365/managed-apps/developer",
     "to": "/microsoft-365/copilot-managed-runtime/developer/apps",
     "kind": "moved",
@@ -18878,6 +20342,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/microsoft-365/managed-apps/developer/shared-connections",
+    "to": "/microsoft-365/copilot-managed-runtime/developer/apps/shared-connections",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/microsoft-365/managed-apps/managed-runtime-security-governance",
@@ -19238,6 +20710,30 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/microsoft-sales-copilot/create-planner-tasks",
+    "to": "/microsoft-sales-copilot/landing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-sales-copilot/suggested-tasks-collab-space",
+    "to": "/microsoft-sales-copilot/landing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/microsoft-sales-copilot/turn-off-suggested-tasks-collab-space",
+    "to": "/microsoft-sales-copilot/landing",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/microsoftteams/devices/how-to-get-support",
@@ -20432,14 +21928,6 @@
     "lastSeen": "2026-10-12"
   },
   {
-    "from": "/power-apps/maker/common/ai-app-descriptions-faq",
-    "to": "/power-platform/important-changes-coming",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-11-16",
-    "lastSeen": "2026-11-16"
-  },
-  {
     "from": "/power-apps/maker/data-platform/azure-synapse-link-solution",
     "to": "/power-apps/maker/data-platform/export-to-data-lake",
     "kind": "moved",
@@ -20544,12 +22032,100 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/power-platform/admin/manage-usage-github-copilot-harness",
+    "to": "/power-platform/admin/manage-usage-microsoft-copilot-harness",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/admin/plug-ins",
     "to": "/power-platform/admin/plugin-steps",
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-02",
     "lastSeen": "2026-11-02"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/ai-builder",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/ai-builder",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/ai-builder/define-specific-output-formats-prompt-builder",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/ai-builder/define-specific-output-formats-prompt-builder",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/ai-builder/extract-information-documents-gpt",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/ai-builder/extract-information-documents-gpt",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/ai-builder/intelligent-document-email-processing",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/ai-builder/intelligent-document-email-processing",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/ai-builder/leverage-advanced-features-azure-document-intelligence-integration",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/ai-builder/leverage-advanced-features-azure-document-intelligence-integration",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/ai-builder/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/ai-builder/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/ai-builder/prompt-builder",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/ai-builder/prompt-builder",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/ai-builder/use-o1-reasoning-model-prompt-builder",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/ai-builder/use-o1-reasoning-model-prompt-builder",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/ai-builder/use-own-enterprise-data-gpt-actions",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/ai-builder/use-own-enterprise-data-gpt-actions",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2024wave2/change-history",
@@ -20560,12 +22136,1484 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2024wave2/data-platform",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/accelerate-application-lifecycle-management-virtual-tables",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/accelerate-application-lifecycle-management-virtual-tables",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/assisted-mapping-standard-dataflows",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/assisted-mapping-standard-dataflows",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/author-low-code-plug-ins-using-power-fx-power-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/author-low-code-plug-ins-using-power-fx-power-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/build-low-code-hyperscale-backend-dataverse",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/build-low-code-hyperscale-backend-dataverse",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/create-virtual-table-native-table-relationships",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/create-virtual-table-native-table-relationships",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/data-workspace",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/data-workspace",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/enhance-security-automating-role-compliance-checks",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/enhance-security-automating-role-compliance-checks",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/extend-copilots-knowledge-actions",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/extend-copilots-knowledge-actions",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/improved-business-continuity-disaster-recovery",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/improved-business-continuity-disaster-recovery",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/improved-enterprise-experiences-power-platform",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/improved-enterprise-experiences-power-platform",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/improved-maker-experience-unmanaged-changes",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/improved-maker-experience-unmanaged-changes",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/insights-fabric-are",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/insights-fabric-are",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/maintain-security-role-privileges-better-alm-solution-import",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/maintain-security-role-privileges-better-alm-solution-import",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/prevent-data-exfiltration-user-level-controls",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/prevent-data-exfiltration-user-level-controls",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/share-system-views-security-role",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/share-system-views-security-role",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/solution-management-copilot-studio",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/solution-management-copilot-studio",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/source-code-integration",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/source-code-integration",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/support-virtual-table-virtual-table-relationships",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/support-virtual-table-virtual-table-relationships",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/tenant-tenant-environment-move",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/tenant-tenant-environment-move",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/upgrade-transport-layer-security-tls-13.3",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/upgrade-transport-layer-security-tls-13.3",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/use-application-lifecycle-management-copilot-studio",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/use-application-lifecycle-management-copilot-studio",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/data-platform/virtualization-sql-views",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/data-platform/virtualization-sql-views",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/deprecations",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/deprecations",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/features-ready-early-access",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/features-ready-early-access",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/get-started-with-this-release",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/get-started-with-this-release",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/add-enterprise-data-new-graph-connections",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/add-enterprise-data-new-graph-connections",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/audit-user-interactions-agents-purview",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/audit-user-interactions-agents-purview",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/azure-ai-search-index-as-knowledge-source",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/azure-ai-search-index-as-knowledge-source",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/collect-user-feedback-copilot-studio-agent-builder",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/collect-user-feedback-copilot-studio-agent-builder",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/copilot-ai-innovation",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/copilot-ai-innovation",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/copilot-configuration",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/copilot-configuration",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/core-authoring",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/core-authoring",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/create-automated-copilots-triggered-events",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/create-automated-copilots-triggered-events",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/create-copilot-agents-365-business-chat-teams",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/create-copilot-agents-365-business-chat-teams",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/create-perfect-prompt-help-copilot",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/create-perfect-prompt-help-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/create-rest-api-copilot-connectors-copilot-studio",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/create-rest-api-copilot-connectors-copilot-studio",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/enable-copilot-real-time-knowledge-non-microsoft-services",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/enable-copilot-real-time-knowledge-non-microsoft-services",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/enable-makers-configure-sharepoint-as-knowledge-source-agents",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/enable-makers-configure-sharepoint-as-knowledge-source-agents",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/enhance-ivr-generative-answers-optimized-voice",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/enhance-ivr-generative-answers-optimized-voice",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/enrich-agents-third-party-data-using-extensions",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/enrich-agents-third-party-data-using-extensions",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/extend-m365-copilot-copilot-studio-custom-engine-agents",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/extend-m365-copilot-copilot-studio-custom-engine-agents",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/get-insights-into-how-copilots-are-performing",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/get-insights-into-how-copilots-are-performing",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/get-responses-based-uploaded-images",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/get-responses-based-uploaded-images",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/grounding-agent-specific-public-websites",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/grounding-agent-specific-public-websites",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/import-export-topics-across-copilots-environments",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/import-export-topics-across-copilots-environments",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/preview-gpt-4-5-copilot-studio",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/preview-gpt-4-5-copilot-studio",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/publish-connector-actions-multiple-copilot-deployments",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/publish-connector-actions-multiple-copilot-deployments",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/service-runtime-governance",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/service-runtime-governance",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/solution-management-copilot-studio",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/solution-management-copilot-studio",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/speech-ivr",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/speech-ivr",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/supporting-different-formats-sharepoint-urls",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/supporting-different-formats-sharepoint-urls",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-365-substrate-data-agents",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-365-substrate-data-agents",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-agent-builder-copilot-chat",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-agent-builder-copilot-chat",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-generative-actions-now-generally",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-generative-actions-now-generally",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-interactive-voice-response-ivr-omnichannel-customer-service",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-interactive-voice-response-ivr-omnichannel-customer-service",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-prebuilt-agents-as-starting-point-copilot-creation",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/microsoft-copilot-studio/use-prebuilt-agents-as-starting-point-copilot-creation",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/add-ai-record-summary-model-driven-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/add-ai-record-summary-model-driven-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/agent-builder-power-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/agent-builder-power-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/allow-users-resize-side-panes",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/allow-users-resize-side-panes",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/building-modern-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/building-modern-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/conditional-access-policies-individual-power-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/conditional-access-policies-individual-power-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/connect-environment-source-control",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/connect-environment-source-control",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/copilot-helps-plan-out-solutions-business-problems",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/copilot-helps-plan-out-solutions-business-problems",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/copilot-power-apps-makers-users",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/copilot-power-apps-makers-users",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/customize-copilot-knowledge-custom-topics",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/customize-copilot-knowledge-custom-topics",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/enable-enterprise-scale",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/enable-enterprise-scale",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/enhance-delegation-updateif-removeif",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/enhance-delegation-updateif-removeif",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/enhanced-experience-form-filling-copilot",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/enhanced-experience-form-filling-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/environment-variable-support-entra-sql-authenticated-connections",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/environment-variable-support-entra-sql-authenticated-connections",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/find-records-filter-views-using-natural-language",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/find-records-filter-views-using-natural-language",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/get-better-suggestions-using-form-fill-assistance",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/get-better-suggestions-using-form-fill-assistance",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/get-valuable-insights-recommendations-canvas-app-using-monitor",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/get-valuable-insights-recommendations-canvas-app-using-monitor",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/hide-legacy-app-admins",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/hide-legacy-app-admins",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/makers-work-together-real-time-building-canvas-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/makers-work-together-real-time-building-canvas-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/modern-refreshed-look-model-driven-apps-now-managed-admins-only",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/modern-refreshed-look-model-driven-apps-now-managed-admins-only",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/monitor-improve-operational-health",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/monitor-improve-operational-health",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/review-column-suggestions-copilot-model-driven-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/review-column-suggestions-copilot-model-driven-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/save-canvas-applications-as-human-readable-yaml-files",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/save-canvas-applications-as-human-readable-yaml-files",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/select-records-faster-look-up-control",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/select-records-faster-look-up-control",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/share-canvas-app-quickly-one-click",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/share-canvas-app-quickly-one-click",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/show-recent-pinned-records-multi-session-sitemap",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/show-recent-pinned-records-multi-session-sitemap",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/take-advantage-improvements-power-apps-studio",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/take-advantage-improvements-power-apps-studio",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/update-existing-model-driven-apps-monthly",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/update-existing-model-driven-apps-monthly",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/use-copilot-filter-sort-search-data-within-gallery",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/use-copilot-filter-sort-search-data-within-gallery",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/use-copilot-generate-content-when-drafting-input-text-canvas-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/use-copilot-generate-content-when-drafting-input-text-canvas-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/use-environment-routing-power-automate-desktop",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/use-environment-routing-power-automate-desktop",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/use-modern-chart-dialogs-instead-classic-dialogs",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/use-modern-chart-dialogs-instead-classic-dialogs",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/use-modern-refreshed-look-model-driven-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/use-modern-refreshed-look-model-driven-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/use-new-capabilities-form-fill-assistance",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/use-new-capabilities-form-fill-assistance",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/use-power-platform-environment-settings-app",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/use-power-platform-environment-settings-app",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/view-act-data-more-efficiently-new-grid-features",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/view-act-data-more-efficiently-new-grid-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/visualize-data-view-easily-copilot",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/visualize-data-view-easily-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-apps/work-existing-tables-when-visualizing-complex-data",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-apps/work-existing-tables-when-visualizing-complex-data",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/analyze-process-mining-processes-web-client",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/analyze-process-mining-processes-web-client",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/automation-center-monitor-manage-all-automations-related-assets",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/automation-center-monitor-manage-all-automations-related-assets",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/cloud-flows",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/cloud-flows",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/cloud-flows-are-automatically-defined-dataverse-solutions",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/cloud-flows-are-automatically-defined-dataverse-solutions",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/configure-entra-hybrid-join-hosted-machine-groups",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/configure-entra-hybrid-join-hosted-machine-groups",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/connect-other-environments-dataverse-connector",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/connect-other-environments-dataverse-connector",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/connect-own-virtual-network-hosted-machine-group",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/connect-own-virtual-network-hosted-machine-group",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/copilot-power-automate",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/copilot-power-automate",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/copilot-provides-more-accurate-answers-questions",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/copilot-provides-more-accurate-answers-questions",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/create-edit-expressions-copilot",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/create-edit-expressions-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/describe-actions-copilot",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/describe-actions-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/desktop-flows",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/desktop-flows",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/enable-dark-mode-power-automate-desktop",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/enable-dark-mode-power-automate-desktop",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/enhance-sharing-desktop-flows-connection-references",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/enhance-sharing-desktop-flows-connection-references",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/generate-process-maps-multi-flow-automations",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/generate-process-maps-multi-flow-automations",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/get-increased-accuracy-responses-copilot",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/get-increased-accuracy-responses-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/increase-productivity-power-automate-excel-desktop",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/increase-productivity-power-automate-excel-desktop",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/ingest-data-fabric-onelake",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/ingest-data-fabric-onelake",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2024wave2/power-automate/planned-features",
     "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/planned-features",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/power-fx-integration-power-automate-desktop",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/power-fx-integration-power-automate-desktop",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/process-mining",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/process-mining",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/process-mining-process-simulations",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/process-mining-process-simulations",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/regenerate-variation-copilot",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/regenerate-variation-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/run-two-desktop-flows-parallel-same-machine",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/run-two-desktop-flows-parallel-same-machine",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/scale-faster-power-automate-process-mining-thin-client-app",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/scale-faster-power-automate-process-mining-thin-client-app",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/secure-credential-retrieval-power-automate-desktop",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/secure-credential-retrieval-power-automate-desktop",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/self-heal-ui-browser-automation-actions-at-execution-ai",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/self-heal-ui-browser-automation-actions-at-execution-ai",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/share-desktop-connections-service-principal-users",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/share-desktop-connections-service-principal-users",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-certificate-based-authentication-desktop-connections",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-certificate-based-authentication-desktop-connections",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-copilot-automation-center-analyze-cloud-runs",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-copilot-automation-center-analyze-cloud-runs",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-copilot-automation-center-analyze-desktop-runs",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-copilot-automation-center-analyze-desktop-runs",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-copilot-automation-center-analyze-work-queue-data",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-copilot-automation-center-analyze-work-queue-data",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-copilot-automation-center-ask-power-automate-product-questions",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-copilot-automation-center-ask-power-automate-product-questions",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-cyberark-credentials-desktop-connections",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-cyberark-credentials-desktop-connections",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-generative-ai-achieve-process-ai-flows",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-generative-ai-achieve-process-ai-flows",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-machine-credential-mapping-desktop-connections",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-machine-credential-mapping-desktop-connections",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-natural-language-create-teams",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-natural-language-create-teams",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-new-actions-access",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-new-actions-access",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-own-encryption-key-encrypting-data-at-rest-existing-environments",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-own-encryption-key-encrypting-data-at-rest-existing-environments",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-power-platform-connectors-power-automate-desktop-actions",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-power-platform-connectors-power-automate-desktop-actions",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-undo-redo-while-build-cloud-flows-designer",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-undo-redo-while-build-cloud-flows-designer",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/use-voice-interact-copilot",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/use-voice-interact-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-automate/view-progressive-logging-desktop-flows",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-automate/view-progressive-logging-desktop-flows",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/administration-governance",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/administration-governance",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/design-studio",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/design-studio",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/disable-external-authentication-providers-power-pages",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/disable-external-authentication-providers-power-pages",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/enable-payments-websites",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/enable-payments-websites",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/enhance-power-pages-security-new-power-platform-admin-center",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/enhance-power-pages-security-new-power-platform-admin-center",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/get-recommendations-power-pages-power-advisor",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/get-recommendations-power-pages-power-advisor",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/manage-site-settings-environment-variables-enhanced-data-model",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/manage-site-settings-environment-variables-enhanced-data-model",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/migrate-existing-sites-bootstrap-version-5",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/migrate-existing-sites-bootstrap-version-5",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/power-pages-copilot",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/power-pages-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/professional-developer-experiences",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/professional-developer-experiences",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/summarize-website-content-copilot",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/summarize-website-content-copilot",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/use-contextual-copilot-add-page-power-pages-site",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/use-contextual-copilot-add-page-power-pages-site",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-pages/use-security-view-see-critical-site-details",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-pages/use-security-view-see-critical-site-details",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/application-lifecycle-management",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/application-lifecycle-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/backup-restore-unified-environments-power-platform-admin-center",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/backup-restore-unified-environments-power-platform-admin-center",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/convert-dataverse-owner-teams-access-teams",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/convert-dataverse-owner-teams-access-teams",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/create-edit-pipelines-power-platform-admin-center",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/create-edit-pipelines-power-platform-admin-center",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/deploy-manage-unified-sandbox-environments-power-platform-admin-center",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/deploy-manage-unified-sandbox-environments-power-platform-admin-center",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/enhance-sas-calls-include-ip-restrictions",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/enhance-sas-calls-include-ip-restrictions",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/enterprise-scale-administration",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/enterprise-scale-administration",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/get-insights-into-currency-storage-consumption",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/get-insights-into-currency-storage-consumption",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/govern-critical-environment-settings",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/govern-critical-environment-settings",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/licensing-capacity",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/licensing-capacity",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/limit-sharing-solution-cloud-flows-managed-environments",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/limit-sharing-solution-cloud-flows-managed-environments",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/manage-currencies-pay-as-you-go-licensing-plans",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/manage-currencies-pay-as-you-go-licensing-plans",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/manage-security-posture-power-platform-admin-center",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/manage-security-posture-power-platform-admin-center",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/modernize-audit-settings-management",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/modernize-audit-settings-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/monitoring-operational-health",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/monitoring-operational-health",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/permit-or-deny-guest-access-environment",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/permit-or-deny-guest-access-environment",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/security-compliance",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/security-compliance",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/share-system-views-security-role",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/share-system-views-security-role",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/turn-sharing-off-copilot-studio",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/turn-sharing-off-copilot-studio",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/unified-experience-power-platform-finance-operations-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/unified-experience-power-platform-finance-operations-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/use-management-connector-power-automate-logic-apps",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/use-management-connector-power-automate-logic-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/use-new-connector-management-rule",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/use-new-connector-management-rule",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/use-new-improved-power-platform-admin-center",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/use-new-improved-power-platform-admin-center",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/use-power-platform-admins-connectors",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/use-power-platform-admins-connectors",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2024wave2/power-platform-governance-administration/view-all-pipelines-get-recommendations-deployments-hub",
+    "to": "/previous-versions/power-platform/release-plan/2024wave2/power-platform-governance-administration/view-all-pipelines-get-recommendations-deployments-hub",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2025wave1",
@@ -20670,6 +23718,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2025wave1/ai-builder/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave1/ai-builder/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2025wave1/ai-builder/prompt-builder",
@@ -20856,6 +23912,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2025wave1/data-platform/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave1/data-platform/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2025wave1/data-platform/prevent-data-exfiltration-user-level-controls",
     "to": "/previous-versions/power-platform/release-plan/2025wave1/data-platform/prevent-data-exfiltration-user-level-controls",
     "kind": "retired",
@@ -20918,6 +23982,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2025wave1/features-ready-early-access",
+    "to": "/previous-versions/power-platform/release-plan/2025wave1/features-ready-early-access",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2025wave1/get-started-with-this-release",
@@ -21094,6 +24166,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2025wave1/power-apps/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave1/power-apps/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2025wave1/power-apps/process-maps-as-part-plan",
@@ -21360,6 +24440,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2025wave1/power-automate/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave1/power-automate/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2025wave1/power-automate/process-mining",
     "to": "/previous-versions/power-platform/release-plan/2025wave1/power-automate/process-mining",
     "kind": "retired",
@@ -21536,6 +24624,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2025wave1/power-pages/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave1/power-pages/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2025wave1/power-pages/power-pages-copilot",
     "to": "/previous-versions/power-platform/release-plan/2025wave1/power-pages/power-pages-copilot",
     "kind": "retired",
@@ -21582,6 +24678,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2025wave1/power-platform-governance-administration/associated-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave1/power-platform-governance-administration/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2025wave1/power-platform-governance-administration/configure-copilot-feature-availability",
@@ -21702,6 +24806,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2025wave1/power-platform-governance-administration/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave1/power-platform-governance-administration/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2025wave1/power-platform-governance-administration/prepare-new-copilot-agent-features",
@@ -21856,6 +24968,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2025wave2/change-history",
+    "to": "/previous-versions/power-platform/release-plan/2025wave2/change-history",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2025wave2/data-platform",
     "to": "/previous-versions/power-platform/release-plan/2025wave2/data-platform",
     "kind": "retired",
@@ -21950,6 +25070,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2025wave2/data-platform/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave2/data-platform/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2025wave2/data-platform/update-system-jobs-retention-policy",
@@ -22072,6 +25200,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2025wave2/power-apps/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave2/power-apps/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2025wave2/power-apps/process-maps-as-part-plan",
     "to": "/previous-versions/power-platform/release-plan/2025wave2/power-apps/process-maps-as-part-plan",
     "kind": "retired",
@@ -22158,6 +25294,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2025wave2/power-automate/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave2/power-automate/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2025wave2/power-automate/process-mining",
@@ -22272,6 +25416,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2025wave2/power-pages/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave2/power-pages/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2025wave2/power-pages/power-pages-copilot",
     "to": "/previous-versions/power-platform/release-plan/2025wave2/power-pages/power-pages-copilot",
     "kind": "retired",
@@ -22318,6 +25470,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2025wave2/power-platform-governance-administration/associated-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave2/power-platform-governance-administration/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2025wave2/power-platform-governance-administration/discover-foster-power-platform-adoption-new-usage-page",
@@ -22374,6 +25534,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2025wave2/power-platform-governance-administration/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2025wave2/power-platform-governance-administration/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2025wave2/power-platform-governance-administration/record-actual-label-values-dataverse-audit-logs",
@@ -22552,12 +25720,28 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2026wave1/data-platform/improved-enterprise-experiences-power-platform",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/data-platform/improved-enterprise-experiences-power-platform",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2026wave1/data-platform/monitor-data-management-framework-azure-monitor-application-insights",
     "to": "/previous-versions/power-platform/release-plan/2026wave1/data-platform/monitor-data-management-framework-azure-monitor-application-insights",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2026wave1/data-platform/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/data-platform/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2026wave1/data-platform/restore-deleted-records-within-specified-timeframe",
@@ -22608,12 +25792,28 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2026wave1/power-apps/associated-features",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-apps/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2026wave1/power-apps/build-generative-pages-using-external-codegen-tools",
     "to": "/previous-versions/power-platform/release-plan/2026wave1/power-apps/build-generative-pages-using-external-codegen-tools",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2026wave1/power-apps/building-modern-apps",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-apps/building-modern-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2026wave1/power-apps/configure-offline-profile-using-fetchxml-editor",
@@ -22702,6 +25902,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2026wave1/power-apps/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-apps/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2026wave1/power-apps/refine-global-search-table-scoping",
@@ -22816,6 +26024,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2026wave1/power-automate/build-better-forms-integrated-power-apps",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-automate/build-better-forms-integrated-power-apps",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2026wave1/power-automate/cloud-flows",
     "to": "/previous-versions/power-platform/release-plan/2026wave1/power-automate/cloud-flows",
     "kind": "retired",
@@ -22872,6 +26088,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2026wave1/power-automate/desktop-flows",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-automate/desktop-flows",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2026wave1/power-automate/enable-process-intelligence-studio-object-centric-process-mining",
     "to": "/previous-versions/power-platform/release-plan/2026wave1/power-automate/enable-process-intelligence-studio-object-centric-process-mining",
     "kind": "retired",
@@ -22896,6 +26120,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2026wave1/power-automate/export-object-centric-process-mining-data-fabric-semantic-model",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-automate/export-object-centric-process-mining-data-fabric-semantic-model",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2026wave1/power-automate/export-work-queue-items-csv",
     "to": "/previous-versions/power-platform/release-plan/2026wave1/power-automate/export-work-queue-items-csv",
     "kind": "retired",
@@ -22904,12 +26136,36 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2026wave1/power-automate/get-support-normalized-schema-import-data-ingestion",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-automate/get-support-normalized-schema-import-data-ingestion",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2026wave1/power-automate/measure-time-cost-savings-desktop-flows",
     "to": "/previous-versions/power-platform/release-plan/2026wave1/power-automate/measure-time-cost-savings-desktop-flows",
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2026wave1/power-automate/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-automate/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2026wave1/power-automate/process-mining",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-automate/process-mining",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2026wave1/power-automate/reference-previous-prompts-copilot-power-automate-desktop",
@@ -23032,6 +26288,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2026wave1/power-pages/design-studio",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-pages/design-studio",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2026wave1/power-pages/detect-threats-violations-risks-using-admin-trust-security-compliance-agent",
     "to": "/previous-versions/power-platform/release-plan/2026wave1/power-pages/detect-threats-violations-risks-using-admin-trust-security-compliance-agent",
     "kind": "retired",
@@ -23080,6 +26344,14 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2026wave1/power-pages/planned-features",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-pages/planned-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2026wave1/power-pages/professional-developer-experiences",
     "to": "/previous-versions/power-platform/release-plan/2026wave1/power-pages/professional-developer-experiences",
     "kind": "retired",
@@ -23120,6 +26392,22 @@
     "lastSeen": "2026-11-16"
   },
   {
+    "from": "/power-platform/release-plan/2026wave1/power-platform-governance-administration/application-lifecycle-management",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-platform-governance-administration/application-lifecycle-management",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
+    "from": "/power-platform/release-plan/2026wave1/power-platform-governance-administration/associated-features",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-platform-governance-administration/associated-features",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
+  },
+  {
     "from": "/power-platform/release-plan/2026wave1/power-platform-governance-administration/automate-governance-agentic-center-enablement",
     "to": "/previous-versions/power-platform/release-plan/2026wave1/power-platform-governance-administration/automate-governance-agentic-center-enablement",
     "kind": "retired",
@@ -23158,6 +26446,14 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/power-platform/release-plan/2026wave1/power-platform-governance-administration/github-support-source-code-integration-power-platform",
+    "to": "/previous-versions/power-platform/release-plan/2026wave1/power-platform-governance-administration/github-support-source-code-integration-power-platform",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-17",
+    "lastSeen": "2026-11-17"
   },
   {
     "from": "/power-platform/release-plan/2026wave1/power-platform-governance-administration/intuitive-inline-deployments-copilot-studio",
