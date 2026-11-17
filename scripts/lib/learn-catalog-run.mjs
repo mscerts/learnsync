@@ -321,6 +321,12 @@ export async function runCatalogSync(options = {}) {
   if (status.unitHierarchyNotFound) {
     warn(`  ${status.unitHierarchyNotFound} modules are listed by the catalog API but unknown to the hierarchy API (module_id_not_found; their pages redirect away, so they are probably not served): ${modules.filter((m) => m.hierarchyNotFound).map((m) => m.uid).join(", ")}`);
   }
+  if (built.stats.shadowedModules.length) {
+    warn(
+      `  ${built.stats.shadowedModules.length} modules share a page with a newer module and were left out (the catalog API lists both, Learn serves the newer one): ` +
+        built.stats.shadowedModules.map((m) => `${m.uid} -> ${m.keptUid} (${m.path})`).join("; "),
+    );
+  }
   log(`  ${built.stats.modulesWithHintedSubjects} modules got a subject added via PRODUCT_SUBJECT_HINTS`);
   if (built.stats.missingUnitTitles) {
     warn(`  ${built.stats.missingUnitTitles} unit titles could not be resolved (fell back to uid) in ${built.stats.fallbackModules.length} modules:`);

@@ -157,6 +157,14 @@ Modules excluded by the filter are listed in `outOfScope` (paths only).
 - A failed module keeps its previous `unitUrls` only if its `unitSig` is
   unchanged; otherwise `null`, never an empty guess.
 
+### Two modules on one page
+The catalog API can list two modules (two uids) under one URL: on 2026-11-16 `learn-bizapps.sovereignty-overview` and
+`learn.wwl.sovereignty-overview` both claimed `/training/modules/sovereignty-overview`, and the self-check
+("duplicate path") aborted the whole Learn sync (issue 22). A path is one page, so `resolvePathCollisions`
+(`learn-build.mjs`) keeps the module with the newest `last_modified` (tie: smaller uid) and leaves the others out of
+`modules`; the run logs a `shadowed` warning naming them. They are still in the raw API response, so they never become
+tombstones. Verified: Learn serves the newer module's title and unit slugs on that page.
+
 ### Tombstones and out of scope
 `removed` = a uid in the previous `modules` and absent from the whole raw API
 response now (dated today; `lastSeen` = latest of the previous `lastChecked` and

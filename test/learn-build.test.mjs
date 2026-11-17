@@ -10,6 +10,7 @@ import {
   findRenamedPaths,
   findTombstonePathCollisions,
   isModulePath,
+  resolvePathCollisions,
   sameExceptTimestamp,
   transformModules,
   validateCatalogOutput,
@@ -282,4 +283,28 @@ test("finalizeModules emits hierarchyNotFound only for flagged modules whose uni
   assert.deepEqual(Object.keys(modules[0]).slice(-2), ["unitSig", "hierarchyNotFound"]);
   assert.equal("hierarchyNotFound" in modules[1], false, "the module has urls, so it cannot be flagged");
   assert.equal("hierarchyNotFound" in modules[2], false);
+});
+
+test("transformModules: two modules on one page -> the newest owns the path, the other is shadowed (never a tombstone)", () => {
+  const older = mod({ uid: "learn-bizapps.sovereignty-overview", slug: "sovereignty-overview", lastModified: "2026-10-27T17:09:00+00:00" });
+  const newer = mod({ uid: "learn.wwl.sovereignty-overview", slug: "sovereignty-overview", lastModified: "2026-11-10T18:21:00+00:00" });
+  const other = mod({ uid: "learn.azure.vm-basics", slug: "vm-basics" });
+  for (const order of [[older, newer, other], [newer, other, older]]) {
+    const modules = order;
+    const built = transformModules({ apiModules: modules, apiUnits: unitsOf(modules), taxonomy: taxonomy(), config: TEST_CONFIG });
+    assert.deepEqual(built.records.map((r) => r.uid), ["learn.azure.vm-basics", "learn.wwl.sovereignty-overview"]);
+    assert.deepEqual(built.stats.shadowedModules, [{ uid: "learn-bizapps.sovereignty-overview", path: "/training/modules/sovereignty-overview", keptUid: "learn.wwl.sovereignty-overview" }]);
+    assert.equal(built.stats.inScope, 2);
+    assert.ok(!built.meta.has("learn-bizapps.sovereignty-overview"));
+    assert.ok(built.apiUids.has("learn-bizapps.sovereignty-overview"), "still in the API, so computeRemovals never tombstones it");
+    const catalog = { schemaVersion: CATALOG_SCHEMA_VERSION, totalModules: 2, modules: built.records };
+    assert.ok(!validateCatalogOutput({ ...catalog, removed: [], outOfScope: [], unitUrlsRefreshedAt: null }).some((p) => p.includes("duplicate path")));
+  }
+});
+
+test("resolvePathCollisions: equal or missing dates fall back to the smaller uid; unique paths are untouched", () => {
+  const rec = (uid, path, lastModified) => ({ uid, path, lastModified });
+  const { kept, shadowed } = resolvePathCollisions([rec("b", "/training/modules/x", null), rec("a", "/training/modules/x", null), rec("c", "/training/modules/y", "2026-01-01"), rec("d", "/training/modules/z", null), rec("e", "/training/modules/z", "2020-01-01")]);
+  assert.deepEqual(kept.map((r) => r.uid), ["a", "c", "e"]);
+  assert.deepEqual(shadowed, [{ uid: "b", path: "/training/modules/x", keptUid: "a" }, { uid: "d", path: "/training/modules/z", keptUid: "e" }]);
 });

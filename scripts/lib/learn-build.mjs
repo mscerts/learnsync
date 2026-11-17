@@ -126,9 +126,17 @@ export function transformModules({ apiModules, apiUnits, taxonomy, config }) {
     meta.set(mod.uid, { unitUids: [...unitUids], firstUnitPath: canonicalPath(mod.firstUnitUrl) });
   }
 
+  // Two catalog modules can claim the same page (2026-11-16: learn-bizapps.sovereignty-overview and
+  // learn.wwl.sovereignty-overview, both /training/modules/sovereignty-overview; Learn serves the newer one). A path
+  // is one page, so only one record may own it: the validator and the unit lookup are keyed by path.
+  const { kept, shadowed } = resolvePathCollisions(records);
+  for (const dropped of shadowed) meta.delete(dropped.uid);
+  records.length = 0;
+  records.push(...kept);
   records.sort((a, b) => byCodePoint(a.uid, b.uid));
   fallbackModules.sort((a, b) => byCodePoint(a.uid, b.uid));
   stats.inScope = records.length;
+  stats.shadowedModules = shadowed;
 
   const topLevel = new Set(taxonomy.topLevelProductIds);
   return {
@@ -149,6 +157,35 @@ export function transformModules({ apiModules, apiUnits, taxonomy, config }) {
       allowedMissingFromTaxonomy: config.allowedCategories.filter((id) => !topLevel.has(id)).sort(byCodePoint),
     },
   };
+}
+
+/**
+ * Modules that share one canonical path. The newest `lastModified` owns the path (Learn serves the module that was
+ * published last; a null date loses), a tie goes to the smaller uid so the result never depends on API order. The
+ * others are `shadowed`: still in the API (so never tombstones, see computeRemovals) but not served at that path.
+ * Returns { kept, shadowed: [{ uid, path, keptUid }] } with both lists sorted by uid.
+ */
+export function resolvePathCollisions(records) {
+  const byPath = new Map();
+  for (const record of records) {
+    const group = byPath.get(record.path);
+    if (group) group.push(record);
+    else byPath.set(record.path, [record]);
+  }
+  const kept = [];
+  const shadowed = [];
+  for (const group of byPath.values()) {
+    if (group.length === 1) {
+      kept.push(group[0]);
+      continue;
+    }
+    const ranked = [...group].sort((a, b) => byCodePoint(b.lastModified ?? "", a.lastModified ?? "") || byCodePoint(a.uid, b.uid));
+    kept.push(ranked[0]);
+    for (const loser of ranked.slice(1)) shadowed.push({ uid: loser.uid, path: loser.path, keptUid: ranked[0].uid });
+  }
+  kept.sort((a, b) => byCodePoint(a.uid, b.uid));
+  shadowed.sort((a, b) => byCodePoint(a.uid, b.uid));
+  return { kept, shadowed };
 }
 
 /**

@@ -142,7 +142,10 @@ own key. `docs.changes` counts the docs-family entries of each file after the ru
   category that has been empty since an earlier run is told apart from an id newly added to the
   allowlist with no modules (see "Failsafes").
 * `modules` ∪ `outOfScope` is the COMPLETE set of modules the catalog API
-  returned. A module in neither set does not exist upstream.
+  returned, by PATH. A module path in neither set does not exist upstream. One exception by uid: when the API lists
+  two modules under the same path (2026-11-16: `learn-bizapps.sovereignty-overview` and `learn.wwl.sovereignty-overview`),
+  `modules` holds only the one with the newest `lastModified` (tie: smaller uid), because Learn serves one page per
+  path; the other uid is in the API but in neither list, and is never a tombstone.
 * `removed` = tombstones: a uid that was in `modules` in the previous run and is
   absent from the whole API response now. Tombstones are append-only, deleted
   only if the uid comes back. A module that merely left the category allowlist
