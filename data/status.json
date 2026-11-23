@@ -80,14 +80,14 @@
     "unverified": 0
   },
   "docsToc": {
-    "generatedAt": "2026-11-16T19:48:31.253Z",
-    "runId": "43943136264",
+    "generatedAt": "2026-11-23T21:38:47.686Z",
+    "runId": "45271756732",
     "scope": "relevant",
-    "tocs": 621,
-    "groups": 21257,
-    "pages": 110470,
-    "noToc": 3585,
-    "asked": 642,
+    "tocs": 615,
+    "groups": 21090,
+    "pages": 109730,
+    "noToc": 3536,
+    "asked": 4092,
     "failed": 1,
     "waiting": 0
   }
