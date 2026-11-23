@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "lastChecked": "2026-11-17T16:33:19.234Z",
+  "lastChecked": "2026-11-23T19:13:07.902Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -54,8 +54,8 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3403,
-  "totalApiModules": 3473,
+  "totalModules": 3414,
+  "totalApiModules": 3484,
   "unitUrlsRefreshedAt": "2026-11-09",
   "modules": [
     {
@@ -2459,8 +2459,8 @@
         "/training/modules/configure-custom-connectors-api/7-check",
         "/training/modules/configure-custom-connectors-api/8-summary"
       ],
-      "lastModified": "2026-10-27T17:09:00+00:00",
-      "unitSig": "b3ee6ba961c1d98f62be73cd9a8237a9f2a65d2f"
+      "lastModified": "2026-11-17T18:11:00+00:00",
+      "unitSig": "7184d32fe8a83e2efa0d0704ca275feb9de363b1"
     },
     {
       "uid": "learn-bizapps.configure-low-code",
@@ -4357,8 +4357,8 @@
         "/training/modules/dragon-copilot-learn-to-train-summary/check",
         "/training/modules/dragon-copilot-learn-to-train-summary/summary"
       ],
-      "lastModified": "2026-10-27T23:07:00+00:00",
-      "unitSig": "a8f18bdd0463546638027a4231c0b0f4b17290fe"
+      "lastModified": "2026-11-21T00:09:00+00:00",
+      "unitSig": "eaa423ba3556df2c047450bc2d8f656fab7f2571"
     },
     {
       "uid": "learn-bizapps.dragon-copilot-nurses-verbalization-module",
@@ -5074,6 +5074,76 @@
       ],
       "lastModified": "2026-10-27T17:09:00+00:00",
       "unitSig": "24b29f928a96b0ca25ef9c5cbcbdc9236804d59b"
+    },
+    {
+      "uid": "learn-bizapps.dragon-radiologists-basics",
+      "title": "Dragon Copilot basics for radiologists",
+      "url": "https://learn.microsoft.com/training/modules/dragon-radiologists-basics/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/dragon-radiologists-basics",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction to Dragon Copilot basics for radiologists",
+        "Chat with Dragon Copilot",
+        "Identify key information from Prior reports summary",
+        "Create a draft using AI draft",
+        "Optimize your report",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/dragon-radiologists-basics/introduction",
+        "/training/modules/dragon-radiologists-basics/chat-with-dragon-copilot",
+        "/training/modules/dragon-radiologists-basics/identify-key-from-prior-reports",
+        "/training/modules/dragon-radiologists-basics/create-draft",
+        "/training/modules/dragon-radiologists-basics/optimize-your-report",
+        "/training/modules/dragon-radiologists-basics/knowledge-check",
+        "/training/modules/dragon-radiologists-basics/summary"
+      ],
+      "lastModified": "2026-11-23T18:11:00+00:00",
+      "unitSig": "b2f94eed494ca7ea766540e94a398dbd37bfc938"
+    },
+    {
+      "uid": "learn-bizapps.dragon-radiologists-welcome",
+      "title": "Welcome to Dragon Copilot for radiologists",
+      "url": "https://learn.microsoft.com/training/modules/dragon-radiologists-welcome/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/dragon-radiologists-welcome",
+      "categories": [
+        "Industry Solutions"
+      ],
+      "products": [
+        "Industry Solutions",
+        "Microsoft Cloud for Healthcare"
+      ],
+      "subjects": [
+        "Business applications"
+      ],
+      "units": [
+        "Introduction to Dragon Copilot",
+        "Launch and navigate",
+        "Customize your workspace",
+        "Access training and support",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/dragon-radiologists-welcome/introduction-to-dragon-copilot",
+        "/training/modules/dragon-radiologists-welcome/launch-navigate",
+        "/training/modules/dragon-radiologists-welcome/customize-workspace",
+        "/training/modules/dragon-radiologists-welcome/access-training-support",
+        "/training/modules/dragon-radiologists-welcome/knowledge-check",
+        "/training/modules/dragon-radiologists-welcome/summary"
+      ],
+      "lastModified": "2026-11-20T18:11:00+00:00",
+      "unitSig": "61bb321070c607176e0532374a9692be43eba964"
     },
     {
       "uid": "learn-bizapps.email-power-automate",
@@ -15184,8 +15254,8 @@
         "/training/modules/access-rest-services/7-check",
         "/training/modules/access-rest-services/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "3b0d3449a81f65aa8c9efeb2489b5ebd720f11d5"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "dee7e49b0aea330be8faf936551eb567c793ee8d"
     },
     {
       "uid": "learn-dynamics.accounting-distributions-invoice-validations-settlements-in-dynamics-365-finance-ops",
@@ -15306,8 +15376,8 @@
         "/training/modules/add-layout-report/5-check",
         "/training/modules/add-layout-report/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "ffa2435e50f0523f2fcca1e18467dcf145dcf745"
+      "lastModified": "2026-11-18T23:09:00+00:00",
+      "unitSig": "9b6372f0f081727d588587a71510a7077c712bf9"
     },
     {
       "uid": "learn-dynamics.add-new-objects",
@@ -15380,8 +15450,8 @@
         "/training/modules/add-reports-tell-me/4-check",
         "/training/modules/add-reports-tell-me/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "2734389378e4c380143d0c529e8457fecbff26f6"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "b3c5d74f764457d045c715b7e3dfdf2b7887dc00"
     },
     {
       "uid": "learn-dynamics.additional-reporting-currency-dynamics-365-business-central",
@@ -15546,8 +15616,8 @@
         "/training/modules/admin-online-dynamics-365-business-central/7-check",
         "/training/modules/admin-online-dynamics-365-business-central/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "6961b9ffc8eda495fbbc439a2a839691863a08c2"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "64a85c407441c6d161f5772b5bb924883371f6c9"
     },
     {
       "uid": "learn-dynamics.administer-configure-d365-sales-professional",
@@ -15916,8 +15986,8 @@
         "/training/modules/al-built-in-functions/11-check",
         "/training/modules/al-built-in-functions/12-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "dbede4c8a4ef21593718a68fcad5511cb01505cd"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "c600983ca61f41e49eafa0a437f215fa83fe30cb"
     },
     {
       "uid": "learn-dynamics.al-statements",
@@ -15950,8 +16020,8 @@
         "/training/modules/al-statements/6-check",
         "/training/modules/al-statements/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "94c6ea39a73c54733fc49cf4c41583279ddb591c"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "5667995aae3776d3c11b0fa801a14605ce08a63e"
     },
     {
       "uid": "learn-dynamics.allocate-costs-dynamics-365-business-central",
@@ -16342,8 +16412,8 @@
         "/training/modules/application-monetization/4-check",
         "/training/modules/application-monetization/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "e1bf56aec737b9b72cf6b0eb1020ceb465e2ba7e"
+      "lastModified": "2026-11-18T17:23:00+00:00",
+      "unitSig": "c5fe7611d18f43e1d556190c494c640b0090c7b7"
     },
     {
       "uid": "learn-dynamics.application-performance-monitor",
@@ -16523,8 +16593,8 @@
         "/training/modules/assemble-to-order-dynamics-365-business-central/4-check",
         "/training/modules/assemble-to-order-dynamics-365-business-central/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "dc8259b698b09fd8cd2e68e83a86c5f673bdd6cf"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "9d610d8654e9e1a3fe0016545f149791ce8cb517"
     },
     {
       "uid": "learn-dynamics.assemble-to-stock-dynamics-365-business-central",
@@ -16553,8 +16623,8 @@
         "/training/modules/assemble-to-stock-dynamics-365-business-central/3-check",
         "/training/modules/assemble-to-stock-dynamics-365-business-central/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "49ecbcc6d398112663d1b850c8966011dd42b4e7"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "81d99c76b84f87936eaac9d3fa20ecd8b1619cb5"
     },
     {
       "uid": "learn-dynamics.assess-business-central-architecture",
@@ -16738,8 +16808,8 @@
         "/training/modules/bank-reconciliation-dynamics-365-business-central/4-check",
         "/training/modules/bank-reconciliation-dynamics-365-business-central/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "a5522df5dcaf5d6dab9e8521440022c5529cfc5b"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "a4fe418fdeb44dc6aa1d024144a82c17eee99460"
     },
     {
       "uid": "learn-dynamics.becoming-solution-architect",
@@ -16998,8 +17068,8 @@
         "/training/modules/build-assisted-setup/6-check",
         "/training/modules/build-assisted-setup/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "d79d2387c562752b446832520ec2056f7345190d"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "3c646c2c87ce6244cf0f47c21b9d5967568b81f7"
     },
     {
       "uid": "learn-dynamics.build-control-add-ins",
@@ -17034,8 +17104,8 @@
         "/training/modules/build-control-add-ins/7-check",
         "/training/modules/build-control-add-ins/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "1c791a3c6e120f9fc78516a577efe9cd32089179"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "d44697d28a5cc86c29b06accf7e6541368ebd748"
     },
     {
       "uid": "learn-dynamics.build-edt-enums-dynamics-365-finance-operations",
@@ -17402,8 +17472,8 @@
         "/training/modules/business-central-configure-general-ledger-setup/7-check",
         "/training/modules/business-central-configure-general-ledger-setup/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "3470391cf6bcf69cdd3919f3fbb8d889f84b07c6"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "fe42142d102a38113dfc6193f8c03bf47d196793"
     },
     {
       "uid": "learn-dynamics.business-central-teams-integration",
@@ -17758,8 +17828,8 @@
         "/training/modules/cash-management-dynamics-365-business-central/3-check",
         "/training/modules/cash-management-dynamics-365-business-central/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "a51aea2688e45a5dadabb324958642c150f8252f"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "386a526bc41a8a5d506e10a58ce35be5bd729c96"
     },
     {
       "uid": "learn-dynamics.change-documents-dynamics-365-business-central",
@@ -17836,8 +17906,8 @@
         "/training/modules/chart-accounts-dynamics-365-business-central/4-check",
         "/training/modules/chart-accounts-dynamics-365-business-central/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "e1c292d7f058bb530a127067306e0c113a9b31a4"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "b021cf02048c8d7f46c39a227fd103ee827da51a"
     },
     {
       "uid": "learn-dynamics.chat-integrations-commerce",
@@ -17929,24 +17999,22 @@
       ],
       "units": [
         "Introduction",
-        "Get started with opportunity AI agents",
+        "Get started with the Sales Opportunity Agent",
         "Configure the Sales Opportunity Agent",
-        "Configure the Sales Close Agent",
         "Monitor and interpret agent insights",
-        "Knowledge check",
+        "Module assessment",
         "Summary"
       ],
       "unitUrls": [
         "/training/modules/close-deals-using-ai-agents-dynamics-365-sales/1-introduction",
         "/training/modules/close-deals-using-ai-agents-dynamics-365-sales/2-get-started-opportunity-ai-agents",
         "/training/modules/close-deals-using-ai-agents-dynamics-365-sales/3-configure-sales-opportunity-agent",
-        "/training/modules/close-deals-using-ai-agents-dynamics-365-sales/4-configure-sales-close-agent",
         "/training/modules/close-deals-using-ai-agents-dynamics-365-sales/5-monitor-agent-insights",
         "/training/modules/close-deals-using-ai-agents-dynamics-365-sales/6-knowledge-check",
         "/training/modules/close-deals-using-ai-agents-dynamics-365-sales/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "ff5faee30aa9d764824f9fdb99972793371499cf"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "4ccd01fdeee739ea0c5af244a309ee9b6a5ffb47"
     },
     {
       "uid": "learn-dynamics.close-fiscal-year-dynamics-365-business-central",
@@ -18043,8 +18111,8 @@
         "/training/modules/complete-report-request-page/4-check",
         "/training/modules/complete-report-request-page/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "ed73271436c99f143613574560b596db4d2f8c23"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "d769e7ffe6b7330a0915b8b2593e3509e90348ec"
     },
     {
       "uid": "learn-dynamics.configure-accounts-payable-in-dynamics-365-finance-ops",
@@ -18735,8 +18803,8 @@
         "/training/modules/configure-dynamics-365-sales/knowledge-check",
         "/training/modules/configure-dynamics-365-sales/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "9c1d6bbf7a19ad4f563255486ee65d06ede2ca38"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "324cbef2ff55775b585ad6e1ccb2d886accf90e5"
     },
     {
       "uid": "learn-dynamics.configure-electronic-reporting",
@@ -19557,8 +19625,8 @@
         "/training/modules/configure-powerbi-excel-dynamics-365-business-central/7-check",
         "/training/modules/configure-powerbi-excel-dynamics-365-business-central/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "9397b8eecda014b44dda3737e359bb0b71011cf7"
+      "lastModified": "2026-11-18T17:23:00+00:00",
+      "unitSig": "4da50fdd7a001961ff46ee2137e93f3fd6174899"
     },
     {
       "uid": "learn-dynamics.configure-process-manufacturing-in-dynamics-365-finance-ops",
@@ -21101,8 +21169,8 @@
         "/training/modules/create-items/6-check",
         "/training/modules/create-items/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "e7ec1e9bb7376db85ee294d8def3db07c890817e"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "17fac1abbc2469de43b43adf5e2822d92c9828c6"
     },
     {
       "uid": "learn-dynamics.create-journals",
@@ -21478,8 +21546,8 @@
         "/training/modules/create-powerful-customer-experiences-organizations/knowledge-check",
         "/training/modules/create-powerful-customer-experiences-organizations/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "5dc9ecbbfa90b51ed861c9f8063064e5506fdf12"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "06b3723bd966e14fc0e4e2268efba5b438ec7f5d"
     },
     {
       "uid": "learn-dynamics.create-process-event-kanban-rules",
@@ -21651,8 +21719,8 @@
         "/training/modules/create-process-journal-entries-dynamics-365-business-central/6-check",
         "/training/modules/create-process-journal-entries-dynamics-365-business-central/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "a95fe4e5b548d0bb8ab3c629b0bad52604b22865"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "272825674ea556da1f01ee47f0818b2ddb59fec5"
     },
     {
       "uid": "learn-dynamics.create-process-scheduled-kanbans",
@@ -22391,8 +22459,8 @@
         "/training/modules/customize-ui-experience/7-check",
         "/training/modules/customize-ui-experience/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "1ffba69b8cbeafeeb966fc54559eb16505ab6179"
+      "lastModified": "2026-11-18T17:23:00+00:00",
+      "unitSig": "034e61b34d57ee167a2a838e2a5d6b5ea8ad163e"
     },
     {
       "uid": "learn-dynamics.customize-using-vs-dynamics-365-finance-operations",
@@ -22707,8 +22775,8 @@
         "/training/modules/debug-deploy-extension/8-check",
         "/training/modules/debug-deploy-extension/9-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "5413a045d08e6bfcaed3ce6c875ad78ad78f89ca"
+      "lastModified": "2026-11-18T23:09:00+00:00",
+      "unitSig": "a289ab46b3b43dcdcb0512f4f37fb03f1ae9c7a0"
     },
     {
       "uid": "learn-dynamics.define-agreements",
@@ -24054,8 +24122,8 @@
         "/training/modules/events-triggers/7-check",
         "/training/modules/events-triggers/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "51845cbed21db3cfb6d6f54852413104abb5058a"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "7a4484bfd50bed7f8aa6213dfbaced11c07f247d"
     },
     {
       "uid": "learn-dynamics.execute-across-warehouse-supply-chain-management",
@@ -24321,8 +24389,8 @@
         "/training/modules/explore-modify-info-dynamics-365-business-central/7-check",
         "/training/modules/explore-modify-info-dynamics-365-business-central/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "e6fb1d8a26632342d6011e5985197df8577c5f67"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "0e17516c8eecc6d80ea4dbd4813aa080b4f17a64"
     },
     {
       "uid": "learn-dynamics.explore-reporting-tools-dynamics-365-finance-operations",
@@ -25328,8 +25396,8 @@
         "/training/modules/general-ledger-allocations/check",
         "/training/modules/general-ledger-allocations/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "66082afbd0b778dad1ae37a7c281305150f8e43f"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "7c3bff594f45a56d90341b94a45aea90834dcb44"
     },
     {
       "uid": "learn-dynamics.general-ledger-daily-procedures-in-dynamics-365-finance-ops",
@@ -25464,7 +25532,7 @@
         "/training/modules/get-know-dynamics-365-customers/summary"
       ],
       "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "d93c142764dbd878ca7dfc138eb74bbfe1844cfc"
+      "unitSig": "fe64f981bebc3d243d8817b620e016791b164b9e"
     },
     {
       "uid": "learn-dynamics.get-started-asset-management",
@@ -25894,7 +25962,7 @@
     },
     {
       "uid": "learn-dynamics.get-started-customer-data-platform",
-      "title": "Get started with an AI-powered customer data platform in Dynamics 365",
+      "title": "Explore customer data platforms with Dynamics 365 Customer Insights - Data",
       "url": "https://learn.microsoft.com/training/modules/get-started-customer-data-platform/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/get-started-customer-data-platform",
       "categories": [
@@ -25914,7 +25982,7 @@
         "Customer Insights - Data in action",
         "Explore the application",
         "Consume Customer Insights data",
-        "Copilot in Customer Insights - Data",
+        "Choose tools to explore customer insights",
         "Check your knowledge",
         "Summary"
       ],
@@ -25929,8 +25997,8 @@
         "/training/modules/get-started-customer-data-platform/knowledge-check",
         "/training/modules/get-started-customer-data-platform/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "8112186461e1b15990d19cc25a8172d1586f985a"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "4c23d924c2581e6de84fc854239044a0badb812b"
     },
     {
       "uid": "learn-dynamics.get-started-demand-planning",
@@ -27833,8 +27901,8 @@
         "/training/modules/implement-multilanguage-reports/4-check",
         "/training/modules/implement-multilanguage-reports/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "d8fc6dbb0ed13810253c9e11877381447e095a58"
+      "lastModified": "2026-11-18T17:23:00+00:00",
+      "unitSig": "25f301d0f6585683660149d0e3aa0bd3cb054a02"
     },
     {
       "uid": "learn-dynamics.implement-saas-techniques",
@@ -28463,8 +28531,8 @@
         "/training/modules/business-central-interfaces/5-check",
         "/training/modules/business-central-interfaces/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "241db84cb0e0cc8d5617d575c2251afd92926e05"
+      "lastModified": "2026-11-18T23:09:00+00:00",
+      "unitSig": "fc84ca540436d4edff1c26e0aab4b6c6d59aa25f"
     },
     {
       "uid": "learn-dynamics.intro-basics-al-programming",
@@ -28557,8 +28625,8 @@
         "/training/modules/intro-development-environment/10-check",
         "/training/modules/intro-development-environment/11-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "0b5171ffbfff5eabaa40c04f1eb1f73ef5f5aa39"
+      "lastModified": "2026-11-18T23:09:00+00:00",
+      "unitSig": "4be4f4ee2078e80c5f0348f92ef38ef315f0deb3"
     },
     {
       "uid": "learn-dynamics.intro-dynamics-365-business-central",
@@ -28929,8 +28997,8 @@
         "/training/modules/introduction-power-platform-business-central/7-check",
         "/training/modules/introduction-power-platform-business-central/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "f505bdebedfb68077a0128be48298228b78af63c"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "4bc947cb3712c2a08f82111ba407ac580fa45390"
     },
     {
       "uid": "learn-dynamics.introduction-report-components",
@@ -28969,8 +29037,8 @@
         "/training/modules/introduction-report-components/8-check",
         "/training/modules/introduction-report-components/9-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "afb2909999187b37e74d6714f677209c4af984a8"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "4879bcce0b3abd4e9032fb73e8d7bd519992ed7a"
     },
     {
       "uid": "learn-dynamics.introduction-test-automation",
@@ -29081,8 +29149,8 @@
         "/training/modules/invoicing-customers-dynamics-365-business-central/5-check",
         "/training/modules/invoicing-customers-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "e28dc2f85bed8c582f07b0c2f38a45f3e78fa2c7"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "6f00b899592e7ce32dc7ba6b3341f517c0c6f904"
     },
     {
       "uid": "learn-dynamics.lead-management",
@@ -29117,8 +29185,8 @@
         "/training/modules/manage-leads-dynamics-365-sales/6-knowledge-check",
         "/training/modules/manage-leads-dynamics-365-sales/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "29167656671ec5d85e73c063e33295765c40d8f5"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "2353371e699f8d7031c2292357dccaf7089780cc"
     },
     {
       "uid": "learn-dynamics.lifecycle-management-intelligent-order-management",
@@ -30302,8 +30370,8 @@
         "/training/modules/master-supplemental-personal-data-dynamics-365-business-central/10-check",
         "/training/modules/master-supplemental-personal-data-dynamics-365-business-central/11-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "dc02e2ce14daed6aa06a5e990adb0778858a9df0"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "43e8ef94ca099a7f5280c451193166d494d4d9dc"
     },
     {
       "uid": "learn-dynamics.metrics-alerts-voice-surveys",
@@ -30632,8 +30700,8 @@
         "/training/modules/number-series-trail-codes-dynamics-365-business-central/5-check",
         "/training/modules/number-series-trail-codes-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "68ff30fc150900b3bc65c1c458838e97fce98206"
+      "lastModified": "2026-11-20T23:12:00+00:00",
+      "unitSig": "ea74f53ff2a6bf234ebe164bf275278bcad7f900"
     },
     {
       "uid": "learn-dynamics.ocr-vendor-invoices-finance",
@@ -30973,8 +31041,8 @@
         "/training/modules/periodic-journal-entries-dynamics-365-business-central/4-check",
         "/training/modules/periodic-journal-entries-dynamics-365-business-central/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "9722e3f95127d679f9bab22f78450e5b91d63ffd"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "e11d9ef0e0d7cdef80e05075cd39f1a94986e9d0"
     },
     {
       "uid": "learn-dynamics.personalize-dynamics-365-finance-ops",
@@ -31066,8 +31134,8 @@
         "/training/modules/personalize-ui-dynamics-365-business-central/5-check",
         "/training/modules/personalize-ui-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "65aec3cbfb7437e2e0b1cd3ad11ace9e7cfc53c7"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "16abf3eb17f1e0ad428204633d402587319d5e93"
     },
     {
       "uid": "learn-dynamics.pick-ship-items",
@@ -31309,8 +31377,8 @@
         "/training/modules/post-purchase-item-charges-dynamics-365-business-central/5-check",
         "/training/modules/post-purchase-item-charges-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "dd0939080405f03e2cbbcea3d73b4c3a69a3020f"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "103f3cc55adb4de362e1c5e3fdf2fef31f5ed9ee"
     },
     {
       "uid": "learn-dynamics.posting-groups-dynamics-365-business-central",
@@ -31347,8 +31415,8 @@
         "/training/modules/posting-groups-dynamics-365-business-central/6-check",
         "/training/modules/posting-groups-dynamics-365-business-central/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "3e915d8cffa3b45a587b1308c5fd80018cdea0e4"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "2c45969dba4974846c34dcbdf003e9081372454b"
     },
     {
       "uid": "learn-dynamics.posting-groups-setup",
@@ -31914,8 +31982,8 @@
         "/training/modules/processing-invoices-dynamics-365-business-central/4-check",
         "/training/modules/processing-invoices-dynamics-365-business-central/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "88414c188c8d5b1cb39fd0857f5604fe601f0f8b"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "e46a9c7be4eaa3ae39f2b2b031d70329f42b3cfa"
     },
     {
       "uid": "learn-dynamics.procurement-field-service-supply-chain-management",
@@ -32486,8 +32554,8 @@
         "/training/modules/receive-invoice-dynamics-d365-business-central/4-check",
         "/training/modules/receive-invoice-dynamics-d365-business-central/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "b07e8b836e3b817097c4a1fa48b66737b351a5fe"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "f15adf40506cb06b73c9b715ebd70909b9faf58e"
     },
     {
       "uid": "learn-dynamics.receive-orders",
@@ -32596,8 +32664,8 @@
         "/training/modules/reconciliation-journals-dynamics-365-business-central/3-check",
         "/training/modules/reconciliation-journals-dynamics-365-business-central/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "2edd457036152729653ad8f00750c17814220477"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "bf9b31013c79ccbd26fd22f052eb6627211e253e"
     },
     {
       "uid": "learn-dynamics.record-fixed-assets-opening-transactions",
@@ -33221,8 +33289,8 @@
         "/training/modules/sales-get-started/knowledge-check",
         "/training/modules/sales-get-started/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "c85ccf3a2bdb2cb5eb71d034a30dc4cb232f8dfe"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "d347f5160bf82323921437604439c1d2492ca4f9"
     },
     {
       "uid": "learn-dynamics.sales-order-processing",
@@ -33293,8 +33361,8 @@
         "/training/modules/sales-price-lists/check",
         "/training/modules/sales-price-lists/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "dffcfe0befd9d996f95b88988d6850f5bb33492d"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "f3c46ae3126a8aea197313ad57592f5e956a1a03"
     },
     {
       "uid": "learn-dynamics.sales-qualification-agent-dynamics-365-sales",
@@ -33747,8 +33815,8 @@
         "/training/modules/set-up-assembly-items-dynamics-365-business-central/4-check",
         "/training/modules/set-up-assembly-items-dynamics-365-business-central/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "8ab110a3ff8b11e5d1f702f1326ba48923e33849"
+      "lastModified": "2026-11-18T23:09:00+00:00",
+      "unitSig": "2081fbcc53f1238a7f8806aadbb51ec8a0c364ba"
     },
     {
       "uid": "learn-dynamics.set-up-assembly-management-dynamics-365-business-central",
@@ -33777,8 +33845,8 @@
         "/training/modules/set-up-assembly-management-dynamics-365-business-central/3-check",
         "/training/modules/set-up-assembly-management-dynamics-365-business-central/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "643ad821ef5a48ae99bea85b0eae1708486dce88"
+      "lastModified": "2026-11-18T17:23:00+00:00",
+      "unitSig": "0c062344000b2007fb15082e1575128ce740553f"
     },
     {
       "uid": "learn-dynamics.set-up-basic-warehouse-tasks",
@@ -34135,8 +34203,8 @@
         "/training/modules/set-up-email/10-check",
         "/training/modules/set-up-email/11-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "4d37d8ef47583987885de941bfee8ba0841a3a69"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "faccbecd927eb7bc43117ede26c6ae1750600328"
     },
     {
       "uid": "learn-dynamics.set-up-field-service-integration",
@@ -34379,8 +34447,8 @@
         "/training/modules/set-up-inventory-planning-dynamics-365-business-central/5-check",
         "/training/modules/set-up-inventory-planning-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "d7f6b6147a9647e1d1352b31871cfeddec79014d"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "9b7ac8a29c433e5e515147a3623700302b062872"
     },
     {
       "uid": "learn-dynamics.set-up-inventory-replenishment-dynamics-365-business-central",
@@ -36858,8 +36926,8 @@
         "/training/modules/trial-dynamics-365-business-central/7-check",
         "/training/modules/trial-dynamics-365-business-central/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "cf4cd232c6a455719d3e55f9b8f1e02e3053e751"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "46f534959165753f263a0d76325ac7b4663f036a"
     },
     {
       "uid": "learn-dynamics.tutorials-sales-insights",
@@ -36938,8 +37006,8 @@
         "/training/modules/understand-report-design-process/4-check",
         "/training/modules/understand-report-design-process/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "17f43f70a1d7333eee088c896dabc6eefe605e5b"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "4de7e8ed74ed007753f66337f775b1fbe0393438"
     },
     {
       "uid": "learn-dynamics.understand-report-triggers-functions",
@@ -37403,8 +37471,8 @@
         "/training/modules/use-checks-dynamics-365-business-central/4-check",
         "/training/modules/use-checks-dynamics-365-business-central/5-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "217753c17c6f07848962c197d8c66660bc22c671"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "2fbaad682d62d00fb1f7659a01f853327a72d393"
     },
     {
       "uid": "learn-dynamics.use-customer-payment-predictions-finance",
@@ -37830,8 +37898,8 @@
         "/training/modules/use-journals-dynamics-365-business-central/5-check",
         "/training/modules/use-journals-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "47197c54951530836dcbd62885dad2adcea55558"
+      "lastModified": "2026-11-20T17:13:00+00:00",
+      "unitSig": "a7a00ce81eb2d453070562d4b476f03864f0a615"
     },
     {
       "uid": "learn-dynamics.use-performance-management-employee-development",
@@ -39207,8 +39275,8 @@
         "/training/modules/work-with-api/9-check",
         "/training/modules/work-with-api/10-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "327f5a9dc3d853a8352f9ead711135531db339b6"
+      "lastModified": "2026-11-23T17:10:00+00:00",
+      "unitSig": "f18eb69886b21facd6f021f376775bc006c299e2"
     },
     {
       "uid": "learn-dynamics.work-with-capacity-planning-scheduling-discrete-in-dynamics-365-finance-ops",
@@ -39957,8 +40025,8 @@
         "/training/modules/work-with-tables/12-check",
         "/training/modules/work-with-tables/13-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "a53063c359bfd4a8515de63ae9470c1b4c7c3ea6"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "a5f30f8621d5c206fb2f95a57061a2a3f751339e"
     },
     {
       "uid": "learn-dynamics.work-with-web-services",
@@ -40050,7 +40118,7 @@
     },
     {
       "uid": "learn-dynamics.working-with-customer-insights",
-      "title": "Work with Dynamics 365 Customer Insights - Data",
+      "title": "Analyze customer behavior and build audiences with Dynamics 365 Customer Insights - Data",
       "url": "https://learn.microsoft.com/training/modules/working-with-customer-insights/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/working-with-customer-insights",
       "categories": [
@@ -40065,14 +40133,12 @@
       ],
       "units": [
         "Introduction",
-        "Configure searching and filtering indexes",
-        "Define activities",
-        "Work with measures",
-        "Segmentation",
-        "Get suggested segments",
-        "Segment insights",
-        "Use Copilot in Dynamics 365 Customer Insights - Data",
-        "Use Customer Insights - Data for a complete solution",
+        "Find and inspect customers",
+        "Define customer activities",
+        "Calculate customer measures",
+        "Create customer audiences",
+        "Review and refine segments",
+        "Use insights in business applications",
         "Check your knowledge",
         "Summary"
       ],
@@ -40082,15 +40148,13 @@
         "/training/modules/working-with-customer-insights/3-relationship-activities",
         "/training/modules/working-with-customer-insights/5-measures",
         "/training/modules/working-with-customer-insights/6-segmentation",
-        "/training/modules/working-with-customer-insights/6-2-get-segments",
         "/training/modules/working-with-customer-insights/6-5-segment-insights",
-        "/training/modules/working-with-customer-insights/use-copilot",
         "/training/modules/working-with-customer-insights/7-solution",
         "/training/modules/working-with-customer-insights/8-check",
         "/training/modules/working-with-customer-insights/9-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "fe3e034e1116bfc88fffd6329804af2a0ce153d1"
+      "lastModified": "2026-11-17T23:09:00+00:00",
+      "unitSig": "85472bebad2af244b2f5b9ce969f9dbcbe3ba4bd"
     },
     {
       "uid": "learn-dynamics.working-with-option-sets",
@@ -44264,7 +44328,7 @@
         "/training/modules/understand-ai-agents-prompting/summary"
       ],
       "lastModified": "2026-10-26T17:13:00+00:00",
-      "unitSig": "bd8e57437c7a4c2ba845f1608ee751c1148d7d27"
+      "unitSig": "dd29fe89a945faf828ebe87988f9e1a8e1cc6874"
     },
     {
       "uid": "learn-m365.viva-connections-extend-with-adaptive-card-extensions",
@@ -48367,8 +48431,8 @@
         "/training/modules/use-slurm-hpc-azure-cyclecloud/6-knowledge-check",
         "/training/modules/use-slurm-hpc-azure-cyclecloud/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "edd26c55ccf6d1a3f008723724c318741284342a"
+      "lastModified": "2026-11-18T08:11:00+00:00",
+      "unitSig": "99c5384e45e1a03214af4759047622f7e7e6e7bf"
     },
     {
       "uid": "learn.azure.build-3d-scene-mixed-reality-unity",
@@ -49619,8 +49683,8 @@
         "/training/modules/intro-azure-vmware-solution/4-when-azure-vmware-solution",
         "/training/modules/intro-azure-vmware-solution/5-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "ae39d9ec716a06c1a168380ad62b93d29da5419f"
+      "lastModified": "2026-11-20T08:22:00+00:00",
+      "unitSig": "cbd2acc598df1326716e1c21a4e0a11039ceb11d"
     },
     {
       "uid": "learn.azure.intro-build-copilots-for-startups",
@@ -49899,8 +49963,8 @@
         "/training/modules/intro-to-azure-virtual-machine-scale-sets/5-knowledge-check",
         "/training/modules/intro-to-azure-virtual-machine-scale-sets/6-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "c236092aab15415096dc6560c22261dee7590bc6"
+      "lastModified": "2026-11-17T08:11:00+00:00",
+      "unitSig": "af238b617b25f0f188555b72ae818a1dfe388847"
     },
     {
       "uid": "learn.azure.intro-to-azure-vpn-gateway",
@@ -55092,6 +55156,221 @@
       "unitSig": "bf3df1f63b2ce395290326c3be2dcc197913d2e4"
     },
     {
+      "uid": "learn.devrel.azure-virtual-machine-backup-recoverability",
+      "title": "Azure virtual machine backup and recoverability",
+      "url": "https://learn.microsoft.com/training/modules/azure-virtual-machine-backup-recoverability/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-virtual-machine-backup-recoverability",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Backup",
+        "Virtual Machines"
+      ],
+      "subjects": [
+        "IT management and monitoring",
+        "Infrastructure",
+        "Storage"
+      ],
+      "units": [
+        "Introduction",
+        "Define recovery acceptance criteria",
+        "Inspect protection scope",
+        "Plan isolated recovery",
+        "Exercise - Prove application recoverability",
+        "Measure recovery outcomes",
+        "Confirm continued protection",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-virtual-machine-backup-recoverability/1-introduction",
+        "/training/modules/azure-virtual-machine-backup-recoverability/2-define-recovery-acceptance-criteria",
+        "/training/modules/azure-virtual-machine-backup-recoverability/3-inspect-protection-scope",
+        "/training/modules/azure-virtual-machine-backup-recoverability/4-plan-isolated-recovery",
+        "/training/modules/azure-virtual-machine-backup-recoverability/5-exercise-prove-application-recoverability",
+        "/training/modules/azure-virtual-machine-backup-recoverability/6-measure-recovery-outcomes",
+        "/training/modules/azure-virtual-machine-backup-recoverability/7-confirm-continued-protection",
+        "/training/modules/azure-virtual-machine-backup-recoverability/8-knowledge-check",
+        "/training/modules/azure-virtual-machine-backup-recoverability/9-summary"
+      ],
+      "lastModified": "2026-11-18T12:12:00+00:00",
+      "unitSig": "7e85fecf9eddf74f56234cba4a4fb4b2ee25d5ae"
+    },
+    {
+      "uid": "learn.devrel.azure-virtual-machine-capacity-cost-optimization",
+      "title": "Azure virtual machine rightsizing",
+      "url": "https://learn.microsoft.com/training/modules/azure-virtual-machine-capacity-cost-optimization/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-virtual-machine-capacity-cost-optimization",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Virtual Machines"
+      ],
+      "subjects": [
+        "Infrastructure"
+      ],
+      "units": [
+        "Introduction",
+        "Establish workload baselines",
+        "Evaluate resize recommendations",
+        "Distinguish quota from capacity",
+        "Plan a controlled resize",
+        "Reconcile rightsizing costs",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-virtual-machine-capacity-cost-optimization/1-introduction",
+        "/training/modules/azure-virtual-machine-capacity-cost-optimization/2-establish-workload-baselines",
+        "/training/modules/azure-virtual-machine-capacity-cost-optimization/3-evaluate-resize-recommendations",
+        "/training/modules/azure-virtual-machine-capacity-cost-optimization/4-distinguish-quota-from-capacity",
+        "/training/modules/azure-virtual-machine-capacity-cost-optimization/5-plan-controlled-resize",
+        "/training/modules/azure-virtual-machine-capacity-cost-optimization/6-reconcile-rightsize-costs",
+        "/training/modules/azure-virtual-machine-capacity-cost-optimization/7-knowledge-check",
+        "/training/modules/azure-virtual-machine-capacity-cost-optimization/8-summary"
+      ],
+      "lastModified": "2026-11-19T23:19:00+00:00",
+      "unitSig": "48fb4e1b7b37a701e3c8bd25d58ff17291e713e9"
+    },
+    {
+      "uid": "learn.devrel.azure-virtual-machine-compute-disk-performance",
+      "title": "Identify Azure virtual machine performance bottlenecks",
+      "url": "https://learn.microsoft.com/training/modules/azure-virtual-machine-compute-disk-performance/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-virtual-machine-compute-disk-performance",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Virtual Machines"
+      ],
+      "subjects": [
+        "Infrastructure",
+        "Storage"
+      ],
+      "units": [
+        "Introduction",
+        "Compare workload demand across observation windows",
+        "Distinguish processor contention from memory pressure",
+        "Calculate throughput from disk operation rates",
+        "Locate the storage bottleneck",
+        "Identify storage limits from sustained traces",
+        "Interpret a change to one performance limit",
+        "Identify network issues on the request path",
+        "Recognize other bottleneck patterns",
+        "Troubleshoot measurement errors",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-virtual-machine-compute-disk-performance/1-introduction",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/2-compare-workload-demand-across-observation-windows",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/3-distinguish-processor-contention-from-memory-pressure",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/4-calculate-throughput-from-disk-operation-rates",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/5-locate-storage-bottleneck",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/6-identify-storage-limits-from-sustained-traces",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/7-interpret-change-performance-limit",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/8-identify-network-issues-request-path",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/9-recognize-other-bottleneck-patterns",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/10-troubleshoot-measurement-errors",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/11-knowledge-check",
+        "/training/modules/azure-virtual-machine-compute-disk-performance/12-summary"
+      ],
+      "lastModified": "2026-11-20T23:10:00+00:00",
+      "unitSig": "2edb67263f331e1481d139c0c40cc24527112de6"
+    },
+    {
+      "uid": "learn.devrel.azure-virtual-machine-diagnose-guest-agent-extension",
+      "title": "Diagnose Windows and Linux Azure virtual machine guest, agent, and extension failures",
+      "url": "https://learn.microsoft.com/training/modules/azure-virtual-machine-agent-extension-diagnosis/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-virtual-machine-agent-extension-diagnosis",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Virtual Machines"
+      ],
+      "subjects": [
+        "Infrastructure"
+      ],
+      "units": [
+        "Introduction",
+        "Distinguish virtual machine states",
+        "Select diagnostic channels",
+        "Interpret guest agent evidence",
+        "Classify guest extension failures",
+        "Trace Contoso extension failure",
+        "Verify repair evidence",
+        "Close guest incidents",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-virtual-machine-agent-extension-diagnosis/1-introduction",
+        "/training/modules/azure-virtual-machine-agent-extension-diagnosis/2-distinguish-virtual-machine-states",
+        "/training/modules/azure-virtual-machine-agent-extension-diagnosis/3-select-diagnostic-channels",
+        "/training/modules/azure-virtual-machine-agent-extension-diagnosis/4-interpret-guest-agent-evidence",
+        "/training/modules/azure-virtual-machine-agent-extension-diagnosis/5-classify-guest-extension-failures",
+        "/training/modules/azure-virtual-machine-agent-extension-diagnosis/6-trace-contoso-extension-failure",
+        "/training/modules/azure-virtual-machine-agent-extension-diagnosis/7-verify-repair-evidence",
+        "/training/modules/azure-virtual-machine-agent-extension-diagnosis/8-close-guest-incidents",
+        "/training/modules/azure-virtual-machine-agent-extension-diagnosis/9-knowledge-check",
+        "/training/modules/azure-virtual-machine-agent-extension-diagnosis/10-summary"
+      ],
+      "lastModified": "2026-11-23T18:20:00+00:00",
+      "unitSig": "36d8707fec08ce50694478234bb2469807665829"
+    },
+    {
+      "uid": "learn.devrel.azure-virtual-machine-fleet-change-control",
+      "title": "Azure virtual machine fleet operations",
+      "url": "https://learn.microsoft.com/training/modules/azure-virtual-machine-fleet-change-control/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-virtual-machine-fleet-change-control",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Virtual Machines"
+      ],
+      "subjects": [
+        "Infrastructure"
+      ],
+      "units": [
+        "Introduction",
+        "Choose fleet change tools",
+        "Document approved rollout targets",
+        "Interpret incremental deployment previews",
+        "Define rollout stop conditions",
+        "Respond to partial canary failure",
+        "Trace fleet changes through rollback",
+        "Distinguish fleet health from configuration compliance",
+        "Roll out fleet software updates",
+        "Protect service capacity across infrastructure changes",
+        "Recover workloads from infrastructure failures",
+        "Retire fleet resources without service disruption",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-virtual-machine-fleet-change-control/1-introduction",
+        "/training/modules/azure-virtual-machine-fleet-change-control/2-choose-fleet-change-tools",
+        "/training/modules/azure-virtual-machine-fleet-change-control/3-document-approved-rollout-targets",
+        "/training/modules/azure-virtual-machine-fleet-change-control/4-interpret-incremental-deployment-previews",
+        "/training/modules/azure-virtual-machine-fleet-change-control/5-define-rollout-stop-conditions",
+        "/training/modules/azure-virtual-machine-fleet-change-control/6-respond-partial-canary-failure",
+        "/training/modules/azure-virtual-machine-fleet-change-control/7-trace-fleet-changes-through-rollback",
+        "/training/modules/azure-virtual-machine-fleet-change-control/8-distinguish-fleet-health-from-configuration-compliance",
+        "/training/modules/azure-virtual-machine-fleet-change-control/9-roll-out-fleet-software-updates",
+        "/training/modules/azure-virtual-machine-fleet-change-control/10-protect-service-capacity-across-infrastructure-changes",
+        "/training/modules/azure-virtual-machine-fleet-change-control/11-recover-workloads-from-infrastructure-failures",
+        "/training/modules/azure-virtual-machine-fleet-change-control/12-retire-fleet-resources-without-service-disruption",
+        "/training/modules/azure-virtual-machine-fleet-change-control/13-knowledge-check",
+        "/training/modules/azure-virtual-machine-fleet-change-control/14-summary"
+      ],
+      "lastModified": "2026-11-23T12:11:00+00:00",
+      "unitSig": "eecc1dd15f5c95a07672cf026222ba219825bec0"
+    },
+    {
       "uid": "learn.devrel.certificate-autoenrollment",
       "title": "Certificate enrollment and renewal",
       "url": "https://learn.microsoft.com/training/modules/certificate-autoenrollment/?WT.mc_id=studentamb_165290",
@@ -59211,6 +59490,41 @@
       "unitSig": "86a9b3419e8715f3f48c39eba4ba205b6eb57c38"
     },
     {
+      "uid": "learn.dpu.snipping-tool-ai",
+      "title": "Capture the perfect screenshot with Snipping Tool on a Copilot+ PC",
+      "url": "https://learn.microsoft.com/training/modules/snipping-tool-ai/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/snipping-tool-ai",
+      "categories": [
+        "Windows"
+      ],
+      "products": [
+        "windows-11"
+      ],
+      "subjects": [],
+      "units": [
+        "Introduction",
+        "Choose the right screenshot for your message",
+        "Capture a focused screenshot with Perfect Screenshot",
+        "Refine your screenshot for your audience",
+        "Remove unnecessary information and prepare a screenshot for sharing",
+        "Choose when to use Snipping Tool for screenshots",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/snipping-tool-ai/1-introduction",
+        "/training/modules/snipping-tool-ai/2-choose-right-screenshot",
+        "/training/modules/snipping-tool-ai/3-capture-focused-screenshot",
+        "/training/modules/snipping-tool-ai/4-refine-screenshot",
+        "/training/modules/snipping-tool-ai/5-remove-unnecessary-information",
+        "/training/modules/snipping-tool-ai/6-when-use-screenshots",
+        "/training/modules/snipping-tool-ai/7-knowledge-check",
+        "/training/modules/snipping-tool-ai/8-summary"
+      ],
+      "lastModified": "2026-11-23T18:20:00+00:00",
+      "unitSig": "7b14047e4d495b9c808f7a459699036ba34954d8"
+    },
+    {
       "uid": "learn.dpu.summarize-sales-data",
       "title": "Summarize sales data using Copilot in Excel",
       "url": "https://learn.microsoft.com/training/modules/summarize-sales-data/?WT.mc_id=studentamb_165290",
@@ -60944,7 +61258,7 @@
       ],
       "units": [
         "Introduction",
-        "What is GitHub Copilot",
+        "What is GitHub Copilot?",
         "Exercise - Set up GitHub Copilot to work with Visual Studio Code",
         "Use GitHub Copilot with JavaScript",
         "Exercise - Update a JavaScript portfolio with GitHub Copilot",
@@ -60960,8 +61274,8 @@
         "/training/modules/introduction-copilot-javascript/6-knowledge-check",
         "/training/modules/introduction-copilot-javascript/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "ee81897ec42ae60edd842d2de838ec6754f3ea36"
+      "lastModified": "2026-11-19T08:11:00+00:00",
+      "unitSig": "3b04d4fe2f190822c8d6044fd2d9396db6b5667c"
     },
     {
       "uid": "learn.github-copilot-with-python",
@@ -64930,8 +65244,8 @@
         "/training/modules/introduction-application-resiliency-azure/11-knowledge-check",
         "/training/modules/introduction-application-resiliency-azure/12-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "2f4b87c1fe6e24702c50984dd606aee8ec8d6b67"
+      "lastModified": "2026-11-17T08:11:00+00:00",
+      "unitSig": "fffe4c51cfe0320a7f5bd439008eb2328062fea9"
     },
     {
       "uid": "learn.introduction-to-aspnet-core",
@@ -66204,8 +66518,8 @@
         "/training/modules/csharp-write-first/7-knowledge-check",
         "/training/modules/csharp-write-first/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "3b63b60901fe29ca5c1215d8966f81f5f6a55b20"
+      "lastModified": "2026-11-17T23:28:00+00:00",
+      "unitSig": "f1f3d5ab5ae953b03ff24ec3e4f06688d707e2ca"
     },
     {
       "uid": "learn.languages.dotnet-deploy-microservices-kubernetes",
@@ -67164,7 +67478,7 @@
     },
     {
       "uid": "learn.mec.build-study-guides-copilot-notebooks",
-      "title": "Build Study Guides in Copilot Notebooks",
+      "title": "Build Study Guides in Copilot Workspaces",
       "url": "https://learn.microsoft.com/training/modules/build-study-guides-copilot-notebooks/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/build-study-guides-copilot-notebooks",
       "categories": [
@@ -67182,7 +67496,7 @@
       ],
       "units": [
         "Introduction",
-        "About Copilot Notebook Study Guide",
+        "About Copilot Workspace Study Guide",
         "Get started with Study Guide",
         "Summary pages in Copilot Study Guide",
         "Topic pages in Copilot Study Guide",
@@ -67206,8 +67520,8 @@
         "/training/modules/build-study-guides-copilot-notebooks/knowledge-check",
         "/training/modules/build-study-guides-copilot-notebooks/summary"
       ],
-      "lastModified": "2026-10-22T23:06:00+00:00",
-      "unitSig": "3916d225c18850477175c5117d1faaecc8915b23"
+      "lastModified": "2026-11-21T00:08:00+00:00",
+      "unitSig": "741345417cc91910ffba9a29f21dea1e461acb3d"
     },
     {
       "uid": "learn.mec.build-with-ai-creative-partner",
@@ -67636,6 +67950,7 @@
         "Create and refine a lesson",
         "Assign lessons to learners",
         "Learning Zone student experience",
+        "Use Teach in class for educator-led lessons",
         "View insights for teachers",
         "Create a Kahoot! with Learning Zone",
         "Learning Zone ready-to-learn gallery",
@@ -67649,14 +67964,15 @@
         "/training/modules/design-deliver-interactive-lessons-microsoft-learning-zone/create-refine-lesson",
         "/training/modules/design-deliver-interactive-lessons-microsoft-learning-zone/assign-lessons-learners",
         "/training/modules/design-deliver-interactive-lessons-microsoft-learning-zone/learning-zone-student-experience",
+        "/training/modules/design-deliver-interactive-lessons-microsoft-learning-zone/teach-class-learning-zone",
         "/training/modules/design-deliver-interactive-lessons-microsoft-learning-zone/view-insights-teachers",
         "/training/modules/design-deliver-interactive-lessons-microsoft-learning-zone/create-kahoot-learning-zone",
         "/training/modules/design-deliver-interactive-lessons-microsoft-learning-zone/learning-zone-ready-learn-gallery",
         "/training/modules/design-deliver-interactive-lessons-microsoft-learning-zone/knowledge-check",
         "/training/modules/design-deliver-interactive-lessons-microsoft-learning-zone/summary"
       ],
-      "lastModified": "2026-10-22T23:06:00+00:00",
-      "unitSig": "900c01ab1d0dbb2033b623d4d14b2cbc1a99717f"
+      "lastModified": "2026-11-19T18:09:00+00:00",
+      "unitSig": "d326e82d4daf2e0d73bba497d29532289c32ae0a"
     },
     {
       "uid": "learn.mec.develop-confident-presenters-speaker-progress",
@@ -70030,55 +70346,6 @@
       "unitSig": "4e2d9b36c51cda2782e720937c0eb088acb66a40"
     },
     {
-      "uid": "learn.mec.windows-11-101",
-      "title": "Empower school leaders and educators with Windows 11",
-      "url": "https://learn.microsoft.com/training/modules/windows-11-101/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/windows-11-101",
-      "categories": [
-        "Microsoft 365",
-        "OneDrive",
-        "Windows"
-      ],
-      "products": [
-        "OneDrive",
-        "Windows",
-        "m365-education"
-      ],
-      "subjects": [
-        "Education"
-      ],
-      "units": [
-        "Introduction",
-        "The role of school leaders and educators in digital transformation in schools",
-        "Collaborative decision making for digital technology initiatives",
-        "Benefits of Windows 11",
-        "Windows 11 productivity features",
-        "Windows 11 accessibility features",
-        "Security features in Windows 11",
-        "Management and deployment features in Windows 11",
-        "Continue to lead and support with Windows 11",
-        "Conclusion",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/windows-11-101/introduction",
-        "/training/modules/windows-11-101/the-role-of-school-leaders",
-        "/training/modules/windows-11-101/collaborative-decision-making",
-        "/training/modules/windows-11-101/benefits-of-windows-11",
-        "/training/modules/windows-11-101/windows-11-productivity",
-        "/training/modules/windows-11-101/windows-11-accessibility-features",
-        "/training/modules/windows-11-101/security-features",
-        "/training/modules/windows-11-101/management-and-deployment",
-        "/training/modules/windows-11-101/continue-to-lead",
-        "/training/modules/windows-11-101/conclusion",
-        "/training/modules/windows-11-101/knowledge-check",
-        "/training/modules/windows-11-101/summary"
-      ],
-      "lastModified": "2026-10-22T23:06:00+00:00",
-      "unitSig": "1287026931773c8d70cedce921f834cfd1ec68bf"
-    },
-    {
       "uid": "learn.microservices-configuration-aspnet-core",
       "title": "Implement feature flags in a cloud-native ASP.NET Core microservices app",
       "url": "https://learn.microsoft.com/training/modules/microservices-configuration-aspnet-core/?WT.mc_id=studentamb_165290",
@@ -71002,44 +71269,6 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "40a48b09e928827ce5e7eb62f256be06ea8a25d8"
-    },
-    {
-      "uid": "learn.oxford.implement-cicd-iot-edge",
-      "title": "Implement CI/CD for IoT Edge",
-      "url": "https://learn.microsoft.com/training/modules/implement-cicd-iot-edge/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/implement-cicd-iot-edge",
-      "categories": [
-        "Azure"
-      ],
-      "products": [
-        "IoT Edge"
-      ],
-      "subjects": [
-        "DevOps",
-        "Internet of things"
-      ],
-      "units": [
-        "learn.oxford.implement-cicd-iot-edge.introduction",
-        "learn.oxford.implement-cicd-iot-edge.design-cicd-pipeline-iot-edge",
-        "learn.oxford.implement-cicd-iot-edge.how-create-ci-pipeline-iot-edge",
-        "learn.oxford.implement-cicd-iot-edge.exercise-create-ci-pipeline-iot-edge",
-        "learn.oxford.implement-cicd-iot-edge.how-create-release-pipeline-iot-edge",
-        "learn.oxford.implement-cicd-iot-edge.exercise-create-release-pipeline-iot-edge",
-        "learn.oxford.implement-cicd-iot-edge.knowledge-check",
-        "learn.oxford.implement-cicd-iot-edge.summary"
-      ],
-      "unitUrls": [
-        "/training/modules/implement-cicd-iot-edge/1-introduction",
-        "/training/modules/implement-cicd-iot-edge/2-design-cicd-pipeline-iot-edge",
-        "/training/modules/implement-cicd-iot-edge/3-how-create-ci-pipeline",
-        "/training/modules/implement-cicd-iot-edge/4-exercise-create-ci-pipeline-iot-edge",
-        "/training/modules/implement-cicd-iot-edge/5-how-create-release-pipeline",
-        "/training/modules/implement-cicd-iot-edge/6-exercise-create-release-pipeline-iot-edge",
-        "/training/modules/implement-cicd-iot-edge/10-knowledge-check",
-        "/training/modules/implement-cicd-iot-edge/9-summary"
-      ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "817f7190bfc0a85cec2dd2515bf415c2539c77aa"
     },
     {
       "uid": "learn.oxford.intro-azure-sphere",
@@ -76755,6 +76984,45 @@
       "unitSig": "4eb2cf45de8123559d5ba48ced9a95764e2c2037"
     },
     {
+      "uid": "learn.wwl.analyze-ai-spend-value-agent-365-business-analytics",
+      "title": "Analyze AI spend and value with Agent 365 Business Analytics",
+      "url": "https://learn.microsoft.com/training/modules/analyze-ai-spend-value-agent-365-business-analytics/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/analyze-ai-spend-value-agent-365-business-analytics",
+      "categories": [
+        "Microsoft 365"
+      ],
+      "products": [
+        "Microsoft 365",
+        "microsoft-365-copilot"
+      ],
+      "subjects": [
+        "Artificial intelligence",
+        "Business applications"
+      ],
+      "units": [
+        "Introduction",
+        "Explore Agent 365 Business Analytics",
+        "Understand AI adoption and value",
+        "Evaluate AI services and agents",
+        "Forecast AI spend and oversee your budget",
+        "Share AI insights with business stakeholders",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/analyze-ai-spend-value-agent-365-business-analytics/1-introduction",
+        "/training/modules/analyze-ai-spend-value-agent-365-business-analytics/2-explore-agent-365-business-analytics",
+        "/training/modules/analyze-ai-spend-value-agent-365-business-analytics/3-understand-adoption-value",
+        "/training/modules/analyze-ai-spend-value-agent-365-business-analytics/4-evaluate-services-agents",
+        "/training/modules/analyze-ai-spend-value-agent-365-business-analytics/5-forecast-spend-oversee-budget",
+        "/training/modules/analyze-ai-spend-value-agent-365-business-analytics/6-share-insights",
+        "/training/modules/analyze-ai-spend-value-agent-365-business-analytics/7-knowledge-check",
+        "/training/modules/analyze-ai-spend-value-agent-365-business-analytics/8-summary"
+      ],
+      "lastModified": "2026-11-18T00:08:00+00:00",
+      "unitSig": "3bd080a1f2d61ee251ac1339af148efa585815ce"
+    },
+    {
       "uid": "learn.wwl.analyze-content-ai",
       "title": "Create a multimodal analysis solution with Azure Content Understanding",
       "url": "https://learn.microsoft.com/training/modules/analyze-content-ai/?WT.mc_id=studentamb_165290",
@@ -77755,7 +78023,7 @@
     },
     {
       "uid": "learn.wwl.automate-configuration-of-windows-server-iaas-vms",
-      "title": "Automate the configuration of Windows Server IaaS Virtual Machines",
+      "title": "Automate the configuration of Windows Server IaaS virtual machines",
       "url": "https://learn.microsoft.com/training/modules/automate-configuration-of-windows-server-iaas-virtual-machines/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/automate-configuration-of-windows-server-iaas-virtual-machines",
       "categories": [
@@ -77774,10 +78042,10 @@
       "units": [
         "Introduction",
         "Describe Azure Automation",
-        "Implement Azure Automation with DSC",
+        "Understand Azure Machine Configuration deployment",
         "Remediate noncompliant servers",
-        "Describe Custom Script Extensions",
-        "Configure a Virtual Machine by using DSC",
+        "Describe custom script extensions",
+        "Compare configuration drift and remediation",
         "Module assessment",
         "Summary"
       ],
@@ -77791,8 +78059,8 @@
         "/training/modules/automate-configuration-of-windows-server-iaas-virtual-machines/7-knowledge-check",
         "/training/modules/automate-configuration-of-windows-server-iaas-virtual-machines/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "5d90fdb09f7dde4916531c7c7ad4283d0a3871b0"
+      "lastModified": "2026-11-21T08:11:00+00:00",
+      "unitSig": "9ef1da7b0930d6712e7dfcaa04c08a509f904a40"
     },
     {
       "uid": "learn.wwl.automate-deployment-of-sap-azure",
@@ -79638,8 +79906,8 @@
         "/training/modules/build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql/7-knowledge-check",
         "/training/modules/build-retrieval-augmented-generation-applications-azure-cosmos-db-nosql/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "c78ee73729af2f3a786ae1d75a937e8a8bc64864"
+      "lastModified": "2026-11-18T12:12:00+00:00",
+      "unitSig": "d415d0a391e5e273d17430fc5fb55bb2c9fe3bb4"
     },
     {
       "uid": "learn.wwl.build-solutions-copilot-code",
@@ -87714,6 +87982,7 @@
         "Introduction",
         "Decide what to delegate",
         "Write the brief and check the work",
+        "Bring Autopilot into your Team's conversations",
         "Delegate responsibly",
         "Module assessment",
         "Summary"
@@ -87722,12 +87991,13 @@
         "/training/modules/delegate-ongoing-work-autopilot-copilot/1-introduction",
         "/training/modules/delegate-ongoing-work-autopilot-copilot/2-evaluate-delegation-candidates",
         "/training/modules/delegate-ongoing-work-autopilot-copilot/3-brief-autopilot-review-results",
+        "/training/modules/delegate-ongoing-work-autopilot-copilot/3b-bring-autopilot-team-conversations",
         "/training/modules/delegate-ongoing-work-autopilot-copilot/4-delegate-responsibly",
         "/training/modules/delegate-ongoing-work-autopilot-copilot/5-knowledge-check",
         "/training/modules/delegate-ongoing-work-autopilot-copilot/6-summary"
       ],
-      "lastModified": "2026-10-26T17:13:00+00:00",
-      "unitSig": "88742fbe74ab749ffe9928672df267d42c743a41"
+      "lastModified": "2026-11-18T00:08:00+00:00",
+      "unitSig": "70056515e25dcd5f389eeab0886ae183790d0800"
     },
     {
       "uid": "learn.wwl.delegate-work-copilot-cowork",
@@ -92649,8 +92919,8 @@
         "/training/modules/design-implement-agent-memory-azure-cosmos-db/8-knowledge-check",
         "/training/modules/design-implement-agent-memory-azure-cosmos-db/9-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "1ade570f880f768a667d461d09f5520d16ed633d"
+      "lastModified": "2026-11-20T08:22:00+00:00",
+      "unitSig": "fdedfb9bf5ae77322dc0db2ad6aa1d4db322b9ec"
     },
     {
       "uid": "learn.wwl.design-implement-azure-expressroute",
@@ -99272,8 +99542,8 @@
         "/training/modules/explore-copilot-studio-agent-harnesses/7-knowledge-check",
         "/training/modules/explore-copilot-studio-agent-harnesses/8-summary"
       ],
-      "lastModified": "2026-11-11T00:17:00+00:00",
-      "unitSig": "6b8f3aad606f2b8c34b26a46f46849218859ac00"
+      "lastModified": "2026-11-18T00:13:00+00:00",
+      "unitSig": "d34aa873e5b23178b8818450e486d595d0fb192d"
     },
     {
       "uid": "learn.wwl.explore-core-data-concepts",
@@ -102799,7 +103069,7 @@
         "/training/modules/get-ready-work-microsoft-365-copilot/6-summary"
       ],
       "lastModified": "2026-10-26T17:13:00+00:00",
-      "unitSig": "5228af712f7e7036b25a2a1e693845ed26b78b45"
+      "unitSig": "1c83c20aca1bbe28840ca1c2bdf98c81fa7b3eac"
     },
     {
       "uid": "learn.wwl.get-started-ai-fundamentals",
@@ -103298,8 +103568,8 @@
         "/training/modules/get-started-foundry-iq/6-knowledge-check",
         "/training/modules/get-started-foundry-iq/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "b687f14de3c8c2ae5bc9b3f51779561d1052da33"
+      "lastModified": "2026-11-20T23:10:00+00:00",
+      "unitSig": "5eec9b98ccd641cadbb218093480080a0f008349"
     },
     {
       "uid": "learn.wwl.get-started-foundry-voice-agents",
@@ -103982,8 +104252,8 @@
         "/training/modules/get-started-with-generative-ai-and-agents/7-knowledge-check",
         "/training/modules/get-started-with-generative-ai-and-agents/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "0f7558294a7931a2bf7a55802a69136d487a90ee"
+      "lastModified": "2026-11-19T08:11:00+00:00",
+      "unitSig": "5905f1a8b3fa2cbfc22305d52c29d6eef2a52f2d"
     },
     {
       "uid": "learn.wwl.get-started-with-speech-in-azure",
@@ -109210,8 +109480,8 @@
         "/training/modules/implement-full-text-vector-search-azure-cosmos-db-nosql/8-knowledge-check",
         "/training/modules/implement-full-text-vector-search-azure-cosmos-db-nosql/9-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "8db398da141587bfe65cbdf1b1c6cf1652c0a34a"
+      "lastModified": "2026-11-18T08:11:00+00:00",
+      "unitSig": "32fb16c54fcc30efd64c554c9581c455cdaed19b"
     },
     {
       "uid": "learn.wwl.implement-generative-ai-agents-azure-postgresql",
@@ -109739,8 +110009,8 @@
         "/training/modules/implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql/7-knowledge-check",
         "/training/modules/implement-hybrid-search-optimize-retrieval-azure-cosmos-db-nosql/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "05b772d3a2ab89a90309cc1b85ee0ed904e709f8"
+      "lastModified": "2026-11-18T08:11:00+00:00",
+      "unitSig": "8b0017d2f557dd675a7021953d62fefb02ea5a5b"
     },
     {
       "uid": "learn.wwl.implement-hyper-v-replica",
@@ -110736,8 +111006,8 @@
         "/training/modules/implement-operational-analytics-fabric-azure-cosmos-db/7-knowledge-check",
         "/training/modules/implement-operational-analytics-fabric-azure-cosmos-db/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "1badf998acc830935e7792ef0ecb4a48837bf7f5"
+      "lastModified": "2026-11-20T08:22:00+00:00",
+      "unitSig": "6409e159cb6195e53a2fe017c14d16a41c7ed82d"
     },
     {
       "uid": "learn.wwl.implement-pipeline-strategy",
@@ -113297,7 +113567,7 @@
     },
     {
       "uid": "learn.wwl.intro-project-perception-agentic-security",
-      "title": "What is Project Perception?",
+      "title": "What is Microsoft Perception?",
       "url": "https://learn.microsoft.com/training/modules/project-perception-agentic-security-introduction/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/project-perception-agentic-security-introduction",
       "categories": [
@@ -113311,9 +113581,9 @@
       ],
       "units": [
         "Introduction",
-        "Why Project Perception",
-        "What Project Perception is",
-        "What Project Perception can do today",
+        "Why Perception",
+        "What Perception is",
+        "What Perception can do today",
         "Module assessment",
         "Summary"
       ],
@@ -113325,8 +113595,8 @@
         "/training/modules/project-perception-agentic-security-introduction/knowledge-check",
         "/training/modules/project-perception-agentic-security-introduction/summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "b33267ed52388c8c14acb368a904db0d50b271f4"
+      "lastModified": "2026-11-19T18:11:00+00:00",
+      "unitSig": "d33b3a74454a4978fce771b1e520c2861c199019"
     },
     {
       "uid": "learn.wwl.intro-to-transact-sql",
@@ -119756,7 +120026,7 @@
         "/training/modules/microsoft-ai-models/09-summary"
       ],
       "lastModified": "2026-11-04T23:14:00+00:00",
-      "unitSig": "d4f5404381e21e0b80094468e07e2b328d3fa09f"
+      "unitSig": "58d94521eb8f3c5a227c325ff98866b9fa8612e7"
     },
     {
       "uid": "learn.wwl.microsoft-azure-data-engineering-academic-programs",
@@ -121841,6 +122111,52 @@
       "unitSig": "d774c008c466b059bef679a7ee2c7069a0a1d6ef"
     },
     {
+      "uid": "learn.wwl.optimize-business-value-usage-based-ai",
+      "title": "Optimize business value of usage-based AI",
+      "url": "https://learn.microsoft.com/training/modules/optimize-business-value-usage-based-ai/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/optimize-business-value-usage-based-ai",
+      "categories": [
+        "Microsoft 365",
+        "ms-copilot"
+      ],
+      "products": [
+        "Microsoft 365",
+        "microsoft-365-copilot",
+        "microsoft-365-copilot-chat",
+        "microsoft-copilot-pro",
+        "ms-copilot"
+      ],
+      "subjects": [
+        "Business applications",
+        "Data analytics",
+        "Data management",
+        "business-reporting",
+        "generative-ai"
+      ],
+      "units": [
+        "Introduction",
+        "Find the right data for each question",
+        "Connect credits to value in usage-based AI",
+        "Allocate AI costs based on adoption maturity",
+        "Decide, optimize, continue, or scale AI usage",
+        "Review AI spend and value with Agent 365 Business Analytics",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/optimize-business-value-usage-based-ai/1-introduction",
+        "/training/modules/optimize-business-value-usage-based-ai/2-find-data-question",
+        "/training/modules/optimize-business-value-usage-based-ai/3-connect-credits-value",
+        "/training/modules/optimize-business-value-usage-based-ai/4-allocate-ai-costs",
+        "/training/modules/optimize-business-value-usage-based-ai/5-decide-optimize-continue-scale",
+        "/training/modules/optimize-business-value-usage-based-ai/6-review-ai-spend-value-agent-365-business-analytics",
+        "/training/modules/optimize-business-value-usage-based-ai/7-knowledge-check",
+        "/training/modules/optimize-business-value-usage-based-ai/8-summary"
+      ],
+      "lastModified": "2026-11-18T00:08:00+00:00",
+      "unitSig": "8cd03861cd8f0de425393844ab24c9cf22fc8837"
+    },
+    {
       "uid": "learn.wwl.optimize-database-performance",
       "title": "Optimize database performance",
       "url": "https://learn.microsoft.com/training/modules/optimize-database-performance/?WT.mc_id=studentamb_165290",
@@ -122566,6 +122882,125 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "2ecf65dcf1b5cac922a1817f5920bf4af6209032"
+    },
+    {
+      "uid": "learn.wwl.perception-agentic-security-configure-validate-agents",
+      "title": "Configure and validate agents in Microsoft Perception",
+      "url": "https://learn.microsoft.com/training/modules/perception-agentic-security-configure-validate-agents/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/perception-agentic-security-configure-validate-agents",
+      "categories": [
+        "microsoft-defender"
+      ],
+      "products": [
+        "defender-xdr"
+      ],
+      "subjects": [
+        "Threat protection"
+      ],
+      "units": [
+        "Introduction",
+        "Understand what makes an agent ready for use",
+        "Translate the approved use into requirements",
+        "Configure the agent identity and required permissions",
+        "Verify required data and resource access",
+        "Verify security practitioner access",
+        "Test the setup with a security practitioner's account",
+        "Resolve access failures and hand off ownership",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/perception-agentic-security-configure-validate-agents/introduction",
+        "/training/modules/perception-agentic-security-configure-validate-agents/understand-agent-readiness",
+        "/training/modules/perception-agentic-security-configure-validate-agents/translate-approved-use-into-requirements",
+        "/training/modules/perception-agentic-security-configure-validate-agents/configure-agent-identity-permissions",
+        "/training/modules/perception-agentic-security-configure-validate-agents/verify-data-resource-access",
+        "/training/modules/perception-agentic-security-configure-validate-agents/verify-analyst-access",
+        "/training/modules/perception-agentic-security-configure-validate-agents/test-setup-with-analyst-account",
+        "/training/modules/perception-agentic-security-configure-validate-agents/resolve-access-failures-handoff",
+        "/training/modules/perception-agentic-security-configure-validate-agents/knowledge-check",
+        "/training/modules/perception-agentic-security-configure-validate-agents/summary"
+      ],
+      "lastModified": "2026-11-19T18:11:00+00:00",
+      "unitSig": "32764f5f2b093fed69ff4c4970fdeb41c8b2e1b3"
+    },
+    {
+      "uid": "learn.wwl.perception-agentic-security-investigate-plan-response",
+      "title": "Investigate detected threats and plan a response in Microsoft Perception",
+      "url": "https://learn.microsoft.com/training/modules/perception-agentic-security-investigate-plan-response/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/perception-agentic-security-investigate-plan-response",
+      "categories": [
+        "microsoft-defender"
+      ],
+      "products": [
+        "defender-xdr"
+      ],
+      "subjects": [
+        "Threat protection"
+      ],
+      "units": [
+        "Introduction",
+        "Understand how an investigation develops",
+        "Run and inspect an investigation",
+        "Validate the verdict and attack story",
+        "Establish affected scope and evidence gaps",
+        "Plan the response and hand over ownership",
+        "Review an investigation and choose the next actions",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/perception-agentic-security-investigate-plan-response/introduction",
+        "/training/modules/perception-agentic-security-investigate-plan-response/understand-investigation-develops",
+        "/training/modules/perception-agentic-security-investigate-plan-response/run-inspect-investigation",
+        "/training/modules/perception-agentic-security-investigate-plan-response/validate-verdict-attack-story",
+        "/training/modules/perception-agentic-security-investigate-plan-response/establish-affected-scope-evidence-gaps",
+        "/training/modules/perception-agentic-security-investigate-plan-response/plan-response-handover-ownership",
+        "/training/modules/perception-agentic-security-investigate-plan-response/review-investigation-choose-next-actions",
+        "/training/modules/perception-agentic-security-investigate-plan-response/knowledge-check",
+        "/training/modules/perception-agentic-security-investigate-plan-response/summary"
+      ],
+      "lastModified": "2026-11-19T18:11:00+00:00",
+      "unitSig": "54305595e1188274b566aca0cc0f6b707b2cf923"
+    },
+    {
+      "uid": "learn.wwl.perception-agentic-security-run-supervise-sessions",
+      "title": "Run and supervise sessions in Microsoft Perception",
+      "url": "https://learn.microsoft.com/training/modules/perception-agentic-security-run-supervise-sessions/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/perception-agentic-security-run-supervise-sessions",
+      "categories": [
+        "microsoft-defender"
+      ],
+      "products": [
+        "defender-xdr"
+      ],
+      "subjects": [
+        "Threat protection"
+      ],
+      "units": [
+        "Introduction",
+        "Understand how requests, playbooks, and sessions connect",
+        "Discover what outcomes the playbooks drive",
+        "Verify readiness, start, and monitor the session",
+        "Respond to agent requests",
+        "Validate the findings",
+        "Hand off the findings and next action",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/perception-agentic-security-run-supervise-sessions/introduction",
+        "/training/modules/perception-agentic-security-run-supervise-sessions/understand-requests-playbooks-sessions",
+        "/training/modules/perception-agentic-security-run-supervise-sessions/match-task-to-playbook",
+        "/training/modules/perception-agentic-security-run-supervise-sessions/verify-readiness-start-monitor-session",
+        "/training/modules/perception-agentic-security-run-supervise-sessions/respond-to-agent-requests",
+        "/training/modules/perception-agentic-security-run-supervise-sessions/validate-findings",
+        "/training/modules/perception-agentic-security-run-supervise-sessions/handoff-findings-next-action",
+        "/training/modules/perception-agentic-security-run-supervise-sessions/knowledge-check",
+        "/training/modules/perception-agentic-security-run-supervise-sessions/summary"
+      ],
+      "lastModified": "2026-11-19T18:11:00+00:00",
+      "unitSig": "1c5ca3f87b0ff3c515185294fc180b3e81928072"
     },
     {
       "uid": "learn.wwl.perform-actions-device-microsoft-defender-for-endpoint",
@@ -124667,7 +125102,7 @@
     },
     {
       "uid": "learn.wwl.project-perception-agentic-security-orientation",
-      "title": "Understand how Project Perception coordinates security operations",
+      "title": "Understand how Microsoft Perception coordinates security operations",
       "url": "https://learn.microsoft.com/training/modules/project-perception-agentic-security-orientation/?WT.mc_id=studentamb_165290",
       "path": "/training/modules/project-perception-agentic-security-orientation",
       "categories": [
@@ -124682,7 +125117,7 @@
       "units": [
         "Introduction",
         "How coordinated multi-agent defense works",
-        "Map Project Perception onto the coordinated defense model",
+        "Map Perception onto the coordinated defense model",
         "Understand what makes cross-agent coordination possible",
         "Trace how playbooks connect stages of work",
         "Recognize which areas of work a situation touches",
@@ -124699,8 +125134,8 @@
         "/training/modules/project-perception-agentic-security-orientation/knowledge-check",
         "/training/modules/project-perception-agentic-security-orientation/summary"
       ],
-      "lastModified": "2026-10-30T17:18:00+00:00",
-      "unitSig": "af574432803ecfeca667e2251e1ff01c6f520af1"
+      "lastModified": "2026-11-19T18:11:00+00:00",
+      "unitSig": "7bbccd031f70a85214b4af3bf0e62aff7ebd4b41"
     },
     {
       "uid": "learn.wwl.prompt-versioning-genaiops",
@@ -129373,7 +129808,7 @@
         "/training/modules/active-directory-site-replication/8-summary"
       ],
       "lastModified": "2026-11-02T18:22:00+00:00",
-      "unitSig": "7e1958640bdc9c6432a4d8a7209e0ef9b8ff7f65"
+      "unitSig": "f51fe9e6deebdcf5050bf06a0e8161fffa057666"
     },
     {
       "uid": "learn.wwl.software-composition-analysis",
@@ -134346,8 +134781,8 @@
         "Introduction",
         "Use Microsoft Copilot Chat for common tasks",
         "Create and collaborate with Copilot Pages",
-        "Simplify workflows and automate tasks with agents in Copilot Chat",
-        "Exercise - Plan a client summit with Microsoft Copilot Chat",
+        "Get specialized help with agents in Copilot Chat",
+        "Exercise (optional) - Plan a client summit with Microsoft Copilot Chat",
         "Module assessment",
         "Summary"
       ],
@@ -134360,8 +134795,8 @@
         "/training/modules/work-smarter-with-microsoft-365-copilot-chat/6-knowledge-check",
         "/training/modules/work-smarter-with-microsoft-365-copilot-chat/7-summary"
       ],
-      "lastModified": "2026-10-26T17:13:00+00:00",
-      "unitSig": "771ed1a9bbf571dd9e5e000af312788e84626230"
+      "lastModified": "2026-11-17T18:08:00+00:00",
+      "unitSig": "1e65ad46642f59ae03307fd2136819b5a2ea8c21"
     },
     {
       "uid": "learn.wwl.work-with-data-kql",
@@ -134894,6 +135329,20 @@
       "title": "Use Microsoft accessibility features in education",
       "lastSeen": "2026-10-26",
       "removedOn": "2026-11-02"
+    },
+    {
+      "uid": "learn.mec.windows-11-101",
+      "path": "/training/modules/windows-11-101",
+      "title": "Empower school leaders and educators with Windows 11",
+      "lastSeen": "2026-11-17",
+      "removedOn": "2026-11-23"
+    },
+    {
+      "uid": "learn.oxford.implement-cicd-iot-edge",
+      "path": "/training/modules/implement-cicd-iot-edge",
+      "title": "Implement CI/CD for IoT Edge",
+      "lastSeen": "2026-11-17",
+      "removedOn": "2026-11-23"
     },
     {
       "uid": "learn.wwl.build-data-pipeline-with-delta-live-tables",
