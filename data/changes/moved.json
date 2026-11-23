@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T19:14:16.387Z",
+  "generatedAt": "2026-11-23T19:53:02.360Z",
   "sources": {
     "learn": "2026-11-23T19:14:16.387Z",
-    "docs": "2026-11-17T16:51:25.255Z"
+    "docs": "2026-11-23T19:53:02.360Z"
   },
   "entries": [
     {
@@ -133,6 +133,19 @@
       "parent": null,
       "firstSeen": "2026-11-02",
       "lastVerified": "2026-11-02",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/app-testing/playwright-workspaces/quickstart-advanced-diagnostic-with-playwright-workspaces-reporting",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/app-testing/playwright-workspaces/quickstart-observability-with-playwright-workspaces",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-23",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -574,7 +587,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -587,7 +600,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -600,7 +613,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -613,7 +626,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -626,7 +639,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -639,7 +652,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -652,7 +665,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -665,7 +678,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -678,7 +691,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3868,6 +3881,19 @@
       "status": 301
     },
     {
+      "path": "/azure/developer/azure-developer-cli/quickstart-explore-templates",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/developer/azure-developer-cli/explore-edit-templates",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/developer/azure-skills/skills/azure-cost",
       "kind": "docs",
       "family": "docs",
@@ -3889,7 +3915,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3902,7 +3928,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3915,7 +3941,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3928,7 +3954,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3941,7 +3967,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3954,7 +3980,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3967,7 +3993,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3980,7 +4006,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-19",
-      "lastVerified": "2026-10-19",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -5385,6 +5411,45 @@
       "parent": null,
       "firstSeen": "2026-11-09",
       "lastVerified": "2026-11-09",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/copilot/manage/data-flow",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/copilot/manage/overview-wfi-agent",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/copilot/manage/manage-access",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/copilot/manage/use-case-classification-responsible-ai-faq",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-23",
+      "lastVerified": "2026-11-23",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/copilot/manage/transparency-faq",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/copilot/manage/transparency-faq-wfi-agent",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-23",
+      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -11196,45 +11261,6 @@
       "parent": null,
       "firstSeen": "2026-10-12",
       "lastVerified": "2026-10-12",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/microsoft-sales-copilot/create-planner-tasks",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/microsoft-sales-copilot/landing",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/microsoft-sales-copilot/suggested-tasks-collab-space",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/microsoft-sales-copilot/landing",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/microsoft-sales-copilot/turn-off-suggested-tasks-collab-space",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/microsoft-sales-copilot/landing",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-17",
       "evidence": "docs-redirect",
       "status": 301
     },

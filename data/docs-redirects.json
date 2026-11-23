@@ -280,6 +280,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/app-testing/playwright-workspaces/quickstart-advanced-diagnostic-with-playwright-workspaces-reporting",
+    "to": "/azure/app-testing/playwright-workspaces/quickstart-observability-with-playwright-workspaces",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-23",
+    "lastSeen": "2026-11-23"
+  },
+  {
     "from": "/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp",
     "to": "/azure/app-testing",
     "kind": "landing",
@@ -613,7 +621,7 @@
     "kind": "retired",
     "status": 301,
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/azure-web-pubsub/chat-reference-service-sdk-java",
@@ -645,7 +653,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/build-secure-process",
@@ -653,7 +661,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/business-strategy-plan",
@@ -661,7 +669,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/data-architecture-plan",
@@ -669,7 +677,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization",
@@ -677,7 +685,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/integrate-manage-operate",
@@ -685,7 +693,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/organization-people-readiness-plan",
@@ -693,7 +701,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/single-agent-multiple-agents",
@@ -701,7 +709,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy",
@@ -709,7 +717,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/cloud-adoption-framework/data/architecture-azure-landing-zones-unify-data-platform",
@@ -2728,6 +2736,14 @@
     "lastSeen": "2026-11-09"
   },
   {
+    "from": "/azure/developer/azure-developer-cli/quickstart-explore-templates",
+    "to": "/azure/developer/azure-developer-cli/explore-edit-templates",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-23",
+    "lastSeen": "2026-11-23"
+  },
+  {
     "from": "/azure/developer/azure-skills/skills/azure-cost",
     "to": "/azure/developer/azure-skills/plugins",
     "kind": "moved",
@@ -2741,7 +2757,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/developer/terraform/azure-terraform-resource-provider/resource-provider-overview",
@@ -2749,7 +2765,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/devops/extensions",
@@ -2757,7 +2773,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/devops/extensions/dependency-tracker/create-new-dependency",
@@ -2765,7 +2781,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/devops/extensions/dependency-tracker/dependency-views",
@@ -2773,7 +2789,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/devops/extensions/dependency-tracker/overview",
@@ -2781,7 +2797,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/devops/extensions/dependency-tracker/risk-graph",
@@ -2789,7 +2805,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/devops/extensions/dependency-tracker/timeline",
@@ -2797,7 +2813,7 @@
     "kind": "moved",
     "status": 301,
     "firstSeen": "2026-10-19",
-    "lastSeen": "2026-10-19"
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/devops/repos/security/github-advanced-security-code-scanning-autofix",
@@ -3304,6 +3320,22 @@
     "lastSeen": "2026-11-02"
   },
   {
+    "from": "/azure/partner-solutions/arize-ai",
+    "to": "/previous-versions/azure/partner-solutions/arize-ai",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-23",
+    "lastSeen": "2026-11-23"
+  },
+  {
+    "from": "/azure/partner-solutions/arize-ai/faq",
+    "to": "/previous-versions/azure/partner-solutions/arize-ai/faq",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-23",
+    "lastSeen": "2026-11-23"
+  },
+  {
     "from": "/azure/partner-solutions/astronomer",
     "to": "/previous-versions/azure/partner-solutions/astronomer",
     "kind": "retired",
@@ -3350,6 +3382,22 @@
     "status": 301,
     "firstSeen": "2026-11-16",
     "lastSeen": "2026-11-16"
+  },
+  {
+    "from": "/azure/partner-solutions/lambda-test",
+    "to": "/previous-versions/azure/partner-solutions/lambda-test",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-23",
+    "lastSeen": "2026-11-23"
+  },
+  {
+    "from": "/azure/partner-solutions/lambda-test/faq",
+    "to": "/previous-versions/azure/partner-solutions/lambda-test/faq",
+    "kind": "retired",
+    "status": 301,
+    "firstSeen": "2026-11-23",
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-review-tasks-artifacts",
@@ -3942,6 +3990,30 @@
     "status": 301,
     "firstSeen": "2026-11-09",
     "lastSeen": "2026-11-09"
+  },
+  {
+    "from": "/copilot/manage/data-flow",
+    "to": "/copilot/manage/overview-wfi-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-23",
+    "lastSeen": "2026-11-23"
+  },
+  {
+    "from": "/copilot/manage/manage-access",
+    "to": "/copilot/manage/use-case-classification-responsible-ai-faq",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-23",
+    "lastSeen": "2026-11-23"
+  },
+  {
+    "from": "/copilot/manage/transparency-faq",
+    "to": "/copilot/manage/transparency-faq-wfi-agent",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-23",
+    "lastSeen": "2026-11-23"
   },
   {
     "from": "/copilot/microsoft-copilot",
@@ -20710,30 +20782,6 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
-  },
-  {
-    "from": "/microsoft-sales-copilot/create-planner-tasks",
-    "to": "/microsoft-sales-copilot/landing",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
-  },
-  {
-    "from": "/microsoft-sales-copilot/suggested-tasks-collab-space",
-    "to": "/microsoft-sales-copilot/landing",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
-  },
-  {
-    "from": "/microsoft-sales-copilot/turn-off-suggested-tasks-collab-space",
-    "to": "/microsoft-sales-copilot/landing",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-17"
   },
   {
     "from": "/microsoftteams/devices/how-to-get-support",
