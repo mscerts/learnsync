@@ -2,7 +2,7 @@ name: Module Links Monitor
 
 on:
   schedule:
-    - cron: "41 8 * * 1" # Monday 08:41 UTC, after the Learn and docs syncs (GitHub may start scheduled runs hours late)
+    - cron: "41 8 * * 1,4" # Monday and Thursday 08:41 UTC, after the Learn and docs syncs (GitHub may start scheduled runs hours late)
   workflow_dispatch:
 
 # One queue for every workflow that writes data/ (learn, docs and module-links syncs), so

@@ -1,6 +1,6 @@
 # learnsync
 
-Caches of Microsoft Learn content, refreshed weekly, that answer two questions:
+Caches of Microsoft Learn content, refreshed twice a week, that answer two questions:
 **"what does Learn have about product X?"** (research) and **"is this
 learn.microsoft.com URL still good?"** (validation). Training modules with their
 real unit URLs, learning paths, courses, certifications, exams, applied skills,
@@ -17,7 +17,7 @@ The sync scripts were built inside [mscerts/hub](https://github.com/mscerts/hub)
 the Microsoft Certification Knowledge Hub ([msfthub.com](https://msfthub.com)), to
 research official Learn resources for exam study guides. This repo is a standalone
 extraction with its own schedule, issues and history. The hub now also uses it as
-the validity source for its weekly Learn URL check.
+the validity source for its Learn URL check.
 
 ## What's in `data/`
 
@@ -103,7 +103,7 @@ use at most three workers with backoff. Do not loosen that for a one-off run.
 
 ## Keeping the caches fresh
 
-Both syncs run weekly on GitHub Actions (Mondays; GitHub often starts scheduled runs hours
+Both syncs run twice a week on GitHub Actions (Mondays and Thursdays; GitHub often starts scheduled runs hours
 late) or on demand from the **Actions** tab. They share one queue so they never push at the
 same time, and commit through a push-with-retry script. A run that passes its failsafes
 commits the refreshed data and `status.json` (the heartbeat consumers read); a run that fails

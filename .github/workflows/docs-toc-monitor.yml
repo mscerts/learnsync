@@ -2,7 +2,7 @@ name: Docs Sidebar Monitor
 
 on:
   schedule:
-    - cron: "41 9 * * 1" # Monday 09:41 UTC, after the Learn, docs and module links syncs (GitHub may start scheduled runs hours late)
+    - cron: "41 9 * * 1,4" # Monday and Thursday 09:41 UTC, after the Learn, docs and module links syncs (GitHub may start scheduled runs hours late)
   workflow_dispatch:
 
 # One queue for every workflow that writes data/ (learn, docs, module-links and docs-toc syncs), so

@@ -2,7 +2,7 @@ name: Learn Catalog Monitor
 
 on:
   schedule:
-    - cron: "17 7 * * 1" # Monday 07:17 UTC (GitHub may start scheduled runs hours late)
+    - cron: "17 7 * * 1,4" # Monday and Thursday 07:17 UTC (GitHub may start scheduled runs hours late)
   workflow_dispatch:
 
 # One queue for every workflow that writes data/ (learn and docs syncs), so

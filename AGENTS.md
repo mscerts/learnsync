@@ -9,7 +9,7 @@
 ## Identity
 
 learnsync keeps zero-dependency Node 22 scripts that build JSON caches of
-Microsoft Learn content, refreshed weekly by GitHub Actions. The caches serve
+Microsoft Learn content, refreshed twice a week (Monday and Thursday) by GitHub Actions. The caches serve
 two purposes:
 
 1. **Research datasets** for AI agents and humans ("everything Learn has about
@@ -282,7 +282,7 @@ plan, failsafes) and `module-links-run.mjs` (the run, every dependency injectabl
 - **Failsafe abort = nothing written**, `status.json` included. After a markup change on Learn the run aborts
   ("no unit content", or "the link extraction probably stopped working"): look at a real unit page, adjust
   `unitContent` / `SKIP_SECTION` in `module-links.mjs` with a test on the real markup, never lower the limit.
-- **Scheduling.** `module-links-monitor.yml` (Mondays 08:41 UTC) shares the `learnsync-data` queue; it reads
+- **Scheduling.** `module-links-monitor.yml` (Mondays and Thursdays 08:41 UTC) shares the `learnsync-data` queue; it reads
   the committed `learn-catalog.json`, so it never needs the Learn sync to run in the same job.
 
 ---
@@ -314,7 +314,7 @@ course tooling uses it to look for the concept pages next to a how-to page). For
   handful of pages, not for the catalog (about 140,000 pages). Markup: the article is the part of `<main>` after the
   `<h1>` up to the `ms--inline-notifications` placeholder, links carry `data-linktype`; a page without it is an error, not
   "no links" (see `test/fixtures/docs-page-how-to-manage-groups.html`, a trimmed real page).
-- **Scheduling.** `docs-toc-monitor.yml` (Mondays 09:41 UTC) shares the `learnsync-data` queue; it reads the committed
+- **Scheduling.** `docs-toc-monitor.yml` (Mondays and Thursdays 09:41 UTC) shares the `learnsync-data` queue; it reads the committed
   `docs-urls.txt` and `docs-sitemap-families.json`, so it needs no other sync in the same job. Failure issue `Microsoft Docs
   Sidebar Sync Failed`, label `bug`.
 
@@ -359,7 +359,7 @@ December 2026; the old git/REPOS design is gone). The script is a thin wrapper o
    transient -> kept and retried. With any sitemap failure removal detection is off.
 5. **Verification pass:** the oldest-`checked` catalog records still in the sitemaps are
    re-probed (`VERIFY_PER_RUN`, 2,000, about 8 minutes; a full cycle of ~85,000 records
-   takes ~43 weekly runs; raise it if fresher `checked` dates matter). Live sets
+   takes ~43 weekly runs, half that at two runs a week; raise it if fresher `checked` dates matter). Live sets
    `checked = today`.
 6. **Quarantine** (`docs-catalog-invalid.json`): definitive 404/410 only; re-checked every
    run and released when restored (`MAX_QUARANTINE_RECHECKS`). A new quarantine opens no
@@ -462,7 +462,7 @@ except to remove an entry on purpose (keep the JSON valid, the next run keeps it
   (`CHANGES_MAX_PROBES`, default 300 per Learn run) was too small. The run log says so
   ("verification queue is longer than the probe budget", "probes stopped early") and
   `status.json` `learn.catalogChanges.unverified` / `contentChanges.unverified` counts them.
-  It still counts as removed. The next weekly run retries; a manual way to work it off sooner
+  It still counts as removed. The next scheduled run retries; a manual way to work it off sooner
   is `node scripts/seed-changes.mjs --max-probes <n>`.
 - *An entry is wrong or a link comes back:* nothing to do. An entry is deleted when the path
   is valid again in the caches (or the docs index) or a probe finds it live. A listed module
@@ -523,13 +523,13 @@ always come from the same commit.
 
 ## Workflows and CI
 
-- `learn-catalog-monitor.yml` (Mondays 07:17 UTC) runs `npm run sync:learn`; `docs-catalog-monitor.yml`
+- `learn-catalog-monitor.yml` (Mondays and Thursdays 07:17 UTC) runs `npm run sync:learn`; `docs-catalog-monitor.yml`
   (07:43 UTC) runs the docs sync with `MAX_RUNTIME_MINUTES=90`. GitHub starts scheduled runs 6-8 hours
   late, which is why nothing relies on clock times: consumers read `status.json`.
-- `module-links-monitor.yml` (Mondays 08:41 UTC) runs `npm run sync:module-links` and commits
+- `module-links-monitor.yml` (Mondays and Thursdays 08:41 UTC) runs `npm run sync:module-links` and commits
   `data/module-links.json` and `data/status.json` (60 min timeout; failure issue `Microsoft Learn Module Links
   Sync Failed`, label `bug`).
-- `docs-toc-monitor.yml` (Mondays 09:41 UTC) runs `npm run sync:docs-toc` and commits `data/docs-toc.json` and
+- `docs-toc-monitor.yml` (Mondays and Thursdays 09:41 UTC) runs `npm run sync:docs-toc` and commits `data/docs-toc.json` and
   `data/status.json` (90 min timeout; failure issue `Microsoft Docs Sidebar Sync Failed`, label `bug`).
 - All four share the concurrency group `learnsync-data` (`cancel-in-progress: false`): they never run at the
   same time and never race on `data/status.json` or the change files. Timeouts: learn 60 min (a first or
@@ -539,10 +539,10 @@ always come from the same commit.
   the other's push and hit a rebase conflict in the shared change files (it happened on the first real run
   with both syncs dispatched together). `test/workflows.test.mjs` guards it for every workflow that commits data.
 - Commits go through `scripts/commit-data.sh`: commit, push, and on rejection `pull --rebase --autostash`
-  and retry (tested against a real git remote). Data commits include `status.json` every week; that tiny
+  and retry (tested against a real git remote). Data commits include `status.json` on every run; that tiny
   diff is the heartbeat. Both workflows also stage `data/changes/removed.json` and `moved.json` (each only
   if the file exists, so a first run that fails before writing cannot break the commit step with an
-  unknown pathspec); the Learn run rewrites them every week and the docs run does too (their
+  unknown pathspec); the Learn run rewrites them on every run and the docs run does too (their
   `generatedAt` / `sources.<family>` stamps move, the entries only when something changed).
 - Each Learn run (catalog, then content) adds at most `CHANGES_MAX_PROBES` (300) live probes for the
   change files, 3 workers about a second apart: a few minutes, well inside the 60-minute timeout.
