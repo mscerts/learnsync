@@ -284,8 +284,8 @@
     "to": "/azure/app-testing/playwright-workspaces/quickstart-observability-with-playwright-workspaces",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-23",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/app-testing/playwright-workspaces/quickstart-automate-browser-tasks-remote-mcp",
@@ -652,72 +652,72 @@
     "to": "/azure/cloud-adoption-framework/ai-agents/executive-strategy",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/build-secure-process",
     "to": "/azure/cloud-adoption-framework/ai-agents/operational-standards",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/business-strategy-plan",
     "to": "/azure/cloud-adoption-framework/ai-agents/organizational-readiness",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/data-architecture-plan",
     "to": "/azure/cloud-adoption-framework/ai-agents/architecture-governance",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization",
     "to": "/azure/cloud-adoption-framework/ai-agents/architecture-governance",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/integrate-manage-operate",
     "to": "/azure/cloud-adoption-framework/ai-agents/operational-standards",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/organization-people-readiness-plan",
     "to": "/azure/cloud-adoption-framework/ai-agents/organizational-readiness",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/single-agent-multiple-agents",
     "to": "/azure/cloud-adoption-framework/ai-agents/operational-standards",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy",
     "to": "/azure/cloud-adoption-framework/ai-agents/executive-strategy",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-17",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/cloud-adoption-framework/data/architecture-azure-landing-zones-unify-data-platform",
@@ -2264,6 +2264,14 @@
     "lastSeen": "2026-10-12"
   },
   {
+    "from": "/azure/databricks/lakewatch/detections/write-detection-rules",
+    "to": "/azure/databricks/lakewatch/detections/scheduled-detection-rules",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
     "from": "/azure/databricks/lakewatch/system-health/system-events",
     "to": "/azure/databricks/lakewatch/system-health/system-errors",
     "kind": "moved",
@@ -2740,8 +2748,8 @@
     "to": "/azure/developer/azure-developer-cli/explore-edit-templates",
     "kind": "moved",
     "status": 301,
-    "firstSeen": "2026-11-23",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/developer/azure-skills/skills/azure-cost",
@@ -3324,16 +3332,16 @@
     "to": "/previous-versions/azure/partner-solutions/arize-ai",
     "kind": "retired",
     "status": 301,
-    "firstSeen": "2026-11-23",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/partner-solutions/arize-ai/faq",
     "to": "/previous-versions/azure/partner-solutions/arize-ai/faq",
     "kind": "retired",
     "status": 301,
-    "firstSeen": "2026-11-23",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/partner-solutions/astronomer",
@@ -3388,16 +3396,16 @@
     "to": "/previous-versions/azure/partner-solutions/lambda-test",
     "kind": "retired",
     "status": 301,
-    "firstSeen": "2026-11-23",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/partner-solutions/lambda-test/faq",
     "to": "/previous-versions/azure/partner-solutions/lambda-test/faq",
     "kind": "retired",
     "status": 301,
-    "firstSeen": "2026-11-23",
-    "lastSeen": "2026-11-23"
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/postgresql/migrate/oracle-conversions-schema/schema-conversions-review-tasks-artifacts",
@@ -3446,6 +3454,14 @@
     "status": 301,
     "firstSeen": "2026-10-14",
     "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/azure/storage/elastic-san/next-generation-index",
+    "to": "/azure/storage/elastic-san",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/azure/storage/files/encryption-in-transit-for-nfs-shares",
@@ -3990,30 +4006,6 @@
     "status": 301,
     "firstSeen": "2026-11-09",
     "lastSeen": "2026-11-09"
-  },
-  {
-    "from": "/copilot/manage/data-flow",
-    "to": "/copilot/manage/overview-wfi-agent",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-11-23",
-    "lastSeen": "2026-11-23"
-  },
-  {
-    "from": "/copilot/manage/manage-access",
-    "to": "/copilot/manage/use-case-classification-responsible-ai-faq",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-11-23",
-    "lastSeen": "2026-11-23"
-  },
-  {
-    "from": "/copilot/manage/transparency-faq",
-    "to": "/copilot/manage/transparency-faq-wfi-agent",
-    "kind": "moved",
-    "status": 301,
-    "firstSeen": "2026-11-23",
-    "lastSeen": "2026-11-23"
   },
   {
     "from": "/copilot/microsoft-copilot",
@@ -20304,6 +20296,126 @@
     "lastSeen": "2026-10-19"
   },
   {
+    "from": "/microsoft-365/lti/onedrive-lti",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/onedrive-lti-blackboard",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/onedrive-lti-brightspace",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/onedrive-lti-schoology",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/reflect-lti-blackboard",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/reflect-lti-brightspace",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/reflect-lti-canvas",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/reflect-lti-moodle",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/reflect-lti-schoology",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/teams-assignments-with-blackboard",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/teams-assignments-with-brightspace",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/teams-assignments-with-canvas",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/teams-assignments-with-moodle",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/teams-assignments-with-other-lms",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/microsoft-365/lti/teams-assignments-with-schoology",
+    "to": "/microsoft-365/lti",
+    "kind": "landing",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
     "from": "/microsoft-365/managed-apps",
     "to": "/microsoft-365/copilot-managed-runtime",
     "kind": "moved",
@@ -21974,6 +22086,14 @@
     "status": 301,
     "firstSeen": "2026-10-12",
     "lastSeen": "2026-10-12"
+  },
+  {
+    "from": "/power-apps/maker/common/ai-app-descriptions-faq",
+    "to": "/power-platform/important-changes-coming",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/power-apps/maker/data-platform/azure-synapse-link-solution",
@@ -26942,6 +27062,38 @@
     "status": 301,
     "firstSeen": "2026-10-19",
     "lastSeen": "2026-10-19"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/inventory/last-tested-date-not-updated",
+    "to": "/dynamics365/supply-chain/master-planning/planning-optimization/shelf-life",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/inventory/minimum-quantity-pick-qty-catch-weight-quantity-split-into-batches",
+    "to": "/dynamics365/supply-chain/inventory/outbound-process",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/inventory/picking-list-report-not-show-new-notes-attached-to-journal",
+    "to": "/dynamics365/supply-chain/inventory/outbound-process",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
+  },
+  {
+    "from": "/troubleshoot/dynamics-365/supply-chain/inventory/reverse-report-as-finished-creates-open-transaction",
+    "to": "/dynamics365/supply-chain/production-control/report-production-orders-as-finished",
+    "kind": "moved",
+    "status": 301,
+    "firstSeen": "2026-11-26",
+    "lastSeen": "2026-11-26"
   },
   {
     "from": "/troubleshoot/dynamics-365/supply-chain/planning/delay-value-not-updated",

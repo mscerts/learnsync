@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T19:08:58.742Z",
+  "generatedAt": "2026-11-26T19:33:28.674Z",
   "sources": {
     "learn": "2026-11-26T19:08:58.742Z",
-    "docs": "2026-11-23T19:53:02.360Z"
+    "docs": "2026-11-26T19:33:28.674Z"
   },
   "entries": [
     {
@@ -144,8 +144,8 @@
       "to": "/azure/app-testing/playwright-workspaces/quickstart-observability-with-playwright-workspaces",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -586,8 +586,8 @@
       "to": "/azure/cloud-adoption-framework/ai-agents/executive-strategy",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -599,8 +599,8 @@
       "to": "/azure/cloud-adoption-framework/ai-agents/operational-standards",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -612,8 +612,8 @@
       "to": "/azure/cloud-adoption-framework/ai-agents/organizational-readiness",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -625,8 +625,8 @@
       "to": "/azure/cloud-adoption-framework/ai-agents/architecture-governance",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -638,8 +638,8 @@
       "to": "/azure/cloud-adoption-framework/ai-agents/architecture-governance",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -651,8 +651,8 @@
       "to": "/azure/cloud-adoption-framework/ai-agents/operational-standards",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -664,8 +664,8 @@
       "to": "/azure/cloud-adoption-framework/ai-agents/organizational-readiness",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -677,8 +677,8 @@
       "to": "/azure/cloud-adoption-framework/ai-agents/operational-standards",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -690,8 +690,8 @@
       "to": "/azure/cloud-adoption-framework/ai-agents/executive-strategy",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -3153,6 +3153,19 @@
       "status": 301
     },
     {
+      "path": "/azure/databricks/lakewatch/detections/write-detection-rules",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/azure/databricks/lakewatch/detections/scheduled-detection-rules",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/azure/databricks/lakewatch/system-health/system-events",
       "kind": "docs",
       "family": "docs",
@@ -3888,8 +3901,8 @@
       "to": "/azure/developer/azure-developer-cli/explore-edit-templates",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -5411,45 +5424,6 @@
       "parent": null,
       "firstSeen": "2026-11-09",
       "lastVerified": "2026-11-09",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/copilot/manage/data-flow",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/copilot/manage/overview-wfi-agent",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/copilot/manage/manage-access",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/copilot/manage/use-case-classification-responsible-ai-faq",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
-      "evidence": "docs-redirect",
-      "status": 301
-    },
-    {
-      "path": "/copilot/manage/transparency-faq",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "moved",
-      "to": "/copilot/manage/transparency-faq-wfi-agent",
-      "title": null,
-      "parent": null,
-      "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -13072,6 +13046,19 @@
       "status": 301
     },
     {
+      "path": "/power-apps/maker/common/ai-app-descriptions-faq",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/power-platform/important-changes-coming",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/power-apps/maker/data-platform/azure-synapse-link-solution",
       "kind": "docs",
       "family": "docs",
@@ -14616,6 +14603,58 @@
       "firstSeen": "2026-11-09",
       "lastVerified": "2026-11-26",
       "evidence": "tombstone",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/dynamics-365/supply-chain/inventory/last-tested-date-not-updated",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/dynamics365/supply-chain/master-planning/planning-optimization/shelf-life",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/dynamics-365/supply-chain/inventory/minimum-quantity-pick-qty-catch-weight-quantity-split-into-batches",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/dynamics365/supply-chain/inventory/outbound-process",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/dynamics-365/supply-chain/inventory/picking-list-report-not-show-new-notes-attached-to-journal",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/dynamics365/supply-chain/inventory/outbound-process",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/troubleshoot/dynamics-365/supply-chain/inventory/reverse-report-as-finished-creates-open-transaction",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "moved",
+      "to": "/dynamics365/supply-chain/production-control/report-production-orders-as-finished",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
       "status": 301
     },
     {

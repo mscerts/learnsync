@@ -7,7 +7,7 @@
     "description": "Learn how to enable Federal Information Processing Standard (FIPS) at the cluster level for Azure Kubernetes Service (AKS) clusters.",
     "status": 404,
     "firstDetected": "2026-11-17",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Configure private networking for AI Gateway tier (preview)",
@@ -17,7 +17,7 @@
     "description": "Learn how to configure inbound Private Link and outbound virtual network integration for the AI Gateway tier (preview) from Azure API Management.",
     "status": 404,
     "firstDetected": "2026-11-02",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Get started with the AI Gateway tier (preview) setup wizard",
@@ -27,7 +27,7 @@
     "description": "Use the AI Gateway tier (preview) setup wizard to import Foundry models, discover MCP servers, and configure monitoring for your gateway.",
     "status": 404,
     "firstDetected": "2026-11-02",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Quickstart: Create an AI Gateway tier (preview) instance",
@@ -37,7 +37,7 @@
     "description": "Create an AI Gateway tier (preview) instance, add a model, create a runtime access key, call the OpenAI-compatible endpoint, and view telemetry.",
     "status": 404,
     "firstDetected": "2026-11-02",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Configure proxy settings for Azure Local, version 23H2 - Azure Local",
@@ -47,7 +47,7 @@
     "description": "Learn how to configure proxy settings for Azure Local, version 23H2.",
     "status": 404,
     "firstDetected": "2026-11-02",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Convert System Center Operations Manager management packs into data collection rules",
@@ -57,7 +57,7 @@
     "description": "This article explains how to convert a System Center Operations Manager management pack such as the Active directory or SQL management pack into data collection rules (DCR) in Azure Monitor.",
     "status": 404,
     "firstDetected": "2026-10-12",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "LLMOps workflows on Azure Databricks - Azure Databricks",
@@ -67,7 +67,7 @@
     "description": "Learn the recommended Databricks LLMOps workflow to optimize performance and efficiency of your machine learning production systems.",
     "status": 404,
     "firstDetected": "2026-10-12",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Configure a credential in Azure Device Registry",
@@ -77,7 +77,7 @@
     "description": "Configure a credential in your Azure Device Registry namespace to enable Microsoft-backed X.509 certificate management for IoT devices.",
     "status": 404,
     "firstDetected": "2026-10-12",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Revoke Certificates and Delete Policies in Azure Device Registry",
@@ -87,7 +87,7 @@
     "description": "Learn how to revoke device and policy certificates, and delete policies and credential resources in Azure Device Registry for IoT Hub.",
     "status": 404,
     "firstDetected": "2026-10-12",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -97,7 +97,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-16",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -107,7 +107,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-16",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -117,7 +117,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-16",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -127,7 +127,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-10-12",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Default dimensions",
@@ -137,7 +137,7 @@
     "description": "Learn how default dimension values are configured and applied, including fixed dimensions on main accounts, copying values from master records, and the order in which defaults are applied during posting.",
     "status": 404,
     "firstDetected": "2026-09-28",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "January 2023 Update for Microsoft Dynamics 365 Knowledge Management - Release Notes",
@@ -147,7 +147,7 @@
     "description": "January 2023 Update",
     "status": 404,
     "firstDetected": "2026-11-02",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Define cycle counting - Supply Chain Management | Dynamics 365",
@@ -157,7 +157,7 @@
     "description": "Learn about cycle counting, which is a warehouse process that you can use to audit on-hand inventory items, including a step-by-step process.",
     "status": 404,
     "firstDetected": "2026-10-12",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Name of article",
@@ -167,7 +167,7 @@
     "description": "Template for creating content",
     "status": 404,
     "firstDetected": "2026-11-02",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Maturity Model for Microsoft 365",
@@ -177,7 +177,7 @@
     "description": "Maturity Model for Microsoft 365",
     "status": 404,
     "firstDetected": "2026-11-02",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Manage active content in Office documents for IT admins",
@@ -187,7 +187,7 @@
     "description": "Admins can learn how to create policies to block active content in Office documents",
     "status": 404,
     "firstDetected": "2026-09-01",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -197,7 +197,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -207,7 +207,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -217,7 +217,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -227,7 +227,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -237,7 +237,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -247,7 +247,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -257,7 +257,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -267,7 +267,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -277,7 +277,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -287,7 +287,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -297,7 +297,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -307,7 +307,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": null,
@@ -317,7 +317,7 @@
     "description": null,
     "status": 404,
     "firstDetected": "2026-11-23",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   },
   {
     "title": "Troubleshoot cluster-level FIPS errors in AKS (preview) - Azure",
@@ -327,16 +327,6 @@
     "description": "Resolve errors when you enable or use cluster-level FIPS on an AKS cluster. Learn how to diagnose each cause and apply the fix to restore compliance.",
     "status": 404,
     "firstDetected": "2026-11-17",
-    "lastChecked": "2026-11-23"
-  },
-  {
-    "title": "Collect a Performance Trace in New Outlook for Windows",
-    "url": "https://learn.microsoft.com/troubleshoot/outlook/performance/collect-performance-trace",
-    "product": null,
-    "subproduct": null,
-    "description": "Provides guidance to collect performance and network traces in new Outlook for Windows.",
-    "status": 404,
-    "firstDetected": "2026-09-28",
-    "lastChecked": "2026-11-23"
+    "lastChecked": "2026-11-26"
   }
 ]

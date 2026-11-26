@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T19:08:58.742Z",
+  "generatedAt": "2026-11-26T19:33:28.674Z",
   "sources": {
     "learn": "2026-11-26T19:08:58.742Z",
-    "docs": "2026-11-23T19:53:02.360Z"
+    "docs": "2026-11-26T19:33:28.674Z"
   },
   "entries": [
     {
@@ -327,7 +327,7 @@
       "title": "Enable Federal Information Processing Standard (FIPS) for Azure Kubernetes Service (AKS) clusters (preview) - Azure Kubernetes Service",
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -340,7 +340,7 @@
       "title": "Configure private networking for AI Gateway tier (preview)",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -353,7 +353,7 @@
       "title": "Get started with the AI Gateway tier (preview) setup wizard",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -366,7 +366,7 @@
       "title": "Quickstart: Create an AI Gateway tier (preview) instance",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -418,7 +418,7 @@
       "title": "Configure proxy settings for Azure Local, version 23H2 - Azure Local",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -431,7 +431,7 @@
       "title": "Convert System Center Operations Manager management packs into data collection rules",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -639,7 +639,7 @@
       "title": "LLMOps workflows on Azure Databricks - Azure Databricks",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -678,7 +678,7 @@
       "title": "Configure a credential in Azure Device Registry",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -691,7 +691,7 @@
       "title": "Revoke Certificates and Delete Policies in Azure Device Registry",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1080,8 +1080,8 @@
       "to": "/previous-versions/azure/partner-solutions/arize-ai",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1093,8 +1093,8 @@
       "to": "/previous-versions/azure/partner-solutions/arize-ai/faq",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1184,8 +1184,8 @@
       "to": "/previous-versions/azure/partner-solutions/lambda-test",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1197,8 +1197,21 @@
       "to": "/previous-versions/azure/partner-solutions/lambda-test/faq",
       "title": null,
       "parent": null,
-      "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/azure/storage/elastic-san/next-generation-index",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/azure/storage/elastic-san",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
       "evidence": "docs-redirect",
       "status": 301
     },
@@ -1211,7 +1224,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-16",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1224,7 +1237,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-16",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1237,7 +1250,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-16",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1250,7 +1263,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -1276,7 +1289,7 @@
       "title": "Default dimensions",
       "parent": null,
       "firstSeen": "2026-09-28",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -22713,7 +22726,7 @@
       "title": "January 2023 Update for Microsoft Dynamics 365 Knowledge Management - Release Notes",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -22726,7 +22739,7 @@
       "title": "Define cycle counting - Supply Chain Management | Dynamics 365",
       "parent": null,
       "firstSeen": "2026-10-12",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -22765,7 +22778,7 @@
       "title": "Name of article",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -22778,7 +22791,7 @@
       "title": "Maturity Model for Microsoft 365",
       "parent": null,
       "firstSeen": "2026-11-02",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -22796,6 +22809,201 @@
       "status": 301
     },
     {
+      "path": "/microsoft-365/lti/onedrive-lti",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/onedrive-lti-blackboard",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/onedrive-lti-brightspace",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/onedrive-lti-schoology",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/reflect-lti-blackboard",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/reflect-lti-brightspace",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/reflect-lti-canvas",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/reflect-lti-moodle",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/reflect-lti-schoology",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/teams-assignments-with-blackboard",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/teams-assignments-with-brightspace",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/teams-assignments-with-canvas",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/teams-assignments-with-moodle",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/teams-assignments-with-other-lms",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
+      "path": "/microsoft-365/lti/teams-assignments-with-schoology",
+      "kind": "docs",
+      "family": "docs",
+      "outcome": "landing",
+      "to": "/microsoft-365/lti",
+      "title": null,
+      "parent": null,
+      "firstSeen": "2026-11-26",
+      "lastVerified": "2026-11-26",
+      "evidence": "docs-redirect",
+      "status": 301
+    },
+    {
       "path": "/microsoft-365/security/active-content-in-trusted-docs",
       "kind": "docs",
       "family": "docs",
@@ -22804,7 +23012,7 @@
       "title": "Manage active content in Office documents for IT admins",
       "parent": null,
       "firstSeen": "2026-09-01",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -22947,7 +23155,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -22960,7 +23168,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -22973,7 +23181,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -22986,7 +23194,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -22999,7 +23207,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -23012,7 +23220,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -23025,7 +23233,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -23038,7 +23246,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -23051,7 +23259,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -23064,7 +23272,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -23077,7 +23285,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -23090,7 +23298,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -23103,7 +23311,7 @@
       "title": null,
       "parent": null,
       "firstSeen": "2026-11-23",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -32151,7 +32359,7 @@
       "title": "Troubleshoot cluster-level FIPS errors in AKS (preview) - Azure",
       "parent": null,
       "firstSeen": "2026-11-17",
-      "lastVerified": "2026-11-23",
+      "lastVerified": "2026-11-26",
       "evidence": "quarantine",
       "status": 404
     },
@@ -32349,19 +32557,6 @@
       "lastVerified": "2026-10-19",
       "evidence": "docs-redirect",
       "status": 301
-    },
-    {
-      "path": "/troubleshoot/outlook/performance/collect-performance-trace",
-      "kind": "docs",
-      "family": "docs",
-      "outcome": "gone",
-      "to": null,
-      "title": "Collect a Performance Trace in New Outlook for Windows",
-      "parent": null,
-      "firstSeen": "2026-09-28",
-      "lastVerified": "2026-11-23",
-      "evidence": "quarantine",
-      "status": 404
     },
     {
       "path": "/troubleshoot/sharepoint/administration/antivirus-and-intermittent-issues",
