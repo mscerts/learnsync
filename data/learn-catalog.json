@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "lastChecked": "2026-11-23T19:13:07.902Z",
+  "lastChecked": "2026-11-26T19:07:57.864Z",
   "sourceApi": "https://learn.microsoft.com/api/catalog/?type=modules,units,products,subjects",
   "categoryFilter": [
     "azure",
@@ -54,8 +54,8 @@
     "windows-server",
     "office-word"
   ],
-  "totalModules": 3414,
-  "totalApiModules": 3484,
+  "totalModules": 3432,
+  "totalApiModules": 3504,
   "unitUrlsRefreshedAt": "2026-11-09",
   "modules": [
     {
@@ -479,8 +479,8 @@
         "/training/modules/agent-365-monitor-manage/check",
         "/training/modules/agent-365-monitor-manage/summary"
       ],
-      "lastModified": "2026-10-27T17:09:00+00:00",
-      "unitSig": "84166df3bc987aa086f657016207b647f893ade0"
+      "lastModified": "2026-11-26T00:17:00+00:00",
+      "unitSig": "6e2182efc4c4cab09e1166e77c9f3cf4bbb3bb70"
     },
     {
       "uid": "learn-bizapps.agents-copilot-chat",
@@ -867,6 +867,43 @@
       ],
       "lastModified": "2026-10-27T17:09:00+00:00",
       "unitSig": "f4d597779ee54badeb099a6cacc41c9a57261c9c"
+    },
+    {
+      "uid": "learn-bizapps.approvals-and-invoice",
+      "title": "Create approvals and invoices: Automation in a Day",
+      "url": "https://learn.microsoft.com/training/modules/approvals-and-invoice/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/approvals-and-invoice",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Automate"
+      ],
+      "subjects": [
+        "Process and workflow",
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Build the approval process",
+        "Create the invoice",
+        "Organize the flow into a solution",
+        "Publish and test",
+        "Check your knowledge",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/approvals-and-invoice/introduction",
+        "/training/modules/approvals-and-invoice/build-approval-process",
+        "/training/modules/approvals-and-invoice/create-invoice",
+        "/training/modules/approvals-and-invoice/organize-flow-into-solution",
+        "/training/modules/approvals-and-invoice/publish-and-test",
+        "/training/modules/approvals-and-invoice/check",
+        "/training/modules/approvals-and-invoice/summary"
+      ],
+      "lastModified": "2026-11-24T00:08:00+00:00",
+      "unitSig": "a002a40707f4e354c0982e7ebe60fe8352375fe0"
     },
     {
       "uid": "learn-bizapps.approvals-kit-workshop",
@@ -2150,6 +2187,45 @@
       "unitSig": "f294fe4550ce3bf24e3f0940830d51aad03aa9d3"
     },
     {
+      "uid": "learn-bizapps.classification-and-review",
+      "title": "Classify returns and add human review: Automation in a Day",
+      "url": "https://learn.microsoft.com/training/modules/classification-and-review/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/classification-and-review",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Automate"
+      ],
+      "subjects": [
+        "Process and workflow",
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Classify the shipping fee",
+        "Generate messages and add human review",
+        "Capture the outcome and complete the response",
+        "Publish and test the workflow",
+        "Use the workflow in an agent",
+        "Check your knowledge",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/classification-and-review/introduction",
+        "/training/modules/classification-and-review/classify-shipping-fee",
+        "/training/modules/classification-and-review/generate-messages-add-human-review",
+        "/training/modules/classification-and-review/capture-outcome-complete-response",
+        "/training/modules/classification-and-review/publish-test-workflow",
+        "/training/modules/classification-and-review/use-workflow-in-agent",
+        "/training/modules/classification-and-review/check",
+        "/training/modules/classification-and-review/summary"
+      ],
+      "lastModified": "2026-11-24T00:08:00+00:00",
+      "unitSig": "8e4600beb44d068a6694fe98e2e24598f530996f"
+    },
+    {
       "uid": "learn-bizapps.clean-data-power-bi",
       "title": "Clean, transform, and load data in Power BI",
       "url": "https://learn.microsoft.com/training/modules/clean-data-power-bi/?WT.mc_id=studentamb_165290",
@@ -2857,6 +2933,41 @@
       "unitSig": "66fa051aced622a7925f126fc8b45901679e38a3"
     },
     {
+      "uid": "learn-bizapps.create-cloud-flow",
+      "title": "Create a cloud flow: Automation in a Day",
+      "url": "https://learn.microsoft.com/training/modules/create-cloud-flow/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/create-cloud-flow",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Automate"
+      ],
+      "subjects": [
+        "Process and workflow",
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Create the flow and configure the trigger",
+        "Read Order Details",
+        "Calculate the order value",
+        "Check your knowledge",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/create-cloud-flow/introduction",
+        "/training/modules/create-cloud-flow/create-flow-configure-trigger",
+        "/training/modules/create-cloud-flow/read-order-details",
+        "/training/modules/create-cloud-flow/calculate-order-value",
+        "/training/modules/create-cloud-flow/check",
+        "/training/modules/create-cloud-flow/summary"
+      ],
+      "lastModified": "2026-11-24T00:08:00+00:00",
+      "unitSig": "08b0b75de3140b3a2cd38bbcf7e7a114ec285129"
+    },
+    {
       "uid": "learn-bizapps.create-copilot-podcast",
       "title": "Create a copilot to help promote your podcast",
       "url": "https://learn.microsoft.com/training/modules/create-copilot-podcast/?WT.mc_id=studentamb_165290",
@@ -3190,6 +3301,43 @@
       ],
       "lastModified": "2026-10-27T17:09:00+00:00",
       "unitSig": "dd00967837708593a5c4e0db344a4f5429b954ae"
+    },
+    {
+      "uid": "learn-bizapps.create-workflows",
+      "title": "Create workflows in Copilot Studio: Automation in a Day",
+      "url": "https://learn.microsoft.com/training/modules/create-workflows/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/create-workflows",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Automate"
+      ],
+      "subjects": [
+        "Process and workflow",
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Create the workflow",
+        "Read the order data",
+        "Branch on the return-eligibility rule",
+        "Draft and return the not-eligible message",
+        "Check your knowledge",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/create-workflows/introduction",
+        "/training/modules/create-workflows/create-workflow",
+        "/training/modules/create-workflows/read-order-data",
+        "/training/modules/create-workflows/branch-on-return-eligibility-rule",
+        "/training/modules/create-workflows/draft-return-not-eligible-message",
+        "/training/modules/create-workflows/check",
+        "/training/modules/create-workflows/summary"
+      ],
+      "lastModified": "2026-11-24T00:08:00+00:00",
+      "unitSig": "f8b3937bc674653705bd56507cabc4f451a5f876"
     },
     {
       "uid": "learn-bizapps.creating-and-designing-knowledge-management-solutions",
@@ -7689,6 +7837,41 @@
       ],
       "lastModified": "2026-10-27T17:09:00+00:00",
       "unitSig": "40c4b2f4a87874d086d52f3e8be2fa992e581b0a"
+    },
+    {
+      "uid": "learn-bizapps.install-required-software",
+      "title": "Install required software: Automation in a day",
+      "url": "https://learn.microsoft.com/training/modules/install-required-software/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/install-required-software",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Automate"
+      ],
+      "subjects": [
+        "Process and workflow",
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Get Power Apps Developer Plan",
+        "Install the Power Automate for desktop application",
+        "Register your machine",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/install-required-software/introduction",
+        "/training/modules/install-required-software/developer-plan",
+        "/training/modules/install-required-software/install-power-automate",
+        "/training/modules/install-required-software/register-machine",
+        "/training/modules/install-required-software/check",
+        "/training/modules/install-required-software/summary"
+      ],
+      "lastModified": "2026-11-24T00:08:00+00:00",
+      "unitSig": "818d9c031f4f73356a70fe0f33e4ce451db88b43"
     },
     {
       "uid": "learn-bizapps.install-required-software-online-workshop",
@@ -12855,6 +13038,49 @@
       "unitSig": "3d8eb30ee4e6f1a2397a0b0a9ce835856234883d"
     },
     {
+      "uid": "learn-bizapps.robotic-process-automation-new",
+      "title": "Create desktop automation: Automation in a day",
+      "url": "https://learn.microsoft.com/training/modules/robotic-process-automation-new/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/robotic-process-automation-new",
+      "categories": [
+        "Microsoft Power Platform"
+      ],
+      "products": [
+        "Microsoft Power Platform",
+        "Power Automate"
+      ],
+      "subjects": [
+        "Process and workflow",
+        "automation"
+      ],
+      "units": [
+        "Introduction",
+        "Prepare the sample order file",
+        "Create the desktop flow",
+        "Create the order without a status",
+        "Create the line items",
+        "Submit the order for approval",
+        "Verify the result",
+        "Launch with a keyboard shortcut",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/robotic-process-automation-new/introduction",
+        "/training/modules/robotic-process-automation-new/prepare-sample-order-file",
+        "/training/modules/robotic-process-automation-new/create-desktop-flow",
+        "/training/modules/robotic-process-automation-new/create-order-without-status",
+        "/training/modules/robotic-process-automation-new/create-line-items",
+        "/training/modules/robotic-process-automation-new/submit-order-for-approval",
+        "/training/modules/robotic-process-automation-new/verify-result",
+        "/training/modules/robotic-process-automation-new/launch-with-keyboard-shortcut",
+        "/training/modules/robotic-process-automation-new/check",
+        "/training/modules/robotic-process-automation-new/summary"
+      ],
+      "lastModified": "2026-11-24T00:08:00+00:00",
+      "unitSig": "2c8f99a7f56442154e3e5802cc428674446782b5"
+    },
+    {
       "uid": "learn-bizapps.row-level-security-power-bi",
       "title": "Secure data access in Power BI",
       "url": "https://learn.microsoft.com/training/modules/row-level-security-power-bi/?WT.mc_id=studentamb_165290",
@@ -16094,8 +16320,8 @@
         "/training/modules/alternative-interfaces-dynamics-365-business-central/5-check",
         "/training/modules/alternative-interfaces-dynamics-365-business-central/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "040d4dfceb448f0e84ce05543d8d1f85c2a8ed70"
+      "lastModified": "2026-11-24T17:11:00+00:00",
+      "unitSig": "6af854f588615680b2c9a79a609521737197f515"
     },
     {
       "uid": "learn-dynamics.analysis-solution-intelligent-order-management",
@@ -16505,6 +16731,7 @@
         "Modify the scope of a variable",
         "Analyze and optimize concurrency",
         "Apply parallel processing algorithms",
+        "Optimize and validate batch processing",
         "Implement the Async framework",
         "Develop Windows PowerShell scripts",
         "Exercise - Create runnable classes in Visual Studio to test code",
@@ -16521,14 +16748,15 @@
         "/training/modules/apply-basic-performance-optimization-finance-operations/6-variable-scope",
         "/training/modules/apply-basic-performance-optimization-finance-operations/7-concurrency",
         "/training/modules/apply-basic-performance-optimization-finance-operations/8-algorithms",
+        "/training/modules/apply-basic-performance-optimization-finance-operations/optimize-validate-batch-processing",
         "/training/modules/apply-basic-performance-optimization-finance-operations/9-async",
         "/training/modules/apply-basic-performance-optimization-finance-operations/9-1-power-shell",
         "/training/modules/apply-basic-performance-optimization-finance-operations/10-exercise",
         "/training/modules/apply-basic-performance-optimization-finance-operations/11-check",
         "/training/modules/apply-basic-performance-optimization-finance-operations/12-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "d3030030f06e292c6debe5700dc566f08d47b25c"
+      "lastModified": "2026-11-24T23:07:00+00:00",
+      "unitSig": "680fd10f9df5cdec6ebc88aa0e5033a5c37403c2"
     },
     {
       "uid": "learn-dynamics.assemble-projects",
@@ -17224,8 +17452,8 @@
         "/training/modules/build-forms-optimize-finance-operations/10-check",
         "/training/modules/build-forms-optimize-finance-operations/11-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "53ca691b68ebd8e1236025ea775db2183b887335"
+      "lastModified": "2026-11-25T17:10:00+00:00",
+      "unitSig": "274a7ba742895df4a41b89542b188991cf9ce7b2"
     },
     {
       "uid": "learn-dynamics.build-journeys-marketing",
@@ -17352,8 +17580,8 @@
         "/training/modules/build-reports-finance-operations/05-check",
         "/training/modules/build-reports-finance-operations/06-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "72057ff9e80bc49086b1f4b3572171d6f654e8fd"
+      "lastModified": "2026-11-25T17:10:00+00:00",
+      "unitSig": "7995ed7cf4af62f194cd71998b4d2d5f00d1f007"
     },
     {
       "uid": "learn-dynamics.build-tables-dynamics-365-finance-operations",
@@ -20395,6 +20623,7 @@
         "Triggers and actions used in Power Automate for finance and operations apps",
         "Connect to your finance and operations apps data with Power Apps",
         "Finance and operations data on Common Data Model and Microsoft Dataverse",
+        "Integrate Microsoft Dataverse with finance and operations apps by using dual-write",
         "Module assessment",
         "Summary"
       ],
@@ -20403,11 +20632,12 @@
         "/training/modules/connect-power-platform-finance-operations/triggers-actions",
         "/training/modules/connect-power-platform-finance-operations/2-power-apps",
         "/training/modules/connect-power-platform-finance-operations/2-2-common-data-model",
+        "/training/modules/connect-power-platform-finance-operations/dual-write",
         "/training/modules/connect-power-platform-finance-operations/3-check",
         "/training/modules/connect-power-platform-finance-operations/4-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "8bd0bc26500f78acb24318345d4f236f5b14f451"
+      "lastModified": "2026-11-25T23:11:00+00:00",
+      "unitSig": "8aee3f90aba67a61269ddf2b319a9b8692ffb1b6"
     },
     {
       "uid": "learn-dynamics.control-inventory-multiple-locations",
@@ -22051,46 +22281,6 @@
       "unitSig": "3c3fa338f72617048488e907246c49325b5947e4"
     },
     {
-      "uid": "learn-dynamics.create-workflows",
-      "title": "Create workflows in Dynamics 365 Business Central",
-      "url": "https://learn.microsoft.com/training/modules/create-workflows/?WT.mc_id=studentamb_165290",
-      "path": "/training/modules/create-workflows",
-      "categories": [
-        "Dynamics 365"
-      ],
-      "products": [
-        "Business Central",
-        "Dynamics 365"
-      ],
-      "subjects": [
-        "Process and workflow"
-      ],
-      "units": [
-        "Introduction",
-        "Create a workflow manually",
-        "Create a workflow from workflow templates",
-        "Create a Power Automate flow",
-        "Set up users",
-        "Set up notifications",
-        "Set up approval workflows by using Assisted Setup",
-        "Module assessment",
-        "Summary"
-      ],
-      "unitUrls": [
-        "/training/modules/create-workflows/1-introduction",
-        "/training/modules/create-workflows/2-manual-creation",
-        "/training/modules/create-workflows/3-templates",
-        "/training/modules/create-workflows/create-flow",
-        "/training/modules/create-workflows/4-user-setup",
-        "/training/modules/create-workflows/5-notifications",
-        "/training/modules/create-workflows/6-assisted-setup",
-        "/training/modules/create-workflows/7-check",
-        "/training/modules/create-workflows/8-summary"
-      ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "712ec659446e50a8e904f6a4c3a39d219558640d"
-    },
-    {
       "uid": "learn-dynamics.cross-dock-items",
       "title": "Cross dock items in Dynamics 365 Business Central",
       "url": "https://learn.microsoft.com/training/modules/cross-dock-items/?WT.mc_id=studentamb_165290",
@@ -22270,8 +22460,8 @@
         "/training/modules/customer-discounts-dynamics-365-business-central/6-check",
         "/training/modules/customer-discounts-dynamics-365-business-central/7-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "be7bdf844b8a7deb678e018d961e551893e84ff8"
+      "lastModified": "2026-11-24T17:11:00+00:00",
+      "unitSig": "9f38aaec54ade97ddc6b4e38178844ef5c654bba"
     },
     {
       "uid": "learn-dynamics.customer-engagement-channels-overview",
@@ -22504,8 +22694,8 @@
         "/training/modules/customize-visual-studio-finance-operations/8-check",
         "/training/modules/customize-visual-studio-finance-operations/9-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "2c0004d4cdc056aee598b6ccc1f9f2c58c0815df"
+      "lastModified": "2026-11-24T23:07:00+00:00",
+      "unitSig": "80aeff4c85917d606652c333a50a756b6bdadc17"
     },
     {
       "uid": "learn-dynamics.data-enrichment",
@@ -23053,8 +23243,8 @@
         "/training/modules/design-data-model-report/5-check",
         "/training/modules/design-data-model-report/6-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "288b80c94057a608a5a178eb381c9261ac0f7750"
+      "lastModified": "2026-11-24T17:11:00+00:00",
+      "unitSig": "10f9f526cb03be501bd50e353c089d714f15b1df"
     },
     {
       "uid": "learn-dynamics.design-deployment-dynamics-365-finance-operations",
@@ -23094,8 +23284,8 @@
         "/training/modules/design-deployment-finance-operations/9-check",
         "/training/modules/design-deployment-finance-operations/10-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "2a57bfd65bd8b34dea89481302d555f02369573e"
+      "lastModified": "2026-11-24T17:11:00+00:00",
+      "unitSig": "41d4813f2a7e4bb6c205dd7180d50311b6e4534b"
     },
     {
       "uid": "learn-dynamics.design-dynamics-365-deployment",
@@ -23277,8 +23467,8 @@
         "/training/modules/develop-object-oriented-code-finance-operations/8-check",
         "/training/modules/develop-object-oriented-code-finance-operations/9-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "65e62cd201fc8b9f60e33ac9aa15152aa5dd734f"
+      "lastModified": "2026-11-25T17:10:00+00:00",
+      "unitSig": "4d1c27ba88ec782dbc2668c8732b58c5c724e0b4"
     },
     {
       "uid": "learn-dynamics.develop-role-center",
@@ -23965,8 +24155,8 @@
         "/training/modules/enter-payments-dynamics-365-business-central/8-check",
         "/training/modules/enter-payments-dynamics-365-business-central/9-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "234d57708672d927229a77d97b5730243d24afb8"
+      "lastModified": "2026-11-24T17:11:00+00:00",
+      "unitSig": "e4d8d7daef02a619b608e54de0314686ce58b1ab"
     },
     {
       "uid": "learn-dynamics.entity-record-routing",
@@ -24238,7 +24428,7 @@
         "/training/modules/explore-ecosystem-main-components-finance-operations/7-summary"
       ],
       "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "dd14c13afc0fbfac8bf3c84ca0daa03b548822e4"
+      "unitSig": "2d4b8bc45c6fe20d0cd8b51c20e8a156c508c5d3"
     },
     {
       "uid": "learn-dynamics.explore-extensions-framework-dynamics-365-finance-operations",
@@ -24473,7 +24663,7 @@
         "/training/modules/explore-technical-architecture-finance-operations/8-summary"
       ],
       "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "0043177801d8ded96a23eb5b406974605de13af6"
+      "unitSig": "40c3a6b73e10bb3da16814325adb7d706ddfce1d"
     },
     {
       "uid": "learn-dynamics.explore-test-framework-tools-dynamics-365-finance-operations",
@@ -24496,7 +24686,7 @@
         "Unit test framework",
         "Acceptance test library",
         "Task recorder",
-        "Best Practices tool",
+        "Best practices tool",
         "Identify various categories and types of errors",
         "Configure the testing environment and prepare data",
         "Run unit tests",
@@ -24519,8 +24709,8 @@
         "/training/modules/explore-test-framework-tools-finance-operations/10-check",
         "/training/modules/explore-test-framework-tools-finance-operations/11-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "548c65abd0fd4598cd38e11b2fb47b790d11dc53"
+      "lastModified": "2026-11-24T23:07:00+00:00",
+      "unitSig": "baea2a214f4851f3d29cb7d1e8e65d0096ac97e1"
     },
     {
       "uid": "learn-dynamics.extend-apis-project-operations",
@@ -27174,8 +27364,8 @@
         "/training/modules/get-started-warehouse-management/8-check",
         "/training/modules/get-started-warehouse-management/9-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "a33d14cf159d3ce6acf28ff873fe178d59c823a9"
+      "lastModified": "2026-11-24T17:11:00+00:00",
+      "unitSig": "ba50c15c98522b5f24ea3acba33f42dc98f2f03b"
     },
     {
       "uid": "learn-dynamics.get-started-warehouse-management-only-mode",
@@ -27421,8 +27611,8 @@
         "Common structured programming constructs of X++",
         "Collection classes",
         "Use X++ to write SQL statements",
-        "Use conditional and iterative statements",
         "Exception handling",
+        "Use conditional and iterative statements",
         "Use const values",
         "Implement global functions in X++",
         "Use X++ runtime functions for common tasks",
@@ -27436,8 +27626,8 @@
         "/training/modules/get-started-xpp-finance-operations/3-constructs",
         "/training/modules/get-started-xpp-finance-operations/collection-classes",
         "/training/modules/get-started-xpp-finance-operations/4-sql",
-        "/training/modules/get-started-xpp-finance-operations/5-cond-statement",
         "/training/modules/get-started-xpp-finance-operations/6-exceptions",
+        "/training/modules/get-started-xpp-finance-operations/5-cond-statement",
         "/training/modules/get-started-xpp-finance-operations/7-const-values",
         "/training/modules/get-started-xpp-finance-operations/global-functions-xpp",
         "/training/modules/get-started-xpp-finance-operations/8-runtime",
@@ -27445,8 +27635,8 @@
         "/training/modules/get-started-xpp-finance-operations/10-check",
         "/training/modules/get-started-xpp-finance-operations/11-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "41ebae0cd0983ef7d40dcfac83c830892286540e"
+      "lastModified": "2026-11-25T17:10:00+00:00",
+      "unitSig": "20156efe610b622c45cc5224666fa6e5bf327c95"
     },
     {
       "uid": "learn-dynamics.getting-started-omnichannel",
@@ -29653,6 +29843,8 @@
         "Provision and manage environments",
         "Manage asset libraries",
         "Manage the code update process",
+        "Research and resolve issues by using issue search",
+        "Perform activities that require asset libraries",
         "Module assessment",
         "Summary"
       ],
@@ -29662,11 +29854,13 @@
         "/training/modules/manage-lifecycle-services-finance-operations/03-environments",
         "/training/modules/manage-lifecycle-services-finance-operations/04-asset-library",
         "/training/modules/manage-lifecycle-services-finance-operations/05-upgrade",
+        "/training/modules/manage-lifecycle-services-finance-operations/issue-search",
+        "/training/modules/manage-lifecycle-services-finance-operations/asset-library-activities",
         "/training/modules/manage-lifecycle-services-finance-operations/06-check",
         "/training/modules/manage-lifecycle-services-finance-operations/07-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "7d16caaf28a1fc123d297aa8afd17fe010175279"
+      "lastModified": "2026-11-24T23:07:00+00:00",
+      "unitSig": "b4ab0a95538dbae0b751521a9cd27eadd1a9ccf5"
     },
     {
       "uid": "learn-dynamics.manage-maintenance-requests",
@@ -30085,8 +30279,8 @@
         "/training/modules/manage-source-code-version-control-finance-operations/05-check",
         "/training/modules/manage-source-code-version-control-finance-operations/06-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "57e7bd0842387594e267834787cf211c122184a0"
+      "lastModified": "2026-11-24T23:07:00+00:00",
+      "unitSig": "2168aea03a1ef12d77c6b3c8b289eda29eb31821"
     },
     {
       "uid": "learn-dynamics.manage-vendor-returns-dynamics-365-business-central",
@@ -30663,8 +30857,8 @@
         "/training/modules/netting-customer-vendor/check",
         "/training/modules/netting-customer-vendor/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "d03de66abacf627224ff3ced8aa8e33b51f9108e"
+      "lastModified": "2026-11-24T17:11:00+00:00",
+      "unitSig": "1f2825a56c9b9438bc59e76b2b3b45abf2bba118"
     },
     {
       "uid": "learn-dynamics.number-series-trail-codes-dynamics-365-business-central",
@@ -31562,8 +31756,8 @@
         "/training/modules/prepare-go-live-finance-operations/7-quiz",
         "/training/modules/prepare-go-live-finance-operations/8-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "c1fb200383fd605b2d573377bcbd0fd81b220035"
+      "lastModified": "2026-11-25T17:10:00+00:00",
+      "unitSig": "dd56740a6f513d14a89b0d5bf59debe34bc46031"
     },
     {
       "uid": "learn-dynamics.prepare-item-tracking",
@@ -38444,8 +38638,8 @@
         "/training/modules/work-asset-leasing-finance/18-check",
         "/training/modules/work-asset-leasing-finance/19-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "b91f38ae18334d08ecf8c78ab4d4372048b2968d"
+      "lastModified": "2026-11-24T17:11:00+00:00",
+      "unitSig": "f5ed37dcaea9c4db604839d8588d673a3184487d"
     },
     {
       "uid": "learn-dynamics.work-azure-boards",
@@ -39121,8 +39315,8 @@
         "/training/modules/work-taxes-finance/check",
         "/training/modules/work-taxes-finance/summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "eeaa40cff65329a5b485a92f29aa15997b0974b8"
+      "lastModified": "2026-11-24T17:11:00+00:00",
+      "unitSig": "1ef5ba9ecb04dd44c1798449301e4ab71e2f0bfd"
     },
     {
       "uid": "learn-dynamics.work-travel-requisitions",
@@ -39814,8 +40008,8 @@
         "/training/modules/work-with-pages/13-check",
         "/training/modules/work-with-pages/14-summary"
       ],
-      "lastModified": "2026-10-27T17:07:00+00:00",
-      "unitSig": "3e304d3fdc0f5fb55a26ed18d031cc32a4a89a9b"
+      "lastModified": "2026-11-24T17:11:00+00:00",
+      "unitSig": "7db2b9aa12cc1b17f0b161a02be19271a26bd85a"
     },
     {
       "uid": "learn-dynamics.work-with-queries",
@@ -55371,6 +55565,90 @@
       "unitSig": "eecc1dd15f5c95a07672cf026222ba219825bec0"
     },
     {
+      "uid": "learn.devrel.azure-virtual-machine-image-lifecycle",
+      "title": "Manage Azure virtual machine image lifecycle",
+      "url": "https://learn.microsoft.com/training/modules/azure-virtual-machine-image-lifecycle/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-virtual-machine-image-lifecycle",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Virtual Machines"
+      ],
+      "subjects": [
+        "Infrastructure"
+      ],
+      "units": [
+        "Introduction",
+        "Image release readiness",
+        "Image lifecycle permissions",
+        "Image deployment and verification",
+        "Image maintenance and rollback",
+        "Image withdrawal and recovery",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-virtual-machine-image-lifecycle/1-introduction",
+        "/training/modules/azure-virtual-machine-image-lifecycle/2-image-release-readiness",
+        "/training/modules/azure-virtual-machine-image-lifecycle/3-image-lifecycle-permissions",
+        "/training/modules/azure-virtual-machine-image-lifecycle/4-image-deployment-verification",
+        "/training/modules/azure-virtual-machine-image-lifecycle/5-image-maintenance-rollback",
+        "/training/modules/azure-virtual-machine-image-lifecycle/6-image-withdrawal-recovery",
+        "/training/modules/azure-virtual-machine-image-lifecycle/7-knowledge-check",
+        "/training/modules/azure-virtual-machine-image-lifecycle/8-summary"
+      ],
+      "lastModified": "2026-11-25T23:12:00+00:00",
+      "unitSig": "3182640885c6b2a7e4e2888de322dde180eb224d"
+    },
+    {
+      "uid": "learn.devrel.azure-virtual-machine-incident-diagnosis",
+      "title": "Diagnose incidents on Azure virtual machines",
+      "url": "https://learn.microsoft.com/training/modules/azure-virtual-machine-incident-diagnosis/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/azure-virtual-machine-incident-diagnosis",
+      "categories": [
+        "Azure"
+      ],
+      "products": [
+        "Monitor",
+        "Virtual Machines"
+      ],
+      "subjects": [
+        "IT management and monitoring",
+        "Infrastructure"
+      ],
+      "units": [
+        "Introduction",
+        "Configure Azure Monitor to collect Windows and Linux VM logs",
+        "Identify affected orders and build a UTC incident timeline",
+        "Cross-check Azure platform signals against guest logs and workload results",
+        "Trace a guest log event from the VM to Log Analytics",
+        "Correlate worker events, agent heartbeats, and rule changes with KQL",
+        "Check the worker service and local logs inside each VM",
+        "Decide whether to start the worker, fix the log filter, or change the query scope",
+        "Confirm alert delivery and document the incident handoff",
+        "Troubleshoot missing logs and notifications, then remove temporary resources",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/azure-virtual-machine-incident-diagnosis/1-introduction",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/2-configure-guest-log-collection",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/3-build-incident-timeline",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/4-compare-platform-workload-evidence",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/5-trace-guest-events",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/6-correlate-incident-records",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/7-inspect-worker-services",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/8-select-incident-repair",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/9-confirm-alert-delivery",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/10-troubleshoot-telemetry-gaps",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/11-knowledge-check",
+        "/training/modules/azure-virtual-machine-incident-diagnosis/12-summary"
+      ],
+      "lastModified": "2026-11-25T23:12:00+00:00",
+      "unitSig": "dfac38b7ee39832947969be223340c4a1ab44327"
+    },
+    {
       "uid": "learn.devrel.certificate-autoenrollment",
       "title": "Certificate enrollment and renewal",
       "url": "https://learn.microsoft.com/training/modules/certificate-autoenrollment/?WT.mc_id=studentamb_165290",
@@ -61310,7 +61588,7 @@
         "/training/modules/introduction-copilot-python/7-summary"
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "1a4787d2d379301278133ba101f6a466d754bf62"
+      "unitSig": "4fc1f8871a007764e7aeb4219d66089f597f9dab"
     },
     {
       "uid": "learn.github.ado-github-migrations-four",
@@ -61560,7 +61838,7 @@
         "What GitHub Copilot adds to the review process",
         "Using Copilot as a reviewer in GitHub.com",
         "Catching issues early and automating reviews with Copilot",
-        "Measuring impact and optimizing premium request units (PRUs)",
+        "Measuring impact and optimizing usage of AI credits",
         "Exercise - GitHub Copilot code review",
         "Module assessment",
         "Summary"
@@ -61575,8 +61853,8 @@
         "/training/modules/code-reviews-pull-requests-github-copilot/knowledge-check",
         "/training/modules/code-reviews-pull-requests-github-copilot/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "77bc2f5dc1efe0b67c639f080bf58923277e5d98"
+      "lastModified": "2026-11-24T18:21:00+00:00",
+      "unitSig": "0bd1647b1531f6e9814a9112d2fa56ac2ba73ad1"
     },
     {
       "uid": "learn.github.code-with-github-codespaces",
@@ -62172,7 +62450,7 @@
         "/training/modules/github-copilot-across-environments/7-summary"
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "ec77d9a7d5d7fb3d201f6555d365d4dd11d0598a"
+      "unitSig": "0ca44d06564745e76b0576e24d9fa4070bc9a5e4"
     },
     {
       "uid": "learn.github.github-copilot-agent-mode",
@@ -62621,7 +62899,7 @@
         "/training/modules/introduction-to-github-copilot/7-summary"
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "efeb2773a10a013a629d1b2d357687d8161e26d6"
+      "unitSig": "face3731394c8518a42b01cd08142d2f41dde8cc"
     },
     {
       "uid": "learn.github.introduction-to-github-copilot-for-business",
@@ -64985,7 +65263,7 @@
       "subjects": [],
       "units": [
         "Deployment agent",
-        "Migration agent",
+        "Azure Catalyst agent",
         "Observability agent",
         "Optimization agent",
         "Resiliency agent",
@@ -65003,8 +65281,8 @@
         "/training/modules/introduction-azure-copilot-agents/7-knowledge-check",
         "/training/modules/introduction-azure-copilot-agents/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "4e9e767e6a31d39fa04119d66613e77ae942fea8"
+      "lastModified": "2026-11-26T08:12:00+00:00",
+      "unitSig": "1cd1ef2098aede434d92c8efdf1e11a4dbd23842"
     },
     {
       "uid": "learn.introduction-generative-ai-center-excellence",
@@ -67521,7 +67799,7 @@
         "/training/modules/build-study-guides-copilot-notebooks/summary"
       ],
       "lastModified": "2026-11-21T00:08:00+00:00",
-      "unitSig": "741345417cc91910ffba9a29f21dea1e461acb3d"
+      "unitSig": "5ab8a7bb2ad1bdeeef4cf9042349f5754ddf16da"
     },
     {
       "uid": "learn.mec.build-with-ai-creative-partner",
@@ -69929,7 +70207,7 @@
         "/training/modules/secure-ai-schools-microsoft-security/summary"
       ],
       "lastModified": "2026-10-22T23:06:00+00:00",
-      "unitSig": "a525e62c093f3c4daeb50ac87c63ec72c0c843a5"
+      "unitSig": "d2aa89a6a5989be16f0bcaa19efc4f423888b483"
     },
     {
       "uid": "learn.mec.secure-k-12-school-it-practices-systems-microsoft-tools",
@@ -70290,7 +70568,7 @@
         "AI agents in education",
         "Access prebuilt agents",
         "Build your own agents",
-        "Use AI agents to create a newsletter builder (Microsoft 365 Copilot Chat)",
+        "Use AI agents to create a newsletter builder (Copilot Chat)",
         "Use AI agents to build a lesson planner (Microsoft 365 Copilot)",
         "Module assessment",
         "Summary"
@@ -70305,8 +70583,8 @@
         "/training/modules/unlock-power-microsoft-agents/knowledge-check",
         "/training/modules/unlock-power-microsoft-agents/summary"
       ],
-      "lastModified": "2026-10-22T23:06:00+00:00",
-      "unitSig": "960bc5c34da2f35c30042562417fa539efb828ea"
+      "lastModified": "2026-11-24T00:09:00+00:00",
+      "unitSig": "c700ab51cbe27f12aba98fdb9e18c6e70d64538c"
     },
     {
       "uid": "learn.mec.use-ai-nonprofit-role-based-tasks-tools-workflows",
@@ -76701,6 +76979,43 @@
       "unitSig": "3e3cf286f988ac35dc2db82950b8df0c1dcc5327"
     },
     {
+      "uid": "learn.wwl.add-server-side-logic-fabric-apps-functions",
+      "title": "Add secure server-side logic using Fabric Apps Functions",
+      "url": "https://learn.microsoft.com/training/modules/add-server-side-logic-fabric-apps-functions/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/add-server-side-logic-fabric-apps-functions",
+      "categories": [
+        "fabric"
+      ],
+      "products": [
+        "fabric"
+      ],
+      "subjects": [
+        "Data engineering"
+      ],
+      "units": [
+        "Introduction",
+        "Decide when logic belongs in a function",
+        "Exercise - Check Functions availability and scaffold a function",
+        "Exercise - Store and use a secret on the server",
+        "Exercise - Call the Fabric REST API as the app identity",
+        "Exercise - Diagnose a function that fails after deployment",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/add-server-side-logic-fabric-apps-functions/1-introduction",
+        "/training/modules/add-server-side-logic-fabric-apps-functions/2-decide-function-client",
+        "/training/modules/add-server-side-logic-fabric-apps-functions/3-exercise-scaffold-function",
+        "/training/modules/add-server-side-logic-fabric-apps-functions/4-exercise-use-stored-secret",
+        "/training/modules/add-server-side-logic-fabric-apps-functions/5-exercise-call-fabric-deploy-verify",
+        "/training/modules/add-server-side-logic-fabric-apps-functions/6-exercise-diagnose-deployed-failure",
+        "/training/modules/add-server-side-logic-fabric-apps-functions/7-knowledge-check",
+        "/training/modules/add-server-side-logic-fabric-apps-functions/8-summary"
+      ],
+      "lastModified": "2026-11-24T18:21:00+00:00",
+      "unitSig": "8a9dfc93e8ed9268f0f0b0bdd47f9538baf2ac0f"
+    },
+    {
       "uid": "learn.wwl.administer-manage-windows-server-iaas-vm-remotely",
       "title": "Administer and manage Windows Server IaaS Virtual Machine remotely",
       "url": "https://learn.microsoft.com/training/modules/administer-manage-windows-server-iaas-virtual-machine-remotely/?WT.mc_id=studentamb_165290",
@@ -79161,6 +79476,45 @@
       "unitSig": "6efff1989dbf48b249815561d52eed7504acc65e"
     },
     {
+      "uid": "learn.wwl.build-data-driven-features-fabric-apps-sdk",
+      "title": "Build data-driven app features using the Fabric Apps SDK",
+      "url": "https://learn.microsoft.com/training/modules/build-data-driven-features-fabric-apps-sdk/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/build-data-driven-features-fabric-apps-sdk",
+      "categories": [
+        "fabric"
+      ],
+      "products": [
+        "fabric"
+      ],
+      "subjects": [
+        "Data engineering"
+      ],
+      "units": [
+        "Introduction",
+        "Query data with the typed client",
+        "Exercise - Build the issue list with a typed query",
+        "Page and summarize query results",
+        "Exercise - Fix truncation and summarize issues by status",
+        "Change records and handle failures",
+        "Exercise - Attach and manage photos",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/build-data-driven-features-fabric-apps-sdk/1-introduction",
+        "/training/modules/build-data-driven-features-fabric-apps-sdk/2-query-data-typed-client",
+        "/training/modules/build-data-driven-features-fabric-apps-sdk/3-exercise-build-issue-list",
+        "/training/modules/build-data-driven-features-fabric-apps-sdk/4-page-summarize-results",
+        "/training/modules/build-data-driven-features-fabric-apps-sdk/5-exercise-fix-truncation-summarize",
+        "/training/modules/build-data-driven-features-fabric-apps-sdk/6-change-records-handle-failures",
+        "/training/modules/build-data-driven-features-fabric-apps-sdk/7-exercise-attach-photos-challenge",
+        "/training/modules/build-data-driven-features-fabric-apps-sdk/8-knowledge-check",
+        "/training/modules/build-data-driven-features-fabric-apps-sdk/9-summary"
+      ],
+      "lastModified": "2026-11-24T18:21:00+00:00",
+      "unitSig": "1ee29be6092bd079595b343349a539ccb5ca3df5"
+    },
+    {
       "uid": "learn.wwl.build-dataverse-code-apps",
       "title": "Build Dataverse experiences with Power Apps code apps",
       "url": "https://learn.microsoft.com/training/modules/build-dataverse-code-apps/?WT.mc_id=studentamb_165290",
@@ -79910,6 +80264,47 @@
       "unitSig": "d415d0a391e5e273d17430fc5fb55bb2c9fe3bb4"
     },
     {
+      "uid": "learn.wwl.build-review-fabric-apps-ai-coding-agents",
+      "title": "Build and review Fabric apps using AI coding agents",
+      "url": "https://learn.microsoft.com/training/modules/build-review-fabric-apps-ai-coding-agents/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/build-review-fabric-apps-ai-coding-agents",
+      "categories": [
+        "fabric"
+      ],
+      "products": [
+        "fabric"
+      ],
+      "subjects": [
+        "Data engineering"
+      ],
+      "units": [
+        "Introduction",
+        "Direct a coding agent with project context and prompts",
+        "Exercise - Direct an agent to build a vendor feature",
+        "Review agent-generated changes for risk",
+        "Exercise - Review a seeded-defect patch",
+        "Verify agent work before release",
+        "Exercise - Verify and deploy the agent's work",
+        "Exercise - Direct and verify a follow-up change",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/build-review-fabric-apps-ai-coding-agents/1-introduction",
+        "/training/modules/build-review-fabric-apps-ai-coding-agents/2-direct-coding-agents",
+        "/training/modules/build-review-fabric-apps-ai-coding-agents/3-exercise-direct-agent",
+        "/training/modules/build-review-fabric-apps-ai-coding-agents/4-review-agent-changes",
+        "/training/modules/build-review-fabric-apps-ai-coding-agents/5-exercise-review-seeded-patch",
+        "/training/modules/build-review-fabric-apps-ai-coding-agents/6-verify-agent-work",
+        "/training/modules/build-review-fabric-apps-ai-coding-agents/7-exercise-verify-deploy",
+        "/training/modules/build-review-fabric-apps-ai-coding-agents/8-exercise-challenge",
+        "/training/modules/build-review-fabric-apps-ai-coding-agents/9-knowledge-check",
+        "/training/modules/build-review-fabric-apps-ai-coding-agents/10-summary"
+      ],
+      "lastModified": "2026-11-24T18:21:00+00:00",
+      "unitSig": "08948d39dfa39390a62bd6712fa2b5f2be801ac5"
+    },
+    {
       "uid": "learn.wwl.build-solutions-copilot-code",
       "title": "Build solutions with Copilot Code",
       "url": "https://learn.microsoft.com/training/modules/build-solutions-copilot-code/?WT.mc_id=studentamb_165290",
@@ -79994,6 +80389,46 @@
       ],
       "lastModified": "2026-10-26T17:13:00+00:00",
       "unitSig": "09d43c0111f4718c2226c7e09b61253025d0d6fc"
+    },
+    {
+      "uid": "learn.wwl.build-validate-pipelines-containers-artifacts-ai-assistance",
+      "title": "Build and validate pipelines, containers, and artifacts with AI assistance",
+      "url": "https://learn.microsoft.com/training/modules/build-validate-pipelines-containers-artifacts-ai-assistance/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/build-validate-pipelines-containers-artifacts-ai-assistance",
+      "categories": [
+        "Azure",
+        "GitHub"
+      ],
+      "products": [
+        "Azure",
+        "Azure DevOps",
+        "GitHub"
+      ],
+      "subjects": [
+        "DevOps"
+      ],
+      "units": [
+        "Introduction",
+        "Design CI pipelines and build verification",
+        "Build tested containers and manage dependency sources",
+        "Generate build pipelines and publish accepted outputs with Copilot",
+        "Govern build workers, runtime agents, and remediation",
+        "Exercise: Build web and chat CI with GitHub Copilot",
+        "Knowledge check",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/build-validate-pipelines-containers-artifacts-ai-assistance/1-introduction",
+        "/training/modules/build-validate-pipelines-containers-artifacts-ai-assistance/2-design-ci-pipelines-build-verification",
+        "/training/modules/build-validate-pipelines-containers-artifacts-ai-assistance/3-build-tested-containers-manage-dependency-sources",
+        "/training/modules/build-validate-pipelines-containers-artifacts-ai-assistance/4-generate-build-pipelines-publish-accepted-outputs-copilot",
+        "/training/modules/build-validate-pipelines-containers-artifacts-ai-assistance/5-govern-build-workers-runtime-agents-remediation",
+        "/training/modules/build-validate-pipelines-containers-artifacts-ai-assistance/6-exercise",
+        "/training/modules/build-validate-pipelines-containers-artifacts-ai-assistance/7-knowledge-check",
+        "/training/modules/build-validate-pipelines-containers-artifacts-ai-assistance/8-summary"
+      ],
+      "lastModified": "2026-11-26T18:11:00+00:00",
+      "unitSig": "feac9c9c619e5b8509630d532ec7e6e998bb2b07"
     },
     {
       "uid": "learn.wwl.build-your-custom-agent-teams",
@@ -92662,6 +93097,47 @@
       "unitSig": "df1a4590db913337136a2109c4072a623924cccd"
     },
     {
+      "uid": "learn.wwl.design-evolve-app-data-models-fabric-apps",
+      "title": "Design and evolve app data models using Fabric Apps",
+      "url": "https://learn.microsoft.com/training/modules/design-evolve-app-data-models-fabric-apps/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/design-evolve-app-data-models-fabric-apps",
+      "categories": [
+        "fabric"
+      ],
+      "products": [
+        "fabric"
+      ],
+      "subjects": [
+        "Data engineering"
+      ],
+      "units": [
+        "Introduction",
+        "Define entities and fields with decorators",
+        "Exercise - Define an issue entity",
+        "Model relationships and apply the schema",
+        "Exercise - Relate issues to stores and apply the schema",
+        "Evaluate schema changes for data-loss risk",
+        "Exercise - Evolve the schema without losing data",
+        "Exercise - Extend the model on your own",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/design-evolve-app-data-models-fabric-apps/1-introduction",
+        "/training/modules/design-evolve-app-data-models-fabric-apps/2-define-entities-fields",
+        "/training/modules/design-evolve-app-data-models-fabric-apps/3-exercise-define-issue-entity",
+        "/training/modules/design-evolve-app-data-models-fabric-apps/4-model-relationships-apply-schema",
+        "/training/modules/design-evolve-app-data-models-fabric-apps/5-exercise-relate-issues-stores",
+        "/training/modules/design-evolve-app-data-models-fabric-apps/6-evaluate-schema-changes",
+        "/training/modules/design-evolve-app-data-models-fabric-apps/7-exercise-evolve-schema",
+        "/training/modules/design-evolve-app-data-models-fabric-apps/8-exercise-extend-model",
+        "/training/modules/design-evolve-app-data-models-fabric-apps/9-knowledge-check",
+        "/training/modules/design-evolve-app-data-models-fabric-apps/10-summary"
+      ],
+      "lastModified": "2026-11-24T18:21:00+00:00",
+      "unitSig": "d06da89a885d9cab6a3cfee266faf60a053e4883"
+    },
+    {
       "uid": "learn.wwl.design-extensibility-ai-solutions",
       "title": "Design extensibility of AI solutions",
       "url": "https://learn.microsoft.com/training/modules/design-extensibility-ai-solutions/?WT.mc_id=studentamb_165290",
@@ -93972,6 +94448,48 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "55c37e6e5ff774d307b5dda3225ec8e844fdddf5"
+    },
+    {
+      "uid": "learn.wwl.design-release-strategies-ai-assisted-deployment-pipelines",
+      "title": "Design release strategies and AI-assisted deployment pipelines",
+      "url": "https://learn.microsoft.com/training/modules/design-release-strategies-ai-assisted-deployment-pipelines/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/design-release-strategies-ai-assisted-deployment-pipelines",
+      "categories": [
+        "Azure",
+        "GitHub"
+      ],
+      "products": [
+        "Azure",
+        "Azure DevOps",
+        "GitHub"
+      ],
+      "subjects": [
+        "DevOps"
+      ],
+      "units": [
+        "Introduction",
+        "Design environments and reusable deployment components",
+        "Design secretless identity and configuration",
+        "Design release strategies and health gates",
+        "Generate and review release pipelines for GitHub and Azure DevOps",
+        "Govern promotion from observed evidence",
+        "Exercise: Deploy Web then chat with Copilot-assisted pipelines",
+        "Knowledge check",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/design-release-strategies-ai-assisted-deployment-pipelines/1-introduction",
+        "/training/modules/design-release-strategies-ai-assisted-deployment-pipelines/2-design-environments-deployment-components",
+        "/training/modules/design-release-strategies-ai-assisted-deployment-pipelines/3-design-secretless-identity-configuration",
+        "/training/modules/design-release-strategies-ai-assisted-deployment-pipelines/4-design-release-strategies-health-gates",
+        "/training/modules/design-release-strategies-ai-assisted-deployment-pipelines/5-generate-review-release-pipelines-github-azure-devops",
+        "/training/modules/design-release-strategies-ai-assisted-deployment-pipelines/6-govern-promotion-from-observed-evidence",
+        "/training/modules/design-release-strategies-ai-assisted-deployment-pipelines/7-exercise",
+        "/training/modules/design-release-strategies-ai-assisted-deployment-pipelines/8-knowledge-check",
+        "/training/modules/design-release-strategies-ai-assisted-deployment-pipelines/9-summary"
+      ],
+      "lastModified": "2026-11-26T18:11:00+00:00",
+      "unitSig": "266b8a2bf183c2d771fcf933bb4645b133f61eed"
     },
     {
       "uid": "learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware",
@@ -97507,6 +98025,45 @@
       ],
       "lastModified": "2026-10-26T17:13:00+00:00",
       "unitSig": "d59fe0d9141847d46365f861aad9627cf90c211b"
+    },
+    {
+      "uid": "learn.wwl.evaluate-fabric-apps-deploy-first-app",
+      "title": "Evaluate Fabric Apps by deploying a first app to Microsoft Fabric",
+      "url": "https://learn.microsoft.com/training/modules/evaluate-fabric-apps-deploy-first-app/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/evaluate-fabric-apps-deploy-first-app",
+      "categories": [
+        "fabric"
+      ],
+      "products": [
+        "fabric"
+      ],
+      "subjects": [
+        "Data engineering"
+      ],
+      "units": [
+        "Introduction",
+        "Describe how a Fabric app runs on Microsoft Fabric",
+        "Evaluate fit, limits, licensing, and capacity cost",
+        "Exercise - Scaffold a first Fabric app",
+        "Exercise - Run the app against a backend hosted in Fabric",
+        "Exercise - Deploy the app and verify the deployment",
+        "Exercise - Redeploy a change and revisit the fit decision",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/evaluate-fabric-apps-deploy-first-app/1-introduction",
+        "/training/modules/evaluate-fabric-apps-deploy-first-app/2-how-fabric-apps-run",
+        "/training/modules/evaluate-fabric-apps-deploy-first-app/3-evaluate-fit-limits-cost",
+        "/training/modules/evaluate-fabric-apps-deploy-first-app/4-exercise-scaffold-app",
+        "/training/modules/evaluate-fabric-apps-deploy-first-app/5-exercise-run-locally",
+        "/training/modules/evaluate-fabric-apps-deploy-first-app/6-exercise-deploy-app",
+        "/training/modules/evaluate-fabric-apps-deploy-first-app/7-exercise-challenge",
+        "/training/modules/evaluate-fabric-apps-deploy-first-app/8-knowledge-check",
+        "/training/modules/evaluate-fabric-apps-deploy-first-app/9-summary"
+      ],
+      "lastModified": "2026-11-24T18:21:00+00:00",
+      "unitSig": "8e329dc0a6a1b2d1415d4f9fdca335644dc61c74"
     },
     {
       "uid": "learn.wwl.evaluate-optimize-agents",
@@ -113437,6 +113994,43 @@
       "unitSig": "8e598ca7f7eedaee8f54b24d224bb555d15b86b4"
     },
     {
+      "uid": "learn.wwl.integrate-fabric-data-fabric-apps-connectors",
+      "title": "Integrate existing Fabric data using Fabric Apps connectors",
+      "url": "https://learn.microsoft.com/training/modules/integrate-fabric-data-fabric-apps-connectors/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/integrate-fabric-data-fabric-apps-connectors",
+      "categories": [
+        "fabric"
+      ],
+      "products": [
+        "fabric"
+      ],
+      "subjects": [
+        "Data engineering"
+      ],
+      "units": [
+        "Introduction",
+        "Choose a connector type and identity mode",
+        "Exercise - Add and verify connectors with the Rayfin CLI",
+        "Exercise - Define entity connectors and build an inventory view",
+        "Exercise - Query a semantic model and build a sales view",
+        "Exercise - Predict and verify access for app recipients",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/integrate-fabric-data-fabric-apps-connectors/1-introduction",
+        "/training/modules/integrate-fabric-data-fabric-apps-connectors/2-choose-connector-identity",
+        "/training/modules/integrate-fabric-data-fabric-apps-connectors/3-exercise-add-connectors",
+        "/training/modules/integrate-fabric-data-fabric-apps-connectors/4-exercise-define-entity-connectors",
+        "/training/modules/integrate-fabric-data-fabric-apps-connectors/5-exercise-query-semantic-model",
+        "/training/modules/integrate-fabric-data-fabric-apps-connectors/6-exercise-access-challenge",
+        "/training/modules/integrate-fabric-data-fabric-apps-connectors/7-knowledge-check",
+        "/training/modules/integrate-fabric-data-fabric-apps-connectors/8-summary"
+      ],
+      "lastModified": "2026-11-24T18:21:00+00:00",
+      "unitSig": "c9220e93ad2dc5090719d11c9881a5fd16f55c36"
+    },
+    {
       "uid": "learn.wwl.integrate-foundry-agent-with-m365",
       "title": "Integrate your agent with Microsoft 365",
       "url": "https://learn.microsoft.com/training/modules/integrate-foundry-agent-with-m365/?WT.mc_id=studentamb_165290",
@@ -113844,8 +114438,8 @@
         "/training/modules/introduction-agentic-devops-microsoft-tools-azure/6-knowledge-check",
         "/training/modules/introduction-agentic-devops-microsoft-tools-azure/7-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "a7cd037f9c55a2790ea86b7723ce95029a917b01"
+      "lastModified": "2026-11-26T18:11:00+00:00",
+      "unitSig": "f900461ff2283fe6859149da6fbccab97f22bf91"
     },
     {
       "uid": "learn.wwl.introduction-ai-special-education",
@@ -116236,8 +116830,8 @@
         "/training/modules/manage-ado-mcp-server/13-knowledge-check",
         "/training/modules/manage-ado-mcp-server/14-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "133d774f88f9926cf76092f89e7e2131626ca4c6"
+      "lastModified": "2026-11-26T18:11:00+00:00",
+      "unitSig": "f9c6ec00104713bac6b6439f8f4a5cbba1cc0e42"
     },
     {
       "uid": "learn.wwl.manage-advanced-features-of-ad-ds",
@@ -116819,8 +117413,8 @@
         "/training/modules/manage-azure-boards-using-github-copilot/14-knowledge-check",
         "/training/modules/manage-azure-boards-using-github-copilot/15-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "46c0f0117476cd1ccf911ed93839d7023f33588b"
+      "lastModified": "2026-11-26T18:11:00+00:00",
+      "unitSig": "56b1f072b98261eef4ff6e5482b7a0ca26eae1f5"
     },
     {
       "uid": "learn.wwl.manage-azure-cosmos-db-fleets",
@@ -119357,6 +119951,48 @@
       ],
       "lastModified": "2026-10-28T17:12:00+00:00",
       "unitSig": "4fb35cfa8e7488f8f76e561a8b49b529066f8281"
+    },
+    {
+      "uid": "learn.wwl.manage-source-control-code-review-github-copilot",
+      "title": "Manage source control and code review with GitHub Copilot",
+      "url": "https://learn.microsoft.com/training/modules/manage-source-control-code-review-github-copilot/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/manage-source-control-code-review-github-copilot",
+      "categories": [
+        "Azure",
+        "GitHub"
+      ],
+      "products": [
+        "Azure",
+        "Azure DevOps",
+        "GitHub"
+      ],
+      "subjects": [
+        "DevOps"
+      ],
+      "units": [
+        "Introduction",
+        "Design a repository, branch, and pull-request workflow",
+        "Review pull requests and resolve conflicts with GitHub Copilot",
+        "Define pull-request acceptance criteria and verification evidence",
+        "Guide Copilot repository assistance with context, tools, and instructions",
+        "Govern repository contribution and merge authority",
+        "Exercise: Practice source control with GitHub Copilot code review",
+        "Knowledge check",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/manage-source-control-code-review-github-copilot/1-introduction",
+        "/training/modules/manage-source-control-code-review-github-copilot/2-design-source-control-branch-pr-workflow",
+        "/training/modules/manage-source-control-code-review-github-copilot/3-review-pull-requests-resolve-conflicts-with-copilot",
+        "/training/modules/manage-source-control-code-review-github-copilot/4-define-pull-request-acceptance-criteria-verification-evidence",
+        "/training/modules/manage-source-control-code-review-github-copilot/5-guide-copilot-repository-assistance-context-tools-instructions",
+        "/training/modules/manage-source-control-code-review-github-copilot/6-govern-repository-contribution-merge-authority",
+        "/training/modules/manage-source-control-code-review-github-copilot/7-exercise",
+        "/training/modules/manage-source-control-code-review-github-copilot/8-knowledge-check",
+        "/training/modules/manage-source-control-code-review-github-copilot/9-summary"
+      ],
+      "lastModified": "2026-11-26T18:11:00+00:00",
+      "unitSig": "b5f93124b1dc35b47fb037cca5d7cf9c6581b4ac"
     },
     {
       "uid": "learn.wwl.manage-synchronized",
@@ -127610,6 +128246,47 @@
       "unitSig": "9bac587d0e1548d35f5c73ec97d8344187dbfa07"
     },
     {
+      "uid": "learn.wwl.release-operate-fabric-apps-environments",
+      "title": "Release, share, and monitor Fabric apps across environments",
+      "url": "https://learn.microsoft.com/training/modules/release-operate-fabric-apps-environments/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/release-operate-fabric-apps-environments",
+      "categories": [
+        "fabric"
+      ],
+      "products": [
+        "fabric"
+      ],
+      "subjects": [
+        "Data engineering"
+      ],
+      "units": [
+        "Introduction",
+        "Promote an app between development and production workspaces",
+        "Exercise - Deploy an app to development and production workspaces",
+        "Automate protected deployments with GitHub Actions",
+        "Exercise - Build a protected deployment workflow",
+        "Share a Fabric app and trace access across layers",
+        "Monitor a Fabric app and diagnose failures by layer",
+        "Exercise - Monitor an app and decide whether to release",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/release-operate-fabric-apps-environments/1-introduction",
+        "/training/modules/release-operate-fabric-apps-environments/2-promote-apps-environments",
+        "/training/modules/release-operate-fabric-apps-environments/3-exercise-deploy-environments",
+        "/training/modules/release-operate-fabric-apps-environments/4-automate-deployment",
+        "/training/modules/release-operate-fabric-apps-environments/5-exercise-deployment-workflow",
+        "/training/modules/release-operate-fabric-apps-environments/6-share-apps",
+        "/training/modules/release-operate-fabric-apps-environments/7-monitor-troubleshoot-apps",
+        "/training/modules/release-operate-fabric-apps-environments/8-exercise-monitor-release",
+        "/training/modules/release-operate-fabric-apps-environments/9-knowledge-check",
+        "/training/modules/release-operate-fabric-apps-environments/10-summary"
+      ],
+      "lastModified": "2026-11-24T18:21:00+00:00",
+      "unitSig": "93369dac7eb23dd3b1230efc51be498806fabe8c"
+    },
+    {
       "uid": "learn.wwl.remediate-azure-defender-security-alerts",
       "title": "Remediate security alerts using Microsoft Defender for Cloud",
       "url": "https://learn.microsoft.com/training/modules/remediate-azure-defender-security-alerts/?WT.mc_id=studentamb_165290",
@@ -128685,6 +129362,45 @@
       ],
       "lastModified": "2026-10-26T17:13:00+00:00",
       "unitSig": "284e646b606a21e435c6df01e2d4fb57506b70c0"
+    },
+    {
+      "uid": "learn.wwl.secure-fabric-app-sso-data-permissions",
+      "title": "Secure a Fabric app with Fabric SSO and data permissions",
+      "url": "https://learn.microsoft.com/training/modules/secure-fabric-app-sso-data-permissions/?WT.mc_id=studentamb_165290",
+      "path": "/training/modules/secure-fabric-app-sso-data-permissions",
+      "categories": [
+        "fabric"
+      ],
+      "products": [
+        "fabric"
+      ],
+      "subjects": [
+        "Data engineering"
+      ],
+      "units": [
+        "Introduction",
+        "Choose a sign-in path for a Fabric app",
+        "Exercise - Add Fabric SSO sign-in and sign-out",
+        "Write server-enforced data permissions",
+        "Exercise - Enforce owner-scoped permissions and test cross-owner access",
+        "Decide when anonymous access is appropriate and verify denial",
+        "Exercise - Verify that unauthenticated requests are denied",
+        "Module assessment",
+        "Summary"
+      ],
+      "unitUrls": [
+        "/training/modules/secure-fabric-app-sso-data-permissions/1-introduction",
+        "/training/modules/secure-fabric-app-sso-data-permissions/2-choose-sign-in-path",
+        "/training/modules/secure-fabric-app-sso-data-permissions/3-exercise-add-fabric-sso",
+        "/training/modules/secure-fabric-app-sso-data-permissions/4-write-data-permissions",
+        "/training/modules/secure-fabric-app-sso-data-permissions/5-exercise-enforce-permissions",
+        "/training/modules/secure-fabric-app-sso-data-permissions/6-anonymous-access-denial",
+        "/training/modules/secure-fabric-app-sso-data-permissions/7-exercise-verify-denial",
+        "/training/modules/secure-fabric-app-sso-data-permissions/8-knowledge-check",
+        "/training/modules/secure-fabric-app-sso-data-permissions/9-summary"
+      ],
+      "lastModified": "2026-11-24T18:21:00+00:00",
+      "unitSig": "d788ee66c54d171c4eb5ca2a675169dc82a8084c"
     },
     {
       "uid": "learn.wwl.secure-hybrid-connectivity-azure",
@@ -133865,7 +134581,7 @@
       ],
       "units": [
         "Introduction",
-        "Prompt engineering for Infrastructure as Code",
+        "Prompt engineering for infrastructure as code",
         "Azure CLI and PowerShell assistance with GitHub Copilot",
         "Generating Bicep templates with GitHub Copilot",
         "Container infrastructure with GitHub Copilot",
@@ -133889,8 +134605,8 @@
         "/training/modules/use-github-copilot-cloud-operations/10-knowledge-check",
         "/training/modules/use-github-copilot-cloud-operations/11-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "e85fa1d013651644eb2436e34152c5d4341f900b"
+      "lastModified": "2026-11-26T18:11:00+00:00",
+      "unitSig": "13945ec0bdcd8da516cd705f775597d3436f591e"
     },
     {
       "uid": "learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts",
@@ -134015,8 +134731,8 @@
         "/training/modules/use-plan-mode-cloud-ops/7-knowledge-check",
         "/training/modules/use-plan-mode-cloud-ops/8-summary"
       ],
-      "lastModified": "2026-10-28T17:12:00+00:00",
-      "unitSig": "4ed498c0755f38a567c3a2b7b80484ee64aed28d"
+      "lastModified": "2026-11-26T18:11:00+00:00",
+      "unitSig": "9b119be67f159c52326348179927d03a92144f44"
     },
     {
       "uid": "learn.wwl.use-powershell-drives-powershell",
@@ -135519,6 +136235,7 @@
     "/training/modules/surface-portal-onboarding-guide",
     "/training/modules/surface-portal-service-support",
     "/training/modules/surface-pro-12-inch-2nd-edition-2026-09",
+    "/training/modules/surface-repair-tool",
     "/training/modules/surface-support-service-provider",
     "/training/modules/teach-ap-computer-science-principles-makecode",
     "/training/modules/teach-cybersecurity-concepts-minecraft-education",
