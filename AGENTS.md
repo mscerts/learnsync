@@ -353,7 +353,7 @@ December 2026; the old git/REPOS design is gone). The script is a thin wrapper o
 3. **Fetch** `<head>` metadata (GET, concurrency 3, 500 ms per worker, retries/backoff).
    Pages with no usable title or `noindex` get no record (4 untitled Dynamics 365 pages today).
 4. **Removal detection** covers the whole index: a URL in the previous index or catalog and
-   absent from the sitemaps now is probed (cap `MAX_MISSING_CHECKS`, 2,000; oldest-checked
+   absent from the sitemaps now is probed (cap `MAX_MISSING_CHECKS`, 2,000 by default, 10,000 in the workflow; oldest-checked
    first; case variants folded first so aliases never use the budget). 404/410 -> quarantine;
    a redirect to a different canonical path -> `docs-redirects.json`; live -> kept;
    transient -> kept and retried. With any sitemap failure removal detection is off.
@@ -377,6 +377,10 @@ path, a generic hub or a one-segment product root; `retired` = under `/previous-
 `MAX_RUNTIME_MINUTES` (90) stops the fetch phases (everything gathered is still written,
 deferrals recorded). `CONSECUTIVE_TRANSIENT_LIMIT` (40) stops a phase during a rate-limit
 storm and marks the run degraded (exit 1 AFTER writing). Unstarted items keep their data.
+A URL beyond the missing-probe cap is `deferredMissing`, and any deferral makes `status.json` `docs.complete`
+false, which the hub's freshness check reports as a stale docs index. That is a backlog, not a failure (removal
+detection is off only when a sitemap file failed): after Learn regenerates sitemaps it can reach thousands, and
+each run works off at most the cap, so keep the workflow's cap above the size such a drop produces.
 
 ### Failsafes (abort with exit 1, write nothing, not even `status.json`)
 New index under 85% of the previous index (`INDEX_SANITY_RATIO`; skipped when a sitemap

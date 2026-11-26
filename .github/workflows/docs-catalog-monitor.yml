@@ -35,6 +35,11 @@ jobs:
       - name: Sync Microsoft docs catalog cache
         env:
           MAX_RUNTIME_MINUTES: "90"
+          # When Learn regenerates sitemap files, thousands of live pages drop out of them for a week or
+          # two (2026-11-23: 8,714 missing, 98% live). The default cap (2,000 probes) then leaves a backlog
+          # that keeps docs.complete false for a month, and consumers read that as stale data. Probes run at
+          # about 5 per second, so 10,000 fit well inside the time budget, which still stops the phases.
+          MAX_MISSING_CHECKS: "10000"
         run: node scripts/docs-catalog-sync.mjs
 
       - name: Commit updated catalog cache
